@@ -151,3 +151,27 @@
 [2024-04-28 00:13:59] INFO root fetch - processPackages [lips-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/lips-benchmark-0.2.4.tar.gz]
 [2024-04-28 00:13:59] INFO root fetch - main [MainThread]: End processing [lips-benchmark]: success
 [2024-04-28 00:13:59] INFO root fetch - main [MainThread]: Store serial: [22962323]
+[2024-04-28 00:16:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962323]
+[2024-04-28 00:16:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysparkify
+[2024-04-28 00:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastai
+[2024-04-28 00:16:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dspy-ai-hmoazam
+[2024-04-28 00:16:09] WARNING root fetch - processPackages [dspy-ai-hmoazam]: Skipping, unable to determine old version
+[2024-04-28 00:16:09] INFO root fetch - main [MainThread]: End processing [dspy-ai-hmoazam] error
+[2024-04-28 00:16:09] INFO root fetch - processPackages [pysparkify]: New version: [0.25.0] Old Version: [0.24.1]
+[2024-04-28 00:16:09] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/9d/07/5d1fbb9b4d9562657f3185d999109848927fe738ebd6815876bf46196373/pysparkify-0.24.1.tar.gz
+[2024-04-28 00:16:09] INFO root fetch - processPackages [fastai]: New version: [2.7.9] Old Version: [2.7.8]
+[2024-04-28 00:16:09] INFO root fetch - processPackages [fastai]: Downloading https://files.pythonhosted.org/packages/90/a2/7ac9245b88ea42c1bfdd3228e32ca76cb920a0dd670f0c2176417199bcaf/fastai-2.7.8.tar.gz
+[2024-04-28 00:16:10] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/68/a7/ed78c9c7f73c97cd018c681aa2bb40998acdea234623287553faf2b2b893/pysparkify-0.25.0.tar.gz
+[2024-04-28 00:16:10] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-04-28 00:16:10] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.24.1.tar.gz tmp/pysparkify-0.25.0.tar.gz --markdown 20240428/p/pysparkify/0.24.1-0.25.0/README.md --exclude *.pyd
+[2024-04-28 00:16:10] INFO root fetch - processPackages [fastai]: Downloading https://files.pythonhosted.org/packages/82/74/ab6818a767a9915cd66e07c7b163d63ce611e1ace75cc396cb820332ea54/fastai-2.7.9.tar.gz
+[2024-04-28 00:16:10] INFO root fetch - processPackages [fastai]: executing diffoscope
+[2024-04-28 00:16:10] INFO root fetch - processPackages [fastai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastai-2.7.8.tar.gz tmp/fastai-2.7.9.tar.gz --markdown 20240428/f/fastai/2.7.8-2.7.9/README.md --exclude *.pyd
+[2024-04-28 00:16:10] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.24.1.tar.gz]
+[2024-04-28 00:16:10] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.25.0.tar.gz]
+[2024-04-28 00:16:10] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-04-28 00:16:11] INFO root fetch - processPackages [fastai]: Remove: archive file [/home/abi/fetcher/tmp/fastai-2.7.8.tar.gz]
+[2024-04-28 00:16:11] INFO root fetch - processPackages [fastai]: Remove: archive file [/home/abi/fetcher/tmp/fastai-2.7.9.tar.gz]
+[2024-04-28 00:16:11] INFO root fetch - main [MainThread]: End processing [fastai]: success
+[2024-04-28 00:16:11] INFO root fetch - main [MainThread]: Store serial: [22962332]
