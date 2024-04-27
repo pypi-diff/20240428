@@ -779,3 +779,69 @@
 [2024-04-28 01:03:52] INFO root fetch - processPackages [peroxymanova]: Remove: archive file [/home/abi/fetcher/tmp/peroxymanova-0.4.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-28 01:03:52] INFO root fetch - main [MainThread]: End processing [peroxymanova]: success
 [2024-04-28 01:03:52] INFO root fetch - main [MainThread]: Store serial: [22962591]
+[2024-04-28 01:05:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962591]
+[2024-04-28 01:06:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-contrib-core
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contrib-embed
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-contrib-pyodide
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flet-contrib-runtime
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet-contribute
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tmnt
+[2024-04-28 01:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unit-simple
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.2220] Old Version: [2024.4.27.2124]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contribute]: New version: [2024.4.27.2220] Old Version: [2024.4.27.1759]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240426] Old Version: [0.7.52b20240425]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/8d/00/64b25f17fb209421ab6ff3254a0e3d49c997b35b212b1a4f609261ed79d1/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.2303] Old Version: [2024.4.27.2220]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-embed]: New version: [2024.4.27.2303] Old Version: [2024.4.27.2220]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.27.2303] Old Version: [2024.4.27.2220]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [unit-simple]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contribute]: Downloading https://files.pythonhosted.org/packages/8f/b2/102addf9d30072384eea0f1152002fcf801982ed43d47b3fc17ac5a08b86/flet_contribute-2024.4.27.1759.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/2d/f9/e7d152d8d03caf5c0bfc6d170ee41bfd56ce60df0ca5ea364216ae273979/tmnt-0.7.52b20240425.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/53/a9/cc34f433dd67fb9fe1a07b01717ffa111e7fb28e43d4b602804a97c8f28f/flet_contrib_core-2024.4.27.2220.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/62/db/8aebe52245b3dc42952165ffab7f93cd2787a8725080a241e4357b3d70fa/flet_contrib_embed-2024.4.27.2220.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/5e/aa/309b690946ff2046fdd0d8d962bdeba16a0f8a116fd6947b94e0c6ac4937/flet_contrib_pyodide-2024.4.27.2220.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/04/61/15d7da251cc3158c8d7bd23c5458eb60180e7d500861d028214a7d03e597/flet_contrib_runtime-2024.4.27.2220.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [unit-simple]: Downloading https://files.pythonhosted.org/packages/df/7b/632d2fa9e73ea864000ebb6629e1db037dfe07bb193cdb0490ca79050c66/unit_simple-1.0.8.tar.gz
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-28 01:06:00] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip tmp/flet_contrib_runtime-2024.4.27.2220.tar.gz --markdown 20240428/f/flet-contrib-runtime/2024.4.27.2124-2024.4.27.2220/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/11/ef/4d117e93437a18b98a84d8e4d10d6c4448259be126626d24541186dc87c4/tmnt-0.7.52b20240426.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contribute]: Downloading https://files.pythonhosted.org/packages/36/79/08bb7f812816f5a3e096f080b82eaf8ce565da95565b6294483b163f5cec/flet_contribute-2024.4.27.2220.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/6a/ae/4063bb0d4f01ab07536f7b9e360963e5e0e7a0413317e158e2b439f1c698/flet_contrib_core-2024.4.27.2303.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/8d/96/ebebbcd9454f4848fd5e7e1d9e311b86f2410480569521815ea97d87dbe4/flet_contrib_pyodide-2024.4.27.2303.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240425.tar.gz tmp/tmnt-0.7.52b20240426.tar.gz --markdown 20240428/t/tmnt/0.7.52b20240425-0.7.52b20240426/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/fe/e4/4f91833fe816bf8e550cbafe2affecaaa7fd8a3874ebc50f01588c1a2d24/flet_contrib_embed-2024.4.27.2303.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contribute]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contribute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contribute-2024.4.27.1759.tar.gz tmp/flet_contribute-2024.4.27.2220.tar.gz --markdown 20240428/f/flet-contribute/2024.4.27.1759-2024.4.27.2220/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [unit-simple]: Downloading https://files.pythonhosted.org/packages/cd/fb/ca23f2ca62f65ed36ab8969c1c1d39a8a9ad8acabcce65f446271c37ceba/unit_simple-1.0.9.tar.gz
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-embed]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_embed-2024.4.27.2220.tar.gz tmp/flet_contrib_embed-2024.4.27.2303.tar.gz --markdown 20240428/f/flet-contrib-embed/2024.4.27.2220-2024.4.27.2303/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.2220.tar.gz tmp/flet_contrib_pyodide-2024.4.27.2303.tar.gz --markdown 20240428/f/flet-contrib-pyodide/2024.4.27.2220-2024.4.27.2303/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [unit-simple]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [unit-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unit_simple-1.0.8.tar.gz tmp/unit_simple-1.0.9.tar.gz --markdown 20240428/u/unit-simple/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.2220.tar.gz tmp/flet_contrib_core-2024.4.27.2303.tar.gz --markdown 20240428/f/flet-contrib-core/2024.4.27.2220-2024.4.27.2303/README.md --exclude *.pyd
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2220.tar.gz]
+[2024-04-28 01:06:01] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-28 01:06:01] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240425.tar.gz]
+[2024-04-28 01:06:01] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240426.tar.gz]
+[2024-04-28 01:06:01] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.2220.tar.gz]
+[2024-04-28 01:06:01] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.2303.tar.gz]
+[2024-04-28 01:06:01] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed]: success
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contribute]: Remove: archive file [/home/abi/fetcher/tmp/flet_contribute-2024.4.27.1759.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contribute]: Remove: archive file [/home/abi/fetcher/tmp/flet_contribute-2024.4.27.2220.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - main [MainThread]: End processing [flet-contribute]: success
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2220.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2303.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-28 01:06:02] INFO root fetch - processPackages [unit-simple]: Remove: archive file [/home/abi/fetcher/tmp/unit_simple-1.0.8.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - processPackages [unit-simple]: Remove: archive file [/home/abi/fetcher/tmp/unit_simple-1.0.9.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - main [MainThread]: End processing [unit-simple]: success
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2220.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2303.tar.gz]
+[2024-04-28 01:06:02] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-28 01:06:02] INFO root fetch - main [MainThread]: Store serial: [22962627]
