@@ -1056,3 +1056,24 @@
 [2024-04-28 01:29:49] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
 [2024-04-28 01:29:49] INFO root fetch - main [MainThread]: End processing [profile-local]: success
 [2024-04-28 01:29:49] INFO root fetch - main [MainThread]: Store serial: [22962689]
+[2024-04-28 01:31:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962689]
+[2024-04-28 01:31:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 01:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nl2query
+[2024-04-28 01:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arrayutilities
+[2024-04-28 01:31:58] INFO root fetch - processPackages [nl2query]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 01:31:58] INFO root fetch - processPackages [arrayutilities]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-28 01:31:58] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/27/db/74aed3418006079c58e342d87eeafc4221504e28d8ce25482a745c4e3b86/nl2query-0.1.6.tar.gz
+[2024-04-28 01:31:58] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/15/0b/dcff67aec79b7d3c13c0b2bd029ab1e908412c01db4353c2bb73a79e6948/arrayutilities-1.0.3.tar.gz
+[2024-04-28 01:31:58] INFO root fetch - processPackages [nl2query]: Downloading https://files.pythonhosted.org/packages/0f/cf/105457097820a13dbe18b2d7485c545aabf129a42dc1d6d8f373ab927ecf/nl2query-0.1.7.tar.gz
+[2024-04-28 01:31:58] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/10/25/6eb658c8f150958e7e1d75b791f521d844c931a7066cf896e4f43dbeae6c/arrayutilities-1.1.0.tar.gz
+[2024-04-28 01:31:58] INFO root fetch - processPackages [nl2query]: executing diffoscope
+[2024-04-28 01:31:58] INFO root fetch - processPackages [nl2query]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nl2query-0.1.6.tar.gz tmp/nl2query-0.1.7.tar.gz --markdown 20240428/n/nl2query/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 01:31:58] INFO root fetch - processPackages [arrayutilities]: executing diffoscope
+[2024-04-28 01:31:58] INFO root fetch - processPackages [arrayutilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrayutilities-1.0.3.tar.gz tmp/arrayutilities-1.1.0.tar.gz --markdown 20240428/a/arrayutilities/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-28 01:31:59] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.6.tar.gz]
+[2024-04-28 01:31:59] INFO root fetch - processPackages [nl2query]: Remove: archive file [/home/abi/fetcher/tmp/nl2query-0.1.7.tar.gz]
+[2024-04-28 01:31:59] INFO root fetch - main [MainThread]: End processing [nl2query]: success
+[2024-04-28 01:31:59] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.3.tar.gz]
+[2024-04-28 01:31:59] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.1.0.tar.gz]
+[2024-04-28 01:31:59] INFO root fetch - main [MainThread]: End processing [arrayutilities]: success
+[2024-04-28 01:31:59] INFO root fetch - main [MainThread]: Store serial: [22962695]
