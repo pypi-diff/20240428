@@ -181,3 +181,78 @@
 [2024-04-28 00:18:19] WARNING root fetch - processPackages [little-atf-programmer]: Skipping, unable to determine old version
 [2024-04-28 00:18:19] INFO root fetch - main [MainThread]: End processing [little-atf-programmer] error
 [2024-04-28 00:18:19] INFO root fetch - main [MainThread]: Store serial: [22962338]
+[2024-04-28 00:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962338]
+[2024-04-28 00:20:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gitlab-projects-settings
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protokolo
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: text2img-bot
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whisper.cpp-cli
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flet-contrib-core
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-contrib-embed
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flet-contrib-pyodide
+[2024-04-28 00:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flet-contrib-runtime
+[2024-04-28 00:20:29] INFO root fetch - processPackages [gitlab-projects-settings]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.2124] Old Version: [2024.4.27.1759]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.27.2124] Old Version: [2024.4.27.1759]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-embed]: New version: [2024.4.27.2124] Old Version: [2024.4.27.1759]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [protokolo]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.2220] Old Version: [2024.4.27.2124]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [gitlab-projects-settings]: Downloading https://files.pythonhosted.org/packages/f7/0f/5e228d0b290e8d328e1fae296fdaec4fe20b39d5e1f510fcde2304c6483c/gitlab_projects_settings-1.1.0.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/c5/9e/bcdd8eea4344f4a71d6dc605122a8ebba1ed6a67df5b6775497841528713/flet_contrib_runtime-2024.4.27.1759.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [text2img-bot]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [whisper.cpp-cli]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/4d/d8/555a2762baab2ee73ec6f1ab8fb7c9d00aabf9c654f9b128f91fcafc1292/flet_contrib_pyodide-2024.4.27.1759.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/1d/92/aa3d004d3a01b93ce7de0276691efa6f850ac26f2239036c2d4c39cf4016/flet_contrib_embed-2024.4.27.1759.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/bc/e4/b5d08d80a9a14faabdb12ab8a2cff29cd5188201d3556d3af1a40e1d7cd8/protokolo-2.0.1.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [whisper.cpp-cli]: Downloading https://files.pythonhosted.org/packages/dc/6f/ff7b60f10e6bc85a01d8cd5c5980e8269185e6745e0c6d800b0d799d7428/whisper_cpp_cli-0.0.1.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [text2img-bot]: Downloading https://files.pythonhosted.org/packages/e7/2b/5aacbff0d5f7dcbbe3d73fb383e9151fa7a4fadcdac0dc6de02554652cfd/text2img_bot-0.1.2-py3-none-any.whl
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/7b/f1/5d372983f5c67e16a93074661f069aeae9ad92c067e48b1399b987ae592f/flet_contrib_core-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 00:20:29] INFO root fetch - processPackages [gitlab-projects-settings]: Downloading https://files.pythonhosted.org/packages/a4/70/d2f3fe2a34fb91288d14443a5cadefc896af01cc33d2ac4a5d687515a576/gitlab_projects_settings-2.0.0.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/89/1f/0adc3b4bb0784a6275d7130ab46ae7e8d6725dffb13c01fe5cc19f56177f/protokolo-2.1.0.tar.gz
+[2024-04-28 00:20:29] INFO root fetch - processPackages [gitlab-projects-settings]: executing diffoscope
+[2024-04-28 00:20:29] INFO root fetch - processPackages [gitlab-projects-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_settings-1.1.0.tar.gz tmp/gitlab_projects_settings-2.0.0.tar.gz --markdown 20240428/g/gitlab-projects-settings/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/65/7f/286a83472645de4486ed56cf637c02e343ea79ba945984a9b28345566517/flet_contrib_embed-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 00:20:29] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/8d/00/64b25f17fb209421ab6ff3254a0e3d49c997b35b212b1a4f609261ed79d1/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/0e/5d/9cc954203c68032d1aa332e03c43c91ee0c1e4838a8bbb329a137dbfeaad/flet_contrib_pyodide-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 00:20:30] INFO root fetch - processPackages [protokolo]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [protokolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protokolo-2.0.1.tar.gz tmp/protokolo-2.1.0.tar.gz --markdown 20240428/p/protokolo/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-embed]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_embed-2024.4.27.1759.tar.gz tmp/flet_contrib_embed-2024.4.27.2124-py3-none-any.whl.zip --markdown 20240428/f/flet-contrib-embed/2024.4.27.1759-2024.4.27.2124/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.1759.tar.gz tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip --markdown 20240428/f/flet-contrib-runtime/2024.4.27.1759-2024.4.27.2124/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.1759.tar.gz tmp/flet_contrib_pyodide-2024.4.27.2124-py3-none-any.whl.zip --markdown 20240428/f/flet-contrib-pyodide/2024.4.27.1759-2024.4.27.2124/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [whisper.cpp-cli]: Downloading https://files.pythonhosted.org/packages/3d/d0/ee115ada63b80ad3a6163af9e4eb59cac0dcc3792472aba4516cddbd24ff/whisper_cpp_cli-0.0.1a0.tar.gz
+[2024-04-28 00:20:30] INFO root fetch - processPackages [text2img-bot]: Downloading https://files.pythonhosted.org/packages/2b/61/c4655899c37e16fbe86da47075ec0cc1433665ce86b52f25a82aa87a798f/text2img_bot-0.2.0-py3-none-any.whl
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/e2/0a/070786730bb8b781610ffa87a96ed5823d144432f061be514968f4d529ce/flet_contrib_core-2024.4.27.2220-py3-none-any.whl
+[2024-04-28 00:20:30] INFO root fetch - processPackages [whisper.cpp-cli]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [whisper.cpp-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper_cpp_cli-0.0.1.tar.gz tmp/whisper_cpp_cli-0.0.1a0.tar.gz --markdown 20240428/w/whisper.cpp-cli/0.0.1-0.0.1a0/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [text2img-bot]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [text2img-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2img_bot-0.1.2-py3-none-any.whl.zip tmp/text2img_bot-0.2.0-py3-none-any.whl.zip --markdown 20240428/t/text2img-bot/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.2124-py3-none-any.whl.zip tmp/flet_contrib_core-2024.4.27.2220-py3-none-any.whl.zip --markdown 20240428/f/flet-contrib-core/2024.4.27.2124-2024.4.27.2220/README.md --exclude *.pyd
+[2024-04-28 00:20:30] INFO root fetch - processPackages [gitlab-projects-settings]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_settings-1.1.0.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - processPackages [gitlab-projects-settings]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_settings-2.0.0.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - main [MainThread]: End processing [gitlab-projects-settings]: success
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.1759.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 00:20:30] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed]: success
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.1759.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 00:20:30] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.1759.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 00:20:30] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-28 00:20:30] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.0.1.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.0.tar.gz]
+[2024-04-28 00:20:30] INFO root fetch - main [MainThread]: End processing [protokolo]: success
+[2024-04-28 00:20:31] INFO root fetch - processPackages [text2img-bot]: Remove: archive file [/home/abi/fetcher/tmp/text2img_bot-0.1.2-py3-none-any.whl.zip]
+[2024-04-28 00:20:31] INFO root fetch - processPackages [text2img-bot]: Remove: archive file [/home/abi/fetcher/tmp/text2img_bot-0.2.0-py3-none-any.whl.zip]
+[2024-04-28 00:20:31] INFO root fetch - main [MainThread]: End processing [text2img-bot]: success
+[2024-04-28 00:20:31] INFO root fetch - processPackages [whisper.cpp-cli]: Remove: archive file [/home/abi/fetcher/tmp/whisper_cpp_cli-0.0.1.tar.gz]
+[2024-04-28 00:20:31] INFO root fetch - processPackages [whisper.cpp-cli]: Remove: archive file [/home/abi/fetcher/tmp/whisper_cpp_cli-0.0.1a0.tar.gz]
+[2024-04-28 00:20:31] INFO root fetch - main [MainThread]: End processing [whisper.cpp-cli]: success
+[2024-04-28 00:20:31] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 00:20:31] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2220-py3-none-any.whl.zip]
+[2024-04-28 00:20:31] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-28 00:20:31] INFO root fetch - main [MainThread]: Store serial: [22962365]
