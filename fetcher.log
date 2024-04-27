@@ -535,3 +535,15 @@
 [2024-04-28 00:42:10] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.6.4.tar.gz]
 [2024-04-28 00:42:10] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
 [2024-04-28 00:42:10] INFO root fetch - main [MainThread]: Store serial: [22962485]
+[2024-04-28 00:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962485]
+[2024-04-28 00:44:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 00:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neohubapi
+[2024-04-28 00:44:19] INFO root fetch - processPackages [neohubapi]: New version: [2.1] Old Version: [2.0]
+[2024-04-28 00:44:19] INFO root fetch - processPackages [neohubapi]: Downloading https://files.pythonhosted.org/packages/ab/b1/980ed5164265776f0c3c8f74c2a1e0c31c11d43331b34eeb7bef45318a58/neohubapi-2.0.tar.gz
+[2024-04-28 00:44:19] INFO root fetch - processPackages [neohubapi]: Downloading https://files.pythonhosted.org/packages/06/a0/26c4b304b43fd1e1571ee8aa25bbc70e473ace1b4b29e162d210fc23f87d/neohubapi-2.1.tar.gz
+[2024-04-28 00:44:19] INFO root fetch - processPackages [neohubapi]: executing diffoscope
+[2024-04-28 00:44:19] INFO root fetch - processPackages [neohubapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neohubapi-2.0.tar.gz tmp/neohubapi-2.1.tar.gz --markdown 20240428/n/neohubapi/2.0-2.1/README.md --exclude *.pyd
+[2024-04-28 00:44:20] INFO root fetch - processPackages [neohubapi]: Remove: archive file [/home/abi/fetcher/tmp/neohubapi-2.0.tar.gz]
+[2024-04-28 00:44:20] INFO root fetch - processPackages [neohubapi]: Remove: archive file [/home/abi/fetcher/tmp/neohubapi-2.1.tar.gz]
+[2024-04-28 00:44:20] INFO root fetch - main [MainThread]: End processing [neohubapi]: success
+[2024-04-28 00:44:20] INFO root fetch - main [MainThread]: Store serial: [22962488]
