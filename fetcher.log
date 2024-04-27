@@ -457,3 +457,18 @@
 [2024-04-28 00:35:38] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.5.0.tar.gz]
 [2024-04-28 00:35:38] INFO root fetch - main [MainThread]: End processing [oresat-configs]: success
 [2024-04-28 00:35:38] INFO root fetch - main [MainThread]: Store serial: [22962456]
+[2024-04-28 00:37:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962456]
+[2024-04-28 00:37:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 00:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trysts
+[2024-04-28 00:37:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mira-omf
+[2024-04-28 00:37:46] WARNING root fetch - processPackages [trysts]: Skipping, unable to determine old version
+[2024-04-28 00:37:46] INFO root fetch - main [MainThread]: End processing [trysts] error
+[2024-04-28 00:37:46] INFO root fetch - processPackages [mira-omf]: New version: [3.2.0rc1] Old Version: [3.2.0a1]
+[2024-04-28 00:37:46] INFO root fetch - processPackages [mira-omf]: Downloading https://files.pythonhosted.org/packages/d2/2a/654e14c9a4a64fa8791b5edf8dd6d9a9109f1985e60d6d8d9c37140f34ff/mira_omf-3.2.0a1.tar.gz
+[2024-04-28 00:37:47] INFO root fetch - processPackages [mira-omf]: Downloading https://files.pythonhosted.org/packages/62/6b/e70e33b499a801ea611e4ac5c8d94b5c124ac9522817fbd4e99a9e0ff155/mira_omf-3.2.0rc1.tar.gz
+[2024-04-28 00:37:47] INFO root fetch - processPackages [mira-omf]: executing diffoscope
+[2024-04-28 00:37:47] INFO root fetch - processPackages [mira-omf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mira_omf-3.2.0a1.tar.gz tmp/mira_omf-3.2.0rc1.tar.gz --markdown 20240428/m/mira-omf/3.2.0a1-3.2.0rc1/README.md --exclude *.pyd
+[2024-04-28 00:37:48] INFO root fetch - processPackages [mira-omf]: Remove: archive file [/home/abi/fetcher/tmp/mira_omf-3.2.0a1.tar.gz]
+[2024-04-28 00:37:48] INFO root fetch - processPackages [mira-omf]: Remove: archive file [/home/abi/fetcher/tmp/mira_omf-3.2.0rc1.tar.gz]
+[2024-04-28 00:37:48] INFO root fetch - main [MainThread]: End processing [mira-omf]: success
+[2024-04-28 00:37:48] INFO root fetch - main [MainThread]: Store serial: [22962464]
