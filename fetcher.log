@@ -367,3 +367,42 @@
 [2024-04-28 00:27:02] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.1.tar.gz]
 [2024-04-28 00:27:02] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-28 00:27:02] INFO root fetch - main [MainThread]: Store serial: [22962407]
+[2024-04-28 00:29:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962407]
+[2024-04-28 00:29:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 00:31:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962407]
+[2024-04-28 00:31:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 00:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tracts
+[2024-04-28 00:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: variable-local
+[2024-04-28 00:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tracts
+[2024-04-28 00:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inmanta-module-podman
+[2024-04-28 00:31:16] INFO root fetch - processPackages [tracts]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 00:31:16] INFO root fetch - processPackages [tracts]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 00:31:16] INFO root fetch - processPackages [inmanta-module-podman]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-28 00:31:16] INFO root fetch - processPackages [variable-local]: New version: [0.0.93] Old Version: [0.0.92]
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: Downloading https://files.pythonhosted.org/packages/52/fa/c9a483a36acb98edf0bfa068e099614d77b42e194d81164d5ba036b925d5/tracts-0.0.1.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: Downloading https://files.pythonhosted.org/packages/52/fa/c9a483a36acb98edf0bfa068e099614d77b42e194d81164d5ba036b925d5/tracts-0.0.1.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/dd/df/3aeda44bc009bd375024d57f9b95cb0bcba3e56ca53eb7671c608ba1feb8/variable_local-0.0.92.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [inmanta-module-podman]: Downloading https://files.pythonhosted.org/packages/68/2a/7957341f9ba65ab5802297644284c5b9c0d11beb912e45a346ff20921d43/inmanta_module_podman-0.3.1-py3-none-any.whl
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: Downloading https://files.pythonhosted.org/packages/b5/0c/fc3280659bd9c0e84097258c6d3665966702cf135d4cfb6889cca1c56813/tracts-0.0.2.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/fe/21/a9528a3f348d982e06b7d730a552d039f0be80eb661d55326ef78bfa1e50/variable_local-0.0.93.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: Downloading https://files.pythonhosted.org/packages/b5/0c/fc3280659bd9c0e84097258c6d3665966702cf135d4cfb6889cca1c56813/tracts-0.0.2.tar.gz
+[2024-04-28 00:31:17] INFO root fetch - processPackages [inmanta-module-podman]: Downloading https://files.pythonhosted.org/packages/08/7c/b2441aa60d373f18c31f409253741c694e13691d6c49018f868de4739cf6/inmanta_module_podman-0.4.0-py3-none-any.whl
+[2024-04-28 00:31:17] INFO root fetch - processPackages [variable-local]: executing diffoscope
+[2024-04-28 00:31:17] INFO root fetch - processPackages [variable-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variable_local-0.0.92.tar.gz tmp/variable_local-0.0.93.tar.gz --markdown 20240428/v/variable-local/0.0.92-0.0.93/README.md --exclude *.pyd
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: executing diffoscope
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: executing diffoscope
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracts-0.0.1.tar.gz tmp/tracts-0.0.2.tar.gz --markdown 20240428/t/tracts/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 00:31:17] INFO root fetch - processPackages [tracts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracts-0.0.1.tar.gz tmp/tracts-0.0.2.tar.gz --markdown 20240428/t/tracts/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 00:31:17] INFO root fetch - processPackages [inmanta-module-podman]: executing diffoscope
+[2024-04-28 00:31:17] INFO root fetch - processPackages [inmanta-module-podman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_podman-0.3.1-py3-none-any.whl.zip tmp/inmanta_module_podman-0.4.0-py3-none-any.whl.zip --markdown 20240428/i/inmanta-module-podman/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-28 00:31:18] INFO root fetch - processPackages [tracts]: Remove: archive file [/home/abi/fetcher/tmp/tracts-0.0.1.tar.gz]
+[2024-04-28 00:31:18] INFO root fetch - processPackages [tracts]: Remove: archive file [/home/abi/fetcher/tmp/tracts-0.0.2.tar.gz]
+[2024-04-28 00:31:18] INFO root fetch - main [MainThread]: End processing [tracts]: success
+[2024-04-28 00:31:18] INFO root fetch - main [MainThread]: End processing [tracts]: success
+[2024-04-28 00:31:18] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.92.tar.gz]
+[2024-04-28 00:31:18] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.93.tar.gz]
+[2024-04-28 00:31:18] INFO root fetch - main [MainThread]: End processing [variable-local]: success
+[2024-04-28 00:31:18] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.3.1-py3-none-any.whl.zip]
+[2024-04-28 00:31:18] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.4.0-py3-none-any.whl.zip]
+[2024-04-28 00:31:18] INFO root fetch - main [MainThread]: End processing [inmanta-module-podman]: success
+[2024-04-28 00:31:18] INFO root fetch - main [MainThread]: Store serial: [22962420]
