@@ -657,3 +657,33 @@
 [2024-04-28 00:52:59] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.1.tar.gz]
 [2024-04-28 00:52:59] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-28 00:52:59] INFO root fetch - main [MainThread]: Store serial: [22962526]
+[2024-04-28 00:55:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962526]
+[2024-04-28 00:55:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cff2toml
+[2024-04-28 00:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tebbytools
+[2024-04-28 00:55:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: citation-crawler
+[2024-04-28 00:55:08] INFO root fetch - processPackages [tebbytools]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-28 00:55:08] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/ff/59/b1d2e20648850ab9d92e5874e2e61243b29eeb6b82d6f76b49e57352b766/tebbytools-0.3.1.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [cff2toml]: New version: [3.2.2] Old Version: [3.2.1]
+[2024-04-28 00:55:08] INFO root fetch - processPackages [citation-crawler]: New version: [2.9.4.1] Old Version: [2.9.4]
+[2024-04-28 00:55:08] INFO root fetch - processPackages [cff2toml]: Downloading https://files.pythonhosted.org/packages/e1/33/17ef093dee95a89f1cdd2ecc4c8fe1d14342e103afa0bf8097493465bb52/cff2toml-3.2.1.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/09/28/e9c332535e9ac1e434981cacd6ba971fed57493fbd7184754209a4433432/citation_crawler-2.9.4.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/cd/b9/bc313c16086202b33a64e1f6930ace664a3913d6877688e93b698f75a97d/tebbytools-0.3.2.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [tebbytools]: executing diffoscope
+[2024-04-28 00:55:08] INFO root fetch - processPackages [tebbytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tebbytools-0.3.1.tar.gz tmp/tebbytools-0.3.2.tar.gz --markdown 20240428/t/tebbytools/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-28 00:55:08] INFO root fetch - processPackages [cff2toml]: Downloading https://files.pythonhosted.org/packages/8a/a0/a13756307aa742c998c3f57f7368379e9e64982b2ddd64ca525235d30ce5/cff2toml-3.2.2.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/2d/c0/b48e0686fa42d3b88f9792e1581cbd106effcab3b284b4150c66b8803a91/citation_crawler-2.9.4.1.tar.gz
+[2024-04-28 00:55:08] INFO root fetch - processPackages [citation-crawler]: executing diffoscope
+[2024-04-28 00:55:08] INFO root fetch - processPackages [citation-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citation_crawler-2.9.4.tar.gz tmp/citation_crawler-2.9.4.1.tar.gz --markdown 20240428/c/citation-crawler/2.9.4-2.9.4.1/README.md --exclude *.pyd
+[2024-04-28 00:55:08] INFO root fetch - processPackages [cff2toml]: executing diffoscope
+[2024-04-28 00:55:08] INFO root fetch - processPackages [cff2toml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cff2toml-3.2.1.tar.gz tmp/cff2toml-3.2.2.tar.gz --markdown 20240428/c/cff2toml/3.2.1-3.2.2/README.md --exclude *.pyd
+[2024-04-28 00:55:09] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.3.1.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.3.2.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - main [MainThread]: End processing [tebbytools]: success
+[2024-04-28 00:55:09] INFO root fetch - processPackages [cff2toml]: Remove: archive file [/home/abi/fetcher/tmp/cff2toml-3.2.1.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - processPackages [cff2toml]: Remove: archive file [/home/abi/fetcher/tmp/cff2toml-3.2.2.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - main [MainThread]: End processing [cff2toml]: success
+[2024-04-28 00:55:09] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.9.4.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.9.4.1.tar.gz]
+[2024-04-28 00:55:09] INFO root fetch - main [MainThread]: End processing [citation-crawler]: success
+[2024-04-28 00:55:09] INFO root fetch - main [MainThread]: Store serial: [22962536]
