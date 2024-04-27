@@ -1278,3 +1278,24 @@
 [2024-04-28 01:53:39] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
 [2024-04-28 01:53:39] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
 [2024-04-28 01:53:39] INFO root fetch - main [MainThread]: Store serial: [22962769]
+[2024-04-28 01:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962769]
+[2024-04-28 01:55:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 01:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mecode-viewer
+[2024-04-28 01:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ubo-gui
+[2024-04-28 01:55:48] INFO root fetch - processPackages [mecode-viewer]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 01:55:48] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/bf/ea/bd6a698228b6bde9892be93208113bbada51eff34b3c0706f776444f94e0/mecode_viewer-0.3.8.tar.gz
+[2024-04-28 01:55:48] INFO root fetch - processPackages [ubo-gui]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-28 01:55:48] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/43/39/a0fdd296e65a33f0a7fd448c436efeac4611c0e6544732e75f97ecc2a24b/mecode_viewer-0.3.9.tar.gz
+[2024-04-28 01:55:48] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/52/ff/3d11671b088eea21a50272125230db635fc5cebc64b0112631f2264aa075/ubo_gui-0.9.8.tar.gz
+[2024-04-28 01:55:48] INFO root fetch - processPackages [mecode-viewer]: executing diffoscope
+[2024-04-28 01:55:48] INFO root fetch - processPackages [mecode-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecode_viewer-0.3.8.tar.gz tmp/mecode_viewer-0.3.9.tar.gz --markdown 20240428/m/mecode-viewer/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 01:55:49] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.8.tar.gz]
+[2024-04-28 01:55:49] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.9.tar.gz]
+[2024-04-28 01:55:49] INFO root fetch - main [MainThread]: End processing [mecode-viewer]: success
+[2024-04-28 01:55:50] INFO root fetch - processPackages [ubo-gui]: Downloading https://files.pythonhosted.org/packages/49/be/d5e94619625fa02651110d759ce75c827dbed83a0a373d6609eabcdde8af/ubo_gui-0.9.9.tar.gz
+[2024-04-28 01:55:51] INFO root fetch - processPackages [ubo-gui]: executing diffoscope
+[2024-04-28 01:55:51] INFO root fetch - processPackages [ubo-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_gui-0.9.8.tar.gz tmp/ubo_gui-0.9.9.tar.gz --markdown 20240428/u/ubo-gui/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-28 01:55:52] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.8.tar.gz]
+[2024-04-28 01:55:52] INFO root fetch - processPackages [ubo-gui]: Remove: archive file [/home/abi/fetcher/tmp/ubo_gui-0.9.9.tar.gz]
+[2024-04-28 01:55:52] INFO root fetch - main [MainThread]: End processing [ubo-gui]: success
+[2024-04-28 01:55:52] INFO root fetch - main [MainThread]: Store serial: [22962775]
