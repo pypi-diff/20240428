@@ -298,3 +298,33 @@
 [2024-04-28 00:22:41] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.5.0.tar.gz]
 [2024-04-28 00:22:41] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
 [2024-04-28 00:22:41] INFO root fetch - main [MainThread]: Store serial: [22962383]
+[2024-04-28 00:24:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962383]
+[2024-04-28 00:24:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:24:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shazamio
+[2024-04-28 00:24:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lusid-express
+[2024-04-28 00:24:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: srt-to-vtt
+[2024-04-28 00:24:50] INFO root fetch - processPackages [srt-to-vtt]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-28 00:24:50] INFO root fetch - processPackages [lusid-express]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-28 00:24:50] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/51/63/41958646b4365c67e8c18be3b14eb542d6491c455b5f7cf3154bb6e3d209/srt_to_vtt-1.1.0.tar.gz
+[2024-04-28 00:24:50] INFO root fetch - processPackages [shazamio]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-28 00:24:50] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/68/2f/eef08e5a386038cd3f5e450035dee24a81ef77002c392abfedee022adaa0/lusid_express-1.0.7.tar.gz
+[2024-04-28 00:24:50] INFO root fetch - processPackages [shazamio]: Downloading https://files.pythonhosted.org/packages/e4/d2/aafa1edc1a81a40e75bf2aeb689652f454194b444ef4d76a41382f47a468/shazamio-0.5.1.tar.gz
+[2024-04-28 00:24:51] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/c8/88/1b46d22696d2058de9d2d48ab555c81263e6e5b335ccbf4a0effc0df661d/srt_to_vtt-1.2.0.tar.gz
+[2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/57/fd/df04110035324de1dfb0f43ab3341c2101f24f37586e2350c50612ba36f8/lusid_express-1.0.8.tar.gz
+[2024-04-28 00:24:51] INFO root fetch - processPackages [srt-to-vtt]: executing diffoscope
+[2024-04-28 00:24:51] INFO root fetch - processPackages [srt-to-vtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srt_to_vtt-1.1.0.tar.gz tmp/srt_to_vtt-1.2.0.tar.gz --markdown 20240428/s/srt-to-vtt/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-28 00:24:51] INFO root fetch - processPackages [shazamio]: Downloading https://files.pythonhosted.org/packages/42/80/74bfd3f70770414b6000049c0451571e389b82dd50d5024271321ce34321/shazamio-0.6.0.tar.gz
+[2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: executing diffoscope
+[2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_express-1.0.7.tar.gz tmp/lusid_express-1.0.8.tar.gz --markdown 20240428/l/lusid-express/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-28 00:24:51] INFO root fetch - processPackages [shazamio]: executing diffoscope
+[2024-04-28 00:24:51] INFO root fetch - processPackages [shazamio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shazamio-0.5.1.tar.gz tmp/shazamio-0.6.0.tar.gz --markdown 20240428/s/shazamio/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-28 00:24:51] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.1.0.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.2.0.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - main [MainThread]: End processing [srt-to-vtt]: success
+[2024-04-28 00:24:51] INFO root fetch - processPackages [shazamio]: Remove: archive file [/home/abi/fetcher/tmp/shazamio-0.5.1.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - processPackages [shazamio]: Remove: archive file [/home/abi/fetcher/tmp/shazamio-0.6.0.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - main [MainThread]: End processing [shazamio]: success
+[2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.7.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.8.tar.gz]
+[2024-04-28 00:24:51] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
+[2024-04-28 00:24:51] INFO root fetch - main [MainThread]: Store serial: [22962393]
