@@ -1239,3 +1239,42 @@
 [2024-04-28 01:51:28] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.9.tar.gz]
 [2024-04-28 01:51:28] INFO root fetch - main [MainThread]: End processing [item-matching]: success
 [2024-04-28 01:51:28] INFO root fetch - main [MainThread]: Store serial: [22962760]
+[2024-04-28 01:53:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962760]
+[2024-04-28 01:53:37] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 01:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nokey
+[2024-04-28 01:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fintekkers-ledger-models
+[2024-04-28 01:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hexdoc
+[2024-04-28 01:53:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mecode-viewer
+[2024-04-28 01:53:37] INFO root fetch - processPackages [fintekkers-ledger-models]: New version: [0.1.79] Old Version: [0.1.78]
+[2024-04-28 01:53:37] INFO root fetch - processPackages [mecode-viewer]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 01:53:37] INFO root fetch - processPackages [nokey]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-28 01:53:37] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/17/07/ec47a628c8fc8c09a63bf439cf491245bcd930fe85856fd599cdd35b304e/fintekkers-ledger-models-0.1.78.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/bf/ea/bd6a698228b6bde9892be93208113bbada51eff34b3c0706f776444f94e0/mecode_viewer-0.3.8.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [hexdoc]: New version: [1!0.1.0a9] Old Version: [1!0.1.0a8]
+[2024-04-28 01:53:37] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/21/34/4ef7fc20499cf0a83a295750a27a79e2b13bbb2dbad6f3aee8a6e1ff166a/nokey-0.3.1.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [mecode-viewer]: Downloading https://files.pythonhosted.org/packages/43/39/a0fdd296e65a33f0a7fd448c436efeac4611c0e6544732e75f97ecc2a24b/mecode_viewer-0.3.9.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [fintekkers-ledger-models]: Downloading https://files.pythonhosted.org/packages/28/4d/c24fa4664db4e5912dde3e3124c55f0839bc66109b5c8ea47fb194ec8585/fintekkers-ledger-models-0.1.79.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/41/3c/095a3abe0276460303a7fb44be7549f3b5eeee9ab93e540fe79d34c61915/hexdoc-1!0.1.0a8.tar.gz
+[2024-04-28 01:53:37] INFO root fetch - processPackages [mecode-viewer]: executing diffoscope
+[2024-04-28 01:53:37] INFO root fetch - processPackages [mecode-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecode_viewer-0.3.8.tar.gz tmp/mecode_viewer-0.3.9.tar.gz --markdown 20240428/m/mecode-viewer/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 01:53:37] INFO root fetch - processPackages [fintekkers-ledger-models]: executing diffoscope
+[2024-04-28 01:53:37] INFO root fetch - processPackages [fintekkers-ledger-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fintekkers-ledger-models-0.1.78.tar.gz tmp/fintekkers-ledger-models-0.1.79.tar.gz --markdown 20240428/f/fintekkers-ledger-models/0.1.78-0.1.79/README.md --exclude *.pyd
+[2024-04-28 01:53:37] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/db/e1/a9e368621d5517d78de0f03546b6edc1fbd0f122007c544b7ff05c3464a8/nokey-0.3.2.tar.gz
+[2024-04-28 01:53:38] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-28 01:53:38] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.3.1.tar.gz tmp/nokey-0.3.2.tar.gz --markdown 20240428/n/nokey/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-28 01:53:38] INFO root fetch - processPackages [hexdoc]: Downloading https://files.pythonhosted.org/packages/cd/f8/77bb4fb48d1590fa4afd9345e60063d3975f2401318af826181c3435d518/hexdoc-1!0.1.0a9.tar.gz
+[2024-04-28 01:53:38] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.8.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - processPackages [mecode-viewer]: Remove: archive file [/home/abi/fetcher/tmp/mecode_viewer-0.3.9.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - main [MainThread]: End processing [mecode-viewer]: success
+[2024-04-28 01:53:38] INFO root fetch - processPackages [hexdoc]: executing diffoscope
+[2024-04-28 01:53:38] INFO root fetch - processPackages [hexdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc-1!0.1.0a8.tar.gz tmp/hexdoc-1!0.1.0a9.tar.gz --markdown 20240428/h/hexdoc/1!0.1.0a8-1!0.1.0a9/README.md --exclude *.pyd
+[2024-04-28 01:53:38] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.1.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.2.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-28 01:53:38] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.78.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - processPackages [fintekkers-ledger-models]: Remove: archive file [/home/abi/fetcher/tmp/fintekkers-ledger-models-0.1.79.tar.gz]
+[2024-04-28 01:53:38] INFO root fetch - main [MainThread]: End processing [fintekkers-ledger-models]: success
+[2024-04-28 01:53:39] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a8.tar.gz]
+[2024-04-28 01:53:39] INFO root fetch - processPackages [hexdoc]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc-1!0.1.0a9.tar.gz]
+[2024-04-28 01:53:39] INFO root fetch - main [MainThread]: End processing [hexdoc]: success
+[2024-04-28 01:53:39] INFO root fetch - main [MainThread]: Store serial: [22962769]
