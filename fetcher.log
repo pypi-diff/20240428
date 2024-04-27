@@ -1166,3 +1166,18 @@
 [2024-04-28 01:40:46] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
 [2024-04-28 01:40:46] INFO root fetch - main [MainThread]: End processing [local-lang]: success
 [2024-04-28 01:40:46] INFO root fetch - main [MainThread]: Store serial: [22962731]
+[2024-04-28 01:42:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962731]
+[2024-04-28 01:42:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Antorum
+[2024-04-28 01:42:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lotgi
+[2024-04-28 01:42:54] INFO root fetch - processPackages [lotgi]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-28 01:42:54] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/40/a1/1c6deb9119e7390270430f3fc7192f5f2fed891468cad3957e4e4d0c84d8/lotgi-0.0.0.tar.gz
+[2024-04-28 01:42:54] WARNING root fetch - processPackages [Antorum]: Skipping, unable to determine old version
+[2024-04-28 01:42:54] INFO root fetch - main [MainThread]: End processing [Antorum] error
+[2024-04-28 01:42:54] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/c4/94/c95a041fc15aa4b65e8f6a2b27fc026ddbb664e48005e0601e0f9455c89d/lotgi-0.0.1.tar.gz
+[2024-04-28 01:42:54] INFO root fetch - processPackages [lotgi]: executing diffoscope
+[2024-04-28 01:42:54] INFO root fetch - processPackages [lotgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lotgi-0.0.0.tar.gz tmp/lotgi-0.0.1.tar.gz --markdown 20240428/l/lotgi/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-28 01:42:55] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.0.tar.gz]
+[2024-04-28 01:42:55] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.1.tar.gz]
+[2024-04-28 01:42:55] INFO root fetch - main [MainThread]: End processing [lotgi]: success
+[2024-04-28 01:42:55] INFO root fetch - main [MainThread]: Store serial: [22962740]
