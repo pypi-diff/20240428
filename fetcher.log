@@ -502,3 +502,36 @@
 [2024-04-28 00:39:59] INFO root fetch - processPackages [hvac]: Remove: archive file [/home/abi/fetcher/tmp/hvac-2.2.0.tar.gz]
 [2024-04-28 00:39:59] INFO root fetch - main [MainThread]: End processing [hvac]: success
 [2024-04-28 00:39:59] INFO root fetch - main [MainThread]: Store serial: [22962471]
+[2024-04-28 00:42:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962471]
+[2024-04-28 00:42:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 00:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tebbytools
+[2024-04-28 00:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyramid_openapi3
+[2024-04-28 00:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lotgi
+[2024-04-28 00:42:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zettel-org
+[2024-04-28 00:42:08] INFO root fetch - processPackages [tebbytools]: New version: [0.3.1] Old Version: [0.2.4]
+[2024-04-28 00:42:08] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/51/dc/f1a3fb60560e494a271d695cf3aad038cfd6463ff2a904ab474bb64d1837/tebbytools-0.2.4.tar.gz
+[2024-04-28 00:42:08] WARNING root fetch - processPackages [lotgi]: Skipping, unable to determine old version
+[2024-04-28 00:42:08] INFO root fetch - main [MainThread]: End processing [lotgi] error
+[2024-04-28 00:42:08] INFO root fetch - processPackages [zettel-org]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-04-28 00:42:08] INFO root fetch - processPackages [pyramid_openapi3]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-28 00:42:08] INFO root fetch - processPackages [pyramid_openapi3]: Downloading https://files.pythonhosted.org/packages/74/fc/d3aa599c9cccc2dff578cedc79087b9efe152bd9fcf39af334cd90b44bd7/pyramid_openapi3-0.8.3.tar.gz
+[2024-04-28 00:42:08] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/ff/59/b1d2e20648850ab9d92e5874e2e61243b29eeb6b82d6f76b49e57352b766/tebbytools-0.3.1.tar.gz
+[2024-04-28 00:42:08] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/87/d4/734ae60894ce73ab23ce1fd93e04d01e0c7cc037301a66a3b98d443f85e6/zettel_org-0.6.3.tar.gz
+[2024-04-28 00:42:08] INFO root fetch - processPackages [tebbytools]: executing diffoscope
+[2024-04-28 00:42:08] INFO root fetch - processPackages [tebbytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tebbytools-0.2.4.tar.gz tmp/tebbytools-0.3.1.tar.gz --markdown 20240428/t/tebbytools/0.2.4-0.3.1/README.md --exclude *.pyd
+[2024-04-28 00:42:09] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/8b/da/c4884dbcc49187acefb6d1c3788415fbf8ac0f2c82786b3334558e99c7ee/zettel_org-0.6.4.tar.gz
+[2024-04-28 00:42:09] INFO root fetch - processPackages [pyramid_openapi3]: Downloading https://files.pythonhosted.org/packages/c3/76/f6045e7800566fcae7f31551b6ef091cabf34a8db910e37110b5d46a33a4/pyramid_openapi3-0.9.0.tar.gz
+[2024-04-28 00:42:09] INFO root fetch - processPackages [zettel-org]: executing diffoscope
+[2024-04-28 00:42:09] INFO root fetch - processPackages [zettel-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zettel_org-0.6.3.tar.gz tmp/zettel_org-0.6.4.tar.gz --markdown 20240428/z/zettel-org/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-04-28 00:42:09] INFO root fetch - processPackages [pyramid_openapi3]: executing diffoscope
+[2024-04-28 00:42:09] INFO root fetch - processPackages [pyramid_openapi3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyramid_openapi3-0.8.3.tar.gz tmp/pyramid_openapi3-0.9.0.tar.gz --markdown 20240428/p/pyramid_openapi3/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-04-28 00:42:09] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.2.4.tar.gz]
+[2024-04-28 00:42:09] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.3.1.tar.gz]
+[2024-04-28 00:42:09] INFO root fetch - main [MainThread]: End processing [tebbytools]: success
+[2024-04-28 00:42:10] INFO root fetch - processPackages [pyramid_openapi3]: Remove: archive file [/home/abi/fetcher/tmp/pyramid_openapi3-0.8.3.tar.gz]
+[2024-04-28 00:42:10] INFO root fetch - processPackages [pyramid_openapi3]: Remove: archive file [/home/abi/fetcher/tmp/pyramid_openapi3-0.9.0.tar.gz]
+[2024-04-28 00:42:10] INFO root fetch - main [MainThread]: End processing [pyramid_openapi3]: success
+[2024-04-28 00:42:10] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.6.3.tar.gz]
+[2024-04-28 00:42:10] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.6.4.tar.gz]
+[2024-04-28 00:42:10] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
+[2024-04-28 00:42:10] INFO root fetch - main [MainThread]: Store serial: [22962485]
