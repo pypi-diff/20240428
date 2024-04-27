@@ -845,3 +845,15 @@
 [2024-04-28 01:06:02] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2303.tar.gz]
 [2024-04-28 01:06:02] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
 [2024-04-28 01:06:02] INFO root fetch - main [MainThread]: Store serial: [22962627]
+[2024-04-28 01:08:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962627]
+[2024-04-28 01:08:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 01:08:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: r0c
+[2024-04-28 01:08:12] INFO root fetch - processPackages [r0c]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-28 01:08:12] INFO root fetch - processPackages [r0c]: Downloading https://files.pythonhosted.org/packages/d8/33/89333cfaa5dd6e758ab2c4aa3b39439226d90142d6cf2197086f93d5801b/r0c-1.6.0.tar.gz
+[2024-04-28 01:08:12] INFO root fetch - processPackages [r0c]: Downloading https://files.pythonhosted.org/packages/3c/09/ecf91aa324e6b95268a8c5a5d871528b373f951f5d8b839a710b3b92099b/r0c-1.6.1.tar.gz
+[2024-04-28 01:08:13] INFO root fetch - processPackages [r0c]: executing diffoscope
+[2024-04-28 01:08:13] INFO root fetch - processPackages [r0c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/r0c-1.6.0.tar.gz tmp/r0c-1.6.1.tar.gz --markdown 20240428/r/r0c/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-28 01:08:13] INFO root fetch - processPackages [r0c]: Remove: archive file [/home/abi/fetcher/tmp/r0c-1.6.0.tar.gz]
+[2024-04-28 01:08:13] INFO root fetch - processPackages [r0c]: Remove: archive file [/home/abi/fetcher/tmp/r0c-1.6.1.tar.gz]
+[2024-04-28 01:08:13] INFO root fetch - main [MainThread]: End processing [r0c]: success
+[2024-04-28 01:08:13] INFO root fetch - main [MainThread]: Store serial: [22962630]
