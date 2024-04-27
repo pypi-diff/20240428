@@ -94,3 +94,18 @@
 [2024-04-28 00:07:28] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.9.tar.gz]
 [2024-04-28 00:07:28] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
 [2024-04-28 00:07:28] INFO root fetch - main [MainThread]: Store serial: [22962306]
+[2024-04-28 00:09:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962306]
+[2024-04-28 00:09:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 00:09:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dspy-ai-hmoazam
+[2024-04-28 00:09:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysparkify
+[2024-04-28 00:09:37] INFO root fetch - processPackages [pysparkify]: New version: [0.24.0] Old Version: [0.23]
+[2024-04-28 00:09:37] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/3a/e6/11788f3811c478b2ec5949a00f19c2d453a98e91f767227fe35d8f019a40/pysparkify-0.23.tar.gz
+[2024-04-28 00:09:37] WARNING root fetch - processPackages [dspy-ai-hmoazam]: Skipping, unable to determine old version
+[2024-04-28 00:09:37] INFO root fetch - main [MainThread]: End processing [dspy-ai-hmoazam] error
+[2024-04-28 00:09:37] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/a8/30/e843177ed621bb4a2176b1b120b8041194771ccd3e2fbbf95975451225c9/pysparkify-0.24.0.tar.gz
+[2024-04-28 00:09:37] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-04-28 00:09:37] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.23.tar.gz tmp/pysparkify-0.24.0.tar.gz --markdown 20240428/p/pysparkify/0.23-0.24.0/README.md --exclude *.pyd
+[2024-04-28 00:09:38] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.23.tar.gz]
+[2024-04-28 00:09:38] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.24.0.tar.gz]
+[2024-04-28 00:09:38] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-04-28 00:09:38] INFO root fetch - main [MainThread]: Store serial: [22962314]
