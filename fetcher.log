@@ -589,3 +589,15 @@
 [2024-04-28 00:46:30] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.7.8.tar.gz]
 [2024-04-28 00:46:30] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
 [2024-04-28 00:46:30] INFO root fetch - main [MainThread]: Store serial: [22962504]
+[2024-04-28 00:48:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962504]
+[2024-04-28 00:48:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 00:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srt-to-vtt
+[2024-04-28 00:48:39] INFO root fetch - processPackages [srt-to-vtt]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-28 00:48:39] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/c8/88/1b46d22696d2058de9d2d48ab555c81263e6e5b335ccbf4a0effc0df661d/srt_to_vtt-1.2.0.tar.gz
+[2024-04-28 00:48:39] INFO root fetch - processPackages [srt-to-vtt]: Downloading https://files.pythonhosted.org/packages/12/c6/d0fd037dfd061638ce6c51bfb5f04bd7c3f456893097d753d7513a97db9c/srt_to_vtt-1.2.1.tar.gz
+[2024-04-28 00:48:39] INFO root fetch - processPackages [srt-to-vtt]: executing diffoscope
+[2024-04-28 00:48:39] INFO root fetch - processPackages [srt-to-vtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srt_to_vtt-1.2.0.tar.gz tmp/srt_to_vtt-1.2.1.tar.gz --markdown 20240428/s/srt-to-vtt/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-28 00:48:40] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.2.0.tar.gz]
+[2024-04-28 00:48:40] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.2.1.tar.gz]
+[2024-04-28 00:48:40] INFO root fetch - main [MainThread]: End processing [srt-to-vtt]: success
+[2024-04-28 00:48:40] INFO root fetch - main [MainThread]: Store serial: [22962507]
