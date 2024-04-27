@@ -970,3 +970,33 @@
 [2024-04-28 01:19:02] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.9.tar.gz]
 [2024-04-28 01:19:02] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
 [2024-04-28 01:19:02] INFO root fetch - main [MainThread]: Store serial: [22962665]
+[2024-04-28 01:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962665]
+[2024-04-28 01:21:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 01:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wolta
+[2024-04-28 01:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gcp-pal
+[2024-04-28 01:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quantiphy
+[2024-04-28 01:21:12] INFO root fetch - processPackages [gcp-pal]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-28 01:21:12] INFO root fetch - processPackages [quantiphy]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-28 01:21:12] INFO root fetch - processPackages [wolta]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-28 01:21:12] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/68/c2/6add7316a2f3f14decbe28f8d605a564789210784c8f233e45f64332edf2/wolta-0.1.9.tar.gz
+[2024-04-28 01:21:12] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/f1/0e/69322baba0fdc5da3fc0e4ea2a8b2596886dbd9de56e12577854d223d22f/gcp_pal-1.0.3.tar.gz
+[2024-04-28 01:21:12] INFO root fetch - processPackages [quantiphy]: Downloading https://files.pythonhosted.org/packages/df/aa/e689f90a1145b857138ac9afb4aa18f959f4b13cbba854e5682011617fff/quantiphy-2.8.0.tar.gz
+[2024-04-28 01:21:12] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/6a/6d/6b0daa6525fd353cbcc6000e75fad8b2ea3492f884c043613aea7db39daf/gcp_pal-1.0.4.tar.gz
+[2024-04-28 01:21:13] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/92/df/e53a1e2239e6516797b5344d42b55d92b1637dbb897e76f4d0c51bba587f/wolta-0.2.0.tar.gz
+[2024-04-28 01:21:13] INFO root fetch - processPackages [gcp-pal]: executing diffoscope
+[2024-04-28 01:21:13] INFO root fetch - processPackages [gcp-pal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pal-1.0.3.tar.gz tmp/gcp_pal-1.0.4.tar.gz --markdown 20240428/g/gcp-pal/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-28 01:21:13] INFO root fetch - processPackages [wolta]: executing diffoscope
+[2024-04-28 01:21:13] INFO root fetch - processPackages [wolta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolta-0.1.9.tar.gz tmp/wolta-0.2.0.tar.gz --markdown 20240428/w/wolta/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-28 01:21:13] INFO root fetch - processPackages [quantiphy]: Downloading https://files.pythonhosted.org/packages/23/c1/e865e28a731de8678625ed1df9593d2c614111756c39e97c6d983f62f4a3/quantiphy-2.9.0.tar.gz
+[2024-04-28 01:21:13] INFO root fetch - processPackages [quantiphy]: executing diffoscope
+[2024-04-28 01:21:13] INFO root fetch - processPackages [quantiphy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantiphy-2.8.0.tar.gz tmp/quantiphy-2.9.0.tar.gz --markdown 20240428/q/quantiphy/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-28 01:21:13] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-1.0.3.tar.gz]
+[2024-04-28 01:21:13] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-1.0.4.tar.gz]
+[2024-04-28 01:21:13] INFO root fetch - main [MainThread]: End processing [gcp-pal]: success
+[2024-04-28 01:21:13] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.1.9.tar.gz]
+[2024-04-28 01:21:13] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.2.0.tar.gz]
+[2024-04-28 01:21:13] INFO root fetch - main [MainThread]: End processing [wolta]: success
+[2024-04-28 01:21:14] INFO root fetch - processPackages [quantiphy]: Remove: archive file [/home/abi/fetcher/tmp/quantiphy-2.8.0.tar.gz]
+[2024-04-28 01:21:14] INFO root fetch - processPackages [quantiphy]: Remove: archive file [/home/abi/fetcher/tmp/quantiphy-2.9.0.tar.gz]
+[2024-04-28 01:21:14] INFO root fetch - main [MainThread]: End processing [quantiphy]: success
+[2024-04-28 01:21:14] INFO root fetch - main [MainThread]: Store serial: [22962674]
