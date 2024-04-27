@@ -1021,3 +1021,24 @@
 [2024-04-28 01:23:23] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
 [2024-04-28 01:23:23] INFO root fetch - main [MainThread]: End processing [logger-local]: success
 [2024-04-28 01:23:23] INFO root fetch - main [MainThread]: Store serial: [22962680]
+[2024-04-28 01:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962680]
+[2024-04-28 01:25:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 01:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arrayutilities
+[2024-04-28 01:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wg-utilities
+[2024-04-28 01:25:32] INFO root fetch - processPackages [arrayutilities]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-28 01:25:32] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/bb/73/1983e9082bbb4a3902b025266f33f123ae3e0dd09ab53f0224ed1e1caa2f/arrayutilities-1.0.2.tar.gz
+[2024-04-28 01:25:32] INFO root fetch - processPackages [wg-utilities]: New version: [5.9.0] Old Version: [5.8.4]
+[2024-04-28 01:25:32] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/a2/7f/84a6f7a987704a196fb4a41e13f84850ea59dd73e5749d1f956e99a42c6f/wg_utilities-5.8.4.tar.gz
+[2024-04-28 01:25:33] INFO root fetch - processPackages [arrayutilities]: Downloading https://files.pythonhosted.org/packages/15/0b/dcff67aec79b7d3c13c0b2bd029ab1e908412c01db4353c2bb73a79e6948/arrayutilities-1.0.3.tar.gz
+[2024-04-28 01:25:33] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/23/bc/396a6e7516320d7c839831333bc832b8f2e2fa8cefd2e0dfe566c8a17a44/wg_utilities-5.9.0.tar.gz
+[2024-04-28 01:25:33] INFO root fetch - processPackages [arrayutilities]: executing diffoscope
+[2024-04-28 01:25:33] INFO root fetch - processPackages [arrayutilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrayutilities-1.0.2.tar.gz tmp/arrayutilities-1.0.3.tar.gz --markdown 20240428/a/arrayutilities/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-28 01:25:33] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2024-04-28 01:25:33] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-5.8.4.tar.gz tmp/wg_utilities-5.9.0.tar.gz --markdown 20240428/w/wg-utilities/5.8.4-5.9.0/README.md --exclude *.pyd
+[2024-04-28 01:25:34] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.2.tar.gz]
+[2024-04-28 01:25:34] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.0.3.tar.gz]
+[2024-04-28 01:25:34] INFO root fetch - main [MainThread]: End processing [arrayutilities]: success
+[2024-04-28 01:25:34] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.8.4.tar.gz]
+[2024-04-28 01:25:34] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
+[2024-04-28 01:25:34] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2024-04-28 01:25:34] INFO root fetch - main [MainThread]: Store serial: [22962686]
