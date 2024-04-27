@@ -627,3 +627,33 @@
 [2024-04-28 00:50:50] WARNING root fetch - processPackages [gwemopt]: Skipping package: exceeds size limit 113238077>=10485760
 [2024-04-28 00:50:50] INFO root fetch - main [MainThread]: End processing [gwemopt] error
 [2024-04-28 00:50:50] INFO root fetch - main [MainThread]: Store serial: [22962516]
+[2024-04-28 00:52:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962516]
+[2024-04-28 00:52:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-04-28 00:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: media-manager
+[2024-04-28 00:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: databonsai
+[2024-04-28 00:52:58] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.1] Old Version: [2024.2.0]
+[2024-04-28 00:52:58] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 00:52:58] INFO root fetch - processPackages [databonsai]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-28 00:52:58] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/65/43/a434fb0b34e37eb46a76beb6cbfe764010505a0a927a5da019eca68dd507/blastpipe-2024.2.0.tar.gz
+[2024-04-28 00:52:58] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-28 00:52:58] INFO root fetch - processPackages [databonsai]: Downloading https://files.pythonhosted.org/packages/ae/d6/fbcc972bf3ae4960f15bcba23b46425fe04ec86560f64f05cac5853fbbcd/databonsai-0.6.1.tar.gz
+[2024-04-28 00:52:58] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-28 00:52:58] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/10/bb/14f5719fda79604aa894f0ddeb38a1bf1680c14bac999acdb0da4a2ad6d9/blastpipe-2024.2.1.tar.gz
+[2024-04-28 00:52:58] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-28 00:52:58] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240428/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 00:52:58] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 00:52:58] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.0.tar.gz tmp/blastpipe-2024.2.1.tar.gz --markdown 20240428/b/blastpipe/2024.2.0-2024.2.1/README.md --exclude *.pyd
+[2024-04-28 00:52:59] INFO root fetch - processPackages [databonsai]: Downloading https://files.pythonhosted.org/packages/22/3c/a5df492913dcddf065ebd974c273f5d111b7134109239ac0a3cb6aa9188b/databonsai-0.7.0.tar.gz
+[2024-04-28 00:52:59] INFO root fetch - processPackages [databonsai]: executing diffoscope
+[2024-04-28 00:52:59] INFO root fetch - processPackages [databonsai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databonsai-0.6.1.tar.gz tmp/databonsai-0.7.0.tar.gz --markdown 20240428/d/databonsai/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-28 00:52:59] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-28 00:52:59] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-28 00:52:59] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-28 00:52:59] INFO root fetch - processPackages [databonsai]: Remove: archive file [/home/abi/fetcher/tmp/databonsai-0.6.1.tar.gz]
+[2024-04-28 00:52:59] INFO root fetch - processPackages [databonsai]: Remove: archive file [/home/abi/fetcher/tmp/databonsai-0.7.0.tar.gz]
+[2024-04-28 00:52:59] INFO root fetch - main [MainThread]: End processing [databonsai]: success
+[2024-04-28 00:52:59] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.0.tar.gz]
+[2024-04-28 00:52:59] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.1.tar.gz]
+[2024-04-28 00:52:59] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 00:52:59] INFO root fetch - main [MainThread]: Store serial: [22962526]
