@@ -857,3 +857,24 @@
 [2024-04-28 01:08:13] INFO root fetch - processPackages [r0c]: Remove: archive file [/home/abi/fetcher/tmp/r0c-1.6.1.tar.gz]
 [2024-04-28 01:08:13] INFO root fetch - main [MainThread]: End processing [r0c]: success
 [2024-04-28 01:08:13] INFO root fetch - main [MainThread]: Store serial: [22962630]
+[2024-04-28 01:10:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962630]
+[2024-04-28 01:10:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 01:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-express
+[2024-04-28 01:10:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stravalib
+[2024-04-28 01:10:22] INFO root fetch - processPackages [lusid-express]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 01:10:22] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/57/fd/df04110035324de1dfb0f43ab3341c2101f24f37586e2350c50612ba36f8/lusid_express-1.0.8.tar.gz
+[2024-04-28 01:10:22] INFO root fetch - processPackages [stravalib]: New version: [1.7] Old Version: [1.6]
+[2024-04-28 01:10:22] INFO root fetch - processPackages [stravalib]: Downloading https://files.pythonhosted.org/packages/32/c2/17d3f7afb8e57ff28209ad572bf3a12bc211453b20548a6c9480fc33272d/stravalib-1.6.tar.gz
+[2024-04-28 01:10:22] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/e5/d9/b67b6df5c637ea02bfa103078915752bf380d36f341c9192b58ab4c630d0/lusid_express-1.0.9.tar.gz
+[2024-04-28 01:10:23] INFO root fetch - processPackages [lusid-express]: executing diffoscope
+[2024-04-28 01:10:23] INFO root fetch - processPackages [lusid-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_express-1.0.8.tar.gz tmp/lusid_express-1.0.9.tar.gz --markdown 20240428/l/lusid-express/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 01:10:23] INFO root fetch - processPackages [stravalib]: Downloading https://files.pythonhosted.org/packages/68/34/28a0fabd915cf49bc3d14cc1662cf0bd618090eb220ed068e01633bd3e65/stravalib-1.7.tar.gz
+[2024-04-28 01:10:23] INFO root fetch - processPackages [stravalib]: executing diffoscope
+[2024-04-28 01:10:23] INFO root fetch - processPackages [stravalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stravalib-1.6.tar.gz tmp/stravalib-1.7.tar.gz --markdown 20240428/s/stravalib/1.6-1.7/README.md --exclude *.pyd
+[2024-04-28 01:10:23] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.8.tar.gz]
+[2024-04-28 01:10:23] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.9.tar.gz]
+[2024-04-28 01:10:23] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
+[2024-04-28 01:10:24] INFO root fetch - processPackages [stravalib]: Remove: archive file [/home/abi/fetcher/tmp/stravalib-1.6.tar.gz]
+[2024-04-28 01:10:24] INFO root fetch - processPackages [stravalib]: Remove: archive file [/home/abi/fetcher/tmp/stravalib-1.7.tar.gz]
+[2024-04-28 01:10:24] INFO root fetch - main [MainThread]: End processing [stravalib]: success
+[2024-04-28 01:10:24] INFO root fetch - main [MainThread]: Store serial: [22962635]
