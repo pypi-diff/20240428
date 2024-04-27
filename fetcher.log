@@ -406,3 +406,42 @@
 [2024-04-28 00:31:18] INFO root fetch - processPackages [inmanta-module-podman]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_podman-0.4.0-py3-none-any.whl.zip]
 [2024-04-28 00:31:18] INFO root fetch - main [MainThread]: End processing [inmanta-module-podman]: success
 [2024-04-28 00:31:18] INFO root fetch - main [MainThread]: Store serial: [22962420]
+[2024-04-28 00:33:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962420]
+[2024-04-28 00:33:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 00:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tebbytools
+[2024-04-28 00:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-iubenda
+[2024-04-28 00:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inmanta-module-files
+[2024-04-28 00:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: noseOfYeti
+[2024-04-28 00:33:26] INFO root fetch - processPackages [inmanta-module-files]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-28 00:33:26] INFO root fetch - processPackages [tebbytools]: New version: [0.3.1] Old Version: [0.2.4]
+[2024-04-28 00:33:26] INFO root fetch - processPackages [django-iubenda]: New version: [1.6.4] Old Version: [1.6.0]
+[2024-04-28 00:33:26] INFO root fetch - processPackages [noseOfYeti]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-04-28 00:33:27] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/51/dc/f1a3fb60560e494a271d695cf3aad038cfd6463ff2a904ab474bb64d1837/tebbytools-0.2.4.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [django-iubenda]: Downloading https://files.pythonhosted.org/packages/a1/7b/832e22fd1ba2a036bf9212feb2a5a2cd77ae7400ed918fb219269ebf089c/django_iubenda-1.6.0.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/fb/95/5ad0840ec8bc872d010ac5136db25d798fc6907d433c10bcfd3950b47058/inmanta_module_files-0.2.1-py3-none-any.whl
+[2024-04-28 00:33:27] INFO root fetch - processPackages [noseOfYeti]: Downloading https://files.pythonhosted.org/packages/7c/df/342f5f67ddd8f33ee5042b3f71f98311d9e20e5564ee9c060d3ad3c4322c/noseofyeti-2.4.8.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [tebbytools]: Downloading https://files.pythonhosted.org/packages/ff/59/b1d2e20648850ab9d92e5874e2e61243b29eeb6b82d6f76b49e57352b766/tebbytools-0.3.1.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [inmanta-module-files]: Downloading https://files.pythonhosted.org/packages/bb/89/298add82d4389162ed131e195c1a27e36aae30188aa0ffeadc0519466821/inmanta_module_files-0.3.0-py3-none-any.whl
+[2024-04-28 00:33:27] INFO root fetch - processPackages [noseOfYeti]: Downloading https://files.pythonhosted.org/packages/1a/bd/683696c7c03df1dc94fb47739bfbc96a23f8bfac089dbfebe6c38fcbac67/noseofyeti-2.4.9.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [django-iubenda]: Downloading https://files.pythonhosted.org/packages/d6/28/7ee783333a4daaeaee5ffa4fbcc9b43035da7dfa4c1c8062c801cf37937c/django_iubenda-1.6.4.tar.gz
+[2024-04-28 00:33:27] INFO root fetch - processPackages [tebbytools]: executing diffoscope
+[2024-04-28 00:33:27] INFO root fetch - processPackages [tebbytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tebbytools-0.2.4.tar.gz tmp/tebbytools-0.3.1.tar.gz --markdown 20240428/t/tebbytools/0.2.4-0.3.1/README.md --exclude *.pyd
+[2024-04-28 00:33:27] INFO root fetch - processPackages [inmanta-module-files]: executing diffoscope
+[2024-04-28 00:33:27] INFO root fetch - processPackages [inmanta-module-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta_module_files-0.2.1-py3-none-any.whl.zip tmp/inmanta_module_files-0.3.0-py3-none-any.whl.zip --markdown 20240428/i/inmanta-module-files/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-28 00:33:27] INFO root fetch - processPackages [noseOfYeti]: executing diffoscope
+[2024-04-28 00:33:27] INFO root fetch - processPackages [noseOfYeti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noseofyeti-2.4.8.tar.gz tmp/noseofyeti-2.4.9.tar.gz --markdown 20240428/n/noseOfYeti/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-04-28 00:33:27] INFO root fetch - processPackages [django-iubenda]: executing diffoscope
+[2024-04-28 00:33:27] INFO root fetch - processPackages [django-iubenda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_iubenda-1.6.0.tar.gz tmp/django_iubenda-1.6.4.tar.gz --markdown 20240428/d/django-iubenda/1.6.0-1.6.4/README.md --exclude *.pyd
+[2024-04-28 00:33:28] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.2.4.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - processPackages [tebbytools]: Remove: archive file [/home/abi/fetcher/tmp/tebbytools-0.3.1.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - main [MainThread]: End processing [tebbytools]: success
+[2024-04-28 00:33:28] INFO root fetch - processPackages [noseOfYeti]: Remove: archive file [/home/abi/fetcher/tmp/noseofyeti-2.4.8.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - processPackages [noseOfYeti]: Remove: archive file [/home/abi/fetcher/tmp/noseofyeti-2.4.9.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - main [MainThread]: End processing [noseOfYeti]: success
+[2024-04-28 00:33:28] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.2.1-py3-none-any.whl.zip]
+[2024-04-28 00:33:28] INFO root fetch - processPackages [inmanta-module-files]: Remove: archive file [/home/abi/fetcher/tmp/inmanta_module_files-0.3.0-py3-none-any.whl.zip]
+[2024-04-28 00:33:28] INFO root fetch - main [MainThread]: End processing [inmanta-module-files]: success
+[2024-04-28 00:33:28] INFO root fetch - processPackages [django-iubenda]: Remove: archive file [/home/abi/fetcher/tmp/django_iubenda-1.6.0.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - processPackages [django-iubenda]: Remove: archive file [/home/abi/fetcher/tmp/django_iubenda-1.6.4.tar.gz]
+[2024-04-28 00:33:28] INFO root fetch - main [MainThread]: End processing [django-iubenda]: success
+[2024-04-28 00:33:28] INFO root fetch - main [MainThread]: Store serial: [22962453]
