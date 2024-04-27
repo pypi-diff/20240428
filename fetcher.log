@@ -708,3 +708,47 @@
 [2024-04-28 00:57:19] INFO root fetch - processPackages [openinference-instrumentation-dspy]: Remove: archive file [/home/abi/fetcher/tmp/openinference_instrumentation_dspy-0.1.7.tar.gz]
 [2024-04-28 00:57:19] INFO root fetch - main [MainThread]: End processing [openinference-instrumentation-dspy]: success
 [2024-04-28 00:57:19] INFO root fetch - main [MainThread]: Store serial: [22962543]
+[2024-04-28 00:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962543]
+[2024-04-28 00:59:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 00:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monies
+[2024-04-28 00:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: druida
+[2024-04-28 00:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: message-local
+[2024-04-28 00:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cjunct
+[2024-04-28 00:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: minivectordb
+[2024-04-28 00:59:28] INFO root fetch - processPackages [cjunct]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-28 00:59:28] INFO root fetch - processPackages [monies]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 00:59:28] INFO root fetch - processPackages [minivectordb]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-28 00:59:28] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 00:59:28] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 00:59:29] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [monies]: Downloading https://files.pythonhosted.org/packages/d1/7d/b7290561e92f57f938f1fe340073c3cf7288c456f08ffe1a14a240f3d310/monies-0.0.1.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/1e/aa/2b943c3e4189757ee0778f4147f3de423c1d393de09b8493da0fbdf25b08/cjunct-2.1.0.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [minivectordb]: Downloading https://files.pythonhosted.org/packages/0b/2d/d271958a619385df6d50b798d3de1c4406051ca4837af99a6160fb209d8a/minivectordb-1.4.1.tar.gz
+[2024-04-28 00:59:29] WARNING root fetch - processPackages [minivectordb]: Skipping package: exceeds size limit 45077043>=10485760
+[2024-04-28 00:59:29] INFO root fetch - main [MainThread]: End processing [minivectordb] error
+[2024-04-28 00:59:29] INFO root fetch - processPackages [monies]: Downloading https://files.pythonhosted.org/packages/77/c5/c75a2a4b191d46c46e8074ae278f94574456727996d6d730097c75075d32/monies-0.0.2.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/00/22/b8414139d100aade5682ea02c30012694630d631004636e91796cbbe2750/cjunct-2.1.1.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-04-28 00:59:29] INFO root fetch - processPackages [monies]: executing diffoscope
+[2024-04-28 00:59:29] INFO root fetch - processPackages [monies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monies-0.0.1.tar.gz tmp/monies-0.0.2.tar.gz --markdown 20240428/m/monies/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 00:59:29] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 00:59:29] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 00:59:29] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-04-28 00:59:29] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240428/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 00:59:29] INFO root fetch - processPackages [cjunct]: executing diffoscope
+[2024-04-28 00:59:29] INFO root fetch - processPackages [cjunct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjunct-2.1.0.tar.gz tmp/cjunct-2.1.1.tar.gz --markdown 20240428/c/cjunct/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-28 00:59:30] INFO root fetch - processPackages [monies]: Remove: archive file [/home/abi/fetcher/tmp/monies-0.0.1.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - processPackages [monies]: Remove: archive file [/home/abi/fetcher/tmp/monies-0.0.2.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - main [MainThread]: End processing [monies]: success
+[2024-04-28 00:59:30] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-04-28 00:59:30] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 00:59:30] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.0.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.1.tar.gz]
+[2024-04-28 00:59:30] INFO root fetch - main [MainThread]: End processing [cjunct]: success
+[2024-04-28 00:59:30] INFO root fetch - main [MainThread]: Store serial: [22962557]
