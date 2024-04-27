@@ -1042,3 +1042,17 @@
 [2024-04-28 01:25:34] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
 [2024-04-28 01:25:34] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
 [2024-04-28 01:25:34] INFO root fetch - main [MainThread]: Store serial: [22962686]
+[2024-04-28 01:27:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962686]
+[2024-04-28 01:27:42] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 01:29:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962686]
+[2024-04-28 01:29:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 01:29:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profile-local
+[2024-04-28 01:29:48] INFO root fetch - processPackages [profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 01:29:48] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/4b/d7/8af14a0850e980f53de36404fc2079c451edc1e65f24be79c595f88f602d/profile-local-0.0.8.tar.gz
+[2024-04-28 01:29:48] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/a8/54/e07308090c523485559291c7a02f014be5ed9511f87a7701fb7328a58149/profile-local-0.0.9.tar.gz
+[2024-04-28 01:29:48] INFO root fetch - processPackages [profile-local]: executing diffoscope
+[2024-04-28 01:29:48] INFO root fetch - processPackages [profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profile-local-0.0.8.tar.gz tmp/profile-local-0.0.9.tar.gz --markdown 20240428/p/profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 01:29:49] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.8.tar.gz]
+[2024-04-28 01:29:49] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
+[2024-04-28 01:29:49] INFO root fetch - main [MainThread]: End processing [profile-local]: success
+[2024-04-28 01:29:49] INFO root fetch - main [MainThread]: Store serial: [22962689]
