@@ -175,3 +175,9 @@
 [2024-04-28 00:16:11] INFO root fetch - processPackages [fastai]: Remove: archive file [/home/abi/fetcher/tmp/fastai-2.7.9.tar.gz]
 [2024-04-28 00:16:11] INFO root fetch - main [MainThread]: End processing [fastai]: success
 [2024-04-28 00:16:11] INFO root fetch - main [MainThread]: Store serial: [22962332]
+[2024-04-28 00:18:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962332]
+[2024-04-28 00:18:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 00:18:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: little-atf-programmer
+[2024-04-28 00:18:19] WARNING root fetch - processPackages [little-atf-programmer]: Skipping, unable to determine old version
+[2024-04-28 00:18:19] INFO root fetch - main [MainThread]: End processing [little-atf-programmer] error
+[2024-04-28 00:18:19] INFO root fetch - main [MainThread]: Store serial: [22962338]
