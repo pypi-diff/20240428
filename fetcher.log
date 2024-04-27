@@ -547,3 +547,45 @@
 [2024-04-28 00:44:20] INFO root fetch - processPackages [neohubapi]: Remove: archive file [/home/abi/fetcher/tmp/neohubapi-2.1.tar.gz]
 [2024-04-28 00:44:20] INFO root fetch - main [MainThread]: End processing [neohubapi]: success
 [2024-04-28 00:44:20] INFO root fetch - main [MainThread]: Store serial: [22962488]
+[2024-04-28 00:46:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962488]
+[2024-04-28 00:46:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 00:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-04-28 00:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: package-auto-assembler
+[2024-04-28 00:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-enrichments
+[2024-04-28 00:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: media-manager
+[2024-04-28 00:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: komodo-sdk
+[2024-04-28 00:46:29] INFO root fetch - processPackages [datasette-enrichments]: New version: [0.4.1] Old Version: [0.4]
+[2024-04-28 00:46:29] INFO root fetch - processPackages [package-auto-assembler]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 00:46:29] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 00:46:29] WARNING root fetch - processPackages [komodo-sdk]: Skipping, unable to determine old version
+[2024-04-28 00:46:29] INFO root fetch - main [MainThread]: End processing [komodo-sdk] error
+[2024-04-28 00:46:29] INFO root fetch - processPackages [yoto-api]: New version: [1.7.8] Old Version: [1.7.7]
+[2024-04-28 00:46:29] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/89/0f/cae6f2512a708e1ebe5a519eef3f9b62996e6000530d3413e86b369b1f12/datasette_enrichments-0.4.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/42/9d/48cf5fd953ac330a1717ea627f2bbfeafdbee0e0f1549c1e52098f7bcafa/package_auto_assembler-0.0.8.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2024-04-28 00:46:29] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/57/11/bbc52936b20722728b1b1b313c55782dcb4ae4857fe515b405585042e3d6/yoto_api-1.7.7.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2024-04-28 00:46:29] INFO root fetch - processPackages [package-auto-assembler]: Downloading https://files.pythonhosted.org/packages/96/f6/567914ebd8974f8f40f5c4ae391d3aaea467e53d337fa5382b5f6d334922/package_auto_assembler-0.0.9.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/ac/db/86c37defcee7d1f5243dfd46059da16413047b4dca81cbc52b38993ed333/datasette_enrichments-0.4.1.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2024-04-28 00:46:29] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20240428/m/media-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 00:46:29] INFO root fetch - processPackages [package-auto-assembler]: executing diffoscope
+[2024-04-28 00:46:29] INFO root fetch - processPackages [package-auto-assembler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/package_auto_assembler-0.0.8.tar.gz tmp/package_auto_assembler-0.0.9.tar.gz --markdown 20240428/p/package-auto-assembler/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 00:46:29] INFO root fetch - processPackages [datasette-enrichments]: executing diffoscope
+[2024-04-28 00:46:29] INFO root fetch - processPackages [datasette-enrichments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_enrichments-0.4.tar.gz tmp/datasette_enrichments-0.4.1.tar.gz --markdown 20240428/d/datasette-enrichments/0.4-0.4.1/README.md --exclude *.pyd
+[2024-04-28 00:46:29] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/2d/09/f2655bdad91b21bbd44254c2c86decd3d3b69b5d14d28f7fcd313f0db06d/yoto_api-1.7.8.tar.gz
+[2024-04-28 00:46:29] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-04-28 00:46:29] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.7.7.tar.gz tmp/yoto_api-1.7.8.tar.gz --markdown 20240428/y/yoto-api/1.7.7-1.7.8/README.md --exclude *.pyd
+[2024-04-28 00:46:30] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.0.8.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - processPackages [package-auto-assembler]: Remove: archive file [/home/abi/fetcher/tmp/package_auto_assembler-0.0.9.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - main [MainThread]: End processing [package-auto-assembler]: success
+[2024-04-28 00:46:30] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip]
+[2024-04-28 00:46:30] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
+[2024-04-28 00:46:30] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2024-04-28 00:46:30] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette_enrichments-0.4.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette_enrichments-0.4.1.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - main [MainThread]: End processing [datasette-enrichments]: success
+[2024-04-28 00:46:30] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.7.7.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.7.8.tar.gz]
+[2024-04-28 00:46:30] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-04-28 00:46:30] INFO root fetch - main [MainThread]: Store serial: [22962504]
