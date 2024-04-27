@@ -601,3 +601,29 @@
 [2024-04-28 00:48:40] INFO root fetch - processPackages [srt-to-vtt]: Remove: archive file [/home/abi/fetcher/tmp/srt_to_vtt-1.2.1.tar.gz]
 [2024-04-28 00:48:40] INFO root fetch - main [MainThread]: End processing [srt-to-vtt]: success
 [2024-04-28 00:48:40] INFO root fetch - main [MainThread]: Store serial: [22962507]
+[2024-04-28 00:50:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962507]
+[2024-04-28 00:50:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gwemopt
+[2024-04-28 00:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jafgen
+[2024-04-28 00:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protokolo
+[2024-04-28 00:50:48] INFO root fetch - processPackages [protokolo]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-28 00:50:48] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/72/b1/aa69ec59d6ec4c80901479e1a70a113f180b4bf4c3e52a1091658fcc28a8/protokolo-2.1.1.tar.gz
+[2024-04-28 00:50:48] INFO root fetch - processPackages [jafgen]: New version: [0.4.9] Old Version: [0.4.6]
+[2024-04-28 00:50:48] INFO root fetch - processPackages [gwemopt]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-04-28 00:50:48] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/22/98dec1c130155ed3d16912e7e12421eff1489506bc72f8a0b443f5fa370c/jafgen-0.4.6.tar.gz
+[2024-04-28 00:50:48] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/00/7e/3f7e395235171ce3d9c4a20a24b0a0ed38f5329de124202c5401757d057e/protokolo-2.1.2.tar.gz
+[2024-04-28 00:50:48] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/64/02/49bd6f506e9a2a4d679c2f994af6ceb81ddf79cef5bb845f5036ae123057/gwemopt-0.1.6.tar.gz
+[2024-04-28 00:50:49] INFO root fetch - processPackages [protokolo]: executing diffoscope
+[2024-04-28 00:50:49] INFO root fetch - processPackages [protokolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protokolo-2.1.1.tar.gz tmp/protokolo-2.1.2.tar.gz --markdown 20240428/p/protokolo/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-04-28 00:50:49] INFO root fetch - processPackages [jafgen]: Downloading https://files.pythonhosted.org/packages/46/c4/300a1dab2933592bc4482ab40a7989479e27a5001a28995099392335c1cc/jafgen-0.4.9.tar.gz
+[2024-04-28 00:50:49] INFO root fetch - processPackages [jafgen]: executing diffoscope
+[2024-04-28 00:50:49] INFO root fetch - processPackages [jafgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jafgen-0.4.6.tar.gz tmp/jafgen-0.4.9.tar.gz --markdown 20240428/j/jafgen/0.4.6-0.4.9/README.md --exclude *.pyd
+[2024-04-28 00:50:49] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.1.tar.gz]
+[2024-04-28 00:50:49] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.2.tar.gz]
+[2024-04-28 00:50:49] INFO root fetch - main [MainThread]: End processing [protokolo]: success
+[2024-04-28 00:50:49] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.6.tar.gz]
+[2024-04-28 00:50:49] INFO root fetch - processPackages [jafgen]: Remove: archive file [/home/abi/fetcher/tmp/jafgen-0.4.9.tar.gz]
+[2024-04-28 00:50:49] INFO root fetch - main [MainThread]: End processing [jafgen]: success
+[2024-04-28 00:50:50] WARNING root fetch - processPackages [gwemopt]: Skipping package: exceeds size limit 113238077>=10485760
+[2024-04-28 00:50:50] INFO root fetch - main [MainThread]: End processing [gwemopt] error
+[2024-04-28 00:50:50] INFO root fetch - main [MainThread]: Store serial: [22962516]
