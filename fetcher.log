@@ -1131,3 +1131,38 @@
 [2024-04-28 01:38:33] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.93.tar.gz]
 [2024-04-28 01:38:33] INFO root fetch - main [MainThread]: End processing [variable-local]: success
 [2024-04-28 01:38:33] INFO root fetch - main [MainThread]: Store serial: [22962719]
+[2024-04-28 01:40:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962719]
+[2024-04-28 01:40:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dialog-workflow-local
+[2024-04-28 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dspy-ai-hmoazam
+[2024-04-28 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gwemopt
+[2024-04-28 01:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: local-lang
+[2024-04-28 01:40:41] INFO root fetch - processPackages [dspy-ai-hmoazam]: New version: [2.4.3] Old Version: [1.0.0]
+[2024-04-28 01:40:42] INFO root fetch - processPackages [local-lang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dialog-workflow-local]: New version: [0.0.98] Old Version: [0.0.97]
+[2024-04-28 01:40:42] INFO root fetch - processPackages [gwemopt]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dspy-ai-hmoazam]: Downloading https://files.pythonhosted.org/packages/bb/95/2ab9fee91d5b5666cb160cf799a427e10ceb19dabadfc258be683dc6e335/dspy-ai-hmoazam-1.0.0.tar.gz
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/b7/dd/d648a5f24e03b730df243944d515e85219e1fc6caa6369ebf765c7864790/dialog_workflow_local-0.0.97.tar.gz
+[2024-04-28 01:40:42] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/0b/bd/a2a0d22a32607a459737b10d42acf78669c09e980c467b0b3525b8bc21e4/local_lang-0.0.8.tar.gz
+[2024-04-28 01:40:42] INFO root fetch - processPackages [gwemopt]: Downloading https://files.pythonhosted.org/packages/0c/56/3c5337bd599974879db138f59c89c600a75d402b7c56e4fc26388a393862/gwemopt-0.2.0.tar.gz
+[2024-04-28 01:40:42] WARNING root fetch - processPackages [gwemopt]: Skipping package: exceeds size limit 113533388>=10485760
+[2024-04-28 01:40:42] INFO root fetch - main [MainThread]: End processing [gwemopt] error
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dspy-ai-hmoazam]: Downloading https://files.pythonhosted.org/packages/b6/a0/0596336cedf12d8f1ef63d035d83907ec84e4ecde1686fff22b826ab3eb2/dspy-ai-hmoazam-2.4.3.tar.gz
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dialog-workflow-local]: Downloading https://files.pythonhosted.org/packages/d7/1b/685106e77cf65c8cf8b6d89352922054ce5d7b8980732c303e96ea9deb86/dialog_workflow_local-0.0.98.tar.gz
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dspy-ai-hmoazam]: executing diffoscope
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dspy-ai-hmoazam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspy-ai-hmoazam-1.0.0.tar.gz tmp/dspy-ai-hmoazam-2.4.3.tar.gz --markdown 20240428/d/dspy-ai-hmoazam/1.0.0-2.4.3/README.md --exclude *.pyd
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dialog-workflow-local]: executing diffoscope
+[2024-04-28 01:40:42] INFO root fetch - processPackages [dialog-workflow-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_workflow_local-0.0.97.tar.gz tmp/dialog_workflow_local-0.0.98.tar.gz --markdown 20240428/d/dialog-workflow-local/0.0.97-0.0.98/README.md --exclude *.pyd
+[2024-04-28 01:40:43] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.97.tar.gz]
+[2024-04-28 01:40:43] INFO root fetch - processPackages [dialog-workflow-local]: Remove: archive file [/home/abi/fetcher/tmp/dialog_workflow_local-0.0.98.tar.gz]
+[2024-04-28 01:40:43] INFO root fetch - main [MainThread]: End processing [dialog-workflow-local]: success
+[2024-04-28 01:40:43] INFO root fetch - processPackages [dspy-ai-hmoazam]: Remove: archive file [/home/abi/fetcher/tmp/dspy-ai-hmoazam-1.0.0.tar.gz]
+[2024-04-28 01:40:43] INFO root fetch - processPackages [dspy-ai-hmoazam]: Remove: archive file [/home/abi/fetcher/tmp/dspy-ai-hmoazam-2.4.3.tar.gz]
+[2024-04-28 01:40:43] INFO root fetch - main [MainThread]: End processing [dspy-ai-hmoazam]: success
+[2024-04-28 01:40:44] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/d4/0b/fff42c164c415db503bf3e1e6843c683bae157010851ba904d87332136ba/local_lang-0.0.9.tar.gz
+[2024-04-28 01:40:44] INFO root fetch - processPackages [local-lang]: executing diffoscope
+[2024-04-28 01:40:44] INFO root fetch - processPackages [local-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_lang-0.0.8.tar.gz tmp/local_lang-0.0.9.tar.gz --markdown 20240428/l/local-lang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 01:40:46] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.8.tar.gz]
+[2024-04-28 01:40:46] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
+[2024-04-28 01:40:46] INFO root fetch - main [MainThread]: End processing [local-lang]: success
+[2024-04-28 01:40:46] INFO root fetch - main [MainThread]: Store serial: [22962731]
