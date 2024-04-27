@@ -328,3 +328,42 @@
 [2024-04-28 00:24:51] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.8.tar.gz]
 [2024-04-28 00:24:51] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
 [2024-04-28 00:24:51] INFO root fetch - main [MainThread]: Store serial: [22962393]
+[2024-04-28 00:26:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962393]
+[2024-04-28 00:27:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 00:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-04-28 00:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycid-dev
+[2024-04-28 00:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyterlab-athena-analytics
+[2024-04-28 00:27:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlops-api-gemstack
+[2024-04-28 00:27:00] INFO root fetch - processPackages [jupyterlab-athena-analytics]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-28 00:27:00] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-28 00:27:00] INFO root fetch - processPackages [jupyterlab-athena-analytics]: Downloading https://files.pythonhosted.org/packages/87/f9/b833fc292b88426b9781d5e6a8a442289aa6491772876e4537da3df88db8/jupyterlab_athena_analytics-0.4.2.tar.gz
+[2024-04-28 00:27:00] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/b4/b0/a8255d245178b0ceb7c350781eb1ead7b4117851090863c26a16ee315375/mlops_api_gemstack-0.3.9.tar.gz
+[2024-04-28 00:27:00] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.1] Old Version: [2024.2.0]
+[2024-04-28 00:27:00] INFO root fetch - processPackages [pycid-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 00:27:00] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/d5/22/b7c070a92733e6018be94918e4720ff227ed8218e3b17eac3ef1666cc3c6/pycid-dev-0.0.8.tar.gz
+[2024-04-28 00:27:00] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/65/43/a434fb0b34e37eb46a76beb6cbfe764010505a0a927a5da019eca68dd507/blastpipe-2024.2.0.tar.gz
+[2024-04-28 00:27:00] INFO root fetch - processPackages [jupyterlab-athena-analytics]: Downloading https://files.pythonhosted.org/packages/16/53/e73da1839db455a2dfb9f30169f7ad17cb1be0a0a4bebbb8b4e94072694b/jupyterlab_athena_analytics-0.5.0.tar.gz
+[2024-04-28 00:27:01] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/c0/be/440d636c513d2d08b7550135f5463d05537625c25f9f368152691250be08/mlops_api_gemstack-0.4.0.tar.gz
+[2024-04-28 00:27:01] INFO root fetch - processPackages [jupyterlab-athena-analytics]: executing diffoscope
+[2024-04-28 00:27:01] INFO root fetch - processPackages [jupyterlab-athena-analytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_athena_analytics-0.4.2.tar.gz tmp/jupyterlab_athena_analytics-0.5.0.tar.gz --markdown 20240428/j/jupyterlab-athena-analytics/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-28 00:27:01] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-28 00:27:01] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.9.tar.gz tmp/mlops_api_gemstack-0.4.0.tar.gz --markdown 20240428/m/mlops-api-gemstack/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-28 00:27:01] INFO root fetch - processPackages [pycid-dev]: Downloading https://files.pythonhosted.org/packages/30/56/4fb156aed85eb11a3ee720a2844b34b174787e7e490858dee46e301b19b4/pycid-dev-0.0.9.tar.gz
+[2024-04-28 00:27:01] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/10/bb/14f5719fda79604aa894f0ddeb38a1bf1680c14bac999acdb0da4a2ad6d9/blastpipe-2024.2.1.tar.gz
+[2024-04-28 00:27:01] INFO root fetch - processPackages [pycid-dev]: executing diffoscope
+[2024-04-28 00:27:01] INFO root fetch - processPackages [pycid-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycid-dev-0.0.8.tar.gz tmp/pycid-dev-0.0.9.tar.gz --markdown 20240428/p/pycid-dev/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 00:27:01] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 00:27:01] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.0.tar.gz tmp/blastpipe-2024.2.1.tar.gz --markdown 20240428/b/blastpipe/2024.2.0-2024.2.1/README.md --exclude *.pyd
+[2024-04-28 00:27:01] INFO root fetch - processPackages [jupyterlab-athena-analytics]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_athena_analytics-0.4.2.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - processPackages [jupyterlab-athena-analytics]: Remove: archive file [/home/abi/fetcher/tmp/jupyterlab_athena_analytics-0.5.0.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - main [MainThread]: End processing [jupyterlab-athena-analytics]: success
+[2024-04-28 00:27:01] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.9.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.4.0.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-28 00:27:01] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.8.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - processPackages [pycid-dev]: Remove: archive file [/home/abi/fetcher/tmp/pycid-dev-0.0.9.tar.gz]
+[2024-04-28 00:27:01] INFO root fetch - main [MainThread]: End processing [pycid-dev]: success
+[2024-04-28 00:27:02] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.0.tar.gz]
+[2024-04-28 00:27:02] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.1.tar.gz]
+[2024-04-28 00:27:02] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 00:27:02] INFO root fetch - main [MainThread]: Store serial: [22962407]
