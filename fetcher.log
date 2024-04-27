@@ -121,3 +121,33 @@
 [2024-04-28 00:11:49] INFO root fetch - processPackages [pysolarmanv5]: Remove: archive file [/home/abi/fetcher/tmp/pysolarmanv5-3.0.2.tar.gz]
 [2024-04-28 00:11:49] INFO root fetch - main [MainThread]: End processing [pysolarmanv5]: success
 [2024-04-28 00:11:49] INFO root fetch - main [MainThread]: Store serial: [22962317]
+[2024-04-28 00:13:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962317]
+[2024-04-28 00:13:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lips-benchmark
+[2024-04-28 00:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protokolo
+[2024-04-28 00:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysparkify
+[2024-04-28 00:13:57] INFO root fetch - processPackages [pysparkify]: New version: [0.24.1] Old Version: [0.24.0]
+[2024-04-28 00:13:57] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/a8/30/e843177ed621bb4a2176b1b120b8041194771ccd3e2fbbf95975451225c9/pysparkify-0.24.0.tar.gz
+[2024-04-28 00:13:57] INFO root fetch - processPackages [protokolo]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-04-28 00:13:57] INFO root fetch - processPackages [lips-benchmark]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-28 00:13:57] INFO root fetch - processPackages [lips-benchmark]: Downloading https://files.pythonhosted.org/packages/77/75/45545038a2fcd1c70cd6438854521f9dcd7b22dfe6162103bc16c83a28e2/lips-benchmark-0.2.3.tar.gz
+[2024-04-28 00:13:57] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/bc/e4/b5d08d80a9a14faabdb12ab8a2cff29cd5188201d3556d3af1a40e1d7cd8/protokolo-2.0.1.tar.gz
+[2024-04-28 00:13:58] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/9d/07/5d1fbb9b4d9562657f3185d999109848927fe738ebd6815876bf46196373/pysparkify-0.24.1.tar.gz
+[2024-04-28 00:13:58] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-04-28 00:13:58] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.24.0.tar.gz tmp/pysparkify-0.24.1.tar.gz --markdown 20240428/p/pysparkify/0.24.0-0.24.1/README.md --exclude *.pyd
+[2024-04-28 00:13:58] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/89/1f/0adc3b4bb0784a6275d7130ab46ae7e8d6725dffb13c01fe5cc19f56177f/protokolo-2.1.0.tar.gz
+[2024-04-28 00:13:58] INFO root fetch - processPackages [protokolo]: executing diffoscope
+[2024-04-28 00:13:58] INFO root fetch - processPackages [protokolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protokolo-2.0.1.tar.gz tmp/protokolo-2.1.0.tar.gz --markdown 20240428/p/protokolo/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-04-28 00:13:58] INFO root fetch - processPackages [lips-benchmark]: Downloading https://files.pythonhosted.org/packages/50/0e/fbbfa99542a606f82e1010dad00339639bb6281da60d0fb757ca199925bb/lips-benchmark-0.2.4.tar.gz
+[2024-04-28 00:13:58] INFO root fetch - processPackages [lips-benchmark]: executing diffoscope
+[2024-04-28 00:13:58] INFO root fetch - processPackages [lips-benchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lips-benchmark-0.2.3.tar.gz tmp/lips-benchmark-0.2.4.tar.gz --markdown 20240428/l/lips-benchmark/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-28 00:13:58] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.24.0.tar.gz]
+[2024-04-28 00:13:58] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.24.1.tar.gz]
+[2024-04-28 00:13:58] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-04-28 00:13:59] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.0.1.tar.gz]
+[2024-04-28 00:13:59] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.0.tar.gz]
+[2024-04-28 00:13:59] INFO root fetch - main [MainThread]: End processing [protokolo]: success
+[2024-04-28 00:13:59] INFO root fetch - processPackages [lips-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/lips-benchmark-0.2.3.tar.gz]
+[2024-04-28 00:13:59] INFO root fetch - processPackages [lips-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/lips-benchmark-0.2.4.tar.gz]
+[2024-04-28 00:13:59] INFO root fetch - main [MainThread]: End processing [lips-benchmark]: success
+[2024-04-28 00:13:59] INFO root fetch - main [MainThread]: Store serial: [22962323]
