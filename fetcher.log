@@ -1213,3 +1213,29 @@
 [2024-04-28 01:47:11] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
 [2024-04-28 01:47:11] INFO root fetch - main [MainThread]: End processing [local-lang]: success
 [2024-04-28 01:47:11] INFO root fetch - main [MainThread]: Store serial: [22962750]
+[2024-04-28 01:49:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962750]
+[2024-04-28 01:49:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 01:51:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962750]
+[2024-04-28 01:51:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 01:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lotgi
+[2024-04-28 01:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tremolo-example-a
+[2024-04-28 01:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: item-matching
+[2024-04-28 01:51:27] INFO root fetch - processPackages [lotgi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 01:51:27] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/c4/94/c95a041fc15aa4b65e8f6a2b27fc026ddbb664e48005e0601e0f9455c89d/lotgi-0.0.1.tar.gz
+[2024-04-28 01:51:27] WARNING root fetch - processPackages [tremolo-example-a]: Skipping, unable to determine old version
+[2024-04-28 01:51:27] INFO root fetch - main [MainThread]: End processing [tremolo-example-a] error
+[2024-04-28 01:51:27] INFO root fetch - processPackages [item-matching]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 01:51:27] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/c1/eb/6af9341e91340108c6bd813fdbaf99df20b024ef720ba95fd98f5f9b1e67/item_matching-0.0.8.tar.gz
+[2024-04-28 01:51:27] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/0a/21/d27b5a1b6bf901d91ee3a34da746ea27b8ab7c2ed7438759c580a8662c67/lotgi-0.0.2.tar.gz
+[2024-04-28 01:51:27] INFO root fetch - processPackages [lotgi]: executing diffoscope
+[2024-04-28 01:51:27] INFO root fetch - processPackages [lotgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lotgi-0.0.1.tar.gz tmp/lotgi-0.0.2.tar.gz --markdown 20240428/l/lotgi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 01:51:27] INFO root fetch - processPackages [item-matching]: Downloading https://files.pythonhosted.org/packages/d6/27/06995957de9e3e2dc832d765e63268da03fc82c05f5e99df1fad645a8853/item_matching-0.0.9.tar.gz
+[2024-04-28 01:51:28] INFO root fetch - processPackages [item-matching]: executing diffoscope
+[2024-04-28 01:51:28] INFO root fetch - processPackages [item-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/item_matching-0.0.8.tar.gz tmp/item_matching-0.0.9.tar.gz --markdown 20240428/i/item-matching/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 01:51:28] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.1.tar.gz]
+[2024-04-28 01:51:28] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.2.tar.gz]
+[2024-04-28 01:51:28] INFO root fetch - main [MainThread]: End processing [lotgi]: success
+[2024-04-28 01:51:28] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.8.tar.gz]
+[2024-04-28 01:51:28] INFO root fetch - processPackages [item-matching]: Remove: archive file [/home/abi/fetcher/tmp/item_matching-0.0.9.tar.gz]
+[2024-04-28 01:51:28] INFO root fetch - main [MainThread]: End processing [item-matching]: success
+[2024-04-28 01:51:28] INFO root fetch - main [MainThread]: Store serial: [22962760]
