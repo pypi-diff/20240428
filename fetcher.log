@@ -958,3 +958,15 @@
 [2024-04-28 01:16:52] INFO root fetch - processPackages [agate]: Remove: archive file [/home/abi/fetcher/tmp/agate-1.9.1.tar.gz]
 [2024-04-28 01:16:52] INFO root fetch - main [MainThread]: End processing [agate]: success
 [2024-04-28 01:16:52] INFO root fetch - main [MainThread]: Store serial: [22962660]
+[2024-04-28 01:18:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962660]
+[2024-04-28 01:19:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 01:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-express
+[2024-04-28 01:19:01] INFO root fetch - processPackages [lusid-express]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 01:19:01] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/57/fd/df04110035324de1dfb0f43ab3341c2101f24f37586e2350c50612ba36f8/lusid_express-1.0.8.tar.gz
+[2024-04-28 01:19:01] INFO root fetch - processPackages [lusid-express]: Downloading https://files.pythonhosted.org/packages/e5/d9/b67b6df5c637ea02bfa103078915752bf380d36f341c9192b58ab4c630d0/lusid_express-1.0.9.tar.gz
+[2024-04-28 01:19:02] INFO root fetch - processPackages [lusid-express]: executing diffoscope
+[2024-04-28 01:19:02] INFO root fetch - processPackages [lusid-express]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_express-1.0.8.tar.gz tmp/lusid_express-1.0.9.tar.gz --markdown 20240428/l/lusid-express/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 01:19:02] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.8.tar.gz]
+[2024-04-28 01:19:02] INFO root fetch - processPackages [lusid-express]: Remove: archive file [/home/abi/fetcher/tmp/lusid_express-1.0.9.tar.gz]
+[2024-04-28 01:19:02] INFO root fetch - main [MainThread]: End processing [lusid-express]: success
+[2024-04-28 01:19:02] INFO root fetch - main [MainThread]: Store serial: [22962665]
