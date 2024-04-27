@@ -472,3 +472,33 @@
 [2024-04-28 00:37:48] INFO root fetch - processPackages [mira-omf]: Remove: archive file [/home/abi/fetcher/tmp/mira_omf-3.2.0rc1.tar.gz]
 [2024-04-28 00:37:48] INFO root fetch - main [MainThread]: End processing [mira-omf]: success
 [2024-04-28 00:37:48] INFO root fetch - main [MainThread]: Store serial: [22962464]
+[2024-04-28 00:39:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962464]
+[2024-04-28 00:39:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protokolo
+[2024-04-28 00:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kostsample
+[2024-04-28 00:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hvac
+[2024-04-28 00:39:56] INFO root fetch - processPackages [kostsample]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-28 00:39:56] INFO root fetch - processPackages [hvac]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-28 00:39:56] INFO root fetch - processPackages [protokolo]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-28 00:39:56] INFO root fetch - processPackages [hvac]: Downloading https://files.pythonhosted.org/packages/9a/d1/b4b06bd69d541b9650646c930cab6b1d2ea02199c914c8fe8666d075a596/hvac-2.1.0.tar.gz
+[2024-04-28 00:39:56] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/72/b1/aa69ec59d6ec4c80901479e1a70a113f180b4bf4c3e52a1091658fcc28a8/protokolo-2.1.1.tar.gz
+[2024-04-28 00:39:56] INFO root fetch - processPackages [kostsample]: Downloading https://files.pythonhosted.org/packages/a4/69/576e590d7b27c1f3db529836b43ab84993dee0c3da837b9c420abd68e83e/kostsample-1.0.tar.gz
+[2024-04-28 00:39:57] INFO root fetch - processPackages [hvac]: Downloading https://files.pythonhosted.org/packages/ea/96/3d08ba4b59491941c83e46034c19d1b62c6966147bb2bb144788cf7c989c/hvac-2.2.0.tar.gz
+[2024-04-28 00:39:57] INFO root fetch - processPackages [protokolo]: Downloading https://files.pythonhosted.org/packages/00/7e/3f7e395235171ce3d9c4a20a24b0a0ed38f5329de124202c5401757d057e/protokolo-2.1.2.tar.gz
+[2024-04-28 00:39:57] INFO root fetch - processPackages [kostsample]: Downloading https://files.pythonhosted.org/packages/b9/8c/f31716f3aec49361a1da7a2e572f9c9e8647808b87f39faa6f8376773a53/kostsample-1.0.1.tar.gz
+[2024-04-28 00:39:57] INFO root fetch - processPackages [protokolo]: executing diffoscope
+[2024-04-28 00:39:57] INFO root fetch - processPackages [protokolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protokolo-2.1.1.tar.gz tmp/protokolo-2.1.2.tar.gz --markdown 20240428/p/protokolo/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-04-28 00:39:57] INFO root fetch - processPackages [kostsample]: executing diffoscope
+[2024-04-28 00:39:57] INFO root fetch - processPackages [kostsample]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kostsample-1.0.tar.gz tmp/kostsample-1.0.1.tar.gz --markdown 20240428/k/kostsample/1.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 00:39:57] INFO root fetch - processPackages [kostsample]: Remove: archive file [/home/abi/fetcher/tmp/kostsample-1.0.tar.gz]
+[2024-04-28 00:39:57] INFO root fetch - processPackages [kostsample]: Remove: archive file [/home/abi/fetcher/tmp/kostsample-1.0.1.tar.gz]
+[2024-04-28 00:39:57] INFO root fetch - main [MainThread]: End processing [kostsample]: success
+[2024-04-28 00:39:57] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.1.tar.gz]
+[2024-04-28 00:39:57] INFO root fetch - processPackages [protokolo]: Remove: archive file [/home/abi/fetcher/tmp/protokolo-2.1.2.tar.gz]
+[2024-04-28 00:39:57] INFO root fetch - main [MainThread]: End processing [protokolo]: success
+[2024-04-28 00:39:58] INFO root fetch - processPackages [hvac]: executing diffoscope
+[2024-04-28 00:39:58] INFO root fetch - processPackages [hvac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hvac-2.1.0.tar.gz tmp/hvac-2.2.0.tar.gz --markdown 20240428/h/hvac/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-28 00:39:59] INFO root fetch - processPackages [hvac]: Remove: archive file [/home/abi/fetcher/tmp/hvac-2.1.0.tar.gz]
+[2024-04-28 00:39:59] INFO root fetch - processPackages [hvac]: Remove: archive file [/home/abi/fetcher/tmp/hvac-2.2.0.tar.gz]
+[2024-04-28 00:39:59] INFO root fetch - main [MainThread]: End processing [hvac]: success
+[2024-04-28 00:39:59] INFO root fetch - main [MainThread]: Store serial: [22962471]
