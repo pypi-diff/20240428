@@ -256,3 +256,45 @@
 [2024-04-28 00:20:31] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2220-py3-none-any.whl.zip]
 [2024-04-28 00:20:31] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
 [2024-04-28 00:20:31] INFO root fetch - main [MainThread]: Store serial: [22962365]
+[2024-04-28 00:22:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962365]
+[2024-04-28 00:22:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 00:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-contrib-runtime
+[2024-04-28 00:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contribute
+[2024-04-28 00:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-core
+[2024-04-28 00:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: basic-data-structure
+[2024-04-28 00:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oresat-olaf
+[2024-04-28 00:22:40] INFO root fetch - processPackages [pypomes-core]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-28 00:22:40] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.2220] Old Version: [2024.4.27.2124]
+[2024-04-28 00:22:40] WARNING root fetch - processPackages [flet-contribute]: Skipping, unable to determine old version
+[2024-04-28 00:22:40] INFO root fetch - main [MainThread]: End processing [flet-contribute] error
+[2024-04-28 00:22:40] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/bf/a4/b03958b199d2b3a0f4707726d1c26f06967eaa2ffb004c51ff28c34249e2/pypomes_core-0.9.0.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [basic-data-structure]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 00:22:40] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/8d/00/64b25f17fb209421ab6ff3254a0e3d49c997b35b212b1a4f609261ed79d1/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl
+[2024-04-28 00:22:40] INFO root fetch - processPackages [oresat-olaf]: New version: [3.5.0] Old Version: [3.4.0]
+[2024-04-28 00:22:40] INFO root fetch - processPackages [basic-data-structure]: Downloading https://files.pythonhosted.org/packages/00/7a/80829899784a7a097c71f9bae5fd224da1b0ad0ae068be5f0b101b698dc7/basic_data_structure-0.0.2.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/0c/a3/758e5048e3318989f1406b151f579356d3f104de0920dd71dfa2eec2c031/oresat-olaf-3.4.0.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/04/61/15d7da251cc3158c8d7bd23c5458eb60180e7d500861d028214a7d03e597/flet_contrib_runtime-2024.4.27.2220.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/de/95/48ab93ff0fbc7af93134137cc68f7f65e20b5690d28117fc803df7e7950f/pypomes_core-0.9.1.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-28 00:22:40] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip tmp/flet_contrib_runtime-2024.4.27.2220.tar.gz --markdown 20240428/f/flet-contrib-runtime/2024.4.27.2124-2024.4.27.2220/README.md --exclude *.pyd
+[2024-04-28 00:22:40] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-28 00:22:40] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.9.0.tar.gz tmp/pypomes_core-0.9.1.tar.gz --markdown 20240428/p/pypomes-core/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-28 00:22:40] INFO root fetch - processPackages [basic-data-structure]: Downloading https://files.pythonhosted.org/packages/d8/55/8b37b70b34add90d39e2b8cb71362cdc68f877d94a16a97e11bda604e0ab/basic_data_structure-0.0.3.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [oresat-olaf]: Downloading https://files.pythonhosted.org/packages/e7/e5/0bc4400faa44909b98627190cee307ced35cd23a764585e6b3c97a8b6d5f/oresat_olaf-3.5.0.tar.gz
+[2024-04-28 00:22:40] INFO root fetch - processPackages [basic-data-structure]: executing diffoscope
+[2024-04-28 00:22:40] INFO root fetch - processPackages [basic-data-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic_data_structure-0.0.2.tar.gz tmp/basic_data_structure-0.0.3.tar.gz --markdown 20240428/b/basic-data-structure/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 00:22:41] INFO root fetch - processPackages [oresat-olaf]: executing diffoscope
+[2024-04-28 00:22:41] INFO root fetch - processPackages [oresat-olaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat-olaf-3.4.0.tar.gz tmp/oresat_olaf-3.5.0.tar.gz --markdown 20240428/o/oresat-olaf/3.4.0-3.5.0/README.md --exclude *.pyd
+[2024-04-28 00:22:41] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2124-py3-none-any.whl.zip]
+[2024-04-28 00:22:41] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2220.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-28 00:22:41] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.0.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.1.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-28 00:22:41] INFO root fetch - processPackages [basic-data-structure]: Remove: archive file [/home/abi/fetcher/tmp/basic_data_structure-0.0.2.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - processPackages [basic-data-structure]: Remove: archive file [/home/abi/fetcher/tmp/basic_data_structure-0.0.3.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - main [MainThread]: End processing [basic-data-structure]: success
+[2024-04-28 00:22:41] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat-olaf-3.4.0.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - processPackages [oresat-olaf]: Remove: archive file [/home/abi/fetcher/tmp/oresat_olaf-3.5.0.tar.gz]
+[2024-04-28 00:22:41] INFO root fetch - main [MainThread]: End processing [oresat-olaf]: success
+[2024-04-28 00:22:41] INFO root fetch - main [MainThread]: Store serial: [22962383]
