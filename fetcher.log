@@ -1077,3 +1077,15 @@
 [2024-04-28 01:31:59] INFO root fetch - processPackages [arrayutilities]: Remove: archive file [/home/abi/fetcher/tmp/arrayutilities-1.1.0.tar.gz]
 [2024-04-28 01:31:59] INFO root fetch - main [MainThread]: End processing [arrayutilities]: success
 [2024-04-28 01:31:59] INFO root fetch - main [MainThread]: Store serial: [22962695]
+[2024-04-28 01:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962695]
+[2024-04-28 01:34:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 01:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ao3statscraper
+[2024-04-28 01:34:08] INFO root fetch - processPackages [ao3statscraper]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 01:34:08] INFO root fetch - processPackages [ao3statscraper]: Downloading https://files.pythonhosted.org/packages/b2/b5/65c09b02f66ad8620f7afa6da7d15b572f5f8961e160a05cc468ebce800a/ao3statscraper-0.1.1.tar.gz
+[2024-04-28 01:34:08] INFO root fetch - processPackages [ao3statscraper]: Downloading https://files.pythonhosted.org/packages/eb/a0/e57fd4e176fa9e1335917b7cf81055262e747005646a0804ef7c09f7f255/ao3statscraper-0.1.2.tar.gz
+[2024-04-28 01:34:08] INFO root fetch - processPackages [ao3statscraper]: executing diffoscope
+[2024-04-28 01:34:08] INFO root fetch - processPackages [ao3statscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ao3statscraper-0.1.1.tar.gz tmp/ao3statscraper-0.1.2.tar.gz --markdown 20240428/a/ao3statscraper/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 01:34:09] INFO root fetch - processPackages [ao3statscraper]: Remove: archive file [/home/abi/fetcher/tmp/ao3statscraper-0.1.1.tar.gz]
+[2024-04-28 01:34:09] INFO root fetch - processPackages [ao3statscraper]: Remove: archive file [/home/abi/fetcher/tmp/ao3statscraper-0.1.2.tar.gz]
+[2024-04-28 01:34:09] INFO root fetch - main [MainThread]: End processing [ao3statscraper]: success
+[2024-04-28 01:34:09] INFO root fetch - main [MainThread]: Store serial: [22962698]
