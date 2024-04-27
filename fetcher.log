@@ -64,3 +64,33 @@
 [2024-04-28 00:05:17] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.5.tar.gz]
 [2024-04-28 00:05:17] INFO root fetch - main [MainThread]: End processing [querent]: success
 [2024-04-28 00:05:17] INFO root fetch - main [MainThread]: Store serial: [22962297]
+[2024-04-28 00:07:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962297]
+[2024-04-28 00:07:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 00:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasette-enrichments
+[2024-04-28 00:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pied-poker
+[2024-04-28 00:07:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: realtime-operator
+[2024-04-28 00:07:27] INFO root fetch - processPackages [datasette-enrichments]: New version: [0.4] Old Version: [0.3.2]
+[2024-04-28 00:07:27] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/cd/b0/a1a1bcd107dee121e5005964602446403907468b2e81e5b330a3c2a71be4/datasette-enrichments-0.3.2.tar.gz
+[2024-04-28 00:07:27] INFO root fetch - processPackages [realtime-operator]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-04-28 00:07:27] INFO root fetch - processPackages [pied-poker]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-28 00:07:27] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/4f/47/2c5c5e65180dc277a39e5c5a212bb05517407be553719dfa2daea694648e/realtime_operator-0.2.3.tar.gz
+[2024-04-28 00:07:27] INFO root fetch - processPackages [datasette-enrichments]: Downloading https://files.pythonhosted.org/packages/89/0f/cae6f2512a708e1ebe5a519eef3f9b62996e6000530d3413e86b369b1f12/datasette_enrichments-0.4.tar.gz
+[2024-04-28 00:07:27] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/ec/5d/414db05b6b614fffb52196b592aa273659556924f68275bd029ca60f03d3/pied_poker-1.2.8-py3-none-any.whl
+[2024-04-28 00:07:27] INFO root fetch - processPackages [datasette-enrichments]: executing diffoscope
+[2024-04-28 00:07:27] INFO root fetch - processPackages [datasette-enrichments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-enrichments-0.3.2.tar.gz tmp/datasette_enrichments-0.4.tar.gz --markdown 20240428/d/datasette-enrichments/0.3.2-0.4/README.md --exclude *.pyd
+[2024-04-28 00:07:27] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/c0/79/face482df493a448147cd39107f7f18f599440e44f6c6cd1206e3c7429ba/realtime_operator-0.2.5.tar.gz
+[2024-04-28 00:07:27] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/cd/04/e6bd58daabeadf8108bbdfd132d4ed77ce1ab1877f2255457022a280e3c9/pied_poker-1.2.9.tar.gz
+[2024-04-28 00:07:27] INFO root fetch - processPackages [realtime-operator]: executing diffoscope
+[2024-04-28 00:07:27] INFO root fetch - processPackages [realtime-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtime_operator-0.2.3.tar.gz tmp/realtime_operator-0.2.5.tar.gz --markdown 20240428/r/realtime-operator/0.2.3-0.2.5/README.md --exclude *.pyd
+[2024-04-28 00:07:27] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-04-28 00:07:27] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.2.8-py3-none-any.whl.zip tmp/pied_poker-1.2.9.tar.gz --markdown 20240428/p/pied-poker/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-28 00:07:28] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette-enrichments-0.3.2.tar.gz]
+[2024-04-28 00:07:28] INFO root fetch - processPackages [datasette-enrichments]: Remove: archive file [/home/abi/fetcher/tmp/datasette_enrichments-0.4.tar.gz]
+[2024-04-28 00:07:28] INFO root fetch - main [MainThread]: End processing [datasette-enrichments]: success
+[2024-04-28 00:07:28] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.3.tar.gz]
+[2024-04-28 00:07:28] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.5.tar.gz]
+[2024-04-28 00:07:28] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
+[2024-04-28 00:07:28] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.8-py3-none-any.whl.zip]
+[2024-04-28 00:07:28] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.9.tar.gz]
+[2024-04-28 00:07:28] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-04-28 00:07:28] INFO root fetch - main [MainThread]: Store serial: [22962306]
