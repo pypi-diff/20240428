@@ -767,3 +767,15 @@
 [2024-04-28 01:01:39] INFO root fetch - processPackages [media-manager]: Remove: archive file [/home/abi/fetcher/tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip]
 [2024-04-28 01:01:39] INFO root fetch - main [MainThread]: End processing [media-manager]: success
 [2024-04-28 01:01:39] INFO root fetch - main [MainThread]: Store serial: [22962564]
+[2024-04-28 01:03:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962564]
+[2024-04-28 01:03:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 01:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peroxymanova
+[2024-04-28 01:03:49] INFO root fetch - processPackages [peroxymanova]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-04-28 01:03:50] INFO root fetch - processPackages [peroxymanova]: Downloading https://files.pythonhosted.org/packages/4a/11/09d65a63c5fea7685807f12fe1062945a44540885a58e1da612f41a03544/peroxymanova-0.3.2.tar.gz
+[2024-04-28 01:03:50] INFO root fetch - processPackages [peroxymanova]: Downloading https://files.pythonhosted.org/packages/de/8f/90c72bf72c85f144f4710ec1951c847e324e2445019669aadf9cd756f552/peroxymanova-0.4.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-04-28 01:03:51] INFO root fetch - processPackages [peroxymanova]: executing diffoscope
+[2024-04-28 01:03:51] INFO root fetch - processPackages [peroxymanova]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peroxymanova-0.3.2.tar.gz tmp/peroxymanova-0.4.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240428/p/peroxymanova/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-04-28 01:03:52] INFO root fetch - processPackages [peroxymanova]: Remove: archive file [/home/abi/fetcher/tmp/peroxymanova-0.3.2.tar.gz]
+[2024-04-28 01:03:52] INFO root fetch - processPackages [peroxymanova]: Remove: archive file [/home/abi/fetcher/tmp/peroxymanova-0.4.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-04-28 01:03:52] INFO root fetch - main [MainThread]: End processing [peroxymanova]: success
+[2024-04-28 01:03:52] INFO root fetch - main [MainThread]: Store serial: [22962591]
