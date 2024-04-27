@@ -445,3 +445,15 @@
 [2024-04-28 00:33:28] INFO root fetch - processPackages [django-iubenda]: Remove: archive file [/home/abi/fetcher/tmp/django_iubenda-1.6.4.tar.gz]
 [2024-04-28 00:33:28] INFO root fetch - main [MainThread]: End processing [django-iubenda]: success
 [2024-04-28 00:33:28] INFO root fetch - main [MainThread]: Store serial: [22962453]
+[2024-04-28 00:35:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962453]
+[2024-04-28 00:35:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 00:35:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oresat-configs
+[2024-04-28 00:35:37] INFO root fetch - processPackages [oresat-configs]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-28 00:35:37] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/9c/b3/a6667b08d26b764651df8dff299981bb5c528e45f4c9c61b961846a57ca8/oresat-configs-0.4.0.tar.gz
+[2024-04-28 00:35:37] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/13/ee/13497f0a138df46bd3e640a0a4f2c1e07d88ca652a0ac259bab04e2e000d/oresat_configs-0.5.0.tar.gz
+[2024-04-28 00:35:37] INFO root fetch - processPackages [oresat-configs]: executing diffoscope
+[2024-04-28 00:35:37] INFO root fetch - processPackages [oresat-configs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat-configs-0.4.0.tar.gz tmp/oresat_configs-0.5.0.tar.gz --markdown 20240428/o/oresat-configs/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-28 00:35:38] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat-configs-0.4.0.tar.gz]
+[2024-04-28 00:35:38] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.5.0.tar.gz]
+[2024-04-28 00:35:38] INFO root fetch - main [MainThread]: End processing [oresat-configs]: success
+[2024-04-28 00:35:38] INFO root fetch - main [MainThread]: Store serial: [22962456]
