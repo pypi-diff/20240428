@@ -2825,3 +2825,17 @@
 [2024-04-28 04:11:50] WARNING root fetch - processPackages [flashai]: Skipping, unable to determine old version
 [2024-04-28 04:11:50] INFO root fetch - main [MainThread]: End processing [flashai] error
 [2024-04-28 04:11:50] INFO root fetch - main [MainThread]: Store serial: [22963394]
+[2024-04-28 04:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963394]
+[2024-04-28 04:13:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 04:15:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963394]
+[2024-04-28 04:16:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 04:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-library-objects
+[2024-04-28 04:16:04] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-04-28 04:16:04] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-04-28 04:16:04] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-04-28 04:16:05] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-04-28 04:16:05] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240428/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-04-28 04:16:05] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-04-28 04:16:05] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-04-28 04:16:05] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-04-28 04:16:05] INFO root fetch - main [MainThread]: Store serial: [22963398]
