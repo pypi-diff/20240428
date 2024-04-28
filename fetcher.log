@@ -1407,3 +1407,42 @@
 [2024-04-28 02:04:33] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
 [2024-04-28 02:04:33] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
 [2024-04-28 02:04:33] INFO root fetch - main [MainThread]: Store serial: [22962808]
+[2024-04-28 02:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962808]
+[2024-04-28 02:06:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: druida
+[2024-04-28 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx-gallery
+[2024-04-28 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxkern-nightly
+[2024-04-28 02:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2024-04-28 02:06:42] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 02:06:42] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240427.446] Old Version: [2.0.0.20240426.352]
+[2024-04-28 02:06:42] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-28 02:06:42] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 02:06:42] INFO root fetch - processPackages [sphinx-gallery]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-28 02:06:42] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/98/b0/478fde5548a5bd05831ff04bceb675ee8926e9e105e6d89a66e621a89402/mct-nightly-2.0.0.20240426.352.tar.gz
+[2024-04-28 02:06:42] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-28 02:06:43] INFO root fetch - processPackages [sphinx-gallery]: Downloading https://files.pythonhosted.org/packages/fd/34/b1af6e736c7660792d1a9064696a7bb2c606c58ed122c5d00a6bce765d33/sphinx-gallery-0.8.2.tar.gz
+[2024-04-28 02:06:43] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-28 02:06:43] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 02:06:43] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 02:06:43] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a4/8b/d530a2b365e48951f93880f7feec0fbc479aa27bd8da3a9e2cfbfba9695f/mct-nightly-2.0.0.20240427.446.tar.gz
+[2024-04-28 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-28 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240428/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-04-28 02:06:43] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-28 02:06:43] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240426.352.tar.gz tmp/mct-nightly-2.0.0.20240427.446.tar.gz --markdown 20240428/m/mct-nightly/2.0.0.20240426.352-2.0.0.20240427.446/README.md --exclude *.pyd
+[2024-04-28 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-28 02:06:43] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-28 02:06:43] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-28 02:06:43] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 02:06:43] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 02:06:43] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 02:06:43] INFO root fetch - processPackages [sphinx-gallery]: Downloading https://files.pythonhosted.org/packages/40/6e/c494d573669eb6a581d7c270b7efd9c1244086f818b9a6e767d6a2adfeda/sphinx-gallery-0.9.0.tar.gz
+[2024-04-28 02:06:44] INFO root fetch - processPackages [sphinx-gallery]: executing diffoscope
+[2024-04-28 02:06:44] INFO root fetch - processPackages [sphinx-gallery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-gallery-0.8.2.tar.gz tmp/sphinx-gallery-0.9.0.tar.gz --markdown 20240428/s/sphinx-gallery/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-04-28 02:06:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240426.352.tar.gz]
+[2024-04-28 02:06:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240427.446.tar.gz]
+[2024-04-28 02:06:45] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-28 02:06:46] INFO root fetch - processPackages [sphinx-gallery]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-gallery-0.8.2.tar.gz]
+[2024-04-28 02:06:46] INFO root fetch - processPackages [sphinx-gallery]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-gallery-0.9.0.tar.gz]
+[2024-04-28 02:06:46] INFO root fetch - main [MainThread]: End processing [sphinx-gallery]: success
+[2024-04-28 02:06:46] INFO root fetch - main [MainThread]: Store serial: [22962820]
