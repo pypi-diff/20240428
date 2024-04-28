@@ -16121,3 +16121,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:50:54] INFO root fetch - processPackages [updrytwist-UpDryTwist]: Remove: archive file [/home/abi/fetcher/tmp/updrytwist-UpDryTwist-0.0.9.tar.gz]
 [2024-04-28 20:50:54] INFO root fetch - main [MainThread]: End processing [updrytwist-UpDryTwist]: success
 [2024-04-28 20:50:54] INFO root fetch - main [MainThread]: Store serial: [22968939]
+[2024-04-28 20:52:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968939]
+[2024-04-28 20:53:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wasmfunc
+[2024-04-28 20:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modpack-changelogger
+[2024-04-28 20:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ogl
+[2024-04-28 20:53:03] INFO root fetch - processPackages [wasmfunc]: New version: [0.0.1rc1] Old Version: [0.0.1a2]
+[2024-04-28 20:53:03] INFO root fetch - processPackages [ogl]: New version: [2.1.5] Old Version: [2.1.31]
+[2024-04-28 20:53:03] WARNING root fetch - processPackages [modpack-changelogger]: Skipping, unable to determine old version
+[2024-04-28 20:53:03] INFO root fetch - main [MainThread]: End processing [modpack-changelogger] error
+[2024-04-28 20:53:03] INFO root fetch - processPackages [wasmfunc]: Downloading https://files.pythonhosted.org/packages/ec/6e/e64cc5fb2e47857586f8339a246183d7ba0c6b1ebb956ed507433c90896c/wasmfunc-0.0.1a2.tar.gz
+[2024-04-28 20:53:03] INFO root fetch - processPackages [ogl]: Downloading https://files.pythonhosted.org/packages/d5/3a/c5eca98eaedd8500baf4d2e063a97bf001e481a1baf2084f34196b22057d/ogl-2.1.31.tar.gz
+[2024-04-28 20:53:03] INFO root fetch - processPackages [wasmfunc]: Downloading https://files.pythonhosted.org/packages/f8/7f/df2e97dd63ef2c868782fa8421bb9382b4a83451777737979d2422635904/wasmfunc-0.0.1rc1.tar.gz
+[2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: Downloading https://files.pythonhosted.org/packages/8d/73/9bc1a58b09a22979a8eb514bac19dc4492b8e4b0c19181a61c3e3fc38a62/ogl-2.1.5.tar.gz
+[2024-04-28 20:53:04] INFO root fetch - processPackages [wasmfunc]: executing diffoscope
+[2024-04-28 20:53:04] INFO root fetch - processPackages [wasmfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wasmfunc-0.0.1a2.tar.gz tmp/wasmfunc-0.0.1rc1.tar.gz --markdown 20240428/w/wasmfunc/0.0.1a2-0.0.1rc1/README.md --exclude *.pyd
+[2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: executing diffoscope
+[2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogl-2.1.31.tar.gz tmp/ogl-2.1.5.tar.gz --markdown 20240428/o/ogl/2.1.31-2.1.5/README.md --exclude *.pyd
+[2024-04-28 20:53:04] INFO root fetch - processPackages [wasmfunc]: Remove: archive file [/home/abi/fetcher/tmp/wasmfunc-0.0.1a2.tar.gz]
+[2024-04-28 20:53:04] INFO root fetch - processPackages [wasmfunc]: Remove: archive file [/home/abi/fetcher/tmp/wasmfunc-0.0.1rc1.tar.gz]
+[2024-04-28 20:53:04] INFO root fetch - main [MainThread]: End processing [wasmfunc]: success
+[2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: Remove: archive file [/home/abi/fetcher/tmp/ogl-2.1.31.tar.gz]
+[2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: Remove: archive file [/home/abi/fetcher/tmp/ogl-2.1.5.tar.gz]
+[2024-04-28 20:53:04] INFO root fetch - main [MainThread]: End processing [ogl]: success
+[2024-04-28 20:53:04] INFO root fetch - main [MainThread]: Store serial: [22968950]
