@@ -8515,3 +8515,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:46:15] INFO root fetch - processPackages [stressor]: Remove: archive file [/home/abi/fetcher/tmp/stressor-0.6.0.tar.gz]
 [2024-04-28 11:46:15] INFO root fetch - main [MainThread]: End processing [stressor]: success
 [2024-04-28 11:46:15] INFO root fetch - main [MainThread]: Store serial: [22965801]
+[2024-04-28 11:48:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965801]
+[2024-04-28 11:48:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 11:48:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modelpark
+[2024-04-28 11:48:24] WARNING root fetch - processPackages [modelpark]: Skipping, unable to determine old version
+[2024-04-28 11:48:24] INFO root fetch - main [MainThread]: End processing [modelpark] error
+[2024-04-28 11:48:24] INFO root fetch - main [MainThread]: Store serial: [22965806]
