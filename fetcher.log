@@ -17000,3 +17000,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:49:58] INFO root fetch - processPackages [approvaltests-minimal]: Remove: archive file [/home/abi/fetcher/tmp/approvaltests-minimal-9.0.0.tar.gz]
 [2024-04-28 21:49:58] INFO root fetch - main [MainThread]: End processing [approvaltests-minimal]: success
 [2024-04-28 21:49:58] INFO root fetch - main [MainThread]: Store serial: [22969366]
+[2024-04-28 21:52:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969366]
+[2024-04-28 21:52:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 21:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydal
+[2024-04-28 21:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: connectome-interpreter
+[2024-04-28 21:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: earnapi
+[2024-04-28 21:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tradelocker
+[2024-04-28 21:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: textalloc
+[2024-04-28 21:52:07] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-28 21:52:07] INFO root fetch - processPackages [textalloc]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 21:52:07] INFO root fetch - processPackages [earnapi]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-04-28 21:52:07] INFO root fetch - processPackages [pydal]: New version: [20240428.1] Old Version: [20240427.3]
+[2024-04-28 21:52:07] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/5f/38/13b9bd9629e9ea53557ec610c2c7b273396da5a53ae05c0db943e604233f/earnapi-1.0.5.tar.gz
+[2024-04-28 21:52:07] INFO root fetch - processPackages [tradelocker]: New version: [0.40.0] Old Version: [0.39.0]
+[2024-04-28 21:52:07] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/7a/2f/ff33d9cd68efa4b55e23ce021501d23fea943c0b656562532a3a7b5ef380/connectome_interpreter-1.6.0.tar.gz
+[2024-04-28 21:52:07] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/99/60/73c32b1960d778adca96cca02460914cfec934512193ae3450a7843c1f81/pydal-20240427.3.tar.gz
+[2024-04-28 21:52:07] INFO root fetch - processPackages [textalloc]: Downloading https://files.pythonhosted.org/packages/c5/e1/ec2158121f430446ac8d49f20fda67004a54bccb57d1eb2eb885a9c5e5c0/textalloc-0.1.1.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/98/27/a552ff1532a324bf77acf04239d963346c1cf22d30d50d446c16b7c3350a/earnapi-1.1.0.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [tradelocker]: Downloading https://files.pythonhosted.org/packages/e5/60/831de375c1867e52a65a5994e0e22297939a2e816f25ba7f767e43c60f61/tradelocker-0.39.0.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [textalloc]: Downloading https://files.pythonhosted.org/packages/b1/87/a410b5896e408fa93f469fb12bb07a7542d94b7cd3e656b9543988e99c47/textalloc-0.1.2.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [earnapi]: executing diffoscope
+[2024-04-28 21:52:08] INFO root fetch - processPackages [earnapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earnapi-1.0.5.tar.gz tmp/earnapi-1.1.0.tar.gz --markdown 20240428/e/earnapi/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-04-28 21:52:08] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/e7/80/cf03ddef165a93d5a527038e18b559efe5fd4540e2e3cdc71c9a4674d1f6/pydal-20240428.1.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [textalloc]: executing diffoscope
+[2024-04-28 21:52:08] INFO root fetch - processPackages [textalloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textalloc-0.1.1.tar.gz tmp/textalloc-0.1.2.tar.gz --markdown 20240428/t/textalloc/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 21:52:08] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/7d/c4/6306ce650dee80b3bdbb2a66565d178cfc472dc306b234271efdd03ca058/connectome_interpreter-1.6.1.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [tradelocker]: Downloading https://files.pythonhosted.org/packages/93/57/6d14c6e1ac683c59edc1c2bf70c0c54dd75b336fea97982c1ed70f49c926/tradelocker-0.40.0.tar.gz
+[2024-04-28 21:52:08] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-04-28 21:52:08] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20240427.3.tar.gz tmp/pydal-20240428.1.tar.gz --markdown 20240428/p/pydal/20240427.3-20240428.1/README.md --exclude *.pyd
+[2024-04-28 21:52:08] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-28 21:52:08] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.6.0.tar.gz tmp/connectome_interpreter-1.6.1.tar.gz --markdown 20240428/c/connectome-interpreter/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-28 21:52:08] INFO root fetch - processPackages [tradelocker]: executing diffoscope
+[2024-04-28 21:52:08] INFO root fetch - processPackages [tradelocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradelocker-0.39.0.tar.gz tmp/tradelocker-0.40.0.tar.gz --markdown 20240428/t/tradelocker/0.39.0-0.40.0/README.md --exclude *.pyd
+[2024-04-28 21:52:08] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-1.0.5.tar.gz]
+[2024-04-28 21:52:08] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-1.1.0.tar.gz]
+[2024-04-28 21:52:08] INFO root fetch - main [MainThread]: End processing [earnapi]: success
+[2024-04-28 21:52:09] INFO root fetch - processPackages [textalloc]: Remove: archive file [/home/abi/fetcher/tmp/textalloc-0.1.1.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - processPackages [textalloc]: Remove: archive file [/home/abi/fetcher/tmp/textalloc-0.1.2.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - main [MainThread]: End processing [textalloc]: success
+[2024-04-28 21:52:09] INFO root fetch - processPackages [tradelocker]: Remove: archive file [/home/abi/fetcher/tmp/tradelocker-0.39.0.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - processPackages [tradelocker]: Remove: archive file [/home/abi/fetcher/tmp/tradelocker-0.40.0.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - main [MainThread]: End processing [tradelocker]: success
+[2024-04-28 21:52:09] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.6.0.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.6.1.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-28 21:52:09] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.3.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240428.1.tar.gz]
+[2024-04-28 21:52:09] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-04-28 21:52:09] INFO root fetch - main [MainThread]: Store serial: [22969381]
