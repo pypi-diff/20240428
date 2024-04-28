@@ -15183,3 +15183,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: Remove: archive file [/home/abi/fetcher/tmp/openparse-0.5.5.tar.gz]
 [2024-04-28 19:41:02] INFO root fetch - main [MainThread]: End processing [openparse]: success
 [2024-04-28 19:41:02] INFO root fetch - main [MainThread]: Store serial: [22968525]
+[2024-04-28 19:43:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968525]
+[2024-04-28 19:43:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 19:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decli
+[2024-04-28 19:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: parea-ai
+[2024-04-28 19:43:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vid-cleaner
+[2024-04-28 19:43:12] INFO root fetch - processPackages [parea-ai]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-28 19:43:12] INFO root fetch - processPackages [vid-cleaner]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-28 19:43:12] INFO root fetch - processPackages [decli]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-28 19:43:12] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/cd/80/fcef2226405a0fb8e3a9a7fbda2b47a712f63d9294eac7e3fc336bbf5b0f/parea_ai-0.2.98.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [decli]: Downloading https://files.pythonhosted.org/packages/2e/9c/b76485e6120795c8b632707bafb4a9a4a2b75584ca5277e3e175c5d02225/decli-0.6.1.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [vid-cleaner]: Downloading https://files.pythonhosted.org/packages/6b/d4/514f2cd3403a982f6473acdf7bca66e3a25ed88211d71926cf3fc405a777/vid_cleaner-0.3.1.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/9d/1c/c389e28a1a12c54ff1c8111a2f00058e77ba07333943eb06d3592659a691/parea_ai-0.2.99.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [decli]: Downloading https://files.pythonhosted.org/packages/3d/a0/a4658f93ecb589f479037b164dc13c68d108b50bf6594e54c820749f97ac/decli-0.6.2.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [vid-cleaner]: Downloading https://files.pythonhosted.org/packages/8a/9c/72fcbf9731b738f041999b7fe17464e7204415b8ec89f417b47de1791933/vid_cleaner-0.3.2.tar.gz
+[2024-04-28 19:43:13] INFO root fetch - processPackages [parea-ai]: executing diffoscope
+[2024-04-28 19:43:13] INFO root fetch - processPackages [parea-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parea_ai-0.2.98.tar.gz tmp/parea_ai-0.2.99.tar.gz --markdown 20240428/p/parea-ai/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-28 19:43:13] INFO root fetch - processPackages [decli]: executing diffoscope
+[2024-04-28 19:43:13] INFO root fetch - processPackages [decli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decli-0.6.1.tar.gz tmp/decli-0.6.2.tar.gz --markdown 20240428/d/decli/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-28 19:43:13] INFO root fetch - processPackages [vid-cleaner]: executing diffoscope
+[2024-04-28 19:43:13] INFO root fetch - processPackages [vid-cleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vid_cleaner-0.3.1.tar.gz tmp/vid_cleaner-0.3.2.tar.gz --markdown 20240428/v/vid-cleaner/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-28 19:43:14] INFO root fetch - processPackages [decli]: Remove: archive file [/home/abi/fetcher/tmp/decli-0.6.1.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - processPackages [decli]: Remove: archive file [/home/abi/fetcher/tmp/decli-0.6.2.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - main [MainThread]: End processing [decli]: success
+[2024-04-28 19:43:14] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.98.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.99.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - main [MainThread]: End processing [parea-ai]: success
+[2024-04-28 19:43:14] INFO root fetch - processPackages [vid-cleaner]: Remove: archive file [/home/abi/fetcher/tmp/vid_cleaner-0.3.1.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - processPackages [vid-cleaner]: Remove: archive file [/home/abi/fetcher/tmp/vid_cleaner-0.3.2.tar.gz]
+[2024-04-28 19:43:14] INFO root fetch - main [MainThread]: End processing [vid-cleaner]: success
+[2024-04-28 19:43:14] INFO root fetch - main [MainThread]: Store serial: [22968534]
