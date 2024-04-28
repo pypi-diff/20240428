@@ -3122,3 +3122,17 @@
 [2024-04-28 04:36:34] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
 [2024-04-28 04:36:34] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
 [2024-04-28 04:36:34] INFO root fetch - main [MainThread]: Store serial: [22963499]
+[2024-04-28 04:38:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963499]
+[2024-04-28 04:38:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 04:40:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963499]
+[2024-04-28 04:40:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 04:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-chat-handler
+[2024-04-28 04:40:48] INFO root fetch - processPackages [streamlit-chat-handler]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 04:40:48] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/3a/6f/addc6aa9b6474c0b9cbad2137a89290428ae58ce6c8e575a3d10eb10d4f0/streamlit_chat_handler-0.1.1.tar.gz
+[2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/d9/03/d7d91d34f16252c870f1d00209978f7dc4015607ef787a21d79fe581f648/streamlit_chat_handler-0.1.2.tar.gz
+[2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: executing diffoscope
+[2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chat_handler-0.1.1.tar.gz tmp/streamlit_chat_handler-0.1.2.tar.gz --markdown 20240428/s/streamlit-chat-handler/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.1.tar.gz]
+[2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.2.tar.gz]
+[2024-04-28 04:40:49] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
+[2024-04-28 04:40:49] INFO root fetch - main [MainThread]: Store serial: [22963502]
