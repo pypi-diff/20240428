@@ -16013,3 +16013,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.9.tar.gz]
 [2024-04-28 20:42:12] INFO root fetch - main [MainThread]: End processing [beeflow-ajax]: success
 [2024-04-28 20:42:12] INFO root fetch - main [MainThread]: Store serial: [22968899]
+[2024-04-28 20:44:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968899]
+[2024-04-28 20:44:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remindmail
+[2024-04-28 20:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitlab-projects-settings
+[2024-04-28 20:44:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitlab-projects-migrate
+[2024-04-28 20:44:21] INFO root fetch - processPackages [gitlab-projects-migrate]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-28 20:44:21] INFO root fetch - processPackages [gitlab-projects-settings]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-28 20:44:21] INFO root fetch - processPackages [gitlab-projects-settings]: Downloading https://files.pythonhosted.org/packages/d9/a1/cf602ea34f2e3715e0655e98bb1ff1692518c5a3edf43f8c095659b447e8/gitlab_projects_settings-2.0.1.tar.gz
+[2024-04-28 20:44:21] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/ed/9a/c4237081d60f27fda2a2e6990e751dd265eb9b43d0c0c26c22839e7750c9/gitlab_projects_migrate-1.1.0.tar.gz
+[2024-04-28 20:44:21] INFO root fetch - processPackages [remindmail]: New version: [2024.4.28.1] Old Version: [2024.4.21.1]
+[2024-04-28 20:44:22] INFO root fetch - processPackages [remindmail]: Downloading https://files.pythonhosted.org/packages/d4/5f/d07f396f315447e995f26fffea87bbd934c08643a3a0b4c7712e5a633bd9/remindmail-2024.4.21.1.tar.gz
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/d5/bc/d74841dc03dafe0b27ce7ce2e03113e6efb5d3a215454233d231330509a1/gitlab_projects_migrate-2.0.0.tar.gz
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-migrate]: executing diffoscope
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_migrate-1.1.0.tar.gz tmp/gitlab_projects_migrate-2.0.0.tar.gz --markdown 20240428/g/gitlab-projects-migrate/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-settings]: Downloading https://files.pythonhosted.org/packages/5a/74/799dedb625dbc86fd466f4e8b40be367e65f26bc4c6aecbf8e05d6aa36b3/gitlab_projects_settings-2.0.2.tar.gz
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-settings]: executing diffoscope
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_settings-2.0.1.tar.gz tmp/gitlab_projects_settings-2.0.2.tar.gz --markdown 20240428/g/gitlab-projects-settings/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-28 20:44:22] INFO root fetch - processPackages [remindmail]: Downloading https://files.pythonhosted.org/packages/d2/00/eabb8570666db3b19968e9add366b42b0c36dbfc67428ddbcfe095d5932a/remindmail-2024.4.28.1.tar.gz
+[2024-04-28 20:44:22] INFO root fetch - processPackages [remindmail]: executing diffoscope
+[2024-04-28 20:44:22] INFO root fetch - processPackages [remindmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remindmail-2024.4.21.1.tar.gz tmp/remindmail-2024.4.28.1.tar.gz --markdown 20240428/r/remindmail/2024.4.21.1-2024.4.28.1/README.md --exclude *.pyd
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-1.1.0.tar.gz]
+[2024-04-28 20:44:22] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-2.0.0.tar.gz]
+[2024-04-28 20:44:22] INFO root fetch - main [MainThread]: End processing [gitlab-projects-migrate]: success
+[2024-04-28 20:44:23] INFO root fetch - processPackages [gitlab-projects-settings]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_settings-2.0.1.tar.gz]
+[2024-04-28 20:44:23] INFO root fetch - processPackages [gitlab-projects-settings]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_settings-2.0.2.tar.gz]
+[2024-04-28 20:44:23] INFO root fetch - main [MainThread]: End processing [gitlab-projects-settings]: success
+[2024-04-28 20:44:23] INFO root fetch - processPackages [remindmail]: Remove: archive file [/home/abi/fetcher/tmp/remindmail-2024.4.21.1.tar.gz]
+[2024-04-28 20:44:23] INFO root fetch - processPackages [remindmail]: Remove: archive file [/home/abi/fetcher/tmp/remindmail-2024.4.28.1.tar.gz]
+[2024-04-28 20:44:23] INFO root fetch - main [MainThread]: End processing [remindmail]: success
+[2024-04-28 20:44:23] INFO root fetch - main [MainThread]: Store serial: [22968908]
