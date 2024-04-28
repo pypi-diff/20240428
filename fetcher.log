@@ -6404,3 +6404,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:23:32] INFO root fetch - processPackages [limoon]: Remove: archive file [/home/abi/fetcher/tmp/limoon-0.0.8.tar.gz]
 [2024-04-28 09:23:32] INFO root fetch - main [MainThread]: End processing [limoon]: success
 [2024-04-28 09:23:32] INFO root fetch - main [MainThread]: Store serial: [22964856]
+[2024-04-28 09:25:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964856]
+[2024-04-28 09:25:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 09:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrogeram
+[2024-04-28 09:25:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mailslurp-client
+[2024-04-28 09:25:41] INFO root fetch - processPackages [pyrogeram]: New version: [2.0.107] Old Version: [2.0.106]
+[2024-04-28 09:25:41] INFO root fetch - processPackages [mailslurp-client]: New version: [9.0.0] Old Version: [8.7.1]
+[2024-04-28 09:25:41] INFO root fetch - processPackages [pyrogeram]: Downloading https://files.pythonhosted.org/packages/ee/8a/ea50e34576b5b85e9032b5a925c4b750af455efc584733323ffca163509c/pyrogeram-2.0.106.tar.gz
+[2024-04-28 09:25:41] INFO root fetch - processPackages [mailslurp-client]: Downloading https://files.pythonhosted.org/packages/3e/2a/b8cce2427a43d1e16d56cf7c0cb6846aa65ef693d53c602b86cc1b3e2dda/mailslurp-client-8.7.1.tar.gz
+[2024-04-28 09:25:41] INFO root fetch - processPackages [pyrogeram]: Downloading https://files.pythonhosted.org/packages/0c/1e/7a0f174833aba670154ea590f99db7b15fcc3963b7bc18a601c0722e590d/pyrogeram-2.0.107.tar.gz
+[2024-04-28 09:25:41] INFO root fetch - processPackages [mailslurp-client]: Downloading https://files.pythonhosted.org/packages/01/d9/2509603c731df895dbecf80066b199f2b72cb740d3900594486b1869bda3/mailslurp-client-9.0.0.tar.gz
+[2024-04-28 09:25:42] INFO root fetch - processPackages [pyrogeram]: executing diffoscope
+[2024-04-28 09:25:42] INFO root fetch - processPackages [pyrogeram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrogeram-2.0.106.tar.gz tmp/pyrogeram-2.0.107.tar.gz --markdown 20240428/p/pyrogeram/2.0.106-2.0.107/README.md --exclude *.pyd
+[2024-04-28 09:25:42] INFO root fetch - processPackages [mailslurp-client]: executing diffoscope
+[2024-04-28 09:25:42] INFO root fetch - processPackages [mailslurp-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailslurp-client-8.7.1.tar.gz tmp/mailslurp-client-9.0.0.tar.gz --markdown 20240428/m/mailslurp-client/8.7.1-9.0.0/README.md --exclude *.pyd
+[2024-04-28 09:25:43] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-8.7.1.tar.gz]
+[2024-04-28 09:25:43] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-9.0.0.tar.gz]
+[2024-04-28 09:25:43] INFO root fetch - main [MainThread]: End processing [mailslurp-client]: success
+[2024-04-28 09:25:46] INFO root fetch - processPackages [pyrogeram]: Remove: archive file [/home/abi/fetcher/tmp/pyrogeram-2.0.106.tar.gz]
+[2024-04-28 09:25:46] INFO root fetch - processPackages [pyrogeram]: Remove: archive file [/home/abi/fetcher/tmp/pyrogeram-2.0.107.tar.gz]
+[2024-04-28 09:25:46] INFO root fetch - main [MainThread]: End processing [pyrogeram]: success
+[2024-04-28 09:25:46] INFO root fetch - main [MainThread]: Store serial: [22964863]
