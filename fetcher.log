@@ -11214,3 +11214,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:06:56] INFO root fetch - processPackages [jh2]: Remove: archive file [/home/abi/fetcher/tmp/jh2-5.0.1-pp310-pypy310_pp73-musllinux_1_1_x86_64.whl.zip]
 [2024-04-28 15:06:56] INFO root fetch - main [MainThread]: End processing [jh2]: success
 [2024-04-28 15:06:56] INFO root fetch - main [MainThread]: Store serial: [22966894]
+[2024-04-28 15:09:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966894]
+[2024-04-28 15:09:12] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: axidence
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redzoo
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pgpyui
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyweatherfr
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asknews
+[2024-04-28 15:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dropletevapmodel
+[2024-04-28 15:09:13] INFO root fetch - processPackages [axidence]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [asknews]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pyweatherfr]: New version: [5.3.6] Old Version: [5.3.5]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pgpyui]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [redzoo]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [axidence]: Downloading https://files.pythonhosted.org/packages/d7/cf/c16fc68c44a0804e8dd8a792b853197a7d9032005579b4b13222e83cc220/axidence-0.1.0.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [dropletevapmodel]: New version: [0.2.0] Old Version: [0.1]
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/1d/18/89b4e7b521c1b2e4ecfa5564f46dd1412d6c87bf7f2bd9786680aefa30a3/pyweatherfr-5.3.5.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/00/be/0affa7fb9308274d0a6f9be0662e1e56ba64ee891dcf3f5a4ed1930f883b/pgpyui-0.0.4.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [redzoo]: Downloading https://files.pythonhosted.org/packages/21/1d/ff33edeca9703d444446a078de58a79b42af93ebeb73b33e7c65a365b880/redzoo-0.3.0.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/bf/3b/ea93566f4dc073b88ad2ea34074ee8240df784ad7289c8a3400a309555a0/asknews-0.5.0-py3-none-any.whl
+[2024-04-28 15:09:13] INFO root fetch - processPackages [axidence]: Downloading https://files.pythonhosted.org/packages/4f/cf/976efe84d7d0b7dcb9c0ec41fb9e695f4fb56f2a89a127575fcbef4e2333/axidence-0.2.0.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [dropletevapmodel]: Downloading https://files.pythonhosted.org/packages/36/46/8ae22fc079c6342adde925e675acf1b8cb0bdae1116f2b0facb06d6e3ff4/dropletevapmodel-0.1.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/44/0a/4620a6485918f8e050159496921f6eb48a2ebcbe8b9ba0e057d788da566b/pgpyui-0.0.5.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/ee/f0/2d9cd74bb8b2fc6f2b34b72259d67a595c28a88327b779f9fa53bb111f53/pyweatherfr-5.3.6.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [axidence]: executing diffoscope
+[2024-04-28 15:09:13] INFO root fetch - processPackages [axidence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axidence-0.1.0.tar.gz tmp/axidence-0.2.0.tar.gz --markdown 20240428/a/axidence/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pgpyui]: executing diffoscope
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pgpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgpyui-0.0.4.tar.gz tmp/pgpyui-0.0.5.tar.gz --markdown 20240428/p/pgpyui/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 15:09:13] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/2f/cf/0feedeb925ee7a285be1ff7d9550048e3bd917993fbd855fc8b28e684023/asknews-0.5.1-py3-none-any.whl
+[2024-04-28 15:09:13] INFO root fetch - processPackages [redzoo]: Downloading https://files.pythonhosted.org/packages/66/72/8154d26fed5cd603f70b9fa3f4d685f7433994f5b6eecf7eb339c5871b27/redzoo-0.3.1.tar.gz
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-28 15:09:13] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.3.5.tar.gz tmp/pyweatherfr-5.3.6.tar.gz --markdown 20240428/p/pyweatherfr/5.3.5-5.3.6/README.md --exclude *.pyd
+[2024-04-28 15:09:13] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-04-28 15:09:13] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.5.0-py3-none-any.whl.zip tmp/asknews-0.5.1-py3-none-any.whl.zip --markdown 20240428/a/asknews/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-28 15:09:13] INFO root fetch - processPackages [redzoo]: executing diffoscope
+[2024-04-28 15:09:13] INFO root fetch - processPackages [redzoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redzoo-0.3.0.tar.gz tmp/redzoo-0.3.1.tar.gz --markdown 20240428/r/redzoo/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 15:09:13] INFO root fetch - processPackages [dropletevapmodel]: Downloading https://files.pythonhosted.org/packages/a7/dd/ca97bc5eb04a93d1fc1d3cb35347cbf929232851a9efc6e88e5d353488b8/dropletevapmodel-0.2.0.tar.gz
+[2024-04-28 15:09:14] INFO root fetch - processPackages [dropletevapmodel]: executing diffoscope
+[2024-04-28 15:09:14] INFO root fetch - processPackages [dropletevapmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dropletevapmodel-0.1.tar.gz tmp/dropletevapmodel-0.2.0.tar.gz --markdown 20240428/d/dropletevapmodel/0.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 15:09:14] INFO root fetch - processPackages [axidence]: Remove: archive file [/home/abi/fetcher/tmp/axidence-0.1.0.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [axidence]: Remove: archive file [/home/abi/fetcher/tmp/axidence-0.2.0.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [axidence]: success
+[2024-04-28 15:09:14] INFO root fetch - processPackages [redzoo]: Remove: archive file [/home/abi/fetcher/tmp/redzoo-0.3.0.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [redzoo]: Remove: archive file [/home/abi/fetcher/tmp/redzoo-0.3.1.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [redzoo]: success
+[2024-04-28 15:09:14] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.4.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.5.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [pgpyui]: success
+[2024-04-28 15:09:14] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.0-py3-none-any.whl.zip]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.1-py3-none-any.whl.zip]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-04-28 15:09:14] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.5.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.6.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-28 15:09:14] INFO root fetch - processPackages [dropletevapmodel]: Remove: archive file [/home/abi/fetcher/tmp/dropletevapmodel-0.1.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - processPackages [dropletevapmodel]: Remove: archive file [/home/abi/fetcher/tmp/dropletevapmodel-0.2.0.tar.gz]
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [dropletevapmodel]: success
+[2024-04-28 15:09:14] INFO root fetch - main [MainThread]: Store serial: [22966955]
