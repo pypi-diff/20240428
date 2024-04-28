@@ -4703,3 +4703,33 @@
 [2024-04-28 07:07:57] INFO root fetch - processPackages [PySDM]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-2.9.tar.gz]
 [2024-04-28 07:07:57] INFO root fetch - main [MainThread]: End processing [PySDM]: success
 [2024-04-28 07:07:57] INFO root fetch - main [MainThread]: Store serial: [22964141]
+[2024-04-28 07:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964141]
+[2024-04-28 07:10:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer
+[2024-04-28 07:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: porkbun-ddns
+[2024-04-28 07:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: networkx-algo-common-subtree
+[2024-04-28 07:10:05] INFO root fetch - processPackages [model-explorer]: New version: [0.0.79] Old Version: [0.0.78]
+[2024-04-28 07:10:06] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/69/81/2fbe0fa7a7d8551c6a911cb1ce40774eb91c16f42f6c182572b400cf3d86/model_explorer-0.0.78.tar.gz
+[2024-04-28 07:10:06] INFO root fetch - processPackages [porkbun-ddns]: New version: [1.0.0] Old Version: [0.6.3]
+[2024-04-28 07:10:06] INFO root fetch - processPackages [networkx-algo-common-subtree]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-28 07:10:06] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/90/00/d14b93b22e5454c9144148480742a1ff831cb14ae730083dd4d896a8dda7/porkbun_ddns-0.6.3-py3-none-any.whl
+[2024-04-28 07:10:06] INFO root fetch - processPackages [networkx-algo-common-subtree]: Downloading https://files.pythonhosted.org/packages/d3/20/8cbccb7856b39a29d67f6efd5e087ee6ce7f2f5c3d425b2fc43e5c8415c6/networkx_algo_common_subtree-0.2.0.tar.gz
+[2024-04-28 07:10:06] INFO root fetch - processPackages [porkbun-ddns]: Downloading https://files.pythonhosted.org/packages/e7/af/6fac6f506ebc7c550098eaec153058bd20872ef9be9ccacb8057987ad559/porkbun_ddns-1.0.0-py3-none-any.whl
+[2024-04-28 07:10:06] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/79/a1/9aa2588b3e004052a8e44897e59b4af3ae071c54d407f876a05da79a6210/model_explorer-0.0.79.tar.gz
+[2024-04-28 07:10:06] INFO root fetch - processPackages [networkx-algo-common-subtree]: Downloading https://files.pythonhosted.org/packages/8b/91/0657f28f61f65ee891296311073459b63d860564108410124aaf4347e834/networkx_algo_common_subtree-0.2.1-cp312-cp312-macosx_11_0_arm64.whl
+[2024-04-28 07:10:06] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-04-28 07:10:06] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.78.tar.gz tmp/model_explorer-0.0.79.tar.gz --markdown 20240428/m/model-explorer/0.0.78-0.0.79/README.md --exclude *.pyd
+[2024-04-28 07:10:06] INFO root fetch - processPackages [porkbun-ddns]: executing diffoscope
+[2024-04-28 07:10:06] INFO root fetch - processPackages [porkbun-ddns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porkbun_ddns-0.6.3-py3-none-any.whl.zip tmp/porkbun_ddns-1.0.0-py3-none-any.whl.zip --markdown 20240428/p/porkbun-ddns/0.6.3-1.0.0/README.md --exclude *.pyd
+[2024-04-28 07:10:07] INFO root fetch - processPackages [porkbun-ddns]: Remove: archive file [/home/abi/fetcher/tmp/porkbun_ddns-0.6.3-py3-none-any.whl.zip]
+[2024-04-28 07:10:07] INFO root fetch - processPackages [porkbun-ddns]: Remove: archive file [/home/abi/fetcher/tmp/porkbun_ddns-1.0.0-py3-none-any.whl.zip]
+[2024-04-28 07:10:07] INFO root fetch - main [MainThread]: End processing [porkbun-ddns]: success
+[2024-04-28 07:10:07] INFO root fetch - processPackages [networkx-algo-common-subtree]: executing diffoscope
+[2024-04-28 07:10:07] INFO root fetch - processPackages [networkx-algo-common-subtree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_algo_common_subtree-0.2.0.tar.gz tmp/networkx_algo_common_subtree-0.2.1-cp312-cp312-macosx_11_0_arm64.whl.zip --markdown 20240428/n/networkx-algo-common-subtree/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-28 07:10:07] INFO root fetch - processPackages [networkx-algo-common-subtree]: Remove: archive file [/home/abi/fetcher/tmp/networkx_algo_common_subtree-0.2.0.tar.gz]
+[2024-04-28 07:10:07] INFO root fetch - processPackages [networkx-algo-common-subtree]: Remove: archive file [/home/abi/fetcher/tmp/networkx_algo_common_subtree-0.2.1-cp312-cp312-macosx_11_0_arm64.whl.zip]
+[2024-04-28 07:10:07] INFO root fetch - main [MainThread]: End processing [networkx-algo-common-subtree]: success
+[2024-04-28 07:10:08] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.78.tar.gz]
+[2024-04-28 07:10:08] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.79.tar.gz]
+[2024-04-28 07:10:08] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-04-28 07:10:08] INFO root fetch - main [MainThread]: Store serial: [22964160]
