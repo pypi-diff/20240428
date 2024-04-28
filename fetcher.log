@@ -15135,3 +15135,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:36:41] INFO root fetch - processPackages [gerstlix_python]: Remove: archive file [/home/abi/fetcher/tmp/gerstlix_python-1.0.tar.gz]
 [2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [gerstlix_python]: success
 [2024-04-28 19:36:41] INFO root fetch - main [MainThread]: Store serial: [22968504]
+[2024-04-28 19:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968504]
+[2024-04-28 19:38:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 19:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prophecy-libs
+[2024-04-28 19:38:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yew
+[2024-04-28 19:38:51] WARNING root fetch - processPackages [yew]: Skipping, unable to determine old version
+[2024-04-28 19:38:51] INFO root fetch - main [MainThread]: End processing [yew] error
+[2024-04-28 19:38:51] INFO root fetch - processPackages [prophecy-libs]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-04-28 19:38:51] INFO root fetch - processPackages [prophecy-libs]: Downloading https://files.pythonhosted.org/packages/55/0a/90561ca774443a2a8fc7836ec65bd203b9a55822454194896bfcda5affbb/prophecy-libs-1.8.8.tar.gz
+[2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: Downloading https://files.pythonhosted.org/packages/4d/26/13eca2b0b22483c0bcc9a426ef208809d6e938fda5d639cd2122eaf7bd06/prophecy-libs-1.8.9.tar.gz
+[2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: executing diffoscope
+[2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophecy-libs-1.8.8.tar.gz tmp/prophecy-libs-1.8.9.tar.gz --markdown 20240428/p/prophecy-libs/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: Remove: archive file [/home/abi/fetcher/tmp/prophecy-libs-1.8.8.tar.gz]
+[2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: Remove: archive file [/home/abi/fetcher/tmp/prophecy-libs-1.8.9.tar.gz]
+[2024-04-28 19:38:52] INFO root fetch - main [MainThread]: End processing [prophecy-libs]: success
+[2024-04-28 19:38:52] INFO root fetch - main [MainThread]: Store serial: [22968510]
