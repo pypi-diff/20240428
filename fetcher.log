@@ -3839,3 +3839,36 @@
 [2024-04-28 06:04:51] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.5.tar.gz]
 [2024-04-28 06:04:51] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
 [2024-04-28 06:04:51] INFO root fetch - main [MainThread]: Store serial: [22963827]
+[2024-04-28 06:06:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963827]
+[2024-04-28 06:06:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 06:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STAIR-tools
+[2024-04-28 06:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromedriver-binary
+[2024-04-28 06:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hashcat
+[2024-04-28 06:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-gadzooks
+[2024-04-28 06:06:59] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-28 06:06:59] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-04-28 06:06:59] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/3a/fa/82fbefd9bef41e04e2e52f5d7d36f1a269d2cb1d3402c7c062ea0304f8be/STAIR-tools-1.1.7.tar.gz
+[2024-04-28 06:06:59] INFO root fetch - processPackages [hashcat]: New version: [5.1.0.post3] Old Version: [5.1.0.post2]
+[2024-04-28 06:06:59] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-04-28 06:06:59] WARNING root fetch - processPackages [py-gadzooks]: Skipping, unable to determine old version
+[2024-04-28 06:06:59] INFO root fetch - main [MainThread]: End processing [py-gadzooks] error
+[2024-04-28 06:06:59] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 06:06:59] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-04-28 06:06:59] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/82/c6/2efc41e75bd81518d4a104fe1deb40a648e5d5bbe60276dfc1f360da5050/hashcat-5.1.0.post2.tar.gz
+[2024-04-28 06:06:59] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-04-28 06:06:59] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240428/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-04-28 06:06:59] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 06:06:59] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.7.tar.gz tmp/STAIR-tools-1.1.8.tar.gz --markdown 20240428/S/STAIR-tools/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-28 06:07:00] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-04-28 06:07:00] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-04-28 06:07:00] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-04-28 06:07:00] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.7.tar.gz]
+[2024-04-28 06:07:00] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 06:07:00] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 06:07:01] INFO root fetch - processPackages [hashcat]: Downloading https://files.pythonhosted.org/packages/90/2d/60c5bc06e31f9e88622ef933c70bc10df0c55d7bff96ae55c448dc5b79e2/hashcat-5.1.0.post3.tar.gz
+[2024-04-28 06:07:03] INFO root fetch - processPackages [hashcat]: executing diffoscope
+[2024-04-28 06:07:03] INFO root fetch - processPackages [hashcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashcat-5.1.0.post2.tar.gz tmp/hashcat-5.1.0.post3.tar.gz --markdown 20240428/h/hashcat/5.1.0.post2-5.1.0.post3/README.md --exclude *.pyd
+[2024-04-28 06:07:07] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post2.tar.gz]
+[2024-04-28 06:07:07] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
+[2024-04-28 06:07:07] INFO root fetch - main [MainThread]: End processing [hashcat]: success
+[2024-04-28 06:07:07] INFO root fetch - main [MainThread]: Store serial: [22963834]
