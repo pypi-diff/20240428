@@ -2381,3 +2381,15 @@
 [2024-04-28 03:24:08] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.99.tar.gz]
 [2024-04-28 03:24:08] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
 [2024-04-28 03:24:08] INFO root fetch - main [MainThread]: Store serial: [22963158]
+[2024-04-28 03:26:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963158]
+[2024-04-28 03:26:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 03:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EclipsingBinaries
+[2024-04-28 03:26:17] INFO root fetch - processPackages [EclipsingBinaries]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-04-28 03:26:17] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/ae/5e/bc48165e060c81f93c87f0e04a72ab717188cd25a02bb124308622eedc19/eclipsingbinaries-4.1.2.tar.gz
+[2024-04-28 03:26:17] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/fa/05/44687b21ceb1ea96c0088843706d97d5813b6988b061f3bb6a018ef39dfd/eclipsingbinaries-4.1.3.tar.gz
+[2024-04-28 03:26:17] INFO root fetch - processPackages [EclipsingBinaries]: executing diffoscope
+[2024-04-28 03:26:17] INFO root fetch - processPackages [EclipsingBinaries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eclipsingbinaries-4.1.2.tar.gz tmp/eclipsingbinaries-4.1.3.tar.gz --markdown 20240428/E/EclipsingBinaries/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-04-28 03:26:18] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/eclipsingbinaries-4.1.2.tar.gz]
+[2024-04-28 03:26:18] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/eclipsingbinaries-4.1.3.tar.gz]
+[2024-04-28 03:26:18] INFO root fetch - main [MainThread]: End processing [EclipsingBinaries]: success
+[2024-04-28 03:26:18] INFO root fetch - main [MainThread]: Store serial: [22963161]
