@@ -5289,3 +5289,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:55:40] WARNING root fetch - processPackages [Flare-Helper]: Skipping, unable to determine old version
 [2024-04-28 07:55:40] INFO root fetch - main [MainThread]: End processing [Flare-Helper] error
 [2024-04-28 07:55:40] INFO root fetch - main [MainThread]: Store serial: [22964380]
+[2024-04-28 07:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964380]
+[2024-04-28 07:57:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: natureAlgo
+[2024-04-28 07:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: es-testbed
+[2024-04-28 07:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anyon
+[2024-04-28 07:57:49] WARNING root fetch - processPackages [natureAlgo]: Skipping, unable to determine old version
+[2024-04-28 07:57:49] INFO root fetch - processPackages [anyon]: New version: [4.2.4] Old Version: [4.2.1]
+[2024-04-28 07:57:49] INFO root fetch - main [MainThread]: End processing [natureAlgo] error
+[2024-04-28 07:57:49] INFO root fetch - processPackages [es-testbed]: New version: [0.6.0] Old Version: [0.5.4]
+[2024-04-28 07:57:49] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/3c/8c/c5bdb7810cdc84ab00334fbcf7554618d45062f3fe149f2d9e4fcac9a405/es_testbed-0.5.4.tar.gz
+[2024-04-28 07:57:49] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/e4/8e/e04e25487aabdf239dcfe8daf265a6dd79078675d1a90d87a3928670d945/anyon-4.2.1-cp312-none-win_amd64.whl
+[2024-04-28 07:57:49] INFO root fetch - processPackages [es-testbed]: Downloading https://files.pythonhosted.org/packages/49/c4/b5bc9378b2eb94b4063d1db46673f54c96a2f2dde3bb02b5593e44ed34ca/es_testbed-0.6.0.tar.gz
+[2024-04-28 07:57:49] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/b4/43/e59a48f7e572ff3a7e157ed705a80aaca62f0a03853a562d2629ba391d9f/anyon-4.2.4-cp312-none-win_amd64.whl
+[2024-04-28 07:57:49] INFO root fetch - processPackages [es-testbed]: executing diffoscope
+[2024-04-28 07:57:49] INFO root fetch - processPackages [es-testbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_testbed-0.5.4.tar.gz tmp/es_testbed-0.6.0.tar.gz --markdown 20240428/e/es-testbed/0.5.4-0.6.0/README.md --exclude *.pyd
+[2024-04-28 07:57:50] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2024-04-28 07:57:50] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-4.2.1-cp312-none-win_amd64.whl.zip tmp/anyon-4.2.4-cp312-none-win_amd64.whl.zip --markdown 20240428/a/anyon/4.2.1-4.2.4/README.md --exclude *.pyd
+[2024-04-28 07:57:50] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.5.4.tar.gz]
+[2024-04-28 07:57:50] INFO root fetch - processPackages [es-testbed]: Remove: archive file [/home/abi/fetcher/tmp/es_testbed-0.6.0.tar.gz]
+[2024-04-28 07:57:50] INFO root fetch - main [MainThread]: End processing [es-testbed]: success
+[2024-04-28 07:57:50] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.1-cp312-none-win_amd64.whl.zip]
+[2024-04-28 07:57:50] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.4-cp312-none-win_amd64.whl.zip]
+[2024-04-28 07:57:50] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2024-04-28 07:57:50] INFO root fetch - main [MainThread]: Store serial: [22964398]
