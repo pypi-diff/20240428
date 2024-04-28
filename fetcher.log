@@ -4925,3 +4925,15 @@
 [2024-04-28 07:29:35] INFO root fetch - processPackages [cirbreak]: Remove: archive file [/home/abi/fetcher/tmp/cirbreak-0.1.1.tar.gz]
 [2024-04-28 07:29:35] INFO root fetch - main [MainThread]: End processing [cirbreak]: success
 [2024-04-28 07:29:35] INFO root fetch - main [MainThread]: Store serial: [22964261]
+[2024-04-28 07:31:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964261]
+[2024-04-28 07:31:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aivoifu
+[2024-04-28 07:31:44] INFO root fetch - processPackages [aivoifu]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-28 07:31:44] INFO root fetch - processPackages [aivoifu]: Downloading https://files.pythonhosted.org/packages/76/1c/69d8fc3581e4110bd4588c3540a6f4bb91d3482c4f691d2a0247dcc348e8/aivoifu-0.2.7.tar.gz
+[2024-04-28 07:31:44] INFO root fetch - processPackages [aivoifu]: Downloading https://files.pythonhosted.org/packages/c1/9a/e37915a4595804d95a41b7a7e481e873c06c66c19741d6bdee91d97af551/aivoifu-0.2.8.tar.gz
+[2024-04-28 07:31:45] INFO root fetch - processPackages [aivoifu]: executing diffoscope
+[2024-04-28 07:31:45] INFO root fetch - processPackages [aivoifu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aivoifu-0.2.7.tar.gz tmp/aivoifu-0.2.8.tar.gz --markdown 20240428/a/aivoifu/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-28 07:31:45] INFO root fetch - processPackages [aivoifu]: Remove: archive file [/home/abi/fetcher/tmp/aivoifu-0.2.7.tar.gz]
+[2024-04-28 07:31:45] INFO root fetch - processPackages [aivoifu]: Remove: archive file [/home/abi/fetcher/tmp/aivoifu-0.2.8.tar.gz]
+[2024-04-28 07:31:45] INFO root fetch - main [MainThread]: End processing [aivoifu]: success
+[2024-04-28 07:31:45] INFO root fetch - main [MainThread]: Store serial: [22964264]
