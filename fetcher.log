@@ -10511,3 +10511,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:14:28] INFO root fetch - processPackages [fiverr-api]: Remove: archive file [/home/abi/fetcher/tmp/fiverr_api-1.0.0.tar.gz]
 [2024-04-28 14:14:28] INFO root fetch - main [MainThread]: End processing [fiverr-api]: success
 [2024-04-28 14:14:28] INFO root fetch - main [MainThread]: Store serial: [22966609]
+[2024-04-28 14:16:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966609]
+[2024-04-28 14:16:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 14:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: calf
+[2024-04-28 14:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quasarpy
+[2024-04-28 14:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fractal-repositories
+[2024-04-28 14:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: EcoStock
+[2024-04-28 14:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tulona
+[2024-04-28 14:16:44] INFO root fetch - processPackages [EcoStock]: New version: [0.3] Old Version: [0.2]
+[2024-04-28 14:16:44] WARNING root fetch - processPackages [quasarpy]: Skipping, unable to determine old version
+[2024-04-28 14:16:44] INFO root fetch - main [MainThread]: End processing [quasarpy] error
+[2024-04-28 14:16:44] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/53/bc/c2f7c884974e47b6ea3c54945ed5c0f30881d6853ba2d730b2b39266c799/EcoStock-0.2.tar.gz
+[2024-04-28 14:16:44] INFO root fetch - processPackages [tulona]: New version: [0.7.1] Old Version: [0.6.3]
+[2024-04-28 14:16:44] INFO root fetch - processPackages [calf]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-28 14:16:44] INFO root fetch - processPackages [fractal-repositories]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 14:16:45] INFO root fetch - processPackages [calf]: Downloading https://files.pythonhosted.org/packages/68/cc/5c94a8176ae042b98b3de738fc23165844f472c78ce6ac84dc3663338933/calf-0.3.2.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [fractal-repositories]: Downloading https://files.pythonhosted.org/packages/93/da/30fd8fb11869503f43866017571301b8ed3039d115f4bb40406bc025c5c3/fractal_repositories-0.0.8.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/a6/da/0c8b6083335d4ffd20cc4494b64e7a56da2b0758b8d8d35fada1fb367f5c/tulona-0.6.3.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/df/09/075bf2e455bafa1244cc3af3e9b997e9958fd5c205b2b99f107f030174ff/EcoStock-0.3.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-04-28 14:16:45] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EcoStock-0.2.tar.gz tmp/EcoStock-0.3.tar.gz --markdown 20240428/E/EcoStock/0.2-0.3/README.md --exclude *.pyd
+[2024-04-28 14:16:45] INFO root fetch - processPackages [calf]: Downloading https://files.pythonhosted.org/packages/15/ba/f451d888003e17f16c87e5ab127ae33505d1f5df9683cad77c20c0d4ae18/calf-0.3.3-py3-none-any.whl
+[2024-04-28 14:16:45] INFO root fetch - processPackages [fractal-repositories]: Downloading https://files.pythonhosted.org/packages/f5/93/ca5771c6f24faeb6875a14129c7e9500256acac56fe0ca5ec7d8031891e6/fractal_repositories-0.0.9.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/ef/77/d962a92b103faedc19568a8b1f0b3f5a747a61dc0638eeb073b2f6f07d0c/tulona-0.7.1.tar.gz
+[2024-04-28 14:16:45] INFO root fetch - processPackages [calf]: executing diffoscope
+[2024-04-28 14:16:45] INFO root fetch - processPackages [calf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calf-0.3.2.tar.gz tmp/calf-0.3.3-py3-none-any.whl.zip --markdown 20240428/c/calf/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-28 14:16:45] INFO root fetch - processPackages [fractal-repositories]: executing diffoscope
+[2024-04-28 14:16:45] INFO root fetch - processPackages [fractal-repositories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_repositories-0.0.8.tar.gz tmp/fractal_repositories-0.0.9.tar.gz --markdown 20240428/f/fractal-repositories/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 14:16:45] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-28 14:16:45] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.6.3.tar.gz tmp/tulona-0.7.1.tar.gz --markdown 20240428/t/tulona/0.6.3-0.7.1/README.md --exclude *.pyd
+[2024-04-28 14:16:45] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.2.tar.gz]
+[2024-04-28 14:16:45] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.3.tar.gz]
+[2024-04-28 14:16:45] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-04-28 14:16:46] INFO root fetch - processPackages [calf]: Remove: archive file [/home/abi/fetcher/tmp/calf-0.3.2.tar.gz]
+[2024-04-28 14:16:46] INFO root fetch - processPackages [calf]: Remove: archive file [/home/abi/fetcher/tmp/calf-0.3.3-py3-none-any.whl.zip]
+[2024-04-28 14:16:46] INFO root fetch - main [MainThread]: End processing [calf]: success
+[2024-04-28 14:16:46] INFO root fetch - processPackages [fractal-repositories]: Remove: archive file [/home/abi/fetcher/tmp/fractal_repositories-0.0.8.tar.gz]
+[2024-04-28 14:16:46] INFO root fetch - processPackages [fractal-repositories]: Remove: archive file [/home/abi/fetcher/tmp/fractal_repositories-0.0.9.tar.gz]
+[2024-04-28 14:16:46] INFO root fetch - main [MainThread]: End processing [fractal-repositories]: success
+[2024-04-28 14:16:46] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.6.3.tar.gz]
+[2024-04-28 14:16:46] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.1.tar.gz]
+[2024-04-28 14:16:46] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-28 14:16:46] INFO root fetch - main [MainThread]: Store serial: [22966623]
