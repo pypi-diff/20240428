@@ -15600,3 +15600,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:07:21] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
 [2024-04-28 20:07:21] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
 [2024-04-28 20:07:21] INFO root fetch - main [MainThread]: Store serial: [22968714]
+[2024-04-28 20:09:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968714]
+[2024-04-28 20:09:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adi-notebook
+[2024-04-28 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esbonio
+[2024-04-28 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-28 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: csv-reconciler-savarb
+[2024-04-28 20:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: csv-reconciler
+[2024-04-28 20:09:30] INFO root fetch - processPackages [adi-notebook]: New version: [1.0.0a1] Old Version: [0.3.1a0]
+[2024-04-28 20:09:30] INFO root fetch - processPackages [adi-notebook]: Downloading https://files.pythonhosted.org/packages/00/77/f5cc2bf279007686e281bdc583b8b010fb7501af37f69aefbba0fe181fb3/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl
+[2024-04-28 20:09:30] WARNING root fetch - processPackages [csv-reconciler]: Skipping, unable to determine old version
+[2024-04-28 20:09:30] INFO root fetch - main [MainThread]: End processing [csv-reconciler] error
+[2024-04-28 20:09:30] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-28 20:09:30] WARNING root fetch - processPackages [csv-reconciler-savarb]: Skipping, unable to determine old version
+[2024-04-28 20:09:30] INFO root fetch - main [MainThread]: End processing [csv-reconciler-savarb] error
+[2024-04-28 20:09:30] INFO root fetch - processPackages [esbonio]: New version: [1.0.0b3] Old Version: [1.0.0b2]
+[2024-04-28 20:09:30] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-28 20:09:30] INFO root fetch - processPackages [esbonio]: Downloading https://files.pythonhosted.org/packages/80/a3/c6c578ecdb3eaa4714e0b2548bf0d4b3ab9495700df3518dfebb1017329d/esbonio-1.0.0b2.tar.gz
+[2024-04-28 20:09:30] INFO root fetch - processPackages [adi-notebook]: Downloading https://files.pythonhosted.org/packages/d3/4e/c2c00e6a8c656b9a8cd3a5164c276502812a8a2d8a93c466cc68bc632611/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl
+[2024-04-28 20:09:31] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-28 20:09:31] INFO root fetch - processPackages [adi-notebook]: executing diffoscope
+[2024-04-28 20:09:31] INFO root fetch - processPackages [adi-notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl.zip tmp/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl.zip --markdown 20240428/a/adi-notebook/0.3.1a0-1.0.0a1/README.md --exclude *.pyd
+[2024-04-28 20:09:31] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-28 20:09:31] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240428/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-28 20:09:31] INFO root fetch - processPackages [esbonio]: Downloading https://files.pythonhosted.org/packages/b4/f0/6c3119ea8057be5a6cbaf06c7453d0811dc555dd6824ec0f07f11103770f/esbonio-1.0.0b3.tar.gz
+[2024-04-28 20:09:31] INFO root fetch - processPackages [esbonio]: executing diffoscope
+[2024-04-28 20:09:31] INFO root fetch - processPackages [esbonio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esbonio-1.0.0b2.tar.gz tmp/esbonio-1.0.0b3.tar.gz --markdown 20240428/e/esbonio/1.0.0b2-1.0.0b3/README.md --exclude *.pyd
+[2024-04-28 20:09:31] INFO root fetch - processPackages [adi-notebook]: Remove: archive file [/home/abi/fetcher/tmp/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 20:09:31] INFO root fetch - processPackages [adi-notebook]: Remove: archive file [/home/abi/fetcher/tmp/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 20:09:31] INFO root fetch - main [MainThread]: End processing [adi-notebook]: success
+[2024-04-28 20:09:31] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-28 20:09:31] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-28 20:09:31] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-28 20:09:32] INFO root fetch - processPackages [esbonio]: Remove: archive file [/home/abi/fetcher/tmp/esbonio-1.0.0b2.tar.gz]
+[2024-04-28 20:09:32] INFO root fetch - processPackages [esbonio]: Remove: archive file [/home/abi/fetcher/tmp/esbonio-1.0.0b3.tar.gz]
+[2024-04-28 20:09:32] INFO root fetch - main [MainThread]: End processing [esbonio]: success
+[2024-04-28 20:09:32] INFO root fetch - main [MainThread]: Store serial: [22968734]
