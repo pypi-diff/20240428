@@ -9983,3 +9983,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:28:45] WARNING root fetch - processPackages [dataformer]: Skipping, unable to determine old version
 [2024-04-28 13:28:45] INFO root fetch - main [MainThread]: End processing [dataformer] error
 [2024-04-28 13:28:45] INFO root fetch - main [MainThread]: Store serial: [22966397]
+[2024-04-28 13:30:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966397]
+[2024-04-28 13:31:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 13:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dataformer-app
+[2024-04-28 13:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: STAIR-tools
+[2024-04-28 13:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bonsai
+[2024-04-28 13:31:00] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 13:31:00] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 13:31:00] INFO root fetch - processPackages [bonsai]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-04-28 13:31:00] WARNING root fetch - processPackages [dataformer-app]: Skipping, unable to determine old version
+[2024-04-28 13:31:00] INFO root fetch - main [MainThread]: End processing [dataformer-app] error
+[2024-04-28 13:31:00] INFO root fetch - processPackages [bonsai]: Downloading https://files.pythonhosted.org/packages/ba/a5/0e3aeedfe4a8f183965e0fe47024c6855ef7bd95912df9c1093351425a03/bonsai-1.5.2.tar.gz
+[2024-04-28 13:31:00] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-04-28 13:31:00] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 13:31:00] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240428/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 13:31:01] INFO root fetch - processPackages [bonsai]: Downloading https://files.pythonhosted.org/packages/31/8a/641499f3381b8aba24f7d81f46ef9121aaebe6b2963c01d4d97a4d2b36f7/bonsai-1.5.3.tar.gz
+[2024-04-28 13:31:01] INFO root fetch - processPackages [bonsai]: executing diffoscope
+[2024-04-28 13:31:01] INFO root fetch - processPackages [bonsai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bonsai-1.5.2.tar.gz tmp/bonsai-1.5.3.tar.gz --markdown 20240428/b/bonsai/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-04-28 13:31:01] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 13:31:01] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-04-28 13:31:01] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 13:31:02] INFO root fetch - processPackages [bonsai]: Remove: archive file [/home/abi/fetcher/tmp/bonsai-1.5.2.tar.gz]
+[2024-04-28 13:31:02] INFO root fetch - processPackages [bonsai]: Remove: archive file [/home/abi/fetcher/tmp/bonsai-1.5.3.tar.gz]
+[2024-04-28 13:31:02] INFO root fetch - main [MainThread]: End processing [bonsai]: success
+[2024-04-28 13:31:02] INFO root fetch - main [MainThread]: Store serial: [22966424]
