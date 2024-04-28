@@ -15965,3 +15965,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:35:43] INFO root fetch - processPackages [colormap]: Remove: archive file [/home/abi/fetcher/tmp/colormap-1.1.0.tar.gz]
 [2024-04-28 20:35:43] INFO root fetch - main [MainThread]: End processing [colormap]: success
 [2024-04-28 20:35:43] INFO root fetch - main [MainThread]: Store serial: [22968866]
+[2024-04-28 20:37:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968866]
+[2024-04-28 20:37:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 20:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web3morebundlers
+[2024-04-28 20:37:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stack-overflow-watchman
+[2024-04-28 20:37:52] WARNING root fetch - processPackages [web3morebundlers]: Skipping, unable to determine old version
+[2024-04-28 20:37:52] INFO root fetch - main [MainThread]: End processing [web3morebundlers] error
+[2024-04-28 20:37:52] INFO root fetch - processPackages [stack-overflow-watchman]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-04-28 20:37:52] INFO root fetch - processPackages [stack-overflow-watchman]: Downloading https://files.pythonhosted.org/packages/6f/55/8b792e15130b4490dd8ab9a076370bf5bd3dcd4a8192e2c158898a7f7474/stack_overflow_watchman-0.1.0.tar.gz
+[2024-04-28 20:37:52] INFO root fetch - processPackages [stack-overflow-watchman]: Downloading https://files.pythonhosted.org/packages/b3/1b/139e2cb02256d5938b34066dd0b3f0b23e481e1a73a7341c122bae2ff3fa/stack_overflow_watchman-1.0.0.tar.gz
+[2024-04-28 20:37:52] INFO root fetch - processPackages [stack-overflow-watchman]: executing diffoscope
+[2024-04-28 20:37:52] INFO root fetch - processPackages [stack-overflow-watchman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stack_overflow_watchman-0.1.0.tar.gz tmp/stack_overflow_watchman-1.0.0.tar.gz --markdown 20240428/s/stack-overflow-watchman/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-04-28 20:37:53] INFO root fetch - processPackages [stack-overflow-watchman]: Remove: archive file [/home/abi/fetcher/tmp/stack_overflow_watchman-0.1.0.tar.gz]
+[2024-04-28 20:37:53] INFO root fetch - processPackages [stack-overflow-watchman]: Remove: archive file [/home/abi/fetcher/tmp/stack_overflow_watchman-1.0.0.tar.gz]
+[2024-04-28 20:37:53] INFO root fetch - main [MainThread]: End processing [stack-overflow-watchman]: success
+[2024-04-28 20:37:53] INFO root fetch - main [MainThread]: Store serial: [22968875]
