@@ -2458,3 +2458,33 @@
 [2024-04-28 03:32:45] WARNING root fetch - processPackages [schwab-api-wrapper]: Skipping, unable to determine old version
 [2024-04-28 03:32:45] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper] error
 [2024-04-28 03:32:45] INFO root fetch - main [MainThread]: Store serial: [22963185]
+[2024-04-28 03:34:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963185]
+[2024-04-28 03:34:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 03:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-pairecservice20221213
+[2024-04-28 03:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aikicore
+[2024-04-28 03:34:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-pairecservice20221213-py2
+[2024-04-28 03:34:54] INFO root fetch - processPackages [aikicore]: New version: [1.0.0a6] Old Version: [1.0.0a5]
+[2024-04-28 03:34:54] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/c9/1c/e74f2506c12e280f8e4a23ebf98d3f04adeefea52e0295430647c227218c/aikicore-1.0.0a5.tar.gz
+[2024-04-28 03:34:54] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 03:34:54] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 03:34:54] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: Downloading https://files.pythonhosted.org/packages/de/0e/fabeab08778c30f806512b46ccf5fbec866f2c3a6d30cc177111469aa8ec/alibabacloud_pairecservice20221213-1.3.2.tar.gz
+[2024-04-28 03:34:54] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: Downloading https://files.pythonhosted.org/packages/86/f7/562a5fea4e6ca35cd4cd7486fbd7d43d150415bd2319c9192bf1832f4c53/alibabacloud_pairecservice20221213_py2-1.3.2.tar.gz
+[2024-04-28 03:34:54] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/bf/8d/7af2c4d23ab2954647d0478137e37ee44bc79accf22435cc02188658b95f/aikicore-1.0.0a6.tar.gz
+[2024-04-28 03:34:55] INFO root fetch - processPackages [aikicore]: executing diffoscope
+[2024-04-28 03:34:55] INFO root fetch - processPackages [aikicore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aikicore-1.0.0a5.tar.gz tmp/aikicore-1.0.0a6.tar.gz --markdown 20240428/a/aikicore/1.0.0a5-1.0.0a6/README.md --exclude *.pyd
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: Downloading https://files.pythonhosted.org/packages/e7/07/cb3b7cde5a7066a4b13c41ec1e49c0f9b15197b472b07a4c9ec3ad45a2ab/alibabacloud_pairecservice20221213-1.3.3.tar.gz
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: Downloading https://files.pythonhosted.org/packages/a3/59/370123bca2729fe17dc3ed97de218b3327687fd980559117fc346ae9c4ca/alibabacloud_pairecservice20221213_py2-1.3.3.tar.gz
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: executing diffoscope
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_pairecservice20221213-1.3.2.tar.gz tmp/alibabacloud_pairecservice20221213-1.3.3.tar.gz --markdown 20240428/a/alibabacloud-pairecservice20221213/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: executing diffoscope
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_pairecservice20221213_py2-1.3.2.tar.gz tmp/alibabacloud_pairecservice20221213_py2-1.3.3.tar.gz --markdown 20240428/a/alibabacloud-pairecservice20221213-py2/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 03:34:55] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a5.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a6.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - main [MainThread]: End processing [aikicore]: success
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_pairecservice20221213_py2-1.3.2.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_pairecservice20221213_py2-1.3.3.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - main [MainThread]: End processing [alibabacloud-pairecservice20221213-py2]: success
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_pairecservice20221213-1.3.2.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - processPackages [alibabacloud-pairecservice20221213]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_pairecservice20221213-1.3.3.tar.gz]
+[2024-04-28 03:34:55] INFO root fetch - main [MainThread]: End processing [alibabacloud-pairecservice20221213]: success
+[2024-04-28 03:34:55] INFO root fetch - main [MainThread]: Store serial: [22963205]
