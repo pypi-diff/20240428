@@ -15312,3 +15312,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:49:46] INFO root fetch - processPackages [zer1t0-aze]: Remove: archive file [/home/abi/fetcher/tmp/zer1t0_aze-0.0.4.tar.gz]
 [2024-04-28 19:49:46] INFO root fetch - main [MainThread]: End processing [zer1t0-aze]: success
 [2024-04-28 19:49:46] INFO root fetch - main [MainThread]: Store serial: [22968579]
+[2024-04-28 19:51:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968579]
+[2024-04-28 19:51:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 19:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2024-04-28 19:51:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: earnapi
+[2024-04-28 19:51:54] INFO root fetch - processPackages [netron]: New version: [7.6.3] Old Version: [7.6.2]
+[2024-04-28 19:51:54] INFO root fetch - processPackages [earnapi]: New version: [1.0.5] Old Version: [0.1.0]
+[2024-04-28 19:51:55] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/5f/19/7f02a29969f325b240ad3266957c170cacd53f540f84474376c770adee03/earnapi-0.1.0.tar.gz
+[2024-04-28 19:51:55] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/8a/a8/91746dc337d38fea527fc62c297e1aec498d12101acc9e2db4637cd5fc4b/netron-7.6.3-py3-none-any.whl
+[2024-04-28 19:51:55] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/5f/38/13b9bd9629e9ea53557ec610c2c7b273396da5a53ae05c0db943e604233f/earnapi-1.0.5.tar.gz
+[2024-04-28 19:51:55] INFO root fetch - processPackages [earnapi]: executing diffoscope
+[2024-04-28 19:51:55] INFO root fetch - processPackages [earnapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earnapi-0.1.0.tar.gz tmp/earnapi-1.0.5.tar.gz --markdown 20240428/e/earnapi/0.1.0-1.0.5/README.md --exclude *.pyd
+[2024-04-28 19:51:55] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-04-28 19:51:55] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.2-py3-none-any.whl.zip tmp/netron-7.6.3-py3-none-any.whl.zip --markdown 20240428/n/netron/7.6.2-7.6.3/README.md --exclude *.pyd
+[2024-04-28 19:51:56] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-0.1.0.tar.gz]
+[2024-04-28 19:51:56] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-1.0.5.tar.gz]
+[2024-04-28 19:51:56] INFO root fetch - main [MainThread]: End processing [earnapi]: success
+[2024-04-28 19:52:00] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.2-py3-none-any.whl.zip]
+[2024-04-28 19:52:00] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.3-py3-none-any.whl.zip]
+[2024-04-28 19:52:00] INFO root fetch - main [MainThread]: End processing [netron]: success
+[2024-04-28 19:52:00] INFO root fetch - main [MainThread]: Store serial: [22968588]
