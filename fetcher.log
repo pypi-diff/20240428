@@ -2839,3 +2839,69 @@
 [2024-04-28 04:16:05] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
 [2024-04-28 04:16:05] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
 [2024-04-28 04:16:05] INFO root fetch - main [MainThread]: Store serial: [22963398]
+[2024-04-28 04:18:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963398]
+[2024-04-28 04:18:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastprop
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scdl
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monai-weekly
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-catalog-objects
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sweetrpg-web-core
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openaichatlib
+[2024-04-28 04:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: maling
+[2024-04-28 04:18:14] INFO root fetch - processPackages [openaichatlib]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [maling]: New version: [2.3.2] Old Version: [2.3.1]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [openaichatlib]: Downloading https://files.pythonhosted.org/packages/b5/e0/e5b0a8222b864910fd5b5afcb2cac8b3aca1db355b68904fad7f218b9383/openaichatlib-1.0.5.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [scdl]: New version: [2.7.6] Old Version: [2.7.5]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [fastprop]: New version: [1.0.1] Old Version: [1.0.0b4]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [monai-weekly]: New version: [1.4.dev2417] Old Version: [1.4.dev2416]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 04:18:14] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/d8/de/78e9d19568faca39f1411d28feb8c0378a29aec8298a9c3b925f2236def6/maling-2.3.1.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [scdl]: Downloading https://files.pythonhosted.org/packages/1e/9f/0b820a4ee511787f0e4f59465ece1da2c3dbe85db2b9b255343095208b91/scdl-2.7.5.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [fastprop]: Downloading https://files.pythonhosted.org/packages/a8/e4/94c3cc2daccebd65ce26449d95501b838c003fb3f8bf705be2eb122df7c8/fastprop-1.0.0b4.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/b8/15/9e363104055085e02e58c36060c4688183c4589ec3d370ad58e8d65b18d5/monai_weekly-1.4.dev2416.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [openaichatlib]: Downloading https://files.pythonhosted.org/packages/1c/df/20c84829f90a3346e88ea948a6f9a22c2f010311613e7df2115ce1192a3a/openaichatlib-1.0.6.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-04-28 04:18:14] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 04:18:14] INFO root fetch - processPackages [openaichatlib]: executing diffoscope
+[2024-04-28 04:18:14] INFO root fetch - processPackages [openaichatlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openaichatlib-1.0.5.tar.gz tmp/openaichatlib-1.0.6.tar.gz --markdown 20240428/o/openaichatlib/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-28 04:18:14] INFO root fetch - processPackages [maling]: Downloading https://files.pythonhosted.org/packages/eb/24/21c659e9bc924bf9790e045c0ed23d4c9d48fb50de57926be430dd292650/maling-2.3.2.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [scdl]: Downloading https://files.pythonhosted.org/packages/db/55/37998968ee88072c030ca58d24c2527209550ba0c4b468176ee97076bb90/scdl-2.7.6.tar.gz
+[2024-04-28 04:18:14] INFO root fetch - processPackages [fastprop]: Downloading https://files.pythonhosted.org/packages/a1/1b/dbac39e87ee5f4015f3f8218b0cf221f751ff24ea807440a4b680e827332/fastprop-1.0.1.tar.gz
+[2024-04-28 04:18:15] INFO root fetch - processPackages [scdl]: executing diffoscope
+[2024-04-28 04:18:15] INFO root fetch - processPackages [scdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scdl-2.7.5.tar.gz tmp/scdl-2.7.6.tar.gz --markdown 20240428/s/scdl/2.7.5-2.7.6/README.md --exclude *.pyd
+[2024-04-28 04:18:15] INFO root fetch - processPackages [fastprop]: executing diffoscope
+[2024-04-28 04:18:15] INFO root fetch - processPackages [fastprop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastprop-1.0.0b4.tar.gz tmp/fastprop-1.0.1.tar.gz --markdown 20240428/f/fastprop/1.0.0b4-1.0.1/README.md --exclude *.pyd
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-28 04:18:15] INFO root fetch - processPackages [maling]: executing diffoscope
+[2024-04-28 04:18:15] INFO root fetch - processPackages [maling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maling-2.3.1.tar.gz tmp/maling-2.3.2.tar.gz --markdown 20240428/m/maling/2.3.1-2.3.2/README.md --exclude *.pyd
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 04:18:15] INFO root fetch - processPackages [monai-weekly]: Downloading https://files.pythonhosted.org/packages/87/25/a166a00a8c9d06a998259f2c71a1b07b58725089341499bb1d3d065960d8/monai_weekly-1.4.dev2417.tar.gz
+[2024-04-28 04:18:15] INFO root fetch - processPackages [monai-weekly]: executing diffoscope
+[2024-04-28 04:18:15] INFO root fetch - processPackages [monai-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monai_weekly-1.4.dev2416.tar.gz tmp/monai_weekly-1.4.dev2417.tar.gz --markdown 20240428/m/monai-weekly/1.4.dev2416-1.4.dev2417/README.md --exclude *.pyd
+[2024-04-28 04:18:15] INFO root fetch - processPackages [openaichatlib]: Remove: archive file [/home/abi/fetcher/tmp/openaichatlib-1.0.5.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - processPackages [openaichatlib]: Remove: archive file [/home/abi/fetcher/tmp/openaichatlib-1.0.6.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - main [MainThread]: End processing [openaichatlib]: success
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-04-28 04:18:15] INFO root fetch - processPackages [scdl]: Remove: archive file [/home/abi/fetcher/tmp/scdl-2.7.5.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - processPackages [scdl]: Remove: archive file [/home/abi/fetcher/tmp/scdl-2.7.6.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - main [MainThread]: End processing [scdl]: success
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-28 04:18:15] INFO root fetch - processPackages [fastprop]: Remove: archive file [/home/abi/fetcher/tmp/fastprop-1.0.0b4.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - processPackages [fastprop]: Remove: archive file [/home/abi/fetcher/tmp/fastprop-1.0.1.tar.gz]
+[2024-04-28 04:18:15] INFO root fetch - main [MainThread]: End processing [fastprop]: success
+[2024-04-28 04:18:16] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.1.tar.gz]
+[2024-04-28 04:18:16] INFO root fetch - processPackages [maling]: Remove: archive file [/home/abi/fetcher/tmp/maling-2.3.2.tar.gz]
+[2024-04-28 04:18:16] INFO root fetch - main [MainThread]: End processing [maling]: success
+[2024-04-28 04:18:20] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2416.tar.gz]
+[2024-04-28 04:18:20] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2417.tar.gz]
+[2024-04-28 04:18:20] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
+[2024-04-28 04:18:20] INFO root fetch - main [MainThread]: Store serial: [22963420]
