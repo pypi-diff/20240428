@@ -3502,3 +3502,42 @@
 [2024-04-28 05:21:43] INFO root fetch - processPackages [npc-ephys]: Remove: archive file [/home/abi/fetcher/tmp/npc-ephys-0.1.9.tar.gz]
 [2024-04-28 05:21:43] INFO root fetch - main [MainThread]: End processing [npc-ephys]: success
 [2024-04-28 05:21:43] INFO root fetch - main [MainThread]: Store serial: [22963713]
+[2024-04-28 05:23:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963713]
+[2024-04-28 05:23:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 05:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oresat-gps
+[2024-04-28 05:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-04-28 05:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alipay-faas-server-sdk
+[2024-04-28 05:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-chat-handler
+[2024-04-28 05:23:51] INFO root fetch - processPackages [streamlit-chat-handler]: New version: [0.1.3.dev3] Old Version: [0.1.3.dev2]
+[2024-04-28 05:23:51] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024042703] Old Version: [3.3.2.dev2024042503]
+[2024-04-28 05:23:51] INFO root fetch - processPackages [oresat-gps]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-28 05:23:51] INFO root fetch - processPackages [alipay-faas-server-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 05:23:51] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/e1/62/accd46b47837cdf1f5ea6de3054e93943ab08fb3e7e7d2ef77fca08f5995/streamlit_chat_handler-0.1.3.dev2.tar.gz
+[2024-04-28 05:23:51] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/12/4c/8b31e7643dfcdac32b5d55af1c2c2be990bca351ff5084f8fef42d1bd95f/keras_nightly-3.3.2.dev2024042503.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [oresat-gps]: Downloading https://files.pythonhosted.org/packages/10/89/2b427d1f7e7e1d5bea614968cba8dae0c4bceaf75ba8824e92c26e526fd4/oresat-gps-1.3.0.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [alipay-faas-server-sdk]: Downloading https://files.pythonhosted.org/packages/00/6c/dfaa62fe43e0e364985d4cd517b6dba18255f4f459e8cd96ad7edde5732b/alipay_faas_server_sdk-0.0.2.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/65/99/634fc6d3dd818531b50788454ca108912451e13b2c98f9b54aac5e1e257b/keras_nightly-3.3.3.dev2024042703.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/83/60/eca34345026b4b04cf085f90155ab5c291d746eb993508dfef10a3c30e7a/streamlit_chat_handler-0.1.3.dev3.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [streamlit-chat-handler]: executing diffoscope
+[2024-04-28 05:23:52] INFO root fetch - processPackages [streamlit-chat-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chat_handler-0.1.3.dev2.tar.gz tmp/streamlit_chat_handler-0.1.3.dev3.tar.gz --markdown 20240428/s/streamlit-chat-handler/0.1.3.dev2-0.1.3.dev3/README.md --exclude *.pyd
+[2024-04-28 05:23:52] INFO root fetch - processPackages [oresat-gps]: Downloading https://files.pythonhosted.org/packages/2d/ce/a7fbf7ce4e51f5c246cd8f01c02fc56089284112f6a2ba25639de781aba7/oresat_gps-1.4.0.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-28 05:23:52] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.2.dev2024042503.tar.gz tmp/keras_nightly-3.3.3.dev2024042703.tar.gz --markdown 20240428/k/keras-nightly/3.3.2.dev2024042503-3.3.3.dev2024042703/README.md --exclude *.pyd
+[2024-04-28 05:23:52] INFO root fetch - processPackages [alipay-faas-server-sdk]: Downloading https://files.pythonhosted.org/packages/d3/79/b32348ff0715a929cb6c9711382777adb7d0390dec510dbf2437c3d7a17e/alipay_faas_server_sdk-0.0.3.tar.gz
+[2024-04-28 05:23:52] INFO root fetch - processPackages [oresat-gps]: executing diffoscope
+[2024-04-28 05:23:52] INFO root fetch - processPackages [oresat-gps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat-gps-1.3.0.tar.gz tmp/oresat_gps-1.4.0.tar.gz --markdown 20240428/o/oresat-gps/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-28 05:23:52] INFO root fetch - processPackages [alipay-faas-server-sdk]: executing diffoscope
+[2024-04-28 05:23:52] INFO root fetch - processPackages [alipay-faas-server-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alipay_faas_server_sdk-0.0.2.tar.gz tmp/alipay_faas_server_sdk-0.0.3.tar.gz --markdown 20240428/a/alipay-faas-server-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 05:23:53] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.3.dev2.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.3.dev3.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
+[2024-04-28 05:23:53] INFO root fetch - processPackages [oresat-gps]: Remove: archive file [/home/abi/fetcher/tmp/oresat-gps-1.3.0.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - processPackages [oresat-gps]: Remove: archive file [/home/abi/fetcher/tmp/oresat_gps-1.4.0.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - main [MainThread]: End processing [oresat-gps]: success
+[2024-04-28 05:23:53] INFO root fetch - processPackages [alipay-faas-server-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alipay_faas_server_sdk-0.0.2.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - processPackages [alipay-faas-server-sdk]: Remove: archive file [/home/abi/fetcher/tmp/alipay_faas_server_sdk-0.0.3.tar.gz]
+[2024-04-28 05:23:53] INFO root fetch - main [MainThread]: End processing [alipay-faas-server-sdk]: success
+[2024-04-28 05:23:54] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.2.dev2024042503.tar.gz]
+[2024-04-28 05:23:54] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024042703.tar.gz]
+[2024-04-28 05:23:54] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-28 05:23:54] INFO root fetch - main [MainThread]: Store serial: [22963725]
