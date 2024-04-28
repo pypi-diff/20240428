@@ -15899,3 +15899,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:31:19] INFO root fetch - processPackages [Faker]: Remove: archive file [/home/abi/fetcher/tmp/Faker-9.9.1.tar.gz]
 [2024-04-28 20:31:19] INFO root fetch - main [MainThread]: End processing [Faker]: success
 [2024-04-28 20:31:19] INFO root fetch - main [MainThread]: Store serial: [22968845]
+[2024-04-28 20:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968845]
+[2024-04-28 20:33:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 20:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: progress-table
+[2024-04-28 20:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AmaProductReviews
+[2024-04-28 20:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypayment
+[2024-04-28 20:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: octomy-common
+[2024-04-28 20:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chainforge
+[2024-04-28 20:33:29] WARNING root fetch - processPackages [AmaProductReviews]: Skipping, unable to determine old version
+[2024-04-28 20:33:29] INFO root fetch - main [MainThread]: End processing [AmaProductReviews] error
+[2024-04-28 20:33:29] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 20:33:29] INFO root fetch - processPackages [progress-table]: New version: [2.0.0] Old Version: [1.3.2]
+[2024-04-28 20:33:29] INFO root fetch - processPackages [pypayment]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-28 20:33:29] INFO root fetch - processPackages [chainforge]: New version: [0.3.1.7] Old Version: [0.3.1.6]
+[2024-04-28 20:33:29] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/5c/fc/76b239e69ee247937534204bd927871b5bb291836c8d512768eb5215533a/progress-table-1.3.2.tar.gz
+[2024-04-28 20:33:29] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-28 20:33:29] INFO root fetch - processPackages [pypayment]: Downloading https://files.pythonhosted.org/packages/e7/55/ec35be438b7efa9f9d090ff9411881cd1ddd5376b8420d5603cf0a98a121/pypayment-1.7.8.tar.gz
+[2024-04-28 20:33:29] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/4d/f3/b9055cd0dc50578b053a53557ca68e0b1efe1203bf30bb4993f596de7763/chainforge-0.3.1.6.tar.gz
+[2024-04-28 20:33:30] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/4d/cd/d147652d78f3719b06ed96101b832e4a640692091afa0832caa51281e63a/progress-table-2.0.0.tar.gz
+[2024-04-28 20:33:30] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-28 20:33:30] INFO root fetch - processPackages [pypayment]: Downloading https://files.pythonhosted.org/packages/fa/fe/b401e71f9fbc28ad493f896f918efaa7b996a827b14ccd1e8bf836291b21/pypayment-1.7.9.tar.gz
+[2024-04-28 20:33:30] INFO root fetch - processPackages [progress-table]: executing diffoscope
+[2024-04-28 20:33:30] INFO root fetch - processPackages [progress-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress-table-1.3.2.tar.gz tmp/progress-table-2.0.0.tar.gz --markdown 20240428/p/progress-table/1.3.2-2.0.0/README.md --exclude *.pyd
+[2024-04-28 20:33:30] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-28 20:33:30] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240428/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 20:33:30] INFO root fetch - processPackages [pypayment]: executing diffoscope
+[2024-04-28 20:33:30] INFO root fetch - processPackages [pypayment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypayment-1.7.8.tar.gz tmp/pypayment-1.7.9.tar.gz --markdown 20240428/p/pypayment/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-28 20:33:30] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/e0/63/ebbf8a1ca570469e3b629d545ce3df500b287feef97ad28c587f529e738f/chainforge-0.3.1.7.tar.gz
+[2024-04-28 20:33:30] INFO root fetch - processPackages [progress-table]: Remove: archive file [/home/abi/fetcher/tmp/progress-table-1.3.2.tar.gz]
+[2024-04-28 20:33:30] INFO root fetch - processPackages [progress-table]: Remove: archive file [/home/abi/fetcher/tmp/progress-table-2.0.0.tar.gz]
+[2024-04-28 20:33:30] INFO root fetch - main [MainThread]: End processing [progress-table]: success
+[2024-04-28 20:33:30] INFO root fetch - processPackages [chainforge]: executing diffoscope
+[2024-04-28 20:33:30] INFO root fetch - processPackages [chainforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainforge-0.3.1.6.tar.gz tmp/chainforge-0.3.1.7.tar.gz --markdown 20240428/c/chainforge/0.3.1.6-0.3.1.7/README.md --exclude *.pyd
+[2024-04-28 20:33:31] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-28 20:33:31] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-28 20:33:31] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-28 20:33:31] INFO root fetch - processPackages [pypayment]: Remove: archive file [/home/abi/fetcher/tmp/pypayment-1.7.8.tar.gz]
+[2024-04-28 20:33:31] INFO root fetch - processPackages [pypayment]: Remove: archive file [/home/abi/fetcher/tmp/pypayment-1.7.9.tar.gz]
+[2024-04-28 20:33:31] INFO root fetch - main [MainThread]: End processing [pypayment]: success
+[2024-04-28 20:33:33] INFO root fetch - processPackages [chainforge]: Remove: archive file [/home/abi/fetcher/tmp/chainforge-0.3.1.6.tar.gz]
+[2024-04-28 20:33:33] INFO root fetch - processPackages [chainforge]: Remove: archive file [/home/abi/fetcher/tmp/chainforge-0.3.1.7.tar.gz]
+[2024-04-28 20:33:33] INFO root fetch - main [MainThread]: End processing [chainforge]: success
+[2024-04-28 20:33:33] INFO root fetch - main [MainThread]: Store serial: [22968857]
