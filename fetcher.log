@@ -2220,3 +2220,24 @@
 [2024-04-28 03:02:42] INFO root fetch - processPackages [kbinxml]: Remove: archive file [/home/abi/fetcher/tmp/kbinxml-2.1.tar.gz]
 [2024-04-28 03:02:42] INFO root fetch - main [MainThread]: End processing [kbinxml]: success
 [2024-04-28 03:02:42] INFO root fetch - main [MainThread]: Store serial: [22963113]
+[2024-04-28 03:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963113]
+[2024-04-28 03:04:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 03:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oem
+[2024-04-28 03:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oscb
+[2024-04-28 03:04:50] INFO root fetch - processPackages [oscb]: New version: [1.0.6] Old Version: [1.0.0]
+[2024-04-28 03:04:50] INFO root fetch - processPackages [oem]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/fe/fa/c250412e98a4f81d1177231c97284ca0c35fd5b499cb26b554c172288e33/oscb-1.0.0.tar.gz
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oem]: Downloading https://files.pythonhosted.org/packages/92/ba/2e563ff3423845ef57f2374cd3bbd3f3d69e9b6f28b8a4960c1152d4475e/oem-0.4.1.tar.gz
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/47/13/aa7173787979e139a49b99ac015ec8cdcec5dd440f3d31b9c88bb824016b/oscb-1.0.6.tar.gz
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oem]: Downloading https://files.pythonhosted.org/packages/c4/00/e87b2fa9b1d589363b051afe1103bae9758d7795c9f8f485ae35d1f63610/oem-0.4.2.tar.gz
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.0.tar.gz tmp/oscb-1.0.6.tar.gz --markdown 20240428/o/oscb/1.0.0-1.0.6/README.md --exclude *.pyd
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oem]: executing diffoscope
+[2024-04-28 03:04:51] INFO root fetch - processPackages [oem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oem-0.4.1.tar.gz tmp/oem-0.4.2.tar.gz --markdown 20240428/o/oem/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-28 03:04:52] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.0.tar.gz]
+[2024-04-28 03:04:52] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.6.tar.gz]
+[2024-04-28 03:04:52] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 03:04:52] INFO root fetch - processPackages [oem]: Remove: archive file [/home/abi/fetcher/tmp/oem-0.4.1.tar.gz]
+[2024-04-28 03:04:52] INFO root fetch - processPackages [oem]: Remove: archive file [/home/abi/fetcher/tmp/oem-0.4.2.tar.gz]
+[2024-04-28 03:04:52] INFO root fetch - main [MainThread]: End processing [oem]: success
+[2024-04-28 03:04:52] INFO root fetch - main [MainThread]: Store serial: [22963118]
