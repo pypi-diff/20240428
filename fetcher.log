@@ -14916,3 +14916,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:22:47] INFO root fetch - processPackages [quaxed]: Remove: archive file [/home/abi/fetcher/tmp/quaxed-0.4.1.tar.gz]
 [2024-04-28 19:22:47] INFO root fetch - main [MainThread]: End processing [quaxed]: success
 [2024-04-28 19:22:47] INFO root fetch - main [MainThread]: Store serial: [22968398]
+[2024-04-28 19:24:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968398]
+[2024-04-28 19:24:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:24:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synnax
+[2024-04-28 19:24:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-04-28 19:24:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuackOSM
+[2024-04-28 19:24:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jetline
+[2024-04-28 19:24:57] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:24:57] INFO root fetch - processPackages [synnax]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 19:24:57] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.72] Old Version: [0.4.71]
+[2024-04-28 19:24:57] INFO root fetch - processPackages [QuackOSM]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-28 19:24:57] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/58/30/a96b4152153b9da7b1ce7cc100c87af9eb994e769eea41e8643359cd913f/MobileInventoryCLI-0.4.71.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/89/a1/f0d76d0706e47ba3dcdbf0fe8c7b2e90c98bd073d40a3c4c7c1c1025aab8/synnax-0.8.0.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [QuackOSM]: Downloading https://files.pythonhosted.org/packages/3c/41/df1312ea51b23d0b327b26fa212a76b2542187f8f2c0a097d8ccd0b687d2/quackosm-0.7.1.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [synnax]: Downloading https://files.pythonhosted.org/packages/b3/bc/76e9b03b96c7ab72f4b39e5e03c396b86efd6fb650bedcff8a7118679e9b/synnax-0.9.0.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:24:57] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:24:57] INFO root fetch - processPackages [synnax]: executing diffoscope
+[2024-04-28 19:24:57] INFO root fetch - processPackages [synnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synnax-0.8.0.tar.gz tmp/synnax-0.9.0.tar.gz --markdown 20240428/s/synnax/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 19:24:57] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/b8/0f/9a11d249df5e76d1907750116078aebc9789f0dcf56f1560525a50ccba98/MobileInventoryCLI-0.4.72.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [QuackOSM]: Downloading https://files.pythonhosted.org/packages/19/f5/23dca5e522e58281bca62ede24422da35c5cfa79b857b20ca8827706ae7e/quackosm-0.7.2.tar.gz
+[2024-04-28 19:24:57] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-28 19:24:57] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.71.tar.gz tmp/MobileInventoryCLI-0.4.72.tar.gz --markdown 20240428/M/MobileInventoryCLI/0.4.71-0.4.72/README.md --exclude *.pyd
+[2024-04-28 19:24:58] INFO root fetch - processPackages [QuackOSM]: executing diffoscope
+[2024-04-28 19:24:58] INFO root fetch - processPackages [QuackOSM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quackosm-0.7.1.tar.gz tmp/quackosm-0.7.2.tar.gz --markdown 20240428/Q/QuackOSM/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-28 19:24:58] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:24:58] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.8.0.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - processPackages [synnax]: Remove: archive file [/home/abi/fetcher/tmp/synnax-0.9.0.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - main [MainThread]: End processing [synnax]: success
+[2024-04-28 19:24:58] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.71.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.72.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-28 19:24:58] INFO root fetch - processPackages [QuackOSM]: Remove: archive file [/home/abi/fetcher/tmp/quackosm-0.7.1.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - processPackages [QuackOSM]: Remove: archive file [/home/abi/fetcher/tmp/quackosm-0.7.2.tar.gz]
+[2024-04-28 19:24:58] INFO root fetch - main [MainThread]: End processing [QuackOSM]: success
+[2024-04-28 19:24:58] INFO root fetch - main [MainThread]: Store serial: [22968409]
