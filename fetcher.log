@@ -3601,3 +3601,27 @@
 [2024-04-28 05:30:24] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-28 05:30:24] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-28 05:30:24] INFO root fetch - main [MainThread]: Store serial: [22963750]
+[2024-04-28 05:32:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963750]
+[2024-04-28 05:32:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-local
+[2024-04-28 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulidentify
+[2024-04-28 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: YoutubeUser
+[2024-04-28 05:32:33] INFO root fetch - processPackages [YoutubeUser]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 05:32:33] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/80/39/290f04b1f5a01f4dc9cc477d3ffefd4260fed1f7473c86b2ba627bb838ac/youtubeuser-0.0.2.tar.gz
+[2024-04-28 05:32:33] WARNING root fetch - processPackages [vulidentify]: Skipping, unable to determine old version
+[2024-04-28 05:32:33] INFO root fetch - main [MainThread]: End processing [vulidentify] error
+[2024-04-28 05:32:33] INFO root fetch - processPackages [queue-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 05:32:33] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/74/2a/11e7cf27d1a339b3be58b722b335bd5427d0e0cd5df02c853c6fc2f70e89/queue-local-0.0.8.tar.gz
+[2024-04-28 05:32:33] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/92/6a/be07fc6cd6f8acbbf71fa0d9d0b70f85fa8ffdaf315ea65c1943d99a21e3/youtubeuser-0.0.3.tar.gz
+[2024-04-28 05:32:34] INFO root fetch - processPackages [YoutubeUser]: executing diffoscope
+[2024-04-28 05:32:34] INFO root fetch - processPackages [YoutubeUser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtubeuser-0.0.2.tar.gz tmp/youtubeuser-0.0.3.tar.gz --markdown 20240428/Y/YoutubeUser/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/a8/6d/85b9e7808db253376ca4b0f171843555d3b647703fd759861abdc4f9c44f/queue-local-0.0.9.tar.gz
+[2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: executing diffoscope
+[2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-local-0.0.8.tar.gz tmp/queue-local-0.0.9.tar.gz --markdown 20240428/q/queue-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 05:32:34] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.2.tar.gz]
+[2024-04-28 05:32:34] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.3.tar.gz]
+[2024-04-28 05:32:34] INFO root fetch - main [MainThread]: End processing [YoutubeUser]: success
+[2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.8.tar.gz]
+[2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.9.tar.gz]
+[2024-04-28 05:32:34] INFO root fetch - main [MainThread]: End processing [queue-local]: success
+[2024-04-28 05:32:34] INFO root fetch - main [MainThread]: Store serial: [22963759]
