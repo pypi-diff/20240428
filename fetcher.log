@@ -3964,3 +3964,36 @@
 [2024-04-28 06:09:19] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
 [2024-04-28 06:09:19] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
 [2024-04-28 06:09:19] INFO root fetch - main [MainThread]: Store serial: [22963871]
+[2024-04-28 06:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963871]
+[2024-04-28 06:11:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 06:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IslandSheds
+[2024-04-28 06:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yuktived
+[2024-04-28 06:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-fieldservice
+[2024-04-28 06:11:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2024-04-28 06:11:27] INFO root fetch - processPackages [IslandSheds]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-04-28 06:11:27] INFO root fetch - processPackages [odoo-addon-fieldservice]: New version: [17.0.1.2.0] Old Version: [17.0.1.1.0.9]
+[2024-04-28 06:11:27] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 06:11:27] WARNING root fetch - processPackages [yuktived]: Skipping, unable to determine old version
+[2024-04-28 06:11:27] INFO root fetch - main [MainThread]: End processing [yuktived] error
+[2024-04-28 06:11:27] INFO root fetch - processPackages [IslandSheds]: Downloading https://files.pythonhosted.org/packages/f9/b8/061908f87357d9f771abdbcd40839b4ea6f8fada6ee844a5c9b89d6109fc/IslandSheds-0.0.13.tar.gz
+[2024-04-28 06:11:27] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/2e/13/bfa19eb0f551525c779e88f1ae3b14f4e4b13798e2dee6722d120f808b73/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl
+[2024-04-28 06:11:27] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-28 06:11:28] INFO root fetch - processPackages [IslandSheds]: Downloading https://files.pythonhosted.org/packages/c7/da/e2ed85a62befa7991e8d9d89e4c05c8517c90eb72d8b299300ceb8a29dcd/IslandSheds-0.0.14.tar.gz
+[2024-04-28 06:11:28] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-28 06:11:28] INFO root fetch - processPackages [odoo-addon-fieldservice]: Downloading https://files.pythonhosted.org/packages/8c/65/85b0932879c1671f7fd60840c923fdafe1a5f2084cd633cd6d6935605751/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl
+[2024-04-28 06:11:28] INFO root fetch - processPackages [IslandSheds]: executing diffoscope
+[2024-04-28 06:11:28] INFO root fetch - processPackages [IslandSheds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IslandSheds-0.0.13.tar.gz tmp/IslandSheds-0.0.14.tar.gz --markdown 20240428/I/IslandSheds/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-04-28 06:11:28] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-28 06:11:28] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240428/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 06:11:28] INFO root fetch - processPackages [odoo-addon-fieldservice]: executing diffoscope
+[2024-04-28 06:11:28] INFO root fetch - processPackages [odoo-addon-fieldservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl.zip tmp/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl.zip --markdown 20240428/o/odoo-addon-fieldservice/17.0.1.1.0.9-17.0.1.2.0/README.md --exclude *.pyd
+[2024-04-28 06:11:28] INFO root fetch - processPackages [IslandSheds]: Remove: archive file [/home/abi/fetcher/tmp/IslandSheds-0.0.13.tar.gz]
+[2024-04-28 06:11:28] INFO root fetch - processPackages [IslandSheds]: Remove: archive file [/home/abi/fetcher/tmp/IslandSheds-0.0.14.tar.gz]
+[2024-04-28 06:11:28] INFO root fetch - main [MainThread]: End processing [IslandSheds]: success
+[2024-04-28 06:11:28] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-28 06:11:28] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-28 06:11:29] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-28 06:11:29] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.1.0.9-py3-none-any.whl.zip]
+[2024-04-28 06:11:29] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-28 06:11:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice]: success
+[2024-04-28 06:11:29] INFO root fetch - main [MainThread]: Store serial: [22963884]
