@@ -13161,3 +13161,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:19:48] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.86.1.tar.gz]
 [2024-04-28 17:19:48] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
 [2024-04-28 17:19:48] INFO root fetch - main [MainThread]: Store serial: [22967711]
+[2024-04-28 17:22:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967711]
+[2024-04-28 17:22:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 17:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ascender
+[2024-04-28 17:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyams-sequence
+[2024-04-28 17:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Verbex
+[2024-04-28 17:22:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tubeulator
+[2024-04-28 17:22:10] INFO root fetch - processPackages [ascender]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 17:22:10] INFO root fetch - processPackages [Verbex]: New version: [2.0.1] Old Version: [1.2.0]
+[2024-04-28 17:22:10] INFO root fetch - processPackages [ascender]: Downloading https://files.pythonhosted.org/packages/bb/7c/20f99a99828038835ec2281c773c0225729ddf57714f94920b654c7c7224/ascender-0.1.4.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [pyams-sequence]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-04-28 17:22:10] INFO root fetch - processPackages [Verbex]: Downloading https://files.pythonhosted.org/packages/01/89/58bd0be5f16d8756a0261620caca3a49730824caf35c454c8964d5547e5f/Verbex-1.2.0.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [tubeulator]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 17:22:10] INFO root fetch - processPackages [ascender]: Downloading https://files.pythonhosted.org/packages/0c/27/92b62ab6beb1b0a53532016fed22c1c0b80ba209657831976a130de36a4f/ascender-0.1.5.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/f0/88/c81050b65f45c0084a6e2d27d67132c2bd88129fad536497c52aa9628bb7/tubeulator-0.0.6.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [pyams-sequence]: Downloading https://files.pythonhosted.org/packages/64/b8/55f9a1fa7014e75ab4b94ee7a286089a509746b1e85fbbaf55fe3fd61165/pyams_sequence-2.0.1.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [Verbex]: Downloading https://files.pythonhosted.org/packages/9b/46/1122ae5717a82b4fc7e05719f3049ff95c9b3140fbedded4945a6bca73c6/verbex-2.0.1.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [ascender]: executing diffoscope
+[2024-04-28 17:22:10] INFO root fetch - processPackages [ascender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascender-0.1.4.tar.gz tmp/ascender-0.1.5.tar.gz --markdown 20240428/a/ascender/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 17:22:10] INFO root fetch - processPackages [Verbex]: executing diffoscope
+[2024-04-28 17:22:10] INFO root fetch - processPackages [Verbex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Verbex-1.2.0.tar.gz tmp/verbex-2.0.1.tar.gz --markdown 20240428/V/Verbex/1.2.0-2.0.1/README.md --exclude *.pyd
+[2024-04-28 17:22:10] INFO root fetch - processPackages [pyams-sequence]: Downloading https://files.pythonhosted.org/packages/1d/72/e485100bca77884b2710ec681256a28cbe6d608c46b20863748abdd55cd0/pyams_sequence-2.1.0.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/a8/0c/cfad76c65d6d9d05a31afb99b190e5519548c8f46cdd2cf0fa79b55143e9/tubeulator-0.0.7.tar.gz
+[2024-04-28 17:22:10] INFO root fetch - processPackages [pyams-sequence]: executing diffoscope
+[2024-04-28 17:22:10] INFO root fetch - processPackages [pyams-sequence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_sequence-2.0.1.tar.gz tmp/pyams_sequence-2.1.0.tar.gz --markdown 20240428/p/pyams-sequence/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-04-28 17:22:11] INFO root fetch - processPackages [tubeulator]: executing diffoscope
+[2024-04-28 17:22:11] INFO root fetch - processPackages [tubeulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tubeulator-0.0.6.tar.gz tmp/tubeulator-0.0.7.tar.gz --markdown 20240428/t/tubeulator/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 17:22:11] INFO root fetch - processPackages [ascender]: Remove: archive file [/home/abi/fetcher/tmp/ascender-0.1.4.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - processPackages [ascender]: Remove: archive file [/home/abi/fetcher/tmp/ascender-0.1.5.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - main [MainThread]: End processing [ascender]: success
+[2024-04-28 17:22:11] INFO root fetch - processPackages [Verbex]: Remove: archive file [/home/abi/fetcher/tmp/Verbex-1.2.0.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - processPackages [Verbex]: Remove: archive file [/home/abi/fetcher/tmp/verbex-2.0.1.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - main [MainThread]: End processing [Verbex]: success
+[2024-04-28 17:22:11] INFO root fetch - processPackages [pyams-sequence]: Remove: archive file [/home/abi/fetcher/tmp/pyams_sequence-2.0.1.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - processPackages [pyams-sequence]: Remove: archive file [/home/abi/fetcher/tmp/pyams_sequence-2.1.0.tar.gz]
+[2024-04-28 17:22:11] INFO root fetch - main [MainThread]: End processing [pyams-sequence]: success
+[2024-04-28 17:22:12] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.6.tar.gz]
+[2024-04-28 17:22:12] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.7.tar.gz]
+[2024-04-28 17:22:12] INFO root fetch - main [MainThread]: End processing [tubeulator]: success
+[2024-04-28 17:22:12] INFO root fetch - main [MainThread]: Store serial: [22967724]
