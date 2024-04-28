@@ -2762,3 +2762,21 @@
 [2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: Remove: archive file [/home/abi/fetcher/tmp/agit-0.1.9.tar.gz]
 [2024-04-28 04:01:00] INFO root fetch - main [MainThread]: End processing [agit]: success
 [2024-04-28 04:01:00] INFO root fetch - main [MainThread]: Store serial: [22963364]
+[2024-04-28 04:03:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963364]
+[2024-04-28 04:03:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 04:03:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yaconfiglib
+[2024-04-28 04:03:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudacious-iac
+[2024-04-28 04:03:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moltx
+[2024-04-28 04:03:09] WARNING root fetch - processPackages [yaconfiglib]: Skipping, unable to determine old version
+[2024-04-28 04:03:09] INFO root fetch - main [MainThread]: End processing [yaconfiglib] error
+[2024-04-28 04:03:09] INFO root fetch - processPackages [moltx]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-28 04:03:09] WARNING root fetch - processPackages [cloudacious-iac]: Skipping, unable to determine old version
+[2024-04-28 04:03:09] INFO root fetch - main [MainThread]: End processing [cloudacious-iac] error
+[2024-04-28 04:03:09] INFO root fetch - processPackages [moltx]: Downloading https://files.pythonhosted.org/packages/e6/63/8e088ac0a6856d7b9144620a782ee94981e751d979f1fe6deed48a4039ce/moltx-0.9.7.tar.gz
+[2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: Downloading https://files.pythonhosted.org/packages/1d/2e/870870567093aebc997134d37aaf06cfb17b7d118fdf690d11e8a1f12f68/moltx-0.9.8.tar.gz
+[2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: executing diffoscope
+[2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moltx-0.9.7.tar.gz tmp/moltx-0.9.8.tar.gz --markdown 20240428/m/moltx/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: Remove: archive file [/home/abi/fetcher/tmp/moltx-0.9.7.tar.gz]
+[2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: Remove: archive file [/home/abi/fetcher/tmp/moltx-0.9.8.tar.gz]
+[2024-04-28 04:03:10] INFO root fetch - main [MainThread]: End processing [moltx]: success
+[2024-04-28 04:03:10] INFO root fetch - main [MainThread]: Store serial: [22963375]
