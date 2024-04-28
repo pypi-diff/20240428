@@ -5571,3 +5571,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:15:17] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.1.tar.gz]
 [2024-04-28 08:15:17] INFO root fetch - main [MainThread]: End processing [lifx-photons-interactor]: success
 [2024-04-28 08:15:17] INFO root fetch - main [MainThread]: Store serial: [22964510]
+[2024-04-28 08:17:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964510]
+[2024-04-28 08:17:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zhmiscellany
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edurpa
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-bpy-module
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abstract-clients
+[2024-04-28 08:17:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-admin-coreui
+[2024-04-28 08:17:26] WARNING root fetch - processPackages [django-admin-coreui]: Skipping, unable to determine old version
+[2024-04-28 08:17:26] INFO root fetch - main [MainThread]: End processing [django-admin-coreui] error
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240427] Old Version: [20240426]
+[2024-04-28 08:17:26] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.8] Old Version: [0.0.0.7]
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240427] Old Version: [20240426]
+[2024-04-28 08:17:26] INFO root fetch - processPackages [edurpa]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 08:17:26] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/6e/7e/e539e6d39c7e0f06d6f90d874f704872e3dec5ea32bef70296cf6f4f69f2/abstract_clients-0.0.0.7.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/f8/f0/335a61576be3a629124dc875514485cce6a40c787c60e0a6ec1d8b62f266/fake_bpy_module-20240426.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [zhmiscellany]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/f1/6e/1959c2f0abc3d133fb0029a581e46fb1f61511ae222fb6e54f9a266c0bc1/fake_bpy_module_latest-20240426.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [edurpa]: Downloading https://files.pythonhosted.org/packages/8b/6a/e736547a16bafe76c48f12a41f68b42df77962175f98e7230e2e3c285ace/edurpa-0.0.1-py3-none-any.whl
+[2024-04-28 08:17:26] INFO root fetch - processPackages [zhmiscellany]: Downloading https://files.pythonhosted.org/packages/b7/74/057d5cb987e213fceef2ad3116fc22c495c244d608ef9e3726829d14cfbc/zhmiscellany-2.0.7-py3-none-any.whl
+[2024-04-28 08:17:26] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/4a/7e/21c23c2128ae754f267e915c765105aed72fe31703f1496c9f7fbc360c2d/abstract_clients-0.0.0.8.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/d7/59/63aecaf77fa0bec4ea888c3a55c348974086621ca8a0ea642d10596361ab/fake_bpy_module-20240427.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/d6/35/6081c6721cd9cec9d9830fcde69ed114b4d4eaaacac34d39fb6b9bb58a4c/fake_bpy_module_latest-20240427.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 08:17:26] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.7.tar.gz tmp/abstract_clients-0.0.0.8.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.7-0.0.0.8/README.md --exclude *.pyd
+[2024-04-28 08:17:26] INFO root fetch - processPackages [edurpa]: Downloading https://files.pythonhosted.org/packages/ae/fb/7c17589703151eb3cae6e3e68ec87113b9d047d089ae7793c15bc83db9b1/EduRPA-0.0.2.tar.gz
+[2024-04-28 08:17:26] INFO root fetch - processPackages [zhmiscellany]: Downloading https://files.pythonhosted.org/packages/95/39/59e6804d7598733071622426c3026951776be684cf1ab7c3d9b2e07fde3b/zhmiscellany-2.0.8-py3-none-any.whl
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240426.tar.gz tmp/fake_bpy_module-20240427.tar.gz --markdown 20240428/f/fake-bpy-module/20240426-20240427/README.md --exclude *.pyd
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-04-28 08:17:26] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240426.tar.gz tmp/fake_bpy_module_latest-20240427.tar.gz --markdown 20240428/f/fake-bpy-module-latest/20240426-20240427/README.md --exclude *.pyd
+[2024-04-28 08:17:26] INFO root fetch - processPackages [edurpa]: executing diffoscope
+[2024-04-28 08:17:26] INFO root fetch - processPackages [edurpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa-0.0.1-py3-none-any.whl.zip tmp/EduRPA-0.0.2.tar.gz --markdown 20240428/e/edurpa/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 08:17:26] INFO root fetch - processPackages [zhmiscellany]: executing diffoscope
+[2024-04-28 08:17:26] INFO root fetch - processPackages [zhmiscellany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmiscellany-2.0.7-py3-none-any.whl.zip tmp/zhmiscellany-2.0.8-py3-none-any.whl.zip --markdown 20240428/z/zhmiscellany/2.0.7-2.0.8/README.md --exclude *.pyd
+[2024-04-28 08:17:27] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.7.tar.gz]
+[2024-04-28 08:17:27] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.8.tar.gz]
+[2024-04-28 08:17:27] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 08:17:27] INFO root fetch - processPackages [edurpa]: Remove: archive file [/home/abi/fetcher/tmp/edurpa-0.0.1-py3-none-any.whl.zip]
+[2024-04-28 08:17:27] INFO root fetch - processPackages [edurpa]: Remove: archive file [/home/abi/fetcher/tmp/EduRPA-0.0.2.tar.gz]
+[2024-04-28 08:17:27] INFO root fetch - main [MainThread]: End processing [edurpa]: success
+[2024-04-28 08:17:27] INFO root fetch - processPackages [zhmiscellany]: Remove: archive file [/home/abi/fetcher/tmp/zhmiscellany-2.0.7-py3-none-any.whl.zip]
+[2024-04-28 08:17:27] INFO root fetch - processPackages [zhmiscellany]: Remove: archive file [/home/abi/fetcher/tmp/zhmiscellany-2.0.8-py3-none-any.whl.zip]
+[2024-04-28 08:17:27] INFO root fetch - main [MainThread]: End processing [zhmiscellany]: success
+[2024-04-28 08:17:34] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240426.tar.gz]
+[2024-04-28 08:17:34] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240427.tar.gz]
+[2024-04-28 08:17:34] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-04-28 08:17:34] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240426.tar.gz]
+[2024-04-28 08:17:34] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240427.tar.gz]
+[2024-04-28 08:17:34] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-04-28 08:17:34] INFO root fetch - main [MainThread]: Store serial: [22964525]
