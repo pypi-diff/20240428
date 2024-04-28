@@ -2124,3 +2124,27 @@
 [2024-04-28 02:53:59] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-28 02:53:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-28 02:53:59] INFO root fetch - main [MainThread]: Store serial: [22963082]
+[2024-04-28 02:56:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963082]
+[2024-04-28 02:56:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aita
+[2024-04-28 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py4web
+[2024-04-28 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: novelai-api
+[2024-04-28 02:56:09] INFO root fetch - processPackages [py4web]: New version: [1.20240427.2] Old Version: [1.20240427.1]
+[2024-04-28 02:56:09] WARNING root fetch - processPackages [aita]: Skipping, unable to determine old version
+[2024-04-28 02:56:09] INFO root fetch - main [MainThread]: End processing [aita] error
+[2024-04-28 02:56:09] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/93/27/1d19ed84c9c2289bf5be4bf562ea72f17f6280fd4a822bfa74e38bc2708c/py4web-1.20240427.1.tar.gz
+[2024-04-28 02:56:09] INFO root fetch - processPackages [novelai-api]: New version: [0.9] Old Version: [0.8]
+[2024-04-28 02:56:09] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/fc/5f/4521adcc080f088c499ad70d5ea4d991b23f72661d4aa68a9112d0b3283e/novelai-api-0.8.tar.gz
+[2024-04-28 02:56:09] INFO root fetch - processPackages [novelai-api]: Downloading https://files.pythonhosted.org/packages/69/ed/74960ad9154e8dc49c4d6c47cbc174dc97461bb9e5e113a548c167b72455/novelai-api-0.9.tar.gz
+[2024-04-28 02:56:10] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/62/b4/45e4e33646c244467819a5de96347143144d7771ab53d818249f65cee153/py4web-1.20240427.2.tar.gz
+[2024-04-28 02:56:10] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-04-28 02:56:10] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240427.1.tar.gz tmp/py4web-1.20240427.2.tar.gz --markdown 20240428/p/py4web/1.20240427.1-1.20240427.2/README.md --exclude *.pyd
+[2024-04-28 02:56:10] INFO root fetch - processPackages [novelai-api]: executing diffoscope
+[2024-04-28 02:56:10] INFO root fetch - processPackages [novelai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai-api-0.8.tar.gz tmp/novelai-api-0.9.tar.gz --markdown 20240428/n/novelai-api/0.8-0.9/README.md --exclude *.pyd
+[2024-04-28 02:56:11] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.8.tar.gz]
+[2024-04-28 02:56:11] INFO root fetch - processPackages [novelai-api]: Remove: archive file [/home/abi/fetcher/tmp/novelai-api-0.9.tar.gz]
+[2024-04-28 02:56:11] INFO root fetch - main [MainThread]: End processing [novelai-api]: success
+[2024-04-28 02:56:11] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.1.tar.gz]
+[2024-04-28 02:56:11] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.2.tar.gz]
+[2024-04-28 02:56:11] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-04-28 02:56:11] INFO root fetch - main [MainThread]: Store serial: [22963095]
