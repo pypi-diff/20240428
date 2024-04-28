@@ -14304,3 +14304,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:45:36] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
 [2024-04-28 18:45:36] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
 [2024-04-28 18:45:36] INFO root fetch - main [MainThread]: Store serial: [22968156]
+[2024-04-28 18:47:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968156]
+[2024-04-28 18:47:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 18:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuro-config-client
+[2024-04-28 18:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jetline
+[2024-04-28 18:47:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fango
+[2024-04-28 18:47:45] INFO root fetch - processPackages [neuro-config-client]: New version: [24.4.0] Old Version: [23.9.0]
+[2024-04-28 18:47:45] INFO root fetch - processPackages [fango]: New version: [0.0.21] Old Version: [0.0.20]
+[2024-04-28 18:47:45] INFO root fetch - processPackages [jetline]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 18:47:45] INFO root fetch - processPackages [neuro-config-client]: Downloading https://files.pythonhosted.org/packages/a3/d9/10ed208d6dcc8012e368d545c688116c06165b4338c307ee745ae51c23c1/neuro-config-client-23.9.0.tar.gz
+[2024-04-28 18:47:45] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/d2/aa/be5c6d5d20328be61679a6c915bf2468f108920bdacaff454acecf1891f8/jetline-0.1.6.tar.gz
+[2024-04-28 18:47:45] INFO root fetch - processPackages [fango]: Downloading https://files.pythonhosted.org/packages/21/45/6bc86fb099225423d12f2ce2a24590ecf127aaba6e46276e2d96f927d042/fango-0.0.20.tar.gz
+[2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: Downloading https://files.pythonhosted.org/packages/8b/76/7c194c9eb7722304c95397e22296d1e00bba8e2aa00984cb1009d316e804/fango-0.0.21.tar.gz
+[2024-04-28 18:47:46] INFO root fetch - processPackages [neuro-config-client]: Downloading https://files.pythonhosted.org/packages/0b/71/631a4a0d21aff4d0a5c01bce16e28662f89741eb98a95883a5d925acf7c7/neuro_config_client-24.4.0.tar.gz
+[2024-04-28 18:47:46] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/9b/b7/918e9e94c39e9f14e41e62208ec396779e477614997184986f85294aaca4/jetline-0.1.7.tar.gz
+[2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: executing diffoscope
+[2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fango-0.0.20.tar.gz tmp/fango-0.0.21.tar.gz --markdown 20240428/f/fango/0.0.20-0.0.21/README.md --exclude *.pyd
+[2024-04-28 18:47:46] INFO root fetch - processPackages [neuro-config-client]: executing diffoscope
+[2024-04-28 18:47:46] INFO root fetch - processPackages [neuro-config-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuro-config-client-23.9.0.tar.gz tmp/neuro_config_client-24.4.0.tar.gz --markdown 20240428/n/neuro-config-client/23.9.0-24.4.0/README.md --exclude *.pyd
+[2024-04-28 18:47:46] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:47:46] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.6.tar.gz tmp/jetline-0.1.7.tar.gz --markdown 20240428/j/jetline/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 18:47:46] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.6.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.7.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:47:46] INFO root fetch - processPackages [neuro-config-client]: Remove: archive file [/home/abi/fetcher/tmp/neuro-config-client-23.9.0.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - processPackages [neuro-config-client]: Remove: archive file [/home/abi/fetcher/tmp/neuro_config_client-24.4.0.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - main [MainThread]: End processing [neuro-config-client]: success
+[2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: Remove: archive file [/home/abi/fetcher/tmp/fango-0.0.20.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: Remove: archive file [/home/abi/fetcher/tmp/fango-0.0.21.tar.gz]
+[2024-04-28 18:47:46] INFO root fetch - main [MainThread]: End processing [fango]: success
+[2024-04-28 18:47:46] INFO root fetch - main [MainThread]: Store serial: [22968165]
