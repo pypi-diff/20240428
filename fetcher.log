@@ -5556,3 +5556,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:13:07] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240427.tar.gz]
 [2024-04-28 08:13:07] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-28 08:13:07] INFO root fetch - main [MainThread]: Store serial: [22964503]
+[2024-04-28 08:15:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964503]
+[2024-04-28 08:15:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 08:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tabqa
+[2024-04-28 08:15:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-photons-interactor
+[2024-04-28 08:15:16] WARNING root fetch - processPackages [tabqa]: Skipping, unable to determine old version
+[2024-04-28 08:15:16] INFO root fetch - main [MainThread]: End processing [tabqa] error
+[2024-04-28 08:15:16] INFO root fetch - processPackages [lifx-photons-interactor]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-28 08:15:16] INFO root fetch - processPackages [lifx-photons-interactor]: Downloading https://files.pythonhosted.org/packages/63/c1/044584c09611d5449e82fa5f912b14d22b742e12dd911816014a34ba5f71/lifx-photons-interactor-0.9.0.tar.gz
+[2024-04-28 08:15:16] INFO root fetch - processPackages [lifx-photons-interactor]: Downloading https://files.pythonhosted.org/packages/0d/10/6cc771f1ffa15a8bcf24086b17209385736e0dac82a0273761c062637ba5/lifx-photons-interactor-0.9.1.tar.gz
+[2024-04-28 08:15:17] INFO root fetch - processPackages [lifx-photons-interactor]: executing diffoscope
+[2024-04-28 08:15:17] INFO root fetch - processPackages [lifx-photons-interactor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx-photons-interactor-0.9.0.tar.gz tmp/lifx-photons-interactor-0.9.1.tar.gz --markdown 20240428/l/lifx-photons-interactor/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-28 08:15:17] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.0.tar.gz]
+[2024-04-28 08:15:17] INFO root fetch - processPackages [lifx-photons-interactor]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-interactor-0.9.1.tar.gz]
+[2024-04-28 08:15:17] INFO root fetch - main [MainThread]: End processing [lifx-photons-interactor]: success
+[2024-04-28 08:15:17] INFO root fetch - main [MainThread]: Store serial: [22964510]
