@@ -3013,3 +3013,21 @@
 [2024-04-28 04:24:53] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240428.tar.gz]
 [2024-04-28 04:24:53] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-04-28 04:24:53] INFO root fetch - main [MainThread]: Store serial: [22963457]
+[2024-04-28 04:26:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963457]
+[2024-04-28 04:27:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 04:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libro
+[2024-04-28 04:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FluxAI
+[2024-04-28 04:27:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: electrify-cli
+[2024-04-28 04:27:02] WARNING root fetch - processPackages [electrify-cli]: Skipping, unable to determine old version
+[2024-04-28 04:27:02] WARNING root fetch - processPackages [FluxAI]: Skipping, unable to determine old version
+[2024-04-28 04:27:02] INFO root fetch - main [MainThread]: End processing [electrify-cli] error
+[2024-04-28 04:27:02] INFO root fetch - main [MainThread]: End processing [FluxAI] error
+[2024-04-28 04:27:02] INFO root fetch - processPackages [libro]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 04:27:02] INFO root fetch - processPackages [libro]: Downloading https://files.pythonhosted.org/packages/9f/dc/1554738f619d4837de76dac36bdeec54d6f64db5d0b878e94cfa297ee3be/libro-0.1.6.tar.gz
+[2024-04-28 04:27:03] INFO root fetch - processPackages [libro]: Downloading https://files.pythonhosted.org/packages/1c/37/4d9d0d6c831ff1177f397fa0aea3515b2926f2eee22b9be1f0e0b5e344b2/libro-0.1.7-py3-none-any.whl
+[2024-04-28 04:27:04] INFO root fetch - processPackages [libro]: executing diffoscope
+[2024-04-28 04:27:04] INFO root fetch - processPackages [libro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libro-0.1.6.tar.gz tmp/libro-0.1.7-py3-none-any.whl.zip --markdown 20240428/l/libro/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 04:27:28] INFO root fetch - processPackages [libro]: Remove: archive file [/home/abi/fetcher/tmp/libro-0.1.6.tar.gz]
+[2024-04-28 04:27:28] INFO root fetch - processPackages [libro]: Remove: archive file [/home/abi/fetcher/tmp/libro-0.1.7-py3-none-any.whl.zip]
+[2024-04-28 04:27:28] INFO root fetch - main [MainThread]: End processing [libro]: success
+[2024-04-28 04:27:28] INFO root fetch - main [MainThread]: Store serial: [22963469]
