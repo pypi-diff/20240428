@@ -21379,3 +21379,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:55:10] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Remove: archive file [/home/abi/fetcher/tmp/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz]
 [2024-04-28 23:55:10] INFO root fetch - main [MainThread]: End processing [rossmassey.fetch-leetcode-problem]: success
 [2024-04-28 23:55:10] INFO root fetch - main [MainThread]: Store serial: [22971094]
+[2024-04-28 23:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971094]
+[2024-04-28 23:57:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 23:59:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971094]
+[2024-04-28 23:59:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 23:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: line-profiler
+[2024-04-28 23:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blastpipe
+[2024-04-28 23:59:25] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.7] Old Version: [2024.2.6]
+[2024-04-28 23:59:25] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/8d/01/868f6188804eb808385d49c958c021c40eeb1295d42320f686e45c939560/blastpipe-2024.2.6.tar.gz
+[2024-04-28 23:59:25] INFO root fetch - processPackages [line-profiler]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-04-28 23:59:25] INFO root fetch - processPackages [line-profiler]: Downloading https://files.pythonhosted.org/packages/1c/e8/14bb2ee9af4ecae4c456c5faaab74436ea2b9da55b436341dd1f7c2927f2/line_profiler-4.1.2.tar.gz
+[2024-04-28 23:59:25] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/2c/a0/c1c7bbcd428a9f075a328fa38a4559b19bd63abc1068903204ba195363ab/blastpipe-2024.2.7.tar.gz
+[2024-04-28 23:59:25] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 23:59:25] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.6.tar.gz tmp/blastpipe-2024.2.7.tar.gz --markdown 20240428/b/blastpipe/2024.2.6-2024.2.7/README.md --exclude *.pyd
+[2024-04-28 23:59:26] INFO root fetch - processPackages [line-profiler]: Downloading https://files.pythonhosted.org/packages/0a/99/c6b30c61802238cfbb89d23dff4ddec6f6221e3e39c2483f49a089cdb6d8/line_profiler-4.1.3.tar.gz
+[2024-04-28 23:59:26] INFO root fetch - processPackages [line-profiler]: executing diffoscope
+[2024-04-28 23:59:26] INFO root fetch - processPackages [line-profiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/line_profiler-4.1.2.tar.gz tmp/line_profiler-4.1.3.tar.gz --markdown 20240428/l/line-profiler/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-04-28 23:59:27] INFO root fetch - processPackages [line-profiler]: Remove: archive file [/home/abi/fetcher/tmp/line_profiler-4.1.2.tar.gz]
+[2024-04-28 23:59:27] INFO root fetch - processPackages [line-profiler]: Remove: archive file [/home/abi/fetcher/tmp/line_profiler-4.1.3.tar.gz]
+[2024-04-28 23:59:27] INFO root fetch - main [MainThread]: End processing [line-profiler]: success
+[2024-04-28 23:59:27] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.6.tar.gz]
+[2024-04-28 23:59:27] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.7.tar.gz]
+[2024-04-28 23:59:27] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 23:59:27] INFO root fetch - main [MainThread]: Store serial: [22971153]
