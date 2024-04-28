@@ -2029,3 +2029,24 @@
 [2024-04-28 02:45:04] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404270044.tar.gz]
 [2024-04-28 02:45:04] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-04-28 02:45:04] INFO root fetch - main [MainThread]: Store serial: [22963052]
+[2024-04-28 02:47:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963052]
+[2024-04-28 02:47:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 02:47:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sigmond-scripts
+[2024-04-28 02:47:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srcsrv
+[2024-04-28 02:47:13] INFO root fetch - processPackages [sigmond-scripts]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 02:47:13] INFO root fetch - processPackages [srcsrv]: New version: [1.2.13] Old Version: [1.2.10]
+[2024-04-28 02:47:13] INFO root fetch - processPackages [sigmond-scripts]: Downloading https://files.pythonhosted.org/packages/ad/d9/2e434b7958713c874858ee595490b8aa54484b9bc51f960968210b0ac1e8/sigmond_scripts-1.0.0.tar.gz
+[2024-04-28 02:47:13] INFO root fetch - processPackages [srcsrv]: Downloading https://files.pythonhosted.org/packages/4e/a4/161a071d8f2e0898a5ece9acbf1b0a88c886a98c635e4f8996de8049d295/srcsrv-1.2.10.tar.gz
+[2024-04-28 02:47:13] INFO root fetch - processPackages [srcsrv]: Downloading https://files.pythonhosted.org/packages/e0/08/2355846af4fe9330bc6c3510c8742d32f21c798343759ed9fbe57d80f9e6/srcsrv-1.2.13.tar.gz
+[2024-04-28 02:47:13] INFO root fetch - processPackages [sigmond-scripts]: Downloading https://files.pythonhosted.org/packages/41/8b/6d5819cbd0284544c2720a6788e2c68a24fecddb37f910a69b488d2b117d/sigmond_scripts-1.0.1.tar.gz
+[2024-04-28 02:47:13] INFO root fetch - processPackages [srcsrv]: executing diffoscope
+[2024-04-28 02:47:13] INFO root fetch - processPackages [srcsrv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srcsrv-1.2.10.tar.gz tmp/srcsrv-1.2.13.tar.gz --markdown 20240428/s/srcsrv/1.2.10-1.2.13/README.md --exclude *.pyd
+[2024-04-28 02:47:13] INFO root fetch - processPackages [sigmond-scripts]: executing diffoscope
+[2024-04-28 02:47:13] INFO root fetch - processPackages [sigmond-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmond_scripts-1.0.0.tar.gz tmp/sigmond_scripts-1.0.1.tar.gz --markdown 20240428/s/sigmond-scripts/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 02:47:14] INFO root fetch - processPackages [srcsrv]: Remove: archive file [/home/abi/fetcher/tmp/srcsrv-1.2.10.tar.gz]
+[2024-04-28 02:47:14] INFO root fetch - processPackages [srcsrv]: Remove: archive file [/home/abi/fetcher/tmp/srcsrv-1.2.13.tar.gz]
+[2024-04-28 02:47:14] INFO root fetch - main [MainThread]: End processing [srcsrv]: success
+[2024-04-28 02:47:14] INFO root fetch - processPackages [sigmond-scripts]: Remove: archive file [/home/abi/fetcher/tmp/sigmond_scripts-1.0.0.tar.gz]
+[2024-04-28 02:47:14] INFO root fetch - processPackages [sigmond-scripts]: Remove: archive file [/home/abi/fetcher/tmp/sigmond_scripts-1.0.1.tar.gz]
+[2024-04-28 02:47:14] INFO root fetch - main [MainThread]: End processing [sigmond-scripts]: success
+[2024-04-28 02:47:14] INFO root fetch - main [MainThread]: Store serial: [22963058]
