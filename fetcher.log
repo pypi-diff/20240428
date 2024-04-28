@@ -3136,3 +3136,9 @@
 [2024-04-28 04:40:49] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.2.tar.gz]
 [2024-04-28 04:40:49] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
 [2024-04-28 04:40:49] INFO root fetch - main [MainThread]: Store serial: [22963502]
+[2024-04-28 04:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963502]
+[2024-04-28 04:42:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 04:42:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: electrify-sdk
+[2024-04-28 04:42:58] WARNING root fetch - processPackages [electrify-sdk]: Skipping, unable to determine old version
+[2024-04-28 04:42:58] INFO root fetch - main [MainThread]: End processing [electrify-sdk] error
+[2024-04-28 04:42:58] INFO root fetch - main [MainThread]: Store serial: [22963507]
