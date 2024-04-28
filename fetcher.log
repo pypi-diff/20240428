@@ -4250,3 +4250,18 @@
 [2024-04-28 06:26:39] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.4.tar.gz]
 [2024-04-28 06:26:39] INFO root fetch - main [MainThread]: End processing [fastbench]: success
 [2024-04-28 06:26:39] INFO root fetch - main [MainThread]: Store serial: [22963969]
+[2024-04-28 06:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963969]
+[2024-04-28 06:28:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rahul-library
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibeam
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ibeam]: New version: [0.5.2rc6] Old Version: [0.5.2rc5]
+[2024-04-28 06:28:47] WARNING root fetch - processPackages [rahul-library]: Skipping, unable to determine old version
+[2024-04-28 06:28:47] INFO root fetch - main [MainThread]: End processing [rahul-library] error
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/82/54/cb814cbc8d759724f20a56bc6ba79869b1fd871b6b042f8bf36de5d834f8/ibeam-0.5.2rc5.tar.gz
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/7d/1a/7663f1842d830bf49713d9978f537d86ec045a7c3b29ec18952d199dd7ae/ibeam-0.5.2rc6.tar.gz
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ibeam]: executing diffoscope
+[2024-04-28 06:28:47] INFO root fetch - processPackages [ibeam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibeam-0.5.2rc5.tar.gz tmp/ibeam-0.5.2rc6.tar.gz --markdown 20240428/i/ibeam/0.5.2rc5-0.5.2rc6/README.md --exclude *.pyd
+[2024-04-28 06:28:48] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.2rc5.tar.gz]
+[2024-04-28 06:28:48] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.2rc6.tar.gz]
+[2024-04-28 06:28:48] INFO root fetch - main [MainThread]: End processing [ibeam]: success
+[2024-04-28 06:28:48] INFO root fetch - main [MainThread]: Store serial: [22963976]
