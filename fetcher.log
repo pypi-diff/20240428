@@ -15757,3 +15757,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:20:23] INFO root fetch - processPackages [expecto]: Remove: archive file [/home/abi/fetcher/tmp/expecto-0.1.4.tar.gz]
 [2024-04-28 20:20:23] INFO root fetch - main [MainThread]: End processing [expecto]: success
 [2024-04-28 20:20:23] INFO root fetch - main [MainThread]: Store serial: [22968787]
+[2024-04-28 20:22:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968787]
+[2024-04-28 20:22:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 20:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycolorecho
+[2024-04-28 20:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-vpc-bucket
+[2024-04-28 20:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fcs-core-model-engine
+[2024-04-28 20:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gammarers.aws-secure-frontend-web-app-cloudfront-distribution
+[2024-04-28 20:22:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cmap
+[2024-04-28 20:22:32] INFO root fetch - processPackages [cmap]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-04-28 20:22:32] WARNING root fetch - processPackages [pycolorecho]: Skipping, unable to determine old version
+[2024-04-28 20:22:32] INFO root fetch - main [MainThread]: End processing [pycolorecho] error
+[2024-04-28 20:22:32] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-28 20:22:32] INFO root fetch - processPackages [fcs-core-model-engine]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-28 20:22:32] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-28 20:22:32] INFO root fetch - processPackages [cmap]: Downloading https://files.pythonhosted.org/packages/91/f6/3673e14427d83c638b32849d3822934bc992108905e887d0a29882eee1aa/cmap-0.1.3.tar.gz
+[2024-04-28 20:22:32] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/6d/71/ed618d09b90eb1bf3d5f8d209aa483756fea247e5661419ec5cbe42b8992/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.0.tar.gz
+[2024-04-28 20:22:32] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/08/06/83f9c16fbf8907b897bf2cac0bcfa21d0a5480f10c98342b19fa3879f249/gammarers.aws-secure-vpc-bucket-1.3.0.tar.gz
+[2024-04-28 20:22:32] INFO root fetch - processPackages [fcs-core-model-engine]: Downloading https://files.pythonhosted.org/packages/87/5f/e2945ae272016721bbda5b212f95f481e5cf0132cc40c7db03d9526385c9/fcs_core_model_engine-0.8.2-py3-none-win_amd64.whl
+[2024-04-28 20:22:32] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25242294>=10485760
+[2024-04-28 20:22:32] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Downloading https://files.pythonhosted.org/packages/3a/70/51da2988878f83e128896c7590d1593e74b7358fb2850534c3e54812d9e9/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Downloading https://files.pythonhosted.org/packages/0f/c9/6c6dbaaf8c7557d931b0476e54e491375b30e66d6c141d7240caffbd76e3/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz
+[2024-04-28 20:22:33] INFO root fetch - processPackages [cmap]: Downloading https://files.pythonhosted.org/packages/1f/16/370c001169f5ae53fa351bada30f34375e6a0b205bc23da0aaf4a1306ef4/cmap-0.2.0.tar.gz
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: executing diffoscope
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.0.tar.gz tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz --markdown 20240428/g/gammarers.aws-secure-frontend-web-app-cloudfront-distribution/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: executing diffoscope
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-vpc-bucket-1.3.0.tar.gz tmp/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz --markdown 20240428/g/gammarers.aws-secure-vpc-bucket/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-28 20:22:33] INFO root fetch - processPackages [cmap]: executing diffoscope
+[2024-04-28 20:22:33] INFO root fetch - processPackages [cmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmap-0.1.3.tar.gz tmp/cmap-0.2.0.tar.gz --markdown 20240428/c/cmap/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.0.tar.gz]
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-frontend-web-app-cloudfront-distribution-1.3.1.tar.gz]
+[2024-04-28 20:22:33] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-frontend-web-app-cloudfront-distribution]: success
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.0.tar.gz]
+[2024-04-28 20:22:33] INFO root fetch - processPackages [gammarers.aws-secure-vpc-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-vpc-bucket-1.3.1.tar.gz]
+[2024-04-28 20:22:33] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-vpc-bucket]: success
+[2024-04-28 20:22:34] INFO root fetch - processPackages [cmap]: Remove: archive file [/home/abi/fetcher/tmp/cmap-0.1.3.tar.gz]
+[2024-04-28 20:22:34] INFO root fetch - processPackages [cmap]: Remove: archive file [/home/abi/fetcher/tmp/cmap-0.2.0.tar.gz]
+[2024-04-28 20:22:34] INFO root fetch - main [MainThread]: End processing [cmap]: success
+[2024-04-28 20:22:34] INFO root fetch - main [MainThread]: Store serial: [22968802]
