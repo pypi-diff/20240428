@@ -11101,3 +11101,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:55:35] INFO root fetch - processPackages [scorescanner]: Remove: archive file [/home/abi/fetcher/tmp/scorescanner-0.1.3-py3-none-any.whl.zip]
 [2024-04-28 14:55:35] INFO root fetch - main [MainThread]: End processing [scorescanner]: success
 [2024-04-28 14:55:35] INFO root fetch - main [MainThread]: Store serial: [22966838]
+[2024-04-28 14:57:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966838]
+[2024-04-28 14:57:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 14:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jacksung
+[2024-04-28 14:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oxapay-api
+[2024-04-28 14:57:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fpx
+[2024-04-28 14:57:50] INFO root fetch - processPackages [fpx]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-28 14:57:50] INFO root fetch - processPackages [fpx]: Downloading https://files.pythonhosted.org/packages/e0/eb/21a0f6b7975a834b08b2f23aedabbc403af2195e6f29b706449f9b4b624c/fpx-0.6.1.tar.gz
+[2024-04-28 14:57:50] INFO root fetch - processPackages [jacksung]: New version: [0.0.2.99] Old Version: [0.0.2.98]
+[2024-04-28 14:57:50] INFO root fetch - processPackages [oxapay-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 14:57:50] INFO root fetch - processPackages [jacksung]: Downloading https://files.pythonhosted.org/packages/53/49/29d6064a8fb6ccc0f6823e713582dc73298157d8802aa60a65240347ef14/jacksung-0.0.2.98.tar.gz
+[2024-04-28 14:57:50] INFO root fetch - processPackages [oxapay-api]: Downloading https://files.pythonhosted.org/packages/7b/e7/d81f626aea876733aa24606bdbc7420b0f85acb1a9019fd627a621ec7f81/oxapay_api-1.0.1.tar.gz
+[2024-04-28 14:57:50] INFO root fetch - processPackages [fpx]: Downloading https://files.pythonhosted.org/packages/96/cb/2e2ced4bfab8e28d5b2449c84c0800884de03541c64377cb7241348c7014/fpx-0.6.2.tar.gz
+[2024-04-28 14:57:51] INFO root fetch - processPackages [fpx]: executing diffoscope
+[2024-04-28 14:57:51] INFO root fetch - processPackages [fpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpx-0.6.1.tar.gz tmp/fpx-0.6.2.tar.gz --markdown 20240428/f/fpx/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-28 14:57:51] INFO root fetch - processPackages [jacksung]: Downloading https://files.pythonhosted.org/packages/b5/22/0dfab66df22ada378e333e97f6287eef4c68d06fd84d4bc9a8d76c3ba65e/jacksung-0.0.2.99.tar.gz
+[2024-04-28 14:57:51] INFO root fetch - processPackages [oxapay-api]: Downloading https://files.pythonhosted.org/packages/8e/c8/1a880fd9c907b16c875a6aa3c961b3da66e80ceb0e40a7b24281d26d0d02/oxapay_api-1.0.2.tar.gz
+[2024-04-28 14:57:51] INFO root fetch - processPackages [oxapay-api]: executing diffoscope
+[2024-04-28 14:57:51] INFO root fetch - processPackages [oxapay-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oxapay_api-1.0.1.tar.gz tmp/oxapay_api-1.0.2.tar.gz --markdown 20240428/o/oxapay-api/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 14:57:51] INFO root fetch - processPackages [jacksung]: executing diffoscope
+[2024-04-28 14:57:51] INFO root fetch - processPackages [jacksung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jacksung-0.0.2.98.tar.gz tmp/jacksung-0.0.2.99.tar.gz --markdown 20240428/j/jacksung/0.0.2.98-0.0.2.99/README.md --exclude *.pyd
+[2024-04-28 14:57:51] INFO root fetch - processPackages [fpx]: Remove: archive file [/home/abi/fetcher/tmp/fpx-0.6.1.tar.gz]
+[2024-04-28 14:57:51] INFO root fetch - processPackages [fpx]: Remove: archive file [/home/abi/fetcher/tmp/fpx-0.6.2.tar.gz]
+[2024-04-28 14:57:51] INFO root fetch - main [MainThread]: End processing [fpx]: success
+[2024-04-28 14:57:51] INFO root fetch - processPackages [oxapay-api]: Remove: archive file [/home/abi/fetcher/tmp/oxapay_api-1.0.1.tar.gz]
+[2024-04-28 14:57:51] INFO root fetch - processPackages [oxapay-api]: Remove: archive file [/home/abi/fetcher/tmp/oxapay_api-1.0.2.tar.gz]
+[2024-04-28 14:57:51] INFO root fetch - main [MainThread]: End processing [oxapay-api]: success
+[2024-04-28 14:57:52] INFO root fetch - processPackages [jacksung]: Remove: archive file [/home/abi/fetcher/tmp/jacksung-0.0.2.98.tar.gz]
+[2024-04-28 14:57:52] INFO root fetch - processPackages [jacksung]: Remove: archive file [/home/abi/fetcher/tmp/jacksung-0.0.2.99.tar.gz]
+[2024-04-28 14:57:52] INFO root fetch - main [MainThread]: End processing [jacksung]: success
+[2024-04-28 14:57:52] INFO root fetch - main [MainThread]: Store serial: [22966847]
