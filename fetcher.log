@@ -16214,3 +16214,25 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:57:29] INFO root fetch - processPackages [scapy]: Remove: archive file [/home/abi/fetcher/tmp/scapy-2.6.0rc1.tar.gz]
 [2024-04-28 20:57:29] INFO root fetch - main [MainThread]: End processing [scapy]: success
 [2024-04-28 20:57:29] INFO root fetch - main [MainThread]: Store serial: [22968978]
+[2024-04-28 20:59:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968978]
+[2024-04-28 20:59:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DuckReporter
+[2024-04-28 20:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DuckReporter
+[2024-04-28 20:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: panadas
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 20:59:40] WARNING root fetch - processPackages [panadas]: Skipping, unable to determine old version
+[2024-04-28 20:59:40] INFO root fetch - main [MainThread]: End processing [panadas] error
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: Downloading https://files.pythonhosted.org/packages/de/57/3ba82aa80c8736d8c23252dc5e8165c4841c0a9e78337a00768906174de4/duckreporter-0.0.1.tar.gz
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: Downloading https://files.pythonhosted.org/packages/de/57/3ba82aa80c8736d8c23252dc5e8165c4841c0a9e78337a00768906174de4/duckreporter-0.0.1.tar.gz
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: Downloading https://files.pythonhosted.org/packages/f8/f5/3007d7a91730e76b406f739a6c0656b10f5f4aed1b05bbef1cfa99c57285/duckreporter-0.0.2.tar.gz
+[2024-04-28 20:59:40] INFO root fetch - processPackages [DuckReporter]: Downloading https://files.pythonhosted.org/packages/f8/f5/3007d7a91730e76b406f739a6c0656b10f5f4aed1b05bbef1cfa99c57285/duckreporter-0.0.2.tar.gz
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: executing diffoscope
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckreporter-0.0.1.tar.gz tmp/duckreporter-0.0.2.tar.gz --markdown 20240428/D/DuckReporter/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: executing diffoscope
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckreporter-0.0.1.tar.gz tmp/duckreporter-0.0.2.tar.gz --markdown 20240428/D/DuckReporter/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: Remove: archive file [/home/abi/fetcher/tmp/duckreporter-0.0.1.tar.gz]
+[2024-04-28 20:59:41] INFO root fetch - processPackages [DuckReporter]: Remove: archive file [/home/abi/fetcher/tmp/duckreporter-0.0.2.tar.gz]
+[2024-04-28 20:59:41] INFO root fetch - main [MainThread]: End processing [DuckReporter]: success
+[2024-04-28 20:59:41] INFO root fetch - main [MainThread]: End processing [DuckReporter]: success
+[2024-04-28 20:59:41] INFO root fetch - main [MainThread]: Store serial: [22968991]
