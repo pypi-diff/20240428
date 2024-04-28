@@ -1998,3 +1998,20 @@
 [2024-04-28 02:38:31] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
 [2024-04-28 02:38:31] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
 [2024-04-28 02:38:31] INFO root fetch - main [MainThread]: Store serial: [22963041]
+[2024-04-28 02:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963041]
+[2024-04-28 02:40:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 02:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: supamodel
+[2024-04-28 02:40:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpflib
+[2024-04-28 02:40:39] INFO root fetch - processPackages [gpflib]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-28 02:40:39] INFO root fetch - processPackages [supamodel]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-28 02:40:39] INFO root fetch - processPackages [gpflib]: Downloading https://files.pythonhosted.org/packages/4b/d5/38b1c9277b1ebea3f7c7e9094d59b043b805859223c9731c55db6135dce8/gpflib-1.1.7.tar.gz
+[2024-04-28 02:40:39] WARNING root fetch - processPackages [gpflib]: Skipping package: exceeds size limit 25115236>=10485760
+[2024-04-28 02:40:39] INFO root fetch - main [MainThread]: End processing [gpflib] error
+[2024-04-28 02:40:39] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/8f/43/7aa540bc8a0c8894e1536574d7462bb3ea3a525f23b1e66a64ea14adb813/supamodel-0.5.5.tar.gz
+[2024-04-28 02:40:39] INFO root fetch - processPackages [supamodel]: Downloading https://files.pythonhosted.org/packages/65/e1/f221ddeab47e8b161bda61f6bce5dd66aeef7e8a490a3432de16224fc49f/supamodel-0.5.6.tar.gz
+[2024-04-28 02:40:40] INFO root fetch - processPackages [supamodel]: executing diffoscope
+[2024-04-28 02:40:40] INFO root fetch - processPackages [supamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supamodel-0.5.5.tar.gz tmp/supamodel-0.5.6.tar.gz --markdown 20240428/s/supamodel/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-28 02:40:40] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.5.tar.gz]
+[2024-04-28 02:40:40] INFO root fetch - processPackages [supamodel]: Remove: archive file [/home/abi/fetcher/tmp/supamodel-0.5.6.tar.gz]
+[2024-04-28 02:40:40] INFO root fetch - main [MainThread]: End processing [supamodel]: success
+[2024-04-28 02:40:40] INFO root fetch - main [MainThread]: Store serial: [22963048]
