@@ -8911,3 +8911,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:17:03] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.6.tar.gz]
 [2024-04-28 12:17:03] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
 [2024-04-28 12:17:03] INFO root fetch - main [MainThread]: Store serial: [22965944]
+[2024-04-28 12:19:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965944]
+[2024-04-28 12:19:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 12:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prusek-spheroid
+[2024-04-28 12:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easylogger4dev-alpha
+[2024-04-28 12:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: postalservice
+[2024-04-28 12:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: STAIR-tools
+[2024-04-28 12:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phc-ingestion
+[2024-04-28 12:19:17] INFO root fetch - processPackages [easylogger4dev-alpha]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-28 12:19:18] INFO root fetch - processPackages [postalservice]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 12:19:18] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 12:19:18] INFO root fetch - processPackages [prusek-spheroid]: New version: [6.4] Old Version: [6.3]
+[2024-04-28 12:19:18] INFO root fetch - processPackages [phc-ingestion]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-04-28 12:19:18] INFO root fetch - processPackages [easylogger4dev-alpha]: Downloading https://files.pythonhosted.org/packages/d2/be/d50531c22c887c40ffa9f891629332a1087afb2fbd502826c82a4bae903c/easylogger4dev_alpha-0.1.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [postalservice]: Downloading https://files.pythonhosted.org/packages/a5/c0/75658a5306a3294aa62da369abcc0240b7cb0181bce2648d992ab1f87fb4/postalservice-0.1.4.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/61/ff/87f6c8756fba7f463f51f428592f0dc4209c5a4917f02cfa920a9b73d640/phc-ingestion-0.8.6.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [prusek-spheroid]: Downloading https://files.pythonhosted.org/packages/0b/bf/cebdae7c769a2192e3afbd9d2549d3c5ca16066ba9bf65a23211bddb95a7/prusek_spheroid-6.3.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [easylogger4dev-alpha]: Downloading https://files.pythonhosted.org/packages/1d/a5/5c9e17d8d9e22bb87a9e2f20790c9ba42e99b6d1b3eaa66a850f3776a2c5/easylogger4dev_alpha-0.1.1.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [postalservice]: Downloading https://files.pythonhosted.org/packages/db/68/b0da05bc9e935a6cb77b801aa8e638a4a66fa905d9d56210324d948cbaad/postalservice-0.1.5.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [easylogger4dev-alpha]: executing diffoscope
+[2024-04-28 12:19:18] INFO root fetch - processPackages [easylogger4dev-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easylogger4dev_alpha-0.1.tar.gz tmp/easylogger4dev_alpha-0.1.1.tar.gz --markdown 20240428/e/easylogger4dev-alpha/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-28 12:19:18] INFO root fetch - processPackages [prusek-spheroid]: Downloading https://files.pythonhosted.org/packages/bd/db/23de8cdb9cfb13f6ccb609f39279c2cf61b539b19cfad61540550003d970/prusek_spheroid-6.4.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [phc-ingestion]: Downloading https://files.pythonhosted.org/packages/5e/6f/967c2cf69f8aec2189994f34fd8de9ce6b4a392e65df9d2e663dfcc3d7f5/phc-ingestion-0.8.7.tar.gz
+[2024-04-28 12:19:18] INFO root fetch - processPackages [postalservice]: executing diffoscope
+[2024-04-28 12:19:18] INFO root fetch - processPackages [postalservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postalservice-0.1.4.tar.gz tmp/postalservice-0.1.5.tar.gz --markdown 20240428/p/postalservice/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 12:19:18] INFO root fetch - processPackages [prusek-spheroid]: executing diffoscope
+[2024-04-28 12:19:18] INFO root fetch - processPackages [prusek-spheroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prusek_spheroid-6.3.tar.gz tmp/prusek_spheroid-6.4.tar.gz --markdown 20240428/p/prusek-spheroid/6.3-6.4/README.md --exclude *.pyd
+[2024-04-28 12:19:18] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 12:19:18] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240428/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 12:19:19] INFO root fetch - processPackages [phc-ingestion]: executing diffoscope
+[2024-04-28 12:19:19] INFO root fetch - processPackages [phc-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phc-ingestion-0.8.6.tar.gz tmp/phc-ingestion-0.8.7.tar.gz --markdown 20240428/p/phc-ingestion/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-04-28 12:19:19] INFO root fetch - processPackages [easylogger4dev-alpha]: Remove: archive file [/home/abi/fetcher/tmp/easylogger4dev_alpha-0.1.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - processPackages [easylogger4dev-alpha]: Remove: archive file [/home/abi/fetcher/tmp/easylogger4dev_alpha-0.1.1.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [easylogger4dev-alpha]: success
+[2024-04-28 12:19:19] INFO root fetch - processPackages [postalservice]: Remove: archive file [/home/abi/fetcher/tmp/postalservice-0.1.4.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - processPackages [postalservice]: Remove: archive file [/home/abi/fetcher/tmp/postalservice-0.1.5.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [postalservice]: success
+[2024-04-28 12:19:19] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 12:19:19] INFO root fetch - processPackages [prusek-spheroid]: Remove: archive file [/home/abi/fetcher/tmp/prusek_spheroid-6.3.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - processPackages [prusek-spheroid]: Remove: archive file [/home/abi/fetcher/tmp/prusek_spheroid-6.4.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [prusek-spheroid]: success
+[2024-04-28 12:19:19] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.6.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.7.tar.gz]
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [phc-ingestion]: success
+[2024-04-28 12:19:19] INFO root fetch - main [MainThread]: Store serial: [22965959]
