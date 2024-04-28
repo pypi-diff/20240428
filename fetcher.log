@@ -6916,3 +6916,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 
 [2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [AI-Education-Tools] error
 [2024-04-28 09:56:03] INFO root fetch - main [MainThread]: Store serial: [22965021]
+[2024-04-28 09:58:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965021]
+[2024-04-28 09:58:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 09:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psplpy
+[2024-04-28 09:58:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2024-04-28 09:58:12] INFO root fetch - processPackages [psplpy]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-04-28 09:58:12] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240428] Old Version: [2.17.0.dev20240427]
+[2024-04-28 09:58:12] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/0a/af/ccf3454394200c4776485d30e514b550108bd8154ecaf645936f02e5507c/psplpy-0.9.0.tar.gz
+[2024-04-28 09:58:12] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/30/26/688ed65e65151a3158795f77f155178a9df2cbaa3c25a515de092a4ca4a4/tf_nightly-2.17.0.dev20240427-cp39-cp39-win_amd64.whl
+[2024-04-28 09:58:12] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/ba/05/a3bce384813b806400c8b654bdec5ad84d1a1f69f33ca07d66df03f2a326/tf_nightly-2.17.0.dev20240428-cp39-cp39-win_amd64.whl
+[2024-04-28 09:58:13] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-28 09:58:13] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240428-cp39-cp39-win_amd64.whl.zip --markdown 20240428/t/tf-nightly/2.17.0.dev20240427-2.17.0.dev20240428/README.md --exclude *.pyd
+[2024-04-28 09:58:13] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 09:58:13] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240428-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 09:58:13] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-28 09:58:15] INFO root fetch - processPackages [psplpy]: Downloading https://files.pythonhosted.org/packages/b5/96/7aca3bf25a673c5b11b0633adc37264b60664fc22d0664e26b04c665bf91/psplpy-1.0.0.tar.gz
+[2024-04-28 09:58:15] INFO root fetch - processPackages [psplpy]: executing diffoscope
+[2024-04-28 09:58:15] INFO root fetch - processPackages [psplpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psplpy-0.9.0.tar.gz tmp/psplpy-1.0.0.tar.gz --markdown 20240428/p/psplpy/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-04-28 09:58:16] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-0.9.0.tar.gz]
+[2024-04-28 09:58:16] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.0.0.tar.gz]
+[2024-04-28 09:58:16] INFO root fetch - main [MainThread]: End processing [psplpy]: success
+[2024-04-28 09:58:16] INFO root fetch - main [MainThread]: Store serial: [22965030]
