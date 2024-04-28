@@ -2452,3 +2452,9 @@
 [2024-04-28 03:30:37] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404270125.tar.gz]
 [2024-04-28 03:30:37] INFO root fetch - main [MainThread]: End processing [onediff]: success
 [2024-04-28 03:30:37] INFO root fetch - main [MainThread]: Store serial: [22963180]
+[2024-04-28 03:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963180]
+[2024-04-28 03:32:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 03:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: schwab-api-wrapper
+[2024-04-28 03:32:45] WARNING root fetch - processPackages [schwab-api-wrapper]: Skipping, unable to determine old version
+[2024-04-28 03:32:45] INFO root fetch - main [MainThread]: End processing [schwab-api-wrapper] error
+[2024-04-28 03:32:45] INFO root fetch - main [MainThread]: Store serial: [22963185]
