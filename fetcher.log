@@ -9537,3 +9537,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:59:03] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
 [2024-04-28 12:59:03] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
 [2024-04-28 12:59:03] INFO root fetch - main [MainThread]: Store serial: [22966255]
+[2024-04-28 13:01:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966255]
+[2024-04-28 13:01:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 13:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-28 13:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bibfish
+[2024-04-28 13:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyPulseHeatPipe
+[2024-04-28 13:01:14] INFO root fetch - processPackages [PyPulseHeatPipe]: New version: [1.1.0] Old Version: [1.0.6]
+[2024-04-28 13:01:14] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-28 13:01:14] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/b1/3a/b0aa33457fd49a1742c5c66976052bf95ded46657e122e82faa7b29c7fe6/PyPulseHeatPipe-1.0.6.tar.gz
+[2024-04-28 13:01:14] INFO root fetch - processPackages [bibfish]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 13:01:14] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-28 13:01:14] INFO root fetch - processPackages [bibfish]: Downloading https://files.pythonhosted.org/packages/59/44/f5ab427578bea9bc3ccc8c32113ce73ffd8fd05d3fd7069028b228cf4317/bibfish-0.3.0.tar.gz
+[2024-04-28 13:01:14] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-28 13:01:14] ERROR root fetch - processPackages [PyPulseHeatPipe]: Unable to fetch info: No such project/version 'PyPulseHeatPipe' 1.1.0
+[2024-04-28 13:01:14] INFO root fetch - main [MainThread]: End processing [PyPulseHeatPipe] error
+[2024-04-28 13:01:14] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-28 13:01:14] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240428/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-28 13:01:15] INFO root fetch - processPackages [bibfish]: Downloading https://files.pythonhosted.org/packages/8b/1e/90599afbbebc6cd58fd0e66f68de3033e65f023c506195902163d3fe305b/bibfish-0.3.1.tar.gz
+[2024-04-28 13:01:15] INFO root fetch - processPackages [bibfish]: executing diffoscope
+[2024-04-28 13:01:15] INFO root fetch - processPackages [bibfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibfish-0.3.0.tar.gz tmp/bibfish-0.3.1.tar.gz --markdown 20240428/b/bibfish/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 13:01:15] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-28 13:01:15] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-28 13:01:15] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-28 13:01:15] INFO root fetch - processPackages [bibfish]: Remove: archive file [/home/abi/fetcher/tmp/bibfish-0.3.0.tar.gz]
+[2024-04-28 13:01:15] INFO root fetch - processPackages [bibfish]: Remove: archive file [/home/abi/fetcher/tmp/bibfish-0.3.1.tar.gz]
+[2024-04-28 13:01:15] INFO root fetch - main [MainThread]: End processing [bibfish]: success
+[2024-04-28 13:01:15] INFO root fetch - main [MainThread]: Store serial: [22966264]
