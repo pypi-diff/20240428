@@ -8016,3 +8016,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:09:12] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
 [2024-04-28 11:09:12] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-28 11:09:12] INFO root fetch - main [MainThread]: Store serial: [22965589]
+[2024-04-28 11:11:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965589]
+[2024-04-28 11:11:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 11:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MulensModel
+[2024-04-28 11:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-04-28 11:11:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huojiweiguoba
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 11:11:21] WARNING root fetch - processPackages [scatcluster]: Skipping, unable to determine old version
+[2024-04-28 11:11:21] INFO root fetch - main [MainThread]: End processing [scatcluster] error
+[2024-04-28 11:11:21] INFO root fetch - processPackages [MulensModel]: New version: [2.8.1] Old Version: [2.7.2]
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 11:11:21] INFO root fetch - processPackages [MulensModel]: Downloading https://files.pythonhosted.org/packages/eb/77/fdd12bd51f343c0953af1cd100c830be774b3b6272f706bd2de270c0ea98/MulensModel-2.7.2.tar.gz
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 11:11:21] INFO root fetch - processPackages [MulensModel]: Downloading https://files.pythonhosted.org/packages/ff/7f/45899cc29af1b1f2cad2f266a4a80b43828cf320e5cc33e8e75dd455946b/MulensModel-2.8.1.tar.gz
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 11:11:21] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 11:11:21] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 11:11:22] INFO root fetch - processPackages [MulensModel]: executing diffoscope
+[2024-04-28 11:11:22] INFO root fetch - processPackages [MulensModel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MulensModel-2.7.2.tar.gz tmp/MulensModel-2.8.1.tar.gz --markdown 20240428/M/MulensModel/2.7.2-2.8.1/README.md --exclude *.pyd
+[2024-04-28 11:11:23] INFO root fetch - processPackages [MulensModel]: Remove: archive file [/home/abi/fetcher/tmp/MulensModel-2.7.2.tar.gz]
+[2024-04-28 11:11:23] INFO root fetch - processPackages [MulensModel]: Remove: archive file [/home/abi/fetcher/tmp/MulensModel-2.8.1.tar.gz]
+[2024-04-28 11:11:23] INFO root fetch - main [MainThread]: End processing [MulensModel]: success
+[2024-04-28 11:11:23] INFO root fetch - main [MainThread]: Store serial: [22965611]
