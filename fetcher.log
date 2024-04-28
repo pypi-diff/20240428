@@ -9390,3 +9390,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:50:08] INFO root fetch - processPackages [opteryx]: Remove: archive file [/home/abi/fetcher/tmp/opteryx-0.9.3.tar.gz]
 [2024-04-28 12:50:08] INFO root fetch - main [MainThread]: End processing [opteryx]: success
 [2024-04-28 12:50:08] INFO root fetch - main [MainThread]: Store serial: [22966211]
+[2024-04-28 12:52:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966211]
+[2024-04-28 12:52:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 12:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygmtsar
+[2024-04-28 12:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: croning
+[2024-04-28 12:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PFlowC
+[2024-04-28 12:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: loggingpython
+[2024-04-28 12:52:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelpark
+[2024-04-28 12:52:18] INFO root fetch - processPackages [modelpark]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 12:52:18] INFO root fetch - processPackages [croning]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-28 12:52:18] INFO root fetch - processPackages [loggingpython]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-28 12:52:18] INFO root fetch - processPackages [PFlowC]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-28 12:52:18] INFO root fetch - processPackages [pygmtsar]: New version: [2024.4.17.post2] Old Version: [2024.4.17.post1]
+[2024-04-28 12:52:18] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/03/f9/7754a90bb63dca3e2f3f8983a490316c26e570e2109d6bd9c367beff3bf1/modelpark-0.1.1.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [croning]: Downloading https://files.pythonhosted.org/packages/45/bf/2a01ac691b7216c34f8f764430efa79d8448548a144390f75d6984fb0621/croning-0.0.1.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/10/b3/e54821e1b03030b58397113d0da262c489722cd490ce0b2331243ac4c877/loggingpython-1.4.8.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/56/a5/3487a205d1c2c91469325b0df1a229c60a24787777076d8ddfcd209154e2/PFlowC-1.4.1.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/f8/5f/d51e9b8bcc5dbbd47496cb3546c540d24c10fad3abc89a9805e16e25f954/pygmtsar-2024.4.17.post1.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [croning]: Downloading https://files.pythonhosted.org/packages/c6/3c/62d68332cb0a1e17d4cd64f429327fd7bd24954d5f695fa24f21b37ab446/croning-0.1.0.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/45/76/940f579806e390c05f73fd66a1bc1193396291cbc8bd539baf28d015034c/PFlowC-1.4.2.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [croning]: executing diffoscope
+[2024-04-28 12:52:18] INFO root fetch - processPackages [croning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croning-0.0.1.tar.gz tmp/croning-0.1.0.tar.gz --markdown 20240428/c/croning/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-28 12:52:18] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/86/db/e1694d5d5cbe568ccafed60be40255103c46e0c57d7f29f0cbc5dfe1e346/modelpark-0.1.2.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/2f/ac/3674366d368315eb59c525fca3daf8d7382cd969b41779ad6807302e60bd/loggingpython-1.4.9.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [PFlowC]: executing diffoscope
+[2024-04-28 12:52:18] INFO root fetch - processPackages [PFlowC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PFlowC-1.4.1.tar.gz tmp/PFlowC-1.4.2.tar.gz --markdown 20240428/P/PFlowC/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-04-28 12:52:18] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/de/04/19b147b84dbe8933704ea272d104bb88034f63ad6fa40d2a2c048ab4e9e0/pygmtsar-2024.4.17.post2.tar.gz
+[2024-04-28 12:52:18] INFO root fetch - processPackages [modelpark]: executing diffoscope
+[2024-04-28 12:52:18] INFO root fetch - processPackages [modelpark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelpark-0.1.1.tar.gz tmp/modelpark-0.1.2.tar.gz --markdown 20240428/m/modelpark/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 12:52:18] INFO root fetch - processPackages [loggingpython]: executing diffoscope
+[2024-04-28 12:52:18] INFO root fetch - processPackages [loggingpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggingpython-1.4.8.tar.gz tmp/loggingpython-1.4.9.tar.gz --markdown 20240428/l/loggingpython/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-28 12:52:19] INFO root fetch - processPackages [pygmtsar]: executing diffoscope
+[2024-04-28 12:52:19] INFO root fetch - processPackages [pygmtsar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtsar-2024.4.17.post1.tar.gz tmp/pygmtsar-2024.4.17.post2.tar.gz --markdown 20240428/p/pygmtsar/2024.4.17.post1-2024.4.17.post2/README.md --exclude *.pyd
+[2024-04-28 12:52:19] INFO root fetch - processPackages [croning]: Remove: archive file [/home/abi/fetcher/tmp/croning-0.0.1.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - processPackages [croning]: Remove: archive file [/home/abi/fetcher/tmp/croning-0.1.0.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [croning]: success
+[2024-04-28 12:52:19] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.1.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.2.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [PFlowC]: success
+[2024-04-28 12:52:19] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.1.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.2.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [modelpark]: success
+[2024-04-28 12:52:19] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.8.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.9.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [loggingpython]: success
+[2024-04-28 12:52:19] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.post1.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.post2.tar.gz]
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
+[2024-04-28 12:52:19] INFO root fetch - main [MainThread]: Store serial: [22966225]
