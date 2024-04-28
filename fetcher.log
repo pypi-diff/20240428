@@ -5418,3 +5418,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:04:21] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.86.0.tar.gz]
 [2024-04-28 08:04:21] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
 [2024-04-28 08:04:21] INFO root fetch - main [MainThread]: Store serial: [22964449]
+[2024-04-28 08:06:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964449]
+[2024-04-28 08:06:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 08:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asposecellscloud
+[2024-04-28 08:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-photons-core
+[2024-04-28 08:06:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-clients
+[2024-04-28 08:06:30] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2024-04-28 08:06:30] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/03/b3/03b803399fb68cbc25e937bd172fc8fe6342b93a81ec076e82b3199740cd/abstract_clients-0.0.0.4.tar.gz
+[2024-04-28 08:06:30] INFO root fetch - processPackages [asposecellscloud]: New version: [24.4] Old Version: [24.3]
+[2024-04-28 08:06:30] INFO root fetch - processPackages [lifx-photons-core]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-28 08:06:30] INFO root fetch - processPackages [asposecellscloud]: Downloading https://files.pythonhosted.org/packages/47/80/5365ae41ca13d601f271799977ead3d7099bc30c72942e9cc4b7435770b5/asposecellscloud-24.3.tar.gz
+[2024-04-28 08:06:30] INFO root fetch - processPackages [lifx-photons-core]: Downloading https://files.pythonhosted.org/packages/b3/35/070bc67c5be318871ed66c837959cbbc3404167586e774a1cd37ab54e6fd/lifx-photons-core-0.9.4.tar.gz
+[2024-04-28 08:06:31] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/ac/4e/f518b191343f5c384765bc64da556169a95cf5b773c2035aa0bb7daa290b/abstract_clients-0.0.0.5.tar.gz
+[2024-04-28 08:06:31] INFO root fetch - processPackages [asposecellscloud]: Downloading https://files.pythonhosted.org/packages/7a/60/5e8c573d5faf40578ec76a1c3a499edaa04fcc72c056e0c4163e8bdd805e/asposecellscloud-24.4.tar.gz
+[2024-04-28 08:06:31] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 08:06:31] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.4.tar.gz tmp/abstract_clients-0.0.0.5.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.4-0.0.0.5/README.md --exclude *.pyd
+[2024-04-28 08:06:31] INFO root fetch - processPackages [lifx-photons-core]: Downloading https://files.pythonhosted.org/packages/61/0f/c52959589afb87ecd5f4eace4923b4600f3683868dee2e39e8f36f7ffd44/lifx-photons-core-0.9.5.tar.gz
+[2024-04-28 08:06:31] INFO root fetch - processPackages [asposecellscloud]: executing diffoscope
+[2024-04-28 08:06:31] INFO root fetch - processPackages [asposecellscloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asposecellscloud-24.3.tar.gz tmp/asposecellscloud-24.4.tar.gz --markdown 20240428/a/asposecellscloud/24.3-24.4/README.md --exclude *.pyd
+[2024-04-28 08:06:31] INFO root fetch - processPackages [lifx-photons-core]: executing diffoscope
+[2024-04-28 08:06:31] INFO root fetch - processPackages [lifx-photons-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx-photons-core-0.9.4.tar.gz tmp/lifx-photons-core-0.9.5.tar.gz --markdown 20240428/l/lifx-photons-core/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-28 08:06:31] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.4.tar.gz]
+[2024-04-28 08:06:31] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.5.tar.gz]
+[2024-04-28 08:06:31] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 08:06:32] INFO root fetch - processPackages [lifx-photons-core]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-core-0.9.4.tar.gz]
+[2024-04-28 08:06:32] INFO root fetch - processPackages [lifx-photons-core]: Remove: archive file [/home/abi/fetcher/tmp/lifx-photons-core-0.9.5.tar.gz]
+[2024-04-28 08:06:32] INFO root fetch - main [MainThread]: End processing [lifx-photons-core]: success
+[2024-04-28 08:06:34] INFO root fetch - processPackages [asposecellscloud]: Remove: archive file [/home/abi/fetcher/tmp/asposecellscloud-24.3.tar.gz]
+[2024-04-28 08:06:34] INFO root fetch - processPackages [asposecellscloud]: Remove: archive file [/home/abi/fetcher/tmp/asposecellscloud-24.4.tar.gz]
+[2024-04-28 08:06:34] INFO root fetch - main [MainThread]: End processing [asposecellscloud]: success
+[2024-04-28 08:06:34] INFO root fetch - main [MainThread]: Store serial: [22964458]
