@@ -15673,3 +15673,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:11:44] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.5.tar.gz]
 [2024-04-28 20:11:44] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
 [2024-04-28 20:11:44] INFO root fetch - main [MainThread]: Store serial: [22968747]
+[2024-04-28 20:13:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968747]
+[2024-04-28 20:13:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 20:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nahcrofDB
+[2024-04-28 20:13:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaychen
+[2024-04-28 20:13:52] INFO root fetch - processPackages [nahcrofDB]: New version: [1.2.0] Old Version: [1.1.5]
+[2024-04-28 20:13:52] INFO root fetch - processPackages [kaychen]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 20:13:52] INFO root fetch - processPackages [nahcrofDB]: Downloading https://files.pythonhosted.org/packages/3d/6f/defe2d8b41888be011852b7ead98b4a6f318b3ff90151b656b1cc459f2c1/nahcrofDB-1.1.5.tar.gz
+[2024-04-28 20:13:52] INFO root fetch - processPackages [kaychen]: Downloading https://files.pythonhosted.org/packages/66/3e/984d3a4c11bc6ff47d883a8c11da139467d30a9b710ad83b1b4a16ccdb8d/kaychen-0.1.2.tar.gz
+[2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: Downloading https://files.pythonhosted.org/packages/83/b4/88c09b0216afd7b3e1a9b0f029228e8840721e67b6da13195d242b636e43/nahcrofDB-1.2.0.tar.gz
+[2024-04-28 20:13:53] INFO root fetch - processPackages [kaychen]: Downloading https://files.pythonhosted.org/packages/dd/9e/def9c4d5eb7276e5e94904bcc6e0837043ac23f6b6a9160dec482396582b/kaychen-0.1.3.tar.gz
+[2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: executing diffoscope
+[2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nahcrofDB-1.1.5.tar.gz tmp/nahcrofDB-1.2.0.tar.gz --markdown 20240428/n/nahcrofDB/1.1.5-1.2.0/README.md --exclude *.pyd
+[2024-04-28 20:13:53] INFO root fetch - processPackages [kaychen]: executing diffoscope
+[2024-04-28 20:13:53] INFO root fetch - processPackages [kaychen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaychen-0.1.2.tar.gz tmp/kaychen-0.1.3.tar.gz --markdown 20240428/k/kaychen/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 20:13:53] INFO root fetch - processPackages [kaychen]: Remove: archive file [/home/abi/fetcher/tmp/kaychen-0.1.2.tar.gz]
+[2024-04-28 20:13:53] INFO root fetch - processPackages [kaychen]: Remove: archive file [/home/abi/fetcher/tmp/kaychen-0.1.3.tar.gz]
+[2024-04-28 20:13:53] INFO root fetch - main [MainThread]: End processing [kaychen]: success
+[2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: Remove: archive file [/home/abi/fetcher/tmp/nahcrofDB-1.1.5.tar.gz]
+[2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: Remove: archive file [/home/abi/fetcher/tmp/nahcrofDB-1.2.0.tar.gz]
+[2024-04-28 20:13:53] INFO root fetch - main [MainThread]: End processing [nahcrofDB]: success
+[2024-04-28 20:13:53] INFO root fetch - main [MainThread]: Store serial: [22968752]
