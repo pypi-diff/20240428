@@ -8593,3 +8593,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:54:57] INFO root fetch - processPackages [fakenos]: Remove: archive file [/home/abi/fetcher/tmp/fakenos-0.2.0.tar.gz]
 [2024-04-28 11:54:57] INFO root fetch - main [MainThread]: End processing [fakenos]: success
 [2024-04-28 11:54:57] INFO root fetch - main [MainThread]: Store serial: [22965832]
+[2024-04-28 11:57:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965832]
+[2024-04-28 11:57:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 11:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fakenos
+[2024-04-28 11:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Qube2
+[2024-04-28 11:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-manager
+[2024-04-28 11:57:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdp-socket
+[2024-04-28 11:57:05] INFO root fetch - processPackages [torch-model-manager]: New version: [0.0.7] Old Version: [0.0.6.dev9]
+[2024-04-28 11:57:05] INFO root fetch - processPackages [fakenos]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 11:57:05] INFO root fetch - processPackages [cdp-socket]: New version: [1.2.8] Old Version: [1.2.7]
+[2024-04-28 11:57:05] INFO root fetch - processPackages [fakenos]: Downloading https://files.pythonhosted.org/packages/9d/19/2a9caf8f7a8d27fe0d820307f11edb8822229feb623c5e9ee46ec7676713/fakenos-0.1.1.tar.gz
+[2024-04-28 11:57:05] INFO root fetch - processPackages [Qube2]: New version: [0.3.38] Old Version: [0.3.37]
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/2c/8e/04077c3ee6e8e2b9dd750c54f8bbf16c43024ebecc2e6ad18b233d172815/torch_model_manager-0.0.6.dev9.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [cdp-socket]: Downloading https://files.pythonhosted.org/packages/3f/9f/a1a786a28f38fe79de1297087f14722717869e8100855f8f2dc47925132a/cdp-socket-1.2.7.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [Qube2]: Downloading https://files.pythonhosted.org/packages/b7/85/1f7a827444e4da65d1bbd92801386af6fc79e0daaba12f453a3d656d8774/Qube2-0.3.37.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [fakenos]: Downloading https://files.pythonhosted.org/packages/bc/b3/f001ddfb88a77ea305fb5485d370278e5fe1a752804360292dc982a802c3/fakenos-0.2.0.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/2c/ab/0cf52ff7a2370b04b213058147809db8df547a0a801414bd834998039e8f/torch_model_manager-0.0.7.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [fakenos]: executing diffoscope
+[2024-04-28 11:57:06] INFO root fetch - processPackages [fakenos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fakenos-0.1.1.tar.gz tmp/fakenos-0.2.0.tar.gz --markdown 20240428/f/fakenos/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.0.6.dev9.tar.gz tmp/torch_model_manager-0.0.7.tar.gz --markdown 20240428/t/torch-model-manager/0.0.6.dev9-0.0.7/README.md --exclude *.pyd
+[2024-04-28 11:57:06] INFO root fetch - processPackages [cdp-socket]: Downloading https://files.pythonhosted.org/packages/7d/28/58812797e54fb8cf22bff61125e5a7d2763de1a86855549ecc417bdd06d5/cdp-socket-1.2.8.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [Qube2]: Downloading https://files.pythonhosted.org/packages/45/7f/a95b5d1b63b4241bf8b6f00e92d62783d8c04248c156147e8deb88f00c20/Qube2-0.3.38.tar.gz
+[2024-04-28 11:57:06] INFO root fetch - processPackages [cdp-socket]: executing diffoscope
+[2024-04-28 11:57:06] INFO root fetch - processPackages [cdp-socket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdp-socket-1.2.7.tar.gz tmp/cdp-socket-1.2.8.tar.gz --markdown 20240428/c/cdp-socket/1.2.7-1.2.8/README.md --exclude *.pyd
+[2024-04-28 11:57:06] INFO root fetch - processPackages [Qube2]: executing diffoscope
+[2024-04-28 11:57:06] INFO root fetch - processPackages [Qube2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qube2-0.3.37.tar.gz tmp/Qube2-0.3.38.tar.gz --markdown 20240428/Q/Qube2/0.3.37-0.3.38/README.md --exclude *.pyd
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.6.dev9.tar.gz]
+[2024-04-28 11:57:06] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.7.tar.gz]
+[2024-04-28 11:57:06] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-04-28 11:57:07] INFO root fetch - processPackages [fakenos]: Remove: archive file [/home/abi/fetcher/tmp/fakenos-0.1.1.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - processPackages [fakenos]: Remove: archive file [/home/abi/fetcher/tmp/fakenos-0.2.0.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - main [MainThread]: End processing [fakenos]: success
+[2024-04-28 11:57:07] INFO root fetch - processPackages [cdp-socket]: Remove: archive file [/home/abi/fetcher/tmp/cdp-socket-1.2.7.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - processPackages [cdp-socket]: Remove: archive file [/home/abi/fetcher/tmp/cdp-socket-1.2.8.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - main [MainThread]: End processing [cdp-socket]: success
+[2024-04-28 11:57:07] INFO root fetch - processPackages [Qube2]: Remove: archive file [/home/abi/fetcher/tmp/Qube2-0.3.37.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - processPackages [Qube2]: Remove: archive file [/home/abi/fetcher/tmp/Qube2-0.3.38.tar.gz]
+[2024-04-28 11:57:07] INFO root fetch - main [MainThread]: End processing [Qube2]: success
+[2024-04-28 11:57:07] INFO root fetch - main [MainThread]: Store serial: [22965843]
