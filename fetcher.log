@@ -12128,3 +12128,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:10:07] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.9b1.tar.gz]
 [2024-04-28 16:10:07] INFO root fetch - main [MainThread]: End processing [YaraForge]: success
 [2024-04-28 16:10:07] INFO root fetch - main [MainThread]: Store serial: [22967297]
+[2024-04-28 16:12:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967297]
+[2024-04-28 16:12:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 16:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kss
+[2024-04-28 16:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ConnectedPapersExtractor
+[2024-04-28 16:12:27] INFO root fetch - processPackages [kss]: New version: [6.0.1] Old Version: [6.0.0.dev0]
+[2024-04-28 16:12:27] INFO root fetch - processPackages [ConnectedPapersExtractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 16:12:27] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/f8/9e/55b7a3d215613ba02e25c939d5814a436703c9b2c4e98e1410424f0659a2/kss-6.0.0.dev0.tar.gz
+[2024-04-28 16:12:27] INFO root fetch - processPackages [ConnectedPapersExtractor]: Downloading https://files.pythonhosted.org/packages/dd/d3/3c57639cbf223e78ecba85b50d38ded7f4039da9a46de509624b5c4fd1d8/connectedpapersextractor-0.1.0.tar.gz
+[2024-04-28 16:12:27] INFO root fetch - processPackages [kss]: Downloading https://files.pythonhosted.org/packages/97/c3/888f687b2d50cd3d3a235e14512cfaf3f05109ace6d4e927b1d45285a415/kss-6.0.1.tar.gz
+[2024-04-28 16:12:27] INFO root fetch - processPackages [ConnectedPapersExtractor]: Downloading https://files.pythonhosted.org/packages/11/2d/a9f709f8ce712d9a1df4dae5cc44053672d96951c978c1f445ec58552d65/connectedpapersextractor-0.1.1.tar.gz
+[2024-04-28 16:12:27] INFO root fetch - processPackages [ConnectedPapersExtractor]: executing diffoscope
+[2024-04-28 16:12:27] INFO root fetch - processPackages [ConnectedPapersExtractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectedpapersextractor-0.1.0.tar.gz tmp/connectedpapersextractor-0.1.1.tar.gz --markdown 20240428/C/ConnectedPapersExtractor/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 16:12:27] INFO root fetch - processPackages [kss]: executing diffoscope
+[2024-04-28 16:12:27] INFO root fetch - processPackages [kss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kss-6.0.0.dev0.tar.gz tmp/kss-6.0.1.tar.gz --markdown 20240428/k/kss/6.0.0.dev0-6.0.1/README.md --exclude *.pyd
+[2024-04-28 16:12:28] INFO root fetch - processPackages [ConnectedPapersExtractor]: Remove: archive file [/home/abi/fetcher/tmp/connectedpapersextractor-0.1.0.tar.gz]
+[2024-04-28 16:12:28] INFO root fetch - processPackages [ConnectedPapersExtractor]: Remove: archive file [/home/abi/fetcher/tmp/connectedpapersextractor-0.1.1.tar.gz]
+[2024-04-28 16:12:28] INFO root fetch - main [MainThread]: End processing [ConnectedPapersExtractor]: success
+[2024-04-28 16:12:29] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-6.0.0.dev0.tar.gz]
+[2024-04-28 16:12:29] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-6.0.1.tar.gz]
+[2024-04-28 16:12:29] INFO root fetch - main [MainThread]: End processing [kss]: success
+[2024-04-28 16:12:29] INFO root fetch - main [MainThread]: Store serial: [22967302]
