@@ -21242,3 +21242,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:44:04] INFO root fetch - processPackages [transformer-heads]: Remove: archive file [/home/abi/fetcher/tmp/transformer_heads-0.1.0.tar.gz]
 [2024-04-28 23:44:04] INFO root fetch - main [MainThread]: End processing [transformer-heads]: success
 [2024-04-28 23:44:04] INFO root fetch - main [MainThread]: Store serial: [22971044]
+[2024-04-28 23:46:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971044]
+[2024-04-28 23:46:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 23:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compas-wood
+[2024-04-28 23:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tradedangerous
+[2024-04-28 23:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asyncTwitterClient
+[2024-04-28 23:46:13] INFO root fetch - processPackages [compas-wood]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 23:46:13] INFO root fetch - processPackages [asyncTwitterClient]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-28 23:46:13] INFO root fetch - processPackages [tradedangerous]: New version: [11.1.1] Old Version: [11.1.0]
+[2024-04-28 23:46:13] INFO root fetch - processPackages [asyncTwitterClient]: Downloading https://files.pythonhosted.org/packages/cf/1e/9789f01e834137fe9934874dd282ba5b3dcdccad67ecc07f6686117a3784/asyncTwitterClient-0.4.0.tar.gz
+[2024-04-28 23:46:13] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/fb/ed/eb04af61402a654bf5f70f7482234ab9b389db1536658b8b0b5d8a527e12/tradedangerous-11.1.0.tar.gz
+[2024-04-28 23:46:13] INFO root fetch - processPackages [compas-wood]: Downloading https://files.pythonhosted.org/packages/6e/4c/1107df950a1079d975d5d95ffdd9775ba3becd18684dbea8dc6080f4d518/compas_wood-2.0.8-py2.py3-none-any.whl
+[2024-04-28 23:46:14] INFO root fetch - processPackages [asyncTwitterClient]: Downloading https://files.pythonhosted.org/packages/82/71/0443266c500d03e617bcc70cf0b2d65183b994ae94a5ef94f0d4714a2844/asyncTwitterClient-0.5.0.tar.gz
+[2024-04-28 23:46:14] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/3c/a9/0954de2b28ac2ea655ceb365fca9cab2df4ebb5ad05c4561e990a121b9a4/tradedangerous-11.1.1.tar.gz
+[2024-04-28 23:46:14] INFO root fetch - processPackages [compas-wood]: Downloading https://files.pythonhosted.org/packages/39/48/02b58dd42d17147927178592bb561ef241c8298b74a514cd4c73afa48053/compas_wood-2.0.9-py2.py3-none-any.whl
+[2024-04-28 23:46:14] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-28 23:46:14] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-11.1.0.tar.gz tmp/tradedangerous-11.1.1.tar.gz --markdown 20240428/t/tradedangerous/11.1.0-11.1.1/README.md --exclude *.pyd
+[2024-04-28 23:46:14] INFO root fetch - processPackages [compas-wood]: executing diffoscope
+[2024-04-28 23:46:14] INFO root fetch - processPackages [compas-wood]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compas_wood-2.0.8-py2.py3-none-any.whl.zip tmp/compas_wood-2.0.9-py2.py3-none-any.whl.zip --markdown 20240428/c/compas-wood/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 23:46:14] INFO root fetch - processPackages [asyncTwitterClient]: executing diffoscope
+[2024-04-28 23:46:14] INFO root fetch - processPackages [asyncTwitterClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncTwitterClient-0.4.0.tar.gz tmp/asyncTwitterClient-0.5.0.tar.gz --markdown 20240428/a/asyncTwitterClient/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-28 23:46:14] INFO root fetch - processPackages [asyncTwitterClient]: Remove: archive file [/home/abi/fetcher/tmp/asyncTwitterClient-0.4.0.tar.gz]
+[2024-04-28 23:46:14] INFO root fetch - processPackages [asyncTwitterClient]: Remove: archive file [/home/abi/fetcher/tmp/asyncTwitterClient-0.5.0.tar.gz]
+[2024-04-28 23:46:14] INFO root fetch - main [MainThread]: End processing [asyncTwitterClient]: success
+[2024-04-28 23:46:14] INFO root fetch - processPackages [compas-wood]: Remove: archive file [/home/abi/fetcher/tmp/compas_wood-2.0.8-py2.py3-none-any.whl.zip]
+[2024-04-28 23:46:14] INFO root fetch - processPackages [compas-wood]: Remove: archive file [/home/abi/fetcher/tmp/compas_wood-2.0.9-py2.py3-none-any.whl.zip]
+[2024-04-28 23:46:14] INFO root fetch - main [MainThread]: End processing [compas-wood]: success
+[2024-04-28 23:46:15] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.1.0.tar.gz]
+[2024-04-28 23:46:15] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.1.1.tar.gz]
+[2024-04-28 23:46:15] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-28 23:46:15] INFO root fetch - main [MainThread]: Store serial: [22971051]
