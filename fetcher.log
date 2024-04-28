@@ -8881,3 +8881,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:14:52] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-1.0.0.tar.gz]
 [2024-04-28 12:14:52] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
 [2024-04-28 12:14:52] INFO root fetch - main [MainThread]: Store serial: [22965936]
+[2024-04-28 12:16:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965936]
+[2024-04-28 12:17:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rooms-shared-services
+[2024-04-28 12:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.utils.dp
+[2024-04-28 12:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqt5-qt5-designer
+[2024-04-28 12:17:01] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-28 12:17:01] INFO root fetch - processPackages [wwpdb.utils.dp]: New version: [0.51] Old Version: [0.50.1]
+[2024-04-28 12:17:01] INFO root fetch - processPackages [pyqt5-qt5-designer]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 12:17:01] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-28 12:17:01] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/0a/27/190e817733dec6b83bd25b1757a533ec022fd06a1eee736f6d5fa5b8dcb6/wwpdb.utils.dp-0.50.1.tar.gz
+[2024-04-28 12:17:01] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/06/02/55a23546b63fd063c3b9c4a47a86d61420d9fdde6b4971542dfb4a968806/pyqt5_qt5_designer-0.0.5-py3-none-any.whl
+[2024-04-28 12:17:01] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-28 12:17:01] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-28 12:17:01] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240428/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-28 12:17:01] INFO root fetch - processPackages [wwpdb.utils.dp]: Downloading https://files.pythonhosted.org/packages/46/b1/e2a0d41df13d08a4cdcd000bc31dacb3698525f4148a0b991ab0227f2ccc/wwpdb_utils_dp-0.51.tar.gz
+[2024-04-28 12:17:01] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/bd/15/081faf5665fdc86be499ccd138ee3fea5ed36a2f5b62b2a84af576321628/pyqt5_qt5_designer-0.0.6.tar.gz
+[2024-04-28 12:17:01] INFO root fetch - processPackages [wwpdb.utils.dp]: executing diffoscope
+[2024-04-28 12:17:01] INFO root fetch - processPackages [wwpdb.utils.dp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.dp-0.50.1.tar.gz tmp/wwpdb_utils_dp-0.51.tar.gz --markdown 20240428/w/wwpdb.utils.dp/0.50.1-0.51/README.md --exclude *.pyd
+[2024-04-28 12:17:02] INFO root fetch - processPackages [pyqt5-qt5-designer]: executing diffoscope
+[2024-04-28 12:17:02] INFO root fetch - processPackages [pyqt5-qt5-designer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_qt5_designer-0.0.5-py3-none-any.whl.zip tmp/pyqt5_qt5_designer-0.0.6.tar.gz --markdown 20240428/p/pyqt5-qt5-designer/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 12:17:02] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-28 12:17:02] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-28 12:17:02] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-28 12:17:02] INFO root fetch - processPackages [wwpdb.utils.dp]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.dp-0.50.1.tar.gz]
+[2024-04-28 12:17:02] INFO root fetch - processPackages [wwpdb.utils.dp]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb_utils_dp-0.51.tar.gz]
+[2024-04-28 12:17:02] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.dp]: success
+[2024-04-28 12:17:03] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.5-py3-none-any.whl.zip]
+[2024-04-28 12:17:03] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.6.tar.gz]
+[2024-04-28 12:17:03] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
+[2024-04-28 12:17:03] INFO root fetch - main [MainThread]: Store serial: [22965944]
