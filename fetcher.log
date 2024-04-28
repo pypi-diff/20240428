@@ -7305,3 +7305,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:29:02] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.34-py3-none-any.whl.zip]
 [2024-04-28 10:29:02] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-04-28 10:29:02] INFO root fetch - main [MainThread]: Store serial: [22965185]
+[2024-04-28 10:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965185]
+[2024-04-28 10:31:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 10:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Fr1997v011
+[2024-04-28 10:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mns-common
+[2024-04-28 10:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscinloopsr
+[2024-04-28 10:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fog-x
+[2024-04-28 10:31:11] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 10:31:11] INFO root fetch - processPackages [Fr1997v011]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-28 10:31:11] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.6.3] Old Version: [1.0.7.6.2]
+[2024-04-28 10:31:11] INFO root fetch - processPackages [fog-x]: New version: [0.1.0b3] Old Version: [0.1.0b2]
+[2024-04-28 10:31:11] INFO root fetch - processPackages [Fr1997v011]: Downloading https://files.pythonhosted.org/packages/4f/8c/910b04e6aa65518357ed2fd392f87ac499416c479cde35add6d60a66183e/Fr1997v011-1.3.8.tar.gz
+[2024-04-28 10:31:11] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-28 10:31:11] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/a0/03/621764d0ff290141284b40e591f6c273860fe65052412f37173ffbb2fe7e/mns_common-1.0.7.6.2.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [fog-x]: Downloading https://files.pythonhosted.org/packages/67/4a/b288424ecbb87de54fa6c13e02698ec9a371c3e05d4575134ffe5ba46960/fog_x-0.1.0b2.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [Fr1997v011]: Downloading https://files.pythonhosted.org/packages/2f/fe/b216c86c1a9a6bb147cf893fa19b186331cdb5d03db01f7a0db1cd93fcdb/Fr1997v011-1.3.9.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/55/8d/f7b0959953c28552ba085d23a1366e40940c0de90e36c97e50cccd38752e/mns_common-1.0.7.6.3.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-28 10:31:12] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240428/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 10:31:12] INFO root fetch - processPackages [Fr1997v011]: executing diffoscope
+[2024-04-28 10:31:12] INFO root fetch - processPackages [Fr1997v011]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fr1997v011-1.3.8.tar.gz tmp/Fr1997v011-1.3.9.tar.gz --markdown 20240428/F/Fr1997v011/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-28 10:31:12] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-28 10:31:12] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.6.2.tar.gz tmp/mns_common-1.0.7.6.3.tar.gz --markdown 20240428/m/mns-common/1.0.7.6.2-1.0.7.6.3/README.md --exclude *.pyd
+[2024-04-28 10:31:12] INFO root fetch - processPackages [fog-x]: Downloading https://files.pythonhosted.org/packages/30/c2/e9f0a9befd283a5a96355eb295f2a3694b4c0bf94a0c51bd0113e1b13a5b/fog_x-0.1.0b3.tar.gz
+[2024-04-28 10:31:12] INFO root fetch - processPackages [fog-x]: executing diffoscope
+[2024-04-28 10:31:12] INFO root fetch - processPackages [fog-x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fog_x-0.1.0b2.tar.gz tmp/fog_x-0.1.0b3.tar.gz --markdown 20240428/f/fog-x/0.1.0b2-0.1.0b3/README.md --exclude *.pyd
+[2024-04-28 10:31:12] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-28 10:31:12] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-28 10:31:12] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-28 10:31:13] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.2.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.3.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-28 10:31:13] INFO root fetch - processPackages [Fr1997v011]: Remove: archive file [/home/abi/fetcher/tmp/Fr1997v011-1.3.8.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - processPackages [Fr1997v011]: Remove: archive file [/home/abi/fetcher/tmp/Fr1997v011-1.3.9.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - main [MainThread]: End processing [Fr1997v011]: success
+[2024-04-28 10:31:13] INFO root fetch - processPackages [fog-x]: Remove: archive file [/home/abi/fetcher/tmp/fog_x-0.1.0b2.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - processPackages [fog-x]: Remove: archive file [/home/abi/fetcher/tmp/fog_x-0.1.0b3.tar.gz]
+[2024-04-28 10:31:13] INFO root fetch - main [MainThread]: End processing [fog-x]: success
+[2024-04-28 10:31:13] INFO root fetch - main [MainThread]: Store serial: [22965196]
