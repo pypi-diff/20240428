@@ -3785,3 +3785,15 @@
 [2024-04-28 05:58:22] INFO root fetch - processPackages [cloudacious-iac]: Remove: archive file [/home/abi/fetcher/tmp/cloudacious_iac-0.0.2.tar.gz]
 [2024-04-28 05:58:22] INFO root fetch - main [MainThread]: End processing [cloudacious-iac]: success
 [2024-04-28 05:58:22] INFO root fetch - main [MainThread]: Store serial: [22963812]
+[2024-04-28 06:00:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963812]
+[2024-04-28 06:00:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 06:00:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STAIR-tools
+[2024-04-28 06:00:31] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-28 06:00:31] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/3a/fa/82fbefd9bef41e04e2e52f5d7d36f1a269d2cb1d3402c7c062ea0304f8be/STAIR-tools-1.1.7.tar.gz
+[2024-04-28 06:00:31] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 06:00:31] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 06:00:31] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.7.tar.gz tmp/STAIR-tools-1.1.8.tar.gz --markdown 20240428/S/STAIR-tools/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-28 06:00:32] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.7.tar.gz]
+[2024-04-28 06:00:32] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 06:00:32] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 06:00:32] INFO root fetch - main [MainThread]: Store serial: [22963815]
