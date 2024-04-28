@@ -11271,3 +11271,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:09:14] INFO root fetch - processPackages [dropletevapmodel]: Remove: archive file [/home/abi/fetcher/tmp/dropletevapmodel-0.2.0.tar.gz]
 [2024-04-28 15:09:14] INFO root fetch - main [MainThread]: End processing [dropletevapmodel]: success
 [2024-04-28 15:09:14] INFO root fetch - main [MainThread]: Store serial: [22966955]
+[2024-04-28 15:11:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966955]
+[2024-04-28 15:11:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-04-28 15:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basic-data-structure
+[2024-04-28 15:11:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zalabim
+[2024-04-28 15:11:31] INFO root fetch - processPackages [basic-data-structure]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 15:11:31] INFO root fetch - processPackages [zalabim]: New version: [24.1.1] Old Version: [24.1]
+[2024-04-28 15:11:31] INFO root fetch - processPackages [pypipr]: New version: [1.0.97] Old Version: [1.0.96]
+[2024-04-28 15:11:31] INFO root fetch - processPackages [basic-data-structure]: Downloading https://files.pythonhosted.org/packages/d8/55/8b37b70b34add90d39e2b8cb71362cdc68f877d94a16a97e11bda604e0ab/basic_data_structure-0.0.3.tar.gz
+[2024-04-28 15:11:31] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/14/7b/1606062cf823b4404db360d2aa3e6e69038c37f0d5800e4a0a23f5c2a2d2/zalabim-24.1.tar.gz
+[2024-04-28 15:11:31] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ea/22/1192d976370f6b960b684c7ef1f2e257012244c43bf4b155a592176d39a5/pypipr-1.0.96-py3-none-any.whl
+[2024-04-28 15:11:32] INFO root fetch - processPackages [basic-data-structure]: Downloading https://files.pythonhosted.org/packages/07/16/c3a302d8ff3ccdf84a5b1d2438fe423587aae9e5b90e55d832ea54aea876/basic_data_structure-0.0.4.tar.gz
+[2024-04-28 15:11:32] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/27/4a/646722267efb4a7e85c8c9f89595613d725d0f9132fee31dff335f359f00/pypipr-1.0.97.tar.gz
+[2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/18/f4/e2c13f21100c0a90ebe7319f53428a96283eb77dc94e2a035d9515fdd604/zalabim-24.1.1.tar.gz
+[2024-04-28 15:11:32] INFO root fetch - processPackages [basic-data-structure]: executing diffoscope
+[2024-04-28 15:11:32] INFO root fetch - processPackages [basic-data-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic_data_structure-0.0.3.tar.gz tmp/basic_data_structure-0.0.4.tar.gz --markdown 20240428/b/basic-data-structure/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 15:11:32] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-28 15:11:32] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.96-py3-none-any.whl.zip tmp/pypipr-1.0.97.tar.gz --markdown 20240428/p/pypipr/1.0.96-1.0.97/README.md --exclude *.pyd
+[2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: executing diffoscope
+[2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zalabim-24.1.tar.gz tmp/zalabim-24.1.1.tar.gz --markdown 20240428/z/zalabim/24.1-24.1.1/README.md --exclude *.pyd
+[2024-04-28 15:11:32] INFO root fetch - processPackages [basic-data-structure]: Remove: archive file [/home/abi/fetcher/tmp/basic_data_structure-0.0.3.tar.gz]
+[2024-04-28 15:11:32] INFO root fetch - processPackages [basic-data-structure]: Remove: archive file [/home/abi/fetcher/tmp/basic_data_structure-0.0.4.tar.gz]
+[2024-04-28 15:11:32] INFO root fetch - main [MainThread]: End processing [basic-data-structure]: success
+[2024-04-28 15:11:32] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.96-py3-none-any.whl.zip]
+[2024-04-28 15:11:32] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.97.tar.gz]
+[2024-04-28 15:11:32] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.tar.gz]
+[2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.1.tar.gz]
+[2024-04-28 15:11:32] INFO root fetch - main [MainThread]: End processing [zalabim]: success
+[2024-04-28 15:11:32] INFO root fetch - main [MainThread]: Store serial: [22966965]
