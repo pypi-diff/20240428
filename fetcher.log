@@ -10781,3 +10781,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:35:06] INFO root fetch - processPackages [PieBedrock]: Remove: archive file [/home/abi/fetcher/tmp/piebedrock-1.0.4.tar.gz]
 [2024-04-28 14:35:06] INFO root fetch - main [MainThread]: End processing [PieBedrock]: success
 [2024-04-28 14:35:06] INFO root fetch - main [MainThread]: Store serial: [22966712]
+[2024-04-28 14:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966712]
+[2024-04-28 14:37:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 14:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dcentralab-auto-infra
+[2024-04-28 14:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roff
+[2024-04-28 14:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thonny-tunisiaschools
+[2024-04-28 14:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-template-generator
+[2024-04-28 14:37:22] WARNING root fetch - processPackages [dcentralab-auto-infra]: Skipping, unable to determine old version
+[2024-04-28 14:37:22] INFO root fetch - main [MainThread]: End processing [dcentralab-auto-infra] error
+[2024-04-28 14:37:22] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 14:37:22] INFO root fetch - processPackages [thonny-tunisiaschools]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-28 14:37:22] INFO root fetch - processPackages [roff]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-28 14:37:22] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-04-28 14:37:22] INFO root fetch - processPackages [thonny-tunisiaschools]: Downloading https://files.pythonhosted.org/packages/58/7e/c38b397804ef5417570cc5e23a6d8f2f2ed83b4482464d44fb2a6eeae13e/thonny_tunisiaschools-0.0.7.tar.gz
+[2024-04-28 14:37:22] INFO root fetch - processPackages [roff]: Downloading https://files.pythonhosted.org/packages/a9/b4/c48e7c62c6da14a324d8e7cc871ffd77629b5f00cc5db51dc6d2336e0f1e/roff-0.2.0.tar.gz
+[2024-04-28 14:37:22] INFO root fetch - processPackages [thonny-tunisiaschools]: Downloading https://files.pythonhosted.org/packages/4d/4e/0f24e61910ef3f43e9d44a0712a9eb19d6ec7efce55efb3f892821b01749/thonny_tunisiaschools-0.0.8.tar.gz
+[2024-04-28 14:37:22] INFO root fetch - processPackages [roff]: Downloading https://files.pythonhosted.org/packages/f3/29/cef26f8c5ce369837ef2ec5968fe844471dfbbeab2e452dba1723b4cbcc5/roff-0.3.0.tar.gz
+[2024-04-28 14:37:22] INFO root fetch - processPackages [thonny-tunisiaschools]: executing diffoscope
+[2024-04-28 14:37:22] INFO root fetch - processPackages [thonny-tunisiaschools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_tunisiaschools-0.0.7.tar.gz tmp/thonny_tunisiaschools-0.0.8.tar.gz --markdown 20240428/t/thonny-tunisiaschools/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-28 14:37:23] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-04-28 14:37:23] INFO root fetch - processPackages [roff]: executing diffoscope
+[2024-04-28 14:37:23] INFO root fetch - processPackages [roff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roff-0.2.0.tar.gz tmp/roff-0.3.0.tar.gz --markdown 20240428/r/roff/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-28 14:37:23] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-04-28 14:37:23] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240428/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 14:37:23] INFO root fetch - processPackages [thonny-tunisiaschools]: Remove: archive file [/home/abi/fetcher/tmp/thonny_tunisiaschools-0.0.7.tar.gz]
+[2024-04-28 14:37:23] INFO root fetch - processPackages [thonny-tunisiaschools]: Remove: archive file [/home/abi/fetcher/tmp/thonny_tunisiaschools-0.0.8.tar.gz]
+[2024-04-28 14:37:23] INFO root fetch - main [MainThread]: End processing [thonny-tunisiaschools]: success
+[2024-04-28 14:37:23] INFO root fetch - processPackages [roff]: Remove: archive file [/home/abi/fetcher/tmp/roff-0.2.0.tar.gz]
+[2024-04-28 14:37:23] INFO root fetch - processPackages [roff]: Remove: archive file [/home/abi/fetcher/tmp/roff-0.3.0.tar.gz]
+[2024-04-28 14:37:23] INFO root fetch - main [MainThread]: End processing [roff]: success
+[2024-04-28 14:37:24] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-04-28 14:37:24] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-04-28 14:37:24] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-04-28 14:37:24] INFO root fetch - main [MainThread]: Store serial: [22966724]
