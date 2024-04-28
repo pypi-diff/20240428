@@ -14230,3 +14230,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:36:55] INFO root fetch - processPackages [jz3]: Remove: archive file [/home/abi/fetcher/tmp/jz3-0.1.6.tar.gz]
 [2024-04-28 18:36:55] INFO root fetch - main [MainThread]: End processing [jz3]: success
 [2024-04-28 18:36:55] INFO root fetch - main [MainThread]: Store serial: [22968134]
+[2024-04-28 18:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968134]
+[2024-04-28 18:39:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 18:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwpdb.utils.session
+[2024-04-28 18:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schwab-py
+[2024-04-28 18:39:05] INFO root fetch - processPackages [wwpdb.utils.session]: New version: [0.9.dev1] Old Version: [0.9]
+[2024-04-28 18:39:05] INFO root fetch - processPackages [schwab-py]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-04-28 18:39:05] INFO root fetch - processPackages [wwpdb.utils.session]: Downloading https://files.pythonhosted.org/packages/57/5c/da542114716cd0e834b152b7a080004c2c9820186491aa877bdeb21a9450/wwpdb.utils.session-0.9.tar.gz
+[2024-04-28 18:39:05] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/4a/97/d78b9c894adc5546c1464a6150bd183cffc758049f5f599b96df24c97f56/schwab-py-0.0.0a8.tar.gz
+[2024-04-28 18:39:05] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/f3/f1/efd2cf1baeff4d7f78477ad6df2d7f97c864c877ffd1d2e6a1425706ef14/schwab-py-0.0.0a9.tar.gz
+[2024-04-28 18:39:05] INFO root fetch - processPackages [wwpdb.utils.session]: Downloading https://files.pythonhosted.org/packages/65/2c/6610540e68d0e5de190106bc19b4cd964677ccb0e39e43fb505668a4bc00/wwpdb.utils.session-0.9.dev1.tar.gz
+[2024-04-28 18:39:05] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-04-28 18:39:05] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a8.tar.gz tmp/schwab-py-0.0.0a9.tar.gz --markdown 20240428/s/schwab-py/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-04-28 18:39:06] INFO root fetch - processPackages [wwpdb.utils.session]: executing diffoscope
+[2024-04-28 18:39:06] INFO root fetch - processPackages [wwpdb.utils.session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.session-0.9.tar.gz tmp/wwpdb.utils.session-0.9.dev1.tar.gz --markdown 20240428/w/wwpdb.utils.session/0.9-0.9.dev1/README.md --exclude *.pyd
+[2024-04-28 18:39:06] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a8.tar.gz]
+[2024-04-28 18:39:06] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a9.tar.gz]
+[2024-04-28 18:39:06] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-04-28 18:39:06] INFO root fetch - processPackages [wwpdb.utils.session]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.session-0.9.tar.gz]
+[2024-04-28 18:39:06] INFO root fetch - processPackages [wwpdb.utils.session]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.session-0.9.dev1.tar.gz]
+[2024-04-28 18:39:06] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.session]: success
+[2024-04-28 18:39:06] INFO root fetch - main [MainThread]: Store serial: [22968139]
