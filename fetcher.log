@@ -16730,3 +16730,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:34:35] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
 [2024-04-28 21:34:35] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
 [2024-04-28 21:34:35] INFO root fetch - main [MainThread]: Store serial: [22969281]
+[2024-04-28 21:36:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969281]
+[2024-04-28 21:36:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: textalloc
+[2024-04-28 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helloworld20234
+[2024-04-28 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AmaProductReviews
+[2024-04-28 21:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-04-28 21:36:44] INFO root fetch - processPackages [AmaProductReviews]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 21:36:44] WARNING root fetch - processPackages [helloworld20234]: Skipping, unable to determine old version
+[2024-04-28 21:36:44] INFO root fetch - main [MainThread]: End processing [helloworld20234] error
+[2024-04-28 21:36:44] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-28 21:36:44] INFO root fetch - processPackages [textalloc]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 21:36:44] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-28 21:36:44] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/65/de/449fc99bb5f863afa31f16d4e8aacc805f99a3db06258ed4fe4665622ca2/amaproductreviews-0.0.2.tar.gz
+[2024-04-28 21:36:44] INFO root fetch - processPackages [textalloc]: Downloading https://files.pythonhosted.org/packages/c5/e1/ec2158121f430446ac8d49f20fda67004a54bccb57d1eb2eb885a9c5e5c0/textalloc-0.1.1.tar.gz
+[2024-04-28 21:36:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-28 21:36:45] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-28 21:36:45] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240428/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/f1/c0/3e6cefb91ddaba92ee3b15144005442a9a3391efb432a378e3db8041b08b/amaproductreviews-0.0.3.tar.gz
+[2024-04-28 21:36:45] INFO root fetch - processPackages [textalloc]: Downloading https://files.pythonhosted.org/packages/b1/87/a410b5896e408fa93f469fb12bb07a7542d94b7cd3e656b9543988e99c47/textalloc-0.1.2.tar.gz
+[2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: executing diffoscope
+[2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amaproductreviews-0.0.2.tar.gz tmp/amaproductreviews-0.0.3.tar.gz --markdown 20240428/A/AmaProductReviews/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 21:36:45] INFO root fetch - processPackages [textalloc]: executing diffoscope
+[2024-04-28 21:36:45] INFO root fetch - processPackages [textalloc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textalloc-0.1.1.tar.gz tmp/textalloc-0.1.2.tar.gz --markdown 20240428/t/textalloc/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 21:36:45] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-28 21:36:45] INFO root fetch - processPackages [textalloc]: Remove: archive file [/home/abi/fetcher/tmp/textalloc-0.1.1.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - processPackages [textalloc]: Remove: archive file [/home/abi/fetcher/tmp/textalloc-0.1.2.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - main [MainThread]: End processing [textalloc]: success
+[2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.2.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.3.tar.gz]
+[2024-04-28 21:36:45] INFO root fetch - main [MainThread]: End processing [AmaProductReviews]: success
+[2024-04-28 21:36:45] INFO root fetch - main [MainThread]: Store serial: [22969293]
