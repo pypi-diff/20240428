@@ -5382,3 +5382,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:02:10] INFO root fetch - processPackages [dqc-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/dqc_toolkit-0.1.0rc1.tar.gz]
 [2024-04-28 08:02:10] INFO root fetch - main [MainThread]: End processing [dqc-toolkit]: success
 [2024-04-28 08:02:10] INFO root fetch - main [MainThread]: Store serial: [22964431]
+[2024-04-28 08:04:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964431]
+[2024-04-28 08:04:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 08:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CVE-2021-42063
+[2024-04-28 08:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-okx-async-django
+[2024-04-28 08:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-contacts
+[2024-04-28 08:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BioSAK
+[2024-04-28 08:04:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rahulnikamb
+[2024-04-28 08:04:19] INFO root fetch - processPackages [abstract-contacts]: New version: [0.0.0.50] Old Version: [0.0.0.5]
+[2024-04-28 08:04:19] INFO root fetch - processPackages [python-okx-async-django]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-28 08:04:19] INFO root fetch - processPackages [python-okx-async-django]: Downloading https://files.pythonhosted.org/packages/50/25/36840306b721dde73ba98acd3e2e8cb8ecc9293ff29dd9b15d4fa1263b46/python-okx-async-django-0.2.8.tar.gz
+[2024-04-28 08:04:19] WARNING root fetch - processPackages [rahulnikamb]: Skipping, unable to determine old version
+[2024-04-28 08:04:19] INFO root fetch - main [MainThread]: End processing [rahulnikamb] error
+[2024-04-28 08:04:19] WARNING root fetch - processPackages [CVE-2021-42063]: Skipping, unable to determine old version
+[2024-04-28 08:04:19] INFO root fetch - main [MainThread]: End processing [CVE-2021-42063] error
+[2024-04-28 08:04:19] INFO root fetch - processPackages [BioSAK]: New version: [1.86.0] Old Version: [1.85.1]
+[2024-04-28 08:04:19] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/4f/42/fe12c1ba63708c15294bbbf90bd143e245dc1de1d3d8a2a8bae05419d4b4/abstract_contacts-0.0.0.5.tar.gz
+[2024-04-28 08:04:19] INFO root fetch - processPackages [python-okx-async-django]: Downloading https://files.pythonhosted.org/packages/9a/80/73e44e85c41f2eea755b81e425c1979a5e5e254488226bbb4f56ce034a6a/python-okx-async-django-0.2.9.tar.gz
+[2024-04-28 08:04:19] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/b6/e8/7b2e75592c3bd5e290bb8b3880184d78137bf45bdf431137477c6182789d/BioSAK-1.85.1.tar.gz
+[2024-04-28 08:04:19] INFO root fetch - processPackages [python-okx-async-django]: executing diffoscope
+[2024-04-28 08:04:19] INFO root fetch - processPackages [python-okx-async-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-okx-async-django-0.2.8.tar.gz tmp/python-okx-async-django-0.2.9.tar.gz --markdown 20240428/p/python-okx-async-django/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-28 08:04:19] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/43/c8/bcff4215a91e52172de72b956cc0ddeb298f933577543275bbc28b1fcc20/abstract_contacts-0.0.0.50.tar.gz
+[2024-04-28 08:04:19] INFO root fetch - processPackages [abstract-contacts]: executing diffoscope
+[2024-04-28 08:04:19] INFO root fetch - processPackages [abstract-contacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_contacts-0.0.0.5.tar.gz tmp/abstract_contacts-0.0.0.50.tar.gz --markdown 20240428/a/abstract-contacts/0.0.0.5-0.0.0.50/README.md --exclude *.pyd
+[2024-04-28 08:04:20] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/67/f6/5577518dc584b90c5b6b8835c2ef2fc3dd07eaf65042b44a6490452c549d/BioSAK-1.86.0.tar.gz
+[2024-04-28 08:04:20] INFO root fetch - processPackages [python-okx-async-django]: Remove: archive file [/home/abi/fetcher/tmp/python-okx-async-django-0.2.8.tar.gz]
+[2024-04-28 08:04:20] INFO root fetch - processPackages [python-okx-async-django]: Remove: archive file [/home/abi/fetcher/tmp/python-okx-async-django-0.2.9.tar.gz]
+[2024-04-28 08:04:20] INFO root fetch - main [MainThread]: End processing [python-okx-async-django]: success
+[2024-04-28 08:04:20] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.5.tar.gz]
+[2024-04-28 08:04:20] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.50.tar.gz]
+[2024-04-28 08:04:20] INFO root fetch - main [MainThread]: End processing [abstract-contacts]: success
+[2024-04-28 08:04:20] INFO root fetch - processPackages [BioSAK]: executing diffoscope
+[2024-04-28 08:04:20] INFO root fetch - processPackages [BioSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BioSAK-1.85.1.tar.gz tmp/BioSAK-1.86.0.tar.gz --markdown 20240428/B/BioSAK/1.85.1-1.86.0/README.md --exclude *.pyd
+[2024-04-28 08:04:21] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.85.1.tar.gz]
+[2024-04-28 08:04:21] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.86.0.tar.gz]
+[2024-04-28 08:04:21] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
+[2024-04-28 08:04:21] INFO root fetch - main [MainThread]: Store serial: [22964449]
