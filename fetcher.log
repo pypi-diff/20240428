@@ -6038,3 +6038,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:57:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.5.tar.gz]
 [2024-04-28 08:57:25] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
 [2024-04-28 08:57:25] INFO root fetch - main [MainThread]: Store serial: [22964728]
+[2024-04-28 08:59:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964728]
+[2024-04-28 08:59:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-common-tools
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numimage
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: expr-codegen
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NStudyPy
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ctrip-app-ui
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cfpack
+[2024-04-28 08:59:34] WARNING root fetch - processPackages [numimage]: Skipping, unable to determine old version
+[2024-04-28 08:59:34] INFO root fetch - main [MainThread]: End processing [numimage] error
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [database-common-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 08:59:34] INFO root fetch - processPackages [expr-codegen]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-28 08:59:34] INFO root fetch - processPackages [cfpack]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 08:59:34] INFO root fetch - processPackages [NStudyPy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 08:59:34] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/ca/3c/6b8cd59d336e1c605691395b32685c8a043c3effb94cb81dc1d7cec6a6d8/database-common-tools-1.1.8.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [NStudyPy]: Downloading https://files.pythonhosted.org/packages/fe/4b/6fc8183bc638736834b1df30ec592bfa60acc053b2f1d4cced9567963c64/nstudypy-0.0.5.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/43/57/b0433d48cf62111de636c9e349176a1f3cd488f478d6daa537643c7db114/expr_codegen-0.6.1.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [cfpack]: Downloading https://files.pythonhosted.org/packages/d6/88/1d0b12acf3a4573e979a38fe2b0bf455aafb71e07f24695ad168ff244cc4/cfpack-0.1.6.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-28 08:59:34] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240428/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 08:59:34] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/55/1d/f84bdab15e57cb34658d4f445048d8bfeaf6b8cd2d0da82250fefbaa75f0/database-common-tools-1.1.9.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [NStudyPy]: Downloading https://files.pythonhosted.org/packages/a2/7b/0ceb27911698cc2149c4d2f871a189b970ef54722a03e4ff2ddedf729708/nstudypy-0.0.6.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [cfpack]: Downloading https://files.pythonhosted.org/packages/ff/b4/76e44ffbc7045afc3b07dc72c78d3a734db7da87511ce4d629d1c33bb5a0/cfpack-0.1.7.tar.gz
+[2024-04-28 08:59:34] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/a7/9e/5aa33f70f76b4f082aab2bda140fc6b09620927beea8378470274b3a8d2d/expr_codegen-0.6.2.tar.gz
+[2024-04-28 08:59:35] INFO root fetch - processPackages [NStudyPy]: executing diffoscope
+[2024-04-28 08:59:35] INFO root fetch - processPackages [NStudyPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nstudypy-0.0.5.tar.gz tmp/nstudypy-0.0.6.tar.gz --markdown 20240428/N/NStudyPy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 08:59:35] INFO root fetch - processPackages [database-common-tools]: executing diffoscope
+[2024-04-28 08:59:35] INFO root fetch - processPackages [database-common-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-common-tools-1.1.8.tar.gz tmp/database-common-tools-1.1.9.tar.gz --markdown 20240428/d/database-common-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 08:59:35] INFO root fetch - processPackages [expr-codegen]: executing diffoscope
+[2024-04-28 08:59:35] INFO root fetch - processPackages [expr-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expr_codegen-0.6.1.tar.gz tmp/expr_codegen-0.6.2.tar.gz --markdown 20240428/e/expr-codegen/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-28 08:59:35] INFO root fetch - processPackages [cfpack]: executing diffoscope
+[2024-04-28 08:59:35] INFO root fetch - processPackages [cfpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfpack-0.1.6.tar.gz tmp/cfpack-0.1.7.tar.gz --markdown 20240428/c/cfpack/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 08:59:35] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-28 08:59:35] INFO root fetch - processPackages [NStudyPy]: Remove: archive file [/home/abi/fetcher/tmp/nstudypy-0.0.5.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - processPackages [NStudyPy]: Remove: archive file [/home/abi/fetcher/tmp/nstudypy-0.0.6.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [NStudyPy]: success
+[2024-04-28 08:59:35] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.8.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.9.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [database-common-tools]: success
+[2024-04-28 08:59:35] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.1.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.2.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [expr-codegen]: success
+[2024-04-28 08:59:35] INFO root fetch - processPackages [cfpack]: Remove: archive file [/home/abi/fetcher/tmp/cfpack-0.1.6.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - processPackages [cfpack]: Remove: archive file [/home/abi/fetcher/tmp/cfpack-0.1.7.tar.gz]
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [cfpack]: success
+[2024-04-28 08:59:35] INFO root fetch - main [MainThread]: Store serial: [22964744]
