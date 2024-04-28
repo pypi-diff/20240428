@@ -7449,3 +7449,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:42:35] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev48.tar.gz]
 [2024-04-28 10:42:35] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-04-28 10:42:35] INFO root fetch - main [MainThread]: Store serial: [22965371]
+[2024-04-28 10:44:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965371]
+[2024-04-28 10:44:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 10:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccdexplorer-fundamentals
+[2024-04-28 10:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vdaq-ana
+[2024-04-28 10:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DTIGE
+[2024-04-28 10:44:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stTransfer
+[2024-04-28 10:44:46] WARNING root fetch - processPackages [vdaq-ana]: Skipping, unable to determine old version
+[2024-04-28 10:44:46] INFO root fetch - main [MainThread]: End processing [vdaq-ana] error
+[2024-04-28 10:44:46] INFO root fetch - processPackages [ccdexplorer-fundamentals]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 10:44:46] INFO root fetch - processPackages [stTransfer]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 10:44:46] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Downloading https://files.pythonhosted.org/packages/25/0f/de9a78f5a6c59561021a06703183ce406f1c80f95a17bca80ae574872b5f/ccdexplorer_fundamentals-0.2.1.tar.gz
+[2024-04-28 10:44:46] INFO root fetch - processPackages [stTransfer]: Downloading https://files.pythonhosted.org/packages/e7/3d/6f32e797c5da76df593dd4645c178ceed0ef6593567c851a1c276320ca39/stTransfer-1.0.8.tar.gz
+[2024-04-28 10:44:46] WARNING root fetch - processPackages [DTIGE]: Skipping, unable to determine old version
+[2024-04-28 10:44:46] INFO root fetch - main [MainThread]: End processing [DTIGE] error
+[2024-04-28 10:44:46] INFO root fetch - processPackages [stTransfer]: Downloading https://files.pythonhosted.org/packages/a7/be/74161372cc083a46becbdc8ae9f3be2847446f6360d09831ac56762291c7/stTransfer-1.0.9.tar.gz
+[2024-04-28 10:44:46] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Downloading https://files.pythonhosted.org/packages/64/f2/a2bb06afc59525330239d725d42941e679bb9e0910999b90044102503f2d/ccdexplorer_fundamentals-0.2.2.tar.gz
+[2024-04-28 10:44:46] INFO root fetch - processPackages [stTransfer]: executing diffoscope
+[2024-04-28 10:44:46] INFO root fetch - processPackages [stTransfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stTransfer-1.0.8.tar.gz tmp/stTransfer-1.0.9.tar.gz --markdown 20240428/s/stTransfer/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 10:44:46] INFO root fetch - processPackages [ccdexplorer-fundamentals]: executing diffoscope
+[2024-04-28 10:44:46] INFO root fetch - processPackages [ccdexplorer-fundamentals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdexplorer_fundamentals-0.2.1.tar.gz tmp/ccdexplorer_fundamentals-0.2.2.tar.gz --markdown 20240428/c/ccdexplorer-fundamentals/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 10:44:47] INFO root fetch - processPackages [stTransfer]: Remove: archive file [/home/abi/fetcher/tmp/stTransfer-1.0.8.tar.gz]
+[2024-04-28 10:44:47] INFO root fetch - processPackages [stTransfer]: Remove: archive file [/home/abi/fetcher/tmp/stTransfer-1.0.9.tar.gz]
+[2024-04-28 10:44:47] INFO root fetch - main [MainThread]: End processing [stTransfer]: success
+[2024-04-28 10:44:47] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/ccdexplorer_fundamentals-0.2.1.tar.gz]
+[2024-04-28 10:44:47] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/ccdexplorer_fundamentals-0.2.2.tar.gz]
+[2024-04-28 10:44:47] INFO root fetch - main [MainThread]: End processing [ccdexplorer-fundamentals]: success
+[2024-04-28 10:44:47] INFO root fetch - main [MainThread]: Store serial: [22965385]
