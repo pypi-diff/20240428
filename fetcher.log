@@ -16691,3 +16691,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:30:16] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.2.tar.gz]
 [2024-04-28 21:30:16] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-04-28 21:30:16] INFO root fetch - main [MainThread]: Store serial: [22969186]
+[2024-04-28 21:32:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969186]
+[2024-04-28 21:32:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 21:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remindmail
+[2024-04-28 21:32:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-dans-api-toolkit
+[2024-04-28 21:32:25] INFO root fetch - processPackages [django-dans-api-toolkit]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 21:32:25] INFO root fetch - processPackages [remindmail]: New version: [2024.4.28.1] Old Version: [2024.4.21.1]
+[2024-04-28 21:32:25] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/ca/a4/1a647027bc2650ab702378360ed61ebb809fd366d829b97891bfdb489b8e/django-dans-api-toolkit-0.1.1.tar.gz
+[2024-04-28 21:32:25] INFO root fetch - processPackages [remindmail]: Downloading https://files.pythonhosted.org/packages/d4/5f/d07f396f315447e995f26fffea87bbd934c08643a3a0b4c7712e5a633bd9/remindmail-2024.4.21.1.tar.gz
+[2024-04-28 21:32:25] INFO root fetch - processPackages [remindmail]: Downloading https://files.pythonhosted.org/packages/d2/00/eabb8570666db3b19968e9add366b42b0c36dbfc67428ddbcfe095d5932a/remindmail-2024.4.28.1.tar.gz
+[2024-04-28 21:32:25] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/e9/3e/db38e82506d469f29104e42e70181d27e2556d6825237aa8ad798eeed40c/django-dans-api-toolkit-0.1.2.tar.gz
+[2024-04-28 21:32:25] INFO root fetch - processPackages [remindmail]: executing diffoscope
+[2024-04-28 21:32:25] INFO root fetch - processPackages [remindmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remindmail-2024.4.21.1.tar.gz tmp/remindmail-2024.4.28.1.tar.gz --markdown 20240428/r/remindmail/2024.4.21.1-2024.4.28.1/README.md --exclude *.pyd
+[2024-04-28 21:32:25] INFO root fetch - processPackages [django-dans-api-toolkit]: executing diffoscope
+[2024-04-28 21:32:25] INFO root fetch - processPackages [django-dans-api-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dans-api-toolkit-0.1.1.tar.gz tmp/django-dans-api-toolkit-0.1.2.tar.gz --markdown 20240428/d/django-dans-api-toolkit/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 21:32:26] INFO root fetch - processPackages [remindmail]: Remove: archive file [/home/abi/fetcher/tmp/remindmail-2024.4.21.1.tar.gz]
+[2024-04-28 21:32:26] INFO root fetch - processPackages [remindmail]: Remove: archive file [/home/abi/fetcher/tmp/remindmail-2024.4.28.1.tar.gz]
+[2024-04-28 21:32:26] INFO root fetch - main [MainThread]: End processing [remindmail]: success
+[2024-04-28 21:32:26] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.1.tar.gz]
+[2024-04-28 21:32:26] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.2.tar.gz]
+[2024-04-28 21:32:26] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
+[2024-04-28 21:32:26] INFO root fetch - main [MainThread]: Store serial: [22969237]
