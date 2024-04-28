@@ -2780,3 +2780,15 @@
 [2024-04-28 04:03:10] INFO root fetch - processPackages [moltx]: Remove: archive file [/home/abi/fetcher/tmp/moltx-0.9.8.tar.gz]
 [2024-04-28 04:03:10] INFO root fetch - main [MainThread]: End processing [moltx]: success
 [2024-04-28 04:03:10] INFO root fetch - main [MainThread]: Store serial: [22963375]
+[2024-04-28 04:05:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963375]
+[2024-04-28 04:05:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 04:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: querent
+[2024-04-28 04:05:20] INFO root fetch - processPackages [querent]: New version: [3.0.8] Old Version: [3.0.7]
+[2024-04-28 04:05:20] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/b1/81/0f7c1baa1d1883da3a40e0b53e625e181cc15801b11cc1cd5125b69fc5ca/querent-3.0.7.tar.gz
+[2024-04-28 04:05:20] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/6d/93/f856b1ab66ad8372724c798f645d28224be50aa8459e27d40f106827c021/querent-3.0.8.tar.gz
+[2024-04-28 04:05:20] INFO root fetch - processPackages [querent]: executing diffoscope
+[2024-04-28 04:05:20] INFO root fetch - processPackages [querent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querent-3.0.7.tar.gz tmp/querent-3.0.8.tar.gz --markdown 20240428/q/querent/3.0.7-3.0.8/README.md --exclude *.pyd
+[2024-04-28 04:05:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.7.tar.gz]
+[2024-04-28 04:05:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.8.tar.gz]
+[2024-04-28 04:05:21] INFO root fetch - main [MainThread]: End processing [querent]: success
+[2024-04-28 04:05:21] INFO root fetch - main [MainThread]: Store serial: [22963378]
