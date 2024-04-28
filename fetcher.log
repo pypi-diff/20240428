@@ -5232,3 +5232,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:51:13] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.3.tar.gz]
 [2024-04-28 07:51:13] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
 [2024-04-28 07:51:13] INFO root fetch - main [MainThread]: Store serial: [22964351]
+[2024-04-28 07:53:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964351]
+[2024-04-28 07:53:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bhbotlist
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-clients
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rhinoMorph
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: messages-local
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SplitFDM
+[2024-04-28 07:53:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Flare-Helper
+[2024-04-28 07:53:21] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2024-04-28 07:53:21] INFO root fetch - processPackages [SplitFDM]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 07:53:21] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/ac/53/beaa6409311284c5ebb82eb61e058603be9930743b96afec5a4c1ff5b706/abstract_clients-0.0.0.3.tar.gz
+[2024-04-28 07:53:21] INFO root fetch - processPackages [rhinoMorph]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-28 07:53:21] INFO root fetch - processPackages [bhbotlist]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-28 07:53:21] INFO root fetch - processPackages [messages-local]: New version: [0.0.49] Old Version: [0.0.48]
+[2024-04-28 07:53:21] INFO root fetch - processPackages [SplitFDM]: Downloading https://files.pythonhosted.org/packages/1a/f4/9e9978e2c78f0ec66d2a499f55c7ea03f01ba4aa20b1e0147b2452917075/SplitFDM-0.1.1.tar.gz
+[2024-04-28 07:53:21] INFO root fetch - processPackages [bhbotlist]: Downloading https://files.pythonhosted.org/packages/43/12/0bd1dea79434144709e832264fd056d710bb70bde69ba360fa268b98baaf/bhbotlist-3.0.5.tar.gz
+[2024-04-28 07:53:21] WARNING root fetch - processPackages [Flare-Helper]: Skipping, unable to determine old version
+[2024-04-28 07:53:21] INFO root fetch - main [MainThread]: End processing [Flare-Helper] error
+[2024-04-28 07:53:21] INFO root fetch - processPackages [rhinoMorph]: Downloading https://files.pythonhosted.org/packages/a8/8f/1159b5bdeb8f335af1273199facced66975683482b25cd88c30bc90e81af/rhinoMorph-4.0.3-py3-none-any.whl
+[2024-04-28 07:53:21] INFO root fetch - processPackages [messages-local]: Downloading https://files.pythonhosted.org/packages/53/e3/f5fbe3e61117403e42a5c04d25c1371da73f9cae8498df5031501e7b3b03/messages-local-0.0.48.tar.gz
+[2024-04-28 07:53:22] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/03/b3/03b803399fb68cbc25e937bd172fc8fe6342b93a81ec076e82b3199740cd/abstract_clients-0.0.0.4.tar.gz
+[2024-04-28 07:53:22] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 07:53:22] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.3.tar.gz tmp/abstract_clients-0.0.0.4.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.3-0.0.0.4/README.md --exclude *.pyd
+[2024-04-28 07:53:22] INFO root fetch - processPackages [bhbotlist]: Downloading https://files.pythonhosted.org/packages/e3/66/5b00a033d68406407b818d6397ab5e602c49e5b665e3fc7019c51ae3c0bb/bhbotlist-3.0.6.tar.gz
+[2024-04-28 07:53:22] INFO root fetch - processPackages [SplitFDM]: Downloading https://files.pythonhosted.org/packages/43/d8/b696f4c5ca557f55266963f3b110c63d81b937a038a3e8b97010ae359d9a/SplitFDM-0.1.2.tar.gz
+[2024-04-28 07:53:22] INFO root fetch - processPackages [messages-local]: Downloading https://files.pythonhosted.org/packages/cf/68/8d9d1ca741ed09b513e5c0839a7b170575eb3435e4b5a4daf568e7f7214f/messages_local-0.0.49.tar.gz
+[2024-04-28 07:53:22] INFO root fetch - processPackages [SplitFDM]: executing diffoscope
+[2024-04-28 07:53:22] INFO root fetch - processPackages [SplitFDM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SplitFDM-0.1.1.tar.gz tmp/SplitFDM-0.1.2.tar.gz --markdown 20240428/S/SplitFDM/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 07:53:22] INFO root fetch - processPackages [bhbotlist]: executing diffoscope
+[2024-04-28 07:53:22] INFO root fetch - processPackages [bhbotlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhbotlist-3.0.5.tar.gz tmp/bhbotlist-3.0.6.tar.gz --markdown 20240428/b/bhbotlist/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-04-28 07:53:22] INFO root fetch - processPackages [messages-local]: executing diffoscope
+[2024-04-28 07:53:22] INFO root fetch - processPackages [messages-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/messages-local-0.0.48.tar.gz tmp/messages_local-0.0.49.tar.gz --markdown 20240428/m/messages-local/0.0.48-0.0.49/README.md --exclude *.pyd
+[2024-04-28 07:53:22] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.3.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.4.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 07:53:22] INFO root fetch - processPackages [bhbotlist]: Remove: archive file [/home/abi/fetcher/tmp/bhbotlist-3.0.5.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - processPackages [bhbotlist]: Remove: archive file [/home/abi/fetcher/tmp/bhbotlist-3.0.6.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - main [MainThread]: End processing [bhbotlist]: success
+[2024-04-28 07:53:22] INFO root fetch - processPackages [SplitFDM]: Remove: archive file [/home/abi/fetcher/tmp/SplitFDM-0.1.1.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - processPackages [SplitFDM]: Remove: archive file [/home/abi/fetcher/tmp/SplitFDM-0.1.2.tar.gz]
+[2024-04-28 07:53:22] INFO root fetch - main [MainThread]: End processing [SplitFDM]: success
+[2024-04-28 07:53:23] INFO root fetch - processPackages [messages-local]: Remove: archive file [/home/abi/fetcher/tmp/messages-local-0.0.48.tar.gz]
+[2024-04-28 07:53:23] INFO root fetch - processPackages [messages-local]: Remove: archive file [/home/abi/fetcher/tmp/messages_local-0.0.49.tar.gz]
+[2024-04-28 07:53:23] INFO root fetch - main [MainThread]: End processing [messages-local]: success
+[2024-04-28 07:53:23] INFO root fetch - processPackages [rhinoMorph]: Downloading https://files.pythonhosted.org/packages/49/da/f957debb2eb8862c8606b1f889b40da230e8bd18a4788634d8ed8864bb2a/rhinoMorph-4.0.4-py3-none-any.whl
+[2024-04-28 07:53:23] INFO root fetch - processPackages [rhinoMorph]: executing diffoscope
+[2024-04-28 07:53:23] INFO root fetch - processPackages [rhinoMorph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhinoMorph-4.0.3-py3-none-any.whl.zip tmp/rhinoMorph-4.0.4-py3-none-any.whl.zip --markdown 20240428/r/rhinoMorph/4.0.3-4.0.4/README.md --exclude *.pyd
+[2024-04-28 07:53:32] INFO root fetch - processPackages [rhinoMorph]: Remove: archive file [/home/abi/fetcher/tmp/rhinoMorph-4.0.3-py3-none-any.whl.zip]
+[2024-04-28 07:53:32] INFO root fetch - processPackages [rhinoMorph]: Remove: archive file [/home/abi/fetcher/tmp/rhinoMorph-4.0.4-py3-none-any.whl.zip]
+[2024-04-28 07:53:32] INFO root fetch - main [MainThread]: End processing [rhinoMorph]: success
+[2024-04-28 07:53:32] INFO root fetch - main [MainThread]: Store serial: [22964369]
