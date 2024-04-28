@@ -12177,3 +12177,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:14:51] INFO root fetch - processPackages [matflow-new]: Remove: archive file [/home/abi/fetcher/tmp/matflow_new-0.3.0a99.tar.gz]
 [2024-04-28 16:14:51] INFO root fetch - main [MainThread]: End processing [matflow-new]: success
 [2024-04-28 16:14:51] INFO root fetch - main [MainThread]: Store serial: [22967310]
+[2024-04-28 16:17:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967310]
+[2024-04-28 16:17:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 16:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yandex-chain
+[2024-04-28 16:17:11] INFO root fetch - processPackages [yandex-chain]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 16:17:11] INFO root fetch - processPackages [yandex-chain]: Downloading https://files.pythonhosted.org/packages/86/fe/1c7f20a3da550b5fd3aa893f9a415f1ebf5b3daa41627d26a9e7af01d618/yandex-chain-0.0.6.tar.gz
+[2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: Downloading https://files.pythonhosted.org/packages/76/68/007863ea55c4ae67a9af3f8f015ee7792aae569332e63ec512dfd6874702/yandex-chain-0.0.7.tar.gz
+[2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: executing diffoscope
+[2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yandex-chain-0.0.6.tar.gz tmp/yandex-chain-0.0.7.tar.gz --markdown 20240428/y/yandex-chain/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: Remove: archive file [/home/abi/fetcher/tmp/yandex-chain-0.0.6.tar.gz]
+[2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: Remove: archive file [/home/abi/fetcher/tmp/yandex-chain-0.0.7.tar.gz]
+[2024-04-28 16:17:12] INFO root fetch - main [MainThread]: End processing [yandex-chain]: success
+[2024-04-28 16:17:12] INFO root fetch - main [MainThread]: Store serial: [22967313]
