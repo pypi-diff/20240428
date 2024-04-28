@@ -10053,3 +10053,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:35:24] INFO root fetch - processPackages [duty]: Remove: archive file [/home/abi/fetcher/tmp/duty-1.3.0.tar.gz]
 [2024-04-28 13:35:24] INFO root fetch - main [MainThread]: End processing [duty]: success
 [2024-04-28 13:35:24] INFO root fetch - main [MainThread]: Store serial: [22966436]
+[2024-04-28 13:37:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966436]
+[2024-04-28 13:37:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 13:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coll-filter
+[2024-04-28 13:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crawlee
+[2024-04-28 13:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gramps-webapi
+[2024-04-28 13:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tailucas-pylib
+[2024-04-28 13:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CNRL-CoNeX
+[2024-04-28 13:37:39] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-28 13:37:40] INFO root fetch - processPackages [crawlee]: New version: [0.0.3b3] Old Version: [0.0.3b2]
+[2024-04-28 13:37:40] INFO root fetch - processPackages [CNRL-CoNeX]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 13:37:40] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/88/2c/edd1fc5793afa90890c353ab2042848ff260c1e8ae0e11b2ceaa99bd11aa/tailucas_pylib-0.2.9.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [coll-filter]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-28 13:37:40] INFO root fetch - processPackages [gramps-webapi]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-04-28 13:37:40] INFO root fetch - processPackages [crawlee]: Downloading https://files.pythonhosted.org/packages/70/3e/68e853006846345881fe2ea1de45d9eafc872a5135dc6003fe2839e715e4/crawlee-0.0.3b2.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [gramps-webapi]: Downloading https://files.pythonhosted.org/packages/ee/fb/2109cffb4917063a8f25403319d8ff99d54bdcdc18709a312c9bab94d039/gramps_webapi-2.2.1.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [CNRL-CoNeX]: Downloading https://files.pythonhosted.org/packages/be/e2/40db81e77903dd40e733a7f4538f3f651553216d7ca4a9762558a33ebd09/cnrl_conex-0.1.3.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [coll-filter]: Downloading https://files.pythonhosted.org/packages/8a/cc/9db2bad8e40908113fdfd4f8cddbe7b545c86926be46b326c31d5a7a1974/coll-filter-1.2.0.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/a5/64/edc03e8606efffa73289a948453d51f05778628e012397b6af19c993cf2b/tailucas_pylib-0.3.0.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-28 13:37:40] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.9.tar.gz tmp/tailucas_pylib-0.3.0.tar.gz --markdown 20240428/t/tailucas-pylib/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-04-28 13:37:40] INFO root fetch - processPackages [crawlee]: Downloading https://files.pythonhosted.org/packages/9d/76/c82c87029f5a9a9b62fcf6baa01d1924939f245a373ad9eeb9c7785fe80e/crawlee-0.0.3b3.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [CNRL-CoNeX]: Downloading https://files.pythonhosted.org/packages/74/1d/5d03f8ff32b83e88edbf86be76392c408fedbc76e55e7565050f8bcd61de/cnrl_conex-0.1.4.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [coll-filter]: Downloading https://files.pythonhosted.org/packages/97/99/3c64310eb530174caddbe6dacc85406f0205bd72714df14d77ba9b349c9e/coll-filter-1.2.1.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [gramps-webapi]: Downloading https://files.pythonhosted.org/packages/8e/9c/4632882ea07088b7bd5ec1d70f981ab9f6d0c533bc7ecf46234d1e2d72a5/gramps_webapi-2.3.0.tar.gz
+[2024-04-28 13:37:40] INFO root fetch - processPackages [coll-filter]: executing diffoscope
+[2024-04-28 13:37:40] INFO root fetch - processPackages [coll-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coll-filter-1.2.0.tar.gz tmp/coll-filter-1.2.1.tar.gz --markdown 20240428/c/coll-filter/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-28 13:37:40] INFO root fetch - processPackages [crawlee]: executing diffoscope
+[2024-04-28 13:37:40] INFO root fetch - processPackages [crawlee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawlee-0.0.3b2.tar.gz tmp/crawlee-0.0.3b3.tar.gz --markdown 20240428/c/crawlee/0.0.3b2-0.0.3b3/README.md --exclude *.pyd
+[2024-04-28 13:37:40] INFO root fetch - processPackages [CNRL-CoNeX]: executing diffoscope
+[2024-04-28 13:37:40] INFO root fetch - processPackages [CNRL-CoNeX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnrl_conex-0.1.3.tar.gz tmp/cnrl_conex-0.1.4.tar.gz --markdown 20240428/C/CNRL-CoNeX/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 13:37:40] INFO root fetch - processPackages [gramps-webapi]: executing diffoscope
+[2024-04-28 13:37:40] INFO root fetch - processPackages [gramps-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gramps_webapi-2.2.1.tar.gz tmp/gramps_webapi-2.3.0.tar.gz --markdown 20240428/g/gramps-webapi/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-04-28 13:37:41] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.9.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.3.0.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-28 13:37:41] INFO root fetch - processPackages [coll-filter]: Remove: archive file [/home/abi/fetcher/tmp/coll-filter-1.2.0.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - processPackages [coll-filter]: Remove: archive file [/home/abi/fetcher/tmp/coll-filter-1.2.1.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - main [MainThread]: End processing [coll-filter]: success
+[2024-04-28 13:37:41] INFO root fetch - processPackages [crawlee]: Remove: archive file [/home/abi/fetcher/tmp/crawlee-0.0.3b2.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - processPackages [crawlee]: Remove: archive file [/home/abi/fetcher/tmp/crawlee-0.0.3b3.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - main [MainThread]: End processing [crawlee]: success
+[2024-04-28 13:37:41] INFO root fetch - processPackages [CNRL-CoNeX]: Remove: archive file [/home/abi/fetcher/tmp/cnrl_conex-0.1.3.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - processPackages [CNRL-CoNeX]: Remove: archive file [/home/abi/fetcher/tmp/cnrl_conex-0.1.4.tar.gz]
+[2024-04-28 13:37:41] INFO root fetch - main [MainThread]: End processing [CNRL-CoNeX]: success
+[2024-04-28 13:37:42] INFO root fetch - processPackages [gramps-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gramps_webapi-2.2.1.tar.gz]
+[2024-04-28 13:37:42] INFO root fetch - processPackages [gramps-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gramps_webapi-2.3.0.tar.gz]
+[2024-04-28 13:37:42] INFO root fetch - main [MainThread]: End processing [gramps-webapi]: success
+[2024-04-28 13:37:42] INFO root fetch - main [MainThread]: Store serial: [22966449]
