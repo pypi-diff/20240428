@@ -5675,3 +5675,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:24:31] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.53.tar.gz]
 [2024-04-28 08:24:31] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-04-28 08:24:31] INFO root fetch - main [MainThread]: Store serial: [22964540]
+[2024-04-28 08:26:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964540]
+[2024-04-28 08:26:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 08:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bttc
+[2024-04-28 08:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilifan
+[2024-04-28 08:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: npc_sessions
+[2024-04-28 08:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oscb
+[2024-04-28 08:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: charles-sdk
+[2024-04-28 08:26:40] WARNING root fetch - processPackages [charles-sdk]: Skipping, unable to determine old version
+[2024-04-28 08:26:40] INFO root fetch - main [MainThread]: End processing [charles-sdk] error
+[2024-04-28 08:26:40] INFO root fetch - processPackages [oscb]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 08:26:40] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/d9/01/d22e7403a7c42a6ab074b9ee1c6b3106fc7586dbca44ef8859ba6ffb792c/oscb-1.0.8.tar.gz
+[2024-04-28 08:26:40] INFO root fetch - processPackages [bttc]: New version: [0.0.76] Old Version: [0.0.75]
+[2024-04-28 08:26:40] INFO root fetch - processPackages [nonebot-plugin-bilifan]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-28 08:26:40] INFO root fetch - processPackages [npc_sessions]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 08:26:40] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/11/56/b6b4d941ced9e2ef5f79edf325963dead339f29d9cd2151ae7c764e52fbd/bttc-0.0.75.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Downloading https://files.pythonhosted.org/packages/91/22/159c1bfc7118bc5ab82037cf8b617c9e62d302a6a067f5e0dcdf76526cf5/nonebot_plugin_bilifan-0.3.2.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [npc_sessions]: Downloading https://files.pythonhosted.org/packages/b8/93/bc9b7a7dd0ef6f49e1a89dbd69042819d6a945d3ccc9906feb172a29ba15/npc_sessions-0.0.98.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/a5/0b/c50004c5e280dd77e67e9afa15d3211bd933c627b8af09481e6607932c77/oscb-1.0.9.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 08:26:41] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.8.tar.gz tmp/oscb-1.0.9.tar.gz --markdown 20240428/o/oscb/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 08:26:41] INFO root fetch - processPackages [bttc]: Downloading https://files.pythonhosted.org/packages/c6/25/51781960caa635d05cef34c984b3655481ca3f23b6c048cfb9b7a674d61c/bttc-0.0.76.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Downloading https://files.pythonhosted.org/packages/24/d6/e4f9206e8138245983a5931e446e9cb9993b692752369be91f235a4a6a92/nonebot_plugin_bilifan-0.3.3.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [npc_sessions]: Downloading https://files.pythonhosted.org/packages/1b/65/bf57b9c6ee648973d846c99ebd5e2954d44af7aee6a3272e3710494205b1/npc_sessions-0.0.99.tar.gz
+[2024-04-28 08:26:41] INFO root fetch - processPackages [bttc]: executing diffoscope
+[2024-04-28 08:26:41] INFO root fetch - processPackages [bttc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bttc-0.0.75.tar.gz tmp/bttc-0.0.76.tar.gz --markdown 20240428/b/bttc/0.0.75-0.0.76/README.md --exclude *.pyd
+[2024-04-28 08:26:41] INFO root fetch - processPackages [nonebot-plugin-bilifan]: executing diffoscope
+[2024-04-28 08:26:41] INFO root fetch - processPackages [nonebot-plugin-bilifan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilifan-0.3.2.tar.gz tmp/nonebot_plugin_bilifan-0.3.3.tar.gz --markdown 20240428/n/nonebot-plugin-bilifan/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-28 08:26:41] INFO root fetch - processPackages [npc_sessions]: executing diffoscope
+[2024-04-28 08:26:41] INFO root fetch - processPackages [npc_sessions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc_sessions-0.0.98.tar.gz tmp/npc_sessions-0.0.99.tar.gz --markdown 20240428/n/npc_sessions/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 08:26:41] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.8.tar.gz]
+[2024-04-28 08:26:41] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.9.tar.gz]
+[2024-04-28 08:26:41] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 08:26:42] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilifan-0.3.2.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - processPackages [nonebot-plugin-bilifan]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilifan-0.3.3.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilifan]: success
+[2024-04-28 08:26:42] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.75.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - processPackages [bttc]: Remove: archive file [/home/abi/fetcher/tmp/bttc-0.0.76.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - main [MainThread]: End processing [bttc]: success
+[2024-04-28 08:26:42] INFO root fetch - processPackages [npc_sessions]: Remove: archive file [/home/abi/fetcher/tmp/npc_sessions-0.0.98.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - processPackages [npc_sessions]: Remove: archive file [/home/abi/fetcher/tmp/npc_sessions-0.0.99.tar.gz]
+[2024-04-28 08:26:42] INFO root fetch - main [MainThread]: End processing [npc_sessions]: success
+[2024-04-28 08:26:42] INFO root fetch - main [MainThread]: Store serial: [22964554]
