@@ -4520,3 +4520,27 @@
 [2024-04-28 06:48:25] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.0.tar.gz]
 [2024-04-28 06:48:25] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
 [2024-04-28 06:48:25] INFO root fetch - main [MainThread]: Store serial: [22964068]
+[2024-04-28 06:50:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964068]
+[2024-04-28 06:50:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 06:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-contacts
+[2024-04-28 06:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CachedFileDic
+[2024-04-28 06:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-common
+[2024-04-28 06:50:34] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.6.1] Old Version: [1.0.7.6.0]
+[2024-04-28 06:50:34] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/d0/e1/50dfa083c218f6fefb9b9490c86daf9b7ce668f020d42c05e980e046e781/mns_common-1.0.7.6.0.tar.gz
+[2024-04-28 06:50:34] WARNING root fetch - processPackages [abstract-contacts]: Skipping, unable to determine old version
+[2024-04-28 06:50:34] INFO root fetch - main [MainThread]: End processing [abstract-contacts] error
+[2024-04-28 06:50:34] INFO root fetch - processPackages [CachedFileDic]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-28 06:50:34] INFO root fetch - processPackages [CachedFileDic]: Downloading https://files.pythonhosted.org/packages/11/bc/18da4f341a06ac6e59335b3c2313cfd2a5b169446ce0be3a850378ac3c7d/CachedFileDic-0.2.3.tar.gz
+[2024-04-28 06:50:34] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/16/92/8d6e1b1e11f496504ffe3efd134cfb2b1e1e9178d6cba1902d7058c409c5/mns_common-1.0.7.6.1.tar.gz
+[2024-04-28 06:50:34] INFO root fetch - processPackages [CachedFileDic]: Downloading https://files.pythonhosted.org/packages/9f/82/3a1e1bc002b6fa4efa00142e021fb4ebcbead2761fe5c49df3edaa312567/CachedFileDic-0.2.4.tar.gz
+[2024-04-28 06:50:34] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-28 06:50:34] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.6.0.tar.gz tmp/mns_common-1.0.7.6.1.tar.gz --markdown 20240428/m/mns-common/1.0.7.6.0-1.0.7.6.1/README.md --exclude *.pyd
+[2024-04-28 06:50:34] INFO root fetch - processPackages [CachedFileDic]: executing diffoscope
+[2024-04-28 06:50:34] INFO root fetch - processPackages [CachedFileDic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CachedFileDic-0.2.3.tar.gz tmp/CachedFileDic-0.2.4.tar.gz --markdown 20240428/C/CachedFileDic/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-28 06:50:35] INFO root fetch - processPackages [CachedFileDic]: Remove: archive file [/home/abi/fetcher/tmp/CachedFileDic-0.2.3.tar.gz]
+[2024-04-28 06:50:35] INFO root fetch - processPackages [CachedFileDic]: Remove: archive file [/home/abi/fetcher/tmp/CachedFileDic-0.2.4.tar.gz]
+[2024-04-28 06:50:35] INFO root fetch - main [MainThread]: End processing [CachedFileDic]: success
+[2024-04-28 06:50:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.0.tar.gz]
+[2024-04-28 06:50:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.1.tar.gz]
+[2024-04-28 06:50:35] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-28 06:50:35] INFO root fetch - main [MainThread]: Store serial: [22964079]
