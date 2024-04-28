@@ -17129,3 +17129,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:56:31] INFO root fetch - processPackages [came-domotic-unofficial]: Remove: archive file [/home/abi/fetcher/tmp/came_domotic_unofficial-1.0.0rc7.tar.gz]
 [2024-04-28 21:56:31] INFO root fetch - main [MainThread]: End processing [came-domotic-unofficial]: success
 [2024-04-28 21:56:31] INFO root fetch - main [MainThread]: Store serial: [22969420]
+[2024-04-28 21:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969420]
+[2024-04-28 21:58:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langevals-huggingface
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langevals-langevals
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langevals-lingua
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modelpark
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langevals-openai
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langevals-ragas
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langevals
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: celerity
+[2024-04-28 21:58:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyunited
+[2024-04-28 21:58:40] WARNING root fetch - processPackages [pyunited]: Skipping, unable to determine old version
+[2024-04-28 21:58:40] INFO root fetch - main [MainThread]: End processing [pyunited] error
+[2024-04-28 21:58:40] INFO root fetch - processPackages [modelpark]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-openai]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-langevals]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-huggingface]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-ragas]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/b6/a4/dbc13b8f9283f13489c2d4e425652be3d014af331207592d573af70685ec/modelpark-0.1.3.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [celerity]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-lingua]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-openai]: Downloading https://files.pythonhosted.org/packages/aa/dc/48129bd2965ca008740f07c6bd879114583a4e19f12cd7bc785e22c1ede4/langevals_openai-0.1.1.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals]: Downloading https://files.pythonhosted.org/packages/86/1e/5e04c953c2f5f461127780e814a428c46c0574762df724a143f56911e0f7/langevals-0.1.2.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-langevals]: Downloading https://files.pythonhosted.org/packages/34/5a/57c94d01f55225e67d6e26423b896bc6a2af7b75c2bf0b1ba096bcd3bffc/langevals_langevals-0.1.0.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-huggingface]: Downloading https://files.pythonhosted.org/packages/c4/65/5e6026473258289a1b84bddc0a7c2ae3c061d3d53401fc8771857d0f34f1/langevals_huggingface-0.1.0.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-lingua]: Downloading https://files.pythonhosted.org/packages/74/30/a1c29ee9899cb413c908d5d68af8845340be76bd1a42e9785d8aef4240b5/langevals_lingua-0.1.0.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [celerity]: Downloading https://files.pythonhosted.org/packages/bc/d0/567812a4276766b1958ed37ccdc9a7f21962f796dd8e5226c179f66e1817/celerity-0.8.0.tar.gz
+[2024-04-28 21:58:40] INFO root fetch - processPackages [langevals-ragas]: Downloading https://files.pythonhosted.org/packages/75/48/b32a6969418953327ba80136de4129e24326c4f3ddbb561b179e13d037ea/langevals_ragas-0.1.1.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/47/d2/d4c0818da86eb20e145578c2bb9d59dfd4bf97d3203bb1fe04d75d986427/modelpark-0.1.4.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-openai]: Downloading https://files.pythonhosted.org/packages/f9/87/f21424b4ea6e5408f696b1b77ce54b6679de536f8474e7ec7b82a73f20d5/langevals_openai-0.1.2.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [modelpark]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [modelpark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelpark-0.1.3.tar.gz tmp/modelpark-0.1.4.tar.gz --markdown 20240428/m/modelpark/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals]: Downloading https://files.pythonhosted.org/packages/2d/0e/49c8304b144cf96c0faf910f53d9fbbea298b3f3a3479dc0b6d76fc005be/langevals-0.1.3.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-langevals]: Downloading https://files.pythonhosted.org/packages/d0/74/0fcde36a19018c31062f048d8beb1b0ed10610945be2ee620b83e92857f2/langevals_langevals-0.1.1.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [celerity]: Downloading https://files.pythonhosted.org/packages/40/d7/b7acd9f73c96b6b740a41e46ef33475014a595696f5b227fe9fa8eae1632/celerity-0.9.0.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-lingua]: Downloading https://files.pythonhosted.org/packages/2a/c7/6f8a97bfd16c9e4522da64f6c4f56b727900d78bed1b6f771faeeb06bd1a/langevals_lingua-0.1.1.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-openai]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_openai-0.1.1.tar.gz tmp/langevals_openai-0.1.2.tar.gz --markdown 20240428/l/langevals-openai/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals-0.1.2.tar.gz tmp/langevals-0.1.3.tar.gz --markdown 20240428/l/langevals/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-huggingface]: Downloading https://files.pythonhosted.org/packages/b4/31/849269cc9210c0ae17d72cf6e1e3eaa9c7db06dc2346b97fb1c2f6d9f7f7/langevals_huggingface-0.1.1.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-langevals]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-langevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_langevals-0.1.0.tar.gz tmp/langevals_langevals-0.1.1.tar.gz --markdown 20240428/l/langevals-langevals/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-ragas]: Downloading https://files.pythonhosted.org/packages/5a/05/8a342f8c6e9a4e1a4268cb071b9930dbd29f0c3e3e93a6aedc69f9de5e22/langevals_ragas-0.1.2.tar.gz
+[2024-04-28 21:58:41] INFO root fetch - processPackages [celerity]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [celerity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celerity-0.8.0.tar.gz tmp/celerity-0.9.0.tar.gz --markdown 20240428/c/celerity/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-lingua]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-lingua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_lingua-0.1.0.tar.gz tmp/langevals_lingua-0.1.1.tar.gz --markdown 20240428/l/langevals-lingua/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-huggingface]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_huggingface-0.1.0.tar.gz tmp/langevals_huggingface-0.1.1.tar.gz --markdown 20240428/l/langevals-huggingface/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-ragas]: executing diffoscope
+[2024-04-28 21:58:41] INFO root fetch - processPackages [langevals-ragas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_ragas-0.1.1.tar.gz tmp/langevals_ragas-0.1.2.tar.gz --markdown 20240428/l/langevals-ragas/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 21:58:42] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.3.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.4.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [modelpark]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-openai]: Remove: archive file [/home/abi/fetcher/tmp/langevals_openai-0.1.1.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-openai]: Remove: archive file [/home/abi/fetcher/tmp/langevals_openai-0.1.2.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals-openai]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-langevals]: Remove: archive file [/home/abi/fetcher/tmp/langevals_langevals-0.1.0.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-langevals]: Remove: archive file [/home/abi/fetcher/tmp/langevals_langevals-0.1.1.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals-langevals]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-lingua]: Remove: archive file [/home/abi/fetcher/tmp/langevals_lingua-0.1.0.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-lingua]: Remove: archive file [/home/abi/fetcher/tmp/langevals_lingua-0.1.1.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals-lingua]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-ragas]: Remove: archive file [/home/abi/fetcher/tmp/langevals_ragas-0.1.1.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-ragas]: Remove: archive file [/home/abi/fetcher/tmp/langevals_ragas-0.1.2.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals-ragas]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/langevals_huggingface-0.1.0.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals]: Remove: archive file [/home/abi/fetcher/tmp/langevals-0.1.2.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals-huggingface]: Remove: archive file [/home/abi/fetcher/tmp/langevals_huggingface-0.1.1.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [langevals]: Remove: archive file [/home/abi/fetcher/tmp/langevals-0.1.3.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals-huggingface]: success
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [langevals]: success
+[2024-04-28 21:58:42] INFO root fetch - processPackages [celerity]: Remove: archive file [/home/abi/fetcher/tmp/celerity-0.8.0.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - processPackages [celerity]: Remove: archive file [/home/abi/fetcher/tmp/celerity-0.9.0.tar.gz]
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [celerity]: success
+[2024-04-28 21:58:42] INFO root fetch - main [MainThread]: Store serial: [22969447]
