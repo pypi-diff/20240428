@@ -3541,3 +3541,15 @@
 [2024-04-28 05:23:54] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024042703.tar.gz]
 [2024-04-28 05:23:54] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-28 05:23:54] INFO root fetch - main [MainThread]: Store serial: [22963725]
+[2024-04-28 05:25:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963725]
+[2024-04-28 05:26:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 05:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-ucan
+[2024-04-28 05:26:03] INFO root fetch - processPackages [py-ucan]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 05:26:03] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/78/01/cb70767311e7c9846c8bcd7ffc272fef3f4da97d07ebef91b57e45a93b1c/py_ucan-0.3.0.tar.gz
+[2024-04-28 05:26:03] INFO root fetch - processPackages [py-ucan]: Downloading https://files.pythonhosted.org/packages/ef/a1/4339246ef98b41d023cdacedfb236d536bdc84b959f50795d8cb89a4394c/py_ucan-0.3.1.tar.gz
+[2024-04-28 05:26:04] INFO root fetch - processPackages [py-ucan]: executing diffoscope
+[2024-04-28 05:26:04] INFO root fetch - processPackages [py-ucan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ucan-0.3.0.tar.gz tmp/py_ucan-0.3.1.tar.gz --markdown 20240428/p/py-ucan/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 05:26:04] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.3.0.tar.gz]
+[2024-04-28 05:26:04] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.3.1.tar.gz]
+[2024-04-28 05:26:04] INFO root fetch - main [MainThread]: End processing [py-ucan]: success
+[2024-04-28 05:26:04] INFO root fetch - main [MainThread]: Store serial: [22963728]
