@@ -3329,3 +3329,18 @@
 [2024-04-28 05:02:19] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip]
 [2024-04-28 05:02:19] INFO root fetch - main [MainThread]: End processing [icloudpd]: success
 [2024-04-28 05:02:19] INFO root fetch - main [MainThread]: Store serial: [22963650]
+[2024-04-28 05:04:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963650]
+[2024-04-28 05:04:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycommons
+[2024-04-28 05:04:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YoutubeUser
+[2024-04-28 05:04:27] WARNING root fetch - processPackages [YoutubeUser]: Skipping, unable to determine old version
+[2024-04-28 05:04:27] INFO root fetch - main [MainThread]: End processing [YoutubeUser] error
+[2024-04-28 05:04:27] INFO root fetch - processPackages [pycommons]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-28 05:04:27] INFO root fetch - processPackages [pycommons]: Downloading https://files.pythonhosted.org/packages/f5/b7/e2307174b50d3416008197b30b2fd81919d123479629cd660c1128d5abec/pycommons-0.8.8.tar.gz
+[2024-04-28 05:04:27] INFO root fetch - processPackages [pycommons]: Downloading https://files.pythonhosted.org/packages/b6/ca/acae5b6b302dfdf392c815106b020283d0238189cbe02716e4a0c042a8df/pycommons-0.8.9.tar.gz
+[2024-04-28 05:04:28] INFO root fetch - processPackages [pycommons]: executing diffoscope
+[2024-04-28 05:04:28] INFO root fetch - processPackages [pycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycommons-0.8.8.tar.gz tmp/pycommons-0.8.9.tar.gz --markdown 20240428/p/pycommons/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-28 05:04:28] INFO root fetch - processPackages [pycommons]: Remove: archive file [/home/abi/fetcher/tmp/pycommons-0.8.8.tar.gz]
+[2024-04-28 05:04:28] INFO root fetch - processPackages [pycommons]: Remove: archive file [/home/abi/fetcher/tmp/pycommons-0.8.9.tar.gz]
+[2024-04-28 05:04:28] INFO root fetch - main [MainThread]: End processing [pycommons]: success
+[2024-04-28 05:04:28] INFO root fetch - main [MainThread]: Store serial: [22963662]
