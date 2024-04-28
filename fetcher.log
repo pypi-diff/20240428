@@ -7818,3 +7818,87 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:02:24] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.2.0.tar.gz]
 [2024-04-28 11:02:24] INFO root fetch - main [MainThread]: End processing [gemini-webapi]: success
 [2024-04-28 11:02:24] INFO root fetch - main [MainThread]: Store serial: [22965513]
+[2024-04-28 11:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965513]
+[2024-04-28 11:04:32] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: queue-kv
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tart
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitterexplorer
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tailucas-pylib
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyracf
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jinja2-async-environment
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autogluon.common
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.core
+[2024-04-28 11:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: schemaorg-lite
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240427] Old Version: [1.1.1b20240426]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [pyracf]: New version: [0.8.7] Old Version: [0.8.6]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [queue-kv]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [jinja2-async-environment]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [twitterexplorer]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tart]: New version: [1.2.0b3] Old Version: [1.2.0b1]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240428] Old Version: [1.1.1b20240427]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [schemaorg-lite]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/63/3a/1192664f6a26ef705dcad3ccd94ae8d69786e874f580f701c2a59a1d3ebf/autogluon.common-1.1.1b20240426.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/8e/a2/9046bcaff32c5e396b04d3ac68f5f5353f591dc6c4e68c58eafc680c489f/pyracf-0.8.6.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [jinja2-async-environment]: Downloading https://files.pythonhosted.org/packages/25/52/c0570774518b4334620fe35fbcbcc06332334681dc3de9a0d017a2741cce/jinja2_async_environment-0.7.2.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/70/33/aae60a162436f18db36a349b7fd4c27d722ecab439a414e922fa6c7ed001/tailucas_pylib-0.2.8.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tart]: Downloading https://files.pythonhosted.org/packages/2b/e4/12c64471ac98d03eef2fee26f1cbd926556851b116984c4be0ca6ca16a5f/tart-1.2.0b1.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [twitterexplorer]: Downloading https://files.pythonhosted.org/packages/76/b8/21ad766d2661968f50e6e47d5310cdb2a96911c79e032a16800b499b333e/twitterexplorer-0.7.0.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [queue-kv]: Downloading https://files.pythonhosted.org/packages/29/d3/d8498838222c48e31f08fab444fe9c291d3d7d442cbf6e749a7a417f97e1/queue_kv-0.1.2.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/df/40/72475e3403c7d162cff141b9fb97d3ed4eba8988628ca700f46591f12994/autogluon.core-1.1.1b20240427-py3-none-any.whl
+[2024-04-28 11:04:33] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/76/ea/f8da322ad9c463fb3674baa7f3cede2984ff76804d617531f29706753fe2/schemaorg_lite-0.1.8.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/38/80/ecde0a0d18429ee81a758c3c2787f00f3cfd054d095d669440b1d9273a04/autogluon.common-1.1.1b20240427.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [jinja2-async-environment]: Downloading https://files.pythonhosted.org/packages/74/4a/be4b81916e582c42211dd49833c6bc91065cbba15a975c021b3d180a9700/jinja2_async_environment-0.7.3.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [pyracf]: Downloading https://files.pythonhosted.org/packages/41/6e/e1da740f4e251f57d4503299af6f90f685c095c9a05a7a483b8bc057c41c/pyracf-0.8.7.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tart]: Downloading https://files.pythonhosted.org/packages/29/94/bea4f714993456ce3f61831ccbe9c34d42217f1b6ec0a0e98b42b53fc898/tart-1.2.0b3.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [queue-kv]: Downloading https://files.pythonhosted.org/packages/86/0c/b185fd9326535693d247b0a52c32b02c4c4f329443a16bcb17651a4d60d4/queue_kv-0.1.3.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/88/2c/edd1fc5793afa90890c353ab2042848ff260c1e8ae0e11b2ceaa99bd11aa/tailucas_pylib-0.2.9.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [twitterexplorer]: Downloading https://files.pythonhosted.org/packages/97/c5/c54c86d4ba53283d7b9a818d3c39a3fe23fe04b6cd5ef81b73c8e76d4c55/twitterexplorer-0.7.1.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240426.tar.gz tmp/autogluon.common-1.1.1b20240427.tar.gz --markdown 20240428/a/autogluon.common/1.1.1b20240426-1.1.1b20240427/README.md --exclude *.pyd
+[2024-04-28 11:04:33] INFO root fetch - processPackages [jinja2-async-environment]: executing diffoscope
+[2024-04-28 11:04:33] INFO root fetch - processPackages [jinja2-async-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinja2_async_environment-0.7.2.tar.gz tmp/jinja2_async_environment-0.7.3.tar.gz --markdown 20240428/j/jinja2-async-environment/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-04-28 11:04:33] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/d3/b7/97f6e0bd5fd1c8f4b47dac4982183cbb03af9c85e923fb8dce5fb5fa3365/autogluon.core-1.1.1b20240428.tar.gz
+[2024-04-28 11:04:33] INFO root fetch - processPackages [pyracf]: executing diffoscope
+[2024-04-28 11:04:33] INFO root fetch - processPackages [pyracf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyracf-0.8.6.tar.gz tmp/pyracf-0.8.7.tar.gz --markdown 20240428/p/pyracf/0.8.6-0.8.7/README.md --exclude *.pyd
+[2024-04-28 11:04:33] INFO root fetch - processPackages [queue-kv]: executing diffoscope
+[2024-04-28 11:04:33] INFO root fetch - processPackages [queue-kv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue_kv-0.1.2.tar.gz tmp/queue_kv-0.1.3.tar.gz --markdown 20240428/q/queue-kv/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.8.tar.gz tmp/tailucas_pylib-0.2.9.tar.gz --markdown 20240428/t/tailucas-pylib/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-28 11:04:34] INFO root fetch - processPackages [twitterexplorer]: executing diffoscope
+[2024-04-28 11:04:34] INFO root fetch - processPackages [twitterexplorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitterexplorer-0.7.0.tar.gz tmp/twitterexplorer-0.7.1.tar.gz --markdown 20240428/t/twitterexplorer/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tart]: executing diffoscope
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tart-1.2.0b1.tar.gz tmp/tart-1.2.0b3.tar.gz --markdown 20240428/t/tart/1.2.0b1-1.2.0b3/README.md --exclude *.pyd
+[2024-04-28 11:04:34] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-04-28 11:04:34] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240427-py3-none-any.whl.zip tmp/autogluon.core-1.1.1b20240428.tar.gz --markdown 20240428/a/autogluon.core/1.1.1b20240427-1.1.1b20240428/README.md --exclude *.pyd
+[2024-04-28 11:04:34] INFO root fetch - processPackages [queue-kv]: Remove: archive file [/home/abi/fetcher/tmp/queue_kv-0.1.2.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [queue-kv]: Remove: archive file [/home/abi/fetcher/tmp/queue_kv-0.1.3.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - main [MainThread]: End processing [queue-kv]: success
+[2024-04-28 11:04:34] INFO root fetch - processPackages [jinja2-async-environment]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_async_environment-0.7.2.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.6.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [jinja2-async-environment]: Remove: archive file [/home/abi/fetcher/tmp/jinja2_async_environment-0.7.3.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [pyracf]: Remove: archive file [/home/abi/fetcher/tmp/pyracf-0.8.7.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - main [MainThread]: End processing [jinja2-async-environment]: success
+[2024-04-28 11:04:34] INFO root fetch - main [MainThread]: End processing [pyracf]: success
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.8.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.9.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-28 11:04:34] INFO root fetch - processPackages [twitterexplorer]: Remove: archive file [/home/abi/fetcher/tmp/twitterexplorer-0.7.0.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - processPackages [twitterexplorer]: Remove: archive file [/home/abi/fetcher/tmp/twitterexplorer-0.7.1.tar.gz]
+[2024-04-28 11:04:34] INFO root fetch - main [MainThread]: End processing [twitterexplorer]: success
+[2024-04-28 11:04:35] INFO root fetch - processPackages [tart]: Remove: archive file [/home/abi/fetcher/tmp/tart-1.2.0b1.tar.gz]
+[2024-04-28 11:04:35] INFO root fetch - processPackages [tart]: Remove: archive file [/home/abi/fetcher/tmp/tart-1.2.0b3.tar.gz]
+[2024-04-28 11:04:35] INFO root fetch - main [MainThread]: End processing [tart]: success
+[2024-04-28 11:04:35] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240427-py3-none-any.whl.zip]
+[2024-04-28 11:04:35] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240428.tar.gz]
+[2024-04-28 11:04:35] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-04-28 11:04:35] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240426.tar.gz]
+[2024-04-28 11:04:35] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240427.tar.gz]
+[2024-04-28 11:04:35] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-04-28 11:04:35] INFO root fetch - processPackages [schemaorg-lite]: Downloading https://files.pythonhosted.org/packages/26/94/c9402d0a4004df79d009c2847989dbac719d94a77abfe79f8e1798c3f40a/schemaorg_lite-0.1.9.tar.gz
+[2024-04-28 11:04:37] INFO root fetch - processPackages [schemaorg-lite]: executing diffoscope
+[2024-04-28 11:04:37] INFO root fetch - processPackages [schemaorg-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemaorg_lite-0.1.8.tar.gz tmp/schemaorg_lite-0.1.9.tar.gz --markdown 20240428/s/schemaorg-lite/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 11:04:45] INFO root fetch - processPackages [schemaorg-lite]: Remove: archive file [/home/abi/fetcher/tmp/schemaorg_lite-0.1.8.tar.gz]
+[2024-04-28 11:04:45] INFO root fetch - processPackages [schemaorg-lite]: Remove: archive file [/home/abi/fetcher/tmp/schemaorg_lite-0.1.9.tar.gz]
+[2024-04-28 11:04:45] INFO root fetch - main [MainThread]: End processing [schemaorg-lite]: success
+[2024-04-28 11:04:45] INFO root fetch - main [MainThread]: Store serial: [22965542]
