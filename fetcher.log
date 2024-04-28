@@ -6380,3 +6380,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:19:13] INFO root fetch - processPackages [hustmirror-cli]: Remove: archive file [/home/abi/fetcher/tmp/hustmirror_cli-1.1.3.tar.gz]
 [2024-04-28 09:19:13] INFO root fetch - main [MainThread]: End processing [hustmirror-cli]: success
 [2024-04-28 09:19:13] INFO root fetch - main [MainThread]: Store serial: [22964850]
+[2024-04-28 09:21:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964850]
+[2024-04-28 09:21:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 09:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uaiDiffusers
+[2024-04-28 09:21:21] INFO root fetch - processPackages [uaiDiffusers]: New version: [1.1.5.1] Old Version: [1.1.4]
+[2024-04-28 09:21:21] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/98/4a/a8291888efc2caadeb88a17e8c55be53a4c295836659f5a3388b6dc75faa/uaiDiffusers-1.1.4-py2.py3-none-any.whl
+[2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/56/b2/b09192be3e3a18a9d301255c060c646b819a3b243dd2ba9a4328bc7f7e45/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl
+[2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: executing diffoscope
+[2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uaiDiffusers-1.1.4-py2.py3-none-any.whl.zip tmp/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl.zip --markdown 20240428/u/uaiDiffusers/1.1.4-1.1.5.1/README.md --exclude *.pyd
+[2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.4-py2.py3-none-any.whl.zip]
+[2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl.zip]
+[2024-04-28 09:21:22] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
+[2024-04-28 09:21:22] INFO root fetch - main [MainThread]: Store serial: [22964853]
