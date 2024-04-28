@@ -13774,3 +13774,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:06:04] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.1.tar.gz]
 [2024-04-28 18:06:04] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
 [2024-04-28 18:06:04] INFO root fetch - main [MainThread]: Store serial: [22967936]
+[2024-04-28 18:08:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967936]
+[2024-04-28 18:08:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 18:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assertbr
+[2024-04-28 18:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoviz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoon-data
+[2024-04-28 18:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shaq
+[2024-04-28 18:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphene-cruddals
+[2024-04-28 18:08:13] WARNING root fetch - processPackages [assertbr]: Skipping, unable to determine old version
+[2024-04-28 18:08:13] INFO root fetch - main [MainThread]: End processing [assertbr] error
+[2024-04-28 18:08:13] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:08:13] INFO root fetch - processPackages [shaq]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 18:08:13] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-28 18:08:13] WARNING root fetch - processPackages [graphene-cruddals]: Skipping, unable to determine old version
+[2024-04-28 18:08:13] INFO root fetch - main [MainThread]: End processing [graphene-cruddals] error
+[2024-04-28 18:08:13] INFO root fetch - processPackages [autoviz]: New version: [0.1.903] Old Version: [0.1.902]
+[2024-04-28 18:08:13] INFO root fetch - processPackages [shaq]: Downloading https://files.pythonhosted.org/packages/da/d6/6779f02ee3d9c4b1ce5cc60233e04515c0c1fd5cbf01b8224bc4408a192b/shaq-0.0.2.tar.gz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/1c/31/2ff5730016765c775a211f6287933d00f07fee481fbe1729d8fc38f376a7/autoviz-0.1.902.tar.gz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-28 18:08:13] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240428/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:08:13] INFO root fetch - processPackages [shaq]: Downloading https://files.pythonhosted.org/packages/13/95/0a4efee53a8fa2a7599088106d312c98b3b3dd3a5bb0af6689aa4eedbb3b/shaq-0.0.3.tar.gz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [autoviz]: Downloading https://files.pythonhosted.org/packages/18/f8/7d062a351a16f96cee3e7623ef3153c3385463302339cc767bad5009abf4/autoviz-0.1.903.tar.gz
+[2024-04-28 18:08:13] INFO root fetch - processPackages [shaq]: executing diffoscope
+[2024-04-28 18:08:13] INFO root fetch - processPackages [shaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shaq-0.0.2.tar.gz tmp/shaq-0.0.3.tar.gz --markdown 20240428/s/shaq/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 18:08:14] INFO root fetch - processPackages [autoviz]: executing diffoscope
+[2024-04-28 18:08:14] INFO root fetch - processPackages [autoviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoviz-0.1.902.tar.gz tmp/autoviz-0.1.903.tar.gz --markdown 20240428/a/autoviz/0.1.902-0.1.903/README.md --exclude *.pyd
+[2024-04-28 18:08:14] INFO root fetch - processPackages [shaq]: Remove: archive file [/home/abi/fetcher/tmp/shaq-0.0.2.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - processPackages [shaq]: Remove: archive file [/home/abi/fetcher/tmp/shaq-0.0.3.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - main [MainThread]: End processing [shaq]: success
+[2024-04-28 18:08:14] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-28 18:08:14] INFO root fetch - processPackages [autoviz]: Remove: archive file [/home/abi/fetcher/tmp/autoviz-0.1.902.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - processPackages [autoviz]: Remove: archive file [/home/abi/fetcher/tmp/autoviz-0.1.903.tar.gz]
+[2024-04-28 18:08:14] INFO root fetch - main [MainThread]: End processing [autoviz]: success
+[2024-04-28 18:08:14] INFO root fetch - main [MainThread]: Store serial: [22967956]
