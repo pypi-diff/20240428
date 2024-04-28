@@ -11886,3 +11886,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:49:05] INFO root fetch - processPackages [async-shell]: Remove: archive file [/home/abi/fetcher/tmp/async_shell-1.0.5.tar.gz]
 [2024-04-28 15:49:05] INFO root fetch - main [MainThread]: End processing [async-shell]: success
 [2024-04-28 15:49:05] INFO root fetch - main [MainThread]: Store serial: [22967204]
+[2024-04-28 15:51:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967204]
+[2024-04-28 15:51:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: async-shell
+[2024-04-28 15:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geopandas
+[2024-04-28 15:51:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-simple-rate-limiter
+[2024-04-28 15:51:25] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 15:51:25] INFO root fetch - processPackages [async-shell]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-28 15:51:25] INFO root fetch - processPackages [geopandas]: New version: [1.0.0a1] Old Version: [0.9.0]
+[2024-04-28 15:51:25] INFO root fetch - processPackages [async-shell]: Downloading https://files.pythonhosted.org/packages/60/ef/ccc09d8f9413c3035c88f0ffbd67354a26b1e78139c159c402e072954bf8/async_shell-1.0.4.tar.gz
+[2024-04-28 15:51:25] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Downloading https://files.pythonhosted.org/packages/f7/fc/d72dc66644be2a856b70736ff55b28add19e287c9930b74ce98b3fb3d38c/fastapi_simple_rate_limiter-0.0.2.tar.gz
+[2024-04-28 15:51:25] INFO root fetch - processPackages [geopandas]: Downloading https://files.pythonhosted.org/packages/9b/59/3b0907ae8128f81db5cd978d95e6cd6aa2b0ce19884833c37f65deaaca44/geopandas-0.9.0.tar.gz
+[2024-04-28 15:51:25] INFO root fetch - processPackages [async-shell]: Downloading https://files.pythonhosted.org/packages/bd/0e/7bbf0de6a4dc4466c8eff43a7b560cef10b2b3b7f54a3e08db48162fde82/async_shell-1.0.5.tar.gz
+[2024-04-28 15:51:25] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Downloading https://files.pythonhosted.org/packages/34/d8/b072fb56835cf6f13548c148eb6a86f07b88bd0004015a24da99a96ef8a9/fastapi_simple_rate_limiter-0.0.3.tar.gz
+[2024-04-28 15:51:25] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: executing diffoscope
+[2024-04-28 15:51:25] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_simple_rate_limiter-0.0.2.tar.gz tmp/fastapi_simple_rate_limiter-0.0.3.tar.gz --markdown 20240428/f/fastapi-simple-rate-limiter/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 15:51:25] INFO root fetch - processPackages [async-shell]: executing diffoscope
+[2024-04-28 15:51:25] INFO root fetch - processPackages [async-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_shell-1.0.4.tar.gz tmp/async_shell-1.0.5.tar.gz --markdown 20240428/a/async-shell/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-28 15:51:25] INFO root fetch - processPackages [geopandas]: Downloading https://files.pythonhosted.org/packages/9e/31/951fe99e8ba46b5620fdd2d98b0d6bb21eb57dc3ab306b8fa40c0ce61b23/geopandas-1.0.0a1.tar.gz
+[2024-04-28 15:51:26] INFO root fetch - processPackages [geopandas]: executing diffoscope
+[2024-04-28 15:51:26] INFO root fetch - processPackages [geopandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geopandas-0.9.0.tar.gz tmp/geopandas-1.0.0a1.tar.gz --markdown 20240428/g/geopandas/0.9.0-1.0.0a1/README.md --exclude *.pyd
+[2024-04-28 15:51:26] INFO root fetch - processPackages [async-shell]: Remove: archive file [/home/abi/fetcher/tmp/async_shell-1.0.4.tar.gz]
+[2024-04-28 15:51:26] INFO root fetch - processPackages [async-shell]: Remove: archive file [/home/abi/fetcher/tmp/async_shell-1.0.5.tar.gz]
+[2024-04-28 15:51:26] INFO root fetch - main [MainThread]: End processing [async-shell]: success
+[2024-04-28 15:51:26] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_rate_limiter-0.0.2.tar.gz]
+[2024-04-28 15:51:26] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_rate_limiter-0.0.3.tar.gz]
+[2024-04-28 15:51:26] INFO root fetch - main [MainThread]: End processing [fastapi-simple-rate-limiter]: success
+[2024-04-28 15:51:27] INFO root fetch - processPackages [geopandas]: Remove: archive file [/home/abi/fetcher/tmp/geopandas-0.9.0.tar.gz]
+[2024-04-28 15:51:27] INFO root fetch - processPackages [geopandas]: Remove: archive file [/home/abi/fetcher/tmp/geopandas-1.0.0a1.tar.gz]
+[2024-04-28 15:51:27] INFO root fetch - main [MainThread]: End processing [geopandas]: success
+[2024-04-28 15:51:27] INFO root fetch - main [MainThread]: Store serial: [22967216]
