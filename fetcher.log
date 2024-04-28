@@ -5283,3 +5283,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:53:32] INFO root fetch - processPackages [rhinoMorph]: Remove: archive file [/home/abi/fetcher/tmp/rhinoMorph-4.0.4-py3-none-any.whl.zip]
 [2024-04-28 07:53:32] INFO root fetch - main [MainThread]: End processing [rhinoMorph]: success
 [2024-04-28 07:53:32] INFO root fetch - main [MainThread]: Store serial: [22964369]
+[2024-04-28 07:55:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964369]
+[2024-04-28 07:55:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:55:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flare-Helper
+[2024-04-28 07:55:40] WARNING root fetch - processPackages [Flare-Helper]: Skipping, unable to determine old version
+[2024-04-28 07:55:40] INFO root fetch - main [MainThread]: End processing [Flare-Helper] error
+[2024-04-28 07:55:40] INFO root fetch - main [MainThread]: Store serial: [22964380]
