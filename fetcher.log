@@ -10760,3 +10760,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:32:48] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-04-28 14:32:48] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-04-28 14:32:48] INFO root fetch - main [MainThread]: Store serial: [22966702]
+[2024-04-28 14:34:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966702]
+[2024-04-28 14:35:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 14:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shellcrafter
+[2024-04-28 14:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PieBedrock
+[2024-04-28 14:35:04] INFO root fetch - processPackages [shellcrafter]: New version: [1.1.2] Old Version: [1.1.0]
+[2024-04-28 14:35:04] INFO root fetch - processPackages [PieBedrock]: New version: [1.0.4] Old Version: [1.0.3.4]
+[2024-04-28 14:35:05] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/aa/d3/dc102a988daf50b77928944c104a4e21e00f645b8c030fb0c6ba852b6183/shellcrafter-1.1.0.tar.gz
+[2024-04-28 14:35:05] INFO root fetch - processPackages [PieBedrock]: Downloading https://files.pythonhosted.org/packages/e5/67/c90d60c825cefbf3c333f3f06f9ea5910f58555412f525a396778c58e4ed/PieBedrock-1.0.3.4.tar.gz
+[2024-04-28 14:35:05] INFO root fetch - processPackages [PieBedrock]: Downloading https://files.pythonhosted.org/packages/05/56/9a33d63f859044455aa0432effe5631cd3a05a690b3ae1a9a6e4c5eadec9/piebedrock-1.0.4.tar.gz
+[2024-04-28 14:35:05] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/ef/e3/6572814424c104526e97cff7a6acf55c8ff7e85fc209ce7670c0726c560f/shellcrafter-1.1.2.tar.gz
+[2024-04-28 14:35:05] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2024-04-28 14:35:05] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.1.0.tar.gz tmp/shellcrafter-1.1.2.tar.gz --markdown 20240428/s/shellcrafter/1.1.0-1.1.2/README.md --exclude *.pyd
+[2024-04-28 14:35:05] INFO root fetch - processPackages [PieBedrock]: executing diffoscope
+[2024-04-28 14:35:05] INFO root fetch - processPackages [PieBedrock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PieBedrock-1.0.3.4.tar.gz tmp/piebedrock-1.0.4.tar.gz --markdown 20240428/P/PieBedrock/1.0.3.4-1.0.4/README.md --exclude *.pyd
+[2024-04-28 14:35:06] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.1.0.tar.gz]
+[2024-04-28 14:35:06] INFO root fetch - processPackages [shellcrafter]: Remove: archive file [/home/abi/fetcher/tmp/shellcrafter-1.1.2.tar.gz]
+[2024-04-28 14:35:06] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2024-04-28 14:35:06] INFO root fetch - processPackages [PieBedrock]: Remove: archive file [/home/abi/fetcher/tmp/PieBedrock-1.0.3.4.tar.gz]
+[2024-04-28 14:35:06] INFO root fetch - processPackages [PieBedrock]: Remove: archive file [/home/abi/fetcher/tmp/piebedrock-1.0.4.tar.gz]
+[2024-04-28 14:35:06] INFO root fetch - main [MainThread]: End processing [PieBedrock]: success
+[2024-04-28 14:35:06] INFO root fetch - main [MainThread]: Store serial: [22966712]
