@@ -14050,3 +14050,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:19:14] INFO root fetch - processPackages [shellinspector]: Remove: archive file [/home/abi/fetcher/tmp/shellinspector-0.9.0.tar.gz]
 [2024-04-28 18:19:14] INFO root fetch - main [MainThread]: End processing [shellinspector]: success
 [2024-04-28 18:19:14] INFO root fetch - main [MainThread]: Store serial: [22968050]
+[2024-04-28 18:21:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968050]
+[2024-04-28 18:21:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 18:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnurl_nostr1
+[2024-04-28 18:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-sale-order-tag
+[2024-04-28 18:21:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Al-HaQ
+[2024-04-28 18:21:24] WARNING root fetch - processPackages [Al-HaQ]: Skipping, unable to determine old version
+[2024-04-28 18:21:24] INFO root fetch - main [MainThread]: End processing [Al-HaQ] error
+[2024-04-28 18:21:24] WARNING root fetch - processPackages [lnurl_nostr1]: Skipping, unable to determine old version
+[2024-04-28 18:21:24] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1] error
+[2024-04-28 18:21:24] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: New version: [14.0.1.0.3.dev1] Old Version: [14.0.1.0.2.dev9]
+[2024-04-28 18:21:24] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: Downloading https://files.pythonhosted.org/packages/0e/7f/321073fb74a7411777a4cfbe21c1e5373c669122400c47294a2b39977bad/odoo14_addon_sale_order_tag-14.0.1.0.2.dev9-py3-none-any.whl
+[2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: Downloading https://files.pythonhosted.org/packages/06/e8/3cecc6841ebd5dfc8fc8b79bc4429b3e3e1f62755fac5aac387a9f9355ea/odoo14_addon_sale_order_tag-14.0.1.0.3.dev1-py3-none-any.whl
+[2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: executing diffoscope
+[2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_order_tag-14.0.1.0.2.dev9-py3-none-any.whl.zip tmp/odoo14_addon_sale_order_tag-14.0.1.0.3.dev1-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-sale-order-tag/14.0.1.0.2.dev9-14.0.1.0.3.dev1/README.md --exclude *.pyd
+[2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_tag-14.0.1.0.2.dev9-py3-none-any.whl.zip]
+[2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_tag-14.0.1.0.3.dev1-py3-none-any.whl.zip]
+[2024-04-28 18:21:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-tag]: success
+[2024-04-28 18:21:25] INFO root fetch - main [MainThread]: Store serial: [22968058]
