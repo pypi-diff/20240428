@@ -15694,3 +15694,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:13:53] INFO root fetch - processPackages [nahcrofDB]: Remove: archive file [/home/abi/fetcher/tmp/nahcrofDB-1.2.0.tar.gz]
 [2024-04-28 20:13:53] INFO root fetch - main [MainThread]: End processing [nahcrofDB]: success
 [2024-04-28 20:13:53] INFO root fetch - main [MainThread]: Store serial: [22968752]
+[2024-04-28 20:15:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968752]
+[2024-04-28 20:16:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 20:16:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-pipelines-github
+[2024-04-28 20:16:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyzdoc
+[2024-04-28 20:16:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plex-fuse
+[2024-04-28 20:16:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pratac
+[2024-04-28 20:16:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-04-28 20:16:02] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-28 20:16:02] WARNING root fetch - processPackages [pyzdoc]: Skipping, unable to determine old version
+[2024-04-28 20:16:02] INFO root fetch - main [MainThread]: End processing [pyzdoc] error
+[2024-04-28 20:16:02] INFO root fetch - processPackages [plex-fuse]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-28 20:16:02] WARNING root fetch - processPackages [pratac]: Skipping, unable to determine old version
+[2024-04-28 20:16:02] INFO root fetch - main [MainThread]: End processing [pratac] error
+[2024-04-28 20:16:02] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-28 20:16:02] INFO root fetch - processPackages [cdk-pipelines-github]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-04-28 20:16:02] INFO root fetch - processPackages [cdk-pipelines-github]: Downloading https://files.pythonhosted.org/packages/08/86/5ebbf404d98bafd9d0b9e06d35fc4a1997cade73d46bd14dea656afdbaa3/cdk-pipelines-github-0.4.98.tar.gz
+[2024-04-28 20:16:02] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-28 20:16:02] INFO root fetch - processPackages [plex-fuse]: Downloading https://files.pythonhosted.org/packages/ca/92/b3ac38dd5a9109afeb4397f87350d2f1957c21daedd9ad071c3a5c83c023/plex-fuse-0.6.0.tar.gz
+[2024-04-28 20:16:02] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-28 20:16:02] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240428/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-28 20:16:03] INFO root fetch - processPackages [plex-fuse]: Downloading https://files.pythonhosted.org/packages/7a/63/904b09b4454271ce695bc4a684452628abe73d3abb1beb2ed7c377df66b5/plex_fuse-0.7.0.tar.gz
+[2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: Downloading https://files.pythonhosted.org/packages/3f/a0/fc461f8c3f909eb20752a857e11eb54b903a8cc395cdeba4fa844b53d741/cdk-pipelines-github-0.4.99.tar.gz
+[2024-04-28 20:16:03] INFO root fetch - processPackages [plex-fuse]: executing diffoscope
+[2024-04-28 20:16:03] INFO root fetch - processPackages [plex-fuse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plex-fuse-0.6.0.tar.gz tmp/plex_fuse-0.7.0.tar.gz --markdown 20240428/p/plex-fuse/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: executing diffoscope
+[2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-pipelines-github-0.4.98.tar.gz tmp/cdk-pipelines-github-0.4.99.tar.gz --markdown 20240428/c/cdk-pipelines-github/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-04-28 20:16:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-28 20:16:03] INFO root fetch - processPackages [plex-fuse]: Remove: archive file [/home/abi/fetcher/tmp/plex-fuse-0.6.0.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - processPackages [plex-fuse]: Remove: archive file [/home/abi/fetcher/tmp/plex_fuse-0.7.0.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - main [MainThread]: End processing [plex-fuse]: success
+[2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-pipelines-github-0.4.98.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-pipelines-github-0.4.99.tar.gz]
+[2024-04-28 20:16:03] INFO root fetch - main [MainThread]: End processing [cdk-pipelines-github]: success
+[2024-04-28 20:16:03] INFO root fetch - main [MainThread]: Store serial: [22968770]
