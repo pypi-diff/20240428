@@ -4745,3 +4745,30 @@
 [2024-04-28 07:12:17] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
 [2024-04-28 07:12:17] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
 [2024-04-28 07:12:17] INFO root fetch - main [MainThread]: Store serial: [22964192]
+[2024-04-28 07:14:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964192]
+[2024-04-28 07:14:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 07:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ex-cd
+[2024-04-28 07:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oresat-cfc
+[2024-04-28 07:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drd-vmbpy
+[2024-04-28 07:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: STAIR-tools
+[2024-04-28 07:14:26] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 07:14:26] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 07:14:26] INFO root fetch - processPackages [ex-cd]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-04-28 07:14:26] WARNING root fetch - processPackages [drd-vmbpy]: Skipping, unable to determine old version
+[2024-04-28 07:14:26] INFO root fetch - main [MainThread]: End processing [drd-vmbpy] error
+[2024-04-28 07:14:26] WARNING root fetch - processPackages [oresat-cfc]: Skipping, unable to determine old version
+[2024-04-28 07:14:26] INFO root fetch - main [MainThread]: End processing [oresat-cfc] error
+[2024-04-28 07:14:26] INFO root fetch - processPackages [ex-cd]: Downloading https://files.pythonhosted.org/packages/7a/ae/343cb345397b334a6d65c7ada5e706a763683d89aa5e9f7424bc8e9be9b4/ex_cd-1.9.3.tar.gz
+[2024-04-28 07:14:26] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-04-28 07:14:26] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 07:14:26] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240428/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 07:14:26] INFO root fetch - processPackages [ex-cd]: Downloading https://files.pythonhosted.org/packages/fe/a7/907e1f4930a5e56cb16271b81480a86740c2521ac86bde937b3000441ac1/ex_cd-1.9.4.tar.gz
+[2024-04-28 07:14:26] INFO root fetch - processPackages [ex-cd]: executing diffoscope
+[2024-04-28 07:14:26] INFO root fetch - processPackages [ex-cd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ex_cd-1.9.3.tar.gz tmp/ex_cd-1.9.4.tar.gz --markdown 20240428/e/ex-cd/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-04-28 07:14:27] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 07:14:27] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-04-28 07:14:27] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 07:14:27] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.3.tar.gz]
+[2024-04-28 07:14:27] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.4.tar.gz]
+[2024-04-28 07:14:27] INFO root fetch - main [MainThread]: End processing [ex-cd]: success
+[2024-04-28 07:14:27] INFO root fetch - main [MainThread]: Store serial: [22964206]
