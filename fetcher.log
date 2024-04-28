@@ -3754,3 +3754,11 @@
 [2024-04-28 05:49:53] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.5.tar.gz]
 [2024-04-28 05:49:53] INFO root fetch - main [MainThread]: End processing [YoutubeUser]: success
 [2024-04-28 05:49:53] INFO root fetch - main [MainThread]: Store serial: [22963801]
+[2024-04-28 05:51:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963801]
+[2024-04-28 05:52:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 05:54:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963801]
+[2024-04-28 05:54:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 05:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skillpacks
+[2024-04-28 05:54:07] WARNING root fetch - processPackages [skillpacks]: Skipping, unable to determine old version
+[2024-04-28 05:54:07] INFO root fetch - main [MainThread]: End processing [skillpacks] error
+[2024-04-28 05:54:07] INFO root fetch - main [MainThread]: Store serial: [22963806]
