@@ -2905,3 +2905,51 @@
 [2024-04-28 04:18:20] INFO root fetch - processPackages [monai-weekly]: Remove: archive file [/home/abi/fetcher/tmp/monai_weekly-1.4.dev2417.tar.gz]
 [2024-04-28 04:18:20] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2024-04-28 04:18:20] INFO root fetch - main [MainThread]: Store serial: [22963420]
+[2024-04-28 04:20:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963420]
+[2024-04-28 04:20:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 04:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-04-28 04:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trace-attributes
+[2024-04-28 04:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: example990420
+[2024-04-28 04:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: orbitkit
+[2024-04-28 04:20:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-chat-handler
+[2024-04-28 04:20:29] INFO root fetch - processPackages [trace-attributes]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-04-28 04:20:29] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.4] Old Version: [2024.2.3]
+[2024-04-28 04:20:29] INFO root fetch - processPackages [streamlit-chat-handler]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-04-28 04:20:29] INFO root fetch - processPackages [example990420]: New version: [1.1.0] Old Version: [0.0.7]
+[2024-04-28 04:20:29] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/fb/85/4b7125c265bdd72889e071694c9149db4c19884fcd560b9c2ea4b0469e23/blastpipe-2024.2.3.tar.gz
+[2024-04-28 04:20:29] INFO root fetch - processPackages [orbitkit]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-04-28 04:20:29] INFO root fetch - processPackages [trace-attributes]: Downloading https://files.pythonhosted.org/packages/52/20/c322c30f16939305bf6e9f6b9f32ac28dc6f5ada726dac8ceb52973f04c8/trace_attributes-3.0.2.tar.gz
+[2024-04-28 04:20:29] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/19/3a/1ea26d8bde1085a4df1f52d734a1aa9409af3437bc63a441dbcb83ebb7e9/streamlit_chat_handler-0.0.7.tar.gz
+[2024-04-28 04:20:29] INFO root fetch - processPackages [example990420]: Downloading https://files.pythonhosted.org/packages/d5/63/460b898b7d084c37cbaf8bd4793c694451b5d010fdd0101e43f053ab07f5/example990420-0.0.7.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [orbitkit]: Downloading https://files.pythonhosted.org/packages/95/b6/c8a894cc2dfebaa500ea6639881f4f745d0a774c7d484142913c0509c2a6/orbitkit-0.6.2.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [trace-attributes]: Downloading https://files.pythonhosted.org/packages/92/93/fb74c4c20fd81d8f6064aa08bd9aa839c24dc4c0f21cba2fd42fbc8e90e1/trace_attributes-3.0.3.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/c4/28/eb5731fb213e4938f36dc0bd4f933ebfd87921466d0f2edff52358a7e971/streamlit_chat_handler-0.1.0.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [streamlit-chat-handler]: executing diffoscope
+[2024-04-28 04:20:30] INFO root fetch - processPackages [streamlit-chat-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chat_handler-0.0.7.tar.gz tmp/streamlit_chat_handler-0.1.0.tar.gz --markdown 20240428/s/streamlit-chat-handler/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-04-28 04:20:30] INFO root fetch - processPackages [trace-attributes]: executing diffoscope
+[2024-04-28 04:20:30] INFO root fetch - processPackages [trace-attributes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trace_attributes-3.0.2.tar.gz tmp/trace_attributes-3.0.3.tar.gz --markdown 20240428/t/trace-attributes/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-04-28 04:20:30] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/10/72/8b63d98e6ffded617ac9f1ab7a6e44b723758458906d7f993a3fd4bd82e6/blastpipe-2024.2.4.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [orbitkit]: Downloading https://files.pythonhosted.org/packages/e0/3f/8dde0d2dd6c6925d71c1f829b559f1c1507654fd4c6243fd4475e62072cb/orbitkit-0.6.3.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 04:20:30] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.3.tar.gz tmp/blastpipe-2024.2.4.tar.gz --markdown 20240428/b/blastpipe/2024.2.3-2024.2.4/README.md --exclude *.pyd
+[2024-04-28 04:20:30] INFO root fetch - processPackages [example990420]: Downloading https://files.pythonhosted.org/packages/f9/60/4ab40530e6250da6de7fd9375f5fb595bce76d10492024fe53e44496ba84/example990420-1.1.0.tar.gz
+[2024-04-28 04:20:30] INFO root fetch - processPackages [orbitkit]: executing diffoscope
+[2024-04-28 04:20:30] INFO root fetch - processPackages [orbitkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orbitkit-0.6.2.tar.gz tmp/orbitkit-0.6.3.tar.gz --markdown 20240428/o/orbitkit/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-04-28 04:20:30] INFO root fetch - processPackages [example990420]: executing diffoscope
+[2024-04-28 04:20:30] INFO root fetch - processPackages [example990420]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example990420-0.0.7.tar.gz tmp/example990420-1.1.0.tar.gz --markdown 20240428/e/example990420/0.0.7-1.1.0/README.md --exclude *.pyd
+[2024-04-28 04:20:30] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.0.7.tar.gz]
+[2024-04-28 04:20:30] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.0.tar.gz]
+[2024-04-28 04:20:30] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
+[2024-04-28 04:20:30] INFO root fetch - processPackages [trace-attributes]: Remove: archive file [/home/abi/fetcher/tmp/trace_attributes-3.0.2.tar.gz]
+[2024-04-28 04:20:30] INFO root fetch - processPackages [trace-attributes]: Remove: archive file [/home/abi/fetcher/tmp/trace_attributes-3.0.3.tar.gz]
+[2024-04-28 04:20:30] INFO root fetch - main [MainThread]: End processing [trace-attributes]: success
+[2024-04-28 04:20:31] INFO root fetch - processPackages [orbitkit]: Remove: archive file [/home/abi/fetcher/tmp/orbitkit-0.6.2.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - processPackages [orbitkit]: Remove: archive file [/home/abi/fetcher/tmp/orbitkit-0.6.3.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - main [MainThread]: End processing [orbitkit]: success
+[2024-04-28 04:20:31] INFO root fetch - processPackages [example990420]: Remove: archive file [/home/abi/fetcher/tmp/example990420-0.0.7.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - processPackages [example990420]: Remove: archive file [/home/abi/fetcher/tmp/example990420-1.1.0.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - main [MainThread]: End processing [example990420]: success
+[2024-04-28 04:20:31] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.3.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.4.tar.gz]
+[2024-04-28 04:20:31] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 04:20:31] INFO root fetch - main [MainThread]: Store serial: [22963439]
