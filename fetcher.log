@@ -1305,3 +1305,33 @@
 [2024-04-28 01:58:01] WARNING root fetch - processPackages [django-user-sessions-ng]: Skipping, unable to determine old version
 [2024-04-28 01:58:01] INFO root fetch - main [MainThread]: End processing [django-user-sessions-ng] error
 [2024-04-28 01:58:01] INFO root fetch - main [MainThread]: Store serial: [22962780]
+[2024-04-28 02:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962780]
+[2024-04-28 02:00:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 02:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api-omie
+[2024-04-28 02:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EclipsingBinaries
+[2024-04-28 02:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: local-lang
+[2024-04-28 02:00:09] INFO root fetch - processPackages [local-lang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 02:00:09] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/0b/bd/a2a0d22a32607a459737b10d42acf78669c09e980c467b0b3525b8bc21e4/local_lang-0.0.8.tar.gz
+[2024-04-28 02:00:09] INFO root fetch - processPackages [api-omie]: New version: [0.3.8] Old Version: [0.3.12]
+[2024-04-28 02:00:09] INFO root fetch - processPackages [EclipsingBinaries]: New version: [4.1.3] Old Version: [4.1.2]
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: Downloading https://files.pythonhosted.org/packages/ca/dc/0b287032a38b3b1d758a762c75e291d3530c459308e600d6b3604398a7f4/api-omie-0.3.12.tar.gz
+[2024-04-28 02:00:10] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/ae/5e/bc48165e060c81f93c87f0e04a72ab717188cd25a02bb124308622eedc19/eclipsingbinaries-4.1.2.tar.gz
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: Downloading https://files.pythonhosted.org/packages/85/13/2c8b3998eaa12fb61aacaff36c021a918ffb8c06d0063096c8302cc05371/api_omie-0.3.8.tar.gz
+[2024-04-28 02:00:10] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/d4/0b/fff42c164c415db503bf3e1e6843c683bae157010851ba904d87332136ba/local_lang-0.0.9.tar.gz
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: executing diffoscope
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-omie-0.3.12.tar.gz tmp/api_omie-0.3.8.tar.gz --markdown 20240428/a/api-omie/0.3.12-0.3.8/README.md --exclude *.pyd
+[2024-04-28 02:00:10] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/fa/05/44687b21ceb1ea96c0088843706d97d5813b6988b061f3bb6a018ef39dfd/eclipsingbinaries-4.1.3.tar.gz
+[2024-04-28 02:00:10] INFO root fetch - processPackages [local-lang]: executing diffoscope
+[2024-04-28 02:00:10] INFO root fetch - processPackages [local-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_lang-0.0.8.tar.gz tmp/local_lang-0.0.9.tar.gz --markdown 20240428/l/local-lang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 02:00:10] INFO root fetch - processPackages [EclipsingBinaries]: executing diffoscope
+[2024-04-28 02:00:10] INFO root fetch - processPackages [EclipsingBinaries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eclipsingbinaries-4.1.2.tar.gz tmp/eclipsingbinaries-4.1.3.tar.gz --markdown 20240428/E/EclipsingBinaries/4.1.2-4.1.3/README.md --exclude *.pyd
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: Remove: archive file [/home/abi/fetcher/tmp/api-omie-0.3.12.tar.gz]
+[2024-04-28 02:00:10] INFO root fetch - processPackages [api-omie]: Remove: archive file [/home/abi/fetcher/tmp/api_omie-0.3.8.tar.gz]
+[2024-04-28 02:00:10] INFO root fetch - main [MainThread]: End processing [api-omie]: success
+[2024-04-28 02:00:11] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/eclipsingbinaries-4.1.2.tar.gz]
+[2024-04-28 02:00:11] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/eclipsingbinaries-4.1.3.tar.gz]
+[2024-04-28 02:00:11] INFO root fetch - main [MainThread]: End processing [EclipsingBinaries]: success
+[2024-04-28 02:00:12] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.8.tar.gz]
+[2024-04-28 02:00:12] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
+[2024-04-28 02:00:12] INFO root fetch - main [MainThread]: End processing [local-lang]: success
+[2024-04-28 02:00:12] INFO root fetch - main [MainThread]: Store serial: [22962785]
