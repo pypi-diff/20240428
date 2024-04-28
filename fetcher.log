@@ -8668,3 +8668,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:01:28] INFO root fetch - processPackages [cigvis]: Remove: archive file [/home/abi/fetcher/tmp/cigvis-0.0.5-py3-none-any.whl.zip]
 [2024-04-28 12:01:28] INFO root fetch - main [MainThread]: End processing [cigvis]: success
 [2024-04-28 12:01:28] INFO root fetch - main [MainThread]: Store serial: [22965853]
+[2024-04-28 12:03:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965853]
+[2024-04-28 12:03:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 12:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrnnoise
+[2024-04-28 12:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easylogger4dev-alpha
+[2024-04-28 12:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-copyist
+[2024-04-28 12:03:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-model-manager
+[2024-04-28 12:03:37] WARNING root fetch - processPackages [django-copyist]: Skipping, unable to determine old version
+[2024-04-28 12:03:37] INFO root fetch - main [MainThread]: End processing [django-copyist] error
+[2024-04-28 12:03:37] INFO root fetch - processPackages [torch-model-manager]: New version: [0.0.8.dev1] Old Version: [0.0.7]
+[2024-04-28 12:03:37] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/2c/ab/0cf52ff7a2370b04b213058147809db8df547a0a801414bd834998039e8f/torch_model_manager-0.0.7.tar.gz
+[2024-04-28 12:03:37] INFO root fetch - processPackages [pyrnnoise]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 12:03:37] WARNING root fetch - processPackages [easylogger4dev-alpha]: Skipping, unable to determine old version
+[2024-04-28 12:03:37] INFO root fetch - main [MainThread]: End processing [easylogger4dev-alpha] error
+[2024-04-28 12:03:37] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/60/1e/81fca2f22030cf2d8ac7078402b13f62df279b1d58a160741fefd91bc556/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl
+[2024-04-28 12:03:37] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/0a/d5/eaefd2c5ef4974d03b00da21f740ca8d5df2d96af2a56fef3364a9155868/torch_model_manager-0.0.8.dev1.tar.gz
+[2024-04-28 12:03:37] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-04-28 12:03:37] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.0.7.tar.gz tmp/torch_model_manager-0.0.8.dev1.tar.gz --markdown 20240428/t/torch-model-manager/0.0.7-0.0.8.dev1/README.md --exclude *.pyd
+[2024-04-28 12:03:37] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/6d/cc/fc7639c1f8892beae91f6283c2d646d866cc01b61e46fcc209feb0c6bf70/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl
+[2024-04-28 12:03:38] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.7.tar.gz]
+[2024-04-28 12:03:38] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.8.dev1.tar.gz]
+[2024-04-28 12:03:38] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-04-28 12:03:39] INFO root fetch - processPackages [pyrnnoise]: executing diffoscope
+[2024-04-28 12:03:39] INFO root fetch - processPackages [pyrnnoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl.zip tmp/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl.zip --markdown 20240428/p/pyrnnoise/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 12:03:39] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 12:03:39] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 12:03:39] INFO root fetch - main [MainThread]: End processing [pyrnnoise]: success
+[2024-04-28 12:03:39] INFO root fetch - main [MainThread]: Store serial: [22965868]
