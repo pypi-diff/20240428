@@ -4334,3 +4334,30 @@
 [2024-04-28 06:35:26] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.4.tar.gz]
 [2024-04-28 06:35:26] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
 [2024-04-28 06:35:26] INFO root fetch - main [MainThread]: Store serial: [22964000]
+[2024-04-28 06:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964000]
+[2024-04-28 06:37:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 06:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: send-email-zxx
+[2024-04-28 06:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oresat-configs
+[2024-04-28 06:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-common
+[2024-04-28 06:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cirbreak
+[2024-04-28 06:37:35] INFO root fetch - processPackages [oresat-configs]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-28 06:37:35] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.6.0] Old Version: [1.0.7.5.8]
+[2024-04-28 06:37:35] WARNING root fetch - processPackages [send-email-zxx]: Skipping, unable to determine old version
+[2024-04-28 06:37:35] INFO root fetch - main [MainThread]: End processing [send-email-zxx] error
+[2024-04-28 06:37:35] WARNING root fetch - processPackages [cirbreak]: Skipping, unable to determine old version
+[2024-04-28 06:37:35] INFO root fetch - main [MainThread]: End processing [cirbreak] error
+[2024-04-28 06:37:35] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/1b/b4/2b0131fd44478db400bf3095f54f6d8c289a2c6d0fe9291c5b7528beb646/mns_common-1.0.7.5.8.tar.gz
+[2024-04-28 06:37:35] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/9c/b3/a6667b08d26b764651df8dff299981bb5c528e45f4c9c61b961846a57ca8/oresat-configs-0.4.0.tar.gz
+[2024-04-28 06:37:35] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/d0/e1/50dfa083c218f6fefb9b9490c86daf9b7ce668f020d42c05e980e046e781/mns_common-1.0.7.6.0.tar.gz
+[2024-04-28 06:37:35] INFO root fetch - processPackages [oresat-configs]: Downloading https://files.pythonhosted.org/packages/13/ee/13497f0a138df46bd3e640a0a4f2c1e07d88ca652a0ac259bab04e2e000d/oresat_configs-0.5.0.tar.gz
+[2024-04-28 06:37:35] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-28 06:37:35] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.5.8.tar.gz tmp/mns_common-1.0.7.6.0.tar.gz --markdown 20240428/m/mns-common/1.0.7.5.8-1.0.7.6.0/README.md --exclude *.pyd
+[2024-04-28 06:37:35] INFO root fetch - processPackages [oresat-configs]: executing diffoscope
+[2024-04-28 06:37:35] INFO root fetch - processPackages [oresat-configs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat-configs-0.4.0.tar.gz tmp/oresat_configs-0.5.0.tar.gz --markdown 20240428/o/oresat-configs/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-28 06:37:36] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.8.tar.gz]
+[2024-04-28 06:37:36] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.0.tar.gz]
+[2024-04-28 06:37:36] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-28 06:37:36] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat-configs-0.4.0.tar.gz]
+[2024-04-28 06:37:36] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.5.0.tar.gz]
+[2024-04-28 06:37:36] INFO root fetch - main [MainThread]: End processing [oresat-configs]: success
+[2024-04-28 06:37:36] INFO root fetch - main [MainThread]: Store serial: [22964015]
