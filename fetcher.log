@@ -11152,3 +11152,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:00:10] INFO root fetch - processPackages [find-work]: Remove: archive file [/home/abi/fetcher/tmp/find_work-0.7.0.tar.gz]
 [2024-04-28 15:00:10] INFO root fetch - main [MainThread]: End processing [find-work]: success
 [2024-04-28 15:00:10] INFO root fetch - main [MainThread]: Store serial: [22966853]
+[2024-04-28 15:02:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966853]
+[2024-04-28 15:02:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zalabim
+[2024-04-28 15:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabqa
+[2024-04-28 15:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-28 15:02:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-28 15:02:26] INFO root fetch - processPackages [tabqa]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 15:02:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/96/c9/05ea3bb5e23d4a8fb0e96032b91f7b0bae031c333285c2c7e1e51e30e23c/nonebot-plugin-hx-yinying-1.1.2.tar.gz
+[2024-04-28 15:02:26] INFO root fetch - processPackages [zalabim]: New version: [24.1] Old Version: [24.0.3]
+[2024-04-28 15:02:26] INFO root fetch - processPackages [tabqa]: Downloading https://files.pythonhosted.org/packages/4a/ac/e7253f92f3784701be44c1eed0b1317a4a14c946c6d320364ef2e5c928ff/tabqa-0.1.0-py3-none-any.whl
+[2024-04-28 15:02:26] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/1b/00/bc6d6a15f271fd26e82f3ad1ac3fd2e577a250f23ec02816143c3b33bb4e/zalabim-24.0.3.tar.gz
+[2024-04-28 15:02:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/28/a1/b6028485c27b9d6ce07c7757898ba825e8dc96809f23fcff0ed9f3ce94d4/nonebot-plugin-hx-yinying-1.1.3.tar.gz
+[2024-04-28 15:02:26] INFO root fetch - processPackages [tabqa]: Downloading https://files.pythonhosted.org/packages/a4/8e/d376667458ae20dcf866aa908f13501f151be64586da2692a1a4f24687a8/tabqa-0.1.1.tar.gz
+[2024-04-28 15:02:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-28 15:02:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-1.1.2.tar.gz tmp/nonebot-plugin-hx-yinying-1.1.3.tar.gz --markdown 20240428/n/nonebot-plugin-hx-yinying/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-28 15:02:26] INFO root fetch - processPackages [tabqa]: executing diffoscope
+[2024-04-28 15:02:26] INFO root fetch - processPackages [tabqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabqa-0.1.0-py3-none-any.whl.zip tmp/tabqa-0.1.1.tar.gz --markdown 20240428/t/tabqa/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 15:02:26] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/14/7b/1606062cf823b4404db360d2aa3e6e69038c37f0d5800e4a0a23f5c2a2d2/zalabim-24.1.tar.gz
+[2024-04-28 15:02:26] INFO root fetch - processPackages [zalabim]: executing diffoscope
+[2024-04-28 15:02:26] INFO root fetch - processPackages [zalabim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zalabim-24.0.3.tar.gz tmp/zalabim-24.1.tar.gz --markdown 20240428/z/zalabim/24.0.3-24.1/README.md --exclude *.pyd
+[2024-04-28 15:02:27] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.2.tar.gz]
+[2024-04-28 15:02:27] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.3.tar.gz]
+[2024-04-28 15:02:27] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-28 15:02:27] INFO root fetch - processPackages [tabqa]: Remove: archive file [/home/abi/fetcher/tmp/tabqa-0.1.0-py3-none-any.whl.zip]
+[2024-04-28 15:02:27] INFO root fetch - processPackages [tabqa]: Remove: archive file [/home/abi/fetcher/tmp/tabqa-0.1.1.tar.gz]
+[2024-04-28 15:02:27] INFO root fetch - main [MainThread]: End processing [tabqa]: success
+[2024-04-28 15:02:28] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.0.3.tar.gz]
+[2024-04-28 15:02:28] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.tar.gz]
+[2024-04-28 15:02:28] INFO root fetch - main [MainThread]: End processing [zalabim]: success
+[2024-04-28 15:02:28] INFO root fetch - main [MainThread]: Store serial: [22966861]
