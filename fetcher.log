@@ -10721,3 +10721,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:30:30] INFO root fetch - processPackages [Fringes-GUI]: Remove: archive file [/home/abi/fetcher/tmp/fringes_gui-1.0.1.tar.gz]
 [2024-04-28 14:30:30] INFO root fetch - main [MainThread]: End processing [Fringes-GUI]: success
 [2024-04-28 14:30:30] INFO root fetch - main [MainThread]: Store serial: [22966691]
+[2024-04-28 14:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966691]
+[2024-04-28 14:32:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 14:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jumeaux
+[2024-04-28 14:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PieRakNet
+[2024-04-28 14:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: piraye
+[2024-04-28 14:32:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-template-generator
+[2024-04-28 14:32:46] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 14:32:46] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-04-28 14:32:46] INFO root fetch - processPackages [jumeaux]: New version: [5.0.0] Old Version: [4.1.0]
+[2024-04-28 14:32:46] INFO root fetch - processPackages [PieRakNet]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 14:32:46] INFO root fetch - processPackages [piraye]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-28 14:32:46] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/62/c2/c0e9ee3a9c82cb204c75026c5d6a6adb7e937504ed6ca7ad55a8c7933304/jumeaux-4.1.0-py3-none-any.whl
+[2024-04-28 14:32:46] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/47/2a/12d6f6fc93dcf36276c36fa5589a90480612aa77d56f3982801cdee542e4/piraye-0.5.1.tar.gz
+[2024-04-28 14:32:46] INFO root fetch - processPackages [PieRakNet]: Downloading https://files.pythonhosted.org/packages/42/b8/f5ef3d6216a174c09844538b14fd361bed886864d082a384c78691ea7e32/PieRakNet-1.0.6.tar.gz
+[2024-04-28 14:32:46] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/bc/8f/54b0344450311263d05e114a83006bad5a094c41b8a09c0329cb34adb92f/piraye-0.6.0.tar.gz
+[2024-04-28 14:32:46] INFO root fetch - processPackages [PieRakNet]: Downloading https://files.pythonhosted.org/packages/30/f1/e129dd4695bdb444125d2e9fb88f3eaca156f3aeec210f0e82d22da0b806/pieraknet-1.0.7.tar.gz
+[2024-04-28 14:32:47] INFO root fetch - processPackages [jumeaux]: Downloading https://files.pythonhosted.org/packages/bb/f4/fa641815279c9c8f698aeffb847fc8722439825fa4addd0d7f73cddf1f7b/jumeaux-5.0.0-py3-none-any.whl
+[2024-04-28 14:32:47] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-04-28 14:32:47] INFO root fetch - processPackages [piraye]: executing diffoscope
+[2024-04-28 14:32:47] INFO root fetch - processPackages [piraye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piraye-0.5.1.tar.gz tmp/piraye-0.6.0.tar.gz --markdown 20240428/p/piraye/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-28 14:32:47] INFO root fetch - processPackages [PieRakNet]: executing diffoscope
+[2024-04-28 14:32:47] INFO root fetch - processPackages [PieRakNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PieRakNet-1.0.6.tar.gz tmp/pieraknet-1.0.7.tar.gz --markdown 20240428/P/PieRakNet/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 14:32:47] INFO root fetch - processPackages [jumeaux]: executing diffoscope
+[2024-04-28 14:32:47] INFO root fetch - processPackages [jumeaux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumeaux-4.1.0-py3-none-any.whl.zip tmp/jumeaux-5.0.0-py3-none-any.whl.zip --markdown 20240428/j/jumeaux/4.1.0-5.0.0/README.md --exclude *.pyd
+[2024-04-28 14:32:47] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-04-28 14:32:47] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240428/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 14:32:47] INFO root fetch - processPackages [PieRakNet]: Remove: archive file [/home/abi/fetcher/tmp/PieRakNet-1.0.6.tar.gz]
+[2024-04-28 14:32:47] INFO root fetch - processPackages [PieRakNet]: Remove: archive file [/home/abi/fetcher/tmp/pieraknet-1.0.7.tar.gz]
+[2024-04-28 14:32:47] INFO root fetch - main [MainThread]: End processing [PieRakNet]: success
+[2024-04-28 14:32:47] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.5.1.tar.gz]
+[2024-04-28 14:32:47] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.6.0.tar.gz]
+[2024-04-28 14:32:47] INFO root fetch - main [MainThread]: End processing [piraye]: success
+[2024-04-28 14:32:48] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-4.1.0-py3-none-any.whl.zip]
+[2024-04-28 14:32:48] INFO root fetch - processPackages [jumeaux]: Remove: archive file [/home/abi/fetcher/tmp/jumeaux-5.0.0-py3-none-any.whl.zip]
+[2024-04-28 14:32:48] INFO root fetch - main [MainThread]: End processing [jumeaux]: success
+[2024-04-28 14:32:48] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-04-28 14:32:48] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-04-28 14:32:48] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-04-28 14:32:48] INFO root fetch - main [MainThread]: Store serial: [22966702]
