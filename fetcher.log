@@ -3069,3 +3069,26 @@
 [2024-04-28 04:30:09] INFO root fetch - processPackages [taibun]: Remove: archive file [/home/abi/fetcher/tmp/taibun-1.1.0.tar.gz]
 [2024-04-28 04:30:09] INFO root fetch - main [MainThread]: End processing [taibun]: success
 [2024-04-28 04:30:09] INFO root fetch - main [MainThread]: Store serial: [22963485]
+[2024-04-28 04:32:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963485]
+[2024-04-28 04:32:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 04:34:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963485]
+[2024-04-28 04:34:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 04:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: StringDataDeque
+[2024-04-28 04:34:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openaichatlib
+[2024-04-28 04:34:23] INFO root fetch - processPackages [StringDataDeque]: New version: [1.1.3] Old Version: [1.1.1]
+[2024-04-28 04:34:23] INFO root fetch - processPackages [openaichatlib]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 04:34:23] INFO root fetch - processPackages [openaichatlib]: Downloading https://files.pythonhosted.org/packages/1c/df/20c84829f90a3346e88ea948a6f9a22c2f010311613e7df2115ce1192a3a/openaichatlib-1.0.6.tar.gz
+[2024-04-28 04:34:23] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/07/8e/643a6476c2fae3533f155202edf274613f92fd78d56d9c61a5ce9d306858/stringdatadeque-1.1.1.tar.gz
+[2024-04-28 04:34:23] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/ca/bf/6ddd15055c757dfd87de8c46bc6560d93470351440440fd1888d66724e67/stringdatadeque-1.1.3.tar.gz
+[2024-04-28 04:34:23] INFO root fetch - processPackages [openaichatlib]: Downloading https://files.pythonhosted.org/packages/76/c7/f3a0be8469a279e0fbfecaaf1a8f6e8a672a8df29623d3825d4b06190f6a/openaichatlib-1.0.7.tar.gz
+[2024-04-28 04:34:23] INFO root fetch - processPackages [StringDataDeque]: executing diffoscope
+[2024-04-28 04:34:23] INFO root fetch - processPackages [StringDataDeque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringdatadeque-1.1.1.tar.gz tmp/stringdatadeque-1.1.3.tar.gz --markdown 20240428/S/StringDataDeque/1.1.1-1.1.3/README.md --exclude *.pyd
+[2024-04-28 04:34:23] INFO root fetch - processPackages [openaichatlib]: executing diffoscope
+[2024-04-28 04:34:23] INFO root fetch - processPackages [openaichatlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openaichatlib-1.0.6.tar.gz tmp/openaichatlib-1.0.7.tar.gz --markdown 20240428/o/openaichatlib/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 04:34:24] INFO root fetch - processPackages [openaichatlib]: Remove: archive file [/home/abi/fetcher/tmp/openaichatlib-1.0.6.tar.gz]
+[2024-04-28 04:34:24] INFO root fetch - processPackages [openaichatlib]: Remove: archive file [/home/abi/fetcher/tmp/openaichatlib-1.0.7.tar.gz]
+[2024-04-28 04:34:24] INFO root fetch - main [MainThread]: End processing [openaichatlib]: success
+[2024-04-28 04:34:24] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.1.1.tar.gz]
+[2024-04-28 04:34:24] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.1.3.tar.gz]
+[2024-04-28 04:34:24] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
+[2024-04-28 04:34:24] INFO root fetch - main [MainThread]: Store serial: [22963491]
