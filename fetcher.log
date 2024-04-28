@@ -14146,3 +14146,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:30:22] INFO root fetch - processPackages [py2hackCraft2]: Remove: archive file [/home/abi/fetcher/tmp/py2hackCraft2-1.0.9.tar.gz]
 [2024-04-28 18:30:22] INFO root fetch - main [MainThread]: End processing [py2hackCraft2]: success
 [2024-04-28 18:30:22] INFO root fetch - main [MainThread]: Store serial: [22968097]
+[2024-04-28 18:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968097]
+[2024-04-28 18:32:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 18:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolong
+[2024-04-28 18:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libretranslate
+[2024-04-28 18:32:31] INFO root fetch - processPackages [toolong]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-04-28 18:32:31] INFO root fetch - processPackages [libretranslate]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-04-28 18:32:31] INFO root fetch - processPackages [toolong]: Downloading https://files.pythonhosted.org/packages/1a/63/896be4418f18fb0354d712735bef21e4660f8885efdd7440945ca02c9085/toolong-1.4.0.tar.gz
+[2024-04-28 18:32:31] INFO root fetch - processPackages [libretranslate]: Downloading https://files.pythonhosted.org/packages/79/87/48666663d6603c138617381f78e3c5c0e529bc783f1ea3da22388578721f/libretranslate-1.5.6.tar.gz
+[2024-04-28 18:32:32] INFO root fetch - processPackages [toolong]: Downloading https://files.pythonhosted.org/packages/45/02/2a412839be723f58bd45c23c3fc89ea18c3bb76d5a3688c23c8e4f8c0734/toolong-1.5.0.tar.gz
+[2024-04-28 18:32:32] INFO root fetch - processPackages [toolong]: executing diffoscope
+[2024-04-28 18:32:32] INFO root fetch - processPackages [toolong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolong-1.4.0.tar.gz tmp/toolong-1.5.0.tar.gz --markdown 20240428/t/toolong/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-04-28 18:32:32] INFO root fetch - processPackages [libretranslate]: Downloading https://files.pythonhosted.org/packages/e8/7d/3a7b1d63bdf6fdf30ca5b6bed9c67ab469cb8396f67f8f73eaed9f06b965/libretranslate-1.5.7.tar.gz
+[2024-04-28 18:32:32] INFO root fetch - processPackages [libretranslate]: executing diffoscope
+[2024-04-28 18:32:32] INFO root fetch - processPackages [libretranslate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libretranslate-1.5.6.tar.gz tmp/libretranslate-1.5.7.tar.gz --markdown 20240428/l/libretranslate/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-04-28 18:32:32] INFO root fetch - processPackages [toolong]: Remove: archive file [/home/abi/fetcher/tmp/toolong-1.4.0.tar.gz]
+[2024-04-28 18:32:32] INFO root fetch - processPackages [toolong]: Remove: archive file [/home/abi/fetcher/tmp/toolong-1.5.0.tar.gz]
+[2024-04-28 18:32:32] INFO root fetch - main [MainThread]: End processing [toolong]: success
+[2024-04-28 18:32:33] INFO root fetch - processPackages [libretranslate]: Remove: archive file [/home/abi/fetcher/tmp/libretranslate-1.5.6.tar.gz]
+[2024-04-28 18:32:33] INFO root fetch - processPackages [libretranslate]: Remove: archive file [/home/abi/fetcher/tmp/libretranslate-1.5.7.tar.gz]
+[2024-04-28 18:32:33] INFO root fetch - main [MainThread]: End processing [libretranslate]: success
+[2024-04-28 18:32:33] INFO root fetch - main [MainThread]: Store serial: [22968110]
