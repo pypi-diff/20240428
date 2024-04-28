@@ -11620,3 +11620,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:27:47] INFO root fetch - processPackages [small-gicp]: Remove: archive file [/home/abi/fetcher/tmp/small_gicp-0.0.3.tar.gz]
 [2024-04-28 15:27:47] INFO root fetch - main [MainThread]: End processing [small-gicp]: success
 [2024-04-28 15:27:47] INFO root fetch - main [MainThread]: Store serial: [22967085]
+[2024-04-28 15:30:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967085]
+[2024-04-28 15:30:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 15:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-04-28 15:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dropletevapmodel
+[2024-04-28 15:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cardex
+[2024-04-28 15:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ragfmk
+[2024-04-28 15:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-simple-rate-limiter
+[2024-04-28 15:30:07] INFO root fetch - processPackages [cardex]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-04-28 15:30:07] INFO root fetch - processPackages [dropletevapmodel]: New version: [0.2.0] Old Version: [0.1]
+[2024-04-28 15:30:07] INFO root fetch - processPackages [mimllearning]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-28 15:30:07] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/96/6e/6c4d87215e2446a0ac9bc903860b173f9fc347eb73dc8e4a21a298670a00/cardex-0.2.0.dev8.tar.gz
+[2024-04-28 15:30:07] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 15:30:07] WARNING root fetch - processPackages [ragfmk]: Skipping, unable to determine old version
+[2024-04-28 15:30:07] INFO root fetch - main [MainThread]: End processing [ragfmk] error
+[2024-04-28 15:30:07] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/fa/cc/a4d579425500be7683f31fe27f344f043ce5ac81a5819413be3dc1183610/mimllearning-0.2.2.tar.gz
+[2024-04-28 15:30:07] INFO root fetch - processPackages [dropletevapmodel]: Downloading https://files.pythonhosted.org/packages/36/46/8ae22fc079c6342adde925e675acf1b8cb0bdae1116f2b0facb06d6e3ff4/dropletevapmodel-0.1.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/a5/f1/936319cd5a1e0862bc33edbce29c37659ee57c4782e76613d4ce0b406196/cardex-0.2.0.dev9.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Downloading https://files.pythonhosted.org/packages/f7/fc/d72dc66644be2a856b70736ff55b28add19e287c9930b74ce98b3fb3d38c/fastapi_simple_rate_limiter-0.0.2.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [dropletevapmodel]: Downloading https://files.pythonhosted.org/packages/a7/dd/ca97bc5eb04a93d1fc1d3cb35347cbf929232851a9efc6e88e5d353488b8/dropletevapmodel-0.2.0.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [cardex]: executing diffoscope
+[2024-04-28 15:30:08] INFO root fetch - processPackages [cardex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardex-0.2.0.dev8.tar.gz tmp/cardex-0.2.0.dev9.tar.gz --markdown 20240428/c/cardex/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-04-28 15:30:08] INFO root fetch - processPackages [dropletevapmodel]: executing diffoscope
+[2024-04-28 15:30:08] INFO root fetch - processPackages [dropletevapmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dropletevapmodel-0.1.tar.gz tmp/dropletevapmodel-0.2.0.tar.gz --markdown 20240428/d/dropletevapmodel/0.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 15:30:08] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d5/39/a2b69640130e8ae3f717f5d3836291da816f73fe6a226b44eb78d97ae379/mimllearning-0.2.3.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-04-28 15:30:08] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.2.tar.gz tmp/mimllearning-0.2.3.tar.gz --markdown 20240428/m/mimllearning/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-28 15:30:08] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Downloading https://files.pythonhosted.org/packages/34/d8/b072fb56835cf6f13548c148eb6a86f07b88bd0004015a24da99a96ef8a9/fastapi_simple_rate_limiter-0.0.3.tar.gz
+[2024-04-28 15:30:08] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: executing diffoscope
+[2024-04-28 15:30:08] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_simple_rate_limiter-0.0.2.tar.gz tmp/fastapi_simple_rate_limiter-0.0.3.tar.gz --markdown 20240428/f/fastapi-simple-rate-limiter/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 15:30:08] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev8.tar.gz]
+[2024-04-28 15:30:08] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev9.tar.gz]
+[2024-04-28 15:30:08] INFO root fetch - main [MainThread]: End processing [cardex]: success
+[2024-04-28 15:30:08] INFO root fetch - processPackages [dropletevapmodel]: Remove: archive file [/home/abi/fetcher/tmp/dropletevapmodel-0.1.tar.gz]
+[2024-04-28 15:30:08] INFO root fetch - processPackages [dropletevapmodel]: Remove: archive file [/home/abi/fetcher/tmp/dropletevapmodel-0.2.0.tar.gz]
+[2024-04-28 15:30:08] INFO root fetch - main [MainThread]: End processing [dropletevapmodel]: success
+[2024-04-28 15:30:09] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.2.tar.gz]
+[2024-04-28 15:30:09] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.3.tar.gz]
+[2024-04-28 15:30:09] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-04-28 15:30:09] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_rate_limiter-0.0.2.tar.gz]
+[2024-04-28 15:30:09] INFO root fetch - processPackages [fastapi-simple-rate-limiter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_simple_rate_limiter-0.0.3.tar.gz]
+[2024-04-28 15:30:09] INFO root fetch - main [MainThread]: End processing [fastapi-simple-rate-limiter]: success
+[2024-04-28 15:30:09] INFO root fetch - main [MainThread]: Store serial: [22967101]
