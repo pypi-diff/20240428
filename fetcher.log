@@ -3762,3 +3762,26 @@
 [2024-04-28 05:54:07] WARNING root fetch - processPackages [skillpacks]: Skipping, unable to determine old version
 [2024-04-28 05:54:07] INFO root fetch - main [MainThread]: End processing [skillpacks] error
 [2024-04-28 05:54:07] INFO root fetch - main [MainThread]: Store serial: [22963806]
+[2024-04-28 05:56:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963806]
+[2024-04-28 05:56:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 05:58:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963806]
+[2024-04-28 05:58:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudacious-iac
+[2024-04-28 05:58:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oscb
+[2024-04-28 05:58:21] INFO root fetch - processPackages [oscb]: New version: [1.0.6] Old Version: [1.0.0]
+[2024-04-28 05:58:21] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/fe/fa/c250412e98a4f81d1177231c97284ca0c35fd5b499cb26b554c172288e33/oscb-1.0.0.tar.gz
+[2024-04-28 05:58:21] INFO root fetch - processPackages [cloudacious-iac]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 05:58:21] INFO root fetch - processPackages [cloudacious-iac]: Downloading https://files.pythonhosted.org/packages/8a/5a/7f9749a06e21a282d27e2676f9bfb8b8b27ef947966f88bbb476f00819cd/cloudacious_iac-0.0.1.tar.gz
+[2024-04-28 05:58:21] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/47/13/aa7173787979e139a49b99ac015ec8cdcec5dd440f3d31b9c88bb824016b/oscb-1.0.6.tar.gz
+[2024-04-28 05:58:21] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 05:58:21] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.0.tar.gz tmp/oscb-1.0.6.tar.gz --markdown 20240428/o/oscb/1.0.0-1.0.6/README.md --exclude *.pyd
+[2024-04-28 05:58:21] INFO root fetch - processPackages [cloudacious-iac]: Downloading https://files.pythonhosted.org/packages/cc/9d/a0376157e3993472b3e9a971d163dc147240f9e7b465c52bed8427f1333d/cloudacious_iac-0.0.2.tar.gz
+[2024-04-28 05:58:21] INFO root fetch - processPackages [cloudacious-iac]: executing diffoscope
+[2024-04-28 05:58:21] INFO root fetch - processPackages [cloudacious-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudacious_iac-0.0.1.tar.gz tmp/cloudacious_iac-0.0.2.tar.gz --markdown 20240428/c/cloudacious-iac/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 05:58:22] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.0.tar.gz]
+[2024-04-28 05:58:22] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.6.tar.gz]
+[2024-04-28 05:58:22] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 05:58:22] INFO root fetch - processPackages [cloudacious-iac]: Remove: archive file [/home/abi/fetcher/tmp/cloudacious_iac-0.0.1.tar.gz]
+[2024-04-28 05:58:22] INFO root fetch - processPackages [cloudacious-iac]: Remove: archive file [/home/abi/fetcher/tmp/cloudacious_iac-0.0.2.tar.gz]
+[2024-04-28 05:58:22] INFO root fetch - main [MainThread]: End processing [cloudacious-iac]: success
+[2024-04-28 05:58:22] INFO root fetch - main [MainThread]: Store serial: [22963812]
