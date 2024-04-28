@@ -13735,3 +13735,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:03:53] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.6.tar.gz]
 [2024-04-28 18:03:53] INFO root fetch - main [MainThread]: End processing [amino.light.py]: success
 [2024-04-28 18:03:53] INFO root fetch - main [MainThread]: Store serial: [22967924]
+[2024-04-28 18:05:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967924]
+[2024-04-28 18:06:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 18:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocoon-data
+[2024-04-28 18:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-04-28 18:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jetline
+[2024-04-28 18:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyDolarVenezuela
+[2024-04-28 18:06:03] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:06:03] INFO root fetch - processPackages [pyDolarVenezuela]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-28 18:06:03] INFO root fetch - processPackages [scatcluster]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 18:06:03] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [jetline]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 18:06:03] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/22/1b/792008ebced610d66fa5169ba1de17b91a79b177aa36ed2cfec822c55cad/scatcluster-0.0.2.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/6a/8c/eed7d4cc410828ece6a710522f0d1b198de53a3a1331c5d997cecb251479/jetline-0.1.4.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/bb/7e/fde059e1116aed024aca41235f80006a94ddfeca064d11d9b2d57bb0e447/pydolarvenezuela-1.5.0.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-28 18:06:03] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240428/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:06:03] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/a0/0b/0e2e5c0e0d293236f22ff643aa6f572e49f8f3b51c39529b5047e286cd82/scatcluster-0.0.3.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/d8/36/8b8a5fbad16439ced56b2f30e124f242dcdf00e6b2d25e7434b1f68d570a/jetline-0.1.5.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [pyDolarVenezuela]: Downloading https://files.pythonhosted.org/packages/2e/4a/33cb223a99743003f369e1f816bb4f828547d4bc786a5356db750633a7b3/pydolarvenezuela-1.5.1.tar.gz
+[2024-04-28 18:06:03] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 18:06:03] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.2.tar.gz tmp/scatcluster-0.0.3.tar.gz --markdown 20240428/s/scatcluster/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 18:06:04] INFO root fetch - processPackages [pyDolarVenezuela]: executing diffoscope
+[2024-04-28 18:06:04] INFO root fetch - processPackages [pyDolarVenezuela]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydolarvenezuela-1.5.0.tar.gz tmp/pydolarvenezuela-1.5.1.tar.gz --markdown 20240428/p/pyDolarVenezuela/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-04-28 18:06:04] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:06:04] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.4.tar.gz tmp/jetline-0.1.5.tar.gz --markdown 20240428/j/jetline/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 18:06:04] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-28 18:06:04] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.2.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.3.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 18:06:04] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.4.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.5.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:06:04] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.0.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - processPackages [pyDolarVenezuela]: Remove: archive file [/home/abi/fetcher/tmp/pydolarvenezuela-1.5.1.tar.gz]
+[2024-04-28 18:06:04] INFO root fetch - main [MainThread]: End processing [pyDolarVenezuela]: success
+[2024-04-28 18:06:04] INFO root fetch - main [MainThread]: Store serial: [22967936]
