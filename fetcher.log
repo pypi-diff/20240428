@@ -11542,3 +11542,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:25:27] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-28 15:25:27] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-28 15:25:27] INFO root fetch - main [MainThread]: Store serial: [22967058]
+[2024-04-28 15:27:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967058]
+[2024-04-28 15:27:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langevals-core
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zundler
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langevals-aws
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: compile-api
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langevals-azure
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langevals-custom
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langevals-example
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: langevals-google-cloud
+[2024-04-28 15:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: small-gicp
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-core]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-core]: Downloading https://files.pythonhosted.org/packages/ac/ed/72a23284761bf7d45f22ad6a4bbb03de88bdb330fcd0cdcb335576706469/langevals_core-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [zundler]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-aws]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-example]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-azure]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 15:27:44] WARNING root fetch - processPackages [compile-api]: Skipping, unable to determine old version
+[2024-04-28 15:27:44] INFO root fetch - main [MainThread]: End processing [compile-api] error
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-google-cloud]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [small-gicp]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-custom]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-aws]: Downloading https://files.pythonhosted.org/packages/1c/72/12aa5da110c52186a9b7a8538f06bc48c66f1e27ce79eceb9d860cc02a53/langevals_aws-0.1.0.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-core]: Downloading https://files.pythonhosted.org/packages/0d/10/cd24ab8359a1031b5faadf8b864a7f03a1c623fc620986c4c3e24b81de85/langevals_core-0.1.2.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-example]: Downloading https://files.pythonhosted.org/packages/c3/00/93027ff1de6571822eb83e73871d3d00f2fb5d015dadafc0c5044b38f6e3/langevals_example-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [zundler]: Downloading https://files.pythonhosted.org/packages/03/c6/c532546b182e5ecf6e952587e27061f97280adae4f29adb82f03e2e54b27/zundler-0.0.0.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [small-gicp]: Downloading https://files.pythonhosted.org/packages/90/40/eca4abdb7e194504ed25e889455830e96265f9b6f1d16edbf846592e04d2/small_gicp-0.0.2-cp310-cp310-manylinux_2_35_x86_64.whl
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-azure]: Downloading https://files.pythonhosted.org/packages/a5/a1/4118bf2fd370529d38bb6f1456a2805020ecdc698c1f5623edc854422c9c/langevals_azure-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-custom]: Downloading https://files.pythonhosted.org/packages/2c/44/a24fb13ccb862fdf54bff0afc316cb6206735113013d92bccae5f9ad0997/langevals_custom-0.1.0.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-google-cloud]: Downloading https://files.pythonhosted.org/packages/c2/60/5217a1386a439149a6a5ce44b6f66d4627869e77e3e864af18074d7e47b7/langevals_google_cloud-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-core]: executing diffoscope
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_core-0.1.1.tar.gz tmp/langevals_core-0.1.2.tar.gz --markdown 20240428/l/langevals-core/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-aws]: Downloading https://files.pythonhosted.org/packages/bd/2e/80300c16dbd53f2afba36017fbcc897aad3b878d203aee28293e0b7ad793/langevals_aws-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-example]: Downloading https://files.pythonhosted.org/packages/f9/ae/aa3d730a17ed7e2f23812c19001a40851bbb299a77f019d6038285c2cf28/langevals_example-0.1.2.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-custom]: Downloading https://files.pythonhosted.org/packages/6d/f6/98dd43a78f621bca95fa2ddd268ec09b293fded73d31664b1681aa5b3a1d/langevals_custom-0.1.1.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-google-cloud]: Downloading https://files.pythonhosted.org/packages/32/31/e6aea0c4a8738fa02d65e2ea812ec7db888ddc7389dc3bc2e3fde7b1b941/langevals_google_cloud-0.1.2.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [zundler]: Downloading https://files.pythonhosted.org/packages/0e/cc/666876b9241a5b4225cd60b43deb09af396f2bdea721d694e1a7c861114f/zundler-0.1.0.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [small-gicp]: Downloading https://files.pythonhosted.org/packages/db/ad/4da91037656c73e3df2283959b136faee9520b23aa8d11497bfe7d9a6856/small_gicp-0.0.3.tar.gz
+[2024-04-28 15:27:44] INFO root fetch - processPackages [langevals-azure]: Downloading https://files.pythonhosted.org/packages/6b/07/d8f7c0f9d5614a747cb4029c3903a072de07a3d2a3f0c6059521b4c5cf6f/langevals_azure-0.1.2.tar.gz
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-example]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-example]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_example-0.1.1.tar.gz tmp/langevals_example-0.1.2.tar.gz --markdown 20240428/l/langevals-example/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-google-cloud]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-google-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_google_cloud-0.1.1.tar.gz tmp/langevals_google_cloud-0.1.2.tar.gz --markdown 20240428/l/langevals-google-cloud/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-aws]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_aws-0.1.0.tar.gz tmp/langevals_aws-0.1.1.tar.gz --markdown 20240428/l/langevals-aws/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-azure]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_azure-0.1.1.tar.gz tmp/langevals_azure-0.1.2.tar.gz --markdown 20240428/l/langevals-azure/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [zundler]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [zundler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zundler-0.0.0.tar.gz tmp/zundler-0.1.0.tar.gz --markdown 20240428/z/zundler/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-custom]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-custom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_custom-0.1.0.tar.gz tmp/langevals_custom-0.1.1.tar.gz --markdown 20240428/l/langevals-custom/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-core]: Remove: archive file [/home/abi/fetcher/tmp/langevals_core-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-core]: Remove: archive file [/home/abi/fetcher/tmp/langevals_core-0.1.2.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-core]: success
+[2024-04-28 15:27:45] INFO root fetch - processPackages [small-gicp]: executing diffoscope
+[2024-04-28 15:27:45] INFO root fetch - processPackages [small-gicp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/small_gicp-0.0.2-cp310-cp310-manylinux_2_35_x86_64.whl.zip tmp/small_gicp-0.0.3.tar.gz --markdown 20240428/s/small-gicp/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-aws]: Remove: archive file [/home/abi/fetcher/tmp/langevals_aws-0.1.0.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-aws]: Remove: archive file [/home/abi/fetcher/tmp/langevals_aws-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-aws]: success
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-google-cloud]: Remove: archive file [/home/abi/fetcher/tmp/langevals_google_cloud-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-google-cloud]: Remove: archive file [/home/abi/fetcher/tmp/langevals_google_cloud-0.1.2.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-google-cloud]: success
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-example]: Remove: archive file [/home/abi/fetcher/tmp/langevals_example-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-example]: Remove: archive file [/home/abi/fetcher/tmp/langevals_example-0.1.2.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-example]: success
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-custom]: Remove: archive file [/home/abi/fetcher/tmp/langevals_custom-0.1.0.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-custom]: Remove: archive file [/home/abi/fetcher/tmp/langevals_custom-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-custom]: success
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-azure]: Remove: archive file [/home/abi/fetcher/tmp/langevals_azure-0.1.1.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - processPackages [langevals-azure]: Remove: archive file [/home/abi/fetcher/tmp/langevals_azure-0.1.2.tar.gz]
+[2024-04-28 15:27:45] INFO root fetch - main [MainThread]: End processing [langevals-azure]: success
+[2024-04-28 15:27:46] INFO root fetch - processPackages [zundler]: Remove: archive file [/home/abi/fetcher/tmp/zundler-0.0.0.tar.gz]
+[2024-04-28 15:27:46] INFO root fetch - processPackages [zundler]: Remove: archive file [/home/abi/fetcher/tmp/zundler-0.1.0.tar.gz]
+[2024-04-28 15:27:46] INFO root fetch - main [MainThread]: End processing [zundler]: success
+[2024-04-28 15:27:47] INFO root fetch - processPackages [small-gicp]: Remove: archive file [/home/abi/fetcher/tmp/small_gicp-0.0.2-cp310-cp310-manylinux_2_35_x86_64.whl.zip]
+[2024-04-28 15:27:47] INFO root fetch - processPackages [small-gicp]: Remove: archive file [/home/abi/fetcher/tmp/small_gicp-0.0.3.tar.gz]
+[2024-04-28 15:27:47] INFO root fetch - main [MainThread]: End processing [small-gicp]: success
+[2024-04-28 15:27:47] INFO root fetch - main [MainThread]: Store serial: [22967085]
