@@ -4772,3 +4772,33 @@
 [2024-04-28 07:14:27] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.4.tar.gz]
 [2024-04-28 07:14:27] INFO root fetch - main [MainThread]: End processing [ex-cd]: success
 [2024-04-28 07:14:27] INFO root fetch - main [MainThread]: Store serial: [22964206]
+[2024-04-28 07:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964206]
+[2024-04-28 07:16:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: url-remote
+[2024-04-28 07:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jz3
+[2024-04-28 07:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cxalio-studio-tools
+[2024-04-28 07:16:35] INFO root fetch - processPackages [url-remote]: New version: [0.0.85] Old Version: [0.0.84]
+[2024-04-28 07:16:35] INFO root fetch - processPackages [cxalio-studio-tools]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 07:16:35] INFO root fetch - processPackages [jz3]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 07:16:35] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/5e/52/6a80bd47037ed9051a978334899cf0ec5bcc88bd42d050493985e06b11e1/url_remote-0.0.84.tar.gz
+[2024-04-28 07:16:35] INFO root fetch - processPackages [jz3]: Downloading https://files.pythonhosted.org/packages/49/0d/531d858c8336a625183f8135102acebd22773d97612a951922bc231c3d7b/jz3-0.1.3.tar.gz
+[2024-04-28 07:16:35] INFO root fetch - processPackages [cxalio-studio-tools]: Downloading https://files.pythonhosted.org/packages/5f/60/7546855a4e4518c7a60abf77232acb51e6676a848ca8560770cfd4bdfa6a/cxalio_studio_tools-0.1.7.tar.gz
+[2024-04-28 07:16:36] INFO root fetch - processPackages [url-remote]: Downloading https://files.pythonhosted.org/packages/2d/a3/ec05dd63ee98bce178c5eebeb3e209675a5e68b5af97c0529afa91fab3c9/url_remote-0.0.85.tar.gz
+[2024-04-28 07:16:36] INFO root fetch - processPackages [cxalio-studio-tools]: Downloading https://files.pythonhosted.org/packages/66/b5/40e237aaad7799ed298d175b5e7a69e7eaca0e934dd1e19551c531d43e9e/cxalio_studio_tools-0.1.8.tar.gz
+[2024-04-28 07:16:36] INFO root fetch - processPackages [jz3]: Downloading https://files.pythonhosted.org/packages/ac/40/03e47a0eaf842291053073ea1f668001f10eb2bbb0229e77d9f2f0bb0038/jz3-0.1.4.tar.gz
+[2024-04-28 07:16:36] INFO root fetch - processPackages [url-remote]: executing diffoscope
+[2024-04-28 07:16:36] INFO root fetch - processPackages [url-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/url_remote-0.0.84.tar.gz tmp/url_remote-0.0.85.tar.gz --markdown 20240428/u/url-remote/0.0.84-0.0.85/README.md --exclude *.pyd
+[2024-04-28 07:16:36] INFO root fetch - processPackages [cxalio-studio-tools]: executing diffoscope
+[2024-04-28 07:16:36] INFO root fetch - processPackages [cxalio-studio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxalio_studio_tools-0.1.7.tar.gz tmp/cxalio_studio_tools-0.1.8.tar.gz --markdown 20240428/c/cxalio-studio-tools/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 07:16:36] INFO root fetch - processPackages [jz3]: executing diffoscope
+[2024-04-28 07:16:36] INFO root fetch - processPackages [jz3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jz3-0.1.3.tar.gz tmp/jz3-0.1.4.tar.gz --markdown 20240428/j/jz3/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 07:16:36] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.84.tar.gz]
+[2024-04-28 07:16:36] INFO root fetch - processPackages [url-remote]: Remove: archive file [/home/abi/fetcher/tmp/url_remote-0.0.85.tar.gz]
+[2024-04-28 07:16:36] INFO root fetch - main [MainThread]: End processing [url-remote]: success
+[2024-04-28 07:16:36] INFO root fetch - processPackages [cxalio-studio-tools]: Remove: archive file [/home/abi/fetcher/tmp/cxalio_studio_tools-0.1.7.tar.gz]
+[2024-04-28 07:16:36] INFO root fetch - processPackages [cxalio-studio-tools]: Remove: archive file [/home/abi/fetcher/tmp/cxalio_studio_tools-0.1.8.tar.gz]
+[2024-04-28 07:16:36] INFO root fetch - main [MainThread]: End processing [cxalio-studio-tools]: success
+[2024-04-28 07:16:37] INFO root fetch - processPackages [jz3]: Remove: archive file [/home/abi/fetcher/tmp/jz3-0.1.3.tar.gz]
+[2024-04-28 07:16:37] INFO root fetch - processPackages [jz3]: Remove: archive file [/home/abi/fetcher/tmp/jz3-0.1.4.tar.gz]
+[2024-04-28 07:16:37] INFO root fetch - main [MainThread]: End processing [jz3]: success
+[2024-04-28 07:16:37] INFO root fetch - main [MainThread]: Store serial: [22964215]
