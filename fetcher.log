@@ -1446,3 +1446,36 @@
 [2024-04-28 02:06:46] INFO root fetch - processPackages [sphinx-gallery]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-gallery-0.9.0.tar.gz]
 [2024-04-28 02:06:46] INFO root fetch - main [MainThread]: End processing [sphinx-gallery]: success
 [2024-04-28 02:06:46] INFO root fetch - main [MainThread]: Store serial: [22962820]
+[2024-04-28 02:08:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962820]
+[2024-04-28 02:08:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxutils-nightly
+[2024-04-28 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mixvideoconcat
+[2024-04-28 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deovi
+[2024-04-28 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-user-sessions-ng
+[2024-04-28 02:08:55] WARNING root fetch - processPackages [django-user-sessions-ng]: Skipping, unable to determine old version
+[2024-04-28 02:08:55] INFO root fetch - main [MainThread]: End processing [django-user-sessions-ng] error
+[2024-04-28 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240427] Old Version: [0.0.8.dev20240426]
+[2024-04-28 02:08:55] INFO root fetch - processPackages [deovi]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-28 02:08:55] INFO root fetch - processPackages [mixvideoconcat]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/f9/0c/eb857144771afd122b5ae84ed23fddc5b8748ee149b06098a72c34ba6514/jaxutils-nightly-0.0.8.dev20240426.tar.gz
+[2024-04-28 02:08:55] INFO root fetch - processPackages [deovi]: Downloading https://files.pythonhosted.org/packages/9a/42/4540ab7c516fa99817b10cc3d57232d1a0efc4fb92858b218a7e27e48d53/deovi-0.6.1.tar.gz
+[2024-04-28 02:08:55] INFO root fetch - processPackages [mixvideoconcat]: Downloading https://files.pythonhosted.org/packages/2b/41/be9d867e378ffa68ee87f70e964cb9fb1f5e830c3e47749a0829a5f49281/mixvideoconcat-1.0.0.tar.gz
+[2024-04-28 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/3e/19/87a86a6088f7c459d0cc250012c760d60f5f19184756c864ca2d0cf95b41/jaxutils-nightly-0.0.8.dev20240427.tar.gz
+[2024-04-28 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-04-28 02:08:55] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240426.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240427.tar.gz --markdown 20240428/j/jaxutils-nightly/0.0.8.dev20240426-0.0.8.dev20240427/README.md --exclude *.pyd
+[2024-04-28 02:08:56] INFO root fetch - processPackages [deovi]: Downloading https://files.pythonhosted.org/packages/64/66/18087b9b9baf4accaa9943daae3dc0df3da8ad2246df0d198a1017152d91/deovi-0.7.0.tar.gz
+[2024-04-28 02:08:56] INFO root fetch - processPackages [mixvideoconcat]: Downloading https://files.pythonhosted.org/packages/67/16/a01fd1c9d2f9b9716f38454ba5e07867cc927ed15d7c099cc28aa7de7769/mixvideoconcat-1.1.0.tar.gz
+[2024-04-28 02:08:56] INFO root fetch - processPackages [deovi]: executing diffoscope
+[2024-04-28 02:08:56] INFO root fetch - processPackages [deovi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deovi-0.6.1.tar.gz tmp/deovi-0.7.0.tar.gz --markdown 20240428/d/deovi/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-28 02:08:56] INFO root fetch - processPackages [mixvideoconcat]: executing diffoscope
+[2024-04-28 02:08:56] INFO root fetch - processPackages [mixvideoconcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixvideoconcat-1.0.0.tar.gz tmp/mixvideoconcat-1.1.0.tar.gz --markdown 20240428/m/mixvideoconcat/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 02:08:56] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240426.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240427.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-04-28 02:08:56] INFO root fetch - processPackages [mixvideoconcat]: Remove: archive file [/home/abi/fetcher/tmp/mixvideoconcat-1.0.0.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - processPackages [mixvideoconcat]: Remove: archive file [/home/abi/fetcher/tmp/mixvideoconcat-1.1.0.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - main [MainThread]: End processing [mixvideoconcat]: success
+[2024-04-28 02:08:56] INFO root fetch - processPackages [deovi]: Remove: archive file [/home/abi/fetcher/tmp/deovi-0.6.1.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - processPackages [deovi]: Remove: archive file [/home/abi/fetcher/tmp/deovi-0.7.0.tar.gz]
+[2024-04-28 02:08:56] INFO root fetch - main [MainThread]: End processing [deovi]: success
+[2024-04-28 02:08:56] INFO root fetch - main [MainThread]: Store serial: [22962831]
