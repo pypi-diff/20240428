@@ -15522,3 +15522,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:02:56] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a202-py3-none-any.whl.zip]
 [2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [simplebox]: success
 [2024-04-28 20:02:56] INFO root fetch - main [MainThread]: Store serial: [22968673]
+[2024-04-28 20:05:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968673]
+[2024-04-28 20:05:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 20:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cabinet
+[2024-04-28 20:05:04] INFO root fetch - processPackages [cabinet]: New version: [2024.4.28.1] Old Version: [2024.4.27.1]
+[2024-04-28 20:05:04] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/9d/02/63eb734faaec5c70264e68f72b47ef00674fb6fe0dc6d78d2619fb1c92ca/cabinet-2024.4.27.1.tar.gz
+[2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/5e/65/1e217c1b4ffa6e9da90b149da765e074f7f2f1f2d5f083f91f52b9640c72/cabinet-2024.4.28.1.tar.gz
+[2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2024.4.27.1.tar.gz tmp/cabinet-2024.4.28.1.tar.gz --markdown 20240428/c/cabinet/2024.4.27.1-2024.4.28.1/README.md --exclude *.pyd
+[2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.27.1.tar.gz]
+[2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.28.1.tar.gz]
+[2024-04-28 20:05:05] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2024-04-28 20:05:05] INFO root fetch - main [MainThread]: Store serial: [22968687]
