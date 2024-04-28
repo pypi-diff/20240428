@@ -15018,3 +15018,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:29:21] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.9.tar.gz]
 [2024-04-28 19:29:21] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-04-28 19:29:21] INFO root fetch - main [MainThread]: Store serial: [22968450]
+[2024-04-28 19:31:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968450]
+[2024-04-28 19:31:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 19:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-tpu
+[2024-04-28 19:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-28 19:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sling-linux-amd64
+[2024-04-28 19:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sling-linux-arm64
+[2024-04-28 19:31:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pctheory
+[2024-04-28 19:31:30] INFO root fetch - processPackages [sling-linux-arm64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:31:30] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240428] Old Version: [2.17.0.dev20240427]
+[2024-04-28 19:31:30] INFO root fetch - processPackages [sling-linux-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:31:30] INFO root fetch - processPackages [pctheory]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 19:31:30] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-28 19:31:30] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-28 19:31:30] INFO root fetch - processPackages [sling-linux-arm64]: Downloading https://files.pythonhosted.org/packages/b8/47/09950e394d4b27939a22faa5960c386e779e5020c3da14522c43baa6fc32/sling-linux-arm64-1.2.6.tar.gz
+[2024-04-28 19:31:30] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/e9/56/073d98fd4c87ddaf32d4ad50c9df53117224658f59333b7f8b801f2b5c84/tf_nightly_tpu-2.17.0.dev20240427-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-28 19:31:30] INFO root fetch - processPackages [sling-linux-amd64]: Downloading https://files.pythonhosted.org/packages/73/e2/af36d4d00bf02e2e7dbcbd5b5ba0e52151c2958221bcfbd13b5bd070f878/sling-linux-amd64-1.2.6.tar.gz
+[2024-04-28 19:31:30] INFO root fetch - processPackages [pctheory]: Downloading https://files.pythonhosted.org/packages/e2/d1/4f7712eb3fa2e1701efe7559f82d735bf2d43ae34d56e95fc4055a030775/pctheory-0.0.8.tar.gz
+[2024-04-28 19:31:30] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219809889>=10485760
+[2024-04-28 19:31:30] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-28 19:31:30] WARNING root fetch - processPackages [sling-linux-amd64]: Skipping package: exceeds size limit 49118064>=10485760
+[2024-04-28 19:31:30] INFO root fetch - main [MainThread]: End processing [sling-linux-amd64] error
+[2024-04-28 19:31:30] WARNING root fetch - processPackages [sling-linux-arm64]: Skipping package: exceeds size limit 45847624>=10485760
+[2024-04-28 19:31:30] INFO root fetch - main [MainThread]: End processing [sling-linux-arm64] error
+[2024-04-28 19:31:30] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-28 19:31:30] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-28 19:31:30] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240428/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-28 19:31:30] INFO root fetch - processPackages [pctheory]: Downloading https://files.pythonhosted.org/packages/81/6d/6d46189828226a5b7201f302dc106a38b2a2bf67c2fa201afc32f80463c7/pctheory-0.0.9.tar.gz
+[2024-04-28 19:31:30] INFO root fetch - processPackages [pctheory]: executing diffoscope
+[2024-04-28 19:31:30] INFO root fetch - processPackages [pctheory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pctheory-0.0.8.tar.gz tmp/pctheory-0.0.9.tar.gz --markdown 20240428/p/pctheory/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 19:31:31] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-28 19:31:31] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-28 19:31:31] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-28 19:34:31] ERROR root fetch - processPackages [pctheory]: Timeout during execution of pkgdiff
+[2024-04-28 19:34:31] INFO root fetch - main [MainThread]: End processing [pctheory] error
+[2024-04-28 19:34:31] INFO root fetch - main [MainThread]: Store serial: [22968473]
