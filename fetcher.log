@@ -14119,3 +14119,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:26:01] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
 [2024-04-28 18:26:01] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
 [2024-04-28 18:26:01] INFO root fetch - main [MainThread]: Store serial: [22968078]
+[2024-04-28 18:28:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968078]
+[2024-04-28 18:28:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 18:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbkit
+[2024-04-28 18:28:10] INFO root fetch - processPackages [lbkit]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-28 18:28:10] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/c5/0d/1c34547bdba655e9d78a181e2ab2b654c2b103a24cc5ad42c32b35fa9789/lbkit-0.5.6.tar.gz
+[2024-04-28 18:28:10] INFO root fetch - processPackages [lbkit]: Downloading https://files.pythonhosted.org/packages/b9/3d/cebb907fed80cf37ee76b9e16edff2554e506e2e0e06019f5dd7e4f60a6c/lbkit-0.5.7.tar.gz
+[2024-04-28 18:28:11] INFO root fetch - processPackages [lbkit]: executing diffoscope
+[2024-04-28 18:28:11] INFO root fetch - processPackages [lbkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbkit-0.5.6.tar.gz tmp/lbkit-0.5.7.tar.gz --markdown 20240428/l/lbkit/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-28 18:28:11] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.6.tar.gz]
+[2024-04-28 18:28:11] INFO root fetch - processPackages [lbkit]: Remove: archive file [/home/abi/fetcher/tmp/lbkit-0.5.7.tar.gz]
+[2024-04-28 18:28:11] INFO root fetch - main [MainThread]: End processing [lbkit]: success
+[2024-04-28 18:28:11] INFO root fetch - main [MainThread]: Store serial: [22968088]
