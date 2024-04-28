@@ -11301,3 +11301,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:11:32] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.1.tar.gz]
 [2024-04-28 15:11:32] INFO root fetch - main [MainThread]: End processing [zalabim]: success
 [2024-04-28 15:11:32] INFO root fetch - main [MainThread]: Store serial: [22966965]
+[2024-04-28 15:13:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966965]
+[2024-04-28 15:13:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zato-apitest
+[2024-04-28 15:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rateLimitedQueues
+[2024-04-28 15:13:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-04-28 15:13:49] INFO root fetch - processPackages [zato-apitest]: New version: [24.1.17] Old Version: [24.1.16]
+[2024-04-28 15:13:49] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/fb/11/6e5db46e284d4db66ab2ea3b88d28fff349d9826ae51245a8350dda13a57/zato_apitest-24.1.16.tar.gz
+[2024-04-28 15:13:49] INFO root fetch - processPackages [rateLimitedQueues]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2024-04-28 15:13:49] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.4.28] Old Version: [2024.4.27]
+[2024-04-28 15:13:49] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/dc/b0/8606c7a34740ad88e27a47b0e9680d54f5e61c4289206b0ab2a080f90283/ratelimitedqueues-0.0.1a1.tar.gz
+[2024-04-28 15:13:49] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/15/d6/9bd37ad10a91c6a83c5d24060e8b888abc2e23b8caa86af36b97bb26db36/zato_apitest-24.1.17.tar.gz
+[2024-04-28 15:13:49] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/55/53/0ce9f0298ed97365a500fc164baa63cca7aeefb1b55268ea96df42c5d0fd/fbgemm_gpu_nightly_cpu-2024.4.27-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-28 15:13:49] INFO root fetch - processPackages [zato-apitest]: executing diffoscope
+[2024-04-28 15:13:49] INFO root fetch - processPackages [zato-apitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zato_apitest-24.1.16.tar.gz tmp/zato_apitest-24.1.17.tar.gz --markdown 20240428/z/zato-apitest/24.1.16-24.1.17/README.md --exclude *.pyd
+[2024-04-28 15:13:49] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/30/13/2fbba55ecfe4f80915037ee33f7fe9f8ae9e823511ee3ceac7e3eca6bfdb/ratelimitedqueues-0.0.1a2.tar.gz
+[2024-04-28 15:13:49] INFO root fetch - processPackages [rateLimitedQueues]: executing diffoscope
+[2024-04-28 15:13:49] INFO root fetch - processPackages [rateLimitedQueues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratelimitedqueues-0.0.1a1.tar.gz tmp/ratelimitedqueues-0.0.1a2.tar.gz --markdown 20240428/r/rateLimitedQueues/0.0.1a1-0.0.1a2/README.md --exclude *.pyd
+[2024-04-28 15:13:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/93/d1/53b6acf96e5569540e2f21394d0a58c04f806ac7eaf8362770fc81249d6d/fbgemm_gpu_nightly_cpu-2024.4.28-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-28 15:13:50] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.16.tar.gz]
+[2024-04-28 15:13:50] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.17.tar.gz]
+[2024-04-28 15:13:50] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
+[2024-04-28 15:13:50] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a1.tar.gz]
+[2024-04-28 15:13:50] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a2.tar.gz]
+[2024-04-28 15:13:50] INFO root fetch - main [MainThread]: End processing [rateLimitedQueues]: success
+[2024-04-28 15:13:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-04-28 15:13:50] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.4.28-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240428/f/fbgemm-gpu-nightly-cpu/2024.4.27-2024.4.28/README.md --exclude *.pyd
+[2024-04-28 15:13:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.27-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-28 15:13:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.28-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-28 15:13:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-04-28 15:13:51] INFO root fetch - main [MainThread]: Store serial: [22966978]
