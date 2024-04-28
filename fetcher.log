@@ -9438,3 +9438,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:52:19] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.post2.tar.gz]
 [2024-04-28 12:52:19] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
 [2024-04-28 12:52:19] INFO root fetch - main [MainThread]: Store serial: [22966225]
+[2024-04-28 12:54:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966225]
+[2024-04-28 12:54:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 12:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: i2cylib
+[2024-04-28 12:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PYield
+[2024-04-28 12:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PFlowC
+[2024-04-28 12:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: think-sql
+[2024-04-28 12:54:28] INFO root fetch - processPackages [PFlowC]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-04-28 12:54:28] INFO root fetch - processPackages [think-sql]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-04-28 12:54:28] INFO root fetch - processPackages [PYield]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-04-28 12:54:28] INFO root fetch - processPackages [i2cylib]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-04-28 12:54:28] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/45/76/940f579806e390c05f73fd66a1bc1193396291cbc8bd539baf28d015034c/PFlowC-1.4.2.tar.gz
+[2024-04-28 12:54:28] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/55/83/c7a29b56617676cb36dff6bd22e74a9e640a8ccffe92b8782b873959789b/pyield-0.7.7.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [i2cylib]: Downloading https://files.pythonhosted.org/packages/2c/bb/6cc12ceeb9a54372b2ba5e8bb183dfef520d25a0971d6a6526f02c487766/i2cylib-1.9.4.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [think-sql]: Downloading https://files.pythonhosted.org/packages/02/2e/9ef78d662f3cd5fcaba55dcc7ff7225b914eef45682bce3778df37130a14/think_sql-0.7.4.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [i2cylib]: Downloading https://files.pythonhosted.org/packages/07/db/4b9467cd012615b924c7bb3413be74a3993af003e56ff8eb772df32fbb35/i2cylib-1.9.5.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/1a/60/0d2049b104e622ea2ed79c836b372b39b45cf2619c748d692ac2bf2ed73a/pyield-0.7.8.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [think-sql]: Downloading https://files.pythonhosted.org/packages/68/60/240feed06449db1bf4541b40fec4b849c7efb342b489cb3d82bb50d5378d/think_sql-0.7.5.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/0c/81/ff1b4c1c4bb6e665f7ad59f4064f31fdd0ccbe12efe580056385d71f28ca/PFlowC-1.4.3.tar.gz
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PFlowC]: executing diffoscope
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PFlowC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PFlowC-1.4.2.tar.gz tmp/PFlowC-1.4.3.tar.gz --markdown 20240428/P/PFlowC/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-04-28 12:54:29] INFO root fetch - processPackages [think-sql]: executing diffoscope
+[2024-04-28 12:54:29] INFO root fetch - processPackages [think-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/think_sql-0.7.4.tar.gz tmp/think_sql-0.7.5.tar.gz --markdown 20240428/t/think-sql/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-28 12:54:29] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.7.7.tar.gz tmp/pyield-0.7.8.tar.gz --markdown 20240428/P/PYield/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-04-28 12:54:29] INFO root fetch - processPackages [i2cylib]: executing diffoscope
+[2024-04-28 12:54:29] INFO root fetch - processPackages [i2cylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2cylib-1.9.4.tar.gz tmp/i2cylib-1.9.5.tar.gz --markdown 20240428/i/i2cylib/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-04-28 12:54:30] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.7.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.7.8.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-28 12:54:30] INFO root fetch - processPackages [think-sql]: Remove: archive file [/home/abi/fetcher/tmp/think_sql-0.7.4.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - processPackages [think-sql]: Remove: archive file [/home/abi/fetcher/tmp/think_sql-0.7.5.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - main [MainThread]: End processing [think-sql]: success
+[2024-04-28 12:54:30] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.2.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.3.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - main [MainThread]: End processing [PFlowC]: success
+[2024-04-28 12:54:30] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.4.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.5.tar.gz]
+[2024-04-28 12:54:30] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
+[2024-04-28 12:54:30] INFO root fetch - main [MainThread]: Store serial: [22966236]
