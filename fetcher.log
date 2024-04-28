@@ -4847,3 +4847,27 @@
 [2024-04-28 07:23:04] WARNING root fetch - processPackages [rahulnikamalpha]: Skipping, unable to determine old version
 [2024-04-28 07:23:04] INFO root fetch - main [MainThread]: End processing [rahulnikamalpha] error
 [2024-04-28 07:23:04] INFO root fetch - main [MainThread]: Store serial: [22964234]
+[2024-04-28 07:25:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964234]
+[2024-04-28 07:25:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartlink-remote-restapi
+[2024-04-28 07:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdeper
+[2024-04-28 07:25:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirbreak
+[2024-04-28 07:25:13] WARNING root fetch - processPackages [cirbreak]: Skipping, unable to determine old version
+[2024-04-28 07:25:13] INFO root fetch - main [MainThread]: End processing [cirbreak] error
+[2024-04-28 07:25:13] INFO root fetch - processPackages [sdeper]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-28 07:25:13] INFO root fetch - processPackages [smartlink-remote-restapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 07:25:13] INFO root fetch - processPackages [sdeper]: Downloading https://files.pythonhosted.org/packages/a5/a2/4d92612197c7550a6cf7d2ae5089c1a94d84a61623a2ad8d6c685bb0a49a/sdeper-1.1.0.tar.gz
+[2024-04-28 07:25:13] INFO root fetch - processPackages [smartlink-remote-restapi]: Downloading https://files.pythonhosted.org/packages/bf/3f/6b02542ffe0c59447e8357bf2e62fe136682fbf58296882742a346bd12fb/smartlink-remote-restapi-0.0.8.tar.gz
+[2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: Downloading https://files.pythonhosted.org/packages/21/02/2079b7db97d9bf99eccd52d9b9df1be7ca9214cb70e7fefffcc123941afe/sdeper-1.2.0.tar.gz
+[2024-04-28 07:25:14] INFO root fetch - processPackages [smartlink-remote-restapi]: Downloading https://files.pythonhosted.org/packages/9f/15/c1f285f1a5b18e4cd5e9bab2b6e5bfe01e4d4281c9221ac4bba5a69d2097/smartlink-remote-restapi-0.0.9.tar.gz
+[2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: executing diffoscope
+[2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdeper-1.1.0.tar.gz tmp/sdeper-1.2.0.tar.gz --markdown 20240428/s/sdeper/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-28 07:25:14] INFO root fetch - processPackages [smartlink-remote-restapi]: executing diffoscope
+[2024-04-28 07:25:14] INFO root fetch - processPackages [smartlink-remote-restapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlink-remote-restapi-0.0.8.tar.gz tmp/smartlink-remote-restapi-0.0.9.tar.gz --markdown 20240428/s/smartlink-remote-restapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 07:25:14] INFO root fetch - processPackages [smartlink-remote-restapi]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-remote-restapi-0.0.8.tar.gz]
+[2024-04-28 07:25:14] INFO root fetch - processPackages [smartlink-remote-restapi]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-remote-restapi-0.0.9.tar.gz]
+[2024-04-28 07:25:14] INFO root fetch - main [MainThread]: End processing [smartlink-remote-restapi]: success
+[2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: Remove: archive file [/home/abi/fetcher/tmp/sdeper-1.1.0.tar.gz]
+[2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: Remove: archive file [/home/abi/fetcher/tmp/sdeper-1.2.0.tar.gz]
+[2024-04-28 07:25:14] INFO root fetch - main [MainThread]: End processing [sdeper]: success
+[2024-04-28 07:25:14] INFO root fetch - main [MainThread]: Store serial: [22964242]
