@@ -13627,3 +13627,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:53:01] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-04-28 17:53:01] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-28 17:53:01] INFO root fetch - main [MainThread]: Store serial: [22967877]
+[2024-04-28 17:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967877]
+[2024-04-28 17:55:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agenpy
+[2024-04-28 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-transformation-yfhsi
+[2024-04-28 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zalabim
+[2024-04-28 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otaku-watcher
+[2024-04-28 17:55:10] INFO root fetch - processPackages [zalabim]: New version: [24.1.3] Old Version: [24.1.2]
+[2024-04-28 17:55:10] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-28 17:55:10] WARNING root fetch - processPackages [agenpy]: Skipping, unable to determine old version
+[2024-04-28 17:55:10] INFO root fetch - main [MainThread]: End processing [agenpy] error
+[2024-04-28 17:55:10] WARNING root fetch - processPackages [otaku-watcher]: Skipping, unable to determine old version
+[2024-04-28 17:55:10] INFO root fetch - main [MainThread]: End processing [otaku-watcher] error
+[2024-04-28 17:55:10] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/1c/76/d9d96e30bf10d9bfb2dff3e08709e5c3f63edd0420018790d663f776b32f/zalabim-24.1.2.tar.gz
+[2024-04-28 17:55:10] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-28 17:55:10] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: Downloading https://files.pythonhosted.org/packages/f2/9a/199115aef448529e0185c9acfb598bec3c754eb4681ad3feb199d3b83000/zalabim-24.1.3.tar.gz
+[2024-04-28 17:55:11] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-28 17:55:11] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240428/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: executing diffoscope
+[2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zalabim-24.1.2.tar.gz tmp/zalabim-24.1.3.tar.gz --markdown 20240428/z/zalabim/24.1.2-24.1.3/README.md --exclude *.pyd
+[2024-04-28 17:55:11] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-28 17:55:11] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-28 17:55:11] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.2.tar.gz]
+[2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.3.tar.gz]
+[2024-04-28 17:55:11] INFO root fetch - main [MainThread]: End processing [zalabim]: success
+[2024-04-28 17:55:11] INFO root fetch - main [MainThread]: Store serial: [22967893]
