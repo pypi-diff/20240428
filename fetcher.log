@@ -2148,3 +2148,33 @@
 [2024-04-28 02:56:11] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.2.tar.gz]
 [2024-04-28 02:56:11] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-04-28 02:56:11] INFO root fetch - main [MainThread]: Store serial: [22963095]
+[2024-04-28 02:58:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963095]
+[2024-04-28 02:58:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 02:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nokey
+[2024-04-28 02:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semantic-router
+[2024-04-28 02:58:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2024-04-28 02:58:21] INFO root fetch - processPackages [nokey]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-28 02:58:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-28 02:58:21] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/21/34/4ef7fc20499cf0a83a295750a27a79e2b13bbb2dbad6f3aee8a6e1ff166a/nokey-0.3.1.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 02:58:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/db/e1/a9e368621d5517d78de0f03546b6edc1fbd0f122007c544b7ff05c3464a8/nokey-0.3.2.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-28 02:58:21] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.3.1.tar.gz tmp/nokey-0.3.2.tar.gz --markdown 20240428/n/nokey/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-28 02:58:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-04-28 02:58:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-28 02:58:21] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240428/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-28 02:58:21] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-04-28 02:58:21] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240428/s/semantic-router/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 02:58:22] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.1.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.3.2.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-28 02:58:22] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-04-28 02:58:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-28 02:58:22] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-28 02:58:22] INFO root fetch - main [MainThread]: Store serial: [22963104]
