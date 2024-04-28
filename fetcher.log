@@ -21362,3 +21362,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:53:00] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-28 23:53:00] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-28 23:53:00] INFO root fetch - main [MainThread]: Store serial: [22971088]
+[2024-04-28 23:55:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971088]
+[2024-04-28 23:55:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 23:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ZMPY3D-TF
+[2024-04-28 23:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rossmassey.fetch-leetcode-problem
+[2024-04-28 23:55:09] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-28 23:55:09] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Downloading https://files.pythonhosted.org/packages/f8/44/37c65d3693d9b35a192816cfaaf45866c9a05b0be11e15fec7732dbcb9d3/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz
+[2024-04-28 23:55:09] INFO root fetch - processPackages [ZMPY3D-TF]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 23:55:09] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Downloading https://files.pythonhosted.org/packages/78/26/7d0cfadf4dd2d0fb9771717bbc90bee485e12e5dcfeda0840493b1237ccb/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz
+[2024-04-28 23:55:09] INFO root fetch - processPackages [ZMPY3D-TF]: Downloading https://files.pythonhosted.org/packages/0b/b1/5633aaa8be46bbe2d3ac43137078917769b7c0c951239487f665136924c0/ZMPY3D_TF-0.0.1.tar.gz
+[2024-04-28 23:55:09] WARNING root fetch - processPackages [ZMPY3D-TF]: Skipping package: exceeds size limit 16232601>=10485760
+[2024-04-28 23:55:09] INFO root fetch - main [MainThread]: End processing [ZMPY3D-TF] error
+[2024-04-28 23:55:09] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: executing diffoscope
+[2024-04-28 23:55:09] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz tmp/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz --markdown 20240428/r/rossmassey.fetch-leetcode-problem/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-28 23:55:10] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Remove: archive file [/home/abi/fetcher/tmp/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz]
+[2024-04-28 23:55:10] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Remove: archive file [/home/abi/fetcher/tmp/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz]
+[2024-04-28 23:55:10] INFO root fetch - main [MainThread]: End processing [rossmassey.fetch-leetcode-problem]: success
+[2024-04-28 23:55:10] INFO root fetch - main [MainThread]: Store serial: [22971094]
