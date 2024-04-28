@@ -14003,3 +14003,14 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:14:53] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.7.tar.gz]
 [2024-04-28 18:14:53] INFO root fetch - main [MainThread]: End processing [tubeulator]: success
 [2024-04-28 18:14:53] INFO root fetch - main [MainThread]: Store serial: [22968026]
+[2024-04-28 18:16:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968026]
+[2024-04-28 18:17:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Al-HaQ
+[2024-04-28 18:17:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arknights-toolkit
+[2024-04-28 18:17:03] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-28 18:17:03] ERROR root fetch - processPackages [Al-HaQ]: Unable to get metadata: No such project 'Al-HaQ'
+[2024-04-28 18:17:03] INFO root fetch - main [MainThread]: End processing [Al-HaQ] error
+[2024-04-28 18:17:03] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/a0/85/3a837b4e70de7bf7084edda85d3323151a5b8807f13cb4578055664efa36/arknights_toolkit-0.6.5.tar.gz
+[2024-04-28 18:17:04] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17438965>=10485760
+[2024-04-28 18:17:04] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2024-04-28 18:17:04] INFO root fetch - main [MainThread]: Store serial: [22968036]
