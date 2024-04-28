@@ -5082,3 +5082,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 
 [2024-04-28 07:38:14] INFO root fetch - main [MainThread]: End processing [siat] error
 [2024-04-28 07:38:14] INFO root fetch - main [MainThread]: Store serial: [22964283]
+[2024-04-28 07:40:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964283]
+[2024-04-28 07:40:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:40:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micromanubot
+[2024-04-28 07:40:23] WARNING root fetch - processPackages [micromanubot]: Skipping, unable to determine old version
+[2024-04-28 07:40:23] INFO root fetch - main [MainThread]: End processing [micromanubot] error
+[2024-04-28 07:40:23] INFO root fetch - main [MainThread]: Store serial: [22964286]
