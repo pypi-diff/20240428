@@ -9033,3 +9033,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:28:06] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-1.0.1.tar.gz]
 [2024-04-28 12:28:06] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
 [2024-04-28 12:28:06] INFO root fetch - main [MainThread]: Store serial: [22966000]
+[2024-04-28 12:30:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966000]
+[2024-04-28 12:30:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlforge
+[2024-04-28 12:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyftpsync
+[2024-04-28 12:30:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynormalizenumexp
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pynormalizenumexp]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/7c/7c/2a117685a65fbe5f17d78f6cb6195814385a4cfabcaabef34a1d1734f53a/pynormalizenumexp-0.2.1.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pyftpsync]: New version: [4.1.0] Old Version: [4.0.0a6]
+[2024-04-28 12:30:16] INFO root fetch - processPackages [mlforge]: New version: [0.1.0b0] Old Version: [0.1.0a0]
+[2024-04-28 12:30:16] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/17/f1/5dd9cae57052181e6c0ae08e956d8d446dc09c8c2a209047c0324f4f58f5/mlforge-0.1.0a0.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/c9/83/5f317cd6543a3c343e7e772c0cf251b1d9a7aece71adf3ed4eb0975ccacf/pynormalizenumexp-0.3.0.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pyftpsync]: Downloading https://files.pythonhosted.org/packages/22/da/768b570ccb6a71de7bce839b74532274187122f45c1078b9eb3c5c3cc3bb/pyftpsync-4.0.0a6.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pynormalizenumexp]: executing diffoscope
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pynormalizenumexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynormalizenumexp-0.2.1.tar.gz tmp/pynormalizenumexp-0.3.0.tar.gz --markdown 20240428/p/pynormalizenumexp/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-28 12:30:16] INFO root fetch - processPackages [mlforge]: Downloading https://files.pythonhosted.org/packages/9c/36/8bd80642b32d7200e60082f0ffcd88780df796822ee7791ca4fc0cd15798/mlforge-0.1.0b0.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pyftpsync]: Downloading https://files.pythonhosted.org/packages/75/f1/6c6c27dd4d556214e6ea524821c3fcd68068de44d6b42880e99c1666ce37/pyftpsync-4.1.0.tar.gz
+[2024-04-28 12:30:16] INFO root fetch - processPackages [mlforge]: executing diffoscope
+[2024-04-28 12:30:16] INFO root fetch - processPackages [mlforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlforge-0.1.0a0.tar.gz tmp/mlforge-0.1.0b0.tar.gz --markdown 20240428/m/mlforge/0.1.0a0-0.1.0b0/README.md --exclude *.pyd
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pyftpsync]: executing diffoscope
+[2024-04-28 12:30:16] INFO root fetch - processPackages [pyftpsync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyftpsync-4.0.0a6.tar.gz tmp/pyftpsync-4.1.0.tar.gz --markdown 20240428/p/pyftpsync/4.0.0a6-4.1.0/README.md --exclude *.pyd
+[2024-04-28 12:30:17] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.0a0.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - processPackages [mlforge]: Remove: archive file [/home/abi/fetcher/tmp/mlforge-0.1.0b0.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - main [MainThread]: End processing [mlforge]: success
+[2024-04-28 12:30:17] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.2.1.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.0.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - main [MainThread]: End processing [pynormalizenumexp]: success
+[2024-04-28 12:30:17] INFO root fetch - processPackages [pyftpsync]: Remove: archive file [/home/abi/fetcher/tmp/pyftpsync-4.0.0a6.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - processPackages [pyftpsync]: Remove: archive file [/home/abi/fetcher/tmp/pyftpsync-4.1.0.tar.gz]
+[2024-04-28 12:30:17] INFO root fetch - main [MainThread]: End processing [pyftpsync]: success
+[2024-04-28 12:30:17] INFO root fetch - main [MainThread]: Store serial: [22966007]
