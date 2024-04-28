@@ -5818,3 +5818,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:35:24] INFO root fetch - processPackages [ddeutil]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil-0.3.1.tar.gz]
 [2024-04-28 08:35:24] INFO root fetch - main [MainThread]: End processing [ddeutil]: success
 [2024-04-28 08:35:24] INFO root fetch - main [MainThread]: Store serial: [22964653]
+[2024-04-28 08:37:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964653]
+[2024-04-28 08:37:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 08:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crossword-puzzle
+[2024-04-28 08:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygpt-net
+[2024-04-28 08:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vtjson
+[2024-04-28 08:37:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lineagex
+[2024-04-28 08:37:33] INFO root fetch - processPackages [lineagex]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 08:37:33] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.53] Old Version: [1.2.52]
+[2024-04-28 08:37:33] INFO root fetch - processPackages [vtjson]: New version: [1.7.8] Old Version: [1.7.7]
+[2024-04-28 08:37:33] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.83]
+[2024-04-28 08:37:33] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/68/81/e32cebc612d0606be53613493bb0954564db316f891b39e15e93e0a73555/crossword_puzzle-1.2.52.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/88/85/7e0ff755a7c52459c314b3cb9341c1f37a0416c369381dcfe8ff6124fab5/lineagex-0.0.8.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/39/77/84ccad8b1aa17a0ca2783db154f4cf9360627b88069f605aace6d529615f/vtjson-1.7.7.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/7c/d6/4ccc95fa37e7d3f6dac866553a1a7298676be46516202f3b23e638019c4a/pygpt_net-2.1.83.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/9b/60/4a30e88759b52ede7d0b938fcd79de164b6d748fe779c416bf95be608169/vtjson-1.7.8.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/c4/8d/4935610bc014abaef16e58ad6370420a9600a1c2d06ec51384b444af14b1/lineagex-0.0.9.tar.gz
+[2024-04-28 08:37:33] INFO root fetch - processPackages [vtjson]: executing diffoscope
+[2024-04-28 08:37:33] INFO root fetch - processPackages [vtjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtjson-1.7.7.tar.gz tmp/vtjson-1.7.8.tar.gz --markdown 20240428/v/vtjson/1.7.7-1.7.8/README.md --exclude *.pyd
+[2024-04-28 08:37:34] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/60/49/36e5dbd996b1f9c2d37c2802c32b089dffd48171342a299390e686090cc2/crossword_puzzle-1.2.53.tar.gz
+[2024-04-28 08:37:34] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-28 08:37:34] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2024-04-28 08:37:34] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.8.tar.gz tmp/lineagex-0.0.9.tar.gz --markdown 20240428/l/lineagex/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 08:37:34] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-04-28 08:37:34] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.52.tar.gz tmp/crossword_puzzle-1.2.53.tar.gz --markdown 20240428/c/crossword-puzzle/1.2.52-1.2.53/README.md --exclude *.pyd
+[2024-04-28 08:37:34] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-28 08:37:34] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.83.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240428/p/pygpt-net/2.1.83-2.1.9/README.md --exclude *.pyd
+[2024-04-28 08:37:34] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.7.tar.gz]
+[2024-04-28 08:37:34] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.8.tar.gz]
+[2024-04-28 08:37:34] INFO root fetch - main [MainThread]: End processing [vtjson]: success
+[2024-04-28 08:37:35] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.8.tar.gz]
+[2024-04-28 08:37:35] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
+[2024-04-28 08:37:35] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2024-04-28 08:37:38] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.83.tar.gz]
+[2024-04-28 08:37:38] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-28 08:37:38] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-28 08:37:55] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.52.tar.gz]
+[2024-04-28 08:37:55] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.53.tar.gz]
+[2024-04-28 08:37:55] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-04-28 08:37:55] INFO root fetch - main [MainThread]: Store serial: [22964665]
