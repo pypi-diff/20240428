@@ -2241,3 +2241,24 @@
 [2024-04-28 03:04:52] INFO root fetch - processPackages [oem]: Remove: archive file [/home/abi/fetcher/tmp/oem-0.4.2.tar.gz]
 [2024-04-28 03:04:52] INFO root fetch - main [MainThread]: End processing [oem]: success
 [2024-04-28 03:04:52] INFO root fetch - main [MainThread]: Store serial: [22963118]
+[2024-04-28 03:06:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963118]
+[2024-04-28 03:07:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 03:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: accmt
+[2024-04-28 03:07:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: druida
+[2024-04-28 03:07:00] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 03:07:00] INFO root fetch - processPackages [accmt]: New version: [1.0.0] Old Version: [0.0.9]
+[2024-04-28 03:07:00] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 03:07:00] INFO root fetch - processPackages [accmt]: Downloading https://files.pythonhosted.org/packages/e1/4d/f8f9ad3df5e934dbf64bcec1bac73ddcd02b432e8b60624cea232c09db86/accmt-0.0.9.tar.gz
+[2024-04-28 03:07:00] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 03:07:00] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 03:07:00] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 03:07:00] INFO root fetch - processPackages [accmt]: Downloading https://files.pythonhosted.org/packages/25/f7/f2e5ba2a09a7677833e16193813318b8ed35f7c8ef023f9da95b4c434832/accmt-1.0.0.tar.gz
+[2024-04-28 03:07:00] INFO root fetch - processPackages [accmt]: executing diffoscope
+[2024-04-28 03:07:00] INFO root fetch - processPackages [accmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accmt-0.0.9.tar.gz tmp/accmt-1.0.0.tar.gz --markdown 20240428/a/accmt/0.0.9-1.0.0/README.md --exclude *.pyd
+[2024-04-28 03:07:01] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 03:07:01] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 03:07:01] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 03:07:01] INFO root fetch - processPackages [accmt]: Remove: archive file [/home/abi/fetcher/tmp/accmt-0.0.9.tar.gz]
+[2024-04-28 03:07:01] INFO root fetch - processPackages [accmt]: Remove: archive file [/home/abi/fetcher/tmp/accmt-1.0.0.tar.gz]
+[2024-04-28 03:07:01] INFO root fetch - main [MainThread]: End processing [accmt]: success
+[2024-04-28 03:07:01] INFO root fetch - main [MainThread]: Store serial: [22963122]
