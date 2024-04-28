@@ -8521,3 +8521,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:48:24] WARNING root fetch - processPackages [modelpark]: Skipping, unable to determine old version
 [2024-04-28 11:48:24] INFO root fetch - main [MainThread]: End processing [modelpark] error
 [2024-04-28 11:48:24] INFO root fetch - main [MainThread]: Store serial: [22965806]
+[2024-04-28 11:50:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965806]
+[2024-04-28 11:50:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 11:50:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SellPandas
+[2024-04-28 11:50:33] WARNING root fetch - processPackages [SellPandas]: Skipping, unable to determine old version
+[2024-04-28 11:50:33] INFO root fetch - main [MainThread]: End processing [SellPandas] error
+[2024-04-28 11:50:33] INFO root fetch - main [MainThread]: Store serial: [22965811]
