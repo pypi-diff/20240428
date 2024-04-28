@@ -10157,3 +10157,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:42:16] INFO root fetch - processPackages [meross-iot]: Remove: archive file [/home/abi/fetcher/tmp/meross_iot-0.4.7.1.tar.gz]
 [2024-04-28 13:42:16] INFO root fetch - main [MainThread]: End processing [meross-iot]: success
 [2024-04-28 13:42:16] INFO root fetch - main [MainThread]: Store serial: [22966462]
+[2024-04-28 13:44:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966462]
+[2024-04-28 13:44:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 13:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meross-iot
+[2024-04-28 13:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stonefish-license-manager
+[2024-04-28 13:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AmazonProductReviews
+[2024-04-28 13:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crossword-puzzle
+[2024-04-28 13:44:32] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.54] Old Version: [1.2.53]
+[2024-04-28 13:44:32] INFO root fetch - processPackages [meross-iot]: New version: [0.4.7.1] Old Version: [0.4.7.0b2]
+[2024-04-28 13:44:32] WARNING root fetch - processPackages [AmazonProductReviews]: Skipping, unable to determine old version
+[2024-04-28 13:44:32] INFO root fetch - main [MainThread]: End processing [AmazonProductReviews] error
+[2024-04-28 13:44:32] INFO root fetch - processPackages [meross-iot]: Downloading https://files.pythonhosted.org/packages/3a/4f/f23dd3ef7400a8f27da30454071f7d797b14f5fdabcd2ccd3984c614894e/meross_iot-0.4.7.0b2.tar.gz
+[2024-04-28 13:44:32] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/60/49/36e5dbd996b1f9c2d37c2802c32b089dffd48171342a299390e686090cc2/crossword_puzzle-1.2.53.tar.gz
+[2024-04-28 13:44:32] INFO root fetch - processPackages [stonefish-license-manager]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-28 13:44:32] INFO root fetch - processPackages [meross-iot]: Downloading https://files.pythonhosted.org/packages/78/71/ecde38764225b5811ab477491426678945478372dad31979ff977364d619/meross_iot-0.4.7.1.tar.gz
+[2024-04-28 13:44:33] INFO root fetch - processPackages [stonefish-license-manager]: Downloading https://files.pythonhosted.org/packages/f0/ad/d3b5caaabd5ba7980f74302ca088a8e3bd1014597f27058b0440408ca15f/stonefish_license_manager-0.4.5-py3-none-any.whl
+[2024-04-28 13:44:33] INFO root fetch - processPackages [meross-iot]: executing diffoscope
+[2024-04-28 13:44:33] INFO root fetch - processPackages [meross-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meross_iot-0.4.7.0b2.tar.gz tmp/meross_iot-0.4.7.1.tar.gz --markdown 20240428/m/meross-iot/0.4.7.0b2-0.4.7.1/README.md --exclude *.pyd
+[2024-04-28 13:44:33] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/db/b3/e24625075956544c287ddd0157a02cfd06ab4811c8b8f4ab556d8ba13d34/crossword_puzzle-1.2.54.tar.gz
+[2024-04-28 13:44:33] INFO root fetch - processPackages [stonefish-license-manager]: Downloading https://files.pythonhosted.org/packages/52/60/120a8b9413c34abb8beb2874a6015624a5ca8ff2fb1d01ba40834d1bc780/stonefish_license_manager-0.4.6-py3-none-any.whl
+[2024-04-28 13:44:33] INFO root fetch - processPackages [stonefish-license-manager]: executing diffoscope
+[2024-04-28 13:44:33] INFO root fetch - processPackages [stonefish-license-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stonefish_license_manager-0.4.5-py3-none-any.whl.zip tmp/stonefish_license_manager-0.4.6-py3-none-any.whl.zip --markdown 20240428/s/stonefish-license-manager/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-04-28 13:44:33] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-04-28 13:44:33] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.53.tar.gz tmp/crossword_puzzle-1.2.54.tar.gz --markdown 20240428/c/crossword-puzzle/1.2.53-1.2.54/README.md --exclude *.pyd
+[2024-04-28 13:44:33] INFO root fetch - processPackages [meross-iot]: Remove: archive file [/home/abi/fetcher/tmp/meross_iot-0.4.7.0b2.tar.gz]
+[2024-04-28 13:44:33] INFO root fetch - processPackages [meross-iot]: Remove: archive file [/home/abi/fetcher/tmp/meross_iot-0.4.7.1.tar.gz]
+[2024-04-28 13:44:33] INFO root fetch - main [MainThread]: End processing [meross-iot]: success
+[2024-04-28 13:44:34] INFO root fetch - processPackages [stonefish-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/stonefish_license_manager-0.4.5-py3-none-any.whl.zip]
+[2024-04-28 13:44:34] INFO root fetch - processPackages [stonefish-license-manager]: Remove: archive file [/home/abi/fetcher/tmp/stonefish_license_manager-0.4.6-py3-none-any.whl.zip]
+[2024-04-28 13:44:34] INFO root fetch - main [MainThread]: End processing [stonefish-license-manager]: success
+[2024-04-28 13:44:53] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.53.tar.gz]
+[2024-04-28 13:44:53] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.54.tar.gz]
+[2024-04-28 13:44:53] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-04-28 13:44:53] INFO root fetch - main [MainThread]: Store serial: [22966475]
