@@ -2283,3 +2283,44 @@
 [2024-04-28 03:09:11] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
 [2024-04-28 03:09:11] INFO root fetch - main [MainThread]: End processing [druida]: success
 [2024-04-28 03:09:11] INFO root fetch - main [MainThread]: Store serial: [22963128]
+[2024-04-28 03:11:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963128]
+[2024-04-28 03:11:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 03:13:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963128]
+[2024-04-28 03:13:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 03:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslth
+[2024-04-28 03:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: querent
+[2024-04-28 03:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nestedtext
+[2024-04-28 03:13:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pied-poker
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pied-poker]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pyslth]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/ec/5d/414db05b6b614fffb52196b592aa273659556924f68275bd029ca60f03d3/pied_poker-1.2.8-py3-none-any.whl
+[2024-04-28 03:13:26] INFO root fetch - processPackages [nestedtext]: New version: [3.7] Old Version: [3.6]
+[2024-04-28 03:13:26] INFO root fetch - processPackages [querent]: New version: [3.0.7] Old Version: [3.0.4]
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/f2/0c/212452f933d39c512f2588f4000d3254fb3fe5dafd0b429750c550b691d5/pyslth-0.1.6.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/60/d9/3ac1d552c0873d9eef8b7df1b0ce3b89a1a0a13af3adda8ac8b4ceb8a282/querent-3.0.4.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [nestedtext]: Downloading https://files.pythonhosted.org/packages/8e/6f/6ccfa8ac66ed2210376c3e5bbf1d92fc2bcafcacafab2fff12d8cbfcfe0c/nestedtext-3.6.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/cd/04/e6bd58daabeadf8108bbdfd132d4ed77ce1ab1877f2255457022a280e3c9/pied_poker-1.2.9.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.2.8-py3-none-any.whl.zip tmp/pied_poker-1.2.9.tar.gz --markdown 20240428/p/pied-poker/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c5/a9/764f4545abfb77be12cbb6ccd366f1d9a881c9ed5cdbca9ff9cc74d45dbf/pyslth-0.1.7.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/b1/81/0f7c1baa1d1883da3a40e0b53e625e181cc15801b11cc1cd5125b69fc5ca/querent-3.0.7.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [nestedtext]: Downloading https://files.pythonhosted.org/packages/4f/e0/0315d81778e63a90e389e849979728bac723c5f814c96f1c5b6a5f47584c/nestedtext-3.7.tar.gz
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-28 03:13:26] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.1.6.tar.gz tmp/pyslth-0.1.7.tar.gz --markdown 20240428/p/pyslth/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 03:13:26] INFO root fetch - processPackages [nestedtext]: executing diffoscope
+[2024-04-28 03:13:26] INFO root fetch - processPackages [nestedtext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestedtext-3.6.tar.gz tmp/nestedtext-3.7.tar.gz --markdown 20240428/n/nestedtext/3.6-3.7/README.md --exclude *.pyd
+[2024-04-28 03:13:26] INFO root fetch - processPackages [querent]: executing diffoscope
+[2024-04-28 03:13:26] INFO root fetch - processPackages [querent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querent-3.0.4.tar.gz tmp/querent-3.0.7.tar.gz --markdown 20240428/q/querent/3.0.4-3.0.7/README.md --exclude *.pyd
+[2024-04-28 03:13:27] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.8-py3-none-any.whl.zip]
+[2024-04-28 03:13:27] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.2.9.tar.gz]
+[2024-04-28 03:13:27] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-04-28 03:13:27] INFO root fetch - processPackages [nestedtext]: Remove: archive file [/home/abi/fetcher/tmp/nestedtext-3.6.tar.gz]
+[2024-04-28 03:13:27] INFO root fetch - processPackages [nestedtext]: Remove: archive file [/home/abi/fetcher/tmp/nestedtext-3.7.tar.gz]
+[2024-04-28 03:13:27] INFO root fetch - main [MainThread]: End processing [nestedtext]: success
+[2024-04-28 03:13:27] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.4.tar.gz]
+[2024-04-28 03:13:27] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.7.tar.gz]
+[2024-04-28 03:13:27] INFO root fetch - main [MainThread]: End processing [querent]: success
+[2024-04-28 03:13:28] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.6.tar.gz]
+[2024-04-28 03:13:28] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.7.tar.gz]
+[2024-04-28 03:13:28] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-28 03:13:28] INFO root fetch - main [MainThread]: Store serial: [22963139]
