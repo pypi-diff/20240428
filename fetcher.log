@@ -4835,3 +4835,15 @@
 [2024-04-28 07:20:56] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.9.0.tar.gz]
 [2024-04-28 07:20:56] INFO root fetch - main [MainThread]: End processing [VizAble]: success
 [2024-04-28 07:20:56] INFO root fetch - main [MainThread]: Store serial: [22964224]
+[2024-04-28 07:22:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964224]
+[2024-04-28 07:23:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-contacts
+[2024-04-28 07:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-contacts
+[2024-04-28 07:23:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rahulnikamalpha
+[2024-04-28 07:23:04] WARNING root fetch - processPackages [abstract-contacts]: Skipping, unable to determine old version
+[2024-04-28 07:23:04] INFO root fetch - main [MainThread]: End processing [abstract-contacts] error
+[2024-04-28 07:23:04] WARNING root fetch - processPackages [abstract-contacts]: Skipping, unable to determine old version
+[2024-04-28 07:23:04] INFO root fetch - main [MainThread]: End processing [abstract-contacts] error
+[2024-04-28 07:23:04] WARNING root fetch - processPackages [rahulnikamalpha]: Skipping, unable to determine old version
+[2024-04-28 07:23:04] INFO root fetch - main [MainThread]: End processing [rahulnikamalpha] error
+[2024-04-28 07:23:04] INFO root fetch - main [MainThread]: Store serial: [22964234]
