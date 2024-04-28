@@ -9578,3 +9578,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 13:03:37] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-28 13:03:37] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-28 13:03:37] INFO root fetch - main [MainThread]: Store serial: [22966272]
+[2024-04-28 13:05:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966272]
+[2024-04-28 13:05:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vollseg-napari-trackmate
+[2024-04-28 13:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: helloworld32352
+[2024-04-28 13:05:48] INFO root fetch - processPackages [vollseg-napari-trackmate]: New version: [2.5.6] Old Version: [2.5.5]
+[2024-04-28 13:05:48] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/30/5d/bedba23aff8cc122b275a9c7b86c1924b43e8e480ab1648a88764ceece97/vollseg_napari_trackmate-2.5.5.tar.gz
+[2024-04-28 13:05:48] WARNING root fetch - processPackages [helloworld32352]: Skipping, unable to determine old version
+[2024-04-28 13:05:48] INFO root fetch - main [MainThread]: End processing [helloworld32352] error
+[2024-04-28 13:05:49] INFO root fetch - processPackages [vollseg-napari-trackmate]: Downloading https://files.pythonhosted.org/packages/e3/4e/c936020861b53f2adfef527bb9cc7fa8a3072862046151c3f48360da0aef/vollseg_napari_trackmate-2.5.6.tar.gz
+[2024-04-28 13:05:49] INFO root fetch - processPackages [vollseg-napari-trackmate]: executing diffoscope
+[2024-04-28 13:05:49] INFO root fetch - processPackages [vollseg-napari-trackmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vollseg_napari_trackmate-2.5.5.tar.gz tmp/vollseg_napari_trackmate-2.5.6.tar.gz --markdown 20240428/v/vollseg-napari-trackmate/2.5.5-2.5.6/README.md --exclude *.pyd
+[2024-04-28 13:05:50] INFO root fetch - processPackages [vollseg-napari-trackmate]: Remove: archive file [/home/abi/fetcher/tmp/vollseg_napari_trackmate-2.5.5.tar.gz]
+[2024-04-28 13:05:50] INFO root fetch - processPackages [vollseg-napari-trackmate]: Remove: archive file [/home/abi/fetcher/tmp/vollseg_napari_trackmate-2.5.6.tar.gz]
+[2024-04-28 13:05:50] INFO root fetch - main [MainThread]: End processing [vollseg-napari-trackmate]: success
+[2024-04-28 13:05:50] INFO root fetch - main [MainThread]: Store serial: [22966280]
