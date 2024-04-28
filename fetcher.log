@@ -12859,3 +12859,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:04:51] WARNING root fetch - processPackages [seeact]: Skipping, unable to determine old version
 [2024-04-28 17:04:51] INFO root fetch - main [MainThread]: End processing [seeact] error
 [2024-04-28 17:04:51] INFO root fetch - main [MainThread]: Store serial: [22967597]
+[2024-04-28 17:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967597]
+[2024-04-28 17:07:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 17:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micromanubot
+[2024-04-28 17:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tokenterminal
+[2024-04-28 17:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EvoDict
+[2024-04-28 17:07:14] INFO root fetch - processPackages [micromanubot]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-28 17:07:14] WARNING root fetch - processPackages [EvoDict]: Skipping, unable to determine old version
+[2024-04-28 17:07:14] INFO root fetch - main [MainThread]: End processing [EvoDict] error
+[2024-04-28 17:07:14] INFO root fetch - processPackages [tokenterminal]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-28 17:07:14] INFO root fetch - processPackages [micromanubot]: Downloading https://files.pythonhosted.org/packages/9f/09/3ad1f33a70db87e9363f68d390bf042dfcd938862e2f05450173f71c2a7c/micromanubot-0.4.0.tar.gz
+[2024-04-28 17:07:14] INFO root fetch - processPackages [tokenterminal]: Downloading https://files.pythonhosted.org/packages/eb/d9/25300830c9fbce4010481f955327974527a8358405ab31ca508126dd85d2/tokenterminal-1.0.1.tar.gz
+[2024-04-28 17:07:14] INFO root fetch - processPackages [micromanubot]: Downloading https://files.pythonhosted.org/packages/ce/fa/8333f77fcec3b2e58ab50c2b21467b3e8616db79583eb3deecdb3561c30c/micromanubot-0.4.1.tar.gz
+[2024-04-28 17:07:14] INFO root fetch - processPackages [tokenterminal]: Downloading https://files.pythonhosted.org/packages/10/46/a6593c25cf5a3c37ed405ec3bb062a60dd6318feb6bad396d1c699ac11bd/tokenterminal-2.0.0.tar.gz
+[2024-04-28 17:07:15] INFO root fetch - processPackages [tokenterminal]: executing diffoscope
+[2024-04-28 17:07:15] INFO root fetch - processPackages [tokenterminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tokenterminal-1.0.1.tar.gz tmp/tokenterminal-2.0.0.tar.gz --markdown 20240428/t/tokenterminal/1.0.1-2.0.0/README.md --exclude *.pyd
+[2024-04-28 17:07:15] INFO root fetch - processPackages [micromanubot]: executing diffoscope
+[2024-04-28 17:07:15] INFO root fetch - processPackages [micromanubot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micromanubot-0.4.0.tar.gz tmp/micromanubot-0.4.1.tar.gz --markdown 20240428/m/micromanubot/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-28 17:07:15] INFO root fetch - processPackages [tokenterminal]: Remove: archive file [/home/abi/fetcher/tmp/tokenterminal-1.0.1.tar.gz]
+[2024-04-28 17:07:15] INFO root fetch - processPackages [tokenterminal]: Remove: archive file [/home/abi/fetcher/tmp/tokenterminal-2.0.0.tar.gz]
+[2024-04-28 17:07:15] INFO root fetch - main [MainThread]: End processing [tokenterminal]: success
+[2024-04-28 17:07:15] INFO root fetch - processPackages [micromanubot]: Remove: archive file [/home/abi/fetcher/tmp/micromanubot-0.4.0.tar.gz]
+[2024-04-28 17:07:15] INFO root fetch - processPackages [micromanubot]: Remove: archive file [/home/abi/fetcher/tmp/micromanubot-0.4.1.tar.gz]
+[2024-04-28 17:07:15] INFO root fetch - main [MainThread]: End processing [micromanubot]: success
+[2024-04-28 17:07:15] INFO root fetch - main [MainThread]: Store serial: [22967607]
