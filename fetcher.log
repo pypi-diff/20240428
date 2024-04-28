@@ -4009,3 +4009,54 @@
 [2024-04-28 06:13:38] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.6.tar.gz]
 [2024-04-28 06:13:38] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
 [2024-04-28 06:13:38] INFO root fetch - main [MainThread]: Store serial: [22963887]
+[2024-04-28 06:15:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963887]
+[2024-04-28 06:15:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TheSilent
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: queue-local
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slyp
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oscb
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-gadzooks
+[2024-04-28 06:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: profile-local
+[2024-04-28 06:15:47] INFO root fetch - processPackages [oscb]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 06:15:47] WARNING root fetch - processPackages [py-gadzooks]: Skipping, unable to determine old version
+[2024-04-28 06:15:47] INFO root fetch - main [MainThread]: End processing [py-gadzooks] error
+[2024-04-28 06:15:47] INFO root fetch - processPackages [profile-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 06:15:47] INFO root fetch - processPackages [queue-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 06:15:47] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/47/13/aa7173787979e139a49b99ac015ec8cdcec5dd440f3d31b9c88bb824016b/oscb-1.0.6.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [slyp]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-28 06:15:47] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/74/2a/11e7cf27d1a339b3be58b722b335bd5427d0e0cd5df02c853c6fc2f70e89/queue-local-0.0.8.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/4b/d7/8af14a0850e980f53de36404fc2079c451edc1e65f24be79c595f88f602d/profile-local-0.0.8.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 06:15:47] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [slyp]: Downloading https://files.pythonhosted.org/packages/2e/61/2d9d431ec2d829dae8e8a74839d64db5ce26c48d9878a122a65a737a548e/slyp-0.6.0.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/50/72/27bceac7b44d2f4d530a1f4c817cc3c6a4d06a0160455ee9ea2ace2ff49f/oscb-1.0.7.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [queue-local]: Downloading https://files.pythonhosted.org/packages/a8/6d/85b9e7808db253376ca4b0f171843555d3b647703fd759861abdc4f9c44f/queue-local-0.0.9.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [profile-local]: Downloading https://files.pythonhosted.org/packages/a8/54/e07308090c523485559291c7a02f014be5ed9511f87a7701fb7328a58149/profile-local-0.0.9.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 06:15:47] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.6.tar.gz tmp/oscb-1.0.7.tar.gz --markdown 20240428/o/oscb/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 06:15:47] INFO root fetch - processPackages [profile-local]: executing diffoscope
+[2024-04-28 06:15:47] INFO root fetch - processPackages [profile-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profile-local-0.0.8.tar.gz tmp/profile-local-0.0.9.tar.gz --markdown 20240428/p/profile-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 06:15:47] INFO root fetch - processPackages [queue-local]: executing diffoscope
+[2024-04-28 06:15:47] INFO root fetch - processPackages [queue-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/queue-local-0.0.8.tar.gz tmp/queue-local-0.0.9.tar.gz --markdown 20240428/q/queue-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 06:15:47] INFO root fetch - processPackages [slyp]: Downloading https://files.pythonhosted.org/packages/02/09/dbad0c5764772aa0f6ac51046ea794e6e64b5da2a2d70ac96f71ca52abe3/slyp-0.6.1.tar.gz
+[2024-04-28 06:15:47] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-28 06:15:47] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240428/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 06:15:47] INFO root fetch - processPackages [slyp]: executing diffoscope
+[2024-04-28 06:15:47] INFO root fetch - processPackages [slyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slyp-0.6.0.tar.gz tmp/slyp-0.6.1.tar.gz --markdown 20240428/s/slyp/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-04-28 06:15:48] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.6.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.7.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 06:15:48] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.8.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - processPackages [profile-local]: Remove: archive file [/home/abi/fetcher/tmp/profile-local-0.0.9.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [profile-local]: success
+[2024-04-28 06:15:48] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.8.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.9.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [queue-local]: success
+[2024-04-28 06:15:48] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-28 06:15:48] INFO root fetch - processPackages [slyp]: Remove: archive file [/home/abi/fetcher/tmp/slyp-0.6.0.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - processPackages [slyp]: Remove: archive file [/home/abi/fetcher/tmp/slyp-0.6.1.tar.gz]
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [slyp]: success
+[2024-04-28 06:15:48] INFO root fetch - main [MainThread]: Store serial: [22963905]
