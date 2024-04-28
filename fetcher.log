@@ -6771,3 +6771,148 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:53:53] INFO root fetch - processPackages [onnxslim]: Remove: archive file [/home/abi/fetcher/tmp/onnxslim-0.1.9.1.tar.gz]
 [2024-04-28 09:53:53] INFO root fetch - main [MainThread]: End processing [onnxslim]: success
 [2024-04-28 09:53:53] INFO root fetch - main [MainThread]: Store serial: [22965003]
+[2024-04-28 09:55:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965003]
+[2024-04-28 09:56:01] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nc-py-api
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: algo-fun-dijkstra
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickpub
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AI-Education-Tools
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zato-apitest
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fractal-toolkit
+[2024-04-28 09:56:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: stochatreat
+[2024-04-28 09:56:01] INFO root fetch - processPackages [nc-py-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 09:56:01] INFO root fetch - processPackages [quickpub]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-28 09:56:01] INFO root fetch - processPackages [zato-apitest]: New version: [24.1.9] Old Version: [24.1.13]
+[2024-04-28 09:56:02] WARNING root fetch - processPackages [algo-fun-dijkstra]: Skipping, unable to determine old version
+[2024-04-28 09:56:02] INFO root fetch - main [MainThread]: End processing [algo-fun-dijkstra] error
+[2024-04-28 09:56:02] INFO root fetch - processPackages [nc-py-api]: Downloading https://files.pythonhosted.org/packages/aa/8e/07143b585a6d6ebdad20d9545cc87db56036d0846e1b578a2542b8148994/nc_py_api-0.8.0.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/ad/bf/ecf551893d2b9d5b843f13f6a78bdfd0b85566a6ceecd19068c51a484646/quickpub-0.8.0.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [AI-Education-Tools]: New version: [24.4.28] Old Version: [24.1.29]
+[2024-04-28 09:56:02] INFO root fetch - processPackages [stochatreat]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 09:56:02] INFO root fetch - processPackages [fractal-toolkit]: New version: [5.0.0] Old Version: [4.1.3]
+[2024-04-28 09:56:02] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/61/e0/9171feb5712fd46725cec1b71e51a40379bd1fd2ed9bc64f4f70dd4dc418/zato_apitest-24.1.13.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [AI-Education-Tools]: Downloading https://files.pythonhosted.org/packages/5d/70/fbf37b24f636abb9cc4924a5bfb4088be1b6eefc60d20c13fc9dd71fab13/AI_Education_Tools-24.1.29-py3-none-any.whl
+[2024-04-28 09:56:02] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/8e/77/c4e24d725355a0432a34b1fde68ad70c1593bb6e379ab781b47a115b2b22/quickpub-0.8.1.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [nc-py-api]: Downloading https://files.pythonhosted.org/packages/9e/7e/8d987199d0f9ff7ad6f7bad4c9db47d047948661ce3837087c9715b35dc8/nc_py_api-0.9.0.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [stochatreat]: Downloading https://files.pythonhosted.org/packages/15/00/b2e1543376d9c529f583e78f8fe20c3ffef3d9c617fc653d74b0cc7ec1c7/stochatreat-0.0.8.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [fractal-toolkit]: Downloading https://files.pythonhosted.org/packages/ff/77/bc368b5453c451de22e39176ec23b0f7e2c6c0e5d120ae2c236e3dd4c7fa/fractal_toolkit-4.1.3.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/84/b8/7b3d980ceafadb22236bf2537c793cd5475ba3d961aa2d78e2365bf43180/zato-apitest-24.1.9.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [quickpub]: executing diffoscope
+[2024-04-28 09:56:02] INFO root fetch - processPackages [quickpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickpub-0.8.0.tar.gz tmp/quickpub-0.8.1.tar.gz --markdown 20240428/q/quickpub/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-28 09:56:02] INFO root fetch - processPackages [nc-py-api]: executing diffoscope
+[2024-04-28 09:56:02] INFO root fetch - processPackages [nc-py-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nc_py_api-0.8.0.tar.gz tmp/nc_py_api-0.9.0.tar.gz --markdown 20240428/n/nc-py-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 09:56:02] INFO root fetch - processPackages [zato-apitest]: executing diffoscope
+[2024-04-28 09:56:02] INFO root fetch - processPackages [zato-apitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zato_apitest-24.1.13.tar.gz tmp/zato-apitest-24.1.9.tar.gz --markdown 20240428/z/zato-apitest/24.1.13-24.1.9/README.md --exclude *.pyd
+[2024-04-28 09:56:02] INFO root fetch - processPackages [fractal-toolkit]: Downloading https://files.pythonhosted.org/packages/e2/a8/7bd8fe1a2fa1a2854f105a121ad645428357b93904143b5e77ff8e488e9b/fractal_toolkit-5.0.0.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [stochatreat]: Downloading https://files.pythonhosted.org/packages/6e/6b/2f717f160d399da3ea9ed9b27bb85ea95f1de6b8c1002997a9eed55f7202/stochatreat-0.0.9.tar.gz
+[2024-04-28 09:56:02] INFO root fetch - processPackages [fractal-toolkit]: executing diffoscope
+[2024-04-28 09:56:02] INFO root fetch - processPackages [fractal-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_toolkit-4.1.3.tar.gz tmp/fractal_toolkit-5.0.0.tar.gz --markdown 20240428/f/fractal-toolkit/4.1.3-5.0.0/README.md --exclude *.pyd
+[2024-04-28 09:56:02] INFO root fetch - processPackages [stochatreat]: executing diffoscope
+[2024-04-28 09:56:02] INFO root fetch - processPackages [stochatreat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stochatreat-0.0.8.tar.gz tmp/stochatreat-0.0.9.tar.gz --markdown 20240428/s/stochatreat/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 09:56:03] INFO root fetch - processPackages [AI-Education-Tools]: Downloading https://files.pythonhosted.org/packages/5d/5c/faddf10bbbddaebc4e0ec31e94281daa0c04e5af20a1bf87758dffd38686/AI_Education_Tools-24.4.28-py3-none-any.whl
+[2024-04-28 09:56:03] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.13.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato-apitest-24.1.9.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
+[2024-04-28 09:56:03] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.0.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.1.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [quickpub]: success
+[2024-04-28 09:56:03] INFO root fetch - processPackages [nc-py-api]: Remove: archive file [/home/abi/fetcher/tmp/nc_py_api-0.8.0.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - processPackages [nc-py-api]: Remove: archive file [/home/abi/fetcher/tmp/nc_py_api-0.9.0.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [nc-py-api]: success
+[2024-04-28 09:56:03] INFO root fetch - processPackages [AI-Education-Tools]: executing diffoscope
+[2024-04-28 09:56:03] INFO root fetch - processPackages [AI-Education-Tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AI_Education_Tools-24.1.29-py3-none-any.whl.zip tmp/AI_Education_Tools-24.4.28-py3-none-any.whl.zip --markdown 20240428/A/AI-Education-Tools/24.1.29-24.4.28/README.md --exclude *.pyd
+[2024-04-28 09:56:03] INFO root fetch - processPackages [stochatreat]: Remove: archive file [/home/abi/fetcher/tmp/stochatreat-0.0.8.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - processPackages [stochatreat]: Remove: archive file [/home/abi/fetcher/tmp/stochatreat-0.0.9.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [stochatreat]: success
+[2024-04-28 09:56:03] INFO root fetch - processPackages [fractal-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/fractal_toolkit-4.1.3.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - processPackages [fractal-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/fractal_toolkit-5.0.0.tar.gz]
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [fractal-toolkit]: success
+[2024-04-28 09:56:03] ERROR root fetch - processPackages [AI-Education-Tools]: Diffoscope failed: time="2024-04-28T09:56:03+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid start byte
+
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: End processing [AI-Education-Tools] error
+[2024-04-28 09:56:03] INFO root fetch - main [MainThread]: Store serial: [22965021]
