@@ -11755,3 +11755,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.5.1.tar.gz]
 [2024-04-28 15:37:15] INFO root fetch - main [MainThread]: End processing [deltachat2]: success
 [2024-04-28 15:37:15] INFO root fetch - main [MainThread]: Store serial: [22967141]
+[2024-04-28 15:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967141]
+[2024-04-28 15:39:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 15:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslth
+[2024-04-28 15:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly
+[2024-04-28 15:39:35] INFO root fetch - processPackages [pyslth]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 15:39:35] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c5/a9/764f4545abfb77be12cbb6ccd366f1d9a881c9ed5cdbca9ff9cc74d45dbf/pyslth-0.1.7.tar.gz
+[2024-04-28 15:39:35] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.4.28] Old Version: [2024.4.27]
+[2024-04-28 15:39:35] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/a1/76/58d801daceb1a2d3929b46dcc9071c09ffe1deef7baa8f9fdc06c525a2bf/fbgemm_gpu_nightly-2024.4.27-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-28 15:39:35] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 209016815>=10485760
+[2024-04-28 15:39:35] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-04-28 15:39:35] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c6/50/382555cac978540706a041de3e116c8a29ba2fee123d883e9487e4b6a327/pyslth-0.1.8.tar.gz
+[2024-04-28 15:39:35] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-28 15:39:35] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.1.7.tar.gz tmp/pyslth-0.1.8.tar.gz --markdown 20240428/p/pyslth/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 15:39:37] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.7.tar.gz]
+[2024-04-28 15:39:37] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.8.tar.gz]
+[2024-04-28 15:39:37] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-28 15:39:37] INFO root fetch - main [MainThread]: Store serial: [22967147]
