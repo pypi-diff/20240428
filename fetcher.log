@@ -6688,3 +6688,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:47:26] INFO root fetch - processPackages [esdk-obs-python]: Remove: archive file [/home/abi/fetcher/tmp/esdk-obs-python-3.24.3.tar.gz]
 [2024-04-28 09:47:26] INFO root fetch - main [MainThread]: End processing [esdk-obs-python]: success
 [2024-04-28 09:47:26] INFO root fetch - main [MainThread]: Store serial: [22964983]
+[2024-04-28 09:49:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964983]
+[2024-04-28 09:49:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 09:51:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964983]
+[2024-04-28 09:51:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccdexplorer-fundamentals
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyweatherfr
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytdlp-servustv
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quickpub
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ytdlp-servustv]: New version: [2024.4.28] Old Version: [2023.12.27]
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ccdexplorer-fundamentals]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 09:51:41] INFO root fetch - processPackages [pyweatherfr]: New version: [5.3.5] Old Version: [5.3.4]
+[2024-04-28 09:51:41] INFO root fetch - processPackages [quickpub]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-28 09:51:41] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/ad/bf/ecf551893d2b9d5b843f13f6a78bdfd0b85566a6ceecd19068c51a484646/quickpub-0.8.0.tar.gz
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ytdlp-servustv]: Downloading https://files.pythonhosted.org/packages/8a/dc/e0ec55fffd469f7c2e7b59d5b3481baeb974f774a4bbac71abfbb175e61b/ytdlp_servustv-2023.12.27-py3-none-any.whl
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Downloading https://files.pythonhosted.org/packages/25/0f/de9a78f5a6c59561021a06703183ce406f1c80f95a17bca80ae574872b5f/ccdexplorer_fundamentals-0.2.1.tar.gz
+[2024-04-28 09:51:41] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/a7/47/6f94106565a3d1edfeb17bb469412258d175090cb9704a812947641f97cf/pyweatherfr-5.3.4.tar.gz
+[2024-04-28 09:51:41] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/8e/77/c4e24d725355a0432a34b1fde68ad70c1593bb6e379ab781b47a115b2b22/quickpub-0.8.1.tar.gz
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ytdlp-servustv]: Downloading https://files.pythonhosted.org/packages/b9/a1/00df753f7934f69878aa61da1a55aae37951c4fa04d64a9dcd6c69067564/ytdlp_servustv-2024.4.28-py3-none-any.whl
+[2024-04-28 09:51:41] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/1d/18/89b4e7b521c1b2e4ecfa5564f46dd1412d6c87bf7f2bd9786680aefa30a3/pyweatherfr-5.3.5.tar.gz
+[2024-04-28 09:51:41] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Downloading https://files.pythonhosted.org/packages/64/f2/a2bb06afc59525330239d725d42941e679bb9e0910999b90044102503f2d/ccdexplorer_fundamentals-0.2.2.tar.gz
+[2024-04-28 09:51:42] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-28 09:51:42] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.3.4.tar.gz tmp/pyweatherfr-5.3.5.tar.gz --markdown 20240428/p/pyweatherfr/5.3.4-5.3.5/README.md --exclude *.pyd
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ccdexplorer-fundamentals]: executing diffoscope
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ccdexplorer-fundamentals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdexplorer_fundamentals-0.2.1.tar.gz tmp/ccdexplorer_fundamentals-0.2.2.tar.gz --markdown 20240428/c/ccdexplorer-fundamentals/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ytdlp-servustv]: executing diffoscope
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ytdlp-servustv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdlp_servustv-2023.12.27-py3-none-any.whl.zip tmp/ytdlp_servustv-2024.4.28-py3-none-any.whl.zip --markdown 20240428/y/ytdlp-servustv/2023.12.27-2024.4.28/README.md --exclude *.pyd
+[2024-04-28 09:51:42] INFO root fetch - processPackages [quickpub]: executing diffoscope
+[2024-04-28 09:51:42] INFO root fetch - processPackages [quickpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickpub-0.8.0.tar.gz tmp/quickpub-0.8.1.tar.gz --markdown 20240428/q/quickpub/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ytdlp-servustv]: Remove: archive file [/home/abi/fetcher/tmp/ytdlp_servustv-2023.12.27-py3-none-any.whl.zip]
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ytdlp-servustv]: Remove: archive file [/home/abi/fetcher/tmp/ytdlp_servustv-2024.4.28-py3-none-any.whl.zip]
+[2024-04-28 09:51:42] INFO root fetch - main [MainThread]: End processing [ytdlp-servustv]: success
+[2024-04-28 09:51:42] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.4.tar.gz]
+[2024-04-28 09:51:42] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.5.tar.gz]
+[2024-04-28 09:51:42] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/ccdexplorer_fundamentals-0.2.1.tar.gz]
+[2024-04-28 09:51:42] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/ccdexplorer_fundamentals-0.2.2.tar.gz]
+[2024-04-28 09:51:42] INFO root fetch - main [MainThread]: End processing [ccdexplorer-fundamentals]: success
+[2024-04-28 09:51:43] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.0.tar.gz]
+[2024-04-28 09:51:43] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.1.tar.gz]
+[2024-04-28 09:51:43] INFO root fetch - main [MainThread]: End processing [quickpub]: success
+[2024-04-28 09:51:43] INFO root fetch - main [MainThread]: Store serial: [22964991]
