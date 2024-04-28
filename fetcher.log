@@ -10973,3 +10973,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:44:20] INFO root fetch - processPackages [cmind]: Remove: archive file [/home/abi/fetcher/tmp/cmind-2.3.0.tar.gz]
 [2024-04-28 14:44:20] INFO root fetch - main [MainThread]: End processing [cmind]: success
 [2024-04-28 14:44:20] INFO root fetch - main [MainThread]: Store serial: [22966781]
+[2024-04-28 14:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966781]
+[2024-04-28 14:46:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 14:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pref-voting
+[2024-04-28 14:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AmazonProductReviews
+[2024-04-28 14:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BAScraper
+[2024-04-28 14:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dcentralab-auto-infra
+[2024-04-28 14:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enka.py
+[2024-04-28 14:46:35] INFO root fetch - processPackages [dcentralab-auto-infra]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-28 14:46:35] INFO root fetch - processPackages [AmazonProductReviews]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-28 14:46:35] INFO root fetch - processPackages [pref-voting]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 14:46:35] INFO root fetch - processPackages [BAScraper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 14:46:35] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/15/1f/301dd7faf600b1e2c3b51a582a30238c89a6ba83bb01433380e618d469df/amazonproductreviews-0.1.4.tar.gz
+[2024-04-28 14:46:35] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/7b/2a/4f1cb8f32e4c499174af7278bbc3ee34bde03a7b65fd571b022a6a7c051d/pref_voting-1.0.0.tar.gz
+[2024-04-28 14:46:35] INFO root fetch - processPackages [enka.py]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-28 14:46:35] INFO root fetch - processPackages [dcentralab-auto-infra]: Downloading https://files.pythonhosted.org/packages/c8/2b/ab2f6236b348e3afc0d9578201ee1b2f7710e579aeea87338e6587e89038/dcentralab_auto_infra-1.1.0.tar.gz
+[2024-04-28 14:46:35] INFO root fetch - processPackages [BAScraper]: Downloading https://files.pythonhosted.org/packages/4f/ed/49ddf8ed0baa8663f4f5c8c5a487b0e8623b0dc950bf1a8928cb451702a8/BAScraper-0.0.3.tar.gz
+[2024-04-28 14:46:35] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/ca/4b/d423797bb83b6621e45bfc6fe5f2cebf745e9a613ee018850a8c60d38adb/pref_voting-1.1.0.tar.gz
+[2024-04-28 14:46:35] INFO root fetch - processPackages [enka.py]: Downloading https://files.pythonhosted.org/packages/34/0f/ea3f507fe1f846def68a90a3545ad0c959fa164aefdbb5b33b30fa3e1e1c/enka.py-1.2.1.tar.gz
+[2024-04-28 14:46:36] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/94/c6/1604a412354f237d69a1a84e0ae0e3f5056c67c91447f0341c71c6e8779e/amazonproductreviews-0.1.6.tar.gz
+[2024-04-28 14:46:36] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2024-04-28 14:46:36] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-1.0.0.tar.gz tmp/pref_voting-1.1.0.tar.gz --markdown 20240428/p/pref-voting/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 14:46:36] INFO root fetch - processPackages [dcentralab-auto-infra]: Downloading https://files.pythonhosted.org/packages/67/69/609553f132194d8464874b86ed9cb490f0c06ae2ee62801825690b2d0ddf/dcentralab_auto_infra-1.1.1.tar.gz
+[2024-04-28 14:46:36] INFO root fetch - processPackages [AmazonProductReviews]: executing diffoscope
+[2024-04-28 14:46:36] INFO root fetch - processPackages [AmazonProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazonproductreviews-0.1.4.tar.gz tmp/amazonproductreviews-0.1.6.tar.gz --markdown 20240428/A/AmazonProductReviews/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-28 14:46:36] INFO root fetch - processPackages [BAScraper]: Downloading https://files.pythonhosted.org/packages/3b/af/5fc6f376b4473bc83797e969d0298d42d4b63a841b6058f30372b45ab38c/BAScraper-0.0.4.tar.gz
+[2024-04-28 14:46:36] INFO root fetch - processPackages [dcentralab-auto-infra]: executing diffoscope
+[2024-04-28 14:46:36] INFO root fetch - processPackages [dcentralab-auto-infra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcentralab_auto_infra-1.1.0.tar.gz tmp/dcentralab_auto_infra-1.1.1.tar.gz --markdown 20240428/d/dcentralab-auto-infra/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-28 14:46:36] INFO root fetch - processPackages [BAScraper]: executing diffoscope
+[2024-04-28 14:46:36] INFO root fetch - processPackages [BAScraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BAScraper-0.0.3.tar.gz tmp/BAScraper-0.0.4.tar.gz --markdown 20240428/B/BAScraper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 14:46:36] INFO root fetch - processPackages [enka.py]: Downloading https://files.pythonhosted.org/packages/3e/e1/77ebb0cb090d9f726c6ca9f381f5a4e190173599dcbfe7e6d84a1245f8cd/enka.py-1.2.2.tar.gz
+[2024-04-28 14:46:36] INFO root fetch - processPackages [enka.py]: executing diffoscope
+[2024-04-28 14:46:36] INFO root fetch - processPackages [enka.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enka.py-1.2.1.tar.gz tmp/enka.py-1.2.2.tar.gz --markdown 20240428/e/enka.py/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-28 14:46:36] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.4.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.6.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - main [MainThread]: End processing [AmazonProductReviews]: success
+[2024-04-28 14:46:36] INFO root fetch - processPackages [dcentralab-auto-infra]: Remove: archive file [/home/abi/fetcher/tmp/dcentralab_auto_infra-1.1.0.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - processPackages [dcentralab-auto-infra]: Remove: archive file [/home/abi/fetcher/tmp/dcentralab_auto_infra-1.1.1.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - main [MainThread]: End processing [dcentralab-auto-infra]: success
+[2024-04-28 14:46:36] INFO root fetch - processPackages [BAScraper]: Remove: archive file [/home/abi/fetcher/tmp/BAScraper-0.0.3.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - processPackages [BAScraper]: Remove: archive file [/home/abi/fetcher/tmp/BAScraper-0.0.4.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - main [MainThread]: End processing [BAScraper]: success
+[2024-04-28 14:46:36] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.0.0.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.1.0.tar.gz]
+[2024-04-28 14:46:36] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2024-04-28 14:46:37] INFO root fetch - processPackages [enka.py]: Remove: archive file [/home/abi/fetcher/tmp/enka.py-1.2.1.tar.gz]
+[2024-04-28 14:46:37] INFO root fetch - processPackages [enka.py]: Remove: archive file [/home/abi/fetcher/tmp/enka.py-1.2.2.tar.gz]
+[2024-04-28 14:46:37] INFO root fetch - main [MainThread]: End processing [enka.py]: success
+[2024-04-28 14:46:37] INFO root fetch - main [MainThread]: Store serial: [22966800]
