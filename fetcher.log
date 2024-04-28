@@ -10267,3 +10267,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:49:27] INFO root fetch - processPackages [knowledgeai-client]: Remove: archive file [/home/abi/fetcher/tmp/knowledgeai_client-0.5.1.tar.gz]
 [2024-04-28 13:49:27] INFO root fetch - main [MainThread]: End processing [knowledgeai-client]: success
 [2024-04-28 13:49:27] INFO root fetch - main [MainThread]: Store serial: [22966503]
+[2024-04-28 13:51:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966503]
+[2024-04-28 13:51:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 13:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sema-toolchain
+[2024-04-28 13:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frenetix
+[2024-04-28 13:51:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AmazonProductReviews
+[2024-04-28 13:51:42] INFO root fetch - processPackages [sema-toolchain]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 13:51:42] WARNING root fetch - processPackages [AmazonProductReviews]: Skipping, unable to determine old version
+[2024-04-28 13:51:42] INFO root fetch - main [MainThread]: End processing [AmazonProductReviews] error
+[2024-04-28 13:51:42] INFO root fetch - processPackages [sema-toolchain]: Downloading https://files.pythonhosted.org/packages/30/60/bde412b115c8313c5ff8b49b4b647bf7ef6631e612e5992161044caea771/sema_toolchain-0.0.3.tar.gz
+[2024-04-28 13:51:42] INFO root fetch - processPackages [frenetix]: New version: [0.3.0] Old Version: [0.2.0rc5]
+[2024-04-28 13:51:42] INFO root fetch - processPackages [frenetix]: Downloading https://files.pythonhosted.org/packages/14/c9/0959939e9ebaff431281f960050a4155c6f97a1ed28191b78173700a1b58/frenetix-0.2.0rc5.tar.gz
+[2024-04-28 13:51:42] INFO root fetch - processPackages [sema-toolchain]: Downloading https://files.pythonhosted.org/packages/c6/0d/40ab392c4baa695d3c7a63465661270cfd727fa8342c1de02f23c90daa15/sema_toolchain-0.0.4.tar.gz
+[2024-04-28 13:51:42] INFO root fetch - processPackages [sema-toolchain]: executing diffoscope
+[2024-04-28 13:51:42] INFO root fetch - processPackages [sema-toolchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sema_toolchain-0.0.3.tar.gz tmp/sema_toolchain-0.0.4.tar.gz --markdown 20240428/s/sema-toolchain/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 13:51:42] INFO root fetch - processPackages [frenetix]: Downloading https://files.pythonhosted.org/packages/73/71/d562f49d5f93012507a38a0cabe2f111fdb7e0928b184970949f9e73b870/frenetix-0.3.0.tar.gz
+[2024-04-28 13:51:43] INFO root fetch - processPackages [frenetix]: executing diffoscope
+[2024-04-28 13:51:43] INFO root fetch - processPackages [frenetix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frenetix-0.2.0rc5.tar.gz tmp/frenetix-0.3.0.tar.gz --markdown 20240428/f/frenetix/0.2.0rc5-0.3.0/README.md --exclude *.pyd
+[2024-04-28 13:51:43] INFO root fetch - processPackages [sema-toolchain]: Remove: archive file [/home/abi/fetcher/tmp/sema_toolchain-0.0.3.tar.gz]
+[2024-04-28 13:51:43] INFO root fetch - processPackages [sema-toolchain]: Remove: archive file [/home/abi/fetcher/tmp/sema_toolchain-0.0.4.tar.gz]
+[2024-04-28 13:51:43] INFO root fetch - main [MainThread]: End processing [sema-toolchain]: success
+[2024-04-28 13:51:43] INFO root fetch - processPackages [frenetix]: Remove: archive file [/home/abi/fetcher/tmp/frenetix-0.2.0rc5.tar.gz]
+[2024-04-28 13:51:43] INFO root fetch - processPackages [frenetix]: Remove: archive file [/home/abi/fetcher/tmp/frenetix-0.3.0.tar.gz]
+[2024-04-28 13:51:43] INFO root fetch - main [MainThread]: End processing [frenetix]: success
+[2024-04-28 13:51:43] INFO root fetch - main [MainThread]: Store serial: [22966528]
