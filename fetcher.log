@@ -5934,3 +5934,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:44:31] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-99.0.0.tar.gz]
 [2024-04-28 08:44:31] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
 [2024-04-28 08:44:31] INFO root fetch - main [MainThread]: Store serial: [22964694]
+[2024-04-28 08:46:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964694]
+[2024-04-28 08:46:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 08:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pbix-sx
+[2024-04-28 08:46:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phylokrr
+[2024-04-28 08:46:40] INFO root fetch - processPackages [phylokrr]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-04-28 08:46:40] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/6a/7b/d98694eb12272ae47684df61862f9dcfc1140549d8b303aca18eb95b637d/phylokrr-0.4.6.tar.gz
+[2024-04-28 08:46:40] WARNING root fetch - processPackages [pbix-sx]: Skipping, unable to determine old version
+[2024-04-28 08:46:40] INFO root fetch - main [MainThread]: End processing [pbix-sx] error
+[2024-04-28 08:46:40] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/1c/dd/c2940f77583a1f4ecfe48223a384fad75836384b66330581947799613301/phylokrr-0.4.7.tar.gz
+[2024-04-28 08:46:41] INFO root fetch - processPackages [phylokrr]: executing diffoscope
+[2024-04-28 08:46:41] INFO root fetch - processPackages [phylokrr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylokrr-0.4.6.tar.gz tmp/phylokrr-0.4.7.tar.gz --markdown 20240428/p/phylokrr/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-04-28 08:46:41] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.6.tar.gz]
+[2024-04-28 08:46:41] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.7.tar.gz]
+[2024-04-28 08:46:41] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
+[2024-04-28 08:46:41] INFO root fetch - main [MainThread]: Store serial: [22964703]
