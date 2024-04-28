@@ -2050,3 +2050,24 @@
 [2024-04-28 02:47:14] INFO root fetch - processPackages [sigmond-scripts]: Remove: archive file [/home/abi/fetcher/tmp/sigmond_scripts-1.0.1.tar.gz]
 [2024-04-28 02:47:14] INFO root fetch - main [MainThread]: End processing [sigmond-scripts]: success
 [2024-04-28 02:47:14] INFO root fetch - main [MainThread]: Store serial: [22963058]
+[2024-04-28 02:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963058]
+[2024-04-28 02:49:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 02:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-push-notifications
+[2024-04-28 02:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npc_lims
+[2024-04-28 02:49:23] INFO root fetch - processPackages [django-push-notifications]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-04-28 02:49:23] INFO root fetch - processPackages [npc_lims]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 02:49:23] INFO root fetch - processPackages [django-push-notifications]: Downloading https://files.pythonhosted.org/packages/98/7d/5f5ac30dfc3ad20a949e6e6258c35c4670eac53df34506bdd47f35501c3a/django-push-notifications-3.0.2.tar.gz
+[2024-04-28 02:49:23] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/eb/a3/a72478dcef25d9b46c35b7730c5c9a426e07354369fb652045cc1befbe7e/npc_lims-0.1.98.tar.gz
+[2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: Downloading https://files.pythonhosted.org/packages/ce/c0/a141bd6b48182fdb188c96d5d0d0a08f5435f9915e40b33393bd88e725dc/django-push-notifications-3.0.3.tar.gz
+[2024-04-28 02:49:24] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/20/8f/2a3ef0e71c09fd01ba3685a9f92c448766eab8a9e83f1e03e62e90091e0a/npc_lims-0.1.99.tar.gz
+[2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: executing diffoscope
+[2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-push-notifications-3.0.2.tar.gz tmp/django-push-notifications-3.0.3.tar.gz --markdown 20240428/d/django-push-notifications/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-04-28 02:49:24] INFO root fetch - processPackages [npc_lims]: executing diffoscope
+[2024-04-28 02:49:24] INFO root fetch - processPackages [npc_lims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc_lims-0.1.98.tar.gz tmp/npc_lims-0.1.99.tar.gz --markdown 20240428/n/npc_lims/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 02:49:24] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.98.tar.gz]
+[2024-04-28 02:49:24] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.99.tar.gz]
+[2024-04-28 02:49:24] INFO root fetch - main [MainThread]: End processing [npc_lims]: success
+[2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: Remove: archive file [/home/abi/fetcher/tmp/django-push-notifications-3.0.2.tar.gz]
+[2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: Remove: archive file [/home/abi/fetcher/tmp/django-push-notifications-3.0.3.tar.gz]
+[2024-04-28 02:49:24] INFO root fetch - main [MainThread]: End processing [django-push-notifications]: success
+[2024-04-28 02:49:24] INFO root fetch - main [MainThread]: Store serial: [22963063]
