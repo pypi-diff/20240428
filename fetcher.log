@@ -14292,3 +14292,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:43:26] INFO root fetch - processPackages [robotframework-pyserial]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_pyserial-1.1.0.tar.gz]
 [2024-04-28 18:43:26] INFO root fetch - main [MainThread]: End processing [robotframework-pyserial]: success
 [2024-04-28 18:43:26] INFO root fetch - main [MainThread]: Store serial: [22968153]
+[2024-04-28 18:45:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968153]
+[2024-04-28 18:45:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 18:45:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-04-28 18:45:34] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 18:45:35] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 18:45:35] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 18:45:35] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 18:45:35] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 18:45:36] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 18:45:36] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 18:45:36] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 18:45:36] INFO root fetch - main [MainThread]: Store serial: [22968156]
