@@ -14703,3 +14703,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:14:00] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-04-28 19:14:00] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-28 19:14:00] INFO root fetch - main [MainThread]: Store serial: [22968302]
+[2024-04-28 19:16:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968302]
+[2024-04-28 19:16:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapegraphai
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-bucket
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Cl1pAPI
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: func-pars
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: totolo
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: data-transformation-yfhsi
+[2024-04-28 19:16:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: totolo
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: New version: [1.5.2.dev202404281659] Old Version: [1.5.2]
+[2024-04-28 19:16:11] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-28 19:16:11] WARNING root fetch - processPackages [Cl1pAPI]: Skipping, unable to determine old version
+[2024-04-28 19:16:11] INFO root fetch - main [MainThread]: End processing [Cl1pAPI] error
+[2024-04-28 19:16:11] INFO root fetch - processPackages [scrapegraphai]: New version: [0.4.0b3] Old Version: [0.4.0b2]
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: New version: [1.5.2.dev202404281659] Old Version: [1.5.2]
+[2024-04-28 19:16:11] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/ea/b4/1ba5ac889e78ec4bf9a201ca2c9b60170b390aa6f366a707127f1fce6abd/totolo-1.5.2.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/ea/b4/1ba5ac889e78ec4bf9a201ca2c9b60170b390aa6f366a707127f1fce6abd/totolo-1.5.2.tar.gz
+[2024-04-28 19:16:11] WARNING root fetch - processPackages [func-pars]: Skipping, unable to determine old version
+[2024-04-28 19:16:11] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/db/0d/fc8fd75d79b6c67e21064298999f37ff9e0a52e095a03b76f5087f94a7d6/scrapegraphai-0.4.0b2.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - main [MainThread]: End processing [func-pars] error
+[2024-04-28 19:16:11] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/32/29/5debfecc63a05e19446956f2f68d6af48b5f222b9eacebac3bedf657a3d0/gammarers.aws-secure-bucket-1.3.2.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/0f/06/bfe14a74ca017dfe248649e5ab6f4419c19154bae26bed84dcf679c89c11/scrapegraphai-0.4.0b3.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/b4/da/2c7e3199473a5f15234caf55453ebfdc4f4833b536897a49261efd9163fe/totolo-1.5.2.dev202404281659.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-28 19:16:11] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240428/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-28 19:16:11] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-28 19:16:11] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.4.0b2.tar.gz tmp/scrapegraphai-0.4.0b3.tar.gz --markdown 20240428/s/scrapegraphai/0.4.0b2-0.4.0b3/README.md --exclude *.pyd
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/b4/da/2c7e3199473a5f15234caf55453ebfdc4f4833b536897a49261efd9163fe/totolo-1.5.2.dev202404281659.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: executing diffoscope
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/totolo-1.5.2.tar.gz tmp/totolo-1.5.2.dev202404281659.tar.gz --markdown 20240428/t/totolo/1.5.2-1.5.2.dev202404281659/README.md --exclude *.pyd
+[2024-04-28 19:16:11] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Downloading https://files.pythonhosted.org/packages/8e/6a/8d1597707aa1cb885bc297f013e431b13413a51194b5d200d3230394023c/gammarers.aws-secure-bucket-1.3.3.tar.gz
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: executing diffoscope
+[2024-04-28 19:16:11] INFO root fetch - processPackages [totolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/totolo-1.5.2.tar.gz tmp/totolo-1.5.2.dev202404281659.tar.gz --markdown 20240428/t/totolo/1.5.2-1.5.2.dev202404281659/README.md --exclude *.pyd
+[2024-04-28 19:16:11] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: executing diffoscope
+[2024-04-28 19:16:11] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-bucket-1.3.2.tar.gz tmp/gammarers.aws-secure-bucket-1.3.3.tar.gz --markdown 20240428/g/gammarers.aws-secure-bucket/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 19:16:12] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-28 19:16:12] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.4.0b2.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.4.0b3.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-28 19:16:12] INFO root fetch - processPackages [totolo]: Remove: archive file [/home/abi/fetcher/tmp/totolo-1.5.2.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - processPackages [totolo]: Remove: archive file [/home/abi/fetcher/tmp/totolo-1.5.2.dev202404281659.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: End processing [totolo]: success
+[2024-04-28 19:16:12] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.2.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - processPackages [gammarers.aws-secure-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-bucket-1.3.3.tar.gz]
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-bucket]: success
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: End processing [totolo]: success
+[2024-04-28 19:16:12] INFO root fetch - main [MainThread]: Store serial: [22968336]
