@@ -7428,3 +7428,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:40:11] INFO root fetch - processPackages [tokengeex]: Remove: archive file [/home/abi/fetcher/tmp/tokengeex-1.0.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
 [2024-04-28 10:40:11] INFO root fetch - main [MainThread]: End processing [tokengeex]: success
 [2024-04-28 10:40:11] INFO root fetch - main [MainThread]: Store serial: [22965256]
+[2024-04-28 10:42:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965256]
+[2024-04-28 10:42:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 10:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuzu
+[2024-04-28 10:42:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscinloopsr
+[2024-04-28 10:42:28] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 10:42:28] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev48] Old Version: [0.3.3.dev47]
+[2024-04-28 10:42:28] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-28 10:42:28] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/e3/01/d88153bd260d13358171f71edcc48b1042dee73a9f50af68d84d1af0dafb/kuzu-0.3.3.dev47.tar.gz
+[2024-04-28 10:42:28] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-28 10:42:28] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-28 10:42:28] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240428/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 10:42:28] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/01/ad/c3e21f2dda1cdd9f2448b9c2c8db83b4e39eaf761b06c568b4f3c5fe8837/kuzu-0.3.3.dev48.tar.gz
+[2024-04-28 10:42:29] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-04-28 10:42:29] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.3.3.dev47.tar.gz tmp/kuzu-0.3.3.dev48.tar.gz --markdown 20240428/k/kuzu/0.3.3.dev47-0.3.3.dev48/README.md --exclude *.pyd
+[2024-04-28 10:42:29] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-28 10:42:29] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-28 10:42:29] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-28 10:42:35] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev47.tar.gz]
+[2024-04-28 10:42:35] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.3.3.dev48.tar.gz]
+[2024-04-28 10:42:35] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-04-28 10:42:35] INFO root fetch - main [MainThread]: Store serial: [22965371]
