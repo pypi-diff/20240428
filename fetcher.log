@@ -9291,3 +9291,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:45:41] INFO root fetch - processPackages [DMDO]: Remove: archive file [/home/abi/fetcher/tmp/DMDO-2404-py3-none-any.whl.zip]
 [2024-04-28 12:45:41] INFO root fetch - main [MainThread]: End processing [DMDO]: success
 [2024-04-28 12:45:41] INFO root fetch - main [MainThread]: Store serial: [22966171]
+[2024-04-28 12:47:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966171]
+[2024-04-28 12:47:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 12:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petrovisor
+[2024-04-28 12:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imt-ring
+[2024-04-28 12:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: croning
+[2024-04-28 12:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: think-sql
+[2024-04-28 12:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: i2cylib
+[2024-04-28 12:47:52] INFO root fetch - processPackages [i2cylib]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-04-28 12:47:52] INFO root fetch - processPackages [imt-ring]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 12:47:52] INFO root fetch - processPackages [croning]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-28 12:47:52] INFO root fetch - processPackages [think-sql]: New version: [0.7.5] Old Version: [0.7.4]
+[2024-04-28 12:47:52] INFO root fetch - processPackages [petrovisor]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 12:47:52] INFO root fetch - processPackages [i2cylib]: Downloading https://files.pythonhosted.org/packages/2c/bb/6cc12ceeb9a54372b2ba5e8bb183dfef520d25a0971d6a6526f02c487766/i2cylib-1.9.4.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/e0/e6/c5fe8133e14daa311e65ccf48822547a8415d51fca081b4efcb031c57d1f/petrovisor-0.1.3.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [imt-ring]: Downloading https://files.pythonhosted.org/packages/4b/cd/eb6bb23523994384276490f8ed71003ae563551ac57cc7c1ad4c33e07e5d/imt_ring-1.3.2.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [croning]: Downloading https://files.pythonhosted.org/packages/45/bf/2a01ac691b7216c34f8f764430efa79d8448548a144390f75d6984fb0621/croning-0.0.1.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [think-sql]: Downloading https://files.pythonhosted.org/packages/02/2e/9ef78d662f3cd5fcaba55dcc7ff7225b914eef45682bce3778df37130a14/think_sql-0.7.4.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [i2cylib]: Downloading https://files.pythonhosted.org/packages/07/db/4b9467cd012615b924c7bb3413be74a3993af003e56ff8eb772df32fbb35/i2cylib-1.9.5.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [i2cylib]: executing diffoscope
+[2024-04-28 12:47:53] INFO root fetch - processPackages [i2cylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2cylib-1.9.4.tar.gz tmp/i2cylib-1.9.5.tar.gz --markdown 20240428/i/i2cylib/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-04-28 12:47:53] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/8e/35/15a88c6bd6f175b179ebc40b69a1e295d66b885f0b96bf72094598e44cc6/petrovisor-0.1.4.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [croning]: Downloading https://files.pythonhosted.org/packages/c6/3c/62d68332cb0a1e17d4cd64f429327fd7bd24954d5f695fa24f21b37ab446/croning-0.1.0.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [think-sql]: Downloading https://files.pythonhosted.org/packages/68/60/240feed06449db1bf4541b40fec4b849c7efb342b489cb3d82bb50d5378d/think_sql-0.7.5.tar.gz
+[2024-04-28 12:47:53] INFO root fetch - processPackages [petrovisor]: executing diffoscope
+[2024-04-28 12:47:53] INFO root fetch - processPackages [petrovisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrovisor-0.1.3.tar.gz tmp/petrovisor-0.1.4.tar.gz --markdown 20240428/p/petrovisor/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 12:47:53] INFO root fetch - processPackages [croning]: executing diffoscope
+[2024-04-28 12:47:53] INFO root fetch - processPackages [croning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croning-0.0.1.tar.gz tmp/croning-0.1.0.tar.gz --markdown 20240428/c/croning/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-28 12:47:53] INFO root fetch - processPackages [think-sql]: executing diffoscope
+[2024-04-28 12:47:53] INFO root fetch - processPackages [think-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/think_sql-0.7.4.tar.gz tmp/think_sql-0.7.5.tar.gz --markdown 20240428/t/think-sql/0.7.4-0.7.5/README.md --exclude *.pyd
+[2024-04-28 12:47:53] INFO root fetch - processPackages [imt-ring]: Downloading https://files.pythonhosted.org/packages/25/55/d42458b1d0959561c152177fa78f24741627e8b760b5cb2993c8df1ae4ef/imt_ring-1.3.3.tar.gz
+[2024-04-28 12:47:54] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.4.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.5.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
+[2024-04-28 12:47:54] INFO root fetch - processPackages [croning]: Remove: archive file [/home/abi/fetcher/tmp/croning-0.0.1.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - processPackages [croning]: Remove: archive file [/home/abi/fetcher/tmp/croning-0.1.0.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - main [MainThread]: End processing [croning]: success
+[2024-04-28 12:47:54] INFO root fetch - processPackages [think-sql]: Remove: archive file [/home/abi/fetcher/tmp/think_sql-0.7.4.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - processPackages [think-sql]: Remove: archive file [/home/abi/fetcher/tmp/think_sql-0.7.5.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - main [MainThread]: End processing [think-sql]: success
+[2024-04-28 12:47:54] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.3.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.4.tar.gz]
+[2024-04-28 12:47:54] INFO root fetch - main [MainThread]: End processing [petrovisor]: success
+[2024-04-28 12:47:55] INFO root fetch - processPackages [imt-ring]: executing diffoscope
+[2024-04-28 12:47:55] INFO root fetch - processPackages [imt-ring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imt_ring-1.3.2.tar.gz tmp/imt_ring-1.3.3.tar.gz --markdown 20240428/i/imt-ring/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 12:47:56] INFO root fetch - processPackages [imt-ring]: Remove: archive file [/home/abi/fetcher/tmp/imt_ring-1.3.2.tar.gz]
+[2024-04-28 12:47:56] INFO root fetch - processPackages [imt-ring]: Remove: archive file [/home/abi/fetcher/tmp/imt_ring-1.3.3.tar.gz]
+[2024-04-28 12:47:56] INFO root fetch - main [MainThread]: End processing [imt-ring]: success
+[2024-04-28 12:47:56] INFO root fetch - main [MainThread]: Store serial: [22966186]
