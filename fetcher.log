@@ -8110,3 +8110,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:15:46] INFO root fetch - processPackages [pyroferk]: Remove: archive file [/home/abi/fetcher/tmp/pyroferk-2.0.tar.gz]
 [2024-04-28 11:15:46] INFO root fetch - main [MainThread]: End processing [pyroferk]: success
 [2024-04-28 11:15:46] INFO root fetch - main [MainThread]: Store serial: [22965638]
+[2024-04-28 11:17:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965638]
+[2024-04-28 11:17:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 11:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tbp-nightly
+[2024-04-28 11:17:57] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-28 11:17:57] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-28 11:17:57] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-28 11:17:58] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-28 11:17:58] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240428/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-04-28 11:17:59] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-28 11:17:59] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-28 11:17:59] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-28 11:17:59] INFO root fetch - main [MainThread]: Store serial: [22965643]
