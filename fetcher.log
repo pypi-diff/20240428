@@ -2699,3 +2699,33 @@
 [2024-04-28 03:54:29] INFO root fetch - processPackages [heradata]: Remove: archive file [/home/abi/fetcher/tmp/heradata-0.1.5.tar.gz]
 [2024-04-28 03:54:29] INFO root fetch - main [MainThread]: End processing [heradata]: success
 [2024-04-28 03:54:29] INFO root fetch - main [MainThread]: Store serial: [22963347]
+[2024-04-28 03:56:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963347]
+[2024-04-28 03:56:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heradata
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziya
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: permission-manager
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ziya]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 03:56:38] INFO root fetch - processPackages [heradata]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/4c/de/6b1b9c50192ded640921193893b36c1807f46b7eedabc86f41c21225b2e6/ziya-0.1.6.tar.gz
+[2024-04-28 03:56:38] INFO root fetch - processPackages [permission-manager]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-28 03:56:38] INFO root fetch - processPackages [heradata]: Downloading https://files.pythonhosted.org/packages/90/9e/573a952b6e713df2687d35e8050ad28c6c31e3c804d6ad411977db338d59/HeraData-0.1.4.tar.gz
+[2024-04-28 03:56:38] INFO root fetch - processPackages [permission-manager]: Downloading https://files.pythonhosted.org/packages/e7/be/a8b3607fa8f2ef9274a2039bd322d3c9a1ecc0d8dfca1ed3768e2dbdc47c/permission_manager-0.2.0.tar.gz
+[2024-04-28 03:56:38] INFO root fetch - processPackages [heradata]: Downloading https://files.pythonhosted.org/packages/65/59/ba459896b90124ca6c218c58143ae9a89b4a6ef3d4d03be45d60deff7a1b/heradata-0.1.5.tar.gz
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/ae/f5/d4843f553a71d6fa733d0cab84590f9086d2f784605da731c2b4b9cc1741/ziya-0.1.7.tar.gz
+[2024-04-28 03:56:38] INFO root fetch - processPackages [heradata]: executing diffoscope
+[2024-04-28 03:56:38] INFO root fetch - processPackages [heradata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HeraData-0.1.4.tar.gz tmp/heradata-0.1.5.tar.gz --markdown 20240428/h/heradata/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-28 03:56:38] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.6.tar.gz tmp/ziya-0.1.7.tar.gz --markdown 20240428/z/ziya/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 03:56:38] INFO root fetch - processPackages [permission-manager]: Downloading https://files.pythonhosted.org/packages/18/c1/c1c744c0622703883e8d898807ea62f04113125f5472c536c0270527f3fa/permission_manager-0.3.0.tar.gz
+[2024-04-28 03:56:39] INFO root fetch - processPackages [permission-manager]: executing diffoscope
+[2024-04-28 03:56:39] INFO root fetch - processPackages [permission-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/permission_manager-0.2.0.tar.gz tmp/permission_manager-0.3.0.tar.gz --markdown 20240428/p/permission-manager/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-28 03:56:39] INFO root fetch - processPackages [heradata]: Remove: archive file [/home/abi/fetcher/tmp/HeraData-0.1.4.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - processPackages [heradata]: Remove: archive file [/home/abi/fetcher/tmp/heradata-0.1.5.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - main [MainThread]: End processing [heradata]: success
+[2024-04-28 03:56:39] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.6.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.7.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-28 03:56:39] INFO root fetch - processPackages [permission-manager]: Remove: archive file [/home/abi/fetcher/tmp/permission_manager-0.2.0.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - processPackages [permission-manager]: Remove: archive file [/home/abi/fetcher/tmp/permission_manager-0.3.0.tar.gz]
+[2024-04-28 03:56:39] INFO root fetch - main [MainThread]: End processing [permission-manager]: success
+[2024-04-28 03:56:39] INFO root fetch - main [MainThread]: Store serial: [22963355]
