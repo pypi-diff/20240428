@@ -1761,3 +1761,27 @@
 [2024-04-28 02:24:17] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.99.tar.gz]
 [2024-04-28 02:24:17] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
 [2024-04-28 02:24:17] INFO root fetch - main [MainThread]: Store serial: [22962957]
+[2024-04-28 02:26:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962957]
+[2024-04-28 02:26:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 02:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extropic
+[2024-04-28 02:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-iconoir
+[2024-04-28 02:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: canvasxpress
+[2024-04-28 02:26:25] WARNING root fetch - processPackages [extropic]: Skipping, unable to determine old version
+[2024-04-28 02:26:25] INFO root fetch - main [MainThread]: End processing [extropic] error
+[2024-04-28 02:26:26] INFO root fetch - processPackages [flet-iconoir]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-04-28 02:26:26] INFO root fetch - processPackages [canvasxpress]: New version: [2024.4.7.2406] Old Version: [2024.4.28.2558]
+[2024-04-28 02:26:26] INFO root fetch - processPackages [flet-iconoir]: Downloading https://files.pythonhosted.org/packages/bc/9b/df76c83ed33491d626438f2fb8d4767723595fa0ad1df87553bc2c2d2db8/flet_iconoir-0.2.2.tar.gz
+[2024-04-28 02:26:26] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/2e/2a/f22fca796a5e5a80cf5e0aada5e6bc467572a048b4e681a103abf77d9523/canvasxpress-2024.4.28.2558.tar.gz
+[2024-04-28 02:26:26] INFO root fetch - processPackages [flet-iconoir]: Downloading https://files.pythonhosted.org/packages/09/ad/814d61b79dd0f6884912fb8da2ee3facb1b3ff793a448c2c66ef13de9ea2/flet_iconoir-0.3.0.tar.gz
+[2024-04-28 02:26:26] INFO root fetch - processPackages [flet-iconoir]: executing diffoscope
+[2024-04-28 02:26:26] INFO root fetch - processPackages [flet-iconoir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_iconoir-0.2.2.tar.gz tmp/flet_iconoir-0.3.0.tar.gz --markdown 20240428/f/flet-iconoir/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-04-28 02:26:27] INFO root fetch - processPackages [canvasxpress]: Downloading https://files.pythonhosted.org/packages/9a/a9/4718ff49db620984b31b1c5070c0c97d69f6a1fea76ac5e8ff4a3df6b7a7/canvasxpress-2024.4.7.2406.tar.gz
+[2024-04-28 02:26:27] INFO root fetch - processPackages [canvasxpress]: executing diffoscope
+[2024-04-28 02:26:27] INFO root fetch - processPackages [canvasxpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canvasxpress-2024.4.28.2558.tar.gz tmp/canvasxpress-2024.4.7.2406.tar.gz --markdown 20240428/c/canvasxpress/2024.4.28.2558-2024.4.7.2406/README.md --exclude *.pyd
+[2024-04-28 02:26:32] INFO root fetch - processPackages [flet-iconoir]: Remove: archive file [/home/abi/fetcher/tmp/flet_iconoir-0.2.2.tar.gz]
+[2024-04-28 02:26:32] INFO root fetch - processPackages [flet-iconoir]: Remove: archive file [/home/abi/fetcher/tmp/flet_iconoir-0.3.0.tar.gz]
+[2024-04-28 02:26:32] INFO root fetch - main [MainThread]: End processing [flet-iconoir]: success
+[2024-04-28 02:27:26] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.28.2558.tar.gz]
+[2024-04-28 02:27:26] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
+[2024-04-28 02:27:26] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
+[2024-04-28 02:27:26] INFO root fetch - main [MainThread]: Store serial: [22962967]
