@@ -10952,3 +10952,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:42:01] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240427-py3-none-win_amd64.whl.zip]
 [2024-04-28 14:42:01] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-04-28 14:42:01] INFO root fetch - main [MainThread]: Store serial: [22966774]
+[2024-04-28 14:44:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966774]
+[2024-04-28 14:44:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 14:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-04-28 14:44:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmind
+[2024-04-28 14:44:18] INFO root fetch - processPackages [mimllearning]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 14:44:18] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/28/c9/1fcec7b85fa0fb30bb317460ef689593854fc9d23960e4cdda6f34b05c00/mimllearning-0.2.1.tar.gz
+[2024-04-28 14:44:18] INFO root fetch - processPackages [cmind]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-04-28 14:44:18] INFO root fetch - processPackages [cmind]: Downloading https://files.pythonhosted.org/packages/01/0f/f5cafb23b082ef5a89a13a09f6a2d886c5cb989058ce53e0f41f17b60786/cmind-2.2.0.tar.gz
+[2024-04-28 14:44:18] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/fa/cc/a4d579425500be7683f31fe27f344f043ce5ac81a5819413be3dc1183610/mimllearning-0.2.2.tar.gz
+[2024-04-28 14:44:19] INFO root fetch - processPackages [cmind]: Downloading https://files.pythonhosted.org/packages/1c/26/85570382888436a16174ca4b0144ccd3f00ac7a18802d18fc3ddcde4bd90/cmind-2.3.0.tar.gz
+[2024-04-28 14:44:19] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-04-28 14:44:19] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.1.tar.gz tmp/mimllearning-0.2.2.tar.gz --markdown 20240428/m/mimllearning/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 14:44:19] INFO root fetch - processPackages [cmind]: executing diffoscope
+[2024-04-28 14:44:19] INFO root fetch - processPackages [cmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmind-2.2.0.tar.gz tmp/cmind-2.3.0.tar.gz --markdown 20240428/c/cmind/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-04-28 14:44:20] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.1.tar.gz]
+[2024-04-28 14:44:20] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.2.tar.gz]
+[2024-04-28 14:44:20] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-04-28 14:44:20] INFO root fetch - processPackages [cmind]: Remove: archive file [/home/abi/fetcher/tmp/cmind-2.2.0.tar.gz]
+[2024-04-28 14:44:20] INFO root fetch - processPackages [cmind]: Remove: archive file [/home/abi/fetcher/tmp/cmind-2.3.0.tar.gz]
+[2024-04-28 14:44:20] INFO root fetch - main [MainThread]: End processing [cmind]: success
+[2024-04-28 14:44:20] INFO root fetch - main [MainThread]: Store serial: [22966781]
