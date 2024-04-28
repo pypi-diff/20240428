@@ -4430,3 +4430,33 @@
 [2024-04-28 06:39:46] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.1.0.tar.gz]
 [2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [xju]: success
 [2024-04-28 06:39:46] INFO root fetch - main [MainThread]: Store serial: [22964040]
+[2024-04-28 06:41:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964040]
+[2024-04-28 06:41:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 06:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-pos-cfe
+[2024-04-28 06:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snowpark-extensions
+[2024-04-28 06:41:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-l10n-br-pos
+[2024-04-28 06:41:55] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: New version: [14.0.1.5.3.dev9] Old Version: [14.0.1.5.3.dev8]
+[2024-04-28 06:41:55] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: New version: [14.0.1.4.1.dev4] Old Version: [14.0.1.4.1.dev3]
+[2024-04-28 06:41:55] INFO root fetch - processPackages [snowpark-extensions]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 06:41:55] INFO root fetch - processPackages [snowpark-extensions]: Downloading https://files.pythonhosted.org/packages/d0/8e/e59bf3e511fc61c2a133346f75d8c58cd30019aa355d63bbc160411e28ba/snowpark_extensions-0.0.8.tar.gz
+[2024-04-28 06:41:55] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: Downloading https://files.pythonhosted.org/packages/20/58/3db3884043a003092defcd19615d577c202dc30a1b1461b9fd899900e856/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev3-py3-none-any.whl
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Downloading https://files.pythonhosted.org/packages/f1/56/2f6037b4aa9e1bf3ced072b311ab048e3e7a04fd72a138a731f70260aeda/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: Downloading https://files.pythonhosted.org/packages/b5/fb/e6ccd991174b7699c2c2eb3bca8b5f42df4f72c84bdc31208384c8077e04/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev4-py3-none-any.whl
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Downloading https://files.pythonhosted.org/packages/c4/5a/00631840ff1a58fa5c3a89868c29231e557f255e18efdcc354f00572ed2a/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl
+[2024-04-28 06:41:56] INFO root fetch - processPackages [snowpark-extensions]: Downloading https://files.pythonhosted.org/packages/74/2e/37a6bebfa325a001df8c8e0d5909748d9efdbda9de91877f7101bd32c687/snowpark_extensions-0.0.9.tar.gz
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: executing diffoscope
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-l10n-br-pos/14.0.1.5.3.dev8-14.0.1.5.3.dev9/README.md --exclude *.pyd
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: executing diffoscope
+[2024-04-28 06:41:56] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev4-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-l10n-br-pos-cfe/14.0.1.4.1.dev3-14.0.1.4.1.dev4/README.md --exclude *.pyd
+[2024-04-28 06:41:56] INFO root fetch - processPackages [snowpark-extensions]: executing diffoscope
+[2024-04-28 06:41:56] INFO root fetch - processPackages [snowpark-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowpark_extensions-0.0.8.tar.gz tmp/snowpark_extensions-0.0.9.tar.gz --markdown 20240428/s/snowpark-extensions/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 06:41:57] INFO root fetch - processPackages [snowpark-extensions]: Remove: archive file [/home/abi/fetcher/tmp/snowpark_extensions-0.0.8.tar.gz]
+[2024-04-28 06:41:57] INFO root fetch - processPackages [snowpark-extensions]: Remove: archive file [/home/abi/fetcher/tmp/snowpark_extensions-0.0.9.tar.gz]
+[2024-04-28 06:41:57] INFO root fetch - main [MainThread]: End processing [snowpark-extensions]: success
+[2024-04-28 06:41:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev3-py3-none-any.whl.zip]
+[2024-04-28 06:41:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos-cfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos_cfe-14.0.1.4.1.dev4-py3-none-any.whl.zip]
+[2024-04-28 06:41:57] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-pos-cfe]: success
+[2024-04-28 06:41:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl.zip]
+[2024-04-28 06:41:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip]
+[2024-04-28 06:41:57] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-pos]: success
+[2024-04-28 06:41:57] INFO root fetch - main [MainThread]: Store serial: [22964045]
