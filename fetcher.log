@@ -7476,3 +7476,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:44:47] INFO root fetch - processPackages [ccdexplorer-fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/ccdexplorer_fundamentals-0.2.2.tar.gz]
 [2024-04-28 10:44:47] INFO root fetch - main [MainThread]: End processing [ccdexplorer-fundamentals]: success
 [2024-04-28 10:44:47] INFO root fetch - main [MainThread]: Store serial: [22965385]
+[2024-04-28 10:46:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965385]
+[2024-04-28 10:46:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tui-dsmt
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seven-cloudapp-frame
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly-cpu
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quickpub
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyroferk
+[2024-04-28 10:46:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyscinloopsr
+[2024-04-28 10:46:57] INFO root fetch - processPackages [pyscinloopsr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 10:46:57] INFO root fetch - processPackages [quickpub]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-28 10:46:57] WARNING root fetch - processPackages [pyroferk]: Skipping, unable to determine old version
+[2024-04-28 10:46:57] INFO root fetch - main [MainThread]: End processing [pyroferk] error
+[2024-04-28 10:46:57] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/98/21/5809d8e4c42d0207d6fd61e35cf0683da0e0cc5f1d10fa87e864b000cfa6/pyscinloopsr-1.0.8.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/7c/56/496575bb99810167d88ed13168e61ada96c82d0c1df35d2aac60e16a5a20/quickpub-0.8.2.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 10:46:57] INFO root fetch - processPackages [tui-dsmt]: New version: [202404280836] Old Version: [202404241230]
+[2024-04-28 10:46:57] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240428] Old Version: [2.17.0.dev20240427]
+[2024-04-28 10:46:57] INFO root fetch - processPackages [pyscinloopsr]: Downloading https://files.pythonhosted.org/packages/c2/79/a3b3e1c4377a54b84d92a6ce4a8d70f9bb57364bdbe1ec2657397e8360cd/pyscinloopsr-1.0.9.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/29/d7/2562acd6436bd3daaae39ecb847463a40380b390735f9683b13734ac717f/tui_dsmt-202404241230.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [seven-cloudapp-frame]: Downloading https://files.pythonhosted.org/packages/b9/ca/39a9edf0448dce1557b063b8e2277fb9cfb7583e390be7c95ab7d0ea0641/seven_cloudapp_frame-1.1.8.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/ff/74/24a64f9c90b6f1c3e77d80cc3b41cddc226dc805a79f689eaefb6c9d32be/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl
+[2024-04-28 10:46:57] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/63/f6/133911040dded723b800dbb56f6e72ea8fe6e134b457287f9fd20fae324c/quickpub-0.8.3.tar.gz
+[2024-04-28 10:46:57] INFO root fetch - processPackages [pyscinloopsr]: executing diffoscope
+[2024-04-28 10:46:57] INFO root fetch - processPackages [pyscinloopsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscinloopsr-1.0.8.tar.gz tmp/pyscinloopsr-1.0.9.tar.gz --markdown 20240428/p/pyscinloopsr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 10:46:58] INFO root fetch - processPackages [quickpub]: executing diffoscope
+[2024-04-28 10:46:58] INFO root fetch - processPackages [quickpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickpub-0.8.2.tar.gz tmp/quickpub-0.8.3.tar.gz --markdown 20240428/q/quickpub/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/4c/ef/ffcedb84a35879d09252dcfee650ee1de29187962e8b73d8cb510aabbfc4/tui_dsmt-202404280836.tar.gz
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/36/6a/86c18615dce8469af50db452058c45650f4b392a6756faf17bdfdc0b6503/tf_nightly_cpu-2.17.0.dev20240428-cp39-cp39-win_amd64.whl
+[2024-04-28 10:46:58] INFO root fetch - processPackages [seven-cloudapp-frame]: Downloading https://files.pythonhosted.org/packages/3c/36/0c224bc89289ec1de22a5c6a2070b6fe931fc13c906476b1e568044096fc/seven_cloudapp_frame-1.1.9.tar.gz
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202404241230.tar.gz tmp/tui_dsmt-202404280836.tar.gz --markdown 20240428/t/tui-dsmt/202404241230-202404280836/README.md --exclude *.pyd
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240428-cp39-cp39-win_amd64.whl.zip --markdown 20240428/t/tf-nightly-cpu/2.17.0.dev20240427-2.17.0.dev20240428/README.md --exclude *.pyd
+[2024-04-28 10:46:58] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2024-04-28 10:46:58] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.1.8.tar.gz tmp/seven_cloudapp_frame-1.1.9.tar.gz --markdown 20240428/s/seven-cloudapp-frame/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 10:46:58] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.8.tar.gz]
+[2024-04-28 10:46:58] INFO root fetch - processPackages [pyscinloopsr]: Remove: archive file [/home/abi/fetcher/tmp/pyscinloopsr-1.0.9.tar.gz]
+[2024-04-28 10:46:58] INFO root fetch - main [MainThread]: End processing [pyscinloopsr]: success
+[2024-04-28 10:46:58] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.2.tar.gz]
+[2024-04-28 10:46:58] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.3.tar.gz]
+[2024-04-28 10:46:58] INFO root fetch - main [MainThread]: End processing [quickpub]: success
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240427-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 10:46:58] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240428-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 10:46:58] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-28 10:46:59] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404241230.tar.gz]
+[2024-04-28 10:46:59] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404280836.tar.gz]
+[2024-04-28 10:46:59] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-04-28 10:46:59] INFO root fetch - processPackages [seven-cloudapp-frame]: Remove: archive file [/home/abi/fetcher/tmp/seven_cloudapp_frame-1.1.8.tar.gz]
+[2024-04-28 10:46:59] INFO root fetch - processPackages [seven-cloudapp-frame]: Remove: archive file [/home/abi/fetcher/tmp/seven_cloudapp_frame-1.1.9.tar.gz]
+[2024-04-28 10:46:59] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2024-04-28 10:46:59] INFO root fetch - main [MainThread]: Store serial: [22965407]
