@@ -14527,3 +14527,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:58:49] INFO root fetch - processPackages [autotrain-advanced]: Remove: archive file [/home/abi/fetcher/tmp/autotrain-advanced-0.7.9.tar.gz]
 [2024-04-28 18:58:49] INFO root fetch - main [MainThread]: End processing [autotrain-advanced]: success
 [2024-04-28 18:58:49] INFO root fetch - main [MainThread]: Store serial: [22968238]
+[2024-04-28 19:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968238]
+[2024-04-28 19:00:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 19:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bullmq
+[2024-04-28 19:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: totolo
+[2024-04-28 19:00:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: totolo
+[2024-04-28 19:00:58] INFO root fetch - processPackages [totolo]: New version: [1.5.2.dev202404281659] Old Version: [1.5.2]
+[2024-04-28 19:00:58] INFO root fetch - processPackages [totolo]: New version: [1.5.2.dev202404281659] Old Version: [1.5.2]
+[2024-04-28 19:00:58] INFO root fetch - processPackages [bullmq]: New version: [2.7.5] Old Version: [2.7.4]
+[2024-04-28 19:00:58] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/ea/b4/1ba5ac889e78ec4bf9a201ca2c9b60170b390aa6f366a707127f1fce6abd/totolo-1.5.2.tar.gz
+[2024-04-28 19:00:58] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/ea/b4/1ba5ac889e78ec4bf9a201ca2c9b60170b390aa6f366a707127f1fce6abd/totolo-1.5.2.tar.gz
+[2024-04-28 19:00:58] INFO root fetch - processPackages [bullmq]: Downloading https://files.pythonhosted.org/packages/80/aa/915fa37c825a488686150acc439b44ef82d512a101fb1f27a2801874f246/bullmq-2.7.4.tar.gz
+[2024-04-28 19:00:59] INFO root fetch - processPackages [bullmq]: Downloading https://files.pythonhosted.org/packages/41/17/97b6f196ac7e58248b07087190fe9db9cfe20770a90acf64d6a0da40e967/bullmq-2.7.5.tar.gz
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/b4/da/2c7e3199473a5f15234caf55453ebfdc4f4833b536897a49261efd9163fe/totolo-1.5.2.dev202404281659.tar.gz
+[2024-04-28 19:00:59] INFO root fetch - processPackages [bullmq]: executing diffoscope
+[2024-04-28 19:00:59] INFO root fetch - processPackages [bullmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bullmq-2.7.4.tar.gz tmp/bullmq-2.7.5.tar.gz --markdown 20240428/b/bullmq/2.7.4-2.7.5/README.md --exclude *.pyd
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: Downloading https://files.pythonhosted.org/packages/b4/da/2c7e3199473a5f15234caf55453ebfdc4f4833b536897a49261efd9163fe/totolo-1.5.2.dev202404281659.tar.gz
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: executing diffoscope
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/totolo-1.5.2.tar.gz tmp/totolo-1.5.2.dev202404281659.tar.gz --markdown 20240428/t/totolo/1.5.2-1.5.2.dev202404281659/README.md --exclude *.pyd
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: executing diffoscope
+[2024-04-28 19:00:59] INFO root fetch - processPackages [totolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/totolo-1.5.2.tar.gz tmp/totolo-1.5.2.dev202404281659.tar.gz --markdown 20240428/t/totolo/1.5.2-1.5.2.dev202404281659/README.md --exclude *.pyd
+[2024-04-28 19:01:00] INFO root fetch - processPackages [bullmq]: Remove: archive file [/home/abi/fetcher/tmp/bullmq-2.7.4.tar.gz]
+[2024-04-28 19:01:00] INFO root fetch - processPackages [bullmq]: Remove: archive file [/home/abi/fetcher/tmp/bullmq-2.7.5.tar.gz]
+[2024-04-28 19:01:00] INFO root fetch - main [MainThread]: End processing [bullmq]: success
+[2024-04-28 19:01:00] INFO root fetch - processPackages [totolo]: Remove: archive file [/home/abi/fetcher/tmp/totolo-1.5.2.tar.gz]
+[2024-04-28 19:01:00] INFO root fetch - processPackages [totolo]: Remove: archive file [/home/abi/fetcher/tmp/totolo-1.5.2.dev202404281659.tar.gz]
+[2024-04-28 19:01:00] INFO root fetch - main [MainThread]: End processing [totolo]: success
+[2024-04-28 19:01:00] INFO root fetch - main [MainThread]: End processing [totolo]: success
+[2024-04-28 19:01:00] INFO root fetch - main [MainThread]: Store serial: [22968248]
