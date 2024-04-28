@@ -20633,3 +20633,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:13:33] INFO root fetch - processPackages [pixiv_bulk_downloader]: Remove: archive file [/home/abi/fetcher/tmp/pixiv_bulk_downloader-3.0.0.tar.gz]
 [2024-04-28 23:13:33] INFO root fetch - main [MainThread]: End processing [pixiv_bulk_downloader]: success
 [2024-04-28 23:13:33] INFO root fetch - main [MainThread]: Store serial: [22970824]
+[2024-04-28 23:15:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22970824]
+[2024-04-28 23:15:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gym-jiminy
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gym-jiminy-rllib
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gym-jiminy-toolbox
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gym-jiminy-zoo
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jiminy-py
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-tia
+[2024-04-28 23:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reflex-native
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-toolbox]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-rllib]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-zoo]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-28 23:15:42] WARNING root fetch - processPackages [reflex-native]: Skipping, unable to determine old version
+[2024-04-28 23:15:42] INFO root fetch - main [MainThread]: End processing [reflex-native] error
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-28 23:15:42] INFO root fetch - processPackages [jiminy-py]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-28 23:15:42] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-toolbox]: Downloading https://files.pythonhosted.org/packages/a4/d1/49fe27f2120aa30fad5250df322a9d53e20376c95ee23c4dc745a616c303/gym_jiminy_toolbox-1.8.4-py3-none-any.whl
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy]: Downloading https://files.pythonhosted.org/packages/95/0a/d5f7bbf3ade617d7b99eebbd18ed69c5bb247b326aa4b56417af70848426/gym_jiminy-1.8.4-py3-none-any.whl
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-rllib]: Downloading https://files.pythonhosted.org/packages/1e/75/13fd208b02127fa78f583069e4b6c9a1e206305d0601ff081a45ab24e635/gym_jiminy_rllib-1.8.4-py3-none-any.whl
+[2024-04-28 23:15:42] INFO root fetch - processPackages [jiminy-py]: Downloading https://files.pythonhosted.org/packages/cb/1c/c8b50b7637b1550743c125d3ad726ab0493cbaae03c8ece7f6b45c8ed52e/jiminy_py-1.8.4-cp39-cp39-win_amd64.whl
+[2024-04-28 23:15:42] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: Downloading https://files.pythonhosted.org/packages/bd/4b/0dcf0fba4c76a13ca0a5cec473c2e395727c9c35979d0539876b19e4a492/tencentcloud-sdk-python-tia-3.0.998.tar.gz
+[2024-04-28 23:15:42] INFO root fetch - processPackages [gym-jiminy-zoo]: Downloading https://files.pythonhosted.org/packages/52/35/04979cf2b71433a0a41f7af501e25b2b26e85c30290c486bec4bb905b9f8/gym_jiminy_zoo-1.8.4-py3-none-any.whl
+[2024-04-28 23:15:43] WARNING root fetch - processPackages [jiminy-py]: Skipping package: exceeds size limit 22200076>=10485760
+[2024-04-28 23:15:43] INFO root fetch - main [MainThread]: End processing [jiminy-py] error
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-toolbox]: Downloading https://files.pythonhosted.org/packages/89/50/4e038ce054c4dba264976afa34779209782a6e0be42f426ebb01b3d011da/gym_jiminy_toolbox-1.8.5-py3-none-any.whl
+[2024-04-28 23:15:43] WARNING root fetch - processPackages [gym-jiminy-zoo]: Skipping package: exceeds size limit 36184798>=10485760
+[2024-04-28 23:15:43] INFO root fetch - main [MainThread]: End processing [gym-jiminy-zoo] error
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy]: Downloading https://files.pythonhosted.org/packages/c1/3d/5ad4faee06ff4a8eff90ca7235ecd5153c267ba8712019b455631c898a87/gym_jiminy-1.8.5-py3-none-any.whl
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-rllib]: Downloading https://files.pythonhosted.org/packages/28/a1/bc16fae949b6b83e4d5b189dec6260dc8f6e0cd393115ef9aca5d72b51ea/gym_jiminy_rllib-1.8.5-py3-none-any.whl
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-toolbox]: executing diffoscope
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_jiminy_toolbox-1.8.4-py3-none-any.whl.zip tmp/gym_jiminy_toolbox-1.8.5-py3-none-any.whl.zip --markdown 20240428/g/gym-jiminy-toolbox/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-04-28 23:15:43] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: Downloading https://files.pythonhosted.org/packages/79/b0/a172cd4d562b985de5a6b8cce072f7ec267fcc0f89e5df110f525a7f1cff/tencentcloud-sdk-python-tia-3.0.999.tar.gz
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-rllib]: executing diffoscope
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-rllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_jiminy_rllib-1.8.4-py3-none-any.whl.zip tmp/gym_jiminy_rllib-1.8.5-py3-none-any.whl.zip --markdown 20240428/g/gym-jiminy-rllib/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-04-28 23:15:43] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: executing diffoscope
+[2024-04-28 23:15:43] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-tia-3.0.998.tar.gz tmp/tencentcloud-sdk-python-tia-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-tia/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy]: executing diffoscope
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym_jiminy-1.8.4-py3-none-any.whl.zip tmp/gym_jiminy-1.8.5-py3-none-any.whl.zip --markdown 20240428/g/gym-jiminy/1.8.4-1.8.5/README.md --exclude *.pyd
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-rllib]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy_rllib-1.8.4-py3-none-any.whl.zip]
+[2024-04-28 23:15:43] INFO root fetch - processPackages [gym-jiminy-rllib]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy_rllib-1.8.5-py3-none-any.whl.zip]
+[2024-04-28 23:15:43] INFO root fetch - main [MainThread]: End processing [gym-jiminy-rllib]: success
+[2024-04-28 23:15:43] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tia-3.0.998.tar.gz]
+[2024-04-28 23:15:43] INFO root fetch - processPackages [tencentcloud-sdk-python-tia]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-tia-3.0.999.tar.gz]
+[2024-04-28 23:15:43] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-tia]: success
+[2024-04-28 23:15:44] INFO root fetch - processPackages [gym-jiminy-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy_toolbox-1.8.4-py3-none-any.whl.zip]
+[2024-04-28 23:15:44] INFO root fetch - processPackages [gym-jiminy-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy_toolbox-1.8.5-py3-none-any.whl.zip]
+[2024-04-28 23:15:44] INFO root fetch - main [MainThread]: End processing [gym-jiminy-toolbox]: success
+[2024-04-28 23:15:44] INFO root fetch - processPackages [gym-jiminy]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy-1.8.4-py3-none-any.whl.zip]
+[2024-04-28 23:15:44] INFO root fetch - processPackages [gym-jiminy]: Remove: archive file [/home/abi/fetcher/tmp/gym_jiminy-1.8.5-py3-none-any.whl.zip]
+[2024-04-28 23:15:44] INFO root fetch - main [MainThread]: End processing [gym-jiminy]: success
+[2024-04-28 23:15:44] INFO root fetch - main [MainThread]: Store serial: [22970846]
