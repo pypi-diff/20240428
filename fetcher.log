@@ -2071,3 +2071,56 @@
 [2024-04-28 02:49:24] INFO root fetch - processPackages [django-push-notifications]: Remove: archive file [/home/abi/fetcher/tmp/django-push-notifications-3.0.3.tar.gz]
 [2024-04-28 02:49:24] INFO root fetch - main [MainThread]: End processing [django-push-notifications]: success
 [2024-04-28 02:49:24] INFO root fetch - main [MainThread]: Store serial: [22963063]
+[2024-04-28 02:51:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963063]
+[2024-04-28 02:51:33] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 02:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963063]
+[2024-04-28 02:53:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydal
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslth
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-sns-notify
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multihttps
+[2024-04-28 02:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytgpt-bot
+[2024-04-28 02:53:38] INFO root fetch - processPackages [pyslth]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pydal]: New version: [20240427.3] Old Version: [20240427.2]
+[2024-04-28 02:53:39] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 02:53:39] WARNING root fetch - processPackages [multihttps]: Skipping, unable to determine old version
+[2024-04-28 02:53:39] INFO root fetch - main [MainThread]: End processing [multihttps] error
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/c4/63/72dd8e20a72981d028905958c33f3f0128fff120ccad2d8caf6379d8981f/pyslth-0.1.5.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/dc/ce/e7d04c187386addd7cfcf20f6c9e5d1434adf6a90d8beb92860ab25ff844/pydal-20240427.2.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pytgpt-bot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 02:53:39] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/e9/9b/7e14892d75536d5a5b98aac87c485e370c0a920e4b492fd6cab1fc28f3e0/pytgpt_bot-0.1.1.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pydal]: Downloading https://files.pythonhosted.org/packages/99/60/73c32b1960d778adca96cca02460914cfec934512193ae3450a7843c1f81/pydal-20240427.3.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-04-28 02:53:39] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240428/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/f2/0c/212452f933d39c512f2588f4000d3254fb3fe5dafd0b429750c550b691d5/pyslth-0.1.6.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pydal]: executing diffoscope
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pydal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydal-20240427.2.tar.gz tmp/pydal-20240427.3.tar.gz --markdown 20240428/p/pydal/20240427.2-20240427.3/README.md --exclude *.pyd
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/7e/8f/61f242bd73e544110e6cfcbdcbc2c7d994c581e4fcd50ecfe8e326f6bada/pytgpt_bot-0.1.2.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-04-28 02:53:39] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.1.5.tar.gz tmp/pyslth-0.1.6.tar.gz --markdown 20240428/p/pyslth/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 02:53:39] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-04-28 02:53:39] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-04-28 02:53:39] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240428/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-28 02:53:40] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-04-28 02:53:40] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.5.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.1.6.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-04-28 02:53:40] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.2.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - processPackages [pydal]: Remove: archive file [/home/abi/fetcher/tmp/pydal-20240427.3.tar.gz]
+[2024-04-28 02:53:40] INFO root fetch - main [MainThread]: End processing [pydal]: success
+[2024-04-28 02:53:41] INFO root fetch - processPackages [pytgpt-bot]: executing diffoscope
+[2024-04-28 02:53:41] INFO root fetch - processPackages [pytgpt-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytgpt_bot-0.1.1.tar.gz tmp/pytgpt_bot-0.1.2.tar.gz --markdown 20240428/p/pytgpt-bot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 02:53:42] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.1.tar.gz]
+[2024-04-28 02:53:42] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.2.tar.gz]
+[2024-04-28 02:53:42] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
+[2024-04-28 02:53:59] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-04-28 02:53:59] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-04-28 02:53:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-04-28 02:53:59] INFO root fetch - main [MainThread]: Store serial: [22963082]
