@@ -8449,3 +8449,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: Remove: archive file [/home/abi/fetcher/tmp/inspy-0.1.7.tar.gz]
 [2024-04-28 11:41:53] INFO root fetch - main [MainThread]: End processing [inspy]: success
 [2024-04-28 11:41:53] INFO root fetch - main [MainThread]: Store serial: [22965776]
+[2024-04-28 11:43:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965776]
+[2024-04-28 11:44:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 11:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: istr-python
+[2024-04-28 11:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpulse-uploader
+[2024-04-28 11:44:02] INFO root fetch - processPackages [istr-python]: New version: [0.1.4] Old Version: [0.1.3a0]
+[2024-04-28 11:44:02] INFO root fetch - processPackages [testpulse-uploader]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 11:44:02] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/84/ed/7833d91568b877d2eb099943792c9c5d3225cff69173e2b5fadb7286279f/istr_python-0.1.3a0.tar.gz
+[2024-04-28 11:44:02] INFO root fetch - processPackages [testpulse-uploader]: Downloading https://files.pythonhosted.org/packages/46/41/862ceb805932f98ca76a984b567d3ceb49604aa4f0b188fb68765e703755/testpulse-uploader-0.0.8.tar.gz
+[2024-04-28 11:44:03] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/a6/bc/fc8d1ac18254350233abe41a6d143a5288b4aa3326ac44bec74409c9a47e/istr_python-0.1.4.tar.gz
+[2024-04-28 11:44:03] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-28 11:44:03] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.3a0.tar.gz tmp/istr_python-0.1.4.tar.gz --markdown 20240428/i/istr-python/0.1.3a0-0.1.4/README.md --exclude *.pyd
+[2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: Downloading https://files.pythonhosted.org/packages/68/05/bf8b2d453be777c3de7aae7bf6ed379765be834139e1da957914796175bd/testpulse-uploader-0.0.9.tar.gz
+[2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: executing diffoscope
+[2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testpulse-uploader-0.0.8.tar.gz tmp/testpulse-uploader-0.0.9.tar.gz --markdown 20240428/t/testpulse-uploader/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 11:44:03] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.3a0.tar.gz]
+[2024-04-28 11:44:03] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.4.tar.gz]
+[2024-04-28 11:44:03] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.8.tar.gz]
+[2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
+[2024-04-28 11:44:03] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
+[2024-04-28 11:44:03] INFO root fetch - main [MainThread]: Store serial: [22965782]
