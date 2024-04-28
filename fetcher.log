@@ -15150,3 +15150,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:38:52] INFO root fetch - processPackages [prophecy-libs]: Remove: archive file [/home/abi/fetcher/tmp/prophecy-libs-1.8.9.tar.gz]
 [2024-04-28 19:38:52] INFO root fetch - main [MainThread]: End processing [prophecy-libs]: success
 [2024-04-28 19:38:52] INFO root fetch - main [MainThread]: Store serial: [22968510]
+[2024-04-28 19:40:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968510]
+[2024-04-28 19:41:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lnurl_nostr1
+[2024-04-28 19:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkcyarray
+[2024-04-28 19:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openparse
+[2024-04-28 19:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hnn-utils
+[2024-04-28 19:41:01] INFO root fetch - processPackages [lnurl_nostr1]: New version: [0.5.0rc4] Old Version: [0.5.0rc3]
+[2024-04-28 19:41:01] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/bb/fe/9464b6c8e1615b09fe33ef81cc53edca0c6ba873e600519114be08af0bbc/lnurl_nostr1-0.5.0rc3.tar.gz
+[2024-04-28 19:41:01] WARNING root fetch - processPackages [mkcyarray]: Skipping, unable to determine old version
+[2024-04-28 19:41:01] INFO root fetch - main [MainThread]: End processing [mkcyarray] error
+[2024-04-28 19:41:01] INFO root fetch - processPackages [openparse]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-28 19:41:01] INFO root fetch - processPackages [hnn-utils]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 19:41:01] INFO root fetch - processPackages [openparse]: Downloading https://files.pythonhosted.org/packages/36/69/2637cb554b76cf2b0e6fb2ebcfcc8ef5e060ac0d8c5bc065172ef2cc0b0e/openparse-0.5.4.tar.gz
+[2024-04-28 19:41:01] INFO root fetch - processPackages [hnn-utils]: Downloading https://files.pythonhosted.org/packages/0d/16/95e5e9a51707336a8b14ae9126583a14b1c6ded6e90ea646985c7c802724/hnn_utils-0.3.0.tar.gz
+[2024-04-28 19:41:01] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/20/80/380b453f62b524c3dcb4925bb3c8634d3e3f974351d7b10fc6fd7cc30f0f/lnurl_nostr1-0.5.0rc4.tar.gz
+[2024-04-28 19:41:02] INFO root fetch - processPackages [lnurl_nostr1]: executing diffoscope
+[2024-04-28 19:41:02] INFO root fetch - processPackages [lnurl_nostr1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnurl_nostr1-0.5.0rc3.tar.gz tmp/lnurl_nostr1-0.5.0rc4.tar.gz --markdown 20240428/l/lnurl_nostr1/0.5.0rc3-0.5.0rc4/README.md --exclude *.pyd
+[2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: Downloading https://files.pythonhosted.org/packages/b5/88/2a0ae1b1f2d5b1432f876261a1838c9f14fa61c6a48b60892dd5cc6a4365/openparse-0.5.5.tar.gz
+[2024-04-28 19:41:02] INFO root fetch - processPackages [hnn-utils]: Downloading https://files.pythonhosted.org/packages/f3/40/fc8a46b1f8e13212cfd761b5f45f8d7bcced06ba0a18660ab0eaed238f1d/hnn_utils-0.3.1.tar.gz
+[2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: executing diffoscope
+[2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openparse-0.5.4.tar.gz tmp/openparse-0.5.5.tar.gz --markdown 20240428/o/openparse/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-28 19:41:02] INFO root fetch - processPackages [hnn-utils]: executing diffoscope
+[2024-04-28 19:41:02] INFO root fetch - processPackages [hnn-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hnn_utils-0.3.0.tar.gz tmp/hnn_utils-0.3.1.tar.gz --markdown 20240428/h/hnn-utils/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 19:41:02] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc3.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc4.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1]: success
+[2024-04-28 19:41:02] INFO root fetch - processPackages [hnn-utils]: Remove: archive file [/home/abi/fetcher/tmp/hnn_utils-0.3.0.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - processPackages [hnn-utils]: Remove: archive file [/home/abi/fetcher/tmp/hnn_utils-0.3.1.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - main [MainThread]: End processing [hnn-utils]: success
+[2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: Remove: archive file [/home/abi/fetcher/tmp/openparse-0.5.4.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - processPackages [openparse]: Remove: archive file [/home/abi/fetcher/tmp/openparse-0.5.5.tar.gz]
+[2024-04-28 19:41:02] INFO root fetch - main [MainThread]: End processing [openparse]: success
+[2024-04-28 19:41:02] INFO root fetch - main [MainThread]: Store serial: [22968525]
