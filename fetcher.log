@@ -3797,3 +3797,33 @@
 [2024-04-28 06:00:32] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
 [2024-04-28 06:00:32] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
 [2024-04-28 06:00:32] INFO root fetch - main [MainThread]: Store serial: [22963815]
+[2024-04-28 06:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963815]
+[2024-04-28 06:02:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 06:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev
+[2024-04-28 06:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: package-fileDO
+[2024-04-28 06:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cabinet
+[2024-04-28 06:02:40] INFO root fetch - processPackages [package-fileDO]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 06:02:40] INFO root fetch - processPackages [package-fileDO]: Downloading https://files.pythonhosted.org/packages/74/d0/32ce07dc79134e2627fb1bc77711823c8edaa1b38c1b8a32ba60420c2246/package_filedo-0.1.0.tar.gz
+[2024-04-28 06:02:40] INFO root fetch - processPackages [cabinet]: New version: [2024.4.27.1] Old Version: [2024.4.25.1]
+[2024-04-28 06:02:40] INFO root fetch - processPackages [nbdev]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-28 06:02:41] INFO root fetch - processPackages [package-fileDO]: Downloading https://files.pythonhosted.org/packages/66/9c/4860b90302484df5e59d540477afd8f712a78e516caf370ad4d5ad57003b/package_filedo-0.1.1.tar.gz
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/95/50/5ff9bc2ac4faf0a99a47e088f909b4f898315c1fa217c7e41811ffa92c02/cabinet-2024.4.25.1.tar.gz
+[2024-04-28 06:02:41] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/81/51/fab74a54685fb8abc7a3e35834c91c5b2dace9b02d4cb11fdd42c1e1671e/nbdev-2.3.8.tar.gz
+[2024-04-28 06:02:41] INFO root fetch - processPackages [package-fileDO]: executing diffoscope
+[2024-04-28 06:02:41] INFO root fetch - processPackages [package-fileDO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/package_filedo-0.1.0.tar.gz tmp/package_filedo-0.1.1.tar.gz --markdown 20240428/p/package-fileDO/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/9d/02/63eb734faaec5c70264e68f72b47ef00674fb6fe0dc6d78d2619fb1c92ca/cabinet-2024.4.27.1.tar.gz
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2024.4.25.1.tar.gz tmp/cabinet-2024.4.27.1.tar.gz --markdown 20240428/c/cabinet/2024.4.25.1-2024.4.27.1/README.md --exclude *.pyd
+[2024-04-28 06:02:41] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/40/d2/c90832233197e9f55e8869a7f75fd019929dcd8c6c18e14a34a4c1c087aa/nbdev-2.3.9.tar.gz
+[2024-04-28 06:02:41] INFO root fetch - processPackages [nbdev]: executing diffoscope
+[2024-04-28 06:02:41] INFO root fetch - processPackages [nbdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-2.3.8.tar.gz tmp/nbdev-2.3.9.tar.gz --markdown 20240428/n/nbdev/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-28 06:02:41] INFO root fetch - processPackages [package-fileDO]: Remove: archive file [/home/abi/fetcher/tmp/package_filedo-0.1.0.tar.gz]
+[2024-04-28 06:02:41] INFO root fetch - processPackages [package-fileDO]: Remove: archive file [/home/abi/fetcher/tmp/package_filedo-0.1.1.tar.gz]
+[2024-04-28 06:02:41] INFO root fetch - main [MainThread]: End processing [package-fileDO]: success
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.25.1.tar.gz]
+[2024-04-28 06:02:41] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.27.1.tar.gz]
+[2024-04-28 06:02:41] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2024-04-28 06:02:42] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.8.tar.gz]
+[2024-04-28 06:02:42] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
+[2024-04-28 06:02:42] INFO root fetch - main [MainThread]: End processing [nbdev]: success
+[2024-04-28 06:02:42] INFO root fetch - main [MainThread]: Store serial: [22963824]
