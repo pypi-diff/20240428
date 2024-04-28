@@ -8428,3 +8428,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:39:43] INFO root fetch - processPackages [zz-img-caption]: Remove: archive file [/home/abi/fetcher/tmp/zz-img-caption-0.0.2.tar.gz]
 [2024-04-28 11:39:43] INFO root fetch - main [MainThread]: End processing [zz-img-caption]: success
 [2024-04-28 11:39:43] INFO root fetch - main [MainThread]: Store serial: [22965769]
+[2024-04-28 11:41:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965769]
+[2024-04-28 11:41:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 11:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inspy
+[2024-04-28 11:41:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semantic-router
+[2024-04-28 11:41:52] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 11:41:52] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-04-28 11:41:52] INFO root fetch - processPackages [inspy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 11:41:52] INFO root fetch - processPackages [inspy]: Downloading https://files.pythonhosted.org/packages/22/0e/c6b9d9ecc3ac15cb0eb8b623471ae5c0857c78e67f37f0e7ff8f52e6eb05/inspy-0.1.6.tar.gz
+[2024-04-28 11:41:52] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-04-28 11:41:53] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-04-28 11:41:53] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240428/s/semantic-router/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: Downloading https://files.pythonhosted.org/packages/fc/87/0a9b5ae561e4468e9f74d73fec5ac251c3305d4464ebe5ebf086b7d997af/inspy-0.1.7.tar.gz
+[2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: executing diffoscope
+[2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspy-0.1.6.tar.gz tmp/inspy-0.1.7.tar.gz --markdown 20240428/i/inspy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 11:41:53] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-04-28 11:41:53] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-04-28 11:41:53] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: Remove: archive file [/home/abi/fetcher/tmp/inspy-0.1.6.tar.gz]
+[2024-04-28 11:41:53] INFO root fetch - processPackages [inspy]: Remove: archive file [/home/abi/fetcher/tmp/inspy-0.1.7.tar.gz]
+[2024-04-28 11:41:53] INFO root fetch - main [MainThread]: End processing [inspy]: success
+[2024-04-28 11:41:53] INFO root fetch - main [MainThread]: Store serial: [22965776]
