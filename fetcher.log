@@ -16422,3 +16422,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:12:46] INFO root fetch - processPackages [blake2signer]: Remove: archive file [/home/abi/fetcher/tmp/blake2signer-3.1.0.tar.gz]
 [2024-04-28 21:12:46] INFO root fetch - main [MainThread]: End processing [blake2signer]: success
 [2024-04-28 21:12:46] INFO root fetch - main [MainThread]: Store serial: [22969071]
+[2024-04-28 21:14:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969071]
+[2024-04-28 21:14:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 21:14:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-dans-api-toolkit
+[2024-04-28 21:14:54] INFO root fetch - processPackages [django-dans-api-toolkit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/ba/d9/f7fd87323137015c8bc36fb86f43b2d32874c757372f4bf30b58771eb2f7/django-dans-api-toolkit-0.1.0.tar.gz
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/ca/a4/1a647027bc2650ab702378360ed61ebb809fd366d829b97891bfdb489b8e/django-dans-api-toolkit-0.1.1.tar.gz
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: executing diffoscope
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dans-api-toolkit-0.1.0.tar.gz tmp/django-dans-api-toolkit-0.1.1.tar.gz --markdown 20240428/d/django-dans-api-toolkit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.0.tar.gz]
+[2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.1.tar.gz]
+[2024-04-28 21:14:55] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
+[2024-04-28 21:14:55] INFO root fetch - main [MainThread]: Store serial: [22969081]
