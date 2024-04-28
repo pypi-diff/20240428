@@ -14621,3 +14621,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:05:22] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.4.tar.gz]
 [2024-04-28 19:05:22] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
 [2024-04-28 19:05:22] INFO root fetch - main [MainThread]: Store serial: [22968269]
+[2024-04-28 19:07:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968269]
+[2024-04-28 19:07:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 19:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nodetool
+[2024-04-28 19:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wgd
+[2024-04-28 19:07:31] INFO root fetch - processPackages [nodetool]: New version: [0.1.20] Old Version: [0.1.15]
+[2024-04-28 19:07:31] INFO root fetch - processPackages [wgd]: New version: [2.0.34] Old Version: [2.0.33]
+[2024-04-28 19:07:32] INFO root fetch - processPackages [nodetool]: Downloading https://files.pythonhosted.org/packages/6f/fd/367dde5194251a42ea5bb8267c6823fd0aff0467654101255e2c3a642122/nodetool-0.1.15.tar.gz
+[2024-04-28 19:07:32] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/5b/b6/46353b8e6c6547b662bf03cbcc5d482296385428b62b5822fd5030a2bd3b/wgd-2.0.33.tar.gz
+[2024-04-28 19:07:32] WARNING root fetch - processPackages [nodetool]: Skipping package: exceeds size limit 10783814>=10485760
+[2024-04-28 19:07:32] INFO root fetch - main [MainThread]: End processing [nodetool] error
+[2024-04-28 19:07:32] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/b0/23/04cce88c34a580b06179b7a3e03003dd01a22acb66ee23f7ce488e313a81/wgd-2.0.34.tar.gz
+[2024-04-28 19:07:32] INFO root fetch - processPackages [wgd]: executing diffoscope
+[2024-04-28 19:07:32] INFO root fetch - processPackages [wgd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgd-2.0.33.tar.gz tmp/wgd-2.0.34.tar.gz --markdown 20240428/w/wgd/2.0.33-2.0.34/README.md --exclude *.pyd
+[2024-04-28 19:07:33] INFO root fetch - processPackages [wgd]: Remove: archive file [/home/abi/fetcher/tmp/wgd-2.0.33.tar.gz]
+[2024-04-28 19:07:33] INFO root fetch - processPackages [wgd]: Remove: archive file [/home/abi/fetcher/tmp/wgd-2.0.34.tar.gz]
+[2024-04-28 19:07:33] INFO root fetch - main [MainThread]: End processing [wgd]: success
+[2024-04-28 19:07:33] INFO root fetch - main [MainThread]: Store serial: [22968274]
