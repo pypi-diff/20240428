@@ -10658,3 +10658,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:23:39] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-04-28 14:23:39] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-28 14:23:39] INFO root fetch - main [MainThread]: Store serial: [22966659]
+[2024-04-28 14:25:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966659]
+[2024-04-28 14:25:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 14:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quasarpy
+[2024-04-28 14:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haondt-charon
+[2024-04-28 14:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aggify
+[2024-04-28 14:25:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-04-28 14:25:55] INFO root fetch - processPackages [quasarpy]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 14:25:55] INFO root fetch - processPackages [mimllearning]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 14:25:55] INFO root fetch - processPackages [aggify]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 14:25:55] WARNING root fetch - processPackages [haondt-charon]: Skipping, unable to determine old version
+[2024-04-28 14:25:55] INFO root fetch - main [MainThread]: End processing [haondt-charon] error
+[2024-04-28 14:25:55] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/59/40/d9545138aafde70abeba88845ee6cb9348913b4e1e2202596e268b4e23a9/quasarpy-0.1.0.tar.gz
+[2024-04-28 14:25:55] INFO root fetch - processPackages [aggify]: Downloading https://files.pythonhosted.org/packages/cf/bd/65820476079e5b841626ce427ff58e3a710fbbc2b27f9eff0ede3491269d/aggify-0.3.8.tar.gz
+[2024-04-28 14:25:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/28/c9/1fcec7b85fa0fb30bb317460ef689593854fc9d23960e4cdda6f34b05c00/mimllearning-0.2.1.tar.gz
+[2024-04-28 14:25:56] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/fc/16/3649348b229153d9f6db9e99a4d5c07cefe2e0c600f93f9daf2432f657f9/quasarpy-0.1.1.tar.gz
+[2024-04-28 14:25:56] INFO root fetch - processPackages [aggify]: Downloading https://files.pythonhosted.org/packages/19/e8/3eff4d78c01670d539a7efd4e2617d2a30ebfa66c1ae839936cf75a24d25/aggify-0.3.9.tar.gz
+[2024-04-28 14:25:56] INFO root fetch - processPackages [quasarpy]: executing diffoscope
+[2024-04-28 14:25:56] INFO root fetch - processPackages [quasarpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quasarpy-0.1.0.tar.gz tmp/quasarpy-0.1.1.tar.gz --markdown 20240428/q/quasarpy/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 14:25:56] INFO root fetch - processPackages [aggify]: executing diffoscope
+[2024-04-28 14:25:56] INFO root fetch - processPackages [aggify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aggify-0.3.8.tar.gz tmp/aggify-0.3.9.tar.gz --markdown 20240428/a/aggify/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 14:25:56] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/fa/cc/a4d579425500be7683f31fe27f344f043ce5ac81a5819413be3dc1183610/mimllearning-0.2.2.tar.gz
+[2024-04-28 14:25:56] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.0.tar.gz]
+[2024-04-28 14:25:56] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.1.tar.gz]
+[2024-04-28 14:25:56] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
+[2024-04-28 14:25:56] INFO root fetch - processPackages [aggify]: Remove: archive file [/home/abi/fetcher/tmp/aggify-0.3.8.tar.gz]
+[2024-04-28 14:25:56] INFO root fetch - processPackages [aggify]: Remove: archive file [/home/abi/fetcher/tmp/aggify-0.3.9.tar.gz]
+[2024-04-28 14:25:56] INFO root fetch - main [MainThread]: End processing [aggify]: success
+[2024-04-28 14:25:56] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-04-28 14:25:56] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.1.tar.gz tmp/mimllearning-0.2.2.tar.gz --markdown 20240428/m/mimllearning/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 14:25:57] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.1.tar.gz]
+[2024-04-28 14:25:57] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.2.tar.gz]
+[2024-04-28 14:25:57] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-04-28 14:25:57] INFO root fetch - main [MainThread]: Store serial: [22966673]
