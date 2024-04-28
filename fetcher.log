@@ -2729,3 +2729,15 @@
 [2024-04-28 03:56:39] INFO root fetch - processPackages [permission-manager]: Remove: archive file [/home/abi/fetcher/tmp/permission_manager-0.3.0.tar.gz]
 [2024-04-28 03:56:39] INFO root fetch - main [MainThread]: End processing [permission-manager]: success
 [2024-04-28 03:56:39] INFO root fetch - main [MainThread]: Store serial: [22963355]
+[2024-04-28 03:58:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963355]
+[2024-04-28 03:58:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 03:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-core
+[2024-04-28 03:58:48] INFO root fetch - processPackages [llama-index-core]: New version: [0.9.56] Old Version: [0.9.55]
+[2024-04-28 03:58:48] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/cb/c2/9d70e1ea21c2760f049ed87f06333bc85bc3afb95daa8f1cc6f9bce744ed/llama_index_core-0.9.55.tar.gz
+[2024-04-28 03:58:48] INFO root fetch - processPackages [llama-index-core]: Downloading https://files.pythonhosted.org/packages/91/1b/bae52b894555c97848977c73e4a3a778ca388b07a2435d3a33c1133bd678/llama_index_core-0.9.56.tar.gz
+[2024-04-28 03:58:48] INFO root fetch - processPackages [llama-index-core]: executing diffoscope
+[2024-04-28 03:58:48] INFO root fetch - processPackages [llama-index-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_core-0.9.55.tar.gz tmp/llama_index_core-0.9.56.tar.gz --markdown 20240428/l/llama-index-core/0.9.55-0.9.56/README.md --exclude *.pyd
+[2024-04-28 03:58:50] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.55.tar.gz]
+[2024-04-28 03:58:50] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.56.tar.gz]
+[2024-04-28 03:58:50] INFO root fetch - main [MainThread]: End processing [llama-index-core]: success
+[2024-04-28 03:58:50] INFO root fetch - main [MainThread]: Store serial: [22963357]
