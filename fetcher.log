@@ -13393,3 +13393,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:37:44] INFO root fetch - processPackages [generate-sequences]: Remove: archive file [/home/abi/fetcher/tmp/generate_sequences-0.0.4.tar.gz]
 [2024-04-28 17:37:44] INFO root fetch - main [MainThread]: End processing [generate-sequences]: success
 [2024-04-28 17:37:44] INFO root fetch - main [MainThread]: Store serial: [22967785]
+[2024-04-28 17:39:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967785]
+[2024-04-28 17:39:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 17:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SqlAddImage
+[2024-04-28 17:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pgpyui
+[2024-04-28 17:39:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QtMDi
+[2024-04-28 17:39:52] INFO root fetch - processPackages [pgpyui]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 17:39:52] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/44/0a/4620a6485918f8e050159496921f6eb48a2ebcbe8b9ba0e057d788da566b/pgpyui-0.0.5.tar.gz
+[2024-04-28 17:39:52] INFO root fetch - processPackages [SqlAddImage]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 17:39:53] INFO root fetch - processPackages [QtMDi]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 17:39:53] INFO root fetch - processPackages [SqlAddImage]: Downloading https://files.pythonhosted.org/packages/37/86/20173d644f33648f7e29bbb24442c03c10c39228ed6711bfa74561a0d47b/SqlAddImage-1.0.0.tar.gz
+[2024-04-28 17:39:53] INFO root fetch - processPackages [QtMDi]: Downloading https://files.pythonhosted.org/packages/98/57/71d4d051a7c8618ccee73a34338e30c1be6a674b0053904f67260261180b/QtMDi-1.1.8.tar.gz
+[2024-04-28 17:39:53] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/62/c1/b0170561774bef1ab75f404c3c288c3410f5848ccc5c06f2a2a21f873c6d/pgpyui-0.0.6.tar.gz
+[2024-04-28 17:39:53] WARNING root fetch - processPackages [QtMDi]: Skipping package: exceeds size limit 25247034>=10485760
+[2024-04-28 17:39:53] INFO root fetch - main [MainThread]: End processing [QtMDi] error
+[2024-04-28 17:39:53] INFO root fetch - processPackages [SqlAddImage]: Downloading https://files.pythonhosted.org/packages/17/7d/848f375f73a80785659645f4211d6fa9ab17a32a54b23b8de82b5bac1f69/SqlAddImage-1.0.1-py3-none-any.whl
+[2024-04-28 17:39:53] INFO root fetch - processPackages [pgpyui]: executing diffoscope
+[2024-04-28 17:39:53] INFO root fetch - processPackages [pgpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgpyui-0.0.5.tar.gz tmp/pgpyui-0.0.6.tar.gz --markdown 20240428/p/pgpyui/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 17:39:53] INFO root fetch - processPackages [SqlAddImage]: executing diffoscope
+[2024-04-28 17:39:53] INFO root fetch - processPackages [SqlAddImage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SqlAddImage-1.0.0.tar.gz tmp/SqlAddImage-1.0.1-py3-none-any.whl.zip --markdown 20240428/S/SqlAddImage/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 17:39:54] INFO root fetch - processPackages [SqlAddImage]: Remove: archive file [/home/abi/fetcher/tmp/SqlAddImage-1.0.0.tar.gz]
+[2024-04-28 17:39:54] INFO root fetch - processPackages [SqlAddImage]: Remove: archive file [/home/abi/fetcher/tmp/SqlAddImage-1.0.1-py3-none-any.whl.zip]
+[2024-04-28 17:39:54] INFO root fetch - main [MainThread]: End processing [SqlAddImage]: success
+[2024-04-28 17:39:54] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.5.tar.gz]
+[2024-04-28 17:39:54] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.6.tar.gz]
+[2024-04-28 17:39:54] INFO root fetch - main [MainThread]: End processing [pgpyui]: success
+[2024-04-28 17:39:54] INFO root fetch - main [MainThread]: Store serial: [22967791]
