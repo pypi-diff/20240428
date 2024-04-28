@@ -3264,3 +3264,53 @@
 [2024-04-28 04:55:53] INFO root fetch - processPackages [abess]: Remove: archive file [/home/abi/fetcher/tmp/abess-0.4.8-cp311-cp311-macosx_10_9_x86_64.whl.zip]
 [2024-04-28 04:55:53] INFO root fetch - main [MainThread]: End processing [abess]: success
 [2024-04-28 04:55:53] INFO root fetch - main [MainThread]: Store serial: [22963563]
+[2024-04-28 04:57:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963563]
+[2024-04-28 04:58:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 05:00:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963615]
+[2024-04-28 05:00:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secretscraper
+[2024-04-28 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-index-embeddings-bedrock
+[2024-04-28 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streamlit-chat-handler
+[2024-04-28 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: logger-local
+[2024-04-28 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-index-tools-google
+[2024-04-28 05:00:07] INFO root fetch - processPackages [streamlit-chat-handler]: New version: [0.1.3.dev2] Old Version: [0.1.3.dev1]
+[2024-04-28 05:00:07] INFO root fetch - processPackages [logger-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 05:00:07] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 05:00:07] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/d0/88/b93c17318a6ad9790dc54c26d2d3b5fe2d8ec4643b7af1317a40524109bf/streamlit_chat_handler-0.1.3.dev1.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [llama-index-tools-google]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 05:00:07] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/95/83/cbbeaca04ecc0f2c8811769437b1979bde80cd488f848e324e92d8440499/logger-local-0.0.98.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [secretscraper]: New version: [1.3.1] Old Version: [1.3]
+[2024-04-28 05:00:07] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: Downloading https://files.pythonhosted.org/packages/36/84/7b9edac818a9441ebaf1e91ec3bcd83ff50eaf074717529bd5e8c57aaf9c/llama_index_embeddings_bedrock-0.1.4.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/4f/de/42262a8ff1ffbed978e27e037e388fa6aeca1d883562ea117c02ef741951/secretscraper-1.3.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/32/72/d6d6521aa3b74d3c30af8cdee32bb3e7a6008c5629d957853e9e7a3c01b4/logger-local-0.0.99.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [llama-index-tools-google]: Downloading https://files.pythonhosted.org/packages/b7/8e/c8dc5b07474f1beb7e65e5c3576773683e7dfc4e6df4d75f01df32dcbdc2/llama_index_tools_google-0.1.4.tar.gz
+[2024-04-28 05:00:07] INFO root fetch - processPackages [logger-local]: executing diffoscope
+[2024-04-28 05:00:07] INFO root fetch - processPackages [logger-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger-local-0.0.98.tar.gz tmp/logger-local-0.0.99.tar.gz --markdown 20240428/l/logger-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 05:00:07] INFO root fetch - processPackages [streamlit-chat-handler]: Downloading https://files.pythonhosted.org/packages/e1/62/accd46b47837cdf1f5ea6de3054e93943ab08fb3e7e7d2ef77fca08f5995/streamlit_chat_handler-0.1.3.dev2.tar.gz
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: Downloading https://files.pythonhosted.org/packages/ae/1c/c759ec2c4c82e322d51202ec66818371015aad37d906bd9c2214cdff1fc8/llama_index_embeddings_bedrock-0.1.5.tar.gz
+[2024-04-28 05:00:08] INFO root fetch - processPackages [streamlit-chat-handler]: executing diffoscope
+[2024-04-28 05:00:08] INFO root fetch - processPackages [streamlit-chat-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chat_handler-0.1.3.dev1.tar.gz tmp/streamlit_chat_handler-0.1.3.dev2.tar.gz --markdown 20240428/s/streamlit-chat-handler/0.1.3.dev1-0.1.3.dev2/README.md --exclude *.pyd
+[2024-04-28 05:00:08] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/9c/ab/b8906513287ca82830260a88b13bce764f3ec173eb235e6ebdb550fd60f3/secretscraper-1.3.1.tar.gz
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: Downloading https://files.pythonhosted.org/packages/0d/f7/cf6929bd9d2ce3115c4804ff32c5861c6ca791904eeaf0908d6ec56de445/llama_index_tools_google-0.1.5.tar.gz
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: executing diffoscope
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_embeddings_bedrock-0.1.4.tar.gz tmp/llama_index_embeddings_bedrock-0.1.5.tar.gz --markdown 20240428/l/llama-index-embeddings-bedrock/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 05:00:08] INFO root fetch - processPackages [secretscraper]: executing diffoscope
+[2024-04-28 05:00:08] INFO root fetch - processPackages [secretscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretscraper-1.3.tar.gz tmp/secretscraper-1.3.1.tar.gz --markdown 20240428/s/secretscraper/1.3-1.3.1/README.md --exclude *.pyd
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: executing diffoscope
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_tools_google-0.1.4.tar.gz tmp/llama_index_tools_google-0.1.5.tar.gz --markdown 20240428/l/llama-index-tools-google/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 05:00:08] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.98.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [logger-local]: success
+[2024-04-28 05:00:08] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.3.dev1.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - processPackages [streamlit-chat-handler]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chat_handler-0.1.3.dev2.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [streamlit-chat-handler]: success
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_embeddings_bedrock-0.1.4.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-embeddings-bedrock]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_embeddings_bedrock-0.1.5.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [llama-index-embeddings-bedrock]: success
+[2024-04-28 05:00:08] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.1.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [secretscraper]: success
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_tools_google-0.1.4.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_tools_google-0.1.5.tar.gz]
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [llama-index-tools-google]: success
+[2024-04-28 05:00:08] INFO root fetch - main [MainThread]: Store serial: [22963635]
