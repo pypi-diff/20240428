@@ -11955,3 +11955,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:53:49] INFO root fetch - processPackages [TheengsDecoder]: Remove: archive file [/home/abi/fetcher/tmp/TheengsDecoder-1.7.7.tar.gz]
 [2024-04-28 15:53:49] INFO root fetch - main [MainThread]: End processing [TheengsDecoder]: success
 [2024-04-28 15:53:49] INFO root fetch - main [MainThread]: Store serial: [22967227]
+[2024-04-28 15:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967227]
+[2024-04-28 15:56:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensordict-nightly
+[2024-04-28 15:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plover-uinput
+[2024-04-28 15:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartboiler
+[2024-04-28 15:56:10] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-04-28 15:56:10] INFO root fetch - processPackages [plover-uinput]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 15:56:10] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-04-28 15:56:10] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/d7/b7/217d8500655bf4c00794f5a2042040727c64b2de99426e89598bdfabcd53/plover-uinput-0.0.3.tar.gz
+[2024-04-28 15:56:11] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/cd/1c/8579b410faa082f73f4c5e15b9f2df9564f5500baeca12f401c71c95762b/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl
+[2024-04-28 15:56:11] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-04-28 15:56:11] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-28 15:56:11] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240428/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: Downloading https://files.pythonhosted.org/packages/6d/07/5cd9c73db82dccba90dcab9a07ec4ff64e7282820f6d4f65e65e7ad8bd61/plover-uinput-0.0.4.tar.gz
+[2024-04-28 15:56:11] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/07/82/e5cb687b1d6b19f6d3c57c14285a0e891743c0fd72b7d62c9298fc937736/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: executing diffoscope
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover-uinput-0.0.3.tar.gz tmp/plover-uinput-0.0.4.tar.gz --markdown 20240428/p/plover-uinput/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 15:56:11] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-28 15:56:11] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip --markdown 20240428/t/tensordict-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-28 15:56:11] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-04-28 15:56:11] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-04-28 15:56:11] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover-uinput-0.0.3.tar.gz]
+[2024-04-28 15:56:11] INFO root fetch - processPackages [plover-uinput]: Remove: archive file [/home/abi/fetcher/tmp/plover-uinput-0.0.4.tar.gz]
+[2024-04-28 15:56:11] INFO root fetch - main [MainThread]: End processing [plover-uinput]: success
+[2024-04-28 15:56:12] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 15:56:12] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 15:56:12] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-28 15:56:12] INFO root fetch - main [MainThread]: Store serial: [22967241]
