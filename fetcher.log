@@ -13200,3 +13200,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:22:12] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.7.tar.gz]
 [2024-04-28 17:22:12] INFO root fetch - main [MainThread]: End processing [tubeulator]: success
 [2024-04-28 17:22:12] INFO root fetch - main [MainThread]: Store serial: [22967724]
+[2024-04-28 17:24:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967724]
+[2024-04-28 17:24:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytgpt-bot
+[2024-04-28 17:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwpdb.utils.config
+[2024-04-28 17:24:36] INFO root fetch - processPackages [pytgpt-bot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 17:24:36] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/e9/9b/7e14892d75536d5a5b98aac87c485e370c0a920e4b492fd6cab1fc28f3e0/pytgpt_bot-0.1.1.tar.gz
+[2024-04-28 17:24:36] INFO root fetch - processPackages [wwpdb.utils.config]: New version: [0.7] Old Version: [0.6]
+[2024-04-28 17:24:36] INFO root fetch - processPackages [wwpdb.utils.config]: Downloading https://files.pythonhosted.org/packages/40/56/cab817ff3531db785f48626725f183e83861b0fe5c47960b78e9764c3c8d/wwpdb.utils.config-0.6.tar.gz
+[2024-04-28 17:24:37] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/7e/8f/61f242bd73e544110e6cfcbdcbc2c7d994c581e4fcd50ecfe8e326f6bada/pytgpt_bot-0.1.2.tar.gz
+[2024-04-28 17:24:37] INFO root fetch - processPackages [pytgpt-bot]: executing diffoscope
+[2024-04-28 17:24:37] INFO root fetch - processPackages [pytgpt-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytgpt_bot-0.1.1.tar.gz tmp/pytgpt_bot-0.1.2.tar.gz --markdown 20240428/p/pytgpt-bot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 17:24:37] INFO root fetch - processPackages [wwpdb.utils.config]: Downloading https://files.pythonhosted.org/packages/bf/f3/5ff3afafd4a7de63764f6edd89d06c1a183e768e88beb188940437f65a8d/wwpdb.utils.config-0.7.tar.gz
+[2024-04-28 17:24:37] INFO root fetch - processPackages [wwpdb.utils.config]: executing diffoscope
+[2024-04-28 17:24:37] INFO root fetch - processPackages [wwpdb.utils.config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.config-0.6.tar.gz tmp/wwpdb.utils.config-0.7.tar.gz --markdown 20240428/w/wwpdb.utils.config/0.6-0.7/README.md --exclude *.pyd
+[2024-04-28 17:24:37] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.1.tar.gz]
+[2024-04-28 17:24:37] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.2.tar.gz]
+[2024-04-28 17:24:37] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
+[2024-04-28 17:24:38] INFO root fetch - processPackages [wwpdb.utils.config]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.config-0.6.tar.gz]
+[2024-04-28 17:24:38] INFO root fetch - processPackages [wwpdb.utils.config]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.config-0.7.tar.gz]
+[2024-04-28 17:24:38] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.config]: success
+[2024-04-28 17:24:38] INFO root fetch - main [MainThread]: Store serial: [22967731]
