@@ -12305,3 +12305,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:24:22] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.9b1.tar.gz]
 [2024-04-28 16:24:22] INFO root fetch - main [MainThread]: End processing [YaraForge]: success
 [2024-04-28 16:24:22] INFO root fetch - main [MainThread]: Store serial: [22967349]
+[2024-04-28 16:26:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967349]
+[2024-04-28 16:26:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 16:26:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sessionless
+[2024-04-28 16:26:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MobileInventoryCLI
+[2024-04-28 16:26:43] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.70] Old Version: [0.4.69]
+[2024-04-28 16:26:43] INFO root fetch - processPackages [sessionless]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 16:26:43] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/2e/a2/7012588f5d8e7742249d5d8d218e402cdea378bac1e6adcf32aeeed6bb4f/MobileInventoryCLI-0.4.69.tar.gz
+[2024-04-28 16:26:43] INFO root fetch - processPackages [sessionless]: Downloading https://files.pythonhosted.org/packages/f2/d2/d1cd96f86cd9ed5359ce24ef2028a1eeb4b1312792367a7cdb782787624d/sessionless-0.0.3.tar.gz
+[2024-04-28 16:26:43] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/c5/9f/f2a5455d5750fa824fde3c5e8d1561c3f7c3788369d0a42dbfebf9149f3b/MobileInventoryCLI-0.4.70.tar.gz
+[2024-04-28 16:26:43] INFO root fetch - processPackages [sessionless]: Downloading https://files.pythonhosted.org/packages/ff/6d/265f5a9c7931d0627da305120879e564654d75dc799507cc3d0da5eb4cd0/sessionless-0.0.4.tar.gz
+[2024-04-28 16:26:43] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-28 16:26:43] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.69.tar.gz tmp/MobileInventoryCLI-0.4.70.tar.gz --markdown 20240428/M/MobileInventoryCLI/0.4.69-0.4.70/README.md --exclude *.pyd
+[2024-04-28 16:26:44] INFO root fetch - processPackages [sessionless]: executing diffoscope
+[2024-04-28 16:26:44] INFO root fetch - processPackages [sessionless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sessionless-0.0.3.tar.gz tmp/sessionless-0.0.4.tar.gz --markdown 20240428/s/sessionless/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 16:26:44] INFO root fetch - processPackages [sessionless]: Remove: archive file [/home/abi/fetcher/tmp/sessionless-0.0.3.tar.gz]
+[2024-04-28 16:26:44] INFO root fetch - processPackages [sessionless]: Remove: archive file [/home/abi/fetcher/tmp/sessionless-0.0.4.tar.gz]
+[2024-04-28 16:26:44] INFO root fetch - main [MainThread]: End processing [sessionless]: success
+[2024-04-28 16:26:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.69.tar.gz]
+[2024-04-28 16:26:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.70.tar.gz]
+[2024-04-28 16:26:44] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-28 16:26:44] INFO root fetch - main [MainThread]: Store serial: [22967357]
