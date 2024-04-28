@@ -13660,3 +13660,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:57:20] WARNING root fetch - processPackages [mysql-study-datamaker-CN]: Skipping, unable to determine old version
 [2024-04-28 17:57:20] INFO root fetch - main [MainThread]: End processing [mysql-study-datamaker-CN] error
 [2024-04-28 17:57:20] INFO root fetch - main [MainThread]: Store serial: [22967899]
+[2024-04-28 17:59:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967899]
+[2024-04-28 17:59:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 17:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CodeBat
+[2024-04-28 17:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: buildz
+[2024-04-28 17:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bert4keras3
+[2024-04-28 17:59:30] INFO root fetch - processPackages [CodeBat]: New version: [0.2] Old Version: [0.1]
+[2024-04-28 17:59:31] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/b5/d2/cebe25237ea88942c01228407431be1c24f5c638b2ecfdd302d57b59458e/codebat-0.1.tar.gz
+[2024-04-28 17:59:31] INFO root fetch - processPackages [buildz]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-28 17:59:31] INFO root fetch - processPackages [bert4keras3]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 17:59:31] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/8f/94/4933e7af0c09c5ea8566bec08375f2033d5bc333c6eaf1f46770ba6b6c17/buildz-0.5.2.tar.gz
+[2024-04-28 17:59:31] INFO root fetch - processPackages [bert4keras3]: Downloading https://files.pythonhosted.org/packages/dd/bb/eb7f5b434a860d9ce18f1c96f925907ee670d70cacf159bbdec946f44131/bert4keras3-1.3.2-py3-none-any.whl
+[2024-04-28 17:59:31] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/e7/df/fe0672840ad497fb2d1c80b26109f7f08fc647ab173868c48d1acf77c7e0/codebat-0.2.tar.gz
+[2024-04-28 17:59:31] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-28 17:59:31] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.1.tar.gz tmp/codebat-0.2.tar.gz --markdown 20240428/C/CodeBat/0.1-0.2/README.md --exclude *.pyd
+[2024-04-28 17:59:31] INFO root fetch - processPackages [buildz]: Downloading https://files.pythonhosted.org/packages/71/cc/7eb51044d2bb1fdd7c150cd9fe1c9dc657693d99896ca14d3120e8c57983/buildz-0.5.3.tar.gz
+[2024-04-28 17:59:31] INFO root fetch - processPackages [bert4keras3]: Downloading https://files.pythonhosted.org/packages/ff/88/c7a5778dbaaa5bcb3734b863f71350ccff9d30e7bbeee1919e245174c949/bert4keras3-1.3.3-py3-none-any.whl
+[2024-04-28 17:59:31] INFO root fetch - processPackages [buildz]: executing diffoscope
+[2024-04-28 17:59:31] INFO root fetch - processPackages [buildz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/buildz-0.5.2.tar.gz tmp/buildz-0.5.3.tar.gz --markdown 20240428/b/buildz/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-28 17:59:31] INFO root fetch - processPackages [bert4keras3]: executing diffoscope
+[2024-04-28 17:59:31] INFO root fetch - processPackages [bert4keras3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bert4keras3-1.3.2-py3-none-any.whl.zip tmp/bert4keras3-1.3.3-py3-none-any.whl.zip --markdown 20240428/b/bert4keras3/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 17:59:32] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.1.tar.gz]
+[2024-04-28 17:59:32] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.2.tar.gz]
+[2024-04-28 17:59:32] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-28 17:59:32] INFO root fetch - processPackages [bert4keras3]: Remove: archive file [/home/abi/fetcher/tmp/bert4keras3-1.3.2-py3-none-any.whl.zip]
+[2024-04-28 17:59:32] INFO root fetch - processPackages [bert4keras3]: Remove: archive file [/home/abi/fetcher/tmp/bert4keras3-1.3.3-py3-none-any.whl.zip]
+[2024-04-28 17:59:32] INFO root fetch - main [MainThread]: End processing [bert4keras3]: success
+[2024-04-28 17:59:32] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.5.2.tar.gz]
+[2024-04-28 17:59:32] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.5.3.tar.gz]
+[2024-04-28 17:59:32] INFO root fetch - main [MainThread]: End processing [buildz]: success
+[2024-04-28 17:59:32] INFO root fetch - main [MainThread]: Store serial: [22967908]
