@@ -5313,3 +5313,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:57:50] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.4-cp312-none-win_amd64.whl.zip]
 [2024-04-28 07:57:50] INFO root fetch - main [MainThread]: End processing [anyon]: success
 [2024-04-28 07:57:50] INFO root fetch - main [MainThread]: Store serial: [22964398]
+[2024-04-28 07:59:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964398]
+[2024-04-28 07:59:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 07:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-node-parser-relational-dashscope
+[2024-04-28 07:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-work-log-mixin
+[2024-04-28 07:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sharemyai-utils
+[2024-04-28 07:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gai-lib
+[2024-04-28 07:59:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: err-aprs-backend
+[2024-04-28 07:59:59] INFO root fetch - processPackages [sharemyai-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 07:59:59] INFO root fetch - processPackages [err-aprs-backend]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 07:59:59] INFO root fetch - processPackages [gai-lib]: New version: [0.99] Old Version: [0.98]
+[2024-04-28 07:59:59] WARNING root fetch - processPackages [llama-index-node-parser-relational-dashscope]: Skipping, unable to determine old version
+[2024-04-28 07:59:59] INFO root fetch - main [MainThread]: End processing [llama-index-node-parser-relational-dashscope] error
+[2024-04-28 07:59:59] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/f9/85/4d1a239d5b2310753e3641b585d5e4ca024697cf417a14227d8f78c0763c/sharemyai_utils-0.1.8.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: New version: [14.0.1.16.0] Old Version: [14.0.1.15.0]
+[2024-04-28 07:59:59] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/d7/ec/73324c4782c5a7d475e0473a63a34aefe2a50c28e3e95e74572ba8e24319/gai-lib-0.98.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/a2/36/654ea5dad7b6bc05b4317fd2a05816f47a19b704aabb4a71d19e61b26b22/err_aprs_backend-0.1.1.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: Downloading https://files.pythonhosted.org/packages/01/ae/5685c8b82ebd43d6a88796f838586323f5f4e6715dcf0b81c9a4da57b2f9/odoo14_addon_ssi_work_log_mixin-14.0.1.15.0-py3-none-any.whl
+[2024-04-28 07:59:59] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/fd/52/02eb2fe55760540c73b1796ab0f903f7b077179fa1269206b0ff8d4909cf/gai-lib-0.99.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/96/82/1432305b627d31ec8b3364aed835004ef0eb490e674ff9d0c83a139a4d15/err_aprs_backend-0.2.0.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/9b/8a/3c94dcbf0855c714ac43b9bfa2461fc9c88133f4787553d6fd263b38cfc6/sharemyai_utils-0.1.9.tar.gz
+[2024-04-28 07:59:59] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-28 07:59:59] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.98.tar.gz tmp/gai-lib-0.99.tar.gz --markdown 20240428/g/gai-lib/0.98-0.99/README.md --exclude *.pyd
+[2024-04-28 07:59:59] INFO root fetch - processPackages [sharemyai-utils]: executing diffoscope
+[2024-04-28 07:59:59] INFO root fetch - processPackages [sharemyai-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharemyai_utils-0.1.8.tar.gz tmp/sharemyai_utils-0.1.9.tar.gz --markdown 20240428/s/sharemyai-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 07:59:59] INFO root fetch - processPackages [err-aprs-backend]: executing diffoscope
+[2024-04-28 07:59:59] INFO root fetch - processPackages [err-aprs-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/err_aprs_backend-0.1.1.tar.gz tmp/err_aprs_backend-0.2.0.tar.gz --markdown 20240428/e/err-aprs-backend/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: Downloading https://files.pythonhosted.org/packages/c4/d3/c4ddee80ed65c961ec7e45b199da3b224adf3042ef9b6b6a3f08a9950d01/odoo14_addon_ssi_work_log_mixin-14.0.1.16.0-py3-none-any.whl
+[2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: executing diffoscope
+[2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_work_log_mixin-14.0.1.15.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_work_log_mixin-14.0.1.16.0-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-ssi-work-log-mixin/14.0.1.15.0-14.0.1.16.0/README.md --exclude *.pyd
+[2024-04-28 08:00:00] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.8.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.9.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - main [MainThread]: End processing [sharemyai-utils]: success
+[2024-04-28 08:00:00] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.98.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.99.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-28 08:00:00] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.1.1.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.2.0.tar.gz]
+[2024-04-28 08:00:00] INFO root fetch - main [MainThread]: End processing [err-aprs-backend]: success
+[2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_work_log_mixin-14.0.1.15.0-py3-none-any.whl.zip]
+[2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_work_log_mixin-14.0.1.16.0-py3-none-any.whl.zip]
+[2024-04-28 08:00:00] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-work-log-mixin]: success
+[2024-04-28 08:00:00] INFO root fetch - main [MainThread]: Store serial: [22964417]
