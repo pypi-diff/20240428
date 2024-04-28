@@ -6588,3 +6588,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:38:47] INFO root fetch - processPackages [Fr1997v011]: Remove: archive file [/home/abi/fetcher/tmp/Fr1997v011-1.3.9.tar.gz]
 [2024-04-28 09:38:47] INFO root fetch - main [MainThread]: End processing [Fr1997v011]: success
 [2024-04-28 09:38:47] INFO root fetch - main [MainThread]: Store serial: [22964928]
+[2024-04-28 09:40:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964928]
+[2024-04-28 09:40:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 09:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p-template-generator
+[2024-04-28 09:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpop
+[2024-04-28 09:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-common
+[2024-04-28 09:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lalsuite
+[2024-04-28 09:40:55] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.6.2] Old Version: [1.0.7.6.1]
+[2024-04-28 09:40:55] INFO root fetch - processPackages [cpop]: New version: [35.0.7] Old Version: [35.0.6]
+[2024-04-28 09:40:55] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/16/92/8d6e1b1e11f496504ffe3efd134cfb2b1e1e9178d6cba1902d7058c409c5/mns_common-1.0.7.6.1.tar.gz
+[2024-04-28 09:40:55] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 09:40:55] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/5c/a2/02f0b3cf41b76949deb937b95c8970f032447d82aa090fc0b68084fc59df/p-template-generator-0.1.98.tar.gz
+[2024-04-28 09:40:56] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/8c/58/f677d54b71d718cc8f0b180353dc868235dab751700c87a9250ea90b853b/cpop-35.0.6.tar.gz
+[2024-04-28 09:40:56] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/a0/03/621764d0ff290141284b40e591f6c273860fe65052412f37173ffbb2fe7e/mns_common-1.0.7.6.2.tar.gz
+[2024-04-28 09:40:56] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-28 09:40:56] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.6.1.tar.gz tmp/mns_common-1.0.7.6.2.tar.gz --markdown 20240428/m/mns-common/1.0.7.6.1-1.0.7.6.2/README.md --exclude *.pyd
+[2024-04-28 09:40:56] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/e6/38/74a6519f588a96f7176c08516591abc0c4186734606196c872ba032f47b0/cpop-35.0.7.tar.gz
+[2024-04-28 09:40:56] INFO root fetch - processPackages [cpop]: executing diffoscope
+[2024-04-28 09:40:56] INFO root fetch - processPackages [cpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpop-35.0.6.tar.gz tmp/cpop-35.0.7.tar.gz --markdown 20240428/c/cpop/35.0.6-35.0.7/README.md --exclude *.pyd
+[2024-04-28 09:40:56] INFO root fetch - processPackages [p-template-generator]: Downloading https://files.pythonhosted.org/packages/f6/11/746908384a91b5aacce7afb9782527293e24c5740c72a201daffb937e988/p-template-generator-0.1.99.tar.gz
+[2024-04-28 09:40:56] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2024-04-28 09:40:56] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.98.tar.gz tmp/p-template-generator-0.1.99.tar.gz --markdown 20240428/p/p-template-generator/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 09:40:56] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-04-28 09:40:56] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.1.tar.gz]
+[2024-04-28 09:40:56] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.2.tar.gz]
+[2024-04-28 09:40:56] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-28 09:40:57] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-28 09:40:57] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-04-28 09:40:57] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-04-28 09:40:57] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.0.6.tar.gz]
+[2024-04-28 09:40:57] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-35.0.7.tar.gz]
+[2024-04-28 09:40:57] INFO root fetch - main [MainThread]: End processing [cpop]: success
+[2024-04-28 09:40:57] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.98.tar.gz]
+[2024-04-28 09:40:57] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
+[2024-04-28 09:40:57] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
+[2024-04-28 09:40:57] INFO root fetch - main [MainThread]: Store serial: [22964949]
