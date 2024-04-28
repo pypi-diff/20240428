@@ -9852,3 +9852,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:14:57] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-04-28 13:14:57] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-04-28 13:14:57] INFO root fetch - main [MainThread]: Store serial: [22966344]
+[2024-04-28 13:17:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966344]
+[2024-04-28 13:17:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 13:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: visprompt
+[2024-04-28 13:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yanga
+[2024-04-28 13:17:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Errome
+[2024-04-28 13:17:12] WARNING root fetch - processPackages [visprompt]: Skipping, unable to determine old version
+[2024-04-28 13:17:12] INFO root fetch - main [MainThread]: End processing [visprompt] error
+[2024-04-28 13:17:12] INFO root fetch - processPackages [Errome]: New version: [0.3.1] Old Version: [0.3]
+[2024-04-28 13:17:12] INFO root fetch - processPackages [yanga]: New version: [1.7.0] Old Version: [1.6.0]
+[2024-04-28 13:17:12] INFO root fetch - processPackages [yanga]: Downloading https://files.pythonhosted.org/packages/fe/bf/3102a3210486b88d4744b0b46bb61558a23e83307b071564e05dfdad144f/yanga-1.6.0.tar.gz
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: Downloading https://files.pythonhosted.org/packages/25/0b/5843444ccf3b6cf151cad6f30e32c8706574e3e1abec55e20cca4cb91706/Errome-0.3.tar.gz
+[2024-04-28 13:17:13] INFO root fetch - processPackages [yanga]: Downloading https://files.pythonhosted.org/packages/9e/91/92491a40d66813b0d63e3485d1125da8c1169122a80c1c4bd2b16a89a614/yanga-1.7.0.tar.gz
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: Downloading https://files.pythonhosted.org/packages/26/b1/caf2619127fdcc6ab52763d91552b9b0785da8587bdb5bedabf707368a64/Errome-0.3.1.tar.gz
+[2024-04-28 13:17:13] INFO root fetch - processPackages [yanga]: executing diffoscope
+[2024-04-28 13:17:13] INFO root fetch - processPackages [yanga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yanga-1.6.0.tar.gz tmp/yanga-1.7.0.tar.gz --markdown 20240428/y/yanga/1.6.0-1.7.0/README.md --exclude *.pyd
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: executing diffoscope
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Errome-0.3.tar.gz tmp/Errome-0.3.1.tar.gz --markdown 20240428/E/Errome/0.3-0.3.1/README.md --exclude *.pyd
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: Remove: archive file [/home/abi/fetcher/tmp/Errome-0.3.tar.gz]
+[2024-04-28 13:17:13] INFO root fetch - processPackages [Errome]: Remove: archive file [/home/abi/fetcher/tmp/Errome-0.3.1.tar.gz]
+[2024-04-28 13:17:13] INFO root fetch - main [MainThread]: End processing [Errome]: success
+[2024-04-28 13:17:14] INFO root fetch - processPackages [yanga]: Remove: archive file [/home/abi/fetcher/tmp/yanga-1.6.0.tar.gz]
+[2024-04-28 13:17:14] INFO root fetch - processPackages [yanga]: Remove: archive file [/home/abi/fetcher/tmp/yanga-1.7.0.tar.gz]
+[2024-04-28 13:17:14] INFO root fetch - main [MainThread]: End processing [yanga]: success
+[2024-04-28 13:17:14] INFO root fetch - main [MainThread]: Store serial: [22966354]
