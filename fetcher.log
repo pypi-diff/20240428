@@ -6978,3 +6978,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:04:46] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240428.tar.gz]
 [2024-04-28 10:04:46] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-04-28 10:04:46] INFO root fetch - main [MainThread]: Store serial: [22965050]
+[2024-04-28 10:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965050]
+[2024-04-28 10:06:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feapder
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydmt
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-ssi-infrastructure-server
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PFlow-control
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyglove
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: titandevice
+[2024-04-28 10:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pbix-cn
+[2024-04-28 10:06:56] INFO root fetch - processPackages [titandevice]: New version: [0.3.8] Old Version: [0.3.7.1]
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pydmt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 10:06:56] INFO root fetch - processPackages [titandevice]: Downloading https://files.pythonhosted.org/packages/b4/73/3490ba1799a43a04b095ce0a3249c44e6a05d1350a44c9dd2590535b7543/TitanDevice-0.3.7.1.tar.gz
+[2024-04-28 10:06:56] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: New version: [14.0.2.1.0] Old Version: [14.0.2.0.0]
+[2024-04-28 10:06:56] WARNING root fetch - processPackages [PFlow-control]: Skipping, unable to determine old version
+[2024-04-28 10:06:56] INFO root fetch - main [MainThread]: End processing [PFlow-control] error
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/90/d0/4a9b7c76e70b0b2ed97f243e5439c1246e88995dbf72126376727a1b8f55/pydmt-0.3.8.tar.gz
+[2024-04-28 10:06:56] INFO root fetch - processPackages [feapder]: New version: [1.9.1b2] Old Version: [1.9.1b1]
+[2024-04-28 10:06:56] WARNING root fetch - processPackages [pbix-cn]: Skipping, unable to determine old version
+[2024-04-28 10:06:56] INFO root fetch - main [MainThread]: End processing [pbix-cn] error
+[2024-04-28 10:06:56] INFO root fetch - processPackages [titandevice]: Downloading https://files.pythonhosted.org/packages/14/48/cc3a791d53a021dec56fb86725270a3d5157617f1c719086a6a004057feb/titandevice-0.3.8.tar.gz
+[2024-04-28 10:06:56] INFO root fetch - processPackages [feapder]: Downloading https://files.pythonhosted.org/packages/de/be/fd2d97c90d25d42f14a4e36f8500b4492b8fe91c4025902320a12a6802fc/feapder-1.9.1b1.tar.gz
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/de/12/29caefaa8dd66e68e2a1419873d4e3b8ea2960a4b4ee1c70730da957ca00/pydmt-0.3.9.tar.gz
+[2024-04-28 10:06:56] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Downloading https://files.pythonhosted.org/packages/c1/8c/32071097c21f844802d3b30ade3579c4914010923bda1b9ad4b3444e1c51/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl
+[2024-04-28 10:06:56] INFO root fetch - processPackages [titandevice]: executing diffoscope
+[2024-04-28 10:06:56] INFO root fetch - processPackages [titandevice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TitanDevice-0.3.7.1.tar.gz tmp/titandevice-0.3.8.tar.gz --markdown 20240428/t/titandevice/0.3.7.1-0.3.8/README.md --exclude *.pyd
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240428] Old Version: [0.4.5.dev20240427]
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.8.tar.gz tmp/pydmt-0.3.9.tar.gz --markdown 20240428/p/pydmt/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 10:06:56] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/40/92/289c7823b7eadf720fd03bf051ab8b805928824ec26a27705526d1d4539a/pyglove-0.4.5.dev20240427-py3-none-any.whl
+[2024-04-28 10:06:56] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Downloading https://files.pythonhosted.org/packages/09/20/9d594ee850be5cdb54d71a3b1b3b6882bf1781c027cfecc63325e7226964/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl
+[2024-04-28 10:06:56] INFO root fetch - processPackages [feapder]: Downloading https://files.pythonhosted.org/packages/18/be/2e977adaa9e04141e3fd218f452794d5627db4d24f077ab711809d543808/feapder-1.9.1b2.tar.gz
+[2024-04-28 10:06:57] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: executing diffoscope
+[2024-04-28 10:06:57] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-ssi-infrastructure-server/14.0.2.0.0-14.0.2.1.0/README.md --exclude *.pyd
+[2024-04-28 10:06:57] INFO root fetch - processPackages [feapder]: executing diffoscope
+[2024-04-28 10:06:57] INFO root fetch - processPackages [feapder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feapder-1.9.1b1.tar.gz tmp/feapder-1.9.1b2.tar.gz --markdown 20240428/f/feapder/1.9.1b1-1.9.1b2/README.md --exclude *.pyd
+[2024-04-28 10:06:57] INFO root fetch - processPackages [titandevice]: Remove: archive file [/home/abi/fetcher/tmp/TitanDevice-0.3.7.1.tar.gz]
+[2024-04-28 10:06:57] INFO root fetch - processPackages [titandevice]: Remove: archive file [/home/abi/fetcher/tmp/titandevice-0.3.8.tar.gz]
+[2024-04-28 10:06:57] INFO root fetch - main [MainThread]: End processing [titandevice]: success
+[2024-04-28 10:06:57] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/ee/29/add85438d48279d1b7587982b48ef30086bdb63504e4fa1907ec89d1974d/pyglove-0.4.5.dev20240428.tar.gz
+[2024-04-28 10:06:57] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.8.tar.gz]
+[2024-04-28 10:06:57] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.9.tar.gz]
+[2024-04-28 10:06:57] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-28 10:06:57] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-28 10:06:57] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240427-py3-none-any.whl.zip tmp/pyglove-0.4.5.dev20240428.tar.gz --markdown 20240428/p/pyglove/0.4.5.dev20240427-0.4.5.dev20240428/README.md --exclude *.pyd
+[2024-04-28 10:06:57] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl.zip]
+[2024-04-28 10:06:57] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl.zip]
+[2024-04-28 10:06:57] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-infrastructure-server]: success
+[2024-04-28 10:06:58] INFO root fetch - processPackages [feapder]: Remove: archive file [/home/abi/fetcher/tmp/feapder-1.9.1b1.tar.gz]
+[2024-04-28 10:06:58] INFO root fetch - processPackages [feapder]: Remove: archive file [/home/abi/fetcher/tmp/feapder-1.9.1b2.tar.gz]
+[2024-04-28 10:06:58] INFO root fetch - main [MainThread]: End processing [feapder]: success
+[2024-04-28 10:06:58] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240427-py3-none-any.whl.zip]
+[2024-04-28 10:06:58] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240428.tar.gz]
+[2024-04-28 10:06:58] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-28 10:06:58] INFO root fetch - main [MainThread]: Store serial: [22965071]
