@@ -3685,3 +3685,24 @@
 [2024-04-28 05:41:13] INFO root fetch - processPackages [json-criteria]: Remove: archive file [/home/abi/fetcher/tmp/json_criteria-0.2.0.tar.gz]
 [2024-04-28 05:41:13] INFO root fetch - main [MainThread]: End processing [json-criteria]: success
 [2024-04-28 05:41:13] INFO root fetch - main [MainThread]: Store serial: [22963779]
+[2024-04-28 05:43:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963779]
+[2024-04-28 05:43:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: err-aprs-backend
+[2024-04-28 05:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: espy-contact
+[2024-04-28 05:43:22] INFO root fetch - processPackages [espy-contact]: New version: [0.3] Old Version: [0.2]
+[2024-04-28 05:43:22] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/64/90/6b5be1f419248e174993854a5f5234d5974ac4da7375066b7a73b5a1e423/espy_contact-0.2.tar.gz
+[2024-04-28 05:43:22] INFO root fetch - processPackages [err-aprs-backend]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 05:43:22] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/a2/36/654ea5dad7b6bc05b4317fd2a05816f47a19b704aabb4a71d19e61b26b22/err_aprs_backend-0.1.1.tar.gz
+[2024-04-28 05:43:22] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/6b/bd/b06443d778d10d374e7190066b5add4f17d777403faefd39f69116fdefb6/espy_contact-0.3.tar.gz
+[2024-04-28 05:43:22] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-04-28 05:43:22] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-0.2.tar.gz tmp/espy_contact-0.3.tar.gz --markdown 20240428/e/espy-contact/0.2-0.3/README.md --exclude *.pyd
+[2024-04-28 05:43:22] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/96/82/1432305b627d31ec8b3364aed835004ef0eb490e674ff9d0c83a139a4d15/err_aprs_backend-0.2.0.tar.gz
+[2024-04-28 05:43:22] INFO root fetch - processPackages [err-aprs-backend]: executing diffoscope
+[2024-04-28 05:43:22] INFO root fetch - processPackages [err-aprs-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/err_aprs_backend-0.1.1.tar.gz tmp/err_aprs_backend-0.2.0.tar.gz --markdown 20240428/e/err-aprs-backend/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 05:43:23] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.2.tar.gz]
+[2024-04-28 05:43:23] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.3.tar.gz]
+[2024-04-28 05:43:23] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-04-28 05:43:23] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.1.1.tar.gz]
+[2024-04-28 05:43:23] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.2.0.tar.gz]
+[2024-04-28 05:43:23] INFO root fetch - main [MainThread]: End processing [err-aprs-backend]: success
+[2024-04-28 05:43:23] INFO root fetch - main [MainThread]: Store serial: [22963785]
