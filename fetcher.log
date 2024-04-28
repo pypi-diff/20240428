@@ -4544,3 +4544,29 @@
 [2024-04-28 06:50:35] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.1.tar.gz]
 [2024-04-28 06:50:35] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-04-28 06:50:35] INFO root fetch - main [MainThread]: Store serial: [22964079]
+[2024-04-28 06:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964079]
+[2024-04-28 06:52:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 06:54:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964079]
+[2024-04-28 06:54:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 06:54:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-logs
+[2024-04-28 06:54:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: portfolio-allocation
+[2024-04-28 06:54:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libscca-python
+[2024-04-28 06:54:49] WARNING root fetch - processPackages [abstract-logs]: Skipping, unable to determine old version
+[2024-04-28 06:54:49] INFO root fetch - main [MainThread]: End processing [abstract-logs] error
+[2024-04-28 06:54:49] INFO root fetch - processPackages [portfolio-allocation]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 06:54:49] INFO root fetch - processPackages [libscca-python]: New version: [20240427] Old Version: [20240215]
+[2024-04-28 06:54:49] INFO root fetch - processPackages [portfolio-allocation]: Downloading https://files.pythonhosted.org/packages/92/60/e6b5c72ab498168367bd79cc57189ef2a6e78c409407004b5afc597da67b/portfolio_allocation-0.3.8.tar.gz
+[2024-04-28 06:54:49] INFO root fetch - processPackages [libscca-python]: Downloading https://files.pythonhosted.org/packages/72/7a/5d34e55f44728f0cde221a7788bab9adcac31dce19cfe0b7d09cb07209b7/libscca-python-20240215.tar.gz
+[2024-04-28 06:54:49] INFO root fetch - processPackages [portfolio-allocation]: Downloading https://files.pythonhosted.org/packages/35/e0/e846a55b06029faf5ef39781fa852d540e255873d3ddb07cf09edfcad56d/portfolio_allocation-0.3.9.tar.gz
+[2024-04-28 06:54:50] INFO root fetch - processPackages [libscca-python]: Downloading https://files.pythonhosted.org/packages/37/64/414717822e1026ee7dc615131bff3bae42a6649090394ee5ae4d687a6274/libscca-python-20240427.tar.gz
+[2024-04-28 06:54:50] INFO root fetch - processPackages [portfolio-allocation]: executing diffoscope
+[2024-04-28 06:54:50] INFO root fetch - processPackages [portfolio-allocation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portfolio_allocation-0.3.8.tar.gz tmp/portfolio_allocation-0.3.9.tar.gz --markdown 20240428/p/portfolio-allocation/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 06:54:50] INFO root fetch - processPackages [libscca-python]: executing diffoscope
+[2024-04-28 06:54:50] INFO root fetch - processPackages [libscca-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libscca-python-20240215.tar.gz tmp/libscca-python-20240427.tar.gz --markdown 20240428/l/libscca-python/20240215-20240427/README.md --exclude *.pyd
+[2024-04-28 06:54:50] INFO root fetch - processPackages [portfolio-allocation]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_allocation-0.3.8.tar.gz]
+[2024-04-28 06:54:50] INFO root fetch - processPackages [portfolio-allocation]: Remove: archive file [/home/abi/fetcher/tmp/portfolio_allocation-0.3.9.tar.gz]
+[2024-04-28 06:54:50] INFO root fetch - main [MainThread]: End processing [portfolio-allocation]: success
+[2024-04-28 06:54:55] INFO root fetch - processPackages [libscca-python]: Remove: archive file [/home/abi/fetcher/tmp/libscca-python-20240215.tar.gz]
+[2024-04-28 06:54:55] INFO root fetch - processPackages [libscca-python]: Remove: archive file [/home/abi/fetcher/tmp/libscca-python-20240427.tar.gz]
+[2024-04-28 06:54:55] INFO root fetch - main [MainThread]: End processing [libscca-python]: success
+[2024-04-28 06:54:55] INFO root fetch - main [MainThread]: Store serial: [22964089]
