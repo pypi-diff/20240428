@@ -6473,3 +6473,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:30:07] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-9.0.0.tar.gz]
 [2024-04-28 09:30:07] INFO root fetch - main [MainThread]: End processing [mailslurp-client]: success
 [2024-04-28 09:30:07] INFO root fetch - main [MainThread]: Store serial: [22964884]
+[2024-04-28 09:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964884]
+[2024-04-28 09:32:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lit-data-layers
+[2024-04-28 09:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easytl
+[2024-04-28 09:32:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colorful-logging
+[2024-04-28 09:32:15] INFO root fetch - processPackages [lit-data-layers]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 09:32:15] INFO root fetch - processPackages [colorful-logging]: New version: [0.5] Old Version: [0.3]
+[2024-04-28 09:32:15] INFO root fetch - processPackages [easytl]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-28 09:32:15] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/a7/fc/309614ee06df85c1d1c7c0a52e64530f94661b0937cb29089bee8f390e37/colorful_logging-0.3.tar.gz
+[2024-04-28 09:32:15] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/3e/8f/9b166eb66cc461f0d0015bca81964bb3dda87c167d93baa5ba6d2a486ed4/lit_data_layers-0.1.1.tar.gz
+[2024-04-28 09:32:15] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/c5/62/edb4b5b8162d9d421ceb0292006dfacbf59ccf98d35a15bb12e0933aaebf/easytl-0.2.1.tar.gz
+[2024-04-28 09:32:16] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/f1/fc/a8c0328ec4e99fc06537e36e96f83c8440ee2cd9ae4e968764e88d75a77b/colorful_logging-0.5.tar.gz
+[2024-04-28 09:32:16] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/ce/1e/dcf8633a671afb8c4e28c51e02944d233b89187982cfe9eabafc92ffcbba/lit_data_layers-0.1.2.tar.gz
+[2024-04-28 09:32:16] INFO root fetch - processPackages [colorful-logging]: executing diffoscope
+[2024-04-28 09:32:16] INFO root fetch - processPackages [colorful-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorful_logging-0.3.tar.gz tmp/colorful_logging-0.5.tar.gz --markdown 20240428/c/colorful-logging/0.3-0.5/README.md --exclude *.pyd
+[2024-04-28 09:32:16] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/35/58/847587a783ec27fff28064756a2163b1125ea302f506fc68c769c8b54cbf/easytl-0.3.0.tar.gz
+[2024-04-28 09:32:16] INFO root fetch - processPackages [lit-data-layers]: executing diffoscope
+[2024-04-28 09:32:16] INFO root fetch - processPackages [lit-data-layers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit_data_layers-0.1.1.tar.gz tmp/lit_data_layers-0.1.2.tar.gz --markdown 20240428/l/lit-data-layers/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 09:32:16] INFO root fetch - processPackages [easytl]: executing diffoscope
+[2024-04-28 09:32:16] INFO root fetch - processPackages [easytl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytl-0.2.1.tar.gz tmp/easytl-0.3.0.tar.gz --markdown 20240428/e/easytl/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-28 09:32:16] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.3.tar.gz]
+[2024-04-28 09:32:16] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.5.tar.gz]
+[2024-04-28 09:32:16] INFO root fetch - main [MainThread]: End processing [colorful-logging]: success
+[2024-04-28 09:32:16] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.1.tar.gz]
+[2024-04-28 09:32:16] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.2.tar.gz]
+[2024-04-28 09:32:16] INFO root fetch - main [MainThread]: End processing [lit-data-layers]: success
+[2024-04-28 09:32:17] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.2.1.tar.gz]
+[2024-04-28 09:32:17] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.3.0.tar.gz]
+[2024-04-28 09:32:17] INFO root fetch - main [MainThread]: End processing [easytl]: success
+[2024-04-28 09:32:17] INFO root fetch - main [MainThread]: Store serial: [22964894]
