@@ -10312,3 +10312,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:54:00] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.3.1.tar.gz]
 [2024-04-28 13:54:00] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
 [2024-04-28 13:54:00] INFO root fetch - main [MainThread]: Store serial: [22966535]
+[2024-04-28 13:56:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966535]
+[2024-04-28 13:56:16] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 13:58:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966537]
+[2024-04-28 13:58:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quasarpy
+[2024-04-28 13:58:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embykeeper
+[2024-04-28 13:58:22] INFO root fetch - processPackages [embykeeper]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-28 13:58:22] WARNING root fetch - processPackages [quasarpy]: Skipping, unable to determine old version
+[2024-04-28 13:58:22] INFO root fetch - main [MainThread]: End processing [quasarpy] error
+[2024-04-28 13:58:22] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/d0/e6/4bb1ee3290f4aba08e9d6751566f039db27dba7d51553fc0681095c6a015/embykeeper-3.2.8.tar.gz
+[2024-04-28 13:58:23] INFO root fetch - processPackages [embykeeper]: Downloading https://files.pythonhosted.org/packages/02/85/cffd52bc872be074110305f46303d258fa7478eab3eae08d86465d0653a8/embykeeper-3.2.9.tar.gz
+[2024-04-28 13:58:23] INFO root fetch - processPackages [embykeeper]: executing diffoscope
+[2024-04-28 13:58:23] INFO root fetch - processPackages [embykeeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embykeeper-3.2.8.tar.gz tmp/embykeeper-3.2.9.tar.gz --markdown 20240428/e/embykeeper/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-28 13:58:24] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.8.tar.gz]
+[2024-04-28 13:58:24] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.9.tar.gz]
+[2024-04-28 13:58:24] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
+[2024-04-28 13:58:24] INFO root fetch - main [MainThread]: Store serial: [22966546]
