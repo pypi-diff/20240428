@@ -2953,3 +2953,33 @@
 [2024-04-28 04:20:31] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.4.tar.gz]
 [2024-04-28 04:20:31] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-28 04:20:31] INFO root fetch - main [MainThread]: Store serial: [22963439]
+[2024-04-28 04:22:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963439]
+[2024-04-28 04:22:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 04:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-flake8-bugbear
+[2024-04-28 04:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-openpyxl
+[2024-04-28 04:22:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-tensorflow
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-tensorflow]: New version: [2.16.0.20240428] Old Version: [2.16.0.20240424]
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-flake8-bugbear]: New version: [24.4.26.20240428] Old Version: [24.4.21.20240423]
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-openpyxl]: New version: [3.1.0.9] Old Version: [3.1.0.8]
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-flake8-bugbear]: Downloading https://files.pythonhosted.org/packages/11/8a/b590fabac5839153dc66e08daede5ae3cffcb396ab9ef3eea643d00c478d/types-flake8-bugbear-24.4.21.20240423.tar.gz
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-tensorflow]: Downloading https://files.pythonhosted.org/packages/6d/4a/a4cdcbfd9d0186f8b1de50f7d1cea5dbd48dbfbfa6e98fc3bf26ffab61f4/types-tensorflow-2.16.0.20240424.tar.gz
+[2024-04-28 04:22:40] INFO root fetch - processPackages [types-openpyxl]: Downloading https://files.pythonhosted.org/packages/1b/8a/70639ec16728a27eb8efb7ffc70ebf607fb622eb4122f8a8aef9167c4502/types-openpyxl-3.1.0.8.tar.gz
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-flake8-bugbear]: Downloading https://files.pythonhosted.org/packages/ce/81/d1257af3cf338fb2acc4ead8869e9c1a1bd5f7faea47b5cddab46eb86a0b/types-flake8-bugbear-24.4.26.20240428.tar.gz
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-tensorflow]: Downloading https://files.pythonhosted.org/packages/d5/1f/0b5dcfc225a1933e73d78e618b4c69c9971a8f04ee260f11ae1d97704131/types-tensorflow-2.16.0.20240428.tar.gz
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-openpyxl]: Downloading https://files.pythonhosted.org/packages/b9/65/22bbec74fcc943aa6c6fdb6df2ce51327bae5470283f90badeeb0bf4ac39/types-openpyxl-3.1.0.9.tar.gz
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-flake8-bugbear]: executing diffoscope
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-flake8-bugbear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-flake8-bugbear-24.4.21.20240423.tar.gz tmp/types-flake8-bugbear-24.4.26.20240428.tar.gz --markdown 20240428/t/types-flake8-bugbear/24.4.21.20240423-24.4.26.20240428/README.md --exclude *.pyd
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-tensorflow]: executing diffoscope
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-tensorflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-tensorflow-2.16.0.20240424.tar.gz tmp/types-tensorflow-2.16.0.20240428.tar.gz --markdown 20240428/t/types-tensorflow/2.16.0.20240424-2.16.0.20240428/README.md --exclude *.pyd
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-openpyxl]: executing diffoscope
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-openpyxl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-openpyxl-3.1.0.8.tar.gz tmp/types-openpyxl-3.1.0.9.tar.gz --markdown 20240428/t/types-openpyxl/3.1.0.8-3.1.0.9/README.md --exclude *.pyd
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-flake8-bugbear]: Remove: archive file [/home/abi/fetcher/tmp/types-flake8-bugbear-24.4.21.20240423.tar.gz]
+[2024-04-28 04:22:41] INFO root fetch - processPackages [types-flake8-bugbear]: Remove: archive file [/home/abi/fetcher/tmp/types-flake8-bugbear-24.4.26.20240428.tar.gz]
+[2024-04-28 04:22:41] INFO root fetch - main [MainThread]: End processing [types-flake8-bugbear]: success
+[2024-04-28 04:22:42] INFO root fetch - processPackages [types-tensorflow]: Remove: archive file [/home/abi/fetcher/tmp/types-tensorflow-2.16.0.20240424.tar.gz]
+[2024-04-28 04:22:42] INFO root fetch - processPackages [types-tensorflow]: Remove: archive file [/home/abi/fetcher/tmp/types-tensorflow-2.16.0.20240428.tar.gz]
+[2024-04-28 04:22:42] INFO root fetch - main [MainThread]: End processing [types-tensorflow]: success
+[2024-04-28 04:22:42] INFO root fetch - processPackages [types-openpyxl]: Remove: archive file [/home/abi/fetcher/tmp/types-openpyxl-3.1.0.8.tar.gz]
+[2024-04-28 04:22:42] INFO root fetch - processPackages [types-openpyxl]: Remove: archive file [/home/abi/fetcher/tmp/types-openpyxl-3.1.0.9.tar.gz]
+[2024-04-28 04:22:42] INFO root fetch - main [MainThread]: End processing [types-openpyxl]: success
+[2024-04-28 04:22:42] INFO root fetch - main [MainThread]: Store serial: [22963448]
