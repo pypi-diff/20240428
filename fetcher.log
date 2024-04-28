@@ -16763,3 +16763,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:36:45] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.3.tar.gz]
 [2024-04-28 21:36:45] INFO root fetch - main [MainThread]: End processing [AmaProductReviews]: success
 [2024-04-28 21:36:45] INFO root fetch - main [MainThread]: Store serial: [22969293]
+[2024-04-28 21:38:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969293]
+[2024-04-28 21:38:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Telethon-v1.24
+[2024-04-28 21:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AmaProductReviews
+[2024-04-28 21:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: q2gui
+[2024-04-28 21:38:54] INFO root fetch - processPackages [AmaProductReviews]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 21:38:54] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/f1/c0/3e6cefb91ddaba92ee3b15144005442a9a3391efb432a378e3db8041b08b/amaproductreviews-0.0.3.tar.gz
+[2024-04-28 21:38:54] INFO root fetch - processPackages [Telethon-v1.24]: New version: [1.24.9] Old Version: [1.24.8]
+[2024-04-28 21:38:55] INFO root fetch - processPackages [q2gui]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 21:38:55] INFO root fetch - processPackages [Telethon-v1.24]: Downloading https://files.pythonhosted.org/packages/87/5b/9a3bc0e6723a51f46124a82c0c7d3af0b68a900fc8d3b8af05d45babfd2d/Telethon-v1.24-1.24.8.tar.gz
+[2024-04-28 21:38:55] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/97/15/9a5e27167a28b919a9cddce6abb2321351e6113cdec2d4d638ba8252564d/q2gui-0.1.98.tar.gz
+[2024-04-28 21:38:55] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/bd/28/5bf2224b8575cb356d653a907b96f50f60030166fa109e2e6b3e4b898070/amaproductreviews-0.0.4.tar.gz
+[2024-04-28 21:38:55] INFO root fetch - processPackages [AmaProductReviews]: executing diffoscope
+[2024-04-28 21:38:55] INFO root fetch - processPackages [AmaProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amaproductreviews-0.0.3.tar.gz tmp/amaproductreviews-0.0.4.tar.gz --markdown 20240428/A/AmaProductReviews/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 21:38:55] INFO root fetch - processPackages [Telethon-v1.24]: Downloading https://files.pythonhosted.org/packages/a5/a7/97ecbea4f673b89354eaf1815771621676543d5dd893ecc6fa3d9b531c84/Telethon-v1.24-1.24.9.tar.gz
+[2024-04-28 21:38:55] INFO root fetch - processPackages [q2gui]: Downloading https://files.pythonhosted.org/packages/58/3e/df0471f53d74fc7d0d5885ad90423ae0ffbcaec42bcc77a0b466ed7fef7f/q2gui-0.1.99.tar.gz
+[2024-04-28 21:38:55] INFO root fetch - processPackages [Telethon-v1.24]: executing diffoscope
+[2024-04-28 21:38:55] INFO root fetch - processPackages [Telethon-v1.24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Telethon-v1.24-1.24.8.tar.gz tmp/Telethon-v1.24-1.24.9.tar.gz --markdown 20240428/T/Telethon-v1.24/1.24.8-1.24.9/README.md --exclude *.pyd
+[2024-04-28 21:38:55] INFO root fetch - processPackages [q2gui]: executing diffoscope
+[2024-04-28 21:38:55] INFO root fetch - processPackages [q2gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2gui-0.1.98.tar.gz tmp/q2gui-0.1.99.tar.gz --markdown 20240428/q/q2gui/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 21:38:55] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.3.tar.gz]
+[2024-04-28 21:38:55] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.4.tar.gz]
+[2024-04-28 21:38:55] INFO root fetch - main [MainThread]: End processing [AmaProductReviews]: success
+[2024-04-28 21:38:56] INFO root fetch - processPackages [q2gui]: Remove: archive file [/home/abi/fetcher/tmp/q2gui-0.1.98.tar.gz]
+[2024-04-28 21:38:56] INFO root fetch - processPackages [q2gui]: Remove: archive file [/home/abi/fetcher/tmp/q2gui-0.1.99.tar.gz]
+[2024-04-28 21:38:56] INFO root fetch - main [MainThread]: End processing [q2gui]: success
+[2024-04-28 21:38:57] INFO root fetch - processPackages [Telethon-v1.24]: Remove: archive file [/home/abi/fetcher/tmp/Telethon-v1.24-1.24.8.tar.gz]
+[2024-04-28 21:38:57] INFO root fetch - processPackages [Telethon-v1.24]: Remove: archive file [/home/abi/fetcher/tmp/Telethon-v1.24-1.24.9.tar.gz]
+[2024-04-28 21:38:57] INFO root fetch - main [MainThread]: End processing [Telethon-v1.24]: success
+[2024-04-28 21:38:57] INFO root fetch - main [MainThread]: Store serial: [22969302]
