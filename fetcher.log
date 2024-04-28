@@ -3246,3 +3246,21 @@
 [2024-04-28 04:53:42] INFO root fetch - processPackages [termax]: Remove: archive file [/home/abi/fetcher/tmp/termax-0.1.4.tar.gz]
 [2024-04-28 04:53:42] INFO root fetch - main [MainThread]: End processing [termax]: success
 [2024-04-28 04:53:42] INFO root fetch - main [MainThread]: Store serial: [22963546]
+[2024-04-28 04:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963546]
+[2024-04-28 04:55:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 04:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: electrify-sdk
+[2024-04-28 04:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YoutubeUser
+[2024-04-28 04:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abess
+[2024-04-28 04:55:51] WARNING root fetch - processPackages [electrify-sdk]: Skipping, unable to determine old version
+[2024-04-28 04:55:51] INFO root fetch - main [MainThread]: End processing [electrify-sdk] error
+[2024-04-28 04:55:51] WARNING root fetch - processPackages [YoutubeUser]: Skipping, unable to determine old version
+[2024-04-28 04:55:51] INFO root fetch - main [MainThread]: End processing [YoutubeUser] error
+[2024-04-28 04:55:51] INFO root fetch - processPackages [abess]: New version: [0.4.8] Old Version: [0.4.7rc1]
+[2024-04-28 04:55:51] INFO root fetch - processPackages [abess]: Downloading https://files.pythonhosted.org/packages/63/59/b3e4f1fa29e46821ed9d16c29062faf593ed858c026f1bd48f0d0dc005b1/abess-0.4.7rc1.tar.gz
+[2024-04-28 04:55:52] INFO root fetch - processPackages [abess]: Downloading https://files.pythonhosted.org/packages/f0/e6/0076dce7fbc878c234217e97ff8c24989769d3facf29dedaeb4f0d406aeb/abess-0.4.8-cp311-cp311-macosx_10_9_x86_64.whl
+[2024-04-28 04:55:53] INFO root fetch - processPackages [abess]: executing diffoscope
+[2024-04-28 04:55:53] INFO root fetch - processPackages [abess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abess-0.4.7rc1.tar.gz tmp/abess-0.4.8-cp311-cp311-macosx_10_9_x86_64.whl.zip --markdown 20240428/a/abess/0.4.7rc1-0.4.8/README.md --exclude *.pyd
+[2024-04-28 04:55:53] INFO root fetch - processPackages [abess]: Remove: archive file [/home/abi/fetcher/tmp/abess-0.4.7rc1.tar.gz]
+[2024-04-28 04:55:53] INFO root fetch - processPackages [abess]: Remove: archive file [/home/abi/fetcher/tmp/abess-0.4.8-cp311-cp311-macosx_10_9_x86_64.whl.zip]
+[2024-04-28 04:55:53] INFO root fetch - main [MainThread]: End processing [abess]: success
+[2024-04-28 04:55:53] INFO root fetch - main [MainThread]: Store serial: [22963563]
