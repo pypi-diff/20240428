@@ -15534,3 +15534,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:05:05] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.28.1.tar.gz]
 [2024-04-28 20:05:05] INFO root fetch - main [MainThread]: End processing [cabinet]: success
 [2024-04-28 20:05:05] INFO root fetch - main [MainThread]: Store serial: [22968687]
+[2024-04-28 20:07:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968687]
+[2024-04-28 20:07:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: articulo
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piperider-nightly
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clickhouse-arrow
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astx
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: internet-archive-uploader
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nmbrs
+[2024-04-28 20:07:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: recce-nightly
+[2024-04-28 20:07:15] INFO root fetch - processPackages [clickhouse-arrow]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [astx]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [nmbrs]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [internet-archive-uploader]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [recce-nightly]: New version: [0.9.0.20240313] Old Version: [0.9.0.20240312]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [articulo]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-28 20:07:15] INFO root fetch - processPackages [clickhouse-arrow]: Downloading https://files.pythonhosted.org/packages/f2/dd/3228544162532195dab928b9c31ca8749654be7a2fe771da954dc313e49d/clickhouse_arrow-0.3.0.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/e9/62/d0e46a0c9d5b92472e7b58c0962c0c95948e94a7717bf0be4b2abd6743fa/nmbrs-0.1.6.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [astx]: Downloading https://files.pythonhosted.org/packages/31/0e/4804dbbc6714313cff3eb17ebe9c35dcaef7828f7f1f3c4331bf8e0a4f65/astx-0.9.0.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [articulo]: Downloading https://files.pythonhosted.org/packages/3e/ac/dfe50bc2828e3d75265b66760fa3b16370fa1cdfedce0640322662b50e0b/articulo-0.2.2.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [internet-archive-uploader]: Downloading https://files.pythonhosted.org/packages/eb/7a/d39e7bd809b55731448d98a2ee9fbc76d609604678fdf217866c8e6fd314/internet-archive-uploader-1.2.4.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [recce-nightly]: Downloading https://files.pythonhosted.org/packages/c6/8c/cde0615abf888d0ccade0e1fc90482c4c402fedef38bf8fb00d1202e6ad2/recce-nightly-0.9.0.20240312.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [clickhouse-arrow]: Downloading https://files.pythonhosted.org/packages/c5/37/1467599e6f1e66266b4a45884936ec0abdb9a2f8955d672a5ba8aeed2b39/clickhouse_arrow-0.4.0.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [nmbrs]: Downloading https://files.pythonhosted.org/packages/06/0d/6d0c5ead5be1e39f4843a00f46044b23c4fa2b4945341a4667327da2014a/nmbrs-0.2.0.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [clickhouse-arrow]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [clickhouse-arrow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clickhouse_arrow-0.3.0.tar.gz tmp/clickhouse_arrow-0.4.0.tar.gz --markdown 20240428/c/clickhouse-arrow/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-28 20:07:16] INFO root fetch - processPackages [astx]: Downloading https://files.pythonhosted.org/packages/2f/78/69527dee0e3b550af8130d584921b500bd800460e0009cfb2352c6babcd3/astx-0.9.1.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [articulo]: Downloading https://files.pythonhosted.org/packages/3d/e6/d291f3599f57e61eb71d6b5b58224137288431fcef4fca107f1510b57c84/articulo-0.2.3.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [internet-archive-uploader]: Downloading https://files.pythonhosted.org/packages/6a/1b/7d379cb1554343bffc7ef8b00f1de85277099ee9b0eec703c85d35538f20/internet_archive_uploader-1.2.5.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [recce-nightly]: Downloading https://files.pythonhosted.org/packages/52/11/d0c59f6609b46f5766293823d2b30e4fd872dbea146425e2d959b41a44a4/recce-nightly-0.9.0.20240313.tar.gz
+[2024-04-28 20:07:16] INFO root fetch - processPackages [astx]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [astx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astx-0.9.0.tar.gz tmp/astx-0.9.1.tar.gz --markdown 20240428/a/astx/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-28 20:07:16] INFO root fetch - processPackages [articulo]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [articulo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/articulo-0.2.2.tar.gz tmp/articulo-0.2.3.tar.gz --markdown 20240428/a/articulo/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-28 20:07:16] INFO root fetch - processPackages [internet-archive-uploader]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [internet-archive-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internet-archive-uploader-1.2.4.tar.gz tmp/internet_archive_uploader-1.2.5.tar.gz --markdown 20240428/i/internet-archive-uploader/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-28 20:07:16] INFO root fetch - processPackages [nmbrs]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [nmbrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmbrs-0.1.6.tar.gz tmp/nmbrs-0.2.0.tar.gz --markdown 20240428/n/nmbrs/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-04-28 20:07:16] INFO root fetch - processPackages [recce-nightly]: executing diffoscope
+[2024-04-28 20:07:16] INFO root fetch - processPackages [recce-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recce-nightly-0.9.0.20240312.tar.gz tmp/recce-nightly-0.9.0.20240313.tar.gz --markdown 20240428/r/recce-nightly/0.9.0.20240312-0.9.0.20240313/README.md --exclude *.pyd
+[2024-04-28 20:07:17] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2024-04-28 20:07:17] INFO root fetch - processPackages [clickhouse-arrow]: Remove: archive file [/home/abi/fetcher/tmp/clickhouse_arrow-0.3.0.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - processPackages [clickhouse-arrow]: Remove: archive file [/home/abi/fetcher/tmp/clickhouse_arrow-0.4.0.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - main [MainThread]: End processing [clickhouse-arrow]: success
+[2024-04-28 20:07:17] INFO root fetch - processPackages [internet-archive-uploader]: Remove: archive file [/home/abi/fetcher/tmp/internet-archive-uploader-1.2.4.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - processPackages [internet-archive-uploader]: Remove: archive file [/home/abi/fetcher/tmp/internet_archive_uploader-1.2.5.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - main [MainThread]: End processing [internet-archive-uploader]: success
+[2024-04-28 20:07:17] INFO root fetch - processPackages [astx]: Remove: archive file [/home/abi/fetcher/tmp/astx-0.9.0.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - processPackages [astx]: Remove: archive file [/home/abi/fetcher/tmp/astx-0.9.1.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - main [MainThread]: End processing [astx]: success
+[2024-04-28 20:07:17] INFO root fetch - processPackages [articulo]: Remove: archive file [/home/abi/fetcher/tmp/articulo-0.2.2.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - processPackages [articulo]: Remove: archive file [/home/abi/fetcher/tmp/articulo-0.2.3.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - main [MainThread]: End processing [articulo]: success
+[2024-04-28 20:07:17] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.1.6.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - processPackages [nmbrs]: Remove: archive file [/home/abi/fetcher/tmp/nmbrs-0.2.0.tar.gz]
+[2024-04-28 20:07:17] INFO root fetch - main [MainThread]: End processing [nmbrs]: success
+[2024-04-28 20:07:18] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240312.tar.gz]
+[2024-04-28 20:07:18] INFO root fetch - processPackages [recce-nightly]: Remove: archive file [/home/abi/fetcher/tmp/recce-nightly-0.9.0.20240313.tar.gz]
+[2024-04-28 20:07:18] INFO root fetch - main [MainThread]: End processing [recce-nightly]: success
+[2024-04-28 20:07:19] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2024-04-28 20:07:19] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20240428/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/README.md --exclude *.pyd
+[2024-04-28 20:07:21] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220920.tar.gz]
+[2024-04-28 20:07:21] INFO root fetch - processPackages [piperider-nightly]: Remove: archive file [/home/abi/fetcher/tmp/piperider-nightly-0.9.0.20220921.tar.gz]
+[2024-04-28 20:07:21] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2024-04-28 20:07:21] INFO root fetch - main [MainThread]: Store serial: [22968714]
