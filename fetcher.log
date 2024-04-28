@@ -6089,3 +6089,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:59:35] INFO root fetch - processPackages [cfpack]: Remove: archive file [/home/abi/fetcher/tmp/cfpack-0.1.7.tar.gz]
 [2024-04-28 08:59:35] INFO root fetch - main [MainThread]: End processing [cfpack]: success
 [2024-04-28 08:59:35] INFO root fetch - main [MainThread]: Store serial: [22964744]
+[2024-04-28 09:01:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964744]
+[2024-04-28 09:01:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 09:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BioSAK
+[2024-04-28 09:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numimage
+[2024-04-28 09:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2024-04-28 09:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev
+[2024-04-28 09:01:44] INFO root fetch - processPackages [nbdev]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-28 09:01:44] INFO root fetch - processPackages [numimage]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 09:01:44] INFO root fetch - processPackages [BioSAK]: New version: [1.86.0] Old Version: [1.85.1]
+[2024-04-28 09:01:44] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2024-04-28 09:01:44] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/81/51/fab74a54685fb8abc7a3e35834c91c5b2dace9b02d4cb11fdd42c1e1671e/nbdev-2.3.8.tar.gz
+[2024-04-28 09:01:44] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2024-04-28 09:01:44] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/b6/e8/7b2e75592c3bd5e290bb8b3880184d78137bf45bdf431137477c6182789d/BioSAK-1.85.1.tar.gz
+[2024-04-28 09:01:44] INFO root fetch - processPackages [numimage]: Downloading https://files.pythonhosted.org/packages/8e/b4/a71a5a7b3d9eac0df57d2671b8550ad89735660a3f4d60c8aab1f6ddf44a/numimage-0.0.1.tar.gz
+[2024-04-28 09:01:44] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/40/d2/c90832233197e9f55e8869a7f75fd019929dcd8c6c18e14a34a4c1c087aa/nbdev-2.3.9.tar.gz
+[2024-04-28 09:01:45] INFO root fetch - processPackages [nbdev]: executing diffoscope
+[2024-04-28 09:01:45] INFO root fetch - processPackages [nbdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-2.3.8.tar.gz tmp/nbdev-2.3.9.tar.gz --markdown 20240428/n/nbdev/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-28 09:01:45] INFO root fetch - processPackages [numimage]: Downloading https://files.pythonhosted.org/packages/f7/41/e48501c20e17e2c9180b6d49f4489fae2f83040b5a1eb51abf858466d7bd/numimage-0.0.2.tar.gz
+[2024-04-28 09:01:45] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/67/f6/5577518dc584b90c5b6b8835c2ef2fc3dd07eaf65042b44a6490452c549d/BioSAK-1.86.0.tar.gz
+[2024-04-28 09:01:45] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2024-04-28 09:01:45] INFO root fetch - processPackages [numimage]: executing diffoscope
+[2024-04-28 09:01:45] INFO root fetch - processPackages [numimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numimage-0.0.1.tar.gz tmp/numimage-0.0.2.tar.gz --markdown 20240428/n/numimage/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 09:01:45] INFO root fetch - processPackages [BioSAK]: executing diffoscope
+[2024-04-28 09:01:45] INFO root fetch - processPackages [BioSAK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BioSAK-1.85.1.tar.gz tmp/BioSAK-1.86.0.tar.gz --markdown 20240428/B/BioSAK/1.85.1-1.86.0/README.md --exclude *.pyd
+[2024-04-28 09:01:45] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2024-04-28 09:01:45] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20240428/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/README.md --exclude *.pyd
+[2024-04-28 09:01:45] INFO root fetch - processPackages [numimage]: Remove: archive file [/home/abi/fetcher/tmp/numimage-0.0.1.tar.gz]
+[2024-04-28 09:01:45] INFO root fetch - processPackages [numimage]: Remove: archive file [/home/abi/fetcher/tmp/numimage-0.0.2.tar.gz]
+[2024-04-28 09:01:45] INFO root fetch - main [MainThread]: End processing [numimage]: success
+[2024-04-28 09:01:45] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.8.tar.gz]
+[2024-04-28 09:01:45] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
+[2024-04-28 09:01:45] INFO root fetch - main [MainThread]: End processing [nbdev]: success
+[2024-04-28 09:01:46] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.85.1.tar.gz]
+[2024-04-28 09:01:46] INFO root fetch - processPackages [BioSAK]: Remove: archive file [/home/abi/fetcher/tmp/BioSAK-1.86.0.tar.gz]
+[2024-04-28 09:01:46] INFO root fetch - main [MainThread]: End processing [BioSAK]: success
+[2024-04-28 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip]
+[2024-04-28 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
+[2024-04-28 09:01:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2024-04-28 09:01:48] INFO root fetch - main [MainThread]: Store serial: [22964754]
