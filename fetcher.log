@@ -4265,3 +4265,36 @@
 [2024-04-28 06:28:48] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.2rc6.tar.gz]
 [2024-04-28 06:28:48] INFO root fetch - main [MainThread]: End processing [ibeam]: success
 [2024-04-28 06:28:48] INFO root fetch - main [MainThread]: Store serial: [22963976]
+[2024-04-28 06:30:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963976]
+[2024-04-28 06:30:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 06:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yappr
+[2024-04-28 06:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: huojiweiguoba
+[2024-04-28 06:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypomes-core
+[2024-04-28 06:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bijian_asr
+[2024-04-28 06:30:57] INFO root fetch - processPackages [yappr]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 06:30:57] WARNING root fetch - processPackages [bijian_asr]: Skipping, unable to determine old version
+[2024-04-28 06:30:57] INFO root fetch - main [MainThread]: End processing [bijian_asr] error
+[2024-04-28 06:30:57] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 06:30:57] INFO root fetch - processPackages [pypomes-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-28 06:30:57] INFO root fetch - processPackages [yappr]: Downloading https://files.pythonhosted.org/packages/f7/ee/bb43356829b6f98555dbee39e6b0b365533b73e3dffcb6404e5cf61cfd90/yappr-1.0.1.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/01/36/e5b3ceeefdab9ce6a9fb793392bc9597ec51fe8ae641f292569e91598512/pypomes_core-0.9.2.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [yappr]: Downloading https://files.pythonhosted.org/packages/07/ab/55f569980cedec6b3d3601368c77075a0dc2a201b3afe1caf6b39749ac6d/yappr-1.0.2.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/a3/13/6cecbec9e1f33c15aca079d93b733724edc452e57b2b1e5ae0fa2fffba34/pypomes_core-0.9.3.tar.gz
+[2024-04-28 06:30:57] INFO root fetch - processPackages [yappr]: executing diffoscope
+[2024-04-28 06:30:57] INFO root fetch - processPackages [yappr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yappr-1.0.1.tar.gz tmp/yappr-1.0.2.tar.gz --markdown 20240428/y/yappr/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 06:30:57] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 06:30:57] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 06:30:57] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-28 06:30:57] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.9.2.tar.gz tmp/pypomes_core-0.9.3.tar.gz --markdown 20240428/p/pypomes-core/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-28 06:30:58] INFO root fetch - processPackages [yappr]: Remove: archive file [/home/abi/fetcher/tmp/yappr-1.0.1.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - processPackages [yappr]: Remove: archive file [/home/abi/fetcher/tmp/yappr-1.0.2.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - main [MainThread]: End processing [yappr]: success
+[2024-04-28 06:30:58] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 06:30:58] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.2.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.3.tar.gz]
+[2024-04-28 06:30:58] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-28 06:30:58] INFO root fetch - main [MainThread]: Store serial: [22963987]
