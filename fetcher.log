@@ -14426,3 +14426,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:54:21] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
 [2024-04-28 18:54:21] INFO root fetch - main [MainThread]: End processing [jetline]: success
 [2024-04-28 18:54:21] INFO root fetch - main [MainThread]: Store serial: [22968202]
+[2024-04-28 18:56:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968202]
+[2024-04-28 18:56:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rateLimitedQueues
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-file-share
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ethpm-types
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ooo-dev-tools
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quant2
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jetline
+[2024-04-28 18:56:31] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [rateLimitedQueues]: New version: [0.0.1a3] Old Version: [0.0.1a2]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [quant2]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ethpm-types]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [flask-file-share]: New version: [0.1.2] Old Version: [0.1.1a1]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/8c/95b0b708a3cd61829bebc45cde551ba9b6d2873d10f8c9d96f89d6f06315/quant2-0.1.8.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/30/13/2fbba55ecfe4f80915037ee33f7fe9f8ae9e823511ee3ceac7e3eca6bfdb/ratelimitedqueues-0.0.1a2.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ethpm-types]: Downloading https://files.pythonhosted.org/packages/04/c6/4a762c943808af6231fb56b40efd0b57590b62a95157d1ac8d5349233246/ethpm-types-0.6.8.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/71/e7/22c9f7ace8e0024087862440a9e234003995b5d5934310ebebf43736b7dc/flask_file_share-0.1.1a1.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/41/44/3184c5212ea19d64e5dcf92dc1f7e0c08bda64a5787bdf62a49038d1b40a/ooo_dev_tools-0.9.7.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/bf/1a/6ceafd7a5a862aa7b8839815a0b32442b1a768caef03ce4ee178c5125c8c/quant2-0.1.9.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/e5/40/5fdf6b4f2afa82e84970c05859c013b8aa8eef5dfb284cb25d50a4698a29/ratelimitedqueues-0.0.1a3.tar.gz
+[2024-04-28 18:56:31] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:56:31] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:56:31] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-28 18:56:31] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.1.8.tar.gz tmp/quant2-0.1.9.tar.gz --markdown 20240428/q/quant2/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:56:31] INFO root fetch - processPackages [rateLimitedQueues]: executing diffoscope
+[2024-04-28 18:56:31] INFO root fetch - processPackages [rateLimitedQueues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratelimitedqueues-0.0.1a2.tar.gz tmp/ratelimitedqueues-0.0.1a3.tar.gz --markdown 20240428/r/rateLimitedQueues/0.0.1a2-0.0.1a3/README.md --exclude *.pyd
+[2024-04-28 18:56:32] INFO root fetch - processPackages [ethpm-types]: Downloading https://files.pythonhosted.org/packages/29/71/57c134c5c6c480412bc06b8c92b8b171b1917d877cfe668ad5ddcabe71e3/ethpm-types-0.6.9.tar.gz
+[2024-04-28 18:56:32] INFO root fetch - processPackages [ethpm-types]: executing diffoscope
+[2024-04-28 18:56:32] INFO root fetch - processPackages [ethpm-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethpm-types-0.6.8.tar.gz tmp/ethpm-types-0.6.9.tar.gz --markdown 20240428/e/ethpm-types/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-28 18:56:32] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a2.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a3.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - main [MainThread]: End processing [rateLimitedQueues]: success
+[2024-04-28 18:56:32] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.8.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.9.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-28 18:56:32] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/20/e8/b38a2ad24f414b81985e10c35e1192cb22350ca6b0dc68f0104509e3c0bf/ooo_dev_tools-0.9.8.tar.gz
+[2024-04-28 18:56:32] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 18:56:32] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:56:33] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2024-04-28 18:56:33] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.7.tar.gz tmp/ooo_dev_tools-0.9.8.tar.gz --markdown 20240428/o/ooo-dev-tools/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-28 18:56:33] INFO root fetch - processPackages [ethpm-types]: Remove: archive file [/home/abi/fetcher/tmp/ethpm-types-0.6.8.tar.gz]
+[2024-04-28 18:56:33] INFO root fetch - processPackages [ethpm-types]: Remove: archive file [/home/abi/fetcher/tmp/ethpm-types-0.6.9.tar.gz]
+[2024-04-28 18:56:33] INFO root fetch - main [MainThread]: End processing [ethpm-types]: success
+[2024-04-28 18:56:34] INFO root fetch - processPackages [flask-file-share]: Downloading https://files.pythonhosted.org/packages/4c/97/2d84d532fb3225fac8fe40ee52e4f7d18528b0467b72fe0db4e34df5e15d/flask_file_share-0.1.2.tar.gz
+[2024-04-28 18:56:36] INFO root fetch - processPackages [flask-file-share]: executing diffoscope
+[2024-04-28 18:56:36] INFO root fetch - processPackages [flask-file-share]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_file_share-0.1.1a1.tar.gz tmp/flask_file_share-0.1.2.tar.gz --markdown 20240428/f/flask-file-share/0.1.1a1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 18:56:36] INFO root fetch - processPackages [ooo-dev-tools]: Remove: archive file [/home/abi/fetcher/tmp/ooo_dev_tools-0.9.7.tar.gz]
+[2024-04-28 18:56:36] INFO root fetch - processPackages [ooo-dev-tools]: Remove: archive file [/home/abi/fetcher/tmp/ooo_dev_tools-0.9.8.tar.gz]
+[2024-04-28 18:56:36] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2024-04-28 18:56:37] INFO root fetch - processPackages [flask-file-share]: Remove: archive file [/home/abi/fetcher/tmp/flask_file_share-0.1.1a1.tar.gz]
+[2024-04-28 18:56:37] INFO root fetch - processPackages [flask-file-share]: Remove: archive file [/home/abi/fetcher/tmp/flask_file_share-0.1.2.tar.gz]
+[2024-04-28 18:56:37] INFO root fetch - main [MainThread]: End processing [flask-file-share]: success
+[2024-04-28 18:56:37] INFO root fetch - main [MainThread]: Store serial: [22968220]
