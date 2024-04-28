@@ -12853,3 +12853,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:02:27] INFO root fetch - processPackages [verbex]: Remove: archive file [/home/abi/fetcher/tmp/verbex-2.0.1.tar.gz]
 [2024-04-28 17:02:27] INFO root fetch - main [MainThread]: End processing [verbex]: success
 [2024-04-28 17:02:27] INFO root fetch - main [MainThread]: Store serial: [22967592]
+[2024-04-28 17:04:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967592]
+[2024-04-28 17:04:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 17:04:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seeact
+[2024-04-28 17:04:51] WARNING root fetch - processPackages [seeact]: Skipping, unable to determine old version
+[2024-04-28 17:04:51] INFO root fetch - main [MainThread]: End processing [seeact] error
+[2024-04-28 17:04:51] INFO root fetch - main [MainThread]: Store serial: [22967597]
