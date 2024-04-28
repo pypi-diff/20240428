@@ -21127,3 +21127,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:35:17] INFO root fetch - processPackages [recon-lw]: Remove: archive file [/home/abi/fetcher/tmp/recon_lw-3.0.0.dev8870544684.tar.gz]
 [2024-04-28 23:35:17] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
 [2024-04-28 23:35:17] INFO root fetch - main [MainThread]: Store serial: [22971007]
+[2024-04-28 23:37:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971007]
+[2024-04-28 23:37:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 23:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytgpt-bot
+[2024-04-28 23:37:26] INFO root fetch - processPackages [pytgpt-bot]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 23:37:26] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/7e/8f/61f242bd73e544110e6cfcbdcbc2c7d994c581e4fcd50ecfe8e326f6bada/pytgpt_bot-0.1.2.tar.gz
+[2024-04-28 23:37:27] INFO root fetch - processPackages [pytgpt-bot]: Downloading https://files.pythonhosted.org/packages/16/26/b872285a42fa86354be229dbea7865c5ddfea0b22fc050baaab8bed97d04/pytgpt_bot-0.1.3.tar.gz
+[2024-04-28 23:37:27] INFO root fetch - processPackages [pytgpt-bot]: executing diffoscope
+[2024-04-28 23:37:27] INFO root fetch - processPackages [pytgpt-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytgpt_bot-0.1.2.tar.gz tmp/pytgpt_bot-0.1.3.tar.gz --markdown 20240428/p/pytgpt-bot/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 23:37:27] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.2.tar.gz]
+[2024-04-28 23:37:27] INFO root fetch - processPackages [pytgpt-bot]: Remove: archive file [/home/abi/fetcher/tmp/pytgpt_bot-0.1.3.tar.gz]
+[2024-04-28 23:37:27] INFO root fetch - main [MainThread]: End processing [pytgpt-bot]: success
+[2024-04-28 23:37:27] INFO root fetch - main [MainThread]: Store serial: [22971010]
