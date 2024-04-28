@@ -4886,3 +4886,42 @@
 [2024-04-28 07:27:25] INFO root fetch - processPackages [agate]: Remove: archive file [/home/abi/fetcher/tmp/agate-1.9.1.tar.gz]
 [2024-04-28 07:27:25] INFO root fetch - main [MainThread]: End processing [agate]: success
 [2024-04-28 07:27:25] INFO root fetch - main [MainThread]: Store serial: [22964250]
+[2024-04-28 07:29:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964250]
+[2024-04-28 07:29:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 07:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-contacts
+[2024-04-28 07:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cf2tf
+[2024-04-28 07:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirbreak
+[2024-04-28 07:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crazy-thursday
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cirbreak]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 07:29:34] INFO root fetch - processPackages [abstract-contacts]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cf2tf]: New version: [0.7.2a4] Old Version: [0.7.2a3]
+[2024-04-28 07:29:34] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.4.28.0] Old Version: [2024.4.27.1]
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/00/1d/5b3edef08bf3188a41914d123211a0962dd61341e046d11de6301c8ea9d4/cf2tf-0.7.2a3-py3-none-any.whl
+[2024-04-28 07:29:34] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/1a/19/b1a3bc4aa3f0ab982c3c5d7e43abc88c0e465d0119b2cfeb19547f0abbf6/crazy_thursday-2024.4.27.1.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cirbreak]: Downloading https://files.pythonhosted.org/packages/77/6a/2d5630f1c3563ccc93cc338e2e9cdddd9f418a8ad1eb4ec51dae609610c9/cirbreak-0.1.0.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/57/53/e7bb05db0286b713bb2307bf9dfbeda18862d2bb7f42bf055ea286f89bbe/abstract_contacts-0.0.0.2.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/10/91/ecd494a4030734360f83d8f4501170492dd8e5db91e93a14491cc0076b9f/cf2tf-0.7.2a4.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/b8/f2/062cadf2c00fe29b5c45db7c28d793be097db6a4b7011263665d87763b2d/crazy_thursday-2024.4.28.0.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cirbreak]: Downloading https://files.pythonhosted.org/packages/9b/e7/22e2ee1421cd897a2e6ed267e9ffa55200bca640bf96c528ddfc8fd95d91/cirbreak-0.1.1.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/75/92/23f3883a634a37d8f47ad2891c6bcca0d682407675a41be9ff80c8d8e638/abstract_contacts-0.0.0.3.tar.gz
+[2024-04-28 07:29:34] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-04-28 07:29:34] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.4.27.1.tar.gz tmp/crazy_thursday-2024.4.28.0.tar.gz --markdown 20240428/c/crazy-thursday/2024.4.27.1-2024.4.28.0/README.md --exclude *.pyd
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.2a3-py3-none-any.whl.zip tmp/cf2tf-0.7.2a4.tar.gz --markdown 20240428/c/cf2tf/0.7.2a3-0.7.2a4/README.md --exclude *.pyd
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cirbreak]: executing diffoscope
+[2024-04-28 07:29:34] INFO root fetch - processPackages [cirbreak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirbreak-0.1.0.tar.gz tmp/cirbreak-0.1.1.tar.gz --markdown 20240428/c/cirbreak/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 07:29:34] INFO root fetch - processPackages [abstract-contacts]: executing diffoscope
+[2024-04-28 07:29:34] INFO root fetch - processPackages [abstract-contacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_contacts-0.0.0.2.tar.gz tmp/abstract_contacts-0.0.0.3.tar.gz --markdown 20240428/a/abstract-contacts/0.0.0.2-0.0.0.3/README.md --exclude *.pyd
+[2024-04-28 07:29:35] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.2.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.3.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - main [MainThread]: End processing [abstract-contacts]: success
+[2024-04-28 07:29:35] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a3-py3-none-any.whl.zip]
+[2024-04-28 07:29:35] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.2a4.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-28 07:29:35] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.27.1.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.28.0.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-04-28 07:29:35] INFO root fetch - processPackages [cirbreak]: Remove: archive file [/home/abi/fetcher/tmp/cirbreak-0.1.0.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - processPackages [cirbreak]: Remove: archive file [/home/abi/fetcher/tmp/cirbreak-0.1.1.tar.gz]
+[2024-04-28 07:29:35] INFO root fetch - main [MainThread]: End processing [cirbreak]: success
+[2024-04-28 07:29:35] INFO root fetch - main [MainThread]: Store serial: [22964261]
