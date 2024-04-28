@@ -13287,3 +13287,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:31:11] INFO root fetch - processPackages [diambra-engine]: Remove: archive file [/home/abi/fetcher/tmp/diambra-engine-2.2.3.tar.gz]
 [2024-04-28 17:31:11] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
 [2024-04-28 17:31:11] INFO root fetch - main [MainThread]: Store serial: [22967752]
+[2024-04-28 17:33:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967752]
+[2024-04-28 17:33:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 17:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-content
+[2024-04-28 17:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rpi-remote
+[2024-04-28 17:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdmx1
+[2024-04-28 17:33:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aily-py
+[2024-04-28 17:33:19] INFO root fetch - processPackages [sdmx1]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-28 17:33:19] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/44/4b/374eba00e995541ce5d1a150b39ace8bdb28759085c5dfa8424c82ed2e4e/sdmx1-2.8.0.tar.gz
+[2024-04-28 17:33:19] INFO root fetch - processPackages [rpi-remote]: New version: [2.0.0] Old Version: [1.1.1]
+[2024-04-28 17:33:19] INFO root fetch - processPackages [aily-py]: New version: [2.0.0b0] Old Version: [1.0.1]
+[2024-04-28 17:33:19] INFO root fetch - processPackages [pyams-content]: New version: [1.99.2] Old Version: [1.99.1]
+[2024-04-28 17:33:20] INFO root fetch - processPackages [rpi-remote]: Downloading https://files.pythonhosted.org/packages/da/10/ebf71fb9d73170ba3e1b4ca7ab0f8632ef11e37db0d8ffc20ce9b1a6fcbd/rpi-remote-1.1.1.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [aily-py]: Downloading https://files.pythonhosted.org/packages/11/05/db513ec4c5791e913418fdc13d9450be2c8050a99ea6dd232b27fc52e633/aily-py-1.0.1.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [pyams-content]: Downloading https://files.pythonhosted.org/packages/82/c2/9624132a8361746b6c6c88df3dee0aa837f6126922c3d7a3487d923a4f79/pyams_content-1.99.1.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/d4/74/474d459265382856a9124916f8b6b603ef57757e6127c94a76cee6f31de9/sdmx1-2.9.0.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [sdmx1]: executing diffoscope
+[2024-04-28 17:33:20] INFO root fetch - processPackages [sdmx1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmx1-2.8.0.tar.gz tmp/sdmx1-2.9.0.tar.gz --markdown 20240428/s/sdmx1/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-28 17:33:20] INFO root fetch - processPackages [rpi-remote]: Downloading https://files.pythonhosted.org/packages/09/15/9424720e6b0db3088ebed039e3d105758b93d28549217ece6b9acce82e33/rpi_remote-2.0.0.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [aily-py]: Downloading https://files.pythonhosted.org/packages/0c/b7/cd4f9161318d76489fbd6e90d6f7487a0664ca5921c08099a4fa35e9b939/aily_py-2.0.0b0.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [pyams-content]: Downloading https://files.pythonhosted.org/packages/9e/79/45d7a7642935f53c3fbf0390dba194068a44d99e97040841d81182646c0e/pyams_content-1.99.2.tar.gz
+[2024-04-28 17:33:20] INFO root fetch - processPackages [rpi-remote]: executing diffoscope
+[2024-04-28 17:33:20] INFO root fetch - processPackages [rpi-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpi-remote-1.1.1.tar.gz tmp/rpi_remote-2.0.0.tar.gz --markdown 20240428/r/rpi-remote/1.1.1-2.0.0/README.md --exclude *.pyd
+[2024-04-28 17:33:20] INFO root fetch - processPackages [aily-py]: executing diffoscope
+[2024-04-28 17:33:20] INFO root fetch - processPackages [aily-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aily-py-1.0.1.tar.gz tmp/aily_py-2.0.0b0.tar.gz --markdown 20240428/a/aily-py/1.0.1-2.0.0b0/README.md --exclude *.pyd
+[2024-04-28 17:33:20] INFO root fetch - processPackages [pyams-content]: executing diffoscope
+[2024-04-28 17:33:20] INFO root fetch - processPackages [pyams-content]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_content-1.99.1.tar.gz tmp/pyams_content-1.99.2.tar.gz --markdown 20240428/p/pyams-content/1.99.1-1.99.2/README.md --exclude *.pyd
+[2024-04-28 17:33:21] INFO root fetch - processPackages [rpi-remote]: Remove: archive file [/home/abi/fetcher/tmp/rpi-remote-1.1.1.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - processPackages [rpi-remote]: Remove: archive file [/home/abi/fetcher/tmp/rpi_remote-2.0.0.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - main [MainThread]: End processing [rpi-remote]: success
+[2024-04-28 17:33:21] INFO root fetch - processPackages [aily-py]: Remove: archive file [/home/abi/fetcher/tmp/aily-py-1.0.1.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - processPackages [aily-py]: Remove: archive file [/home/abi/fetcher/tmp/aily_py-2.0.0b0.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - main [MainThread]: End processing [aily-py]: success
+[2024-04-28 17:33:21] INFO root fetch - processPackages [sdmx1]: Remove: archive file [/home/abi/fetcher/tmp/sdmx1-2.8.0.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - processPackages [sdmx1]: Remove: archive file [/home/abi/fetcher/tmp/sdmx1-2.9.0.tar.gz]
+[2024-04-28 17:33:21] INFO root fetch - main [MainThread]: End processing [sdmx1]: success
+[2024-04-28 17:33:22] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.1.tar.gz]
+[2024-04-28 17:33:22] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.2.tar.gz]
+[2024-04-28 17:33:22] INFO root fetch - main [MainThread]: End processing [pyams-content]: success
+[2024-04-28 17:33:22] INFO root fetch - main [MainThread]: Store serial: [22967765]
