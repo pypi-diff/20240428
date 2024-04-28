@@ -13654,3 +13654,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:55:11] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.3.tar.gz]
 [2024-04-28 17:55:11] INFO root fetch - main [MainThread]: End processing [zalabim]: success
 [2024-04-28 17:55:11] INFO root fetch - main [MainThread]: Store serial: [22967893]
+[2024-04-28 17:57:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967893]
+[2024-04-28 17:57:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 17:57:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mysql-study-datamaker-CN
+[2024-04-28 17:57:20] WARNING root fetch - processPackages [mysql-study-datamaker-CN]: Skipping, unable to determine old version
+[2024-04-28 17:57:20] INFO root fetch - main [MainThread]: End processing [mysql-study-datamaker-CN] error
+[2024-04-28 17:57:20] INFO root fetch - main [MainThread]: Store serial: [22967899]
