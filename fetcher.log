@@ -2413,3 +2413,42 @@
 [2024-04-28 03:28:27] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
 [2024-04-28 03:28:27] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
 [2024-04-28 03:28:27] INFO root fetch - main [MainThread]: Store serial: [22963168]
+[2024-04-28 03:30:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963168]
+[2024-04-28 03:30:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 03:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phylokrr
+[2024-04-28 03:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediff
+[2024-04-28 03:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onediffx
+[2024-04-28 03:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aikicore
+[2024-04-28 03:30:36] INFO root fetch - processPackages [aikicore]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202404270125] Old Version: [1.0.0.dev202404260126]
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202404270125] Old Version: [1.0.0.dev202404260126]
+[2024-04-28 03:30:36] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/4c/3e/2db76ab44129deda5a82f46c9b2dfc37d62ac478bc2e9920696886f8a145/aikicore-1.0.0a4.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [phylokrr]: New version: [0.4.5] Old Version: [0.4.2]
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/4b/f7/aa604f91b1692838def0d7a52341a0d91280db3057ff1eebd2281dbe2414/onediffx-1.0.0.dev202404260126.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/92/82/96f32dfd406f2f7e218e2a5680cf7e1e1e7f2426debe173a6f8c62817860/onediff-1.0.0.dev202404260126.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/6f/0f/de1ee454a0b37bd5a8001793726b80ff9be897f5f2571686faffb26fcb1c/phylokrr-0.4.2.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [aikicore]: Downloading https://files.pythonhosted.org/packages/c9/1c/e74f2506c12e280f8e4a23ebf98d3f04adeefea52e0295430647c227218c/aikicore-1.0.0a5.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [aikicore]: executing diffoscope
+[2024-04-28 03:30:36] INFO root fetch - processPackages [aikicore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aikicore-1.0.0a4.tar.gz tmp/aikicore-1.0.0a5.tar.gz --markdown 20240428/a/aikicore/1.0.0a4-1.0.0a5/README.md --exclude *.pyd
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/53/46/c8cba9abf29f3c4a05bf57a0d1a25c455f01827f3601e4940e0a71f158ae/onediff-1.0.0.dev202404270125.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/01/41/2bdb7dacd84479ee475562ac6ca434293814a9dba019953f8b91f373aaf2/onediffx-1.0.0.dev202404270125.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/d8/fd/8a3ee2d96f8bcf8632407552b088a980a46696d5f5243461f622042d7ca9/phylokrr-0.4.5.tar.gz
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202404260126.tar.gz tmp/onediff-1.0.0.dev202404270125.tar.gz --markdown 20240428/o/onediff/1.0.0.dev202404260126-1.0.0.dev202404270125/README.md --exclude *.pyd
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-28 03:30:36] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202404260126.tar.gz tmp/onediffx-1.0.0.dev202404270125.tar.gz --markdown 20240428/o/onediffx/1.0.0.dev202404260126-1.0.0.dev202404270125/README.md --exclude *.pyd
+[2024-04-28 03:30:36] INFO root fetch - processPackages [phylokrr]: executing diffoscope
+[2024-04-28 03:30:36] INFO root fetch - processPackages [phylokrr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylokrr-0.4.2.tar.gz tmp/phylokrr-0.4.5.tar.gz --markdown 20240428/p/phylokrr/0.4.2-0.4.5/README.md --exclude *.pyd
+[2024-04-28 03:30:37] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a4.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - processPackages [aikicore]: Remove: archive file [/home/abi/fetcher/tmp/aikicore-1.0.0a5.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - main [MainThread]: End processing [aikicore]: success
+[2024-04-28 03:30:37] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.2.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.5.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
+[2024-04-28 03:30:37] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404260126.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404270125.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-28 03:30:37] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404260126.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404270125.tar.gz]
+[2024-04-28 03:30:37] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-28 03:30:37] INFO root fetch - main [MainThread]: Store serial: [22963180]
