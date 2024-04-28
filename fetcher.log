@@ -3553,3 +3553,18 @@
 [2024-04-28 05:26:04] INFO root fetch - processPackages [py-ucan]: Remove: archive file [/home/abi/fetcher/tmp/py_ucan-0.3.1.tar.gz]
 [2024-04-28 05:26:04] INFO root fetch - main [MainThread]: End processing [py-ucan]: success
 [2024-04-28 05:26:04] INFO root fetch - main [MainThread]: Store serial: [22963728]
+[2024-04-28 05:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963728]
+[2024-04-28 05:28:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shakenfist-client
+[2024-04-28 05:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unix-perms
+[2024-04-28 05:28:13] INFO root fetch - processPackages [shakenfist-client]: New version: [0.7.0.0rc8] Old Version: [0.7.0.0rc7]
+[2024-04-28 05:28:13] WARNING root fetch - processPackages [unix-perms]: Skipping, unable to determine old version
+[2024-04-28 05:28:13] INFO root fetch - main [MainThread]: End processing [unix-perms] error
+[2024-04-28 05:28:13] INFO root fetch - processPackages [shakenfist-client]: Downloading https://files.pythonhosted.org/packages/da/78/26fe7648021a1eadaddfffb5c3bebc73749cce83ca1591db7852560996c0/shakenfist-client-0.7.0.0rc7.tar.gz
+[2024-04-28 05:28:13] INFO root fetch - processPackages [shakenfist-client]: Downloading https://files.pythonhosted.org/packages/5a/4c/c52fae0a7e37c3ea52c011dda39db6b90930615413ca03b818533ca16f2f/shakenfist-client-0.7.0.0rc8.tar.gz
+[2024-04-28 05:28:13] INFO root fetch - processPackages [shakenfist-client]: executing diffoscope
+[2024-04-28 05:28:13] INFO root fetch - processPackages [shakenfist-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shakenfist-client-0.7.0.0rc7.tar.gz tmp/shakenfist-client-0.7.0.0rc8.tar.gz --markdown 20240428/s/shakenfist-client/0.7.0.0rc7-0.7.0.0rc8/README.md --exclude *.pyd
+[2024-04-28 05:28:14] INFO root fetch - processPackages [shakenfist-client]: Remove: archive file [/home/abi/fetcher/tmp/shakenfist-client-0.7.0.0rc7.tar.gz]
+[2024-04-28 05:28:14] INFO root fetch - processPackages [shakenfist-client]: Remove: archive file [/home/abi/fetcher/tmp/shakenfist-client-0.7.0.0rc8.tar.gz]
+[2024-04-28 05:28:14] INFO root fetch - main [MainThread]: End processing [shakenfist-client]: success
+[2024-04-28 05:28:14] INFO root fetch - main [MainThread]: Store serial: [22963736]
