@@ -9974,3 +9974,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:26:30] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.28-py3-none-any.whl.zip]
 [2024-04-28 13:26:30] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
 [2024-04-28 13:26:30] INFO root fetch - main [MainThread]: Store serial: [22966386]
+[2024-04-28 13:28:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966386]
+[2024-04-28 13:28:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rajesh-test-pypi
+[2024-04-28 13:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataformer
+[2024-04-28 13:28:45] WARNING root fetch - processPackages [rajesh-test-pypi]: Skipping, unable to determine old version
+[2024-04-28 13:28:45] INFO root fetch - main [MainThread]: End processing [rajesh-test-pypi] error
+[2024-04-28 13:28:45] WARNING root fetch - processPackages [dataformer]: Skipping, unable to determine old version
+[2024-04-28 13:28:45] INFO root fetch - main [MainThread]: End processing [dataformer] error
+[2024-04-28 13:28:45] INFO root fetch - main [MainThread]: Store serial: [22966397]
