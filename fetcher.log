@@ -13888,3 +13888,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:10:29] INFO root fetch - processPackages [dataretrieval]: Remove: archive file [/home/abi/fetcher/tmp/dataretrieval-1.0.7.tar.gz]
 [2024-04-28 18:10:29] INFO root fetch - main [MainThread]: End processing [dataretrieval]: success
 [2024-04-28 18:10:29] INFO root fetch - main [MainThread]: Store serial: [22967986]
+[2024-04-28 18:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967986]
+[2024-04-28 18:12:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 18:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hosted-flasks
+[2024-04-28 18:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jetline
+[2024-04-28 18:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nnz
+[2024-04-28 18:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lit-data-layers
+[2024-04-28 18:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frost-rs
+[2024-04-28 18:12:39] INFO root fetch - processPackages [jetline]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 18:12:39] INFO root fetch - processPackages [lit-data-layers]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 18:12:39] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/6a/8c/eed7d4cc410828ece6a710522f0d1b198de53a3a1331c5d997cecb251479/jetline-0.1.4.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [frost-rs]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 18:12:39] WARNING root fetch - processPackages [nnz]: Skipping, unable to determine old version
+[2024-04-28 18:12:39] INFO root fetch - processPackages [hosted-flasks]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 18:12:39] INFO root fetch - main [MainThread]: End processing [nnz] error
+[2024-04-28 18:12:39] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/ce/1e/dcf8633a671afb8c4e28c51e02944d233b89187982cfe9eabafc92ffcbba/lit_data_layers-0.1.2.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/62/77/1a70178ff1c6bb9eec52a602b432bae7ef586268e899b0e30a3c6f0196b1/hosted-flasks-0.0.4.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [frost-rs]: Downloading https://files.pythonhosted.org/packages/0e/3d/6328b5b48319fd6c5fffc928d8163fbc515de28d399a3bf023f972dc1aa2/frost_rs-0.1.1.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/d8/36/8b8a5fbad16439ced56b2f30e124f242dcdf00e6b2d25e7434b1f68d570a/jetline-0.1.5.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/ac/c4/296da63a4172e24a229515934518b255b062e7c8b150c1b551145cb44680/lit_data_layers-0.1.3.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:12:39] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.4.tar.gz tmp/jetline-0.1.5.tar.gz --markdown 20240428/j/jetline/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 18:12:39] INFO root fetch - processPackages [lit-data-layers]: executing diffoscope
+[2024-04-28 18:12:39] INFO root fetch - processPackages [lit-data-layers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit_data_layers-0.1.2.tar.gz tmp/lit_data_layers-0.1.3.tar.gz --markdown 20240428/l/lit-data-layers/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 18:12:39] INFO root fetch - processPackages [hosted-flasks]: Downloading https://files.pythonhosted.org/packages/d6/77/387f7035767580a4972c5abdf8df5d36a9c45c43ce56eb26ec5df1fa2ec5/hosted-flasks-0.0.5.tar.gz
+[2024-04-28 18:12:39] INFO root fetch - processPackages [hosted-flasks]: executing diffoscope
+[2024-04-28 18:12:39] INFO root fetch - processPackages [hosted-flasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hosted-flasks-0.0.4.tar.gz tmp/hosted-flasks-0.0.5.tar.gz --markdown 20240428/h/hosted-flasks/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 18:12:40] INFO root fetch - processPackages [frost-rs]: Downloading https://files.pythonhosted.org/packages/f5/91/1e5699090acf9e7563536195d00ac50f78de4087e869a487673eb3e2d1bb/frost_rs-0.1.2-cp310-none-win_amd64.whl
+[2024-04-28 18:12:40] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.4.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.5.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:12:40] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.2.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.3.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - main [MainThread]: End processing [lit-data-layers]: success
+[2024-04-28 18:12:40] INFO root fetch - processPackages [frost-rs]: executing diffoscope
+[2024-04-28 18:12:40] INFO root fetch - processPackages [frost-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frost_rs-0.1.1.tar.gz tmp/frost_rs-0.1.2-cp310-none-win_amd64.whl.zip --markdown 20240428/f/frost-rs/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 18:12:40] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.4.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - processPackages [hosted-flasks]: Remove: archive file [/home/abi/fetcher/tmp/hosted-flasks-0.0.5.tar.gz]
+[2024-04-28 18:12:40] INFO root fetch - main [MainThread]: End processing [hosted-flasks]: success
+[2024-04-28 18:12:41] INFO root fetch - processPackages [frost-rs]: Remove: archive file [/home/abi/fetcher/tmp/frost_rs-0.1.1.tar.gz]
+[2024-04-28 18:12:41] INFO root fetch - processPackages [frost-rs]: Remove: archive file [/home/abi/fetcher/tmp/frost_rs-0.1.2-cp310-none-win_amd64.whl.zip]
+[2024-04-28 18:12:41] INFO root fetch - main [MainThread]: End processing [frost-rs]: success
+[2024-04-28 18:12:41] INFO root fetch - main [MainThread]: Store serial: [22968002]
