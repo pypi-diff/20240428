@@ -6937,3 +6937,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 09:58:16] INFO root fetch - processPackages [psplpy]: Remove: archive file [/home/abi/fetcher/tmp/psplpy-1.0.0.tar.gz]
 [2024-04-28 09:58:16] INFO root fetch - main [MainThread]: End processing [psplpy]: success
 [2024-04-28 09:58:16] INFO root fetch - main [MainThread]: Store serial: [22965030]
+[2024-04-28 10:00:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965030]
+[2024-04-28 10:00:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 10:00:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydmt
+[2024-04-28 10:00:25] INFO root fetch - processPackages [pydmt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 10:00:25] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/90/d0/4a9b7c76e70b0b2ed97f243e5439c1246e88995dbf72126376727a1b8f55/pydmt-0.3.8.tar.gz
+[2024-04-28 10:00:25] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/de/12/29caefaa8dd66e68e2a1419873d4e3b8ea2960a4b4ee1c70730da957ca00/pydmt-0.3.9.tar.gz
+[2024-04-28 10:00:25] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-28 10:00:25] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.8.tar.gz tmp/pydmt-0.3.9.tar.gz --markdown 20240428/p/pydmt/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 10:00:26] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.8.tar.gz]
+[2024-04-28 10:00:26] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.9.tar.gz]
+[2024-04-28 10:00:26] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-28 10:00:26] INFO root fetch - main [MainThread]: Store serial: [22965034]
