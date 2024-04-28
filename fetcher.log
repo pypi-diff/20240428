@@ -6425,3 +6425,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:25:46] INFO root fetch - processPackages [pyrogeram]: Remove: archive file [/home/abi/fetcher/tmp/pyrogeram-2.0.107.tar.gz]
 [2024-04-28 09:25:46] INFO root fetch - main [MainThread]: End processing [pyrogeram]: success
 [2024-04-28 09:25:46] INFO root fetch - main [MainThread]: Store serial: [22964863]
+[2024-04-28 09:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964863]
+[2024-04-28 09:27:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs-models
+[2024-04-28 09:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: colorful-logging
+[2024-04-28 09:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geramcals
+[2024-04-28 09:27:55] INFO root fetch - processPackages [colorful-logging]: New version: [0.3] Old Version: [0.2]
+[2024-04-28 09:27:55] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/fe/6f/01b800e431a940a218165d803abaefdbfd27225838c54be1f3b4cc295cd8/colorful_logging-0.2.tar.gz
+[2024-04-28 09:27:55] WARNING root fetch - processPackages [geramcals]: Skipping, unable to determine old version
+[2024-04-28 09:27:55] INFO root fetch - main [MainThread]: End processing [geramcals] error
+[2024-04-28 09:27:55] INFO root fetch - processPackages [cs-models]: New version: [0.0.99.dev4] Old Version: [0.0.99.dev3]
+[2024-04-28 09:27:55] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/a7/fc/309614ee06df85c1d1c7c0a52e64530f94661b0937cb29089bee8f390e37/colorful_logging-0.3.tar.gz
+[2024-04-28 09:27:55] INFO root fetch - processPackages [cs-models]: Downloading https://files.pythonhosted.org/packages/0e/4f/33efc921aa3ee23f877dda213d1b962dac83a38135b32d2850eb48c2c6a8/cs-models-0.0.99.dev3.tar.gz
+[2024-04-28 09:27:55] INFO root fetch - processPackages [colorful-logging]: executing diffoscope
+[2024-04-28 09:27:55] INFO root fetch - processPackages [colorful-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorful_logging-0.2.tar.gz tmp/colorful_logging-0.3.tar.gz --markdown 20240428/c/colorful-logging/0.2-0.3/README.md --exclude *.pyd
+[2024-04-28 09:27:55] INFO root fetch - processPackages [cs-models]: Downloading https://files.pythonhosted.org/packages/8c/4c/e48ab48e00c2dd2f9799da4f76632085fd545ef18606abde256a640ffa7a/cs-models-0.0.99.dev4.tar.gz
+[2024-04-28 09:27:56] INFO root fetch - processPackages [cs-models]: executing diffoscope
+[2024-04-28 09:27:56] INFO root fetch - processPackages [cs-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs-models-0.0.99.dev3.tar.gz tmp/cs-models-0.0.99.dev4.tar.gz --markdown 20240428/c/cs-models/0.0.99.dev3-0.0.99.dev4/README.md --exclude *.pyd
+[2024-04-28 09:27:56] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.2.tar.gz]
+[2024-04-28 09:27:56] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.3.tar.gz]
+[2024-04-28 09:27:56] INFO root fetch - main [MainThread]: End processing [colorful-logging]: success
+[2024-04-28 09:27:56] INFO root fetch - processPackages [cs-models]: Remove: archive file [/home/abi/fetcher/tmp/cs-models-0.0.99.dev3.tar.gz]
+[2024-04-28 09:27:56] INFO root fetch - processPackages [cs-models]: Remove: archive file [/home/abi/fetcher/tmp/cs-models-0.0.99.dev4.tar.gz]
+[2024-04-28 09:27:56] INFO root fetch - main [MainThread]: End processing [cs-models]: success
+[2024-04-28 09:27:56] INFO root fetch - main [MainThread]: Store serial: [22964874]
