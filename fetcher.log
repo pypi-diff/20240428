@@ -5541,3 +5541,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:10:55] INFO root fetch - processPackages [project-async]: Remove: archive file [/home/abi/fetcher/tmp/project_async-0.0.1rc74.post1.tar.gz]
 [2024-04-28 08:10:55] INFO root fetch - main [MainThread]: End processing [project-async]: success
 [2024-04-28 08:10:55] INFO root fetch - main [MainThread]: Store serial: [22964495]
+[2024-04-28 08:12:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964495]
+[2024-04-28 08:13:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 08:13:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2024-04-28 08:13:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-coreui
+[2024-04-28 08:13:04] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240427] Old Version: [2.6.0.dev20240426]
+[2024-04-28 08:13:04] WARNING root fetch - processPackages [django-admin-coreui]: Skipping, unable to determine old version
+[2024-04-28 08:13:04] INFO root fetch - main [MainThread]: End processing [django-admin-coreui] error
+[2024-04-28 08:13:04] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/b9/68/ced2dc8b5321f7721fdc1481689840443929b6e7d17fa1786b71909da3be/pyg_nightly-2.6.0.dev20240426.tar.gz
+[2024-04-28 08:13:04] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/aa/00/949495f2a5570828c6daa034c7eb170054ec5c9b7a66d80555200535013a/pyg_nightly-2.6.0.dev20240427.tar.gz
+[2024-04-28 08:13:05] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-28 08:13:05] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240426.tar.gz tmp/pyg_nightly-2.6.0.dev20240427.tar.gz --markdown 20240428/p/pyg-nightly/2.6.0.dev20240426-2.6.0.dev20240427/README.md --exclude *.pyd
+[2024-04-28 08:13:07] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240426.tar.gz]
+[2024-04-28 08:13:07] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240427.tar.gz]
+[2024-04-28 08:13:07] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-28 08:13:07] INFO root fetch - main [MainThread]: Store serial: [22964503]
