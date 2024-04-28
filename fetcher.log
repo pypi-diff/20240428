@@ -11051,3 +11051,17 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:48:55] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b7.tar.gz]
 [2024-04-28 14:48:55] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2024-04-28 14:48:55] INFO root fetch - main [MainThread]: Store serial: [22966809]
+[2024-04-28 14:51:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966809]
+[2024-04-28 14:51:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 14:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966810]
+[2024-04-28 14:53:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 14:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BAScraper
+[2024-04-28 14:53:16] INFO root fetch - processPackages [BAScraper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 14:53:16] INFO root fetch - processPackages [BAScraper]: Downloading https://files.pythonhosted.org/packages/4f/ed/49ddf8ed0baa8663f4f5c8c5a487b0e8623b0dc950bf1a8928cb451702a8/BAScraper-0.0.3.tar.gz
+[2024-04-28 14:53:16] INFO root fetch - processPackages [BAScraper]: Downloading https://files.pythonhosted.org/packages/3b/af/5fc6f376b4473bc83797e969d0298d42d4b63a841b6058f30372b45ab38c/BAScraper-0.0.4.tar.gz
+[2024-04-28 14:53:16] INFO root fetch - processPackages [BAScraper]: executing diffoscope
+[2024-04-28 14:53:16] INFO root fetch - processPackages [BAScraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BAScraper-0.0.3.tar.gz tmp/BAScraper-0.0.4.tar.gz --markdown 20240428/B/BAScraper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 14:53:17] INFO root fetch - processPackages [BAScraper]: Remove: archive file [/home/abi/fetcher/tmp/BAScraper-0.0.3.tar.gz]
+[2024-04-28 14:53:17] INFO root fetch - processPackages [BAScraper]: Remove: archive file [/home/abi/fetcher/tmp/BAScraper-0.0.4.tar.gz]
+[2024-04-28 14:53:17] INFO root fetch - main [MainThread]: End processing [BAScraper]: success
+[2024-04-28 14:53:17] INFO root fetch - main [MainThread]: Store serial: [22966820]
