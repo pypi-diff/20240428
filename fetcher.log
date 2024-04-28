@@ -12814,3 +12814,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:00:03] INFO root fetch - processPackages [pyams-security]: Remove: archive file [/home/abi/fetcher/tmp/pyams_security-2.3.1.tar.gz]
 [2024-04-28 17:00:03] INFO root fetch - main [MainThread]: End processing [pyams-security]: success
 [2024-04-28 17:00:03] INFO root fetch - main [MainThread]: Store serial: [22967581]
+[2024-04-28 17:02:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967581]
+[2024-04-28 17:02:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 17:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linktest
+[2024-04-28 17:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cnfc
+[2024-04-28 17:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: verbex
+[2024-04-28 17:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matflow-new
+[2024-04-28 17:02:26] INFO root fetch - processPackages [matflow-new]: New version: [0.3.0a99] Old Version: [0.3.0a98]
+[2024-04-28 17:02:26] INFO root fetch - processPackages [verbex]: New version: [2.0.1] Old Version: [1.2.0]
+[2024-04-28 17:02:26] INFO root fetch - processPackages [cnfc]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-28 17:02:26] INFO root fetch - processPackages [matflow-new]: Downloading https://files.pythonhosted.org/packages/79/0c/766783dc57cdaa562cdf7f5d0651b3cf4d49e7c5c62ff2f6e1e308e44c0d/matflow_new-0.3.0a98.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [linktest]: New version: [2.6.7] Old Version: [2.6.6]
+[2024-04-28 17:02:26] INFO root fetch - processPackages [cnfc]: Downloading https://files.pythonhosted.org/packages/30/91/4dd83775fe5ce853dfdc5a1749ebe56019a2efd5fa07533b81f2906ae2df/cnfc-0.5.0.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [verbex]: Downloading https://files.pythonhosted.org/packages/01/89/58bd0be5f16d8756a0261620caca3a49730824caf35c454c8964d5547e5f/Verbex-1.2.0.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/a3/2b/e8f59ea7d76f70bb2049e4b76e9ce1804355e15de1b30cad810c6cb6c034/linktest-2.6.6.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [matflow-new]: Downloading https://files.pythonhosted.org/packages/c6/83/25cd25ce7b79d3c21926ce4535b66a4af4ecb66a3231d7fdac5638dbd090/matflow_new-0.3.0a99.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [matflow-new]: executing diffoscope
+[2024-04-28 17:02:26] INFO root fetch - processPackages [matflow-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matflow_new-0.3.0a98.tar.gz tmp/matflow_new-0.3.0a99.tar.gz --markdown 20240428/m/matflow-new/0.3.0a98-0.3.0a99/README.md --exclude *.pyd
+[2024-04-28 17:02:26] INFO root fetch - processPackages [cnfc]: Downloading https://files.pythonhosted.org/packages/e0/91/8f3284b179db4387ec968846d722b41cab032ed859f6d52a39e1aebb8f62/cnfc-0.6.0.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/90/98/aecb7fc668fbda9b0889c394dbae85b60534e0bce898e3f5daef15d8a891/linktest-2.6.7.tar.gz
+[2024-04-28 17:02:26] INFO root fetch - processPackages [cnfc]: executing diffoscope
+[2024-04-28 17:02:26] INFO root fetch - processPackages [cnfc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnfc-0.5.0.tar.gz tmp/cnfc-0.6.0.tar.gz --markdown 20240428/c/cnfc/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-28 17:02:26] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-04-28 17:02:26] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.6.6.tar.gz tmp/linktest-2.6.7.tar.gz --markdown 20240428/l/linktest/2.6.6-2.6.7/README.md --exclude *.pyd
+[2024-04-28 17:02:26] INFO root fetch - processPackages [verbex]: Downloading https://files.pythonhosted.org/packages/9b/46/1122ae5717a82b4fc7e05719f3049ff95c9b3140fbedded4945a6bca73c6/verbex-2.0.1.tar.gz
+[2024-04-28 17:02:27] INFO root fetch - processPackages [verbex]: executing diffoscope
+[2024-04-28 17:02:27] INFO root fetch - processPackages [verbex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Verbex-1.2.0.tar.gz tmp/verbex-2.0.1.tar.gz --markdown 20240428/v/verbex/1.2.0-2.0.1/README.md --exclude *.pyd
+[2024-04-28 17:02:27] INFO root fetch - processPackages [matflow-new]: Remove: archive file [/home/abi/fetcher/tmp/matflow_new-0.3.0a98.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - processPackages [matflow-new]: Remove: archive file [/home/abi/fetcher/tmp/matflow_new-0.3.0a99.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - main [MainThread]: End processing [matflow-new]: success
+[2024-04-28 17:02:27] INFO root fetch - processPackages [cnfc]: Remove: archive file [/home/abi/fetcher/tmp/cnfc-0.5.0.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - processPackages [cnfc]: Remove: archive file [/home/abi/fetcher/tmp/cnfc-0.6.0.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - main [MainThread]: End processing [cnfc]: success
+[2024-04-28 17:02:27] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.6.6.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.6.7.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-04-28 17:02:27] INFO root fetch - processPackages [verbex]: Remove: archive file [/home/abi/fetcher/tmp/Verbex-1.2.0.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - processPackages [verbex]: Remove: archive file [/home/abi/fetcher/tmp/verbex-2.0.1.tar.gz]
+[2024-04-28 17:02:27] INFO root fetch - main [MainThread]: End processing [verbex]: success
+[2024-04-28 17:02:27] INFO root fetch - main [MainThread]: Store serial: [22967592]
