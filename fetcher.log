@@ -16275,3 +16275,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:01:52] INFO root fetch - processPackages [minijinja]: Remove: archive file [/home/abi/fetcher/tmp/minijinja-2.0.1.tar.gz]
 [2024-04-28 21:01:52] INFO root fetch - main [MainThread]: End processing [minijinja]: success
 [2024-04-28 21:01:52] INFO root fetch - main [MainThread]: Store serial: [22969008]
+[2024-04-28 21:03:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969008]
+[2024-04-28 21:04:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpyds
+[2024-04-28 21:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: catalystwan
+[2024-04-28 21:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-dans-api-toolkit
+[2024-04-28 21:04:01] INFO root fetch - processPackages [numpyds]: New version: [1.2] Old Version: [0.2]
+[2024-04-28 21:04:01] INFO root fetch - processPackages [django-dans-api-toolkit]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-28 21:04:02] INFO root fetch - processPackages [catalystwan]: New version: [0.33.4.dev2] Old Version: [0.33.4.dev1]
+[2024-04-28 21:04:02] INFO root fetch - processPackages [numpyds]: Downloading https://files.pythonhosted.org/packages/13/e2/eb494bd443fc1d9fc3faf80359c3d41a2fc2d0f7d68a046afbd1375291aa/numpyds-0.2.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/16/ee/7e82cd494f77a8fa003e5c5138d000358e7a6ccbefe8935eef3cf5f6232d/django-dans-api-toolkit-0.0.1.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [catalystwan]: Downloading https://files.pythonhosted.org/packages/09/64/d5f11a2b993555b3a60fa5783f7c250289ca00ffb979d86cc64741ae53c1/catalystwan-0.33.4.dev1.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [numpyds]: Downloading https://files.pythonhosted.org/packages/d7/0b/590a86326ff4e6e79dd4a0cb729aa7bae232da46312c260f79518b3faf22/numpyds-1.2.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [numpyds]: executing diffoscope
+[2024-04-28 21:04:02] INFO root fetch - processPackages [numpyds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpyds-0.2.tar.gz tmp/numpyds-1.2.tar.gz --markdown 20240428/n/numpyds/0.2-1.2/README.md --exclude *.pyd
+[2024-04-28 21:04:02] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/ba/d9/f7fd87323137015c8bc36fb86f43b2d32874c757372f4bf30b58771eb2f7/django-dans-api-toolkit-0.1.0.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [catalystwan]: Downloading https://files.pythonhosted.org/packages/48/e9/ecde643dd06819802c52efeca7636e0a52b55b3c630f005d8dac35645d55/catalystwan-0.33.4.dev2.tar.gz
+[2024-04-28 21:04:02] INFO root fetch - processPackages [django-dans-api-toolkit]: executing diffoscope
+[2024-04-28 21:04:02] INFO root fetch - processPackages [django-dans-api-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dans-api-toolkit-0.0.1.tar.gz tmp/django-dans-api-toolkit-0.1.0.tar.gz --markdown 20240428/d/django-dans-api-toolkit/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-28 21:04:02] INFO root fetch - processPackages [catalystwan]: executing diffoscope
+[2024-04-28 21:04:02] INFO root fetch - processPackages [catalystwan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/catalystwan-0.33.4.dev1.tar.gz tmp/catalystwan-0.33.4.dev2.tar.gz --markdown 20240428/c/catalystwan/0.33.4.dev1-0.33.4.dev2/README.md --exclude *.pyd
+[2024-04-28 21:04:03] INFO root fetch - processPackages [numpyds]: Remove: archive file [/home/abi/fetcher/tmp/numpyds-0.2.tar.gz]
+[2024-04-28 21:04:03] INFO root fetch - processPackages [numpyds]: Remove: archive file [/home/abi/fetcher/tmp/numpyds-1.2.tar.gz]
+[2024-04-28 21:04:03] INFO root fetch - main [MainThread]: End processing [numpyds]: success
+[2024-04-28 21:04:03] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.0.1.tar.gz]
+[2024-04-28 21:04:03] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.0.tar.gz]
+[2024-04-28 21:04:03] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
+[2024-04-28 21:04:04] INFO root fetch - processPackages [catalystwan]: Remove: archive file [/home/abi/fetcher/tmp/catalystwan-0.33.4.dev1.tar.gz]
+[2024-04-28 21:04:04] INFO root fetch - processPackages [catalystwan]: Remove: archive file [/home/abi/fetcher/tmp/catalystwan-0.33.4.dev2.tar.gz]
+[2024-04-28 21:04:04] INFO root fetch - main [MainThread]: End processing [catalystwan]: success
+[2024-04-28 21:04:04] INFO root fetch - main [MainThread]: Store serial: [22969017]
