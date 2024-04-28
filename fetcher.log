@@ -5949,3 +5949,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:46:41] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.7.tar.gz]
 [2024-04-28 08:46:41] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
 [2024-04-28 08:46:41] INFO root fetch - main [MainThread]: Store serial: [22964703]
+[2024-04-28 08:48:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964703]
+[2024-04-28 08:48:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 08:50:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964707]
+[2024-04-28 08:50:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ctrip-app-ui
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dds-cloudapi-sdk
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-04-28 08:50:55] INFO root fetch - processPackages [dds-cloudapi-sdk]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-04-28 08:50:55] INFO root fetch - processPackages [dds-cloudapi-sdk]: Downloading https://files.pythonhosted.org/packages/1c/03/0458ad8ecced800f918524224147e0e2aab7212554e2e26b2c816e43d3fe/dds-cloudapi-sdk-0.1.1.tar.gz
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-04-28 08:50:55] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240428/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 08:50:56] INFO root fetch - processPackages [dds-cloudapi-sdk]: Downloading https://files.pythonhosted.org/packages/68/5e/e665ced79cdadd999b9097bc4b3d3e47eb66f48a097aaece9bab88e274e6/dds-cloudapi-sdk-0.2.0.tar.gz
+[2024-04-28 08:50:56] INFO root fetch - processPackages [dds-cloudapi-sdk]: executing diffoscope
+[2024-04-28 08:50:56] INFO root fetch - processPackages [dds-cloudapi-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dds-cloudapi-sdk-0.1.1.tar.gz tmp/dds-cloudapi-sdk-0.2.0.tar.gz --markdown 20240428/d/dds-cloudapi-sdk/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 08:50:56] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-04-28 08:50:56] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-04-28 08:50:56] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-04-28 08:50:56] INFO root fetch - processPackages [dds-cloudapi-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dds-cloudapi-sdk-0.1.1.tar.gz]
+[2024-04-28 08:50:56] INFO root fetch - processPackages [dds-cloudapi-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dds-cloudapi-sdk-0.2.0.tar.gz]
+[2024-04-28 08:50:56] INFO root fetch - main [MainThread]: End processing [dds-cloudapi-sdk]: success
+[2024-04-28 08:50:56] INFO root fetch - main [MainThread]: Store serial: [22964709]
