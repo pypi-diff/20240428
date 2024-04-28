@@ -15795,3 +15795,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:22:34] INFO root fetch - processPackages [cmap]: Remove: archive file [/home/abi/fetcher/tmp/cmap-0.2.0.tar.gz]
 [2024-04-28 20:22:34] INFO root fetch - main [MainThread]: End processing [cmap]: success
 [2024-04-28 20:22:34] INFO root fetch - main [MainThread]: Store serial: [22968802]
+[2024-04-28 20:24:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968802]
+[2024-04-28 20:24:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trace-attributes
+[2024-04-28 20:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gammarers.aws-secure-log-bucket
+[2024-04-28 20:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkv-episode-matcher
+[2024-04-28 20:24:43] INFO root fetch - processPackages [trace-attributes]: New version: [3.0.4] Old Version: [3.0.3]
+[2024-04-28 20:24:43] WARNING root fetch - processPackages [mkv-episode-matcher]: Skipping, unable to determine old version
+[2024-04-28 20:24:43] INFO root fetch - main [MainThread]: End processing [mkv-episode-matcher] error
+[2024-04-28 20:24:43] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-28 20:24:43] INFO root fetch - processPackages [trace-attributes]: Downloading https://files.pythonhosted.org/packages/92/93/fb74c4c20fd81d8f6064aa08bd9aa839c24dc4c0f21cba2fd42fbc8e90e1/trace_attributes-3.0.3.tar.gz
+[2024-04-28 20:24:43] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/43/08/4e3e248e1818f9ec4110c34a9ac3105634c1a764d80263bdec2eea8b757b/gammarers.aws-secure-log-bucket-1.6.1.tar.gz
+[2024-04-28 20:24:43] INFO root fetch - processPackages [trace-attributes]: Downloading https://files.pythonhosted.org/packages/df/92/2c569044c5f6f8146c2d998a32ed4417d34e514af167727bdc81b241fc6a/trace_attributes-3.0.4.tar.gz
+[2024-04-28 20:24:43] INFO root fetch - processPackages [trace-attributes]: executing diffoscope
+[2024-04-28 20:24:43] INFO root fetch - processPackages [trace-attributes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trace_attributes-3.0.3.tar.gz tmp/trace_attributes-3.0.4.tar.gz --markdown 20240428/t/trace-attributes/3.0.3-3.0.4/README.md --exclude *.pyd
+[2024-04-28 20:24:43] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Downloading https://files.pythonhosted.org/packages/0f/a2/09142f5a1a16964ec43ef8b1e59c3b00480b32130249b8665bb2693cb702/gammarers.aws-secure-log-bucket-1.6.2.tar.gz
+[2024-04-28 20:24:44] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: executing diffoscope
+[2024-04-28 20:24:44] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gammarers.aws-secure-log-bucket-1.6.1.tar.gz tmp/gammarers.aws-secure-log-bucket-1.6.2.tar.gz --markdown 20240428/g/gammarers.aws-secure-log-bucket/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-28 20:24:44] INFO root fetch - processPackages [trace-attributes]: Remove: archive file [/home/abi/fetcher/tmp/trace_attributes-3.0.3.tar.gz]
+[2024-04-28 20:24:44] INFO root fetch - processPackages [trace-attributes]: Remove: archive file [/home/abi/fetcher/tmp/trace_attributes-3.0.4.tar.gz]
+[2024-04-28 20:24:44] INFO root fetch - main [MainThread]: End processing [trace-attributes]: success
+[2024-04-28 20:24:44] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.1.tar.gz]
+[2024-04-28 20:24:44] INFO root fetch - processPackages [gammarers.aws-secure-log-bucket]: Remove: archive file [/home/abi/fetcher/tmp/gammarers.aws-secure-log-bucket-1.6.2.tar.gz]
+[2024-04-28 20:24:44] INFO root fetch - main [MainThread]: End processing [gammarers.aws-secure-log-bucket]: success
+[2024-04-28 20:24:44] INFO root fetch - main [MainThread]: Store serial: [22968815]
