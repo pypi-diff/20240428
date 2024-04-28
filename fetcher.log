@@ -9063,3 +9063,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:30:17] INFO root fetch - processPackages [pyftpsync]: Remove: archive file [/home/abi/fetcher/tmp/pyftpsync-4.1.0.tar.gz]
 [2024-04-28 12:30:17] INFO root fetch - main [MainThread]: End processing [pyftpsync]: success
 [2024-04-28 12:30:17] INFO root fetch - main [MainThread]: Store serial: [22966007]
+[2024-04-28 12:32:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966007]
+[2024-04-28 12:32:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 12:32:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynormalizenumexp
+[2024-04-28 12:32:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiocsv
+[2024-04-28 12:32:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modelpark
+[2024-04-28 12:32:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioslsk
+[2024-04-28 12:32:26] INFO root fetch - processPackages [modelpark]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 12:32:26] INFO root fetch - processPackages [pynormalizenumexp]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aiocsv]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aioslsk]: New version: [1.3.0] Old Version: [1.2.3]
+[2024-04-28 12:32:26] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/83/61/181385913dbf5727d158243c95ccb7e3f9cd6e51262f2145f609f5e6b3a0/modelpark-0.1.0.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/c9/83/5f317cd6543a3c343e7e772c0cf251b1d9a7aece71adf3ed4eb0975ccacf/pynormalizenumexp-0.3.0.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aiocsv]: Downloading https://files.pythonhosted.org/packages/e3/89/3eb2edcb6ea6cf91c99be1f315a7260d2f1f41806e3aecc4e07638690cc5/aiocsv-1.3.1.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aioslsk]: Downloading https://files.pythonhosted.org/packages/3f/fd/1030503155fceea047863919010c8ca57aa5cf9711ea28aaab18b3fa0f7a/aioslsk-1.2.3.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/03/f9/7754a90bb63dca3e2f3f8983a490316c26e570e2109d6bd9c367beff3bf1/modelpark-0.1.1.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/cf/df/b7f75e9b763e674f03f7ee785eb4534e4d1694111c980097a9bea1c562e5/pynormalizenumexp-0.3.1.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aiocsv]: Downloading https://files.pythonhosted.org/packages/33/78/bd4a85d195e57e72837415ef81d26ce6db6fdf185dce8d4f6a7c099ed4af/aiocsv-1.3.2.tar.gz
+[2024-04-28 12:32:26] INFO root fetch - processPackages [modelpark]: executing diffoscope
+[2024-04-28 12:32:26] INFO root fetch - processPackages [modelpark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelpark-0.1.0.tar.gz tmp/modelpark-0.1.1.tar.gz --markdown 20240428/m/modelpark/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 12:32:26] INFO root fetch - processPackages [pynormalizenumexp]: executing diffoscope
+[2024-04-28 12:32:26] INFO root fetch - processPackages [pynormalizenumexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynormalizenumexp-0.3.0.tar.gz tmp/pynormalizenumexp-0.3.1.tar.gz --markdown 20240428/p/pynormalizenumexp/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aiocsv]: executing diffoscope
+[2024-04-28 12:32:26] INFO root fetch - processPackages [aiocsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocsv-1.3.1.tar.gz tmp/aiocsv-1.3.2.tar.gz --markdown 20240428/a/aiocsv/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-04-28 12:32:27] INFO root fetch - processPackages [aioslsk]: Downloading https://files.pythonhosted.org/packages/d8/76/33ccc603e1a0095032d1637cde0936c4ef96de94630564e133c11822baa0/aioslsk-1.3.0-py3-none-any.whl
+[2024-04-28 12:32:27] INFO root fetch - processPackages [aiocsv]: Remove: archive file [/home/abi/fetcher/tmp/aiocsv-1.3.1.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - processPackages [aiocsv]: Remove: archive file [/home/abi/fetcher/tmp/aiocsv-1.3.2.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - main [MainThread]: End processing [aiocsv]: success
+[2024-04-28 12:32:27] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.0.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.1.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - main [MainThread]: End processing [modelpark]: success
+[2024-04-28 12:32:27] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.0.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.1.tar.gz]
+[2024-04-28 12:32:27] INFO root fetch - main [MainThread]: End processing [pynormalizenumexp]: success
+[2024-04-28 12:32:27] INFO root fetch - processPackages [aioslsk]: executing diffoscope
+[2024-04-28 12:32:27] INFO root fetch - processPackages [aioslsk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioslsk-1.2.3.tar.gz tmp/aioslsk-1.3.0-py3-none-any.whl.zip --markdown 20240428/a/aioslsk/1.2.3-1.3.0/README.md --exclude *.pyd
+[2024-04-28 12:32:28] INFO root fetch - processPackages [aioslsk]: Remove: archive file [/home/abi/fetcher/tmp/aioslsk-1.2.3.tar.gz]
+[2024-04-28 12:32:28] INFO root fetch - processPackages [aioslsk]: Remove: archive file [/home/abi/fetcher/tmp/aioslsk-1.3.0-py3-none-any.whl.zip]
+[2024-04-28 12:32:28] INFO root fetch - main [MainThread]: End processing [aioslsk]: success
+[2024-04-28 12:32:28] INFO root fetch - main [MainThread]: Store serial: [22966017]
