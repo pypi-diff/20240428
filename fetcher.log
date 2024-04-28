@@ -17207,3 +17207,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:58:42] INFO root fetch - processPackages [celerity]: Remove: archive file [/home/abi/fetcher/tmp/celerity-0.9.0.tar.gz]
 [2024-04-28 21:58:42] INFO root fetch - main [MainThread]: End processing [celerity]: success
 [2024-04-28 21:58:42] INFO root fetch - main [MainThread]: Store serial: [22969447]
+[2024-04-28 22:00:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969447]
+[2024-04-28 22:00:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 22:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: satip
+[2024-04-28 22:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langroid
+[2024-04-28 22:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: collective.outputfilters.tinymceaccordion
+[2024-04-28 22:00:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioecopanel
+[2024-04-28 22:00:52] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: New version: [1.0a5] Old Version: [1.0a4]
+[2024-04-28 22:00:52] INFO root fetch - processPackages [langroid]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 22:00:52] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: Downloading https://files.pythonhosted.org/packages/e1/f8/5e345e6a1e00992513d875cbd1b6936eaed1877943090e6bb5695bd88199/collective.outputfilters.tinymceaccordion-1.0a4.tar.gz
+[2024-04-28 22:00:52] INFO root fetch - processPackages [satip]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-28 22:00:52] INFO root fetch - processPackages [langroid]: Downloading https://files.pythonhosted.org/packages/ab/bb/220d2ce35d659c9c3f621a8e92246d4d25420d75def80d96d19a8abf2b62/langroid-0.1.98.tar.gz
+[2024-04-28 22:00:52] INFO root fetch - processPackages [aioecopanel]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 22:00:53] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: Downloading https://files.pythonhosted.org/packages/4b/b8/ff6845928187b551f800e8f60f14a98f531bf27660972bfb5ac6eda53490/collective.outputfilters.tinymceaccordion-1.0a5.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/c3/e8/b3c5caf4db2b47fab258763e006a81315f49cf587e12e65aa7025968b03f/satip-2.9.8.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [langroid]: Downloading https://files.pythonhosted.org/packages/e0/31/f66ec6ea338a8eb66884a575a589c46c9cda101c179d652dccf9a12f918f/langroid-0.1.99.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [aioecopanel]: Downloading https://files.pythonhosted.org/packages/70/41/2e3cbeb4e4ebbb919e2808d31063987a5c00477d0b8274017b11d4517b5f/aioecopanel-0.0.8.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: executing diffoscope
+[2024-04-28 22:00:53] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/collective.outputfilters.tinymceaccordion-1.0a4.tar.gz tmp/collective.outputfilters.tinymceaccordion-1.0a5.tar.gz --markdown 20240428/c/collective.outputfilters.tinymceaccordion/1.0a4-1.0a5/README.md --exclude *.pyd
+[2024-04-28 22:00:53] INFO root fetch - processPackages [langroid]: executing diffoscope
+[2024-04-28 22:00:53] INFO root fetch - processPackages [langroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langroid-0.1.98.tar.gz tmp/langroid-0.1.99.tar.gz --markdown 20240428/l/langroid/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 22:00:53] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/06/5b/8bd6eec7428e98b330d6546e21261944d9361dcedd4e96b25bee4a5ee145/satip-2.9.9.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [aioecopanel]: Downloading https://files.pythonhosted.org/packages/f7/62/8fce3fa77805410a51eb082b823bc360df8aadacd46762b58f823582c1c7/aioecopanel-0.0.9.tar.gz
+[2024-04-28 22:00:53] INFO root fetch - processPackages [satip]: executing diffoscope
+[2024-04-28 22:00:53] INFO root fetch - processPackages [satip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satip-2.9.8.tar.gz tmp/satip-2.9.9.tar.gz --markdown 20240428/s/satip/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-28 22:00:53] INFO root fetch - processPackages [aioecopanel]: executing diffoscope
+[2024-04-28 22:00:53] INFO root fetch - processPackages [aioecopanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioecopanel-0.0.8.tar.gz tmp/aioecopanel-0.0.9.tar.gz --markdown 20240428/a/aioecopanel/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 22:00:53] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: Remove: archive file [/home/abi/fetcher/tmp/collective.outputfilters.tinymceaccordion-1.0a4.tar.gz]
+[2024-04-28 22:00:53] INFO root fetch - processPackages [collective.outputfilters.tinymceaccordion]: Remove: archive file [/home/abi/fetcher/tmp/collective.outputfilters.tinymceaccordion-1.0a5.tar.gz]
+[2024-04-28 22:00:53] INFO root fetch - main [MainThread]: End processing [collective.outputfilters.tinymceaccordion]: success
+[2024-04-28 22:00:53] INFO root fetch - processPackages [langroid]: Remove: archive file [/home/abi/fetcher/tmp/langroid-0.1.98.tar.gz]
+[2024-04-28 22:00:53] INFO root fetch - processPackages [langroid]: Remove: archive file [/home/abi/fetcher/tmp/langroid-0.1.99.tar.gz]
+[2024-04-28 22:00:53] INFO root fetch - main [MainThread]: End processing [langroid]: success
+[2024-04-28 22:00:54] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.8.tar.gz]
+[2024-04-28 22:00:54] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.9.tar.gz]
+[2024-04-28 22:00:54] INFO root fetch - main [MainThread]: End processing [satip]: success
+[2024-04-28 22:00:54] INFO root fetch - processPackages [aioecopanel]: Remove: archive file [/home/abi/fetcher/tmp/aioecopanel-0.0.8.tar.gz]
+[2024-04-28 22:00:54] INFO root fetch - processPackages [aioecopanel]: Remove: archive file [/home/abi/fetcher/tmp/aioecopanel-0.0.9.tar.gz]
+[2024-04-28 22:00:54] INFO root fetch - main [MainThread]: End processing [aioecopanel]: success
+[2024-04-28 22:00:54] INFO root fetch - main [MainThread]: Store serial: [22969461]
