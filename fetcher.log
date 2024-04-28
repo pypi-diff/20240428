@@ -12667,3 +12667,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:48:03] INFO root fetch - processPackages [pyopenweathermap]: Remove: archive file [/home/abi/fetcher/tmp/pyopenweathermap-0.0.6.tar.gz]
 [2024-04-28 16:48:03] INFO root fetch - main [MainThread]: End processing [pyopenweathermap]: success
 [2024-04-28 16:48:03] INFO root fetch - main [MainThread]: Store serial: [22967536]
+[2024-04-28 16:50:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967536]
+[2024-04-28 16:50:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libresvip
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiohttp-pydantic
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aideml
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dslog
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyastroweatherio
+[2024-04-28 16:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-poller-ball
+[2024-04-28 16:50:24] WARNING root fetch - processPackages [python-poller-ball]: Skipping, unable to determine old version
+[2024-04-28 16:50:24] INFO root fetch - main [MainThread]: End processing [python-poller-ball] error
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aideml]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-04-28 16:50:24] INFO root fetch - processPackages [dslog]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 16:50:24] INFO root fetch - processPackages [libresvip]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aiohttp-pydantic]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-28 16:50:24] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.50.0.dev5] Old Version: [0.50.0.dev4]
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aideml]: Downloading https://files.pythonhosted.org/packages/d7/ae/80111218cd7aa7bd5847a8bcbe57e48ad343ecf569288b1085e2a56e5645/aideml-0.1.1.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/30/f7/2ada033dc9faaa4316fc855cd1b2d0a66f1a4f3da5febbf6d38d332335d3/dslog-0.1.1.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/a7/44/8236f16e9dd7d69947ba0322a7076f1d859da181acbd022c727febf68d9b/libresvip-1.1.0-py3-none-any.whl
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aiohttp-pydantic]: Downloading https://files.pythonhosted.org/packages/09/cc/fd26f9379d39233977d3cff6c0052a1bf197a41c68f856b62952915055a3/aiohttp_pydantic-2.0.0-py3-none-any.whl
+[2024-04-28 16:50:24] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/b2/97/56c35b2552a0eca9549ba0f9f9d85b10df23d7538040f185105438a10341/pyastroweatherio-0.50.0.dev4.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [dslog]: Downloading https://files.pythonhosted.org/packages/78/0f/3fc52549ecf1f6f262161f228885fcbe91b7aedbffbafb06da38e7fc08c6/dslog-0.1.2.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aideml]: Downloading https://files.pythonhosted.org/packages/6c/dd/22e44a1618af956810572c327087c475ff32bba88f6977107256d88f7297/aideml-0.1.3.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [aiohttp-pydantic]: Downloading https://files.pythonhosted.org/packages/68/53/c71245f17e2c96780c9bcb7608298228a35dd005a1aa707dc7b9cf3d82dd/aiohttp_pydantic-2.1.0-py3-none-any.whl
+[2024-04-28 16:50:24] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/65/bf/8bf65a0b39986902d840e1b95f534996e04295b8743bf96c4094edb7ace5/pyastroweatherio-0.50.0.dev5.tar.gz
+[2024-04-28 16:50:24] INFO root fetch - processPackages [dslog]: executing diffoscope
+[2024-04-28 16:50:24] INFO root fetch - processPackages [dslog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dslog-0.1.1.tar.gz tmp/dslog-0.1.2.tar.gz --markdown 20240428/d/dslog/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 16:50:24] INFO root fetch - processPackages [libresvip]: Downloading https://files.pythonhosted.org/packages/a1/db/509a30009fbeebf70f662ad342080177069a62e763301c145ed254f63015/libresvip-1.1.1.tar.gz
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aideml]: executing diffoscope
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aideml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aideml-0.1.1.tar.gz tmp/aideml-0.1.3.tar.gz --markdown 20240428/a/aideml/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-04-28 16:50:25] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-28 16:50:25] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.50.0.dev4.tar.gz tmp/pyastroweatherio-0.50.0.dev5.tar.gz --markdown 20240428/p/pyastroweatherio/0.50.0.dev4-0.50.0.dev5/README.md --exclude *.pyd
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aiohttp-pydantic]: executing diffoscope
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aiohttp-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiohttp_pydantic-2.0.0-py3-none-any.whl.zip tmp/aiohttp_pydantic-2.1.0-py3-none-any.whl.zip --markdown 20240428/a/aiohttp-pydantic/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-04-28 16:50:25] INFO root fetch - processPackages [libresvip]: executing diffoscope
+[2024-04-28 16:50:25] INFO root fetch - processPackages [libresvip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libresvip-1.1.0-py3-none-any.whl.zip tmp/libresvip-1.1.1.tar.gz --markdown 20240428/l/libresvip/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-28 16:50:25] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.1.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - processPackages [dslog]: Remove: archive file [/home/abi/fetcher/tmp/dslog-0.1.2.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - main [MainThread]: End processing [dslog]: success
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aiohttp-pydantic]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp_pydantic-2.0.0-py3-none-any.whl.zip]
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aiohttp-pydantic]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp_pydantic-2.1.0-py3-none-any.whl.zip]
+[2024-04-28 16:50:25] INFO root fetch - main [MainThread]: End processing [aiohttp-pydantic]: success
+[2024-04-28 16:50:25] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev4.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.50.0.dev5.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aideml]: Remove: archive file [/home/abi/fetcher/tmp/aideml-0.1.1.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - processPackages [aideml]: Remove: archive file [/home/abi/fetcher/tmp/aideml-0.1.3.tar.gz]
+[2024-04-28 16:50:25] INFO root fetch - main [MainThread]: End processing [aideml]: success
+[2024-04-28 16:50:26] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.0-py3-none-any.whl.zip]
+[2024-04-28 16:50:26] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.1.tar.gz]
+[2024-04-28 16:50:26] INFO root fetch - main [MainThread]: End processing [libresvip]: success
+[2024-04-28 16:50:26] INFO root fetch - main [MainThread]: Store serial: [22967551]
