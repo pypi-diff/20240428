@@ -8269,3 +8269,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:26:43] INFO root fetch - processPackages [instawow]: Remove: archive file [/home/abi/fetcher/tmp/instawow-4.1.0.tar.gz]
 [2024-04-28 11:26:43] INFO root fetch - main [MainThread]: End processing [instawow]: success
 [2024-04-28 11:26:43] INFO root fetch - main [MainThread]: Store serial: [22965702]
+[2024-04-28 11:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965702]
+[2024-04-28 11:28:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 11:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tailucas-pylib
+[2024-04-28 11:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gray
+[2024-04-28 11:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webviewpy
+[2024-04-28 11:28:51] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-28 11:28:51] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/70/33/aae60a162436f18db36a349b7fd4c27d722ecab439a414e922fa6c7ed001/tailucas_pylib-0.2.8.tar.gz
+[2024-04-28 11:28:51] INFO root fetch - processPackages [webviewpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 11:28:51] INFO root fetch - processPackages [gray]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-28 11:28:52] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/88/2c/edd1fc5793afa90890c353ab2042848ff260c1e8ae0e11b2ceaa99bd11aa/tailucas_pylib-0.2.9.tar.gz
+[2024-04-28 11:28:52] INFO root fetch - processPackages [webviewpy]: Downloading https://files.pythonhosted.org/packages/40/cf/9225f2b8b8106fea8a8130fc1c247249717102e5cf531c3c00d83be0e4e7/webviewpy-0.0.2.tar.gz
+[2024-04-28 11:28:52] INFO root fetch - processPackages [gray]: Downloading https://files.pythonhosted.org/packages/f3/4a/99e4cbc3af370d921b79fcda2a5ddbfacafd4975d559dd3ac6f1b1c45996/gray-0.8.2.tar.gz
+[2024-04-28 11:28:52] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-28 11:28:52] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.2.8.tar.gz tmp/tailucas_pylib-0.2.9.tar.gz --markdown 20240428/t/tailucas-pylib/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-28 11:28:52] INFO root fetch - processPackages [gray]: Downloading https://files.pythonhosted.org/packages/44/c4/3edb0ae39ee15fb13fda5429cbcab81ff2e430dcdbec92796db1935a37aa/gray-0.9.0.tar.gz
+[2024-04-28 11:28:52] INFO root fetch - processPackages [webviewpy]: Downloading https://files.pythonhosted.org/packages/44/82/a423bd11682f419c3a35ce7855b26425162986a1d7381da8fbedf61b67d8/webviewpy-0.0.3.tar.gz
+[2024-04-28 11:28:52] INFO root fetch - processPackages [gray]: executing diffoscope
+[2024-04-28 11:28:52] INFO root fetch - processPackages [gray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gray-0.8.2.tar.gz tmp/gray-0.9.0.tar.gz --markdown 20240428/g/gray/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-04-28 11:28:52] INFO root fetch - processPackages [webviewpy]: executing diffoscope
+[2024-04-28 11:28:52] INFO root fetch - processPackages [webviewpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webviewpy-0.0.2.tar.gz tmp/webviewpy-0.0.3.tar.gz --markdown 20240428/w/webviewpy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 11:28:52] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.8.tar.gz]
+[2024-04-28 11:28:52] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.2.9.tar.gz]
+[2024-04-28 11:28:52] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-28 11:28:53] INFO root fetch - processPackages [webviewpy]: Remove: archive file [/home/abi/fetcher/tmp/webviewpy-0.0.2.tar.gz]
+[2024-04-28 11:28:53] INFO root fetch - processPackages [webviewpy]: Remove: archive file [/home/abi/fetcher/tmp/webviewpy-0.0.3.tar.gz]
+[2024-04-28 11:28:53] INFO root fetch - main [MainThread]: End processing [webviewpy]: success
+[2024-04-28 11:28:53] INFO root fetch - processPackages [gray]: Remove: archive file [/home/abi/fetcher/tmp/gray-0.8.2.tar.gz]
+[2024-04-28 11:28:53] INFO root fetch - processPackages [gray]: Remove: archive file [/home/abi/fetcher/tmp/gray-0.9.0.tar.gz]
+[2024-04-28 11:28:53] INFO root fetch - main [MainThread]: End processing [gray]: success
+[2024-04-28 11:28:53] INFO root fetch - main [MainThread]: Store serial: [22965713]
