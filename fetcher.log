@@ -5088,3 +5088,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:40:23] WARNING root fetch - processPackages [micromanubot]: Skipping, unable to determine old version
 [2024-04-28 07:40:23] INFO root fetch - main [MainThread]: End processing [micromanubot] error
 [2024-04-28 07:40:23] INFO root fetch - main [MainThread]: Store serial: [22964286]
+[2024-04-28 07:42:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964286]
+[2024-04-28 07:42:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 07:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: message-local
+[2024-04-28 07:42:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anyon
+[2024-04-28 07:42:31] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 07:42:31] INFO root fetch - processPackages [anyon]: New version: [4.2.3] Old Version: [4.2.2]
+[2024-04-28 07:42:31] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-04-28 07:42:31] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/3b/b5/71c77f2e0e1a22dadc77064788c7c0c9ec71f4161145ab6b2012b3826c16/anyon-4.2.2-cp312-none-win_amd64.whl
+[2024-04-28 07:42:31] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-04-28 07:42:31] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-04-28 07:42:31] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240428/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 07:42:31] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/9f/a8/75136c5548f9ae663252b5c8bc0312ee39300e01f92ab50f3bdffaaa723e/anyon-4.2.3-cp312-none-win_amd64.whl
+[2024-04-28 07:42:32] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2024-04-28 07:42:32] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-4.2.2-cp312-none-win_amd64.whl.zip tmp/anyon-4.2.3-cp312-none-win_amd64.whl.zip --markdown 20240428/a/anyon/4.2.2-4.2.3/README.md --exclude *.pyd
+[2024-04-28 07:42:32] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-04-28 07:42:32] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-04-28 07:42:32] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-04-28 07:42:32] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.2-cp312-none-win_amd64.whl.zip]
+[2024-04-28 07:42:32] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.3-cp312-none-win_amd64.whl.zip]
+[2024-04-28 07:42:32] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2024-04-28 07:42:32] INFO root fetch - main [MainThread]: Store serial: [22964293]
