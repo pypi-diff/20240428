@@ -12480,3 +12480,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:33:51] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-28 16:33:51] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-28 16:33:51] INFO root fetch - main [MainThread]: Store serial: [22967443]
+[2024-04-28 16:36:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967443]
+[2024-04-28 16:36:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 16:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cardex
+[2024-04-28 16:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: length-nest-pro-mq
+[2024-04-28 16:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: medium-to-markdown-py
+[2024-04-28 16:36:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unpaginate
+[2024-04-28 16:36:12] INFO root fetch - processPackages [length-nest-pro-mq]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 16:36:12] INFO root fetch - processPackages [cardex]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-04-28 16:36:12] INFO root fetch - processPackages [medium-to-markdown-py]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-28 16:36:12] INFO root fetch - processPackages [length-nest-pro-mq]: Downloading https://files.pythonhosted.org/packages/f9/c1/9b0ff551e19a771d8772a30b98770f3355ff00f087429c915b0ddb4d266f/length_nest_pro_mq-0.0.3.tar.gz
+[2024-04-28 16:36:12] INFO root fetch - processPackages [medium-to-markdown-py]: Downloading https://files.pythonhosted.org/packages/f4/3a/1459052e385b0e87a221d8641fb8cb869702ef1308b39c99877bb29bd52d/medium_to_markdown_py-1.0.2.tar.gz
+[2024-04-28 16:36:12] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/96/6e/6c4d87215e2446a0ac9bc903860b173f9fc347eb73dc8e4a21a298670a00/cardex-0.2.0.dev8.tar.gz
+[2024-04-28 16:36:12] WARNING root fetch - processPackages [unpaginate]: Skipping, unable to determine old version
+[2024-04-28 16:36:12] INFO root fetch - main [MainThread]: End processing [unpaginate] error
+[2024-04-28 16:36:12] INFO root fetch - processPackages [length-nest-pro-mq]: Downloading https://files.pythonhosted.org/packages/a3/e3/49fdf3d772d1806d90a30e55b8a384ba607b206367e537015b3d7f42ac45/length_nest_pro_mq-0.0.4.tar.gz
+[2024-04-28 16:36:12] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/a5/f1/936319cd5a1e0862bc33edbce29c37659ee57c4782e76613d4ce0b406196/cardex-0.2.0.dev9.tar.gz
+[2024-04-28 16:36:12] INFO root fetch - processPackages [length-nest-pro-mq]: executing diffoscope
+[2024-04-28 16:36:12] INFO root fetch - processPackages [length-nest-pro-mq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/length_nest_pro_mq-0.0.3.tar.gz tmp/length_nest_pro_mq-0.0.4.tar.gz --markdown 20240428/l/length-nest-pro-mq/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 16:36:12] INFO root fetch - processPackages [medium-to-markdown-py]: Downloading https://files.pythonhosted.org/packages/dd/0a/dbaa0a7229ca1664e7d4ac27ff74ae031cfd3969f05b3cfd66953d699ecf/medium_to_markdown_py-1.0.3.tar.gz
+[2024-04-28 16:36:12] INFO root fetch - processPackages [cardex]: executing diffoscope
+[2024-04-28 16:36:12] INFO root fetch - processPackages [cardex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardex-0.2.0.dev8.tar.gz tmp/cardex-0.2.0.dev9.tar.gz --markdown 20240428/c/cardex/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-04-28 16:36:12] INFO root fetch - processPackages [medium-to-markdown-py]: executing diffoscope
+[2024-04-28 16:36:12] INFO root fetch - processPackages [medium-to-markdown-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medium_to_markdown_py-1.0.2.tar.gz tmp/medium_to_markdown_py-1.0.3.tar.gz --markdown 20240428/m/medium-to-markdown-py/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-28 16:36:13] INFO root fetch - processPackages [length-nest-pro-mq]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_mq-0.0.3.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - processPackages [length-nest-pro-mq]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_mq-0.0.4.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - main [MainThread]: End processing [length-nest-pro-mq]: success
+[2024-04-28 16:36:13] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev8.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev9.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - main [MainThread]: End processing [cardex]: success
+[2024-04-28 16:36:13] INFO root fetch - processPackages [medium-to-markdown-py]: Remove: archive file [/home/abi/fetcher/tmp/medium_to_markdown_py-1.0.2.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - processPackages [medium-to-markdown-py]: Remove: archive file [/home/abi/fetcher/tmp/medium_to_markdown_py-1.0.3.tar.gz]
+[2024-04-28 16:36:13] INFO root fetch - main [MainThread]: End processing [medium-to-markdown-py]: success
+[2024-04-28 16:36:13] INFO root fetch - main [MainThread]: Store serial: [22967463]
