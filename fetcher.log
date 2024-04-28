@@ -16362,3 +16362,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:10:35] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
 [2024-04-28 21:10:35] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
 [2024-04-28 21:10:35] INFO root fetch - main [MainThread]: Store serial: [22969049]
+[2024-04-28 21:12:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969049]
+[2024-04-28 21:12:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octomy-batch
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dict_plugin
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-dans-api-toolkit
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spleenseg
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: blake2signer
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bhbotlist
+[2024-04-28 21:12:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scatcluster
+[2024-04-28 21:12:44] INFO root fetch - processPackages [spleenseg]: New version: [1.2.4] Old Version: [1.2.2]
+[2024-04-28 21:12:44] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 21:12:44] INFO root fetch - processPackages [django-dans-api-toolkit]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-28 21:12:44] INFO root fetch - processPackages [bhbotlist]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-28 21:12:44] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:12:44] INFO root fetch - processPackages [blake2signer]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-04-28 21:12:44] WARNING root fetch - processPackages [dict_plugin]: Skipping, unable to determine old version
+[2024-04-28 21:12:44] INFO root fetch - main [MainThread]: End processing [dict_plugin] error
+[2024-04-28 21:12:44] INFO root fetch - processPackages [spleenseg]: Downloading https://files.pythonhosted.org/packages/32/4a/7e3c1055d139e970249b7739172a95675eca0b0396ad5a518afe8a0e048d/spleenseg-1.2.2.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [bhbotlist]: Downloading https://files.pythonhosted.org/packages/43/12/0bd1dea79434144709e832264fd056d710bb70bde69ba360fa268b98baaf/bhbotlist-3.0.5.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/16/ee/7e82cd494f77a8fa003e5c5138d000358e7a6ccbefe8935eef3cf5f6232d/django-dans-api-toolkit-0.0.1.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [blake2signer]: Downloading https://files.pythonhosted.org/packages/1c/29/140cae6765db6c921897766947cee90858f34b9c47284781b5c22d24b7ce/blake2signer-3.0.0.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/ba/d9/f7fd87323137015c8bc36fb86f43b2d32874c757372f4bf30b58771eb2f7/django-dans-api-toolkit-0.1.0.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [bhbotlist]: Downloading https://files.pythonhosted.org/packages/e3/66/5b00a033d68406407b818d6397ab5e602c49e5b665e3fc7019c51ae3c0bb/bhbotlist-3.0.6.tar.gz
+[2024-04-28 21:12:44] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-28 21:12:45] INFO root fetch - processPackages [spleenseg]: Downloading https://files.pythonhosted.org/packages/79/0b/9db236873e673eb503ed1ba14cb184cd4517c10956c612ba3657409cf04f/spleenseg-1.2.4.tar.gz
+[2024-04-28 21:12:45] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [bhbotlist]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [bhbotlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhbotlist-3.0.5.tar.gz tmp/bhbotlist-3.0.6.tar.gz --markdown 20240428/b/bhbotlist/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [django-dans-api-toolkit]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [django-dans-api-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dans-api-toolkit-0.0.1.tar.gz tmp/django-dans-api-toolkit-0.1.0.tar.gz --markdown 20240428/d/django-dans-api-toolkit/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [blake2signer]: Downloading https://files.pythonhosted.org/packages/0a/1b/246b9232ad003d219458715ff02e7c5351b546655a8831f3f59bf1874179/blake2signer-3.1.0.tar.gz
+[2024-04-28 21:12:45] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240428/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [spleenseg]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [spleenseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spleenseg-1.2.2.tar.gz tmp/spleenseg-1.2.4.tar.gz --markdown 20240428/s/spleenseg/1.2.2-1.2.4/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [blake2signer]: executing diffoscope
+[2024-04-28 21:12:45] INFO root fetch - processPackages [blake2signer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blake2signer-3.0.0.tar.gz tmp/blake2signer-3.1.0.tar.gz --markdown 20240428/b/blake2signer/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-04-28 21:12:45] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:12:45] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.0.1.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.0.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
+[2024-04-28 21:12:45] INFO root fetch - processPackages [spleenseg]: Remove: archive file [/home/abi/fetcher/tmp/spleenseg-1.2.2.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - processPackages [spleenseg]: Remove: archive file [/home/abi/fetcher/tmp/spleenseg-1.2.4.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - main [MainThread]: End processing [spleenseg]: success
+[2024-04-28 21:12:45] INFO root fetch - processPackages [bhbotlist]: Remove: archive file [/home/abi/fetcher/tmp/bhbotlist-3.0.5.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - processPackages [bhbotlist]: Remove: archive file [/home/abi/fetcher/tmp/bhbotlist-3.0.6.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - main [MainThread]: End processing [bhbotlist]: success
+[2024-04-28 21:12:45] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-28 21:12:45] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-28 21:12:46] INFO root fetch - processPackages [blake2signer]: Remove: archive file [/home/abi/fetcher/tmp/blake2signer-3.0.0.tar.gz]
+[2024-04-28 21:12:46] INFO root fetch - processPackages [blake2signer]: Remove: archive file [/home/abi/fetcher/tmp/blake2signer-3.1.0.tar.gz]
+[2024-04-28 21:12:46] INFO root fetch - main [MainThread]: End processing [blake2signer]: success
+[2024-04-28 21:12:46] INFO root fetch - main [MainThread]: Store serial: [22969071]
