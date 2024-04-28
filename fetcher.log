@@ -3625,3 +3625,24 @@
 [2024-04-28 05:32:34] INFO root fetch - processPackages [queue-local]: Remove: archive file [/home/abi/fetcher/tmp/queue-local-0.0.9.tar.gz]
 [2024-04-28 05:32:34] INFO root fetch - main [MainThread]: End processing [queue-local]: success
 [2024-04-28 05:32:34] INFO root fetch - main [MainThread]: Store serial: [22963759]
+[2024-04-28 05:34:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963759]
+[2024-04-28 05:34:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-04-28 05:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YoutubeUser
+[2024-04-28 05:34:43] INFO root fetch - processPackages [YoutubeUser]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 05:34:43] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.6] Old Version: [2024.2.5]
+[2024-04-28 05:34:43] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/92/6a/be07fc6cd6f8acbbf71fa0d9d0b70f85fa8ffdaf315ea65c1943d99a21e3/youtubeuser-0.0.3.tar.gz
+[2024-04-28 05:34:43] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/92/59/10d146fcc644054a6e06d1850eddd6484272c9e90debe2c8af7f40ff11bb/blastpipe-2024.2.5.tar.gz
+[2024-04-28 05:34:43] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/44/33/480bba8161b6e0c402e43a1c87f0006be76f811d466c42218fdd48d1650c/youtubeuser-0.0.4.tar.gz
+[2024-04-28 05:34:43] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/8d/01/868f6188804eb808385d49c958c021c40eeb1295d42320f686e45c939560/blastpipe-2024.2.6.tar.gz
+[2024-04-28 05:34:43] INFO root fetch - processPackages [YoutubeUser]: executing diffoscope
+[2024-04-28 05:34:43] INFO root fetch - processPackages [YoutubeUser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtubeuser-0.0.3.tar.gz tmp/youtubeuser-0.0.4.tar.gz --markdown 20240428/Y/YoutubeUser/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 05:34:43] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 05:34:43] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.5.tar.gz tmp/blastpipe-2024.2.6.tar.gz --markdown 20240428/b/blastpipe/2024.2.5-2024.2.6/README.md --exclude *.pyd
+[2024-04-28 05:34:44] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.3.tar.gz]
+[2024-04-28 05:34:44] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.4.tar.gz]
+[2024-04-28 05:34:44] INFO root fetch - main [MainThread]: End processing [YoutubeUser]: success
+[2024-04-28 05:34:44] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.5.tar.gz]
+[2024-04-28 05:34:44] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.6.tar.gz]
+[2024-04-28 05:34:44] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 05:34:44] INFO root fetch - main [MainThread]: Store serial: [22963766]
