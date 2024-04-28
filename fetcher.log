@@ -7344,3 +7344,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:31:13] INFO root fetch - processPackages [fog-x]: Remove: archive file [/home/abi/fetcher/tmp/fog_x-0.1.0b3.tar.gz]
 [2024-04-28 10:31:13] INFO root fetch - main [MainThread]: End processing [fog-x]: success
 [2024-04-28 10:31:13] INFO root fetch - main [MainThread]: Store serial: [22965196]
+[2024-04-28 10:33:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965196]
+[2024-04-28 10:33:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 10:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ex-cd
+[2024-04-28 10:33:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyfi-ros
+[2024-04-28 10:33:21] INFO root fetch - processPackages [ex-cd]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-04-28 10:33:21] INFO root fetch - processPackages [ex-cd]: Downloading https://files.pythonhosted.org/packages/7a/ae/343cb345397b334a6d65c7ada5e706a763683d89aa5e9f7424bc8e9be9b4/ex_cd-1.9.3.tar.gz
+[2024-04-28 10:33:21] ERROR root fetch - processPackages [hyfi-ros]: Unable to get metadata: No such project 'hyfi-ros'
+[2024-04-28 10:33:21] INFO root fetch - main [MainThread]: End processing [hyfi-ros] error
+[2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: Downloading https://files.pythonhosted.org/packages/fe/a7/907e1f4930a5e56cb16271b81480a86740c2521ac86bde937b3000441ac1/ex_cd-1.9.4.tar.gz
+[2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: executing diffoscope
+[2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ex_cd-1.9.3.tar.gz tmp/ex_cd-1.9.4.tar.gz --markdown 20240428/e/ex-cd/1.9.3-1.9.4/README.md --exclude *.pyd
+[2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.3.tar.gz]
+[2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.4.tar.gz]
+[2024-04-28 10:33:22] INFO root fetch - main [MainThread]: End processing [ex-cd]: success
+[2024-04-28 10:33:22] INFO root fetch - main [MainThread]: Store serial: [22965204]
