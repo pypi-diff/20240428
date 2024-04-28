@@ -11460,3 +11460,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:23:06] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.4-py3-none-manylinux1_x86_64.whl.zip]
 [2024-04-28 15:23:06] INFO root fetch - main [MainThread]: End processing [pyrnnoise]: success
 [2024-04-28 15:23:06] INFO root fetch - main [MainThread]: Store serial: [22967034]
+[2024-04-28 15:25:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967034]
+[2024-04-28 15:25:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YaraForge
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: windmill-api
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: json-repair
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wmill
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: optima-ml
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wmill-pg
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: optima-ml
+[2024-04-28 15:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: langevals-core
+[2024-04-28 15:25:22] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [optima-ml]: New version: [0.3.3a3] Old Version: [0.3.3a2]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [YaraForge]: New version: [0.1.8b1] Old Version: [0.1.7b1]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [optima-ml]: New version: [0.3.3a3] Old Version: [0.3.3a2]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [pypipr]: New version: [1.0.98] Old Version: [1.0.97]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [langevals-core]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 15:25:22] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/27/4a/646722267efb4a7e85c8c9f89595613d725d0f9132fee31dff335f359f00/pypipr-1.0.97.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [YaraForge]: Downloading https://files.pythonhosted.org/packages/39/64/baebe361487464be0f06f659cd5f0b7bdf97f88afb8fb18838b43c511303/YaraForge-0.1.7b1.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/0d/28/5173edfef390a75b67a5931ee54ca512d8a3d9a81b0faae606bba71ea40e/optima_ml-0.3.3a2.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/0d/28/5173edfef390a75b67a5931ee54ca512d8a3d9a81b0faae606bba71ea40e/optima_ml-0.3.3a2.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/6d/91/6b6052c80b8d367e051cc2905d1d921bf9a11f63e27a0f802b5c1277aa20/wmill-1.98.0.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/bd/de/5d29ca258adee967295dbf926ab306c480527c234336f0725d4c2bc1d718/windmill_api-1.98.0.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [langevals-core]: Downloading https://files.pythonhosted.org/packages/ac/ed/72a23284761bf7d45f22ad6a4bbb03de88bdb330fcd0cdcb335576706469/langevals_core-0.1.1.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-04-28 15:25:22] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240428/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-28 15:25:22] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/41/8e/296646c6a3d68ecf6c58c3ec52ece636443172c24750f76c7001939e52d3/pypipr-1.0.98.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [YaraForge]: Downloading https://files.pythonhosted.org/packages/a3/b3/23b6a5d5405b678138d4a0f15f52e253a6c052d1dc5b167a89605aa68308/YaraForge-0.1.8b1.tar.gz
+[2024-04-28 15:25:22] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f1/d1/eb5b4c7d25f969fc3603441c8e90a5a8e00688be43ce0631166287977a65/wmill-1.99.0.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.97.tar.gz tmp/pypipr-1.0.98.tar.gz --markdown 20240428/p/pypipr/1.0.97-1.0.98/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/32/94/9431b41ce6b9c2670fbc125624f7ebc3d186482c80c271e3d7acde511319/windmill_api-1.99.0.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20240428/w/wmill/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/cc/19/920d4b00362d7c1dbb328bfe317173a544c95ca6efe9d04b39082c7b5c31/optima_ml-0.3.3a3.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: Downloading https://files.pythonhosted.org/packages/cc/19/920d4b00362d7c1dbb328bfe317173a544c95ca6efe9d04b39082c7b5c31/optima_ml-0.3.3a3.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [YaraForge]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [YaraForge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YaraForge-0.1.7b1.tar.gz tmp/YaraForge-0.1.8b1.tar.gz --markdown 20240428/Y/YaraForge/0.1.7b1-0.1.8b1/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [langevals-core]: Downloading https://files.pythonhosted.org/packages/0d/10/cd24ab8359a1031b5faadf8b864a7f03a1c623fc620986c4c3e24b81de85/langevals_core-0.1.2.tar.gz
+[2024-04-28 15:25:23] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20240428/w/windmill-api/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240428/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optima_ml-0.3.3a2.tar.gz tmp/optima_ml-0.3.3a3.tar.gz --markdown 20240428/o/optima-ml/0.3.3a2-0.3.3a3/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [optima-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optima_ml-0.3.3a2.tar.gz tmp/optima_ml-0.3.3a3.tar.gz --markdown 20240428/o/optima-ml/0.3.3a2-0.3.3a3/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-04-28 15:25:23] INFO root fetch - processPackages [langevals-core]: executing diffoscope
+[2024-04-28 15:25:23] INFO root fetch - processPackages [langevals-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langevals_core-0.1.1.tar.gz tmp/langevals_core-0.1.2.tar.gz --markdown 20240428/l/langevals-core/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.98.0.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.99.0.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2024-04-28 15:25:23] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.97.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.98.tar.gz]
+[2024-04-28 15:25:23] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-28 15:25:24] INFO root fetch - processPackages [langevals-core]: Remove: archive file [/home/abi/fetcher/tmp/langevals_core-0.1.1.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - processPackages [langevals-core]: Remove: archive file [/home/abi/fetcher/tmp/langevals_core-0.1.2.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - main [MainThread]: End processing [langevals-core]: success
+[2024-04-28 15:25:24] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-04-28 15:25:24] INFO root fetch - processPackages [optima-ml]: Remove: archive file [/home/abi/fetcher/tmp/optima_ml-0.3.3a2.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - processPackages [optima-ml]: Remove: archive file [/home/abi/fetcher/tmp/optima_ml-0.3.3a3.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - main [MainThread]: End processing [optima-ml]: success
+[2024-04-28 15:25:24] INFO root fetch - main [MainThread]: End processing [optima-ml]: success
+[2024-04-28 15:25:24] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.7b1.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.8b1.tar.gz]
+[2024-04-28 15:25:24] INFO root fetch - main [MainThread]: End processing [YaraForge]: success
+[2024-04-28 15:25:27] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.98.0.tar.gz]
+[2024-04-28 15:25:27] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
+[2024-04-28 15:25:27] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2024-04-28 15:25:27] INFO root fetch - main [MainThread]: Store serial: [22967058]
