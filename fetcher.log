@@ -10101,3 +10101,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:37:42] INFO root fetch - processPackages [gramps-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gramps_webapi-2.3.0.tar.gz]
 [2024-04-28 13:37:42] INFO root fetch - main [MainThread]: End processing [gramps-webapi]: success
 [2024-04-28 13:37:42] INFO root fetch - main [MainThread]: Store serial: [22966449]
+[2024-04-28 13:39:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966449]
+[2024-04-28 13:39:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coll-filter
+[2024-04-28 13:39:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-21
+[2024-04-28 13:39:58] INFO root fetch - processPackages [coll-filter]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-28 13:39:58] INFO root fetch - processPackages [coll-filter]: Downloading https://files.pythonhosted.org/packages/8a/cc/9db2bad8e40908113fdfd4f8cddbe7b545c86926be46b326c31d5a7a1974/coll-filter-1.2.0.tar.gz
+[2024-04-28 13:39:58] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240428] Old Version: [2.5.0b20240427]
+[2024-04-28 13:39:58] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/8b/b5/5a4a0c34fed9d2764c9327aa13ee145480ad00b0e050f359358dd99c9040/bigdl_core_xe_21-2.5.0b20240427-cp39-cp39-win_amd64.whl
+[2024-04-28 13:39:58] INFO root fetch - processPackages [coll-filter]: Downloading https://files.pythonhosted.org/packages/97/99/3c64310eb530174caddbe6dacc85406f0205bd72714df14d77ba9b349c9e/coll-filter-1.2.1.tar.gz
+[2024-04-28 13:39:58] INFO root fetch - processPackages [coll-filter]: executing diffoscope
+[2024-04-28 13:39:58] INFO root fetch - processPackages [coll-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coll-filter-1.2.0.tar.gz tmp/coll-filter-1.2.1.tar.gz --markdown 20240428/c/coll-filter/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-28 13:39:58] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 28914535>=10485760
+[2024-04-28 13:39:58] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-28 13:39:59] INFO root fetch - processPackages [coll-filter]: Remove: archive file [/home/abi/fetcher/tmp/coll-filter-1.2.0.tar.gz]
+[2024-04-28 13:39:59] INFO root fetch - processPackages [coll-filter]: Remove: archive file [/home/abi/fetcher/tmp/coll-filter-1.2.1.tar.gz]
+[2024-04-28 13:39:59] INFO root fetch - main [MainThread]: End processing [coll-filter]: success
+[2024-04-28 13:39:59] INFO root fetch - main [MainThread]: Store serial: [22966454]
