@@ -3664,3 +3664,24 @@
 [2024-04-28 05:39:03] WARNING root fetch - processPackages [cmoonvision]: Skipping, unable to determine old version
 [2024-04-28 05:39:03] INFO root fetch - main [MainThread]: End processing [cmoonvision] error
 [2024-04-28 05:39:03] INFO root fetch - main [MainThread]: Store serial: [22963773]
+[2024-04-28 05:41:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963773]
+[2024-04-28 05:41:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-criteria
+[2024-04-28 05:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geoapps-utils
+[2024-04-28 05:41:12] INFO root fetch - processPackages [json-criteria]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-28 05:41:12] INFO root fetch - processPackages [geoapps-utils]: New version: [0.3.0rc1] Old Version: [0.3.0a3]
+[2024-04-28 05:41:12] INFO root fetch - processPackages [json-criteria]: Downloading https://files.pythonhosted.org/packages/c5/c6/74b0969019c7568e26e133b88f01ed8496f32b49104759db35373b0a1af0/json_criteria-0.1.2.tar.gz
+[2024-04-28 05:41:12] INFO root fetch - processPackages [geoapps-utils]: Downloading https://files.pythonhosted.org/packages/9d/83/ffa26b03d2c77da5be045d000a41851c721e0ec0b00ca9abbc6386ce9147/geoapps_utils-0.3.0a3.tar.gz
+[2024-04-28 05:41:12] INFO root fetch - processPackages [json-criteria]: Downloading https://files.pythonhosted.org/packages/cf/11/a3bc61a23cef9d4109500f1870787a2d3da92f8ee700e67ff2214c50c0cf/json_criteria-0.2.0.tar.gz
+[2024-04-28 05:41:12] INFO root fetch - processPackages [geoapps-utils]: Downloading https://files.pythonhosted.org/packages/27/b7/6e7e993b521544eefc8b2de7a1cf80d431b9e764aa079763460e384af85d/geoapps_utils-0.3.0rc1.tar.gz
+[2024-04-28 05:41:12] INFO root fetch - processPackages [json-criteria]: executing diffoscope
+[2024-04-28 05:41:12] INFO root fetch - processPackages [json-criteria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_criteria-0.1.2.tar.gz tmp/json_criteria-0.2.0.tar.gz --markdown 20240428/j/json-criteria/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-28 05:41:12] INFO root fetch - processPackages [geoapps-utils]: executing diffoscope
+[2024-04-28 05:41:12] INFO root fetch - processPackages [geoapps-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoapps_utils-0.3.0a3.tar.gz tmp/geoapps_utils-0.3.0rc1.tar.gz --markdown 20240428/g/geoapps-utils/0.3.0a3-0.3.0rc1/README.md --exclude *.pyd
+[2024-04-28 05:41:13] INFO root fetch - processPackages [geoapps-utils]: Remove: archive file [/home/abi/fetcher/tmp/geoapps_utils-0.3.0a3.tar.gz]
+[2024-04-28 05:41:13] INFO root fetch - processPackages [geoapps-utils]: Remove: archive file [/home/abi/fetcher/tmp/geoapps_utils-0.3.0rc1.tar.gz]
+[2024-04-28 05:41:13] INFO root fetch - main [MainThread]: End processing [geoapps-utils]: success
+[2024-04-28 05:41:13] INFO root fetch - processPackages [json-criteria]: Remove: archive file [/home/abi/fetcher/tmp/json_criteria-0.1.2.tar.gz]
+[2024-04-28 05:41:13] INFO root fetch - processPackages [json-criteria]: Remove: archive file [/home/abi/fetcher/tmp/json_criteria-0.2.0.tar.gz]
+[2024-04-28 05:41:13] INFO root fetch - main [MainThread]: End processing [json-criteria]: success
+[2024-04-28 05:41:13] INFO root fetch - main [MainThread]: Store serial: [22963779]
