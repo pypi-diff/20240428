@@ -9876,3 +9876,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:17:14] INFO root fetch - processPackages [yanga]: Remove: archive file [/home/abi/fetcher/tmp/yanga-1.7.0.tar.gz]
 [2024-04-28 13:17:14] INFO root fetch - main [MainThread]: End processing [yanga]: success
 [2024-04-28 13:17:14] INFO root fetch - main [MainThread]: Store serial: [22966354]
+[2024-04-28 13:19:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966354]
+[2024-04-28 13:19:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqt5-qt5-designer
+[2024-04-28 13:19:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqt6-without-qt
+[2024-04-28 13:19:27] INFO root fetch - processPackages [pyqt5-qt5-designer]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 13:19:27] INFO root fetch - processPackages [pyqt6-without-qt]: New version: [6.7.0.post0] Old Version: [6.7.0]
+[2024-04-28 13:19:27] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/65/86/08c93dbcb0004e96de9fdfdd5e7426e652dbc87277a946ffe08142b0eb3c/pyqt5_qt5_designer-0.0.8.tar.gz
+[2024-04-28 13:19:27] INFO root fetch - processPackages [pyqt6-without-qt]: Downloading https://files.pythonhosted.org/packages/cc/ca/95693b5e2623e096cacc07f8b009b7cb6e452059293840519a8952ba2169/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/4b/d0/a786d698fa94ec1b949503313659041b9e7c42002a1a28409f4c46f20098/pyqt5_qt5_designer-0.0.9.tar.gz
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt5-qt5-designer]: executing diffoscope
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt5-qt5-designer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_qt5_designer-0.0.8.tar.gz tmp/pyqt5_qt5_designer-0.0.9.tar.gz --markdown 20240428/p/pyqt5-qt5-designer/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt6-without-qt]: Downloading https://files.pythonhosted.org/packages/59/8f/b2f33874621e40e9b1dee67edd27f351ac722133cb73062d1bad177b8b7e/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt6-without-qt]: executing diffoscope
+[2024-04-28 13:19:28] INFO root fetch - processPackages [pyqt6-without-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl.zip tmp/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl.zip --markdown 20240428/p/pyqt6-without-qt/6.7.0-6.7.0.post0/README.md --exclude *.pyd
+[2024-04-28 13:19:29] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.8.tar.gz]
+[2024-04-28 13:19:29] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.9.tar.gz]
+[2024-04-28 13:19:29] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
+[2024-04-28 13:19:36] INFO root fetch - processPackages [pyqt6-without-qt]: Remove: archive file [/home/abi/fetcher/tmp/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl.zip]
+[2024-04-28 13:19:36] INFO root fetch - processPackages [pyqt6-without-qt]: Remove: archive file [/home/abi/fetcher/tmp/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl.zip]
+[2024-04-28 13:19:36] INFO root fetch - main [MainThread]: End processing [pyqt6-without-qt]: success
+[2024-04-28 13:19:36] INFO root fetch - main [MainThread]: Store serial: [22966361]
