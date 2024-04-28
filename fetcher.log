@@ -16501,3 +16501,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:19:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-04-28 21:19:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-04-28 21:19:19] INFO root fetch - main [MainThread]: Store serial: [22969104]
+[2024-04-28 21:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969104]
+[2024-04-28 21:21:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyotgw
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyunited
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: melobot
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scatcluster
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dictaclass
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: q2db
+[2024-04-28 21:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scatcluster
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:21:28] INFO root fetch - processPackages [melobot]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [pyotgw]: New version: [2.2.0] Old Version: [2.1.3]
+[2024-04-28 21:21:28] INFO root fetch - processPackages [q2db]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 21:21:28] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/c0/f4/9af2074328eb309ee4c7c2411455cbe301844e4022434bc0f4accf428991/melobot-2.6.2.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [dictaclass]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-28 21:21:28] WARNING root fetch - processPackages [pyunited]: Skipping, unable to determine old version
+[2024-04-28 21:21:28] INFO root fetch - main [MainThread]: End processing [pyunited] error
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [pyotgw]: Downloading https://files.pythonhosted.org/packages/25/41/6e97d66eaf010a2e211b6b5f93a615d1e67ed186dda7100ea03536dd15a0/pyotgw-2.1.3.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [dictaclass]: Downloading https://files.pythonhosted.org/packages/3d/87/9b222bdbb2a7a91319766d1f249d273ae3d1dedd28a3599a9b35ed94dac6/dictaclass-0.5.0.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/e4/99/877c5a7569a240609bb1e03d86b11495c151dbb0d5a6f287fa8974b1557e/melobot-2.6.3.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [q2db]: Downloading https://files.pythonhosted.org/packages/17/38/79b233e045a339bde6d7f5231ab1078cdf7c948755cd92294ac52862b3f8/q2db-0.1.8.tar.gz
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:21:28] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [melobot]: executing diffoscope
+[2024-04-28 21:21:29] INFO root fetch - processPackages [melobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melobot-2.6.2.tar.gz tmp/melobot-2.6.3.tar.gz --markdown 20240428/m/melobot/2.6.2-2.6.3/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:21:29] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [pyotgw]: Downloading https://files.pythonhosted.org/packages/9b/80/f608bdb53c5dccf9b48f341b893098e4915e366b6bd0b14f5896514f81a8/pyotgw-2.2.0.tar.gz
+[2024-04-28 21:21:29] INFO root fetch - processPackages [dictaclass]: Downloading https://files.pythonhosted.org/packages/d9/50/1663ad54a143d1bb60e845a7d5262a363e435e38e6e69c2b66c1090dec04/dictaclass-0.6.0.tar.gz
+[2024-04-28 21:21:29] INFO root fetch - processPackages [q2db]: Downloading https://files.pythonhosted.org/packages/5f/ad/9e4d5db2bcb37b0ac45071edbac7a5449963193849b9df003b9586649cf9/q2db-0.1.9.tar.gz
+[2024-04-28 21:21:29] INFO root fetch - processPackages [pyotgw]: executing diffoscope
+[2024-04-28 21:21:29] INFO root fetch - processPackages [pyotgw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyotgw-2.1.3.tar.gz tmp/pyotgw-2.2.0.tar.gz --markdown 20240428/p/pyotgw/2.1.3-2.2.0/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [dictaclass]: executing diffoscope
+[2024-04-28 21:21:29] INFO root fetch - processPackages [dictaclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictaclass-0.5.0.tar.gz tmp/dictaclass-0.6.0.tar.gz --markdown 20240428/d/dictaclass/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [q2db]: executing diffoscope
+[2024-04-28 21:21:29] INFO root fetch - processPackages [q2db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q2db-0.1.8.tar.gz tmp/q2db-0.1.9.tar.gz --markdown 20240428/q/q2db/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 21:21:29] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:21:29] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:21:29] INFO root fetch - processPackages [dictaclass]: Remove: archive file [/home/abi/fetcher/tmp/dictaclass-0.5.0.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - processPackages [dictaclass]: Remove: archive file [/home/abi/fetcher/tmp/dictaclass-0.6.0.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - main [MainThread]: End processing [dictaclass]: success
+[2024-04-28 21:21:29] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.6.2.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.6.3.tar.gz]
+[2024-04-28 21:21:29] INFO root fetch - main [MainThread]: End processing [melobot]: success
+[2024-04-28 21:21:30] INFO root fetch - processPackages [pyotgw]: Remove: archive file [/home/abi/fetcher/tmp/pyotgw-2.1.3.tar.gz]
+[2024-04-28 21:21:30] INFO root fetch - processPackages [pyotgw]: Remove: archive file [/home/abi/fetcher/tmp/pyotgw-2.2.0.tar.gz]
+[2024-04-28 21:21:30] INFO root fetch - main [MainThread]: End processing [pyotgw]: success
+[2024-04-28 21:21:30] INFO root fetch - processPackages [q2db]: Remove: archive file [/home/abi/fetcher/tmp/q2db-0.1.8.tar.gz]
+[2024-04-28 21:21:30] INFO root fetch - processPackages [q2db]: Remove: archive file [/home/abi/fetcher/tmp/q2db-0.1.9.tar.gz]
+[2024-04-28 21:21:30] INFO root fetch - main [MainThread]: End processing [q2db]: success
+[2024-04-28 21:21:30] INFO root fetch - main [MainThread]: Store serial: [22969126]
