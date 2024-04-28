@@ -11835,3 +11835,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:44:22] INFO root fetch - processPackages [kss]: Remove: archive file [/home/abi/fetcher/tmp/kss-6.0.0.dev0.tar.gz]
 [2024-04-28 15:44:22] INFO root fetch - main [MainThread]: End processing [kss]: success
 [2024-04-28 15:44:22] INFO root fetch - main [MainThread]: Store serial: [22967192]
+[2024-04-28 15:46:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967192]
+[2024-04-28 15:46:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swiss-army-man
+[2024-04-28 15:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pierskarsenbarg-pulumi-sdm
+[2024-04-28 15:46:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartboiler
+[2024-04-28 15:46:42] INFO root fetch - processPackages [swiss-army-man]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-28 15:46:42] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-04-28 15:46:42] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/48/1f/294f600f1fa28cd18c161440c03fb3b30e0c131a86552d9308f61aa90137/swiss_army_man-0.1.7.tar.gz
+[2024-04-28 15:46:42] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-04-28 15:46:42] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-28 15:46:42] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/db/5f/43786688d54d0ff70a385ca5139304a4aa2df11146f80be4cb5a0cd12760/pierskarsenbarg_pulumi_sdm-1.8.0.tar.gz
+[2024-04-28 15:46:42] INFO root fetch - processPackages [swiss-army-man]: Downloading https://files.pythonhosted.org/packages/56/82/24e0c66ae73179bc5f3180da018b1c49aadae130d6093a4ba1f45acd2afa/swiss_army_man-0.1.9.tar.gz
+[2024-04-28 15:46:42] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-04-28 15:46:42] INFO root fetch - processPackages [swiss-army-man]: executing diffoscope
+[2024-04-28 15:46:42] INFO root fetch - processPackages [swiss-army-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swiss_army_man-0.1.7.tar.gz tmp/swiss_army_man-0.1.9.tar.gz --markdown 20240428/s/swiss-army-man/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-28 15:46:42] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-28 15:46:42] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240428/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-04-28 15:46:42] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Downloading https://files.pythonhosted.org/packages/3f/94/f70566f985577a4c4dcddde6be30629343edf0fc979217269bef4b72ad08/pierskarsenbarg_pulumi_sdm-1.9.0.tar.gz
+[2024-04-28 15:46:43] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: executing diffoscope
+[2024-04-28 15:46:43] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pierskarsenbarg_pulumi_sdm-1.8.0.tar.gz tmp/pierskarsenbarg_pulumi_sdm-1.9.0.tar.gz --markdown 20240428/p/pierskarsenbarg-pulumi-sdm/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-28 15:46:43] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-04-28 15:46:43] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-04-28 15:46:43] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-28 15:46:43] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.7.tar.gz]
+[2024-04-28 15:46:43] INFO root fetch - processPackages [swiss-army-man]: Remove: archive file [/home/abi/fetcher/tmp/swiss_army_man-0.1.9.tar.gz]
+[2024-04-28 15:46:43] INFO root fetch - main [MainThread]: End processing [swiss-army-man]: success
+[2024-04-28 15:46:44] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Remove: archive file [/home/abi/fetcher/tmp/pierskarsenbarg_pulumi_sdm-1.8.0.tar.gz]
+[2024-04-28 15:46:44] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Remove: archive file [/home/abi/fetcher/tmp/pierskarsenbarg_pulumi_sdm-1.9.0.tar.gz]
+[2024-04-28 15:46:44] INFO root fetch - main [MainThread]: End processing [pierskarsenbarg-pulumi-sdm]: success
+[2024-04-28 15:46:44] INFO root fetch - main [MainThread]: Store serial: [22967200]
