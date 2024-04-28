@@ -10406,3 +10406,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:03:00] INFO root fetch - processPackages [room-env]: Remove: archive file [/home/abi/fetcher/tmp/room_env-2.0.1.tar.gz]
 [2024-04-28 14:03:00] INFO root fetch - main [MainThread]: End processing [room-env]: success
 [2024-04-28 14:03:00] INFO root fetch - main [MainThread]: Store serial: [22966574]
+[2024-04-28 14:05:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966574]
+[2024-04-28 14:05:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 14:05:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: urllib3-future
+[2024-04-28 14:05:17] INFO root fetch - processPackages [urllib3-future]: New version: [2.7.905] Old Version: [2.7.904]
+[2024-04-28 14:05:17] INFO root fetch - processPackages [urllib3-future]: Downloading https://files.pythonhosted.org/packages/8f/70/bc3e36f09280fd6935c29a9758a6bc874515aaffc791335f4bf585503fd2/urllib3_future-2.7.904.tar.gz
+[2024-04-28 14:05:18] INFO root fetch - processPackages [urllib3-future]: Downloading https://files.pythonhosted.org/packages/93/20/0ac2501b34fffabe3ea44241299b498d8807d2ef0f4d4cfff8e0156aab64/urllib3_future-2.7.905.tar.gz
+[2024-04-28 14:05:18] INFO root fetch - processPackages [urllib3-future]: executing diffoscope
+[2024-04-28 14:05:18] INFO root fetch - processPackages [urllib3-future]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_future-2.7.904.tar.gz tmp/urllib3_future-2.7.905.tar.gz --markdown 20240428/u/urllib3-future/2.7.904-2.7.905/README.md --exclude *.pyd
+[2024-04-28 14:05:19] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.904.tar.gz]
+[2024-04-28 14:05:19] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.905.tar.gz]
+[2024-04-28 14:05:19] INFO root fetch - main [MainThread]: End processing [urllib3-future]: success
+[2024-04-28 14:05:19] INFO root fetch - main [MainThread]: Store serial: [22966578]
