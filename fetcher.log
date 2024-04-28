@@ -16434,3 +16434,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:14:55] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.1.tar.gz]
 [2024-04-28 21:14:55] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
 [2024-04-28 21:14:55] INFO root fetch - main [MainThread]: Store serial: [22969081]
+[2024-04-28 21:16:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969081]
+[2024-04-28 21:17:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 21:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-04-28 21:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langtrace-python-sdk
+[2024-04-28 21:17:04] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:17:04] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:17:04] INFO root fetch - processPackages [langtrace-python-sdk]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-28 21:17:04] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:17:05] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:17:05] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:17:05] INFO root fetch - processPackages [langtrace-python-sdk]: Downloading https://files.pythonhosted.org/packages/0d/9b/0b164dc9f3649c8a75a8d5ee5a7a5113a200cb225e08537036f89a76f6ca/langtrace_python_sdk-2.0.0.tar.gz
+[2024-04-28 21:17:05] INFO root fetch - processPackages [langtrace-python-sdk]: Downloading https://files.pythonhosted.org/packages/f1/63/c0ada8b09998d54d1216a3ede291746575d7422604912b6c098c9276e1d2/langtrace_python_sdk-2.0.1.tar.gz
+[2024-04-28 21:17:05] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 21:17:05] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 21:17:05] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:17:05] INFO root fetch - processPackages [langtrace-python-sdk]: executing diffoscope
+[2024-04-28 21:17:05] INFO root fetch - processPackages [langtrace-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langtrace_python_sdk-2.0.0.tar.gz tmp/langtrace_python_sdk-2.0.1.tar.gz --markdown 20240428/l/langtrace-python-sdk/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-28 21:17:06] INFO root fetch - processPackages [langtrace-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/langtrace_python_sdk-2.0.0.tar.gz]
+[2024-04-28 21:17:06] INFO root fetch - processPackages [langtrace-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/langtrace_python_sdk-2.0.1.tar.gz]
+[2024-04-28 21:17:06] INFO root fetch - main [MainThread]: End processing [langtrace-python-sdk]: success
+[2024-04-28 21:17:06] INFO root fetch - main [MainThread]: Store serial: [22969089]
