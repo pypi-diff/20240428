@@ -15995,3 +15995,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:40:03] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev6.tar.gz]
 [2024-04-28 20:40:03] INFO root fetch - main [MainThread]: End processing [pyvisjs]: success
 [2024-04-28 20:40:03] INFO root fetch - main [MainThread]: Store serial: [22968885]
+[2024-04-28 20:42:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968885]
+[2024-04-28 20:42:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Something-like-piano
+[2024-04-28 20:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: authexchange
+[2024-04-28 20:42:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beeflow-ajax
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/d0/10/f5e038b995a81a68150066a13933a45eb4b7e7072768601471cfebee8aad/beeflow-ajax-1.0.8.tar.gz
+[2024-04-28 20:42:12] WARNING root fetch - processPackages [authexchange]: Skipping, unable to determine old version
+[2024-04-28 20:42:12] INFO root fetch - main [MainThread]: End processing [authexchange] error
+[2024-04-28 20:42:12] WARNING root fetch - processPackages [Something-like-piano]: Skipping, unable to determine old version
+[2024-04-28 20:42:12] INFO root fetch - main [MainThread]: End processing [Something-like-piano] error
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/dd/57/7061d2ad9089d0df0152a410f6b62148719da4ddbd07d843be395642227c/beeflow-ajax-1.0.9.tar.gz
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: executing diffoscope
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beeflow-ajax-1.0.8.tar.gz tmp/beeflow-ajax-1.0.9.tar.gz --markdown 20240428/b/beeflow-ajax/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.8.tar.gz]
+[2024-04-28 20:42:12] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.9.tar.gz]
+[2024-04-28 20:42:12] INFO root fetch - main [MainThread]: End processing [beeflow-ajax]: success
+[2024-04-28 20:42:12] INFO root fetch - main [MainThread]: Store serial: [22968899]
