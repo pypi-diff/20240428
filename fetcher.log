@@ -11021,3 +11021,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:46:37] INFO root fetch - processPackages [enka.py]: Remove: archive file [/home/abi/fetcher/tmp/enka.py-1.2.2.tar.gz]
 [2024-04-28 14:46:37] INFO root fetch - main [MainThread]: End processing [enka.py]: success
 [2024-04-28 14:46:37] INFO root fetch - main [MainThread]: Store serial: [22966800]
+[2024-04-28 14:48:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966800]
+[2024-04-28 14:48:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 14:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syft
+[2024-04-28 14:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-plugin-deps-juice
+[2024-04-28 14:48:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strictdoc
+[2024-04-28 14:48:52] INFO root fetch - processPackages [poetry-plugin-deps-juice]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 14:48:53] INFO root fetch - processPackages [strictdoc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 14:48:53] INFO root fetch - processPackages [syft]: New version: [0.8.7b7] Old Version: [0.8.7b6]
+[2024-04-28 14:48:53] INFO root fetch - processPackages [poetry-plugin-deps-juice]: Downloading https://files.pythonhosted.org/packages/54/67/3c97343ed841d9b053dc260db40ac1ddbe4480d13789ac6c661c0c60ce8b/poetry_plugin_deps_juice-0.0.1.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/12/eb/6376b24b633990d42a41199145db73aff3d9ceb0c1afbf5d927d84651715/syft-0.8.7b6.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/0e/0c/3782c5673a36cda9e2189ef1e7d9661ba2f1e5c9822b736cf2ce0d2545a7/strictdoc-0.0.8.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [poetry-plugin-deps-juice]: Downloading https://files.pythonhosted.org/packages/8a/7a/e70641411db147de30798e194da839e6447a0f802d095e70b57710a9b960/poetry_plugin_deps_juice-0.0.2.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [poetry-plugin-deps-juice]: executing diffoscope
+[2024-04-28 14:48:53] INFO root fetch - processPackages [poetry-plugin-deps-juice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_deps_juice-0.0.1.tar.gz tmp/poetry_plugin_deps_juice-0.0.2.tar.gz --markdown 20240428/p/poetry-plugin-deps-juice/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 14:48:53] INFO root fetch - processPackages [syft]: Downloading https://files.pythonhosted.org/packages/e0/e9/500e0cc65acce00345cd3a43861c3a86dda1830a92635b3b4a92e4e9a59f/syft-0.8.7b7.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [strictdoc]: Downloading https://files.pythonhosted.org/packages/b6/06/2219b569301c00406d344dca69ac5e31a169bb9529b66ec957609495d940/strictdoc-0.0.9.tar.gz
+[2024-04-28 14:48:53] INFO root fetch - processPackages [syft]: executing diffoscope
+[2024-04-28 14:48:53] INFO root fetch - processPackages [syft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syft-0.8.7b6.tar.gz tmp/syft-0.8.7b7.tar.gz --markdown 20240428/s/syft/0.8.7b6-0.8.7b7/README.md --exclude *.pyd
+[2024-04-28 14:48:54] INFO root fetch - processPackages [strictdoc]: executing diffoscope
+[2024-04-28 14:48:54] INFO root fetch - processPackages [strictdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strictdoc-0.0.8.tar.gz tmp/strictdoc-0.0.9.tar.gz --markdown 20240428/s/strictdoc/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 14:48:54] INFO root fetch - processPackages [poetry-plugin-deps-juice]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_deps_juice-0.0.1.tar.gz]
+[2024-04-28 14:48:54] INFO root fetch - processPackages [poetry-plugin-deps-juice]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_deps_juice-0.0.2.tar.gz]
+[2024-04-28 14:48:54] INFO root fetch - main [MainThread]: End processing [poetry-plugin-deps-juice]: success
+[2024-04-28 14:48:54] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.8.tar.gz]
+[2024-04-28 14:48:54] INFO root fetch - processPackages [strictdoc]: Remove: archive file [/home/abi/fetcher/tmp/strictdoc-0.0.9.tar.gz]
+[2024-04-28 14:48:54] INFO root fetch - main [MainThread]: End processing [strictdoc]: success
+[2024-04-28 14:48:55] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b6.tar.gz]
+[2024-04-28 14:48:55] INFO root fetch - processPackages [syft]: Remove: archive file [/home/abi/fetcher/tmp/syft-0.8.7b7.tar.gz]
+[2024-04-28 14:48:55] INFO root fetch - main [MainThread]: End processing [syft]: success
+[2024-04-28 14:48:55] INFO root fetch - main [MainThread]: Store serial: [22966809]
