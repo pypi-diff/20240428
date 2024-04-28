@@ -7146,3 +7146,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:13:32] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.99.tar.gz]
 [2024-04-28 10:13:32] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2024-04-28 10:13:32] INFO root fetch - main [MainThread]: Store serial: [22965121]
+[2024-04-28 10:15:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965121]
+[2024-04-28 10:15:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 10:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyxevil
+[2024-04-28 10:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: database-common-tools
+[2024-04-28 10:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqladmin-litestar-plugin
+[2024-04-28 10:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygpt-net
+[2024-04-28 10:15:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thrift-pyi
+[2024-04-28 10:15:40] INFO root fetch - processPackages [pyxevil]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 10:15:40] INFO root fetch - processPackages [database-common-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pygpt-net]: New version: [2.2.0] Old Version: [2.1.9]
+[2024-04-28 10:15:41] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/ca/3c/6b8cd59d336e1c605691395b32685c8a043c3effb94cb81dc1d7cec6a6d8/database-common-tools-1.1.8.tar.gz
+[2024-04-28 10:15:41] ERROR root fetch - processPackages [sqladmin-litestar-plugin]: Unable to get metadata: No such project 'sqladmin-litestar-plugin'
+[2024-04-28 10:15:41] INFO root fetch - main [MainThread]: End processing [sqladmin-litestar-plugin] error
+[2024-04-28 10:15:41] INFO root fetch - processPackages [thrift-pyi]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pyxevil]: Downloading https://files.pythonhosted.org/packages/9a/fe/0fd1330ba2343c166e36cc0f6f1d2b69de4a398dcc62262e0e72f1848ba4/pyxevil-1.0.0.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [thrift-pyi]: Downloading https://files.pythonhosted.org/packages/b2/d3/4950a1b0df19ac19c367f8b213ef38d9d51eaf4993e72304836acc28af87/thrift_pyi-0.8.0.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/55/1d/f84bdab15e57cb34658d4f445048d8bfeaf6b8cd2d0da82250fefbaa75f0/database-common-tools-1.1.9.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [database-common-tools]: executing diffoscope
+[2024-04-28 10:15:41] INFO root fetch - processPackages [database-common-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-common-tools-1.1.8.tar.gz tmp/database-common-tools-1.1.9.tar.gz --markdown 20240428/d/database-common-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pyxevil]: Downloading https://files.pythonhosted.org/packages/a7/81/ef3c415e68f02e78cab87d315b06e5d0990d07a154006dac05212ed646c1/pyxevil-1.0.1.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [thrift-pyi]: Downloading https://files.pythonhosted.org/packages/46/be/65e4eda7e7bcad6f59dcd6f0e65d5e0934d28d2f5ac828dc91435d7febce/thrift_pyi-0.9.0.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pyxevil]: executing diffoscope
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pyxevil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxevil-1.0.0.tar.gz tmp/pyxevil-1.0.1.tar.gz --markdown 20240428/p/pyxevil/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/7c/cd/602cc18b35682fdf7f70f8378df6b344597047810bb668c40e47f89f8630/pygpt_net-2.2.0.tar.gz
+[2024-04-28 10:15:41] INFO root fetch - processPackages [thrift-pyi]: executing diffoscope
+[2024-04-28 10:15:41] INFO root fetch - processPackages [thrift-pyi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thrift_pyi-0.8.0.tar.gz tmp/thrift_pyi-0.9.0.tar.gz --markdown 20240428/t/thrift-pyi/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-28 10:15:41] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.9.tar.gz tmp/pygpt_net-2.2.0.tar.gz --markdown 20240428/p/pygpt-net/2.1.9-2.2.0/README.md --exclude *.pyd
+[2024-04-28 10:15:42] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.8.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.9.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - main [MainThread]: End processing [database-common-tools]: success
+[2024-04-28 10:15:42] INFO root fetch - processPackages [pyxevil]: Remove: archive file [/home/abi/fetcher/tmp/pyxevil-1.0.0.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - processPackages [pyxevil]: Remove: archive file [/home/abi/fetcher/tmp/pyxevil-1.0.1.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - main [MainThread]: End processing [pyxevil]: success
+[2024-04-28 10:15:42] INFO root fetch - processPackages [thrift-pyi]: Remove: archive file [/home/abi/fetcher/tmp/thrift_pyi-0.8.0.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - processPackages [thrift-pyi]: Remove: archive file [/home/abi/fetcher/tmp/thrift_pyi-0.9.0.tar.gz]
+[2024-04-28 10:15:42] INFO root fetch - main [MainThread]: End processing [thrift-pyi]: success
+[2024-04-28 10:15:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-28 10:15:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.0.tar.gz]
+[2024-04-28 10:15:45] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-28 10:15:45] INFO root fetch - main [MainThread]: Store serial: [22965139]
