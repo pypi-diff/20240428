@@ -11065,3 +11065,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:53:17] INFO root fetch - processPackages [BAScraper]: Remove: archive file [/home/abi/fetcher/tmp/BAScraper-0.0.4.tar.gz]
 [2024-04-28 14:53:17] INFO root fetch - main [MainThread]: End processing [BAScraper]: success
 [2024-04-28 14:53:17] INFO root fetch - main [MainThread]: Store serial: [22966820]
+[2024-04-28 14:55:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966820]
+[2024-04-28 14:55:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 14:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpl-ascii
+[2024-04-28 14:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scorescanner
+[2024-04-28 14:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiml25
+[2024-04-28 14:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fpx
+[2024-04-28 14:55:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AmaProductReviews
+[2024-04-28 14:55:32] INFO root fetch - processPackages [mpl-ascii]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-28 14:55:32] WARNING root fetch - processPackages [AmaProductReviews]: Skipping, unable to determine old version
+[2024-04-28 14:55:32] INFO root fetch - main [MainThread]: End processing [AmaProductReviews] error
+[2024-04-28 14:55:32] INFO root fetch - processPackages [scorescanner]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-04-28 14:55:32] WARNING root fetch - processPackages [aiml25]: Skipping, unable to determine old version
+[2024-04-28 14:55:32] INFO root fetch - main [MainThread]: End processing [aiml25] error
+[2024-04-28 14:55:32] INFO root fetch - processPackages [fpx]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-28 14:55:33] INFO root fetch - processPackages [scorescanner]: Downloading https://files.pythonhosted.org/packages/8e/f4/facc87108e11426060cf85a44ba303ee50b3e73dc30db0f06736bbdf8aa9/scorescanner-0.1.1.tar.gz
+[2024-04-28 14:55:33] INFO root fetch - processPackages [fpx]: Downloading https://files.pythonhosted.org/packages/e0/eb/21a0f6b7975a834b08b2f23aedabbc403af2195e6f29b706449f9b4b624c/fpx-0.6.1.tar.gz
+[2024-04-28 14:55:33] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/20/98/b3808673b6a7a1ade04840266a6794bfe37454e5f0e33c62424221420047/mpl_ascii-0.1.0.tar.gz
+[2024-04-28 14:55:33] INFO root fetch - processPackages [scorescanner]: Downloading https://files.pythonhosted.org/packages/e6/f5/840b94eb0e6c98f22a0d8dbec035787898b4f311211f8dd6bb04f5b974c0/scorescanner-0.1.3-py3-none-any.whl
+[2024-04-28 14:55:33] INFO root fetch - processPackages [fpx]: Downloading https://files.pythonhosted.org/packages/96/cb/2e2ced4bfab8e28d5b2449c84c0800884de03541c64377cb7241348c7014/fpx-0.6.2.tar.gz
+[2024-04-28 14:55:33] INFO root fetch - processPackages [mpl-ascii]: Downloading https://files.pythonhosted.org/packages/a0/dd/d8bf260e9a59ef06df43a11a18d714177c7cfa7dc0aa54e4437340badd28/mpl_ascii-0.2.0.tar.gz
+[2024-04-28 14:55:33] INFO root fetch - processPackages [fpx]: executing diffoscope
+[2024-04-28 14:55:33] INFO root fetch - processPackages [fpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpx-0.6.1.tar.gz tmp/fpx-0.6.2.tar.gz --markdown 20240428/f/fpx/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-28 14:55:33] INFO root fetch - processPackages [mpl-ascii]: executing diffoscope
+[2024-04-28 14:55:33] INFO root fetch - processPackages [mpl-ascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl_ascii-0.1.0.tar.gz tmp/mpl_ascii-0.2.0.tar.gz --markdown 20240428/m/mpl-ascii/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-28 14:55:33] INFO root fetch - processPackages [scorescanner]: executing diffoscope
+[2024-04-28 14:55:33] INFO root fetch - processPackages [scorescanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scorescanner-0.1.1.tar.gz tmp/scorescanner-0.1.3-py3-none-any.whl.zip --markdown 20240428/s/scorescanner/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-04-28 14:55:34] INFO root fetch - processPackages [fpx]: Remove: archive file [/home/abi/fetcher/tmp/fpx-0.6.1.tar.gz]
+[2024-04-28 14:55:34] INFO root fetch - processPackages [fpx]: Remove: archive file [/home/abi/fetcher/tmp/fpx-0.6.2.tar.gz]
+[2024-04-28 14:55:34] INFO root fetch - main [MainThread]: End processing [fpx]: success
+[2024-04-28 14:55:34] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.1.0.tar.gz]
+[2024-04-28 14:55:34] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.2.0.tar.gz]
+[2024-04-28 14:55:34] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
+[2024-04-28 14:55:35] INFO root fetch - processPackages [scorescanner]: Remove: archive file [/home/abi/fetcher/tmp/scorescanner-0.1.1.tar.gz]
+[2024-04-28 14:55:35] INFO root fetch - processPackages [scorescanner]: Remove: archive file [/home/abi/fetcher/tmp/scorescanner-0.1.3-py3-none-any.whl.zip]
+[2024-04-28 14:55:35] INFO root fetch - main [MainThread]: End processing [scorescanner]: success
+[2024-04-28 14:55:35] INFO root fetch - main [MainThread]: Store serial: [22966838]
