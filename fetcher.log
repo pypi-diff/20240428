@@ -8182,3 +8182,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:22:21] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.17.tar.gz]
 [2024-04-28 11:22:21] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
 [2024-04-28 11:22:21] INFO root fetch - main [MainThread]: Store serial: [22965675]
+[2024-04-28 11:24:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965675]
+[2024-04-28 11:24:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 11:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msanic
+[2024-04-28 11:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clovers-groupmate-waifu
+[2024-04-28 11:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QuasarCode
+[2024-04-28 11:24:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygwalker
+[2024-04-28 11:24:29] INFO root fetch - processPackages [clovers-groupmate-waifu]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 11:24:29] INFO root fetch - processPackages [pygwalker]: New version: [0.4.9a2] Old Version: [0.4.9a1]
+[2024-04-28 11:24:29] INFO root fetch - processPackages [clovers-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/0d/9a/ce0207acea94143ed2df08baa8b4d59cf9bad5cabb317ab70c4e7e84f392/clovers_groupmate_waifu-0.1.1.tar.gz
+[2024-04-28 11:24:29] INFO root fetch - processPackages [QuasarCode]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 11:24:29] INFO root fetch - processPackages [msanic]: New version: [1.0.17] Old Version: [1.0.16]
+[2024-04-28 11:24:29] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/0f/0d/509e9df55b92cb562a884a850f4a8031e6f440da90fa45d45a59a9db8fae/pygwalker-0.4.9a1.tar.gz
+[2024-04-28 11:24:30] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/4b/f9/b2d8ee96804291c82aa8544413344aeff5d171030de7fca251a7887f43b4/QuasarCode-0.8.0.tar.gz
+[2024-04-28 11:24:30] INFO root fetch - processPackages [msanic]: Downloading https://files.pythonhosted.org/packages/c2/39/fc92682602f4fce89a21a4ed9b58599ec86fb41ba3285d7cdce5a9bb1c95/msanic-1.0.16-py3-none-any.whl
+[2024-04-28 11:24:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: Downloading https://files.pythonhosted.org/packages/d0/4b/9c953dd47cd19a26900217239e193e0e19f3ccb9ad3ad327bab98ffa2eea/clovers_groupmate_waifu-0.1.2.tar.gz
+[2024-04-28 11:24:30] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/82/e5/9c0d43db55f894717c52d914ccee9febfccf54befce7a4e566ee756f9c8e/pygwalker-0.4.9a2.tar.gz
+[2024-04-28 11:24:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: executing diffoscope
+[2024-04-28 11:24:30] INFO root fetch - processPackages [clovers-groupmate-waifu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clovers_groupmate_waifu-0.1.1.tar.gz tmp/clovers_groupmate_waifu-0.1.2.tar.gz --markdown 20240428/c/clovers-groupmate-waifu/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 11:24:30] INFO root fetch - processPackages [msanic]: Downloading https://files.pythonhosted.org/packages/7e/9b/69c80aef843e864ee692b94a7696fac549b17b71d58b4a0a224c52c18aad/msanic-1.0.17-py3-none-any.whl
+[2024-04-28 11:24:30] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/67/46/55d9a0f234778abc638a43b265aa1558469d0967d78b5d026750dc299011/QuasarCode-0.9.0.tar.gz
+[2024-04-28 11:24:30] INFO root fetch - processPackages [msanic]: executing diffoscope
+[2024-04-28 11:24:30] INFO root fetch - processPackages [msanic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msanic-1.0.16-py3-none-any.whl.zip tmp/msanic-1.0.17-py3-none-any.whl.zip --markdown 20240428/m/msanic/1.0.16-1.0.17/README.md --exclude *.pyd
+[2024-04-28 11:24:30] INFO root fetch - processPackages [QuasarCode]: executing diffoscope
+[2024-04-28 11:24:30] INFO root fetch - processPackages [QuasarCode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuasarCode-0.8.0.tar.gz tmp/QuasarCode-0.9.0.tar.gz --markdown 20240428/Q/QuasarCode/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 11:24:30] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2024-04-28 11:24:30] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.4.9a1.tar.gz tmp/pygwalker-0.4.9a2.tar.gz --markdown 20240428/p/pygwalker/0.4.9a1-0.4.9a2/README.md --exclude *.pyd
+[2024-04-28 11:24:31] INFO root fetch - processPackages [clovers-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/clovers_groupmate_waifu-0.1.1.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - processPackages [clovers-groupmate-waifu]: Remove: archive file [/home/abi/fetcher/tmp/clovers_groupmate_waifu-0.1.2.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - main [MainThread]: End processing [clovers-groupmate-waifu]: success
+[2024-04-28 11:24:31] INFO root fetch - processPackages [QuasarCode]: Remove: archive file [/home/abi/fetcher/tmp/QuasarCode-0.8.0.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - processPackages [QuasarCode]: Remove: archive file [/home/abi/fetcher/tmp/QuasarCode-0.9.0.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - main [MainThread]: End processing [QuasarCode]: success
+[2024-04-28 11:24:31] INFO root fetch - processPackages [msanic]: Remove: archive file [/home/abi/fetcher/tmp/msanic-1.0.16-py3-none-any.whl.zip]
+[2024-04-28 11:24:31] INFO root fetch - processPackages [msanic]: Remove: archive file [/home/abi/fetcher/tmp/msanic-1.0.17-py3-none-any.whl.zip]
+[2024-04-28 11:24:31] INFO root fetch - main [MainThread]: End processing [msanic]: success
+[2024-04-28 11:24:31] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a1.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a2.tar.gz]
+[2024-04-28 11:24:31] INFO root fetch - main [MainThread]: End processing [pygwalker]: success
+[2024-04-28 11:24:31] INFO root fetch - main [MainThread]: Store serial: [22965686]
