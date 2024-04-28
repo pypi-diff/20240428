@@ -10190,3 +10190,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:44:53] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.54.tar.gz]
 [2024-04-28 13:44:53] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-04-28 13:44:53] INFO root fetch - main [MainThread]: Store serial: [22966475]
+[2024-04-28 13:47:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966475]
+[2024-04-28 13:47:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TheSilent
+[2024-04-28 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crawlee
+[2024-04-28 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: petrovisor
+[2024-04-28 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-ai-timetable
+[2024-04-28 13:47:08] INFO root fetch - processPackages [crawlee]: New version: [0.0.3b3] Old Version: [0.0.3b2]
+[2024-04-28 13:47:08] INFO root fetch - processPackages [petrovisor]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 13:47:08] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 13:47:08] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/e0/e6/c5fe8133e14daa311e65ccf48822547a8415d51fca081b4efcb031c57d1f/petrovisor-0.1.3.tar.gz
+[2024-04-28 13:47:08] INFO root fetch - processPackages [crawlee]: Downloading https://files.pythonhosted.org/packages/70/3e/68e853006846345881fe2ea1de45d9eafc872a5135dc6003fe2839e715e4/crawlee-0.0.3b2.tar.gz
+[2024-04-28 13:47:08] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-28 13:47:08] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-28 13:47:09] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Downloading https://files.pythonhosted.org/packages/62/2d/ae7a2e51df8011d5cd4dc9bd143c7825aa72fbdd4377601352a71ceee03f/nonebot_plugin_ai_timetable-0.3.7.tar.gz
+[2024-04-28 13:47:09] INFO root fetch - processPackages [petrovisor]: Downloading https://files.pythonhosted.org/packages/8e/35/15a88c6bd6f175b179ebc40b69a1e295d66b885f0b96bf72094598e44cc6/petrovisor-0.1.4.tar.gz
+[2024-04-28 13:47:09] INFO root fetch - processPackages [crawlee]: Downloading https://files.pythonhosted.org/packages/9d/76/c82c87029f5a9a9b62fcf6baa01d1924939f245a373ad9eeb9c7785fe80e/crawlee-0.0.3b3.tar.gz
+[2024-04-28 13:47:09] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-28 13:47:09] INFO root fetch - processPackages [petrovisor]: executing diffoscope
+[2024-04-28 13:47:09] INFO root fetch - processPackages [petrovisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrovisor-0.1.3.tar.gz tmp/petrovisor-0.1.4.tar.gz --markdown 20240428/p/petrovisor/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 13:47:09] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-28 13:47:09] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240428/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 13:47:09] INFO root fetch - processPackages [crawlee]: executing diffoscope
+[2024-04-28 13:47:09] INFO root fetch - processPackages [crawlee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawlee-0.0.3b2.tar.gz tmp/crawlee-0.0.3b3.tar.gz --markdown 20240428/c/crawlee/0.0.3b2-0.0.3b3/README.md --exclude *.pyd
+[2024-04-28 13:47:09] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Downloading https://files.pythonhosted.org/packages/29/79/b4e632af6615334bf85dafb96a900640df2c14ae3b36279f8dad67535513/nonebot_plugin_ai_timetable-0.3.8.tar.gz
+[2024-04-28 13:47:09] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: executing diffoscope
+[2024-04-28 13:47:09] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ai_timetable-0.3.7.tar.gz tmp/nonebot_plugin_ai_timetable-0.3.8.tar.gz --markdown 20240428/n/nonebot-plugin-ai-timetable/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-04-28 13:47:10] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-28 13:47:10] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.3.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - processPackages [petrovisor]: Remove: archive file [/home/abi/fetcher/tmp/petrovisor-0.1.4.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - main [MainThread]: End processing [petrovisor]: success
+[2024-04-28 13:47:10] INFO root fetch - processPackages [crawlee]: Remove: archive file [/home/abi/fetcher/tmp/crawlee-0.0.3b2.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - processPackages [crawlee]: Remove: archive file [/home/abi/fetcher/tmp/crawlee-0.0.3b3.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - main [MainThread]: End processing [crawlee]: success
+[2024-04-28 13:47:10] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ai_timetable-0.3.7.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ai_timetable-0.3.8.tar.gz]
+[2024-04-28 13:47:10] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ai-timetable]: success
+[2024-04-28 13:47:10] INFO root fetch - main [MainThread]: Store serial: [22966487]
