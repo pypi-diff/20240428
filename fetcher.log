@@ -3646,3 +3646,15 @@
 [2024-04-28 05:34:44] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.6.tar.gz]
 [2024-04-28 05:34:44] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-28 05:34:44] INFO root fetch - main [MainThread]: Store serial: [22963766]
+[2024-04-28 05:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963766]
+[2024-04-28 05:36:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 05:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyNiteFEA
+[2024-04-28 05:36:53] INFO root fetch - processPackages [PyNiteFEA]: New version: [0.0.94] Old Version: [0.0.93]
+[2024-04-28 05:36:53] INFO root fetch - processPackages [PyNiteFEA]: Downloading https://files.pythonhosted.org/packages/77/01/003a6f8f7b9ab104f6e671c55c9472664c1eb97abb140fc3d4bfe4428a31/PyNiteFEA-0.0.93.tar.gz
+[2024-04-28 05:36:54] INFO root fetch - processPackages [PyNiteFEA]: Downloading https://files.pythonhosted.org/packages/21/81/5d08294836a8279a1ffa3995deffce0a75f34ea4ca4078ffcb9c40844abb/pynitefea-0.0.94.tar.gz
+[2024-04-28 05:36:54] INFO root fetch - processPackages [PyNiteFEA]: executing diffoscope
+[2024-04-28 05:36:54] INFO root fetch - processPackages [PyNiteFEA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNiteFEA-0.0.93.tar.gz tmp/pynitefea-0.0.94.tar.gz --markdown 20240428/P/PyNiteFEA/0.0.93-0.0.94/README.md --exclude *.pyd
+[2024-04-28 05:36:55] INFO root fetch - processPackages [PyNiteFEA]: Remove: archive file [/home/abi/fetcher/tmp/PyNiteFEA-0.0.93.tar.gz]
+[2024-04-28 05:36:55] INFO root fetch - processPackages [PyNiteFEA]: Remove: archive file [/home/abi/fetcher/tmp/pynitefea-0.0.94.tar.gz]
+[2024-04-28 05:36:55] INFO root fetch - main [MainThread]: End processing [PyNiteFEA]: success
+[2024-04-28 05:36:55] INFO root fetch - main [MainThread]: Store serial: [22963770]
