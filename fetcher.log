@@ -14268,3 +14268,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:41:16] INFO root fetch - processPackages [kiwitcms-tenants]: Remove: archive file [/home/abi/fetcher/tmp/kiwitcms-tenants-2.8.0.tar.gz]
 [2024-04-28 18:41:16] INFO root fetch - main [MainThread]: End processing [kiwitcms-tenants]: success
 [2024-04-28 18:41:16] INFO root fetch - main [MainThread]: Store serial: [22968145]
+[2024-04-28 18:43:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968145]
+[2024-04-28 18:43:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 18:43:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotframework-pyserial
+[2024-04-28 18:43:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amino.light.py
+[2024-04-28 18:43:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lnurl_nostr1
+[2024-04-28 18:43:24] INFO root fetch - processPackages [amino.light.py]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 18:43:24] WARNING root fetch - processPackages [lnurl_nostr1]: Skipping, unable to determine old version
+[2024-04-28 18:43:24] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1] error
+[2024-04-28 18:43:25] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/51/9c/afa7249bab4acffdf79b62dcbe076226073bab8f871f25be917fd2a9d982/amino.light.py-0.1.6.tar.gz
+[2024-04-28 18:43:25] INFO root fetch - processPackages [robotframework-pyserial]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 18:43:25] INFO root fetch - processPackages [robotframework-pyserial]: Downloading https://files.pythonhosted.org/packages/d3/b1/0b87dc3fc4d5f8cebad53436728070e0e121ed72b0ff09e63bac5dd30813/robotframework_pyserial-1.0.0.tar.gz
+[2024-04-28 18:43:25] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/0c/41/41540cec81741fbdc5c3db57d862268d976370321ea730beec10eeb6588b/amino.light.py-0.1.7.tar.gz
+[2024-04-28 18:43:25] INFO root fetch - processPackages [amino.light.py]: executing diffoscope
+[2024-04-28 18:43:25] INFO root fetch - processPackages [amino.light.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.light.py-0.1.6.tar.gz tmp/amino.light.py-0.1.7.tar.gz --markdown 20240428/a/amino.light.py/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 18:43:25] INFO root fetch - processPackages [robotframework-pyserial]: Downloading https://files.pythonhosted.org/packages/62/9e/3fedbe0daa2122a632731b8554a589df7b2b47eddbdd85bfe0446367b294/robotframework_pyserial-1.1.0.tar.gz
+[2024-04-28 18:43:25] INFO root fetch - processPackages [robotframework-pyserial]: executing diffoscope
+[2024-04-28 18:43:25] INFO root fetch - processPackages [robotframework-pyserial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_pyserial-1.0.0.tar.gz tmp/robotframework_pyserial-1.1.0.tar.gz --markdown 20240428/r/robotframework-pyserial/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 18:43:26] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.6.tar.gz]
+[2024-04-28 18:43:26] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.7.tar.gz]
+[2024-04-28 18:43:26] INFO root fetch - main [MainThread]: End processing [amino.light.py]: success
+[2024-04-28 18:43:26] INFO root fetch - processPackages [robotframework-pyserial]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_pyserial-1.0.0.tar.gz]
+[2024-04-28 18:43:26] INFO root fetch - processPackages [robotframework-pyserial]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_pyserial-1.1.0.tar.gz]
+[2024-04-28 18:43:26] INFO root fetch - main [MainThread]: End processing [robotframework-pyserial]: success
+[2024-04-28 18:43:26] INFO root fetch - main [MainThread]: Store serial: [22968153]
