@@ -12189,3 +12189,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:17:12] INFO root fetch - processPackages [yandex-chain]: Remove: archive file [/home/abi/fetcher/tmp/yandex-chain-0.0.7.tar.gz]
 [2024-04-28 16:17:12] INFO root fetch - main [MainThread]: End processing [yandex-chain]: success
 [2024-04-28 16:17:12] INFO root fetch - main [MainThread]: Store serial: [22967313]
+[2024-04-28 16:19:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967313]
+[2024-04-28 16:19:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 16:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: windmill-api
+[2024-04-28 16:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wmill
+[2024-04-28 16:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: length-nest-pro-MQ
+[2024-04-28 16:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wmill-pg
+[2024-04-28 16:19:32] INFO root fetch - processPackages [wmill]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 16:19:32] INFO root fetch - processPackages [windmill-api]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 16:19:32] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-28 16:19:32] INFO root fetch - processPackages [length-nest-pro-MQ]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 16:19:32] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/6d/91/6b6052c80b8d367e051cc2905d1d921bf9a11f63e27a0f802b5c1277aa20/wmill-1.98.0.tar.gz
+[2024-04-28 16:19:32] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/bd/de/5d29ca258adee967295dbf926ab306c480527c234336f0725d4c2bc1d718/windmill_api-1.98.0.tar.gz
+[2024-04-28 16:19:32] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-04-28 16:19:32] INFO root fetch - processPackages [length-nest-pro-MQ]: Downloading https://files.pythonhosted.org/packages/f9/c1/9b0ff551e19a771d8772a30b98770f3355ff00f087429c915b0ddb4d266f/length_nest_pro_mq-0.0.3.tar.gz
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill]: Downloading https://files.pythonhosted.org/packages/f1/d1/eb5b4c7d25f969fc3603441c8e90a5a8e00688be43ce0631166287977a65/wmill-1.99.0.tar.gz
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-04-28 16:19:33] INFO root fetch - processPackages [windmill-api]: Downloading https://files.pythonhosted.org/packages/32/94/9431b41ce6b9c2670fbc125624f7ebc3d186482c80c271e3d7acde511319/windmill_api-1.99.0.tar.gz
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill]: executing diffoscope
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill-1.98.0.tar.gz tmp/wmill-1.99.0.tar.gz --markdown 20240428/w/wmill/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240428/w/wmill-pg/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 16:19:33] INFO root fetch - processPackages [length-nest-pro-MQ]: Downloading https://files.pythonhosted.org/packages/a3/e3/49fdf3d772d1806d90a30e55b8a384ba607b206367e537015b3d7f42ac45/length_nest_pro_mq-0.0.4.tar.gz
+[2024-04-28 16:19:33] INFO root fetch - processPackages [windmill-api]: executing diffoscope
+[2024-04-28 16:19:33] INFO root fetch - processPackages [windmill-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/windmill_api-1.98.0.tar.gz tmp/windmill_api-1.99.0.tar.gz --markdown 20240428/w/windmill-api/1.98.0-1.99.0/README.md --exclude *.pyd
+[2024-04-28 16:19:33] INFO root fetch - processPackages [length-nest-pro-MQ]: executing diffoscope
+[2024-04-28 16:19:33] INFO root fetch - processPackages [length-nest-pro-MQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/length_nest_pro_mq-0.0.3.tar.gz tmp/length_nest_pro_mq-0.0.4.tar.gz --markdown 20240428/l/length-nest-pro-MQ/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.98.0.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - processPackages [wmill]: Remove: archive file [/home/abi/fetcher/tmp/wmill-1.99.0.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - main [MainThread]: End processing [wmill]: success
+[2024-04-28 16:19:33] INFO root fetch - processPackages [length-nest-pro-MQ]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_mq-0.0.3.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - processPackages [length-nest-pro-MQ]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_mq-0.0.4.tar.gz]
+[2024-04-28 16:19:33] INFO root fetch - main [MainThread]: End processing [length-nest-pro-MQ]: success
+[2024-04-28 16:19:37] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.98.0.tar.gz]
+[2024-04-28 16:19:37] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
+[2024-04-28 16:19:37] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
+[2024-04-28 16:19:37] INFO root fetch - main [MainThread]: Store serial: [22967325]
