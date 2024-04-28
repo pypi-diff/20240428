@@ -10329,3 +10329,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:58:24] INFO root fetch - processPackages [embykeeper]: Remove: archive file [/home/abi/fetcher/tmp/embykeeper-3.2.9.tar.gz]
 [2024-04-28 13:58:24] INFO root fetch - main [MainThread]: End processing [embykeeper]: success
 [2024-04-28 13:58:24] INFO root fetch - main [MainThread]: Store serial: [22966546]
+[2024-04-28 14:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966546]
+[2024-04-28 14:00:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 14:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hikerapi
+[2024-04-28 14:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AutoRAG
+[2024-04-28 14:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: humemai
+[2024-04-28 14:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AmazonProductReviews
+[2024-04-28 14:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pye3dc
+[2024-04-28 14:00:39] INFO root fetch - processPackages [AmazonProductReviews]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 14:00:39] INFO root fetch - processPackages [pye3dc]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-28 14:00:39] INFO root fetch - processPackages [hikerapi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 14:00:39] INFO root fetch - processPackages [humemai]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 14:00:39] INFO root fetch - processPackages [AutoRAG]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/37/2d/ca17ba52cf19b210be082011ddc557787e72a76c74124c09d04cc0c83249/amazonproductreviews-0.1.0.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [pye3dc]: Downloading https://files.pythonhosted.org/packages/3e/52/b943f82a77e1642c2724aee938d88e50b8a741f91599b25f1316f1b9f5c7/pye3dc-0.9.0.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AutoRAG]: Downloading https://files.pythonhosted.org/packages/38/4d/e3f08df2480df6248c86337fe78a3f09e10a126786e7a0e35acfbef42bf4/autorag-0.1.6.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [hikerapi]: Downloading https://files.pythonhosted.org/packages/74/16/48027d879e23fde35d96cfe38ab2d6678d3ca4d33e2f78a073256d976cc9/hikerapi-0.0.1.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [humemai]: Downloading https://files.pythonhosted.org/packages/cc/15/4a3c6a59bdfdea3f7588a3828a824c408d266fa44e1a86fec2fb9dc996c2/humemai-1.0.1.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/ce/7b/aced49f65e86f141133cc7f9c40f9f2642e5dcf48c2eb80e208a812d830e/amazonproductreviews-0.1.1.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [hikerapi]: Downloading https://files.pythonhosted.org/packages/c1/48/061f40b63569f0688f809e0f57ea660ee1b9216cc72d6c006631d5b334c0/hikerapi-0.0.2.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AmazonProductReviews]: executing diffoscope
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AmazonProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazonproductreviews-0.1.0.tar.gz tmp/amazonproductreviews-0.1.1.tar.gz --markdown 20240428/A/AmazonProductReviews/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 14:00:40] INFO root fetch - processPackages [humemai]: Downloading https://files.pythonhosted.org/packages/52/8c/40bf9df3e9d62f1197e5f8b88d3b3554b580306bef3f19771085d95c4fe6/humemai-1.0.2.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [pye3dc]: Downloading https://files.pythonhosted.org/packages/37/8d/9d9d9a724862c3905598f127dbd63905edf21c943589cee16575a342ecd8/pye3dc-0.9.1.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [hikerapi]: executing diffoscope
+[2024-04-28 14:00:40] INFO root fetch - processPackages [hikerapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikerapi-0.0.1.tar.gz tmp/hikerapi-0.0.2.tar.gz --markdown 20240428/h/hikerapi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 14:00:40] INFO root fetch - processPackages [pye3dc]: executing diffoscope
+[2024-04-28 14:00:40] INFO root fetch - processPackages [pye3dc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pye3dc-0.9.0.tar.gz tmp/pye3dc-0.9.1.tar.gz --markdown 20240428/p/pye3dc/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-28 14:00:40] INFO root fetch - processPackages [AutoRAG]: Downloading https://files.pythonhosted.org/packages/d2/31/22d57d313f3e6f8643708023441560187ecfb08efacb2e193d192bc61a63/autorag-0.1.7.tar.gz
+[2024-04-28 14:00:40] INFO root fetch - processPackages [humemai]: executing diffoscope
+[2024-04-28 14:00:40] INFO root fetch - processPackages [humemai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humemai-1.0.1.tar.gz tmp/humemai-1.0.2.tar.gz --markdown 20240428/h/humemai/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 14:00:41] INFO root fetch - processPackages [AutoRAG]: executing diffoscope
+[2024-04-28 14:00:41] INFO root fetch - processPackages [AutoRAG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autorag-0.1.6.tar.gz tmp/autorag-0.1.7.tar.gz --markdown 20240428/A/AutoRAG/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 14:00:41] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.0.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.1.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - main [MainThread]: End processing [AmazonProductReviews]: success
+[2024-04-28 14:00:41] INFO root fetch - processPackages [hikerapi]: Remove: archive file [/home/abi/fetcher/tmp/hikerapi-0.0.1.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - processPackages [hikerapi]: Remove: archive file [/home/abi/fetcher/tmp/hikerapi-0.0.2.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - main [MainThread]: End processing [hikerapi]: success
+[2024-04-28 14:00:41] INFO root fetch - processPackages [humemai]: Remove: archive file [/home/abi/fetcher/tmp/humemai-1.0.1.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - processPackages [humemai]: Remove: archive file [/home/abi/fetcher/tmp/humemai-1.0.2.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - main [MainThread]: End processing [humemai]: success
+[2024-04-28 14:00:41] INFO root fetch - processPackages [pye3dc]: Remove: archive file [/home/abi/fetcher/tmp/pye3dc-0.9.0.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - processPackages [pye3dc]: Remove: archive file [/home/abi/fetcher/tmp/pye3dc-0.9.1.tar.gz]
+[2024-04-28 14:00:41] INFO root fetch - main [MainThread]: End processing [pye3dc]: success
+[2024-04-28 14:00:43] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.6.tar.gz]
+[2024-04-28 14:00:43] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.7.tar.gz]
+[2024-04-28 14:00:43] INFO root fetch - main [MainThread]: End processing [AutoRAG]: success
+[2024-04-28 14:00:43] INFO root fetch - main [MainThread]: Store serial: [22966561]
