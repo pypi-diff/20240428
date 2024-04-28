@@ -8833,3 +8833,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:12:35] INFO root fetch - processPackages [dot-proxy]: Remove: archive file [/home/abi/fetcher/tmp/dot_proxy-0.2.2.tar.gz]
 [2024-04-28 12:12:35] INFO root fetch - main [MainThread]: End processing [dot-proxy]: success
 [2024-04-28 12:12:35] INFO root fetch - main [MainThread]: Store serial: [22965922]
+[2024-04-28 12:14:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965922]
+[2024-04-28 12:14:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Matinmikko
+[2024-04-28 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyjava
+[2024-04-28 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-admin-coreui
+[2024-04-28 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: byzerllm
+[2024-04-28 12:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: istr-python
+[2024-04-28 12:14:45] INFO root fetch - processPackages [Matinmikko]: New version: [0.2] Old Version: [0.1]
+[2024-04-28 12:14:45] INFO root fetch - processPackages [django-admin-coreui]: New version: [1.0.0] Old Version: [0.0.6]
+[2024-04-28 12:14:45] INFO root fetch - processPackages [istr-python]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 12:14:45] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/e8/f5/4429fbd5a80e0cf3fb2b2bcb9a260b0efb56e62c5ca56d8352be9f10a71c/django-admin-coreui-0.0.6.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [pyjava]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-28 12:14:45] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/a6/bc/fc8d1ac18254350233abe41a6d143a5288b4aa3326ac44bec74409c9a47e/istr_python-0.1.4.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [byzerllm]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 12:14:45] INFO root fetch - processPackages [Matinmikko]: Downloading https://files.pythonhosted.org/packages/c9/fd/314d02035e88a02521f9d3c82a13ee986c203347ae23608bab1b0484b394/Matinmikko-0.1.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [pyjava]: Downloading https://files.pythonhosted.org/packages/db/f4/84800ee59b99a2f182f319c88483dd386290d3e29a9896a1a653d77f8e80/pyjava-0.6.8.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/98/c6/1563f4025ee67d92445c7867c7ca1ad9c523055b4708ddd5ab2dab480c51/byzerllm-0.1.8.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/ec/40/d1468499da37d4cd52d8ebd4c199a4c63cdc623d1fe16582c2a9f8ccbfe7/istr_python-0.1.5.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [Matinmikko]: Downloading https://files.pythonhosted.org/packages/63/fa/2f47b96604fd0a45447a304dbbbae951800e52722344cac38f65e947c48e/Matinmikko-0.2.tar.gz
+[2024-04-28 12:14:45] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-28 12:14:45] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.4.tar.gz tmp/istr_python-0.1.5.tar.gz --markdown 20240428/i/istr-python/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 12:14:45] INFO root fetch - processPackages [Matinmikko]: executing diffoscope
+[2024-04-28 12:14:45] INFO root fetch - processPackages [Matinmikko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Matinmikko-0.1.tar.gz tmp/Matinmikko-0.2.tar.gz --markdown 20240428/M/Matinmikko/0.1-0.2/README.md --exclude *.pyd
+[2024-04-28 12:14:45] INFO root fetch - processPackages [pyjava]: Downloading https://files.pythonhosted.org/packages/8a/2a/01924792581ff9c7840a2d5d31ffe9a19c29a8c6eef20ab17884e3697d29/pyjava-0.6.9.tar.gz
+[2024-04-28 12:14:46] INFO root fetch - processPackages [byzerllm]: Downloading https://files.pythonhosted.org/packages/a0/04/10289d36794dda29e2a889dcf2e412dcd39997cf2bc11d5af1bcc4670b3d/byzerllm-0.1.9.tar.gz
+[2024-04-28 12:14:46] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/e4/62/7752ed9b57275be02653bbe9f4c910c4a7518b1f25404c19eaa006501436/django-admin-coreui-1.0.0.tar.gz
+[2024-04-28 12:14:46] INFO root fetch - processPackages [pyjava]: executing diffoscope
+[2024-04-28 12:14:46] INFO root fetch - processPackages [pyjava]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjava-0.6.8.tar.gz tmp/pyjava-0.6.9.tar.gz --markdown 20240428/p/pyjava/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-28 12:14:46] INFO root fetch - processPackages [byzerllm]: executing diffoscope
+[2024-04-28 12:14:46] INFO root fetch - processPackages [byzerllm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byzerllm-0.1.8.tar.gz tmp/byzerllm-0.1.9.tar.gz --markdown 20240428/b/byzerllm/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 12:14:46] INFO root fetch - processPackages [Matinmikko]: Remove: archive file [/home/abi/fetcher/tmp/Matinmikko-0.1.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - processPackages [Matinmikko]: Remove: archive file [/home/abi/fetcher/tmp/Matinmikko-0.2.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - main [MainThread]: End processing [Matinmikko]: success
+[2024-04-28 12:14:46] INFO root fetch - processPackages [django-admin-coreui]: executing diffoscope
+[2024-04-28 12:14:46] INFO root fetch - processPackages [django-admin-coreui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-coreui-0.0.6.tar.gz tmp/django-admin-coreui-1.0.0.tar.gz --markdown 20240428/d/django-admin-coreui/0.0.6-1.0.0/README.md --exclude *.pyd
+[2024-04-28 12:14:46] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.4.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.5.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-28 12:14:46] INFO root fetch - processPackages [pyjava]: Remove: archive file [/home/abi/fetcher/tmp/pyjava-0.6.8.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - processPackages [pyjava]: Remove: archive file [/home/abi/fetcher/tmp/pyjava-0.6.9.tar.gz]
+[2024-04-28 12:14:46] INFO root fetch - main [MainThread]: End processing [pyjava]: success
+[2024-04-28 12:14:48] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.8.tar.gz]
+[2024-04-28 12:14:48] INFO root fetch - processPackages [byzerllm]: Remove: archive file [/home/abi/fetcher/tmp/byzerllm-0.1.9.tar.gz]
+[2024-04-28 12:14:48] INFO root fetch - main [MainThread]: End processing [byzerllm]: success
+[2024-04-28 12:14:52] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.6.tar.gz]
+[2024-04-28 12:14:52] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-1.0.0.tar.gz]
+[2024-04-28 12:14:52] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
+[2024-04-28 12:14:52] INFO root fetch - main [MainThread]: Store serial: [22965936]
