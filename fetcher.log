@@ -10418,3 +10418,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:05:19] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.905.tar.gz]
 [2024-04-28 14:05:19] INFO root fetch - main [MainThread]: End processing [urllib3-future]: success
 [2024-04-28 14:05:19] INFO root fetch - main [MainThread]: Store serial: [22966578]
+[2024-04-28 14:07:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966578]
+[2024-04-28 14:07:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 14:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain_zhipu
+[2024-04-28 14:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AmazonProductReviews
+[2024-04-28 14:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: owlmixin
+[2024-04-28 14:07:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dvtag
+[2024-04-28 14:07:36] INFO root fetch - processPackages [AmazonProductReviews]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 14:07:36] INFO root fetch - processPackages [owlmixin]: New version: [6.2.0] Old Version: [6.1.1]
+[2024-04-28 14:07:36] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/ce/7b/aced49f65e86f141133cc7f9c40f9f2642e5dcf48c2eb80e208a812d830e/amazonproductreviews-0.1.1.tar.gz
+[2024-04-28 14:07:36] INFO root fetch - processPackages [langchain_zhipu]: New version: [4.1.4] Old Version: [4.1.3]
+[2024-04-28 14:07:36] INFO root fetch - processPackages [dvtag]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-28 14:07:36] INFO root fetch - processPackages [owlmixin]: Downloading https://files.pythonhosted.org/packages/2c/6f/fbc0474ad50456ca587d5e80c4b013b9c5adaf795f0d619fe95948f794d1/owlmixin-6.1.1-py3-none-any.whl
+[2024-04-28 14:07:37] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/a1/9e/983622959baa152d96acd1b2f4809c85368b2c8402077ae87146907fa687/langchain_zhipu-4.1.3.tar.gz
+[2024-04-28 14:07:37] INFO root fetch - processPackages [dvtag]: Downloading https://files.pythonhosted.org/packages/e5/9f/9c1c16831d3ef32663b9907b8924e6ae7e5878deff0dfcb6a16f8f09cc8c/dvtag-0.6.5.tar.gz
+[2024-04-28 14:07:37] INFO root fetch - processPackages [owlmixin]: Downloading https://files.pythonhosted.org/packages/e6/ce/24fc5daa88e37120a85ccc0fd684a25aae0f7a5c349eb5ab4e6d7d579623/owlmixin-6.2.0-py3-none-any.whl
+[2024-04-28 14:07:37] INFO root fetch - processPackages [AmazonProductReviews]: Downloading https://files.pythonhosted.org/packages/de/d1/ad855f5769e0edcff2cfe87146aeef880fe04e14bfb7a08e0083faf29d0d/amazonproductreviews-0.1.2.tar.gz
+[2024-04-28 14:07:37] INFO root fetch - processPackages [owlmixin]: executing diffoscope
+[2024-04-28 14:07:37] INFO root fetch - processPackages [owlmixin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owlmixin-6.1.1-py3-none-any.whl.zip tmp/owlmixin-6.2.0-py3-none-any.whl.zip --markdown 20240428/o/owlmixin/6.1.1-6.2.0/README.md --exclude *.pyd
+[2024-04-28 14:07:37] INFO root fetch - processPackages [AmazonProductReviews]: executing diffoscope
+[2024-04-28 14:07:37] INFO root fetch - processPackages [AmazonProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazonproductreviews-0.1.1.tar.gz tmp/amazonproductreviews-0.1.2.tar.gz --markdown 20240428/A/AmazonProductReviews/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 14:07:37] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/aa/3c/9c0effc527f29677228f777b8fa753c6a0d932bcc02c1faa571a14640a19/langchain_zhipu-4.1.4.tar.gz
+[2024-04-28 14:07:37] INFO root fetch - processPackages [langchain_zhipu]: executing diffoscope
+[2024-04-28 14:07:37] INFO root fetch - processPackages [langchain_zhipu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_zhipu-4.1.3.tar.gz tmp/langchain_zhipu-4.1.4.tar.gz --markdown 20240428/l/langchain_zhipu/4.1.3-4.1.4/README.md --exclude *.pyd
+[2024-04-28 14:07:37] INFO root fetch - processPackages [dvtag]: Downloading https://files.pythonhosted.org/packages/18/13/c14c93628721b915397ffe7919611d8dc51ba99684a856f08d78293db2ca/dvtag-0.7.0.tar.gz
+[2024-04-28 14:07:37] INFO root fetch - processPackages [dvtag]: executing diffoscope
+[2024-04-28 14:07:37] INFO root fetch - processPackages [dvtag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvtag-0.6.5.tar.gz tmp/dvtag-0.7.0.tar.gz --markdown 20240428/d/dvtag/0.6.5-0.7.0/README.md --exclude *.pyd
+[2024-04-28 14:07:37] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.1.tar.gz]
+[2024-04-28 14:07:37] INFO root fetch - processPackages [AmazonProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amazonproductreviews-0.1.2.tar.gz]
+[2024-04-28 14:07:37] INFO root fetch - main [MainThread]: End processing [AmazonProductReviews]: success
+[2024-04-28 14:07:38] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.3.tar.gz]
+[2024-04-28 14:07:38] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.4.tar.gz]
+[2024-04-28 14:07:38] INFO root fetch - main [MainThread]: End processing [langchain_zhipu]: success
+[2024-04-28 14:07:38] INFO root fetch - processPackages [owlmixin]: Remove: archive file [/home/abi/fetcher/tmp/owlmixin-6.1.1-py3-none-any.whl.zip]
+[2024-04-28 14:07:38] INFO root fetch - processPackages [owlmixin]: Remove: archive file [/home/abi/fetcher/tmp/owlmixin-6.2.0-py3-none-any.whl.zip]
+[2024-04-28 14:07:38] INFO root fetch - main [MainThread]: End processing [owlmixin]: success
+[2024-04-28 14:07:38] INFO root fetch - processPackages [dvtag]: Remove: archive file [/home/abi/fetcher/tmp/dvtag-0.6.5.tar.gz]
+[2024-04-28 14:07:38] INFO root fetch - processPackages [dvtag]: Remove: archive file [/home/abi/fetcher/tmp/dvtag-0.7.0.tar.gz]
+[2024-04-28 14:07:38] INFO root fetch - main [MainThread]: End processing [dvtag]: success
+[2024-04-28 14:07:38] INFO root fetch - main [MainThread]: Store serial: [22966591]
