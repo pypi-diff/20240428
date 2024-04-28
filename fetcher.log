@@ -10377,3 +10377,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:00:43] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.7.tar.gz]
 [2024-04-28 14:00:43] INFO root fetch - main [MainThread]: End processing [AutoRAG]: success
 [2024-04-28 14:00:43] INFO root fetch - main [MainThread]: Store serial: [22966561]
+[2024-04-28 14:02:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966561]
+[2024-04-28 14:02:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 14:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe-esimd
+[2024-04-28 14:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: STAIR-tools
+[2024-04-28 14:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: room-env
+[2024-04-28 14:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: atmolib
+[2024-04-28 14:02:58] INFO root fetch - processPackages [STAIR-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/ff/ae/83f41b628b5793d382a53085aa085b5ae7f79c6bc6ddcffb24cc69499264/STAIR-tools-1.1.8.tar.gz
+[2024-04-28 14:02:59] INFO root fetch - processPackages [room-env]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-28 14:02:59] WARNING root fetch - processPackages [atmolib]: Skipping, unable to determine old version
+[2024-04-28 14:02:59] INFO root fetch - main [MainThread]: End processing [atmolib] error
+[2024-04-28 14:02:59] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240428] Old Version: [2.5.0b20240427]
+[2024-04-28 14:02:59] INFO root fetch - processPackages [room-env]: Downloading https://files.pythonhosted.org/packages/a7/a1/fa2e8e714e129c1eb86ea181a1aa89332cfce4b98131f94ff78a651a73af/room_env-2.0.0.tar.gz
+[2024-04-28 14:02:59] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/4d/ae/1cd8b9fba1aaacbcb56d927f327188205c30f1fb158957c9aec8b0f32524/bigdl_core_xe_esimd-2.5.0b20240427-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: Downloading https://files.pythonhosted.org/packages/74/eb/8ee770b8afd9281320fe1bceeb1715aa6a38e65aed7e66e556f7c8822913/STAIR-tools-1.1.9.tar.gz
+[2024-04-28 14:02:59] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871660>=10485760
+[2024-04-28 14:02:59] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: executing diffoscope
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAIR-tools-1.1.8.tar.gz tmp/STAIR-tools-1.1.9.tar.gz --markdown 20240428/S/STAIR-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-28 14:02:59] INFO root fetch - processPackages [room-env]: Downloading https://files.pythonhosted.org/packages/a4/3c/00fc25e12b266564a205f5977b58043d8e6d0174c39e360b10ee0c58a14b/room_env-2.0.1.tar.gz
+[2024-04-28 14:02:59] INFO root fetch - processPackages [room-env]: executing diffoscope
+[2024-04-28 14:02:59] INFO root fetch - processPackages [room-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/room_env-2.0.0.tar.gz tmp/room_env-2.0.1.tar.gz --markdown 20240428/r/room-env/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.8.tar.gz]
+[2024-04-28 14:02:59] INFO root fetch - processPackages [STAIR-tools]: Remove: archive file [/home/abi/fetcher/tmp/STAIR-tools-1.1.9.tar.gz]
+[2024-04-28 14:02:59] INFO root fetch - main [MainThread]: End processing [STAIR-tools]: success
+[2024-04-28 14:03:00] INFO root fetch - processPackages [room-env]: Remove: archive file [/home/abi/fetcher/tmp/room_env-2.0.0.tar.gz]
+[2024-04-28 14:03:00] INFO root fetch - processPackages [room-env]: Remove: archive file [/home/abi/fetcher/tmp/room_env-2.0.1.tar.gz]
+[2024-04-28 14:03:00] INFO root fetch - main [MainThread]: End processing [room-env]: success
+[2024-04-28 14:03:00] INFO root fetch - main [MainThread]: Store serial: [22966574]
