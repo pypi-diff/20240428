@@ -4823,3 +4823,15 @@
 [2024-04-28 07:18:46] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-04-28 07:18:46] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-04-28 07:18:46] INFO root fetch - main [MainThread]: Store serial: [22964220]
+[2024-04-28 07:20:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964220]
+[2024-04-28 07:20:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: VizAble
+[2024-04-28 07:20:55] INFO root fetch - processPackages [VizAble]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 07:20:55] INFO root fetch - processPackages [VizAble]: Downloading https://files.pythonhosted.org/packages/18/8d/d2ba6b0ca25a73926dd99be55778e8cb683131ad342a25f56f6c92849f18/vizable-0.8.0.tar.gz
+[2024-04-28 07:20:55] INFO root fetch - processPackages [VizAble]: Downloading https://files.pythonhosted.org/packages/23/d4/f19d13b2598cf35c961841cb981abb85c9f8cfc95fe4ba56c8feeadf30e3/vizable-0.9.0.tar.gz
+[2024-04-28 07:20:55] INFO root fetch - processPackages [VizAble]: executing diffoscope
+[2024-04-28 07:20:55] INFO root fetch - processPackages [VizAble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vizable-0.8.0.tar.gz tmp/vizable-0.9.0.tar.gz --markdown 20240428/V/VizAble/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 07:20:56] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.8.0.tar.gz]
+[2024-04-28 07:20:56] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.9.0.tar.gz]
+[2024-04-28 07:20:56] INFO root fetch - main [MainThread]: End processing [VizAble]: success
+[2024-04-28 07:20:56] INFO root fetch - main [MainThread]: Store serial: [22964224]
