@@ -15450,3 +15450,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:58:35] INFO root fetch - processPackages [misspy]: Remove: archive file [/home/abi/fetcher/tmp/misspy-2024.4.0.tar.gz]
 [2024-04-28 19:58:35] INFO root fetch - main [MainThread]: End processing [misspy]: success
 [2024-04-28 19:58:35] INFO root fetch - main [MainThread]: Store serial: [22968644]
+[2024-04-28 20:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968644]
+[2024-04-28 20:00:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 20:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fasttemplate
+[2024-04-28 20:00:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: REaLTabFormer
+[2024-04-28 20:00:45] WARNING root fetch - processPackages [fasttemplate]: Skipping, unable to determine old version
+[2024-04-28 20:00:45] INFO root fetch - main [MainThread]: End processing [fasttemplate] error
+[2024-04-28 20:00:45] INFO root fetch - processPackages [REaLTabFormer]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 20:00:45] INFO root fetch - processPackages [REaLTabFormer]: Downloading https://files.pythonhosted.org/packages/5c/7a/7cef608ff1ee170766c1e35818005c2157fd44f19aba86f2935f892fd9e7/REaLTabFormer-0.1.6.tar.gz
+[2024-04-28 20:00:45] INFO root fetch - processPackages [REaLTabFormer]: Downloading https://files.pythonhosted.org/packages/39/ae/a0ba0056bbd57464d3d9aaa9372e25e73ee704d7987da7857837cd0f2ad6/REaLTabFormer-0.1.7.tar.gz
+[2024-04-28 20:00:45] INFO root fetch - processPackages [REaLTabFormer]: executing diffoscope
+[2024-04-28 20:00:45] INFO root fetch - processPackages [REaLTabFormer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/REaLTabFormer-0.1.6.tar.gz tmp/REaLTabFormer-0.1.7.tar.gz --markdown 20240428/R/REaLTabFormer/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 20:00:46] INFO root fetch - processPackages [REaLTabFormer]: Remove: archive file [/home/abi/fetcher/tmp/REaLTabFormer-0.1.6.tar.gz]
+[2024-04-28 20:00:46] INFO root fetch - processPackages [REaLTabFormer]: Remove: archive file [/home/abi/fetcher/tmp/REaLTabFormer-0.1.7.tar.gz]
+[2024-04-28 20:00:46] INFO root fetch - main [MainThread]: End processing [REaLTabFormer]: success
+[2024-04-28 20:00:46] INFO root fetch - main [MainThread]: Store serial: [22968655]
