@@ -17246,3 +17246,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:00:54] INFO root fetch - processPackages [aioecopanel]: Remove: archive file [/home/abi/fetcher/tmp/aioecopanel-0.0.9.tar.gz]
 [2024-04-28 22:00:54] INFO root fetch - main [MainThread]: End processing [aioecopanel]: success
 [2024-04-28 22:00:54] INFO root fetch - main [MainThread]: Store serial: [22969461]
+[2024-04-28 22:02:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969461]
+[2024-04-28 22:03:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-28 22:03:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mke-sculib
+[2024-04-28 22:03:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-simulator-xiuxian
+[2024-04-28 22:03:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: specifipy
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gppt
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Simba-UW-tf-dev
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: indipyclient
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quasarpy
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cramjam
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: satip
+[2024-04-28 22:03:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: satip
+[2024-04-28 22:03:03] INFO root fetch - processPackages [quasarpy]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.91.2] Old Version: [1.91.1]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [mke-sculib]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: New version: [0.5.34] Old Version: [0.5.31]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [specifipy]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [indipyclient]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [gppt]: New version: [4.1.0] Old Version: [4.0.1]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/dd/e9/6645ddebb2bd976739bf7fda43996766a67244875a7282a4adcd4664f5dc/quasarpy-0.1.4.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/c3/e8/b3c5caf4db2b47fab258763e006a81315f49cf587e12e65aa7025968b03f/satip-2.9.8.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/c3/e8/b3c5caf4db2b47fab258763e006a81315f49cf587e12e65aa7025968b03f/satip-2.9.8.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/81/e0/874e4e916fdb210223bf2fd4eb1aa38c42a6c47d9b49eda9a47403c8d411/Simba-UW-tf-dev-1.91.1.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [cramjam]: New version: [2.8.4rc1] Old Version: [2.8.3rc1]
+[2024-04-28 22:03:03] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/28/6f/5a8a74a4a90dd979c9dbf12a2be6ebad47fb416d552bd1716cc0bd0b839a/mke_sculib-2.3.8.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Downloading https://files.pythonhosted.org/packages/e9/6a/9d6a3ab8606b2850cdf1b9c920d041808c9d1674a5121ea7297e5bd35d80/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [specifipy]: Downloading https://files.pythonhosted.org/packages/df/37/52d0c80db3a41d5e1dee55f2b1f04fd2cc0801e07db051c3c1b43e7d23ff/specifipy-0.1.6.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/e8/d8/f57b733d539d96f3575b97c5c90e803ae460391c819b4da8e29473d548d2/indipyclient-0.0.8.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [gppt]: Downloading https://files.pythonhosted.org/packages/98/0a/b9f77f4a496c49ed4543bf7fa1a3045c1f8f20352a6a28a10fa0b968d4b5/gppt-4.0.1.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/06/5b/8bd6eec7428e98b330d6546e21261944d9361dcedd4e96b25bee4a5ee145/satip-2.9.9.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/06/5b/8bd6eec7428e98b330d6546e21261944d9361dcedd4e96b25bee4a5ee145/satip-2.9.9.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [cramjam]: Downloading https://files.pythonhosted.org/packages/22/e0/a00f6c8e9ca06f2adb35b7a03225f7f172570812ed44b96aa2e0f71ceed7/cramjam-2.8.3rc1.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: executing diffoscope
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satip-2.9.8.tar.gz tmp/satip-2.9.9.tar.gz --markdown 20240428/s/satip/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: executing diffoscope
+[2024-04-28 22:03:03] INFO root fetch - processPackages [satip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satip-2.9.8.tar.gz tmp/satip-2.9.9.tar.gz --markdown 20240428/s/satip/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-28 22:03:03] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/58/7c/cb1ab606be080c5296afe5ff674f42a4122c31250809d67b7568b542ad5c/quasarpy-0.1.5.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/24/7b/22f6af7c3f35972507cbc76f38a0351b4d69f0fd5983dc714daaa2691fb3/mke_sculib-2.3.9.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Downloading https://files.pythonhosted.org/packages/29/33/5708e15a04b57a013db197dd0a224078f9d1a6cb74b81eb654616d8d3c7b/nonebot_plugin_simulator_xiuxian-0.5.34.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [specifipy]: Downloading https://files.pythonhosted.org/packages/7e/fc/8d255a7c17a4a4a3bdf6a1abca300548cac3eaec541252e007fef7ffbfca/specifipy-0.2.0.tar.gz
+[2024-04-28 22:03:03] INFO root fetch - processPackages [gppt]: Downloading https://files.pythonhosted.org/packages/42/98/ee774e24be91e6f198d0aa30565db69d018bed01cdc2a7d97008906d0534/gppt-4.1.0.tar.gz
+[2024-04-28 22:03:04] INFO root fetch - processPackages [indipyclient]: Downloading https://files.pythonhosted.org/packages/41/f3/a1c668710dce8039ab803341738a38d2aea71e16b4a6e28d16ec385e8711/indipyclient-0.0.9.tar.gz
+[2024-04-28 22:03:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/30/78/1bd992bfaf498687888d0c1e14f870d3ae9de4b3d2fda6729f174fc780fa/Simba-UW-tf-dev-1.91.2.tar.gz
+[2024-04-28 22:03:04] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.3.8.tar.gz tmp/mke_sculib-2.3.9.tar.gz --markdown 20240428/m/mke-sculib/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [specifipy]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [specifipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specifipy-0.1.6.tar.gz tmp/specifipy-0.2.0.tar.gz --markdown 20240428/s/specifipy/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [gppt]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [gppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gppt-4.0.1.tar.gz tmp/gppt-4.1.0.tar.gz --markdown 20240428/g/gppt/4.0.1-4.1.0/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [indipyclient]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [indipyclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indipyclient-0.0.8.tar.gz tmp/indipyclient-0.0.9.tar.gz --markdown 20240428/i/indipyclient/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz tmp/nonebot_plugin_simulator_xiuxian-0.5.34.tar.gz --markdown 20240428/n/nonebot-plugin-simulator-xiuxian/0.5.31-0.5.34/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [quasarpy]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [quasarpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quasarpy-0.1.4.tar.gz tmp/quasarpy-0.1.5.tar.gz --markdown 20240428/q/quasarpy/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-04-28 22:03:04] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.91.1.tar.gz tmp/Simba-UW-tf-dev-1.91.2.tar.gz --markdown 20240428/S/Simba-UW-tf-dev/1.91.1-1.91.2/README.md --exclude *.pyd
+[2024-04-28 22:03:04] INFO root fetch - processPackages [cramjam]: Downloading https://files.pythonhosted.org/packages/16/7a/12f9cfc4c1aaeeb3d4fc413f98e6f70ca46e5cf2bc8200250546bc51ccbb/cramjam-2.8.4rc1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-28 22:03:04] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.8.tar.gz]
+[2024-04-28 22:03:04] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.9.tar.gz]
+[2024-04-28 22:03:04] INFO root fetch - processPackages [satip]: Start processing: reorder-python-imports-black
+[2024-04-28 22:03:04] INFO root fetch - main [MainThread]: End processing [satip]: success
+[2024-04-28 22:03:04] INFO root fetch - main [MainThread]: End processing [satip]: success
+[2024-04-28 22:03:04] WARNING root fetch - processPackages [reorder-python-imports-black]: Skipping, unable to determine old version
+[2024-04-28 22:03:04] INFO root fetch - main [MainThread]: End processing [reorder-python-imports-black] error
+[2024-04-28 22:03:05] INFO root fetch - processPackages [specifipy]: Remove: archive file [/home/abi/fetcher/tmp/specifipy-0.1.6.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [specifipy]: Remove: archive file [/home/abi/fetcher/tmp/specifipy-0.2.0.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [specifipy]: success
+[2024-04-28 22:03:05] INFO root fetch - processPackages [gppt]: Remove: archive file [/home/abi/fetcher/tmp/gppt-4.0.1.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [gppt]: Remove: archive file [/home/abi/fetcher/tmp/gppt-4.1.0.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [gppt]: success
+[2024-04-28 22:03:05] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.3.8.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.3.9.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-04-28 22:03:05] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.4.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.5.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
+[2024-04-28 22:03:05] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.8.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [indipyclient]: Remove: archive file [/home/abi/fetcher/tmp/indipyclient-0.0.9.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [indipyclient]: success
+[2024-04-28 22:03:05] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_simulator_xiuxian-0.5.31.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - processPackages [nonebot-plugin-simulator-xiuxian]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_simulator_xiuxian-0.5.34.tar.gz]
+[2024-04-28 22:03:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-simulator-xiuxian]: success
+[2024-04-28 22:03:07] INFO root fetch - processPackages [cramjam]: executing diffoscope
+[2024-04-28 22:03:07] INFO root fetch - processPackages [cramjam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cramjam-2.8.3rc1.tar.gz tmp/cramjam-2.8.4rc1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240428/c/cramjam/2.8.3rc1-2.8.4rc1/README.md --exclude *.pyd
+[2024-04-28 22:03:07] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.1.tar.gz]
+[2024-04-28 22:03:07] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.2.tar.gz]
+[2024-04-28 22:03:07] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-04-28 22:03:07] INFO root fetch - processPackages [cramjam]: Remove: archive file [/home/abi/fetcher/tmp/cramjam-2.8.3rc1.tar.gz]
+[2024-04-28 22:03:07] INFO root fetch - processPackages [cramjam]: Remove: archive file [/home/abi/fetcher/tmp/cramjam-2.8.4rc1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-28 22:03:07] INFO root fetch - main [MainThread]: End processing [cramjam]: success
+[2024-04-28 22:03:07] INFO root fetch - main [MainThread]: Store serial: [22969543]
