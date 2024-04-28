@@ -4645,3 +4645,31 @@
 [2024-04-28 07:03:34] INFO root fetch - processPackages [CachedFileDic]: Remove: archive file [/home/abi/fetcher/tmp/CachedFileDic-0.2.4.tar.gz]
 [2024-04-28 07:03:34] INFO root fetch - main [MainThread]: End processing [CachedFileDic]: success
 [2024-04-28 07:03:34] INFO root fetch - main [MainThread]: Store serial: [22964123]
+[2024-04-28 07:05:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964123]
+[2024-04-28 07:05:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer
+[2024-04-28 07:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapid-pe
+[2024-04-28 07:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-explorer
+[2024-04-28 07:05:42] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240427] Old Version: [0.1.2.dev20240426]
+[2024-04-28 07:05:42] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/83/1c/2332421f5a29c438f869867bde7426fe93e9b8e690d816580d3ca7f54240/rapid_pe-0.1.2.dev20240426.tar.gz
+[2024-04-28 07:05:42] INFO root fetch - processPackages [model-explorer]: New version: [0.0.79] Old Version: [0.0.78]
+[2024-04-28 07:05:42] INFO root fetch - processPackages [model-explorer]: New version: [0.0.79] Old Version: [0.0.78]
+[2024-04-28 07:05:43] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/b4/30/c0d8f0982b09088e69900f69aa37844ff942c2f2e6b1d085aeb097310531/rapid_pe-0.1.2.dev20240427.tar.gz
+[2024-04-28 07:05:43] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/69/81/2fbe0fa7a7d8551c6a911cb1ce40774eb91c16f42f6c182572b400cf3d86/model_explorer-0.0.78.tar.gz
+[2024-04-28 07:05:43] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/69/81/2fbe0fa7a7d8551c6a911cb1ce40774eb91c16f42f6c182572b400cf3d86/model_explorer-0.0.78.tar.gz
+[2024-04-28 07:05:43] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-04-28 07:05:43] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240426.tar.gz tmp/rapid_pe-0.1.2.dev20240427.tar.gz --markdown 20240428/r/rapid-pe/0.1.2.dev20240426-0.1.2.dev20240427/README.md --exclude *.pyd
+[2024-04-28 07:05:43] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/79/a1/9aa2588b3e004052a8e44897e59b4af3ae071c54d407f876a05da79a6210/model_explorer-0.0.79.tar.gz
+[2024-04-28 07:05:43] INFO root fetch - processPackages [model-explorer]: Downloading https://files.pythonhosted.org/packages/79/a1/9aa2588b3e004052a8e44897e59b4af3ae071c54d407f876a05da79a6210/model_explorer-0.0.79.tar.gz
+[2024-04-28 07:05:43] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240426.tar.gz]
+[2024-04-28 07:05:43] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240427.tar.gz]
+[2024-04-28 07:05:43] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-04-28 07:05:44] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-04-28 07:05:44] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.78.tar.gz tmp/model_explorer-0.0.79.tar.gz --markdown 20240428/m/model-explorer/0.0.78-0.0.79/README.md --exclude *.pyd
+[2024-04-28 07:05:44] INFO root fetch - processPackages [model-explorer]: executing diffoscope
+[2024-04-28 07:05:44] INFO root fetch - processPackages [model-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer-0.0.78.tar.gz tmp/model_explorer-0.0.79.tar.gz --markdown 20240428/m/model-explorer/0.0.78-0.0.79/README.md --exclude *.pyd
+[2024-04-28 07:05:46] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.78.tar.gz]
+[2024-04-28 07:05:46] INFO root fetch - processPackages [model-explorer]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer-0.0.79.tar.gz]
+[2024-04-28 07:05:46] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-04-28 07:05:46] INFO root fetch - main [MainThread]: End processing [model-explorer]: success
+[2024-04-28 07:05:46] INFO root fetch - main [MainThread]: Store serial: [22964132]
