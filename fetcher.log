@@ -5448,3 +5448,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:06:34] INFO root fetch - processPackages [asposecellscloud]: Remove: archive file [/home/abi/fetcher/tmp/asposecellscloud-24.4.tar.gz]
 [2024-04-28 08:06:34] INFO root fetch - main [MainThread]: End processing [asposecellscloud]: success
 [2024-04-28 08:06:34] INFO root fetch - main [MainThread]: Store serial: [22964458]
+[2024-04-28 08:08:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964458]
+[2024-04-28 08:08:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 08:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-rds-dump
+[2024-04-28 08:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-clients
+[2024-04-28 08:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CVE-2021-42063
+[2024-04-28 08:08:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monday-code
+[2024-04-28 08:08:43] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.6] Old Version: [0.0.0.5]
+[2024-04-28 08:08:43] WARNING root fetch - processPackages [CVE-2021-42063]: Skipping, unable to determine old version
+[2024-04-28 08:08:43] INFO root fetch - main [MainThread]: End processing [CVE-2021-42063] error
+[2024-04-28 08:08:43] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/ac/4e/f518b191343f5c384765bc64da556169a95cf5b773c2035aa0bb7daa290b/abstract_clients-0.0.0.5.tar.gz
+[2024-04-28 08:08:43] INFO root fetch - processPackages [monday-code]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 08:08:43] INFO root fetch - processPackages [cdk-rds-dump]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-28 08:08:43] INFO root fetch - processPackages [cdk-rds-dump]: Downloading https://files.pythonhosted.org/packages/3e/e6/06f603436f0450d6ec52323dabbf3913b93aa24db40169a394d2912ff6ba/cdk-rds-dump-2.1.0.tar.gz
+[2024-04-28 08:08:43] INFO root fetch - processPackages [monday-code]: Downloading https://files.pythonhosted.org/packages/7a/6b/302272c645a1043fd318362a225bda4e24bd1e0f874d32131f8ff92b6992/monday_code-0.0.4.tar.gz
+[2024-04-28 08:08:43] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/0d/53/b0479985e95a6a9b232d9cb5043786b7011bfdb05c1b855837d6d7d04671/abstract_clients-0.0.0.6.tar.gz
+[2024-04-28 08:08:44] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 08:08:44] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.5.tar.gz tmp/abstract_clients-0.0.0.6.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.5-0.0.0.6/README.md --exclude *.pyd
+[2024-04-28 08:08:44] INFO root fetch - processPackages [monday-code]: Downloading https://files.pythonhosted.org/packages/a4/09/286e592ec176e3a7e2bba5689a5ba6145fb3a713df236b2b4a77933f528f/monday_code-0.0.5.tar.gz
+[2024-04-28 08:08:44] INFO root fetch - processPackages [cdk-rds-dump]: Downloading https://files.pythonhosted.org/packages/51/f3/7a1627c2a4bc48f1259891a0dcc0ea7115a5de7467ad399432a92ff2cb3c/cdk-rds-dump-2.1.1.tar.gz
+[2024-04-28 08:08:44] INFO root fetch - processPackages [cdk-rds-dump]: executing diffoscope
+[2024-04-28 08:08:44] INFO root fetch - processPackages [cdk-rds-dump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-rds-dump-2.1.0.tar.gz tmp/cdk-rds-dump-2.1.1.tar.gz --markdown 20240428/c/cdk-rds-dump/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-28 08:08:44] INFO root fetch - processPackages [monday-code]: executing diffoscope
+[2024-04-28 08:08:44] INFO root fetch - processPackages [monday-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monday_code-0.0.4.tar.gz tmp/monday_code-0.0.5.tar.gz --markdown 20240428/m/monday-code/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 08:08:44] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.5.tar.gz]
+[2024-04-28 08:08:44] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.6.tar.gz]
+[2024-04-28 08:08:44] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 08:08:44] INFO root fetch - processPackages [monday-code]: Remove: archive file [/home/abi/fetcher/tmp/monday_code-0.0.4.tar.gz]
+[2024-04-28 08:08:44] INFO root fetch - processPackages [monday-code]: Remove: archive file [/home/abi/fetcher/tmp/monday_code-0.0.5.tar.gz]
+[2024-04-28 08:08:44] INFO root fetch - main [MainThread]: End processing [monday-code]: success
+[2024-04-28 08:08:45] INFO root fetch - processPackages [cdk-rds-dump]: Remove: archive file [/home/abi/fetcher/tmp/cdk-rds-dump-2.1.0.tar.gz]
+[2024-04-28 08:08:45] INFO root fetch - processPackages [cdk-rds-dump]: Remove: archive file [/home/abi/fetcher/tmp/cdk-rds-dump-2.1.1.tar.gz]
+[2024-04-28 08:08:45] INFO root fetch - main [MainThread]: End processing [cdk-rds-dump]: success
+[2024-04-28 08:08:45] INFO root fetch - main [MainThread]: Store serial: [22964472]
