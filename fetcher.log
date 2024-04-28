@@ -16455,3 +16455,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:17:06] INFO root fetch - processPackages [langtrace-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/langtrace_python_sdk-2.0.1.tar.gz]
 [2024-04-28 21:17:06] INFO root fetch - main [MainThread]: End processing [langtrace-python-sdk]: success
 [2024-04-28 21:17:06] INFO root fetch - main [MainThread]: Store serial: [22969089]
+[2024-04-28 21:19:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969089]
+[2024-04-28 21:19:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 21:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cubecoders-amp-api-wrapper
+[2024-04-28 21:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hotsos
+[2024-04-28 21:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hotsos
+[2024-04-28 21:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cjunct
+[2024-04-28 21:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: realtime-operator
+[2024-04-28 21:19:16] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: New version: [0.0.41b0] Old Version: [0.0.40b0]
+[2024-04-28 21:19:16] INFO root fetch - processPackages [cjunct]: New version: [2.1.3] Old Version: [2.1.2]
+[2024-04-28 21:19:16] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-28 21:19:16] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-04-28 21:19:16] INFO root fetch - processPackages [realtime-operator]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-28 21:19:16] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Downloading https://files.pythonhosted.org/packages/12/b4/1aab4848a45b9cea4bf3aad02a4645fe20b62c8510d4c7c70a8053f1ecb5/cubecoders_amp_api_wrapper-0.0.40b0.tar.gz
+[2024-04-28 21:19:16] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-28 21:19:16] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-04-28 21:19:16] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/13/6b/c4b03bf7fbf6e0623e796a4ac3325a709f8104a64c875580c5f9d410a26e/cjunct-2.1.2.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/c0/79/face482df493a448147cd39107f7f18f599440e44f6c6cd1206e3c7429ba/realtime_operator-0.2.5.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Downloading https://files.pythonhosted.org/packages/aa/0a/13999936f6234db826c8332659166f69f578c9a0118ba9fa706acdeb6b36/cubecoders_amp_api_wrapper-0.0.41b0.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/24/ef/a3923582fcb9e427443fd7837a3e4dc17e15ae38f8a44cd38abc647a9f4d/cjunct-2.1.3.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [realtime-operator]: Downloading https://files.pythonhosted.org/packages/5f/be/5d4e7a58abd41f3da5b3ecc38f1aa2dfbf7a9e9937802a3a88460caf6262/realtime_operator-0.2.6.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: executing diffoscope
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubecoders_amp_api_wrapper-0.0.40b0.tar.gz tmp/cubecoders_amp_api_wrapper-0.0.41b0.tar.gz --markdown 20240428/c/cubecoders-amp-api-wrapper/0.0.40b0-0.0.41b0/README.md --exclude *.pyd
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cjunct]: executing diffoscope
+[2024-04-28 21:19:17] INFO root fetch - processPackages [cjunct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjunct-2.1.2.tar.gz tmp/cjunct-2.1.3.tar.gz --markdown 20240428/c/cjunct/2.1.2-2.1.3/README.md --exclude *.pyd
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240428/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-04-28 21:19:17] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240428/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-04-28 21:19:17] INFO root fetch - processPackages [realtime-operator]: executing diffoscope
+[2024-04-28 21:19:17] INFO root fetch - processPackages [realtime-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtime_operator-0.2.5.tar.gz tmp/realtime_operator-0.2.6.tar.gz --markdown 20240428/r/realtime-operator/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-28 21:19:18] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.2.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.3.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - main [MainThread]: End processing [cjunct]: success
+[2024-04-28 21:19:18] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/cubecoders_amp_api_wrapper-0.0.40b0.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - processPackages [cubecoders-amp-api-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/cubecoders_amp_api_wrapper-0.0.41b0.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - main [MainThread]: End processing [cubecoders-amp-api-wrapper]: success
+[2024-04-28 21:19:18] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.5.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - processPackages [realtime-operator]: Remove: archive file [/home/abi/fetcher/tmp/realtime_operator-0.2.6.tar.gz]
+[2024-04-28 21:19:18] INFO root fetch - main [MainThread]: End processing [realtime-operator]: success
+[2024-04-28 21:19:19] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-04-28 21:19:19] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-04-28 21:19:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-28 21:19:19] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-04-28 21:19:19] INFO root fetch - main [MainThread]: Store serial: [22969104]
