@@ -12042,3 +12042,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:00:56] INFO root fetch - processPackages [vios]: Remove: archive file [/home/abi/fetcher/tmp/vios-2.3.5-py3-none-any.whl.zip]
 [2024-04-28 16:00:56] INFO root fetch - main [MainThread]: End processing [vios]: success
 [2024-04-28 16:00:56] INFO root fetch - main [MainThread]: Store serial: [22967269]
+[2024-04-28 16:03:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967269]
+[2024-04-28 16:03:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SATO
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-ndb
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-gemini-api
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MedatechUK.APY
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webviewpy
+[2024-04-28 16:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypreql
+[2024-04-28 16:03:16] INFO root fetch - processPackages [MedatechUK.APY]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pytest-ndb]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-04-28 16:03:16] ERROR root fetch - processPackages [webviewpy]: Unable to get metadata: No such project 'webviewpy'
+[2024-04-28 16:03:16] INFO root fetch - main [MainThread]: End processing [webviewpy] error
+[2024-04-28 16:03:16] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/54/66/e44b04686d59238130935715b731408212eda9289254d189b3b770933a45/MedatechUK.APY-0.0.8.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [SATO]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 16:03:16] INFO root fetch - processPackages [python-gemini-api]: New version: [2.4.8] Old Version: [2.4.7]
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pytest-ndb]: Downloading https://files.pythonhosted.org/packages/33/39/86b1533cf6a8cfa244b7d4e919ea3f04517e684be81ec465de188a1c7795/pytest-ndb-0.0.2.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [SATO]: Downloading https://files.pythonhosted.org/packages/7f/80/f93ef27747dd663c3c2c2082b56fab3d1382ef493cf2c94401612c58f7ce/SATO-0.1.5.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [python-gemini-api]: Downloading https://files.pythonhosted.org/packages/88/a5/38a9b7a7f0733c0bfbe3fad690ef9ab517f469da6f579ceaceab6a9c5fae/python_gemini_api-2.4.7.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [MedatechUK.APY]: Downloading https://files.pythonhosted.org/packages/52/05/0fec0481da7efd13dbcc9f6a4f846a517422a23374a1f4e257f08e1315e9/MedatechUK.APY-0.0.9.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/43/b8/2abb29f2547d81aff3f05e6578226b18359897a8e67919d46a46231d0bed/pypreql-0.0.1rc8.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [MedatechUK.APY]: executing diffoscope
+[2024-04-28 16:03:16] INFO root fetch - processPackages [MedatechUK.APY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MedatechUK.APY-0.0.8.tar.gz tmp/MedatechUK.APY-0.0.9.tar.gz --markdown 20240428/M/MedatechUK.APY/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pytest-ndb]: Downloading https://files.pythonhosted.org/packages/06/51/926ef257471d86e86f26bce27b41a7f712485a74344d7560b5c27650f27f/pytest_ndb-1.0.0.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [SATO]: Downloading https://files.pythonhosted.org/packages/f1/52/4d75e9e76f34262c32bea378cb71623ee69fb29566181ca7903438056b03/SATO-0.1.6.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pytest-ndb]: executing diffoscope
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pytest-ndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-ndb-0.0.2.tar.gz tmp/pytest_ndb-1.0.0.tar.gz --markdown 20240428/p/pytest-ndb/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-04-28 16:03:16] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2024-04-28 16:03:16] INFO root fetch - processPackages [SATO]: executing diffoscope
+[2024-04-28 16:03:16] INFO root fetch - processPackages [SATO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SATO-0.1.5.tar.gz tmp/SATO-0.1.6.tar.gz --markdown 20240428/S/SATO/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 16:03:16] INFO root fetch - processPackages [python-gemini-api]: Downloading https://files.pythonhosted.org/packages/df/92/933ff04cb3c679d643c1c60a056f42f9d700aa265c44d69427a5e8379850/python_gemini_api-2.4.8.tar.gz
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20240428/p/pypreql/0.0.1rc8-0.0.1rc9/README.md --exclude *.pyd
+[2024-04-28 16:03:17] INFO root fetch - processPackages [python-gemini-api]: executing diffoscope
+[2024-04-28 16:03:17] INFO root fetch - processPackages [python-gemini-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_gemini_api-2.4.7.tar.gz tmp/python_gemini_api-2.4.8.tar.gz --markdown 20240428/p/python-gemini-api/2.4.7-2.4.8/README.md --exclude *.pyd
+[2024-04-28 16:03:17] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.8.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - processPackages [MedatechUK.APY]: Remove: archive file [/home/abi/fetcher/tmp/MedatechUK.APY-0.0.9.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [MedatechUK.APY]: success
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pytest-ndb]: Remove: archive file [/home/abi/fetcher/tmp/pytest-ndb-0.0.2.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pytest-ndb]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ndb-1.0.0.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [pytest-ndb]: success
+[2024-04-28 16:03:17] INFO root fetch - processPackages [SATO]: Remove: archive file [/home/abi/fetcher/tmp/SATO-0.1.5.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - processPackages [SATO]: Remove: archive file [/home/abi/fetcher/tmp/SATO-0.1.6.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [SATO]: success
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc8.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - processPackages [pypreql]: Remove: archive file [/home/abi/fetcher/tmp/pypreql-0.0.1rc9.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2024-04-28 16:03:17] INFO root fetch - processPackages [python-gemini-api]: Remove: archive file [/home/abi/fetcher/tmp/python_gemini_api-2.4.7.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - processPackages [python-gemini-api]: Remove: archive file [/home/abi/fetcher/tmp/python_gemini_api-2.4.8.tar.gz]
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [python-gemini-api]: success
+[2024-04-28 16:03:17] INFO root fetch - main [MainThread]: Store serial: [22967287]
