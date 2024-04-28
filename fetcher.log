@@ -7395,3 +7395,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:37:42] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
 [2024-04-28 10:37:42] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-28 10:37:42] INFO root fetch - main [MainThread]: Store serial: [22965219]
+[2024-04-28 10:39:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965219]
+[2024-04-28 10:39:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 10:39:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aodotpy
+[2024-04-28 10:39:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PFlowC
+[2024-04-28 10:39:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quickpub
+[2024-04-28 10:39:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tokengeex
+[2024-04-28 10:39:50] INFO root fetch - processPackages [quickpub]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-28 10:39:50] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/8e/77/c4e24d725355a0432a34b1fde68ad70c1593bb6e379ab781b47a115b2b22/quickpub-0.8.1.tar.gz
+[2024-04-28 10:39:50] WARNING root fetch - processPackages [aodotpy]: Skipping, unable to determine old version
+[2024-04-28 10:39:50] INFO root fetch - main [MainThread]: End processing [aodotpy] error
+[2024-04-28 10:39:50] INFO root fetch - processPackages [PFlowC]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-28 10:39:50] INFO root fetch - processPackages [tokengeex]: New version: [1.0.0] Old Version: [0.7.1]
+[2024-04-28 10:39:50] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/5e/08/783f00c434fff4ed1ceddede834d6145836a1bbc36167628a05eeb5d66e9/PFlowC-1.2.0.tar.gz
+[2024-04-28 10:39:50] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/7c/56/496575bb99810167d88ed13168e61ada96c82d0c1df35d2aac60e16a5a20/quickpub-0.8.2.tar.gz
+[2024-04-28 10:39:51] INFO root fetch - processPackages [quickpub]: executing diffoscope
+[2024-04-28 10:39:51] INFO root fetch - processPackages [quickpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickpub-0.8.1.tar.gz tmp/quickpub-0.8.2.tar.gz --markdown 20240428/q/quickpub/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-28 10:39:51] INFO root fetch - processPackages [tokengeex]: Downloading https://files.pythonhosted.org/packages/80/f2/e971cf028fc5b5dd6881c61cfbb3e611ed8ec714fe3bae60fa29fc7e02b6/tokengeex-0.7.1-pp39-pypy39_pp73-musllinux_1_1_x86_64.whl
+[2024-04-28 10:39:51] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/58/c9/db04f85593bb83a491a78b1b001023b7ecf6e3b1470fedd55a7d30420b5e/PFlowC-1.3.0.tar.gz
+[2024-04-28 10:39:51] INFO root fetch - processPackages [PFlowC]: executing diffoscope
+[2024-04-28 10:39:51] INFO root fetch - processPackages [PFlowC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PFlowC-1.2.0.tar.gz tmp/PFlowC-1.3.0.tar.gz --markdown 20240428/P/PFlowC/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-04-28 10:39:51] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.1.tar.gz]
+[2024-04-28 10:39:51] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.2.tar.gz]
+[2024-04-28 10:39:51] INFO root fetch - main [MainThread]: End processing [quickpub]: success
+[2024-04-28 10:39:51] INFO root fetch - processPackages [tokengeex]: Downloading https://files.pythonhosted.org/packages/7c/7d/690eede8d9654043ec50ac4703da04bb54fdc2100456b5d3ae47770668a0/tokengeex-1.0.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl
+[2024-04-28 10:39:51] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.2.0.tar.gz]
+[2024-04-28 10:39:51] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.3.0.tar.gz]
+[2024-04-28 10:39:51] INFO root fetch - main [MainThread]: End processing [PFlowC]: success
+[2024-04-28 10:39:53] INFO root fetch - processPackages [tokengeex]: executing diffoscope
+[2024-04-28 10:39:53] INFO root fetch - processPackages [tokengeex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tokengeex-0.7.1-pp39-pypy39_pp73-musllinux_1_1_x86_64.whl.zip tmp/tokengeex-1.0.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip --markdown 20240428/t/tokengeex/0.7.1-1.0.0/README.md --exclude *.pyd
+[2024-04-28 10:40:11] INFO root fetch - processPackages [tokengeex]: Remove: archive file [/home/abi/fetcher/tmp/tokengeex-0.7.1-pp39-pypy39_pp73-musllinux_1_1_x86_64.whl.zip]
+[2024-04-28 10:40:11] INFO root fetch - processPackages [tokengeex]: Remove: archive file [/home/abi/fetcher/tmp/tokengeex-1.0.0-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
+[2024-04-28 10:40:11] INFO root fetch - main [MainThread]: End processing [tokengeex]: success
+[2024-04-28 10:40:11] INFO root fetch - main [MainThread]: Store serial: [22965256]
