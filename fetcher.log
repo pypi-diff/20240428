@@ -2512,3 +2512,24 @@
 [2024-04-28 03:37:07] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-04-28 03:37:07] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-04-28 03:37:07] INFO root fetch - main [MainThread]: Store serial: [22963235]
+[2024-04-28 03:39:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963235]
+[2024-04-28 03:39:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 03:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: huojiweiguoba
+[2024-04-28 03:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lineagex
+[2024-04-28 03:39:16] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 03:39:16] INFO root fetch - processPackages [lineagex]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 03:39:16] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 03:39:16] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/88/85/7e0ff755a7c52459c314b3cb9341c1f37a0416c369381dcfe8ff6124fab5/lineagex-0.0.8.tar.gz
+[2024-04-28 03:39:17] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 03:39:17] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 03:39:17] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 03:39:17] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 03:39:17] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 03:39:17] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 03:39:17] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/c4/8d/4935610bc014abaef16e58ad6370420a9600a1c2d06ec51384b444af14b1/lineagex-0.0.9.tar.gz
+[2024-04-28 03:39:18] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2024-04-28 03:39:18] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.8.tar.gz tmp/lineagex-0.0.9.tar.gz --markdown 20240428/l/lineagex/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 03:39:19] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.8.tar.gz]
+[2024-04-28 03:39:19] INFO root fetch - processPackages [lineagex]: Remove: archive file [/home/abi/fetcher/tmp/lineagex-0.0.9.tar.gz]
+[2024-04-28 03:39:19] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2024-04-28 03:39:19] INFO root fetch - main [MainThread]: Store serial: [22963255]
