@@ -7188,3 +7188,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:15:45] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.2.0.tar.gz]
 [2024-04-28 10:15:45] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-28 10:15:45] INFO root fetch - main [MainThread]: Store serial: [22965139]
+[2024-04-28 10:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965139]
+[2024-04-28 10:17:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 10:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PFlowC
+[2024-04-28 10:17:54] INFO root fetch - processPackages [PFlowC]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 10:17:55] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/df/dd/e39412d4588d937f15e70269617997ffc380ba384cc48a1d75fd1d3bb637/PFlowC-1.0.0.tar.gz
+[2024-04-28 10:17:55] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/c4/18/19382b69470d37077b58d6fb9b606ace27fe6b8709b94e06333b5029a9d4/PFlowC-1.1.0.tar.gz
+[2024-04-28 10:17:55] INFO root fetch - processPackages [PFlowC]: executing diffoscope
+[2024-04-28 10:17:55] INFO root fetch - processPackages [PFlowC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PFlowC-1.0.0.tar.gz tmp/PFlowC-1.1.0.tar.gz --markdown 20240428/P/PFlowC/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 10:17:56] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.0.0.tar.gz]
+[2024-04-28 10:17:56] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.1.0.tar.gz]
+[2024-04-28 10:17:56] INFO root fetch - main [MainThread]: End processing [PFlowC]: success
+[2024-04-28 10:17:56] INFO root fetch - main [MainThread]: Store serial: [22965142]
