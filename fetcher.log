@@ -9279,3 +9279,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:43:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-28 12:43:30] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-28 12:43:30] INFO root fetch - main [MainThread]: Store serial: [22966104]
+[2024-04-28 12:45:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966104]
+[2024-04-28 12:45:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 12:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DMDO
+[2024-04-28 12:45:40] INFO root fetch - processPackages [DMDO]: New version: [2404] Old Version: [2401]
+[2024-04-28 12:45:40] INFO root fetch - processPackages [DMDO]: Downloading https://files.pythonhosted.org/packages/c9/19/8883438efa867db122c0c8a06ec145d6952e825a2be65e22484bf2147acb/DMDO-2401-py3-none-any.whl
+[2024-04-28 12:45:40] INFO root fetch - processPackages [DMDO]: Downloading https://files.pythonhosted.org/packages/fa/1a/293d1d0cce5f664449f008f3b5939b6b0ae79303d2a31e55337cd9cf9917/DMDO-2404-py3-none-any.whl
+[2024-04-28 12:45:40] INFO root fetch - processPackages [DMDO]: executing diffoscope
+[2024-04-28 12:45:40] INFO root fetch - processPackages [DMDO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DMDO-2401-py3-none-any.whl.zip tmp/DMDO-2404-py3-none-any.whl.zip --markdown 20240428/D/DMDO/2401-2404/README.md --exclude *.pyd
+[2024-04-28 12:45:41] INFO root fetch - processPackages [DMDO]: Remove: archive file [/home/abi/fetcher/tmp/DMDO-2401-py3-none-any.whl.zip]
+[2024-04-28 12:45:41] INFO root fetch - processPackages [DMDO]: Remove: archive file [/home/abi/fetcher/tmp/DMDO-2404-py3-none-any.whl.zip]
+[2024-04-28 12:45:41] INFO root fetch - main [MainThread]: End processing [DMDO]: success
+[2024-04-28 12:45:41] INFO root fetch - main [MainThread]: Store serial: [22966171]
