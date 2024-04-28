@@ -11734,3 +11734,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:34:54] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.8b1.tar.gz]
 [2024-04-28 15:34:54] INFO root fetch - main [MainThread]: End processing [YaraForge]: success
 [2024-04-28 15:34:54] INFO root fetch - main [MainThread]: Store serial: [22967135]
+[2024-04-28 15:37:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967135]
+[2024-04-28 15:37:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 15:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: profilecard
+[2024-04-28 15:37:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deltachat2
+[2024-04-28 15:37:14] INFO root fetch - processPackages [profilecard]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-28 15:37:14] INFO root fetch - processPackages [deltachat2]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-28 15:37:14] INFO root fetch - processPackages [profilecard]: Downloading https://files.pythonhosted.org/packages/ed/32/88318486d964baa715de4acfd53bca31ec031291a2a5d4a5a35bfc1f9a4e/profilecard-1.0.7.tar.gz
+[2024-04-28 15:37:14] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/b1/5b/5a82306176d8fa8c48018f0ba149c6b675a2b54851764ea4bfcb54d98764/deltachat2-0.5.0.tar.gz
+[2024-04-28 15:37:15] INFO root fetch - processPackages [profilecard]: Downloading https://files.pythonhosted.org/packages/34/4e/be35a7fd5bfd1b91a8201505f335ce9f8c5f9e1b6de22c33db63c6ad8427/profilecard-1.0.8.tar.gz
+[2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/c8/81/b286578de3fc8a2d40bea537e81a3093c55d276a73797ca03a5879a80678/deltachat2-0.5.1.tar.gz
+[2024-04-28 15:37:15] INFO root fetch - processPackages [profilecard]: executing diffoscope
+[2024-04-28 15:37:15] INFO root fetch - processPackages [profilecard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profilecard-1.0.7.tar.gz tmp/profilecard-1.0.8.tar.gz --markdown 20240428/p/profilecard/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: executing diffoscope
+[2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat2-0.5.0.tar.gz tmp/deltachat2-0.5.1.tar.gz --markdown 20240428/d/deltachat2/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-28 15:37:15] INFO root fetch - processPackages [profilecard]: Remove: archive file [/home/abi/fetcher/tmp/profilecard-1.0.7.tar.gz]
+[2024-04-28 15:37:15] INFO root fetch - processPackages [profilecard]: Remove: archive file [/home/abi/fetcher/tmp/profilecard-1.0.8.tar.gz]
+[2024-04-28 15:37:15] INFO root fetch - main [MainThread]: End processing [profilecard]: success
+[2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.5.0.tar.gz]
+[2024-04-28 15:37:15] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.5.1.tar.gz]
+[2024-04-28 15:37:15] INFO root fetch - main [MainThread]: End processing [deltachat2]: success
+[2024-04-28 15:37:15] INFO root fetch - main [MainThread]: Store serial: [22967141]
