@@ -9507,3 +9507,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:56:51] INFO root fetch - processPackages [pyqt6-without-qt]: Remove: archive file [/home/abi/fetcher/tmp/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl.zip]
 [2024-04-28 12:56:51] INFO root fetch - main [MainThread]: End processing [pyqt6-without-qt]: success
 [2024-04-28 12:56:51] INFO root fetch - main [MainThread]: Store serial: [22966245]
+[2024-04-28 12:58:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966245]
+[2024-04-28 12:59:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cxalio-studio-tools
+[2024-04-28 12:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynormalizenumexp
+[2024-04-28 12:59:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk-bin-collection
+[2024-04-28 12:59:01] INFO root fetch - processPackages [cxalio-studio-tools]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 12:59:01] INFO root fetch - processPackages [uk-bin-collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 12:59:01] INFO root fetch - processPackages [cxalio-studio-tools]: Downloading https://files.pythonhosted.org/packages/5f/60/7546855a4e4518c7a60abf77232acb51e6676a848ca8560770cfd4bdfa6a/cxalio_studio_tools-0.1.7.tar.gz
+[2024-04-28 12:59:01] INFO root fetch - processPackages [pynormalizenumexp]: New version: [0.3.4] Old Version: [0.3.1]
+[2024-04-28 12:59:01] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-04-28 12:59:01] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/cf/df/b7f75e9b763e674f03f7ee785eb4534e4d1694111c980097a9bea1c562e5/pynormalizenumexp-0.3.1.tar.gz
+[2024-04-28 12:59:02] INFO root fetch - processPackages [cxalio-studio-tools]: Downloading https://files.pythonhosted.org/packages/66/b5/40e237aaad7799ed298d175b5e7a69e7eaca0e934dd1e19551c531d43e9e/cxalio_studio_tools-0.1.8.tar.gz
+[2024-04-28 12:59:02] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-04-28 12:59:02] INFO root fetch - processPackages [cxalio-studio-tools]: executing diffoscope
+[2024-04-28 12:59:02] INFO root fetch - processPackages [cxalio-studio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxalio_studio_tools-0.1.7.tar.gz tmp/cxalio_studio_tools-0.1.8.tar.gz --markdown 20240428/c/cxalio-studio-tools/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 12:59:02] INFO root fetch - processPackages [uk-bin-collection]: executing diffoscope
+[2024-04-28 12:59:02] INFO root fetch - processPackages [uk-bin-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240428/u/uk-bin-collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 12:59:02] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/b8/3b/77db9985858cfdfe63cad88a79ca7cfc124ed4ffd665fee450cf37878378/pynormalizenumexp-0.3.4.tar.gz
+[2024-04-28 12:59:02] INFO root fetch - processPackages [pynormalizenumexp]: executing diffoscope
+[2024-04-28 12:59:02] INFO root fetch - processPackages [pynormalizenumexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynormalizenumexp-0.3.1.tar.gz tmp/pynormalizenumexp-0.3.4.tar.gz --markdown 20240428/p/pynormalizenumexp/0.3.1-0.3.4/README.md --exclude *.pyd
+[2024-04-28 12:59:02] INFO root fetch - processPackages [cxalio-studio-tools]: Remove: archive file [/home/abi/fetcher/tmp/cxalio_studio_tools-0.1.7.tar.gz]
+[2024-04-28 12:59:02] INFO root fetch - processPackages [cxalio-studio-tools]: Remove: archive file [/home/abi/fetcher/tmp/cxalio_studio_tools-0.1.8.tar.gz]
+[2024-04-28 12:59:02] INFO root fetch - main [MainThread]: End processing [cxalio-studio-tools]: success
+[2024-04-28 12:59:03] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.1.tar.gz]
+[2024-04-28 12:59:03] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.4.tar.gz]
+[2024-04-28 12:59:03] INFO root fetch - main [MainThread]: End processing [pynormalizenumexp]: success
+[2024-04-28 12:59:03] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-04-28 12:59:03] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-04-28 12:59:03] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
+[2024-04-28 12:59:03] INFO root fetch - main [MainThread]: Store serial: [22966255]
