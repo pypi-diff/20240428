@@ -13714,3 +13714,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:01:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.7.tar.gz]
 [2024-04-28 18:01:43] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-04-28 18:01:43] INFO root fetch - main [MainThread]: Store serial: [22967919]
+[2024-04-28 18:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967919]
+[2024-04-28 18:03:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymatris
+[2024-04-28 18:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amino.light.py
+[2024-04-28 18:03:52] INFO root fetch - processPackages [amino.light.py]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 18:03:52] INFO root fetch - processPackages [pymatris]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-28 18:03:52] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/5c/3e/d8489b27433ffa96dc31b7386a43d88739bc46424f7904d3079c927969d2/pymatris-0.0.4.tar.gz
+[2024-04-28 18:03:52] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/9f/3c/713eea3bf9132902b3aeda82aaa115ae960b55b959529db42e304637ac83/amino.light.py-0.1.5.tar.gz
+[2024-04-28 18:03:52] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/51/96/59d8b54929644b2fd68d2ab65dcb36a65532610207dcf92c37b707b849ae/pymatris-0.0.6.tar.gz
+[2024-04-28 18:03:52] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/51/9c/afa7249bab4acffdf79b62dcbe076226073bab8f871f25be917fd2a9d982/amino.light.py-0.1.6.tar.gz
+[2024-04-28 18:03:52] INFO root fetch - processPackages [pymatris]: executing diffoscope
+[2024-04-28 18:03:52] INFO root fetch - processPackages [pymatris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatris-0.0.4.tar.gz tmp/pymatris-0.0.6.tar.gz --markdown 20240428/p/pymatris/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-04-28 18:03:52] INFO root fetch - processPackages [amino.light.py]: executing diffoscope
+[2024-04-28 18:03:52] INFO root fetch - processPackages [amino.light.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.light.py-0.1.5.tar.gz tmp/amino.light.py-0.1.6.tar.gz --markdown 20240428/a/amino.light.py/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 18:03:53] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.4.tar.gz]
+[2024-04-28 18:03:53] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.6.tar.gz]
+[2024-04-28 18:03:53] INFO root fetch - main [MainThread]: End processing [pymatris]: success
+[2024-04-28 18:03:53] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.5.tar.gz]
+[2024-04-28 18:03:53] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.1.6.tar.gz]
+[2024-04-28 18:03:53] INFO root fetch - main [MainThread]: End processing [amino.light.py]: success
+[2024-04-28 18:03:53] INFO root fetch - main [MainThread]: Store serial: [22967924]
