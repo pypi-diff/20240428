@@ -16793,3 +16793,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:38:57] INFO root fetch - processPackages [Telethon-v1.24]: Remove: archive file [/home/abi/fetcher/tmp/Telethon-v1.24-1.24.9.tar.gz]
 [2024-04-28 21:38:57] INFO root fetch - main [MainThread]: End processing [Telethon-v1.24]: success
 [2024-04-28 21:38:57] INFO root fetch - main [MainThread]: Store serial: [22969302]
+[2024-04-28 21:41:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969302]
+[2024-04-28 21:41:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-sdk
+[2024-04-28 21:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-04-28 21:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: internet-archive-uploader
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:41:07] INFO root fetch - processPackages [internet-archive-uploader]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [internet-archive-uploader]: Downloading https://files.pythonhosted.org/packages/eb/7a/d39e7bd809b55731448d98a2ee9fbc76d609604678fdf217866c8e6fd314/internet-archive-uploader-1.2.4.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.7] Old Version: [2.1.66]
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/bf/bf/1001c26b650a1ea5b47e8a7cce86b39f2ac6b9706d1426cec8f2701e0009/lusid_sdk-2.1.66.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [internet-archive-uploader]: Downloading https://files.pythonhosted.org/packages/6a/1b/7d379cb1554343bffc7ef8b00f1de85277099ee9b0eec703c85d35538f20/internet_archive_uploader-1.2.5.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:41:07] INFO root fetch - processPackages [internet-archive-uploader]: executing diffoscope
+[2024-04-28 21:41:07] INFO root fetch - processPackages [internet-archive-uploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internet-archive-uploader-1.2.4.tar.gz tmp/internet_archive_uploader-1.2.5.tar.gz --markdown 20240428/i/internet-archive-uploader/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-28 21:41:07] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/ef/9e/cac4eb8acb9b4225644a8ecd621bda7df1f3ecf1d132898e9a3ec1ed6723/lusid_sdk-2.1.7.tar.gz
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 21:41:07] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 21:41:08] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:41:08] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-04-28 21:41:08] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.66.tar.gz tmp/lusid_sdk-2.1.7.tar.gz --markdown 20240428/l/lusid-sdk/2.1.66-2.1.7/README.md --exclude *.pyd
+[2024-04-28 21:41:08] INFO root fetch - processPackages [internet-archive-uploader]: Remove: archive file [/home/abi/fetcher/tmp/internet-archive-uploader-1.2.4.tar.gz]
+[2024-04-28 21:41:08] INFO root fetch - processPackages [internet-archive-uploader]: Remove: archive file [/home/abi/fetcher/tmp/internet_archive_uploader-1.2.5.tar.gz]
+[2024-04-28 21:41:08] INFO root fetch - main [MainThread]: End processing [internet-archive-uploader]: success
+[2024-04-28 21:41:13] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.66.tar.gz]
+[2024-04-28 21:41:13] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.7.tar.gz]
+[2024-04-28 21:41:13] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-04-28 21:41:13] INFO root fetch - main [MainThread]: Store serial: [22969311]
