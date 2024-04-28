@@ -17340,3 +17340,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:03:07] INFO root fetch - processPackages [cramjam]: Remove: archive file [/home/abi/fetcher/tmp/cramjam-2.8.4rc1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-28 22:03:07] INFO root fetch - main [MainThread]: End processing [cramjam]: success
 [2024-04-28 22:03:07] INFO root fetch - main [MainThread]: Store serial: [22969543]
+[2024-04-28 22:05:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969543]
+[2024-04-28 22:05:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 22:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indexify-extractor-sdk
+[2024-04-28 22:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cocoon-data
+[2024-04-28 22:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xiuxian-back
+[2024-04-28 22:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioecopanel
+[2024-04-28 22:05:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xiuxian-bank
+[2024-04-28 22:05:16] INFO root fetch - processPackages [aioecopanel]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 22:05:16] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 22:05:16] INFO root fetch - processPackages [xiuxian-back]: New version: [0.30] Old Version: [0.13]
+[2024-04-28 22:05:16] INFO root fetch - processPackages [xiuxian-bank]: New version: [0.30] Old Version: [0.12]
+[2024-04-28 22:05:16] INFO root fetch - processPackages [aioecopanel]: Downloading https://files.pythonhosted.org/packages/70/41/2e3cbeb4e4ebbb919e2808d31063987a5c00477d0b8274017b11d4517b5f/aioecopanel-0.0.8.tar.gz
+[2024-04-28 22:05:16] INFO root fetch - processPackages [indexify-extractor-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 22:05:16] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/25/fb/8dcfb1ddf593ada77ca7aebff3d9add072c6922c5b3efddeb31e991f5968/indexify-extractor-sdk-0.0.8.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-bank]: Downloading https://files.pythonhosted.org/packages/db/f6/355c15c3f3093c99e9315614c937d24b2549a65d39fd5d7d3c2f5c75a754/xiuxian_bank-0.12.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-back]: Downloading https://files.pythonhosted.org/packages/6d/34/38528a95bfe5bed4519c801cabfc29750c0ec8ed3472644ccd646cfa3f8b/xiuxian_back-0.13.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [aioecopanel]: Downloading https://files.pythonhosted.org/packages/f7/62/8fce3fa77805410a51eb082b823bc360df8aadacd46762b58f823582c1c7/aioecopanel-0.0.9.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [aioecopanel]: executing diffoscope
+[2024-04-28 22:05:17] INFO root fetch - processPackages [aioecopanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioecopanel-0.0.8.tar.gz tmp/aioecopanel-0.0.9.tar.gz --markdown 20240428/a/aioecopanel/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 22:05:17] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-28 22:05:17] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240428/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 22:05:17] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/6b/69/1a816cb64f283ffbd7a285fc0aacdf84a8f4bc7214eaab78ac42be5e93ba/indexify-extractor-sdk-0.0.9.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-back]: Downloading https://files.pythonhosted.org/packages/9f/81/97bbd1fef4987613be96c49fa38bd21d8bbc75f966e1920ed1c4e3245b13/xiuxian_back-0.30.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-bank]: Downloading https://files.pythonhosted.org/packages/c2/13/bb43932b06cb4d5125484d08401b8e9174bb8052dbac0fcc8d435fb98c90/xiuxian_bank-0.30.tar.gz
+[2024-04-28 22:05:17] INFO root fetch - processPackages [indexify-extractor-sdk]: executing diffoscope
+[2024-04-28 22:05:17] INFO root fetch - processPackages [indexify-extractor-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-extractor-sdk-0.0.8.tar.gz tmp/indexify-extractor-sdk-0.0.9.tar.gz --markdown 20240428/i/indexify-extractor-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-back]: executing diffoscope
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-back]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiuxian_back-0.13.tar.gz tmp/xiuxian_back-0.30.tar.gz --markdown 20240428/x/xiuxian-back/0.13-0.30/README.md --exclude *.pyd
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-bank]: executing diffoscope
+[2024-04-28 22:05:17] INFO root fetch - processPackages [xiuxian-bank]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiuxian_bank-0.12.tar.gz tmp/xiuxian_bank-0.30.tar.gz --markdown 20240428/x/xiuxian-bank/0.12-0.30/README.md --exclude *.pyd
+[2024-04-28 22:05:17] INFO root fetch - processPackages [aioecopanel]: Remove: archive file [/home/abi/fetcher/tmp/aioecopanel-0.0.8.tar.gz]
+[2024-04-28 22:05:17] INFO root fetch - processPackages [aioecopanel]: Remove: archive file [/home/abi/fetcher/tmp/aioecopanel-0.0.9.tar.gz]
+[2024-04-28 22:05:17] INFO root fetch - main [MainThread]: End processing [aioecopanel]: success
+[2024-04-28 22:05:18] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-28 22:05:18] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.8.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.9.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - main [MainThread]: End processing [indexify-extractor-sdk]: success
+[2024-04-28 22:05:18] INFO root fetch - processPackages [xiuxian-back]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_back-0.13.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - processPackages [xiuxian-back]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_back-0.30.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - main [MainThread]: End processing [xiuxian-back]: success
+[2024-04-28 22:05:18] INFO root fetch - processPackages [xiuxian-bank]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_bank-0.12.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - processPackages [xiuxian-bank]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_bank-0.30.tar.gz]
+[2024-04-28 22:05:18] INFO root fetch - main [MainThread]: End processing [xiuxian-bank]: success
+[2024-04-28 22:05:18] INFO root fetch - main [MainThread]: Store serial: [22969592]
