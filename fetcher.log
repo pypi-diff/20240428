@@ -3401,3 +3401,17 @@
 [2024-04-28 05:08:48] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.0.tar.gz]
 [2024-04-28 05:08:48] INFO root fetch - main [MainThread]: End processing [mns-common]: success
 [2024-04-28 05:08:48] INFO root fetch - main [MainThread]: Store serial: [22963685]
+[2024-04-28 05:10:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963685]
+[2024-04-28 05:10:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 05:12:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963685]
+[2024-04-28 05:13:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 05:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IslandSheds
+[2024-04-28 05:13:02] INFO root fetch - processPackages [IslandSheds]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-04-28 05:13:03] INFO root fetch - processPackages [IslandSheds]: Downloading https://files.pythonhosted.org/packages/f9/b8/061908f87357d9f771abdbcd40839b4ea6f8fada6ee844a5c9b89d6109fc/IslandSheds-0.0.13.tar.gz
+[2024-04-28 05:13:03] INFO root fetch - processPackages [IslandSheds]: Downloading https://files.pythonhosted.org/packages/c7/da/e2ed85a62befa7991e8d9d89e4c05c8517c90eb72d8b299300ceb8a29dcd/IslandSheds-0.0.14.tar.gz
+[2024-04-28 05:13:03] INFO root fetch - processPackages [IslandSheds]: executing diffoscope
+[2024-04-28 05:13:03] INFO root fetch - processPackages [IslandSheds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IslandSheds-0.0.13.tar.gz tmp/IslandSheds-0.0.14.tar.gz --markdown 20240428/I/IslandSheds/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-04-28 05:13:04] INFO root fetch - processPackages [IslandSheds]: Remove: archive file [/home/abi/fetcher/tmp/IslandSheds-0.0.13.tar.gz]
+[2024-04-28 05:13:04] INFO root fetch - processPackages [IslandSheds]: Remove: archive file [/home/abi/fetcher/tmp/IslandSheds-0.0.14.tar.gz]
+[2024-04-28 05:13:04] INFO root fetch - main [MainThread]: End processing [IslandSheds]: success
+[2024-04-28 05:13:04] INFO root fetch - main [MainThread]: Store serial: [22963688]
