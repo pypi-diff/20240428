@@ -4871,3 +4871,18 @@
 [2024-04-28 07:25:14] INFO root fetch - processPackages [sdeper]: Remove: archive file [/home/abi/fetcher/tmp/sdeper-1.2.0.tar.gz]
 [2024-04-28 07:25:14] INFO root fetch - main [MainThread]: End processing [sdeper]: success
 [2024-04-28 07:25:14] INFO root fetch - main [MainThread]: Store serial: [22964242]
+[2024-04-28 07:27:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964242]
+[2024-04-28 07:27:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 07:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micromanubot
+[2024-04-28 07:27:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agate
+[2024-04-28 07:27:23] WARNING root fetch - processPackages [micromanubot]: Skipping, unable to determine old version
+[2024-04-28 07:27:23] INFO root fetch - main [MainThread]: End processing [micromanubot] error
+[2024-04-28 07:27:23] INFO root fetch - processPackages [agate]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-28 07:27:23] INFO root fetch - processPackages [agate]: Downloading https://files.pythonhosted.org/packages/61/e4/40decc7f8c851281e7196a89170a7560ae3bae7b2dd7c3f44fd75eac6ff5/agate-1.9.0.tar.gz
+[2024-04-28 07:27:24] INFO root fetch - processPackages [agate]: Downloading https://files.pythonhosted.org/packages/29/77/6f5df1c68bf056f5fdefc60ccc616303c6211e71cd6033c830c12735f605/agate-1.9.1.tar.gz
+[2024-04-28 07:27:24] INFO root fetch - processPackages [agate]: executing diffoscope
+[2024-04-28 07:27:24] INFO root fetch - processPackages [agate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agate-1.9.0.tar.gz tmp/agate-1.9.1.tar.gz --markdown 20240428/a/agate/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-28 07:27:25] INFO root fetch - processPackages [agate]: Remove: archive file [/home/abi/fetcher/tmp/agate-1.9.0.tar.gz]
+[2024-04-28 07:27:25] INFO root fetch - processPackages [agate]: Remove: archive file [/home/abi/fetcher/tmp/agate-1.9.1.tar.gz]
+[2024-04-28 07:27:25] INFO root fetch - main [MainThread]: End processing [agate]: success
+[2024-04-28 07:27:25] INFO root fetch - main [MainThread]: Store serial: [22964250]
