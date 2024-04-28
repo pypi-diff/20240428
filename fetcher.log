@@ -9126,3 +9126,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:34:37] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.7.tar.gz]
 [2024-04-28 12:34:37] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
 [2024-04-28 12:34:37] INFO root fetch - main [MainThread]: Store serial: [22966028]
+[2024-04-28 12:36:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966028]
+[2024-04-28 12:36:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 12:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: studcamp-yandex-hse
+[2024-04-28 12:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EcoStock
+[2024-04-28 12:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyPulseHeatPipe
+[2024-04-28 12:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talisman-interfaces
+[2024-04-28 12:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: talisman-tools
+[2024-04-28 12:36:46] INFO root fetch - processPackages [talisman-tools]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-28 12:36:46] INFO root fetch - processPackages [talisman-interfaces]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-28 12:36:46] INFO root fetch - processPackages [EcoStock]: New version: [0.2] Old Version: [0.1]
+[2024-04-28 12:36:46] INFO root fetch - processPackages [PyPulseHeatPipe]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-28 12:36:46] WARNING root fetch - processPackages [studcamp-yandex-hse]: Skipping, unable to determine old version
+[2024-04-28 12:36:46] INFO root fetch - main [MainThread]: End processing [studcamp-yandex-hse] error
+[2024-04-28 12:36:46] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/2f/7a/0a1ea44881677f62e849ec14d6e77221012180249e36287f5ca73310e643/talisman-tools-0.6.4.tar.gz
+[2024-04-28 12:36:46] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/8e/01/e498a54183784200c30b6cbe778ce87d36040260f5914bead0fc9bacd95a/EcoStock-0.1.tar.gz
+[2024-04-28 12:36:46] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/a8/5c/c59c6c9461501b32836b220754c3c35f23aa069abc6855366a5a30e502e9/talisman-interfaces-0.5.3.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/01/dc/757cfcfef2cd1ac52558aa0cbb82f69dd37c34dc783354e224420121b4ef/PyPulseHeatPipe-1.0.3.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/3f/7c/cde437140d965e1bfb8fc7ce698128681ae2cd0479785917a789c469dc2f/talisman-tools-0.6.5.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/f7/9d/136b32849ed7f854cc14f86df4180e7e7465ecad7f2bd6e46075a8ce2be6/talisman-interfaces-0.5.4.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [EcoStock]: Downloading https://files.pythonhosted.org/packages/53/bc/c2f7c884974e47b6ea3c54945ed5c0f30881d6853ba2d730b2b39266c799/EcoStock-0.2.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-interfaces]: executing diffoscope
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-interfaces-0.5.3.tar.gz tmp/talisman-interfaces-0.5.4.tar.gz --markdown 20240428/t/talisman-interfaces/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-tools]: executing diffoscope
+[2024-04-28 12:36:47] INFO root fetch - processPackages [talisman-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-tools-0.6.4.tar.gz tmp/talisman-tools-0.6.5.tar.gz --markdown 20240428/t/talisman-tools/0.6.4-0.6.5/README.md --exclude *.pyd
+[2024-04-28 12:36:47] INFO root fetch - processPackages [EcoStock]: executing diffoscope
+[2024-04-28 12:36:47] INFO root fetch - processPackages [EcoStock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EcoStock-0.1.tar.gz tmp/EcoStock-0.2.tar.gz --markdown 20240428/E/EcoStock/0.1-0.2/README.md --exclude *.pyd
+[2024-04-28 12:36:47] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/5a/f7/fb70c37f4e8bd21e76140568263e3b36a864a801da2f8c883e4d70bf7b60/PyPulseHeatPipe-1.0.4.tar.gz
+[2024-04-28 12:36:47] INFO root fetch - processPackages [PyPulseHeatPipe]: executing diffoscope
+[2024-04-28 12:36:47] INFO root fetch - processPackages [PyPulseHeatPipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPulseHeatPipe-1.0.3.tar.gz tmp/PyPulseHeatPipe-1.0.4.tar.gz --markdown 20240428/P/PyPulseHeatPipe/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-28 12:36:48] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.1.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - processPackages [EcoStock]: Remove: archive file [/home/abi/fetcher/tmp/EcoStock-0.2.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - main [MainThread]: End processing [EcoStock]: success
+[2024-04-28 12:36:48] INFO root fetch - processPackages [talisman-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/talisman-interfaces-0.5.3.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - processPackages [talisman-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/talisman-interfaces-0.5.4.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - main [MainThread]: End processing [talisman-interfaces]: success
+[2024-04-28 12:36:48] INFO root fetch - processPackages [talisman-tools]: Remove: archive file [/home/abi/fetcher/tmp/talisman-tools-0.6.4.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - processPackages [talisman-tools]: Remove: archive file [/home/abi/fetcher/tmp/talisman-tools-0.6.5.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - main [MainThread]: End processing [talisman-tools]: success
+[2024-04-28 12:36:48] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.3.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.4.tar.gz]
+[2024-04-28 12:36:48] INFO root fetch - main [MainThread]: End processing [PyPulseHeatPipe]: success
+[2024-04-28 12:36:48] INFO root fetch - main [MainThread]: Store serial: [22966065]
