@@ -13543,3 +13543,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:48:38] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
 [2024-04-28 17:48:38] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
 [2024-04-28 17:48:38] INFO root fetch - main [MainThread]: Store serial: [22967836]
+[2024-04-28 17:50:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967836]
+[2024-04-28 17:50:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 17:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: conf-root
+[2024-04-28 17:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modern-greek-inflexion
+[2024-04-28 17:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CodeBat
+[2024-04-28 17:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odk-tools
+[2024-04-28 17:50:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lnurl-nostr1
+[2024-04-28 17:50:46] INFO root fetch - processPackages [CodeBat]: New version: [0.1] Old Version: [0.0.2.6]
+[2024-04-28 17:50:46] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/21/78/d7a8dabc9004a76854c4a2d1332cbd4ef2e3ff6e7e9a91b9e7ccf7e51fbe/codebat-0.0.2.6.tar.gz
+[2024-04-28 17:50:46] INFO root fetch - processPackages [conf-root]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-28 17:50:46] WARNING root fetch - processPackages [lnurl-nostr1]: Skipping, unable to determine old version
+[2024-04-28 17:50:46] INFO root fetch - main [MainThread]: End processing [lnurl-nostr1] error
+[2024-04-28 17:50:46] INFO root fetch - processPackages [odk-tools]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 17:50:47] INFO root fetch - processPackages [modern-greek-inflexion]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-28 17:50:47] INFO root fetch - processPackages [conf-root]: Downloading https://files.pythonhosted.org/packages/c0/f6/f5186fa9bad1699361815ea6d48ef03a5ff66605a6b9c0a109762d76509d/conf_root-0.1.2.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [odk-tools]: Downloading https://files.pythonhosted.org/packages/b3/9f/b18896f99889fbb236c43d6c958526730711accfe3b1fc5e02354b202222/odk_tools-0.1.3.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/cf/0d/c74671ed5c99d8d2baca70da27bd5793757a6cc317ea05763666d40f0a85/modern_greek_inflexion-2.0.4.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [CodeBat]: Downloading https://files.pythonhosted.org/packages/b5/d2/cebe25237ea88942c01228407431be1c24f5c638b2ecfdd302d57b59458e/codebat-0.1.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [CodeBat]: executing diffoscope
+[2024-04-28 17:50:47] INFO root fetch - processPackages [CodeBat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codebat-0.0.2.6.tar.gz tmp/codebat-0.1.tar.gz --markdown 20240428/C/CodeBat/0.0.2.6-0.1/README.md --exclude *.pyd
+[2024-04-28 17:50:47] INFO root fetch - processPackages [conf-root]: Downloading https://files.pythonhosted.org/packages/2b/26/773bedb9c43e2a7a2a9db1848a6635804910147c5299127afdf00ea9409b/conf_root-0.2.0.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [odk-tools]: Downloading https://files.pythonhosted.org/packages/2e/f4/14bfff81f0f46d94e3d4bbdf3cf11f88bbc878a40602776f7b0cedd38c15/odk_tools-0.1.4.tar.gz
+[2024-04-28 17:50:47] INFO root fetch - processPackages [odk-tools]: executing diffoscope
+[2024-04-28 17:50:47] INFO root fetch - processPackages [odk-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odk_tools-0.1.3.tar.gz tmp/odk_tools-0.1.4.tar.gz --markdown 20240428/o/odk-tools/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 17:50:47] INFO root fetch - processPackages [conf-root]: executing diffoscope
+[2024-04-28 17:50:47] INFO root fetch - processPackages [conf-root]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conf_root-0.1.2.tar.gz tmp/conf_root-0.2.0.tar.gz --markdown 20240428/c/conf-root/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-28 17:50:47] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/20/85/7b3ceccbd74099e564d9cf1315ad7cac1f174ff25c55513dd44e760b3dde/modern_greek_inflexion-2.0.5.tar.gz
+[2024-04-28 17:50:48] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.0.2.6.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - processPackages [CodeBat]: Remove: archive file [/home/abi/fetcher/tmp/codebat-0.1.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - main [MainThread]: End processing [CodeBat]: success
+[2024-04-28 17:50:48] INFO root fetch - processPackages [conf-root]: Remove: archive file [/home/abi/fetcher/tmp/conf_root-0.1.2.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - processPackages [conf-root]: Remove: archive file [/home/abi/fetcher/tmp/conf_root-0.2.0.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - main [MainThread]: End processing [conf-root]: success
+[2024-04-28 17:50:48] INFO root fetch - processPackages [odk-tools]: Remove: archive file [/home/abi/fetcher/tmp/odk_tools-0.1.3.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - processPackages [odk-tools]: Remove: archive file [/home/abi/fetcher/tmp/odk_tools-0.1.4.tar.gz]
+[2024-04-28 17:50:48] INFO root fetch - main [MainThread]: End processing [odk-tools]: success
+[2024-04-28 17:50:48] INFO root fetch - processPackages [modern-greek-inflexion]: executing diffoscope
+[2024-04-28 17:50:48] INFO root fetch - processPackages [modern-greek-inflexion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modern_greek_inflexion-2.0.4.tar.gz tmp/modern_greek_inflexion-2.0.5.tar.gz --markdown 20240428/m/modern-greek-inflexion/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-28 17:50:50] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern_greek_inflexion-2.0.4.tar.gz]
+[2024-04-28 17:50:50] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern_greek_inflexion-2.0.5.tar.gz]
+[2024-04-28 17:50:50] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
+[2024-04-28 17:50:50] INFO root fetch - main [MainThread]: Store serial: [22967856]
