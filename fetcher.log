@@ -12718,3 +12718,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:50:26] INFO root fetch - processPackages [libresvip]: Remove: archive file [/home/abi/fetcher/tmp/libresvip-1.1.1.tar.gz]
 [2024-04-28 16:50:26] INFO root fetch - main [MainThread]: End processing [libresvip]: success
 [2024-04-28 16:50:26] INFO root fetch - main [MainThread]: Store serial: [22967551]
+[2024-04-28 16:52:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967551]
+[2024-04-28 16:52:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 16:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cefi
+[2024-04-28 16:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mc-uuid-check
+[2024-04-28 16:52:49] INFO root fetch - processPackages [mc-uuid-check]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 16:52:49] INFO root fetch - processPackages [cefi]: New version: [4.7.0] Old Version: [4.6.9]
+[2024-04-28 16:52:50] INFO root fetch - processPackages [mc-uuid-check]: Downloading https://files.pythonhosted.org/packages/9a/c4/c8570b4bae00062d391ed5cac4424853bf4178992ebf0017bc7a9ac2de46/mc-uuid-check-0.0.3.tar.gz
+[2024-04-28 16:52:50] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/c2/cc/76754a3cf60eeb32654cc9f45c78574a706fb6550a8ca489acc37041f027/cefi-4.6.9.tar.gz
+[2024-04-28 16:52:50] INFO root fetch - processPackages [mc-uuid-check]: Downloading https://files.pythonhosted.org/packages/69/77/38accf68cea9e82e1ad7d97427cec49bdf3409196565e6be09aa7e9d4d00/mc_uuid_check-0.0.4.tar.gz
+[2024-04-28 16:52:50] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/da/f1/92abbd2decfc0346c9278093c2658be60d63f0c11d27e14b5236615afc4f/cefi-4.7.0.tar.gz
+[2024-04-28 16:52:50] INFO root fetch - processPackages [mc-uuid-check]: executing diffoscope
+[2024-04-28 16:52:50] INFO root fetch - processPackages [mc-uuid-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mc-uuid-check-0.0.3.tar.gz tmp/mc_uuid_check-0.0.4.tar.gz --markdown 20240428/m/mc-uuid-check/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 16:52:50] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-28 16:52:50] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.6.9.tar.gz tmp/cefi-4.7.0.tar.gz --markdown 20240428/c/cefi/4.6.9-4.7.0/README.md --exclude *.pyd
+[2024-04-28 16:52:51] INFO root fetch - processPackages [mc-uuid-check]: Remove: archive file [/home/abi/fetcher/tmp/mc-uuid-check-0.0.3.tar.gz]
+[2024-04-28 16:52:51] INFO root fetch - processPackages [mc-uuid-check]: Remove: archive file [/home/abi/fetcher/tmp/mc_uuid_check-0.0.4.tar.gz]
+[2024-04-28 16:52:51] INFO root fetch - main [MainThread]: End processing [mc-uuid-check]: success
+[2024-04-28 16:52:51] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.6.9.tar.gz]
+[2024-04-28 16:52:51] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.7.0.tar.gz]
+[2024-04-28 16:52:51] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-28 16:52:51] INFO root fetch - main [MainThread]: Store serial: [22967557]
