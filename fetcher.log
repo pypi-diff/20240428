@@ -3374,3 +3374,30 @@
 [2024-04-28 05:06:38] INFO root fetch - processPackages [incremental-backup]: Remove: archive file [/home/abi/fetcher/tmp/incremental_backup-1.2.1.tar.gz]
 [2024-04-28 05:06:38] INFO root fetch - main [MainThread]: End processing [incremental-backup]: success
 [2024-04-28 05:06:38] INFO root fetch - main [MainThread]: Store serial: [22963670]
+[2024-04-28 05:08:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963670]
+[2024-04-28 05:08:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 05:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmoonvision
+[2024-04-28 05:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bcut-asr
+[2024-04-28 05:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FastSnake
+[2024-04-28 05:08:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mns-common
+[2024-04-28 05:08:47] INFO root fetch - processPackages [FastSnake]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-28 05:08:47] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/4e/39/3975e123076085cab12818bfdb5453f139c02ec8e1ab8b44b6aa19b34e48/fastsnake-1.4.8.tar.gz
+[2024-04-28 05:08:47] WARNING root fetch - processPackages [cmoonvision]: Skipping, unable to determine old version
+[2024-04-28 05:08:47] INFO root fetch - main [MainThread]: End processing [cmoonvision] error
+[2024-04-28 05:08:47] WARNING root fetch - processPackages [bcut-asr]: Skipping, unable to determine old version
+[2024-04-28 05:08:47] INFO root fetch - main [MainThread]: End processing [bcut-asr] error
+[2024-04-28 05:08:47] INFO root fetch - processPackages [mns-common]: New version: [1.0.7.6.0] Old Version: [1.0.7.5.8]
+[2024-04-28 05:08:47] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/ba/f6/2239174616fa357132ef7f9a94eb64ac1b356e4f1d96dd885ccf70181298/fastsnake-1.4.9.tar.gz
+[2024-04-28 05:08:47] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/1b/b4/2b0131fd44478db400bf3095f54f6d8c289a2c6d0fe9291c5b7528beb646/mns_common-1.0.7.5.8.tar.gz
+[2024-04-28 05:08:47] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-04-28 05:08:47] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.8.tar.gz tmp/fastsnake-1.4.9.tar.gz --markdown 20240428/F/FastSnake/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-28 05:08:47] INFO root fetch - processPackages [mns-common]: Downloading https://files.pythonhosted.org/packages/d0/e1/50dfa083c218f6fefb9b9490c86daf9b7ce668f020d42c05e980e046e781/mns_common-1.0.7.6.0.tar.gz
+[2024-04-28 05:08:48] INFO root fetch - processPackages [mns-common]: executing diffoscope
+[2024-04-28 05:08:48] INFO root fetch - processPackages [mns-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns_common-1.0.7.5.8.tar.gz tmp/mns_common-1.0.7.6.0.tar.gz --markdown 20240428/m/mns-common/1.0.7.5.8-1.0.7.6.0/README.md --exclude *.pyd
+[2024-04-28 05:08:48] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.8.tar.gz]
+[2024-04-28 05:08:48] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.9.tar.gz]
+[2024-04-28 05:08:48] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-04-28 05:08:48] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.5.8.tar.gz]
+[2024-04-28 05:08:48] INFO root fetch - processPackages [mns-common]: Remove: archive file [/home/abi/fetcher/tmp/mns_common-1.0.7.6.0.tar.gz]
+[2024-04-28 05:08:48] INFO root fetch - main [MainThread]: End processing [mns-common]: success
+[2024-04-28 05:08:48] INFO root fetch - main [MainThread]: Store serial: [22963685]
