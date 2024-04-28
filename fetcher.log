@@ -3827,3 +3827,15 @@
 [2024-04-28 06:02:42] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
 [2024-04-28 06:02:42] INFO root fetch - main [MainThread]: End processing [nbdev]: success
 [2024-04-28 06:02:42] INFO root fetch - main [MainThread]: Store serial: [22963824]
+[2024-04-28 06:04:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963824]
+[2024-04-28 06:04:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 06:04:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phylokrr
+[2024-04-28 06:04:50] INFO root fetch - processPackages [phylokrr]: New version: [0.4.5] Old Version: [0.4.2]
+[2024-04-28 06:04:50] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/6f/0f/de1ee454a0b37bd5a8001793726b80ff9be897f5f2571686faffb26fcb1c/phylokrr-0.4.2.tar.gz
+[2024-04-28 06:04:50] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/d8/fd/8a3ee2d96f8bcf8632407552b088a980a46696d5f5243461f622042d7ca9/phylokrr-0.4.5.tar.gz
+[2024-04-28 06:04:50] INFO root fetch - processPackages [phylokrr]: executing diffoscope
+[2024-04-28 06:04:50] INFO root fetch - processPackages [phylokrr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylokrr-0.4.2.tar.gz tmp/phylokrr-0.4.5.tar.gz --markdown 20240428/p/phylokrr/0.4.2-0.4.5/README.md --exclude *.pyd
+[2024-04-28 06:04:51] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.2.tar.gz]
+[2024-04-28 06:04:51] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.5.tar.gz]
+[2024-04-28 06:04:51] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
+[2024-04-28 06:04:51] INFO root fetch - main [MainThread]: Store serial: [22963827]
