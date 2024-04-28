@@ -13810,3 +13810,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:08:14] INFO root fetch - processPackages [autoviz]: Remove: archive file [/home/abi/fetcher/tmp/autoviz-0.1.903.tar.gz]
 [2024-04-28 18:08:14] INFO root fetch - main [MainThread]: End processing [autoviz]: success
 [2024-04-28 18:08:14] INFO root fetch - main [MainThread]: Store serial: [22967956]
+[2024-04-28 18:10:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967956]
+[2024-04-28 18:10:23] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LocalDataManager
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pingupricewatch
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitlab-projects-migrate
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbrepo
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scatcluster
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: melobot
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alana
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: parea-ai
+[2024-04-28 18:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dataretrieval
+[2024-04-28 18:10:23] INFO root fetch - processPackages [scatcluster]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 18:10:23] WARNING root fetch - processPackages [pingupricewatch]: Skipping, unable to determine old version
+[2024-04-28 18:10:23] INFO root fetch - main [MainThread]: End processing [pingupricewatch] error
+[2024-04-28 18:10:23] INFO root fetch - processPackages [gitlab-projects-migrate]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/22/1b/792008ebced610d66fa5169ba1de17b91a79b177aa36ed2cfec822c55cad/scatcluster-0.0.2.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [melobot]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [parea-ai]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [dataretrieval]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [LocalDataManager]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [dbrepo]: New version: [1.4.3rc0] Old Version: [1.4.2rc15]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [alana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 18:10:23] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/ed/9a/c4237081d60f27fda2a2e6990e751dd265eb9b43d0c0c26c22839e7750c9/gitlab_projects_migrate-1.1.0.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/cd/80/fcef2226405a0fb8e3a9a7fbda2b47a712f63d9294eac7e3fc336bbf5b0f/parea_ai-0.2.98.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/c0/f4/9af2074328eb309ee4c7c2411455cbe301844e4022434bc0f4accf428991/melobot-2.6.2.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [LocalDataManager]: Downloading https://files.pythonhosted.org/packages/8a/42/7171d6ce7c327ff00ceb02bbc908a3283571dd785b9b02ba12a2f5fa0c76/localdatamanager-0.1.0.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [dbrepo]: Downloading https://files.pythonhosted.org/packages/c0/18/b96af27b2120d69c4de4b2b81c51bdd6b6aee737156346ac1bb4ec6dd97b/dbrepo-1.4.2rc15.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/4f/62/137b7edfe60b620a83411984b347391d961d42aeec4e0b4d9984ac07163d/alana-0.0.8.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [dataretrieval]: Downloading https://files.pythonhosted.org/packages/7b/09/f967ea7e128650b63833f3549f02fb265c6a8f5a0a6722d3dba5b50c8bc8/dataretrieval-1.0.6.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/a0/0b/0e2e5c0e0d293236f22ff643aa6f572e49f8f3b51c39529b5047e286cd82/scatcluster-0.0.3.tar.gz
+[2024-04-28 18:10:23] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 18:10:23] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.2.tar.gz tmp/scatcluster-0.0.3.tar.gz --markdown 20240428/s/scatcluster/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [melobot]: Downloading https://files.pythonhosted.org/packages/e4/99/877c5a7569a240609bb1e03d86b11495c151dbb0d5a6f287fa8974b1557e/melobot-2.6.3.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/d5/bc/d74841dc03dafe0b27ce7ce2e03113e6efb5d3a215454233d231330509a1/gitlab_projects_migrate-2.0.0.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [dbrepo]: Downloading https://files.pythonhosted.org/packages/4b/83/ee8539b4a304d3c80f50d882b75bc1d253e865f7fc491044e95e6228d994/dbrepo-1.4.3rc0.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [alana]: Downloading https://files.pythonhosted.org/packages/4b/3f/7cf3b298f3c3a1b124e2fcd03e722aa849acd6f754d2665868ea0d1b74cc/alana-0.0.9.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [LocalDataManager]: Downloading https://files.pythonhosted.org/packages/4f/dd/ab16df3a3552c4fedd27a8a65a0e121d38d15f8cb16721db9ff99391ccc4/localdatamanager-0.1.1.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [melobot]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [melobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melobot-2.6.2.tar.gz tmp/melobot-2.6.3.tar.gz --markdown 20240428/m/melobot/2.6.2-2.6.3/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [gitlab-projects-migrate]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [gitlab-projects-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_migrate-1.1.0.tar.gz tmp/gitlab_projects_migrate-2.0.0.tar.gz --markdown 20240428/g/gitlab-projects-migrate/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [alana]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [alana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alana-0.0.8.tar.gz tmp/alana-0.0.9.tar.gz --markdown 20240428/a/alana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [LocalDataManager]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [dbrepo]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [dbrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrepo-1.4.2rc15.tar.gz tmp/dbrepo-1.4.3rc0.tar.gz --markdown 20240428/d/dbrepo/1.4.2rc15-1.4.3rc0/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [LocalDataManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localdatamanager-0.1.0.tar.gz tmp/localdatamanager-0.1.1.tar.gz --markdown 20240428/L/LocalDataManager/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/9d/1c/c389e28a1a12c54ff1c8111a2f00058e77ba07333943eb06d3592659a691/parea_ai-0.2.99.tar.gz
+[2024-04-28 18:10:24] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.2.tar.gz]
+[2024-04-28 18:10:24] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.3.tar.gz]
+[2024-04-28 18:10:24] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 18:10:24] INFO root fetch - processPackages [parea-ai]: executing diffoscope
+[2024-04-28 18:10:24] INFO root fetch - processPackages [parea-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parea_ai-0.2.98.tar.gz tmp/parea_ai-0.2.99.tar.gz --markdown 20240428/p/parea-ai/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-28 18:10:24] INFO root fetch - processPackages [LocalDataManager]: Remove: archive file [/home/abi/fetcher/tmp/localdatamanager-0.1.0.tar.gz]
+[2024-04-28 18:10:24] INFO root fetch - processPackages [LocalDataManager]: Remove: archive file [/home/abi/fetcher/tmp/localdatamanager-0.1.1.tar.gz]
+[2024-04-28 18:10:24] INFO root fetch - main [MainThread]: End processing [LocalDataManager]: success
+[2024-04-28 18:10:24] INFO root fetch - processPackages [dataretrieval]: Downloading https://files.pythonhosted.org/packages/a8/af/7e8a64478c48a013e491a908aa4dac21e3572e83462c4da250433870b658/dataretrieval-1.0.7.tar.gz
+[2024-04-28 18:10:25] INFO root fetch - processPackages [dbrepo]: Remove: archive file [/home/abi/fetcher/tmp/dbrepo-1.4.2rc15.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - processPackages [dbrepo]: Remove: archive file [/home/abi/fetcher/tmp/dbrepo-1.4.3rc0.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - main [MainThread]: End processing [dbrepo]: success
+[2024-04-28 18:10:25] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.8.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - processPackages [alana]: Remove: archive file [/home/abi/fetcher/tmp/alana-0.0.9.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - main [MainThread]: End processing [alana]: success
+[2024-04-28 18:10:25] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-1.1.0.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-2.0.0.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - main [MainThread]: End processing [gitlab-projects-migrate]: success
+[2024-04-28 18:10:25] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.6.2.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - processPackages [melobot]: Remove: archive file [/home/abi/fetcher/tmp/melobot-2.6.3.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - main [MainThread]: End processing [melobot]: success
+[2024-04-28 18:10:25] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.98.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.99.tar.gz]
+[2024-04-28 18:10:25] INFO root fetch - main [MainThread]: End processing [parea-ai]: success
+[2024-04-28 18:10:26] INFO root fetch - processPackages [dataretrieval]: executing diffoscope
+[2024-04-28 18:10:26] INFO root fetch - processPackages [dataretrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataretrieval-1.0.6.tar.gz tmp/dataretrieval-1.0.7.tar.gz --markdown 20240428/d/dataretrieval/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 18:10:29] INFO root fetch - processPackages [dataretrieval]: Remove: archive file [/home/abi/fetcher/tmp/dataretrieval-1.0.6.tar.gz]
+[2024-04-28 18:10:29] INFO root fetch - processPackages [dataretrieval]: Remove: archive file [/home/abi/fetcher/tmp/dataretrieval-1.0.7.tar.gz]
+[2024-04-28 18:10:29] INFO root fetch - main [MainThread]: End processing [dataretrieval]: success
+[2024-04-28 18:10:29] INFO root fetch - main [MainThread]: Store serial: [22967986]
