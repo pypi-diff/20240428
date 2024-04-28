@@ -7359,3 +7359,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:33:22] INFO root fetch - processPackages [ex-cd]: Remove: archive file [/home/abi/fetcher/tmp/ex_cd-1.9.4.tar.gz]
 [2024-04-28 10:33:22] INFO root fetch - main [MainThread]: End processing [ex-cd]: success
 [2024-04-28 10:33:22] INFO root fetch - main [MainThread]: Store serial: [22965204]
+[2024-04-28 10:35:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965204]
+[2024-04-28 10:35:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 10:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hikari
+[2024-04-28 10:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-ssi-infrastructure-server
+[2024-04-28 10:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deadpad
+[2024-04-28 10:35:31] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: New version: [14.0.2.1.0] Old Version: [14.0.2.0.0]
+[2024-04-28 10:35:31] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Downloading https://files.pythonhosted.org/packages/c1/8c/32071097c21f844802d3b30ade3579c4914010923bda1b9ad4b3444e1c51/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl
+[2024-04-28 10:35:31] WARNING root fetch - processPackages [deadpad]: Skipping, unable to determine old version
+[2024-04-28 10:35:31] INFO root fetch - main [MainThread]: End processing [deadpad] error
+[2024-04-28 10:35:31] INFO root fetch - processPackages [hikari]: New version: [2.0.0.dev99] Old Version: [2.0.0.dev98]
+[2024-04-28 10:35:31] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Downloading https://files.pythonhosted.org/packages/09/20/9d594ee850be5cdb54d71a3b1b3b6882bf1781c027cfecc63325e7226964/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl
+[2024-04-28 10:35:31] INFO root fetch - processPackages [hikari]: Downloading https://files.pythonhosted.org/packages/f0/5d/c16306e1221c1fa3d0454dfb295c17e06b3c905e781c3baaea0a8dd9a841/hikari-2.0.0.dev98.tar.gz
+[2024-04-28 10:35:31] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: executing diffoscope
+[2024-04-28 10:35:31] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-ssi-infrastructure-server/14.0.2.0.0-14.0.2.1.0/README.md --exclude *.pyd
+[2024-04-28 10:35:31] INFO root fetch - processPackages [hikari]: Downloading https://files.pythonhosted.org/packages/86/6d/0385dbfccc61d012d5e9a32c8f5ee141fb2c0d2c32f6a6a6a4ace78d2e58/hikari-2.0.0.dev99.tar.gz
+[2024-04-28 10:35:31] INFO root fetch - processPackages [hikari]: executing diffoscope
+[2024-04-28 10:35:31] INFO root fetch - processPackages [hikari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-2.0.0.dev98.tar.gz tmp/hikari-2.0.0.dev99.tar.gz --markdown 20240428/h/hikari/2.0.0.dev98-2.0.0.dev99/README.md --exclude *.pyd
+[2024-04-28 10:35:32] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.0.0-py3-none-any.whl.zip]
+[2024-04-28 10:35:32] INFO root fetch - processPackages [odoo14-addon-ssi-infrastructure-server]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_infrastructure_server-14.0.2.1.0-py3-none-any.whl.zip]
+[2024-04-28 10:35:32] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-infrastructure-server]: success
+[2024-04-28 10:35:32] INFO root fetch - processPackages [hikari]: Remove: archive file [/home/abi/fetcher/tmp/hikari-2.0.0.dev98.tar.gz]
+[2024-04-28 10:35:32] INFO root fetch - processPackages [hikari]: Remove: archive file [/home/abi/fetcher/tmp/hikari-2.0.0.dev99.tar.gz]
+[2024-04-28 10:35:32] INFO root fetch - main [MainThread]: End processing [hikari]: success
+[2024-04-28 10:35:32] INFO root fetch - main [MainThread]: Store serial: [22965214]
