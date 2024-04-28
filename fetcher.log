@@ -3568,3 +3568,36 @@
 [2024-04-28 05:28:14] INFO root fetch - processPackages [shakenfist-client]: Remove: archive file [/home/abi/fetcher/tmp/shakenfist-client-0.7.0.0rc8.tar.gz]
 [2024-04-28 05:28:14] INFO root fetch - main [MainThread]: End processing [shakenfist-client]: success
 [2024-04-28 05:28:14] INFO root fetch - main [MainThread]: Store serial: [22963736]
+[2024-04-28 05:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963736]
+[2024-04-28 05:30:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colorxx
+[2024-04-28 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nlp-nightly
+[2024-04-28 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: senfenico
+[2024-04-28 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hypothesis-torch
+[2024-04-28 05:30:22] INFO root fetch - processPackages [hypothesis-torch]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-28 05:30:22] INFO root fetch - processPackages [hypothesis-torch]: Downloading https://files.pythonhosted.org/packages/28/f7/7d89255ce1b0e426653acd14420296e98c0401f7e637dbd4189ca3b32384/hypothesis_torch-0.4.1.tar.gz
+[2024-04-28 05:30:22] WARNING root fetch - processPackages [colorxx]: Skipping, unable to determine old version
+[2024-04-28 05:30:22] INFO root fetch - main [MainThread]: End processing [colorxx] error
+[2024-04-28 05:30:22] INFO root fetch - processPackages [senfenico]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 05:30:22] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-04-28 05:30:23] INFO root fetch - processPackages [hypothesis-torch]: Downloading https://files.pythonhosted.org/packages/2e/f5/70a19c3d8b7421b4688c1b89fda52d258f3a0c86e6ae163d7b6284e0517f/hypothesis_torch-0.4.2.tar.gz
+[2024-04-28 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-04-28 05:30:23] INFO root fetch - processPackages [senfenico]: Downloading https://files.pythonhosted.org/packages/43/df/bb0945d9fbda4495066053e94085a8011472beaa2e323be1c889629f4767/senfenico-0.1.4.tar.gz
+[2024-04-28 05:30:23] INFO root fetch - processPackages [hypothesis-torch]: executing diffoscope
+[2024-04-28 05:30:23] INFO root fetch - processPackages [hypothesis-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis_torch-0.4.1.tar.gz tmp/hypothesis_torch-0.4.2.tar.gz --markdown 20240428/h/hypothesis-torch/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-28 05:30:23] INFO root fetch - processPackages [senfenico]: Downloading https://files.pythonhosted.org/packages/67/48/8a97469ea2c1ea68e17ebb3f21e87b5737f4670bec346d85bdfb30cf5c7e/senfenico-0.1.5.tar.gz
+[2024-04-28 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-04-28 05:30:23] INFO root fetch - processPackages [senfenico]: executing diffoscope
+[2024-04-28 05:30:23] INFO root fetch - processPackages [senfenico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/senfenico-0.1.4.tar.gz tmp/senfenico-0.1.5.tar.gz --markdown 20240428/s/senfenico/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-28 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240428/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-04-28 05:30:23] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.4.1.tar.gz]
+[2024-04-28 05:30:23] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.4.2.tar.gz]
+[2024-04-28 05:30:23] INFO root fetch - main [MainThread]: End processing [hypothesis-torch]: success
+[2024-04-28 05:30:24] INFO root fetch - processPackages [senfenico]: Remove: archive file [/home/abi/fetcher/tmp/senfenico-0.1.4.tar.gz]
+[2024-04-28 05:30:24] INFO root fetch - processPackages [senfenico]: Remove: archive file [/home/abi/fetcher/tmp/senfenico-0.1.5.tar.gz]
+[2024-04-28 05:30:24] INFO root fetch - main [MainThread]: End processing [senfenico]: success
+[2024-04-28 05:30:24] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-04-28 05:30:24] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-04-28 05:30:24] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-28 05:30:24] INFO root fetch - main [MainThread]: Store serial: [22963750]
