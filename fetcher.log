@@ -15359,3 +15359,67 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:54:12] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.3.9.tar.gz]
 [2024-04-28 19:54:12] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
 [2024-04-28 19:54:12] INFO root fetch - main [MainThread]: Store serial: [22968601]
+[2024-04-28 19:56:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968601]
+[2024-04-28 19:56:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bumpify
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heavylight
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: druida
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jetline
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pathlib-next
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jetline
+[2024-04-28 19:56:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: adi-notebook
+[2024-04-28 19:56:20] INFO root fetch - processPackages [bumpify]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-28 19:56:20] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 19:56:20] INFO root fetch - processPackages [pathlib-next]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 19:56:20] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:56:20] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:56:21] INFO root fetch - processPackages [heavylight]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 19:56:21] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [bumpify]: Downloading https://files.pythonhosted.org/packages/ab/50/ad576fd5adf5583cbbb6520eeeefc57e4b4e60386112ad04f4fc1a9c6ef4/bumpify-0.1.0.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [adi-notebook]: New version: [1.0.0a1] Old Version: [0.3.1a0]
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [pathlib-next]: Downloading https://files.pythonhosted.org/packages/d2/60/8f48c743dfa8739bae22d0211ae0f5a7b156c44716d17e9bfcb9b773a90b/pathlib_next-0.1.4.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [heavylight]: Downloading https://files.pythonhosted.org/packages/19/3b/f81f7a91817fd1211bfe3846dd5879899367e2a1baf75dd07556a4fb93cc/heavylight-1.0.6.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [adi-notebook]: Downloading https://files.pythonhosted.org/packages/00/77/f5cc2bf279007686e281bdc583b8b010fb7501af37f69aefbba0fe181fb3/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [bumpify]: Downloading https://files.pythonhosted.org/packages/e4/54/781081c22a10b930f4c61e0f8aa82c1ead08505fb5ff403ecb1b6ea2aa3e/bumpify-0.2.0.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [pathlib-next]: Downloading https://files.pythonhosted.org/packages/b2/1d/c3cb0bca2cbef882e5d195dc0d69dd59e00df00f856d36cb23f080d6ae2f/pathlib_next-0.1.5.tar.gz
+[2024-04-28 19:56:21] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [bumpify]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [bumpify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumpify-0.1.0.tar.gz tmp/bumpify-0.2.0.tar.gz --markdown 20240428/b/bumpify/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [pathlib-next]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [pathlib-next]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathlib_next-0.1.4.tar.gz tmp/pathlib_next-0.1.5.tar.gz --markdown 20240428/p/pathlib-next/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [adi-notebook]: Downloading https://files.pythonhosted.org/packages/d3/4e/c2c00e6a8c656b9a8cd3a5164c276502812a8a2d8a93c466cc68bc632611/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl
+[2024-04-28 19:56:21] INFO root fetch - processPackages [adi-notebook]: executing diffoscope
+[2024-04-28 19:56:21] INFO root fetch - processPackages [adi-notebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl.zip tmp/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl.zip --markdown 20240428/a/adi-notebook/0.3.1a0-1.0.0a1/README.md --exclude *.pyd
+[2024-04-28 19:56:21] INFO root fetch - processPackages [heavylight]: Downloading https://files.pythonhosted.org/packages/8d/65/7f41c0f4dd8c013c26c33726f300196b471ddd53438a6e6a595032b1e874/heavylight-1.0.7.tar.gz
+[2024-04-28 19:56:22] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:56:22] INFO root fetch - processPackages [heavylight]: executing diffoscope
+[2024-04-28 19:56:22] INFO root fetch - processPackages [heavylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heavylight-1.0.6.tar.gz tmp/heavylight-1.0.7.tar.gz --markdown 20240428/h/heavylight/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 19:56:22] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:56:22] INFO root fetch - processPackages [pathlib-next]: Remove: archive file [/home/abi/fetcher/tmp/pathlib_next-0.1.4.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - processPackages [pathlib-next]: Remove: archive file [/home/abi/fetcher/tmp/pathlib_next-0.1.5.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [pathlib-next]: success
+[2024-04-28 19:56:22] INFO root fetch - processPackages [adi-notebook]: Remove: archive file [/home/abi/fetcher/tmp/adi_notebook-0.3.1a0-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 19:56:22] INFO root fetch - processPackages [adi-notebook]: Remove: archive file [/home/abi/fetcher/tmp/adi_notebook-1.0.0a1-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [adi-notebook]: success
+[2024-04-28 19:56:22] INFO root fetch - processPackages [bumpify]: Remove: archive file [/home/abi/fetcher/tmp/bumpify-0.1.0.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - processPackages [bumpify]: Remove: archive file [/home/abi/fetcher/tmp/bumpify-0.2.0.tar.gz]
+[2024-04-28 19:56:22] INFO root fetch - main [MainThread]: End processing [bumpify]: success
+[2024-04-28 19:56:23] INFO root fetch - processPackages [heavylight]: Remove: archive file [/home/abi/fetcher/tmp/heavylight-1.0.6.tar.gz]
+[2024-04-28 19:56:23] INFO root fetch - processPackages [heavylight]: Remove: archive file [/home/abi/fetcher/tmp/heavylight-1.0.7.tar.gz]
+[2024-04-28 19:56:23] INFO root fetch - main [MainThread]: End processing [heavylight]: success
+[2024-04-28 19:56:23] INFO root fetch - main [MainThread]: Store serial: [22968621]
