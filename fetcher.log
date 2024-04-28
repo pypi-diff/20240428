@@ -8392,3 +8392,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:35:23] INFO root fetch - processPackages [stochatreat]: Remove: archive file [/home/abi/fetcher/tmp/stochatreat-0.0.9.tar.gz]
 [2024-04-28 11:35:23] INFO root fetch - main [MainThread]: End processing [stochatreat]: success
 [2024-04-28 11:35:23] INFO root fetch - main [MainThread]: Store serial: [22965755]
+[2024-04-28 11:37:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965755]
+[2024-04-28 11:37:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 11:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymatris
+[2024-04-28 11:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zz-img-caption
+[2024-04-28 11:37:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pseudovisium
+[2024-04-28 11:37:32] INFO root fetch - processPackages [pymatris]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 11:37:32] WARNING root fetch - processPackages [zz-img-caption]: Skipping, unable to determine old version
+[2024-04-28 11:37:32] INFO root fetch - main [MainThread]: End processing [zz-img-caption] error
+[2024-04-28 11:37:32] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/c6/86/8d1a0ea81bd38f49df3e5ed78486c234944711c5f4b662310cb4cc4c9656/pymatris-0.0.2.tar.gz
+[2024-04-28 11:37:32] INFO root fetch - processPackages [Pseudovisium]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 11:37:32] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/1a/1d/b398e0274ea16f6e1057afcdfc93db1ef044a492f3d6e1025d3243eb55ec/pymatris-0.0.3.tar.gz
+[2024-04-28 11:37:32] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/68/eb/f7c603872efd4ccdc66b2145e2f6392c9cf2703cdaec93de38d231dc7483/Pseudovisium-0.0.5.tar.gz
+[2024-04-28 11:37:32] INFO root fetch - processPackages [pymatris]: executing diffoscope
+[2024-04-28 11:37:32] INFO root fetch - processPackages [pymatris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatris-0.0.2.tar.gz tmp/pymatris-0.0.3.tar.gz --markdown 20240428/p/pymatris/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 11:37:32] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/04/e6/3731880c9a0b5a5f066568922f14fa94bc6aa07ed155b9a4c4408fcc3b10/Pseudovisium-0.0.6.tar.gz
+[2024-04-28 11:37:33] INFO root fetch - processPackages [Pseudovisium]: executing diffoscope
+[2024-04-28 11:37:33] INFO root fetch - processPackages [Pseudovisium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pseudovisium-0.0.5.tar.gz tmp/Pseudovisium-0.0.6.tar.gz --markdown 20240428/P/Pseudovisium/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 11:37:33] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.2.tar.gz]
+[2024-04-28 11:37:33] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.3.tar.gz]
+[2024-04-28 11:37:33] INFO root fetch - main [MainThread]: End processing [pymatris]: success
+[2024-04-28 11:37:33] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.5.tar.gz]
+[2024-04-28 11:37:33] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.6.tar.gz]
+[2024-04-28 11:37:33] INFO root fetch - main [MainThread]: End processing [Pseudovisium]: success
+[2024-04-28 11:37:33] INFO root fetch - main [MainThread]: Store serial: [22965763]
