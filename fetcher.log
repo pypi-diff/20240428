@@ -12643,3 +12643,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:45:42] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.4.tar.gz]
 [2024-04-28 16:45:42] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
 [2024-04-28 16:45:42] INFO root fetch - main [MainThread]: Store serial: [22967525]
+[2024-04-28 16:47:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967525]
+[2024-04-28 16:48:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 16:48:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rateLimitedQueues
+[2024-04-28 16:48:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyopenweathermap
+[2024-04-28 16:48:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastnorm
+[2024-04-28 16:48:02] INFO root fetch - processPackages [rateLimitedQueues]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2024-04-28 16:48:02] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/dc/b0/8606c7a34740ad88e27a47b0e9680d54f5e61c4289206b0ab2a080f90283/ratelimitedqueues-0.0.1a1.tar.gz
+[2024-04-28 16:48:02] WARNING root fetch - processPackages [fastnorm]: Skipping, unable to determine old version
+[2024-04-28 16:48:02] INFO root fetch - main [MainThread]: End processing [fastnorm] error
+[2024-04-28 16:48:02] INFO root fetch - processPackages [pyopenweathermap]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 16:48:02] INFO root fetch - processPackages [pyopenweathermap]: Downloading https://files.pythonhosted.org/packages/21/11/d554c9817488e1a9e9a4ff66743afe5fc23d95bab6c1c4ba4fa80bd5164d/pyopenweathermap-0.0.5.tar.gz
+[2024-04-28 16:48:02] INFO root fetch - processPackages [rateLimitedQueues]: Downloading https://files.pythonhosted.org/packages/30/13/2fbba55ecfe4f80915037ee33f7fe9f8ae9e823511ee3ceac7e3eca6bfdb/ratelimitedqueues-0.0.1a2.tar.gz
+[2024-04-28 16:48:02] INFO root fetch - processPackages [rateLimitedQueues]: executing diffoscope
+[2024-04-28 16:48:02] INFO root fetch - processPackages [rateLimitedQueues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratelimitedqueues-0.0.1a1.tar.gz tmp/ratelimitedqueues-0.0.1a2.tar.gz --markdown 20240428/r/rateLimitedQueues/0.0.1a1-0.0.1a2/README.md --exclude *.pyd
+[2024-04-28 16:48:02] INFO root fetch - processPackages [pyopenweathermap]: Downloading https://files.pythonhosted.org/packages/31/27/00e76d0950e00fb2ca57fe43a50fadc482b7f5ab859ee34b7e3751cd31fb/pyopenweathermap-0.0.6.tar.gz
+[2024-04-28 16:48:03] INFO root fetch - processPackages [pyopenweathermap]: executing diffoscope
+[2024-04-28 16:48:03] INFO root fetch - processPackages [pyopenweathermap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopenweathermap-0.0.5.tar.gz tmp/pyopenweathermap-0.0.6.tar.gz --markdown 20240428/p/pyopenweathermap/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 16:48:03] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a1.tar.gz]
+[2024-04-28 16:48:03] INFO root fetch - processPackages [rateLimitedQueues]: Remove: archive file [/home/abi/fetcher/tmp/ratelimitedqueues-0.0.1a2.tar.gz]
+[2024-04-28 16:48:03] INFO root fetch - main [MainThread]: End processing [rateLimitedQueues]: success
+[2024-04-28 16:48:03] INFO root fetch - processPackages [pyopenweathermap]: Remove: archive file [/home/abi/fetcher/tmp/pyopenweathermap-0.0.5.tar.gz]
+[2024-04-28 16:48:03] INFO root fetch - processPackages [pyopenweathermap]: Remove: archive file [/home/abi/fetcher/tmp/pyopenweathermap-0.0.6.tar.gz]
+[2024-04-28 16:48:03] INFO root fetch - main [MainThread]: End processing [pyopenweathermap]: success
+[2024-04-28 16:48:03] INFO root fetch - main [MainThread]: Store serial: [22967536]
