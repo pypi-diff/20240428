@@ -14402,3 +14402,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:52:10] INFO root fetch - processPackages [qteasy]: Remove: archive file [/home/abi/fetcher/tmp/qteasy-1.2.2.tar.gz]
 [2024-04-28 18:52:10] INFO root fetch - main [MainThread]: End processing [qteasy]: success
 [2024-04-28 18:52:10] INFO root fetch - main [MainThread]: Store serial: [22968191]
+[2024-04-28 18:54:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968191]
+[2024-04-28 18:54:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 18:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: life360
+[2024-04-28 18:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jetline
+[2024-04-28 18:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: saturn-bot
+[2024-04-28 18:54:20] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:54:20] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 18:54:20] INFO root fetch - processPackages [life360]: New version: [7.0.0b4] Old Version: [7.0.0b3]
+[2024-04-28 18:54:20] WARNING root fetch - processPackages [saturn-bot]: Skipping, unable to determine old version
+[2024-04-28 18:54:20] INFO root fetch - main [MainThread]: End processing [saturn-bot] error
+[2024-04-28 18:54:20] INFO root fetch - processPackages [life360]: Downloading https://files.pythonhosted.org/packages/39/b4/a9d5029c3438de1a4b1302761ec79ffb3a6b98d135cdd5a2924adc361c5d/life360-7.0.0b3.tar.gz
+[2024-04-28 18:54:20] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 18:54:20] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:54:20] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:54:20] INFO root fetch - processPackages [life360]: Downloading https://files.pythonhosted.org/packages/60/ed/b4f4bd4aff85d26dca54428089162d415b1e7d84133be434ea5660cc020e/life360-7.0.0b4.tar.gz
+[2024-04-28 18:54:20] INFO root fetch - processPackages [life360]: executing diffoscope
+[2024-04-28 18:54:20] INFO root fetch - processPackages [life360]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/life360-7.0.0b3.tar.gz tmp/life360-7.0.0b4.tar.gz --markdown 20240428/l/life360/7.0.0b3-7.0.0b4/README.md --exclude *.pyd
+[2024-04-28 18:54:21] INFO root fetch - processPackages [life360]: Remove: archive file [/home/abi/fetcher/tmp/life360-7.0.0b3.tar.gz]
+[2024-04-28 18:54:21] INFO root fetch - processPackages [life360]: Remove: archive file [/home/abi/fetcher/tmp/life360-7.0.0b4.tar.gz]
+[2024-04-28 18:54:21] INFO root fetch - main [MainThread]: End processing [life360]: success
+[2024-04-28 18:54:21] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 18:54:21] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 18:54:21] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:54:21] INFO root fetch - main [MainThread]: Store serial: [22968202]
