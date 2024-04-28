@@ -12960,3 +12960,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:10:06] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240427-py3-none-win_amd64.whl.zip]
 [2024-04-28 17:10:06] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-28 17:10:06] INFO root fetch - main [MainThread]: Store serial: [22967636]
+[2024-04-28 17:12:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967636]
+[2024-04-28 17:12:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-zmi
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ok-script
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdmx1
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wolta
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ascender
+[2024-04-28 17:12:29] INFO root fetch - processPackages [wolta]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-28 17:12:29] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/68/c2/6add7316a2f3f14decbe28f8d605a564789210784c8f233e45f64332edf2/wolta-0.1.9.tar.gz
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 17:12:29] INFO root fetch - processPackages [ascender]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 17:12:29] INFO root fetch - processPackages [sdmx1]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-28 17:12:29] INFO root fetch - processPackages [pyams-zmi]: New version: [2.2.5] Old Version: [2.2.4]
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/44/4b/374eba00e995541ce5d1a150b39ace8bdb28759085c5dfa8424c82ed2e4e/sdmx1-2.8.0.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/58/fa/ea794ec9b438ceb461ef00d7e9deef08304b36934f2b457948b95279376d/pyams_zmi-2.2.4.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ascender]: Downloading https://files.pythonhosted.org/packages/bb/7c/20f99a99828038835ec2281c773c0225729ddf57714f94920b654c7c7224/ascender-0.1.4.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/92/df/e53a1e2239e6516797b5344d42b55d92b1637dbb897e76f4d0c51bba587f/wolta-0.2.0.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [wolta]: executing diffoscope
+[2024-04-28 17:12:30] INFO root fetch - processPackages [wolta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolta-0.1.9.tar.gz tmp/wolta-0.2.0.tar.gz --markdown 20240428/w/wolta/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ascender]: Downloading https://files.pythonhosted.org/packages/0c/27/92b62ab6beb1b0a53532016fed22c1c0b80ba209657831976a130de36a4f/ascender-0.1.5.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/f3/48/be1d1d81329ca7d53a12f05f04a88c7726f466736d13ed04f51fedfdd7fc/pyams_zmi-2.2.5.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [sdmx1]: Downloading https://files.pythonhosted.org/packages/d4/74/474d459265382856a9124916f8b6b603ef57757e6127c94a76cee6f31de9/sdmx1-2.9.0.tar.gz
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240428/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ascender]: executing diffoscope
+[2024-04-28 17:12:30] INFO root fetch - processPackages [ascender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ascender-0.1.4.tar.gz tmp/ascender-0.1.5.tar.gz --markdown 20240428/a/ascender/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 17:12:30] INFO root fetch - processPackages [sdmx1]: executing diffoscope
+[2024-04-28 17:12:30] INFO root fetch - processPackages [sdmx1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmx1-2.8.0.tar.gz tmp/sdmx1-2.9.0.tar.gz --markdown 20240428/s/sdmx1/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-28 17:12:30] INFO root fetch - processPackages [pyams-zmi]: executing diffoscope
+[2024-04-28 17:12:30] INFO root fetch - processPackages [pyams-zmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_zmi-2.2.4.tar.gz tmp/pyams_zmi-2.2.5.tar.gz --markdown 20240428/p/pyams-zmi/2.2.4-2.2.5/README.md --exclude *.pyd
+[2024-04-28 17:12:30] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.1.9.tar.gz]
+[2024-04-28 17:12:30] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.2.0.tar.gz]
+[2024-04-28 17:12:30] INFO root fetch - main [MainThread]: End processing [wolta]: success
+[2024-04-28 17:12:31] INFO root fetch - processPackages [ascender]: Remove: archive file [/home/abi/fetcher/tmp/ascender-0.1.4.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - processPackages [ascender]: Remove: archive file [/home/abi/fetcher/tmp/ascender-0.1.5.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - main [MainThread]: End processing [ascender]: success
+[2024-04-28 17:12:31] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-04-28 17:12:31] INFO root fetch - processPackages [pyams-zmi]: Remove: archive file [/home/abi/fetcher/tmp/pyams_zmi-2.2.4.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - processPackages [pyams-zmi]: Remove: archive file [/home/abi/fetcher/tmp/pyams_zmi-2.2.5.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - main [MainThread]: End processing [pyams-zmi]: success
+[2024-04-28 17:12:31] INFO root fetch - processPackages [sdmx1]: Remove: archive file [/home/abi/fetcher/tmp/sdmx1-2.8.0.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - processPackages [sdmx1]: Remove: archive file [/home/abi/fetcher/tmp/sdmx1-2.9.0.tar.gz]
+[2024-04-28 17:12:31] INFO root fetch - main [MainThread]: End processing [sdmx1]: success
+[2024-04-28 17:12:31] INFO root fetch - main [MainThread]: Store serial: [22967655]
