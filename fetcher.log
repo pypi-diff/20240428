@@ -7104,3 +7104,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:11:20] INFO root fetch - processPackages [hyperfast-python-template]: Remove: archive file [/home/abi/fetcher/tmp/hyperfast_python_template-0.9.0.tar.gz]
 [2024-04-28 10:11:20] INFO root fetch - main [MainThread]: End processing [hyperfast-python-template]: success
 [2024-04-28 10:11:20] INFO root fetch - main [MainThread]: Store serial: [22965099]
+[2024-04-28 10:13:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965099]
+[2024-04-28 10:13:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-coder
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stTransfer
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unitsnet-py
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PFlowC
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ml-indie-tools
+[2024-04-28 10:13:29] INFO root fetch - processPackages [stTransfer]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 10:13:29] WARNING root fetch - processPackages [PFlowC]: Skipping, unable to determine old version
+[2024-04-28 10:13:29] INFO root fetch - main [MainThread]: End processing [PFlowC] error
+[2024-04-28 10:13:29] INFO root fetch - processPackages [unitsnet-py]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 10:13:29] INFO root fetch - processPackages [stTransfer]: Downloading https://files.pythonhosted.org/packages/e7/3d/6f32e797c5da76df593dd4645c178ceed0ef6593567c851a1c276320ca39/stTransfer-1.0.8.tar.gz
+[2024-04-28 10:13:29] INFO root fetch - processPackages [auto-coder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 10:13:29] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/ee/0a/34f188b24df159a2a32de4e4e2d5cc7607e93ab8b313c3699c47195f41ca/unitsnet-py-0.1.98.tar.gz
+[2024-04-28 10:13:29] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-28 10:13:29] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/d1/69/520c5552e42e8901e930364867dc863b8beb917b52544194a46c864a7385/auto-coder-0.1.8.tar.gz
+[2024-04-28 10:13:29] INFO root fetch - processPackages [stTransfer]: Downloading https://files.pythonhosted.org/packages/a7/be/74161372cc083a46becbdc8ae9f3be2847446f6360d09831ac56762291c7/stTransfer-1.0.9.tar.gz
+[2024-04-28 10:13:29] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/6f/c3/56091fa169b05a85897f9a3ff84c663f9105df9df5d552c62229c909ba28/unitsnet-py-0.1.99.tar.gz
+[2024-04-28 10:13:29] INFO root fetch - processPackages [stTransfer]: executing diffoscope
+[2024-04-28 10:13:29] INFO root fetch - processPackages [stTransfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stTransfer-1.0.8.tar.gz tmp/stTransfer-1.0.9.tar.gz --markdown 20240428/s/stTransfer/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 10:13:29] INFO root fetch - processPackages [unitsnet-py]: executing diffoscope
+[2024-04-28 10:13:29] INFO root fetch - processPackages [unitsnet-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitsnet-py-0.1.98.tar.gz tmp/unitsnet-py-0.1.99.tar.gz --markdown 20240428/u/unitsnet-py/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 10:13:30] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-28 10:13:30] INFO root fetch - processPackages [auto-coder]: Downloading https://files.pythonhosted.org/packages/4d/9a/1bad03fbe8fd6d47cd359f857b05e28efaa8cba07c33aa029696a40dd646/auto-coder-0.1.9.tar.gz
+[2024-04-28 10:13:30] INFO root fetch - processPackages [auto-coder]: executing diffoscope
+[2024-04-28 10:13:30] INFO root fetch - processPackages [auto-coder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-coder-0.1.8.tar.gz tmp/auto-coder-0.1.9.tar.gz --markdown 20240428/a/auto-coder/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 10:13:30] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-28 10:13:30] INFO root fetch - processPackages [stTransfer]: Remove: archive file [/home/abi/fetcher/tmp/stTransfer-1.0.8.tar.gz]
+[2024-04-28 10:13:30] INFO root fetch - processPackages [stTransfer]: Remove: archive file [/home/abi/fetcher/tmp/stTransfer-1.0.9.tar.gz]
+[2024-04-28 10:13:30] INFO root fetch - main [MainThread]: End processing [stTransfer]: success
+[2024-04-28 10:13:30] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.8.tar.gz]
+[2024-04-28 10:13:30] INFO root fetch - processPackages [auto-coder]: Remove: archive file [/home/abi/fetcher/tmp/auto-coder-0.1.9.tar.gz]
+[2024-04-28 10:13:30] INFO root fetch - main [MainThread]: End processing [auto-coder]: success
+[2024-04-28 10:13:31] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-28 10:13:31] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240428/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-28 10:13:31] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-28 10:13:31] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-28 10:13:31] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-28 10:13:32] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.98.tar.gz]
+[2024-04-28 10:13:32] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.99.tar.gz]
+[2024-04-28 10:13:32] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
+[2024-04-28 10:13:32] INFO root fetch - main [MainThread]: Store serial: [22965121]
