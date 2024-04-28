@@ -11865,3 +11865,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:46:44] INFO root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Remove: archive file [/home/abi/fetcher/tmp/pierskarsenbarg_pulumi_sdm-1.9.0.tar.gz]
 [2024-04-28 15:46:44] INFO root fetch - main [MainThread]: End processing [pierskarsenbarg-pulumi-sdm]: success
 [2024-04-28 15:46:44] INFO root fetch - main [MainThread]: Store serial: [22967200]
+[2024-04-28 15:48:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967200]
+[2024-04-28 15:49:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 15:49:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: length-nest-pro-MQ
+[2024-04-28 15:49:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-shell
+[2024-04-28 15:49:04] INFO root fetch - processPackages [length-nest-pro-MQ]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 15:49:04] INFO root fetch - processPackages [async-shell]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-28 15:49:04] INFO root fetch - processPackages [length-nest-pro-MQ]: Downloading https://files.pythonhosted.org/packages/f6/c0/6da7004d212f6718006c57e25371191df8beddc03958a1099952061edf1d/length_nest_pro_MQ-0.0.2.tar.gz
+[2024-04-28 15:49:04] INFO root fetch - processPackages [async-shell]: Downloading https://files.pythonhosted.org/packages/60/ef/ccc09d8f9413c3035c88f0ffbd67354a26b1e78139c159c402e072954bf8/async_shell-1.0.4.tar.gz
+[2024-04-28 15:49:04] INFO root fetch - processPackages [length-nest-pro-MQ]: Downloading https://files.pythonhosted.org/packages/f9/c1/9b0ff551e19a771d8772a30b98770f3355ff00f087429c915b0ddb4d266f/length_nest_pro_mq-0.0.3.tar.gz
+[2024-04-28 15:49:04] INFO root fetch - processPackages [length-nest-pro-MQ]: executing diffoscope
+[2024-04-28 15:49:04] INFO root fetch - processPackages [length-nest-pro-MQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/length_nest_pro_MQ-0.0.2.tar.gz tmp/length_nest_pro_mq-0.0.3.tar.gz --markdown 20240428/l/length-nest-pro-MQ/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 15:49:04] INFO root fetch - processPackages [async-shell]: Downloading https://files.pythonhosted.org/packages/bd/0e/7bbf0de6a4dc4466c8eff43a7b560cef10b2b3b7f54a3e08db48162fde82/async_shell-1.0.5.tar.gz
+[2024-04-28 15:49:04] INFO root fetch - processPackages [async-shell]: executing diffoscope
+[2024-04-28 15:49:04] INFO root fetch - processPackages [async-shell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_shell-1.0.4.tar.gz tmp/async_shell-1.0.5.tar.gz --markdown 20240428/a/async-shell/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-28 15:49:05] INFO root fetch - processPackages [length-nest-pro-MQ]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_MQ-0.0.2.tar.gz]
+[2024-04-28 15:49:05] INFO root fetch - processPackages [length-nest-pro-MQ]: Remove: archive file [/home/abi/fetcher/tmp/length_nest_pro_mq-0.0.3.tar.gz]
+[2024-04-28 15:49:05] INFO root fetch - main [MainThread]: End processing [length-nest-pro-MQ]: success
+[2024-04-28 15:49:05] INFO root fetch - processPackages [async-shell]: Remove: archive file [/home/abi/fetcher/tmp/async_shell-1.0.4.tar.gz]
+[2024-04-28 15:49:05] INFO root fetch - processPackages [async-shell]: Remove: archive file [/home/abi/fetcher/tmp/async_shell-1.0.5.tar.gz]
+[2024-04-28 15:49:05] INFO root fetch - main [MainThread]: End processing [async-shell]: success
+[2024-04-28 15:49:05] INFO root fetch - main [MainThread]: Store serial: [22967204]
