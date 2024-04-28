@@ -5717,3 +5717,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:26:42] INFO root fetch - processPackages [npc_sessions]: Remove: archive file [/home/abi/fetcher/tmp/npc_sessions-0.0.99.tar.gz]
 [2024-04-28 08:26:42] INFO root fetch - main [MainThread]: End processing [npc_sessions]: success
 [2024-04-28 08:26:42] INFO root fetch - main [MainThread]: Store serial: [22964554]
+[2024-04-28 08:28:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964554]
+[2024-04-28 08:28:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 08:28:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secretscraper
+[2024-04-28 08:28:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glabel
+[2024-04-28 08:28:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirbreak
+[2024-04-28 08:28:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rgtestpython
+[2024-04-28 08:28:50] INFO root fetch - processPackages [secretscraper]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-04-28 08:28:50] INFO root fetch - processPackages [glabel]: New version: [1.0.3b1] Old Version: [1.0.3]
+[2024-04-28 08:28:51] INFO root fetch - processPackages [cirbreak]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 08:28:51] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/9c/ab/b8906513287ca82830260a88b13bce764f3ec173eb235e6ebdb550fd60f3/secretscraper-1.3.1.tar.gz
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: Downloading https://files.pythonhosted.org/packages/5c/0d/74040fe97f14b4493cef5e38058a9bed5d76a41858a690ef655900ee37ff/glabel-1.0.3.tar.gz
+[2024-04-28 08:28:51] WARNING root fetch - processPackages [rgtestpython]: Skipping, unable to determine old version
+[2024-04-28 08:28:51] INFO root fetch - main [MainThread]: End processing [rgtestpython] error
+[2024-04-28 08:28:51] INFO root fetch - processPackages [cirbreak]: Downloading https://files.pythonhosted.org/packages/12/9d/b575fd38f850ab67269e1371639fd86f9d144f00d1370b1ae26efd1802b1/cirbreak-0.1.2.tar.gz
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: Downloading https://files.pythonhosted.org/packages/50/f0/d3e57356ee676459a882adc6e448717bf9e45aedbd56b9c67998255acf92/glabel-1.0.3b1-py3-none-any.whl
+[2024-04-28 08:28:51] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/d1/e0/1d01875be514fda88786c47a4cb835fc35522469694b7fd1376059bf7640/secretscraper-1.3.2.tar.gz
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: executing diffoscope
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glabel-1.0.3.tar.gz tmp/glabel-1.0.3b1-py3-none-any.whl.zip --markdown 20240428/g/glabel/1.0.3-1.0.3b1/README.md --exclude *.pyd
+[2024-04-28 08:28:51] INFO root fetch - processPackages [secretscraper]: executing diffoscope
+[2024-04-28 08:28:51] INFO root fetch - processPackages [secretscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretscraper-1.3.1.tar.gz tmp/secretscraper-1.3.2.tar.gz --markdown 20240428/s/secretscraper/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-04-28 08:28:51] INFO root fetch - processPackages [cirbreak]: Downloading https://files.pythonhosted.org/packages/5a/b0/8a4163fadb0afcef6a21f114c6bb1ddb8b337051e06c368cd0fba8086480/cirbreak-0.1.3.tar.gz
+[2024-04-28 08:28:51] INFO root fetch - processPackages [cirbreak]: executing diffoscope
+[2024-04-28 08:28:51] INFO root fetch - processPackages [cirbreak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirbreak-0.1.2.tar.gz tmp/cirbreak-0.1.3.tar.gz --markdown 20240428/c/cirbreak/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: Remove: archive file [/home/abi/fetcher/tmp/glabel-1.0.3.tar.gz]
+[2024-04-28 08:28:51] INFO root fetch - processPackages [glabel]: Remove: archive file [/home/abi/fetcher/tmp/glabel-1.0.3b1-py3-none-any.whl.zip]
+[2024-04-28 08:28:51] INFO root fetch - main [MainThread]: End processing [glabel]: success
+[2024-04-28 08:28:52] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.1.tar.gz]
+[2024-04-28 08:28:52] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.2.tar.gz]
+[2024-04-28 08:28:52] INFO root fetch - main [MainThread]: End processing [secretscraper]: success
+[2024-04-28 08:28:52] INFO root fetch - processPackages [cirbreak]: Remove: archive file [/home/abi/fetcher/tmp/cirbreak-0.1.2.tar.gz]
+[2024-04-28 08:28:52] INFO root fetch - processPackages [cirbreak]: Remove: archive file [/home/abi/fetcher/tmp/cirbreak-0.1.3.tar.gz]
+[2024-04-28 08:28:52] INFO root fetch - main [MainThread]: End processing [cirbreak]: success
+[2024-04-28 08:28:52] INFO root fetch - main [MainThread]: Store serial: [22964561]
