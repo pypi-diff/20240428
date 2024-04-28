@@ -4615,3 +4615,15 @@
 [2024-04-28 06:59:16] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.0.tar.gz]
 [2024-04-28 06:59:16] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
 [2024-04-28 06:59:16] INFO root fetch - main [MainThread]: Store serial: [22964109]
+[2024-04-28 07:01:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964109]
+[2024-04-28 07:01:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-repair
+[2024-04-28 07:01:24] INFO root fetch - processPackages [json-repair]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-28 07:01:24] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/30/98/8e5e70109f1541aeeeccf67fa2876d53b95f4dbf67deb476eaa6931ff9b5/json_repair-0.8.1.tar.gz
+[2024-04-28 07:01:24] INFO root fetch - processPackages [json-repair]: Downloading https://files.pythonhosted.org/packages/a3/6d/f3cff9a4b72bae984511e3b5e198dc886ea044b979e7d59ebd53d0583a10/json_repair-0.9.0.tar.gz
+[2024-04-28 07:01:24] INFO root fetch - processPackages [json-repair]: executing diffoscope
+[2024-04-28 07:01:24] INFO root fetch - processPackages [json-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_repair-0.8.1.tar.gz tmp/json_repair-0.9.0.tar.gz --markdown 20240428/j/json-repair/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-28 07:01:25] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.8.1.tar.gz]
+[2024-04-28 07:01:25] INFO root fetch - processPackages [json-repair]: Remove: archive file [/home/abi/fetcher/tmp/json_repair-0.9.0.tar.gz]
+[2024-04-28 07:01:25] INFO root fetch - main [MainThread]: End processing [json-repair]: success
+[2024-04-28 07:01:25] INFO root fetch - main [MainThread]: Store serial: [22964112]
