@@ -16601,3 +16601,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:25:50] INFO root fetch - processPackages [developergpt]: Remove: archive file [/home/abi/fetcher/tmp/developergpt-0.7.1.tar.gz]
 [2024-04-28 21:25:50] INFO root fetch - main [MainThread]: End processing [developergpt]: success
 [2024-04-28 21:25:50] INFO root fetch - main [MainThread]: Store serial: [22969150]
+[2024-04-28 21:27:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969150]
+[2024-04-28 21:27:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hata
+[2024-04-28 21:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easydev
+[2024-04-28 21:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-batch
+[2024-04-28 21:27:58] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 21:27:59] INFO root fetch - processPackages [easydev]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-04-28 21:27:59] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [hata]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-28 21:27:59] INFO root fetch - processPackages [hata]: Downloading https://files.pythonhosted.org/packages/4a/f2/c0100f2b17527fd7c8a6216f876eb9b3db8fd117f96ff46478b7b23e990e/hata-1.3.8.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [easydev]: Downloading https://files.pythonhosted.org/packages/7d/c1/480679b563861f9321db4b80c0c694cfbe4d5c83704237d7c764ff7ca4a1/easydev-0.9.7.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-28 21:27:59] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240428/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 21:27:59] INFO root fetch - processPackages [easydev]: Downloading https://files.pythonhosted.org/packages/e1/73/60ed3da1d75153b2f31926be3f49f5f37e6cda099040be44287d6885c018/easydev-0.9.9.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [hata]: Downloading https://files.pythonhosted.org/packages/b5/e0/4cb0546a643922b80592e8b745ce9b6d33d9a414e9540b749a0e2eea2045/hata-1.3.9.tar.gz
+[2024-04-28 21:27:59] INFO root fetch - processPackages [easydev]: executing diffoscope
+[2024-04-28 21:27:59] INFO root fetch - processPackages [easydev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydev-0.9.7.tar.gz tmp/easydev-0.9.9.tar.gz --markdown 20240428/e/easydev/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-04-28 21:28:00] INFO root fetch - processPackages [hata]: executing diffoscope
+[2024-04-28 21:28:00] INFO root fetch - processPackages [hata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hata-1.3.8.tar.gz tmp/hata-1.3.9.tar.gz --markdown 20240428/h/hata/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-28 21:28:00] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-28 21:28:00] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-28 21:28:00] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-28 21:28:00] INFO root fetch - processPackages [easydev]: Remove: archive file [/home/abi/fetcher/tmp/easydev-0.9.7.tar.gz]
+[2024-04-28 21:28:00] INFO root fetch - processPackages [easydev]: Remove: archive file [/home/abi/fetcher/tmp/easydev-0.9.9.tar.gz]
+[2024-04-28 21:28:00] INFO root fetch - main [MainThread]: End processing [easydev]: success
+[2024-04-28 21:28:02] INFO root fetch - processPackages [hata]: Remove: archive file [/home/abi/fetcher/tmp/hata-1.3.8.tar.gz]
+[2024-04-28 21:28:02] INFO root fetch - processPackages [hata]: Remove: archive file [/home/abi/fetcher/tmp/hata-1.3.9.tar.gz]
+[2024-04-28 21:28:02] INFO root fetch - main [MainThread]: End processing [hata]: success
+[2024-04-28 21:28:02] INFO root fetch - main [MainThread]: Store serial: [22969162]
