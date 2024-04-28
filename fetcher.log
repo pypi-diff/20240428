@@ -15213,3 +15213,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:43:14] INFO root fetch - processPackages [vid-cleaner]: Remove: archive file [/home/abi/fetcher/tmp/vid_cleaner-0.3.2.tar.gz]
 [2024-04-28 19:43:14] INFO root fetch - main [MainThread]: End processing [vid-cleaner]: success
 [2024-04-28 19:43:14] INFO root fetch - main [MainThread]: Store serial: [22968534]
+[2024-04-28 19:45:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968534]
+[2024-04-28 19:45:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 19:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jetline
+[2024-04-28 19:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wrangles
+[2024-04-28 19:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binary-refinery
+[2024-04-28 19:45:22] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:45:22] INFO root fetch - processPackages [wrangles]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-28 19:45:22] INFO root fetch - processPackages [binary-refinery]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [wrangles]: Downloading https://files.pythonhosted.org/packages/6b/f7/4973a7fe4e6bf2c86574fbc895ca78a0761282c9b8e32bf83902203dd70f/wrangles-1.8.1.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/78/e7/f24f5f15d7ebee0b386c6c723bfad23fe1c68536032f72a004c714a54ccf/binary-refinery-0.6.8.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:45:23] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/00/6d/f287f684167e762f94c880a85639f229f8be47af59175e8062209b17059e/binary-refinery-0.6.9.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [wrangles]: Downloading https://files.pythonhosted.org/packages/2a/a0/a517f4076c13ea5ab62439dc8662f1c04d65c95bcf96b16869473c4ae5c8/wrangles-1.9.0.tar.gz
+[2024-04-28 19:45:23] INFO root fetch - processPackages [wrangles]: executing diffoscope
+[2024-04-28 19:45:23] INFO root fetch - processPackages [wrangles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrangles-1.8.1.tar.gz tmp/wrangles-1.9.0.tar.gz --markdown 20240428/w/wrangles/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-28 19:45:23] INFO root fetch - processPackages [binary-refinery]: executing diffoscope
+[2024-04-28 19:45:23] INFO root fetch - processPackages [binary-refinery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary-refinery-0.6.8.tar.gz tmp/binary-refinery-0.6.9.tar.gz --markdown 20240428/b/binary-refinery/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:45:23] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:45:23] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:45:24] INFO root fetch - processPackages [wrangles]: Remove: archive file [/home/abi/fetcher/tmp/wrangles-1.8.1.tar.gz]
+[2024-04-28 19:45:24] INFO root fetch - processPackages [wrangles]: Remove: archive file [/home/abi/fetcher/tmp/wrangles-1.9.0.tar.gz]
+[2024-04-28 19:45:24] INFO root fetch - main [MainThread]: End processing [wrangles]: success
+[2024-04-28 19:45:25] INFO root fetch - processPackages [binary-refinery]: Remove: archive file [/home/abi/fetcher/tmp/binary-refinery-0.6.8.tar.gz]
+[2024-04-28 19:45:25] INFO root fetch - processPackages [binary-refinery]: Remove: archive file [/home/abi/fetcher/tmp/binary-refinery-0.6.9.tar.gz]
+[2024-04-28 19:45:25] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
+[2024-04-28 19:45:25] INFO root fetch - main [MainThread]: Store serial: [22968542]
