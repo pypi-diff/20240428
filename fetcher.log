@@ -4060,3 +4060,33 @@
 [2024-04-28 06:15:48] INFO root fetch - processPackages [slyp]: Remove: archive file [/home/abi/fetcher/tmp/slyp-0.6.1.tar.gz]
 [2024-04-28 06:15:48] INFO root fetch - main [MainThread]: End processing [slyp]: success
 [2024-04-28 06:15:48] INFO root fetch - main [MainThread]: Store serial: [22963905]
+[2024-04-28 06:17:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963905]
+[2024-04-28 06:17:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ibeam
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmoonvision
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yappr
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ibeam]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-28 06:17:57] INFO root fetch - processPackages [cmoonvision]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/bb/84/894cc8f1a2f2793d7cd286d1c2650771364e791066f3d0a6d63cdc86afd1/ibeam-0.5.1.tar.gz
+[2024-04-28 06:17:57] INFO root fetch - processPackages [yappr]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 06:17:57] INFO root fetch - processPackages [cmoonvision]: Downloading https://files.pythonhosted.org/packages/39/74/fe5b5c868122054e654b7b9a2578123a4a130138591b58b2d3562ac86590/cmoonvision-0.1.1.tar.gz
+[2024-04-28 06:17:57] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/e8/e1/f08051c313d486ebeb3d99bc7229887f286ec070058a7e43d8973b4560ea/ibeam-0.5.2.tar.gz
+[2024-04-28 06:17:57] INFO root fetch - processPackages [yappr]: Downloading https://files.pythonhosted.org/packages/f7/ee/bb43356829b6f98555dbee39e6b0b365533b73e3dffcb6404e5cf61cfd90/yappr-1.0.1.tar.gz
+[2024-04-28 06:17:58] INFO root fetch - processPackages [ibeam]: executing diffoscope
+[2024-04-28 06:17:58] INFO root fetch - processPackages [ibeam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibeam-0.5.1.tar.gz tmp/ibeam-0.5.2.tar.gz --markdown 20240428/i/ibeam/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-28 06:17:58] INFO root fetch - processPackages [cmoonvision]: Downloading https://files.pythonhosted.org/packages/75/07/3e2fe2b74d1c496ebc6f2a83a11da625712080b07c0c44a60e3aea5bb65c/cmoonvision-0.1.2.tar.gz
+[2024-04-28 06:17:58] INFO root fetch - processPackages [cmoonvision]: executing diffoscope
+[2024-04-28 06:17:58] INFO root fetch - processPackages [cmoonvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmoonvision-0.1.1.tar.gz tmp/cmoonvision-0.1.2.tar.gz --markdown 20240428/c/cmoonvision/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 06:17:58] INFO root fetch - processPackages [yappr]: Downloading https://files.pythonhosted.org/packages/07/ab/55f569980cedec6b3d3601368c77075a0dc2a201b3afe1caf6b39749ac6d/yappr-1.0.2.tar.gz
+[2024-04-28 06:17:58] INFO root fetch - processPackages [yappr]: executing diffoscope
+[2024-04-28 06:17:58] INFO root fetch - processPackages [yappr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yappr-1.0.1.tar.gz tmp/yappr-1.0.2.tar.gz --markdown 20240428/y/yappr/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 06:17:58] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.1.tar.gz]
+[2024-04-28 06:17:58] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.2.tar.gz]
+[2024-04-28 06:17:58] INFO root fetch - main [MainThread]: End processing [ibeam]: success
+[2024-04-28 06:17:58] INFO root fetch - processPackages [cmoonvision]: Remove: archive file [/home/abi/fetcher/tmp/cmoonvision-0.1.1.tar.gz]
+[2024-04-28 06:17:58] INFO root fetch - processPackages [cmoonvision]: Remove: archive file [/home/abi/fetcher/tmp/cmoonvision-0.1.2.tar.gz]
+[2024-04-28 06:17:58] INFO root fetch - main [MainThread]: End processing [cmoonvision]: success
+[2024-04-28 06:17:59] INFO root fetch - processPackages [yappr]: Remove: archive file [/home/abi/fetcher/tmp/yappr-1.0.1.tar.gz]
+[2024-04-28 06:17:59] INFO root fetch - processPackages [yappr]: Remove: archive file [/home/abi/fetcher/tmp/yappr-1.0.2.tar.gz]
+[2024-04-28 06:17:59] INFO root fetch - main [MainThread]: End processing [yappr]: success
+[2024-04-28 06:17:59] INFO root fetch - main [MainThread]: Store serial: [22963913]
