@@ -12545,3 +12545,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:38:35] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
 [2024-04-28 16:38:35] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
 [2024-04-28 16:38:35] INFO root fetch - main [MainThread]: Store serial: [22967480]
+[2024-04-28 16:40:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967480]
+[2024-04-28 16:40:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 16:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elegantt
+[2024-04-28 16:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zodchy-notations
+[2024-04-28 16:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dazbo-commons
+[2024-04-28 16:40:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hpcflow-new2
+[2024-04-28 16:40:55] INFO root fetch - processPackages [hpcflow-new2]: New version: [0.2.0a99] Old Version: [0.2.0a98]
+[2024-04-28 16:40:55] INFO root fetch - processPackages [zodchy-notations]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 16:40:55] WARNING root fetch - processPackages [dazbo-commons]: Skipping, unable to determine old version
+[2024-04-28 16:40:55] INFO root fetch - main [MainThread]: End processing [dazbo-commons] error
+[2024-04-28 16:40:55] INFO root fetch - processPackages [hpcflow-new2]: Downloading https://files.pythonhosted.org/packages/82/5b/6984c1054c9e9e23755579aaa22700cc853a60706fbcc5669dd44c836893/hpcflow_new2-0.2.0a98.tar.gz
+[2024-04-28 16:40:55] INFO root fetch - processPackages [elegantt]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 16:40:55] INFO root fetch - processPackages [zodchy-notations]: Downloading https://files.pythonhosted.org/packages/7a/34/2aa64f2587c23c4f883a0eddad7d8d09d04b59c5e85f4dd00045b34755af/zodchy_notations-0.1.0.tar.gz
+[2024-04-28 16:40:55] INFO root fetch - processPackages [elegantt]: Downloading https://files.pythonhosted.org/packages/f9/b6/f7694874502e1842856eed04f6a45774de25059796b2019441b3073a3b67/elegantt-0.0.2.tar.gz
+[2024-04-28 16:40:55] INFO root fetch - processPackages [hpcflow-new2]: Downloading https://files.pythonhosted.org/packages/36/d0/5890c665787639f299c68be7a83fe303258a785667204f30810f0c319058/hpcflow_new2-0.2.0a99.tar.gz
+[2024-04-28 16:40:56] INFO root fetch - processPackages [zodchy-notations]: Downloading https://files.pythonhosted.org/packages/0b/80/3b993c89ec74602cfa0d06f3c60051a44eb2ea2fd54c556fdcb8f812bef5/zodchy_notations-0.1.1.tar.gz
+[2024-04-28 16:40:56] INFO root fetch - processPackages [hpcflow-new2]: executing diffoscope
+[2024-04-28 16:40:56] INFO root fetch - processPackages [hpcflow-new2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hpcflow_new2-0.2.0a98.tar.gz tmp/hpcflow_new2-0.2.0a99.tar.gz --markdown 20240428/h/hpcflow-new2/0.2.0a98-0.2.0a99/README.md --exclude *.pyd
+[2024-04-28 16:40:56] INFO root fetch - processPackages [zodchy-notations]: executing diffoscope
+[2024-04-28 16:40:56] INFO root fetch - processPackages [zodchy-notations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_notations-0.1.0.tar.gz tmp/zodchy_notations-0.1.1.tar.gz --markdown 20240428/z/zodchy-notations/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 16:40:56] INFO root fetch - processPackages [elegantt]: Downloading https://files.pythonhosted.org/packages/ea/90/1f13acde11f1a748d609129ce0150e915dd2ba5720b2970d51e0512c17b1/elegantt-0.0.3.tar.gz
+[2024-04-28 16:40:56] INFO root fetch - processPackages [zodchy-notations]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_notations-0.1.0.tar.gz]
+[2024-04-28 16:40:56] INFO root fetch - processPackages [zodchy-notations]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_notations-0.1.1.tar.gz]
+[2024-04-28 16:40:56] INFO root fetch - main [MainThread]: End processing [zodchy-notations]: success
+[2024-04-28 16:40:56] INFO root fetch - processPackages [elegantt]: executing diffoscope
+[2024-04-28 16:40:56] INFO root fetch - processPackages [elegantt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elegantt-0.0.2.tar.gz tmp/elegantt-0.0.3.tar.gz --markdown 20240428/e/elegantt/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 16:40:57] INFO root fetch - processPackages [hpcflow-new2]: Remove: archive file [/home/abi/fetcher/tmp/hpcflow_new2-0.2.0a98.tar.gz]
+[2024-04-28 16:40:57] INFO root fetch - processPackages [hpcflow-new2]: Remove: archive file [/home/abi/fetcher/tmp/hpcflow_new2-0.2.0a99.tar.gz]
+[2024-04-28 16:40:57] INFO root fetch - main [MainThread]: End processing [hpcflow-new2]: success
+[2024-04-28 16:40:57] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.2.tar.gz]
+[2024-04-28 16:40:57] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.3.tar.gz]
+[2024-04-28 16:40:57] INFO root fetch - main [MainThread]: End processing [elegantt]: success
+[2024-04-28 16:40:57] INFO root fetch - main [MainThread]: Store serial: [22967494]
