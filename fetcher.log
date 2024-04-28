@@ -21106,3 +21106,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:33:07] WARNING root fetch - processPackages [pynrw]: Skipping, unable to determine old version
 [2024-04-28 23:33:07] INFO root fetch - main [MainThread]: End processing [pynrw] error
 [2024-04-28 23:33:07] INFO root fetch - main [MainThread]: Store serial: [22971002]
+[2024-04-28 23:35:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971002]
+[2024-04-28 23:35:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 23:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recon-lw
+[2024-04-28 23:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqt5-qt5-designer
+[2024-04-28 23:35:16] INFO root fetch - processPackages [pyqt5-qt5-designer]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 23:35:16] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/65/86/08c93dbcb0004e96de9fdfdd5e7426e652dbc87277a946ffe08142b0eb3c/pyqt5_qt5_designer-0.0.8.tar.gz
+[2024-04-28 23:35:16] INFO root fetch - processPackages [recon-lw]: New version: [3.0.0.dev8870544684] Old Version: [3.0.0.dev8834806601]
+[2024-04-28 23:35:16] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/7e/87/0e298a3784548371f1a96db2b4e0f58e3166cf410944177c5d9759a280c2/recon_lw-3.0.0.dev8834806601.tar.gz
+[2024-04-28 23:35:16] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/4b/d0/a786d698fa94ec1b949503313659041b9e7c42002a1a28409f4c46f20098/pyqt5_qt5_designer-0.0.9.tar.gz
+[2024-04-28 23:35:16] INFO root fetch - processPackages [pyqt5-qt5-designer]: executing diffoscope
+[2024-04-28 23:35:16] INFO root fetch - processPackages [pyqt5-qt5-designer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_qt5_designer-0.0.8.tar.gz tmp/pyqt5_qt5_designer-0.0.9.tar.gz --markdown 20240428/p/pyqt5-qt5-designer/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 23:35:16] INFO root fetch - processPackages [recon-lw]: Downloading https://files.pythonhosted.org/packages/f5/f4/4b76f5f504813b5c1ecb463b7ab21a83b57865bbc3399ce9f2a3221cd3b0/recon_lw-3.0.0.dev8870544684.tar.gz
+[2024-04-28 23:35:17] INFO root fetch - processPackages [recon-lw]: executing diffoscope
+[2024-04-28 23:35:17] INFO root fetch - processPackages [recon-lw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recon_lw-3.0.0.dev8834806601.tar.gz tmp/recon_lw-3.0.0.dev8870544684.tar.gz --markdown 20240428/r/recon-lw/3.0.0.dev8834806601-3.0.0.dev8870544684/README.md --exclude *.pyd
+[2024-04-28 23:35:17] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.8.tar.gz]
+[2024-04-28 23:35:17] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.9.tar.gz]
+[2024-04-28 23:35:17] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
+[2024-04-28 23:35:17] INFO root fetch - processPackages [recon-lw]: Remove: archive file [/home/abi/fetcher/tmp/recon_lw-3.0.0.dev8834806601.tar.gz]
+[2024-04-28 23:35:17] INFO root fetch - processPackages [recon-lw]: Remove: archive file [/home/abi/fetcher/tmp/recon_lw-3.0.0.dev8870544684.tar.gz]
+[2024-04-28 23:35:17] INFO root fetch - main [MainThread]: End processing [recon-lw]: success
+[2024-04-28 23:35:17] INFO root fetch - main [MainThread]: Store serial: [22971007]
