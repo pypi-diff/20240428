@@ -2546,3 +2546,42 @@
 [2024-04-28 03:43:36] WARNING root fetch - processPackages [nncase]: Skipping package: exceeds size limit 19728741>=10485760
 [2024-04-28 03:43:36] INFO root fetch - main [MainThread]: End processing [nncase] error
 [2024-04-28 03:43:36] INFO root fetch - main [MainThread]: Store serial: [22963267]
+[2024-04-28 03:45:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963267]
+[2024-04-28 03:45:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 03:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltabot-cli
+[2024-04-28 03:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: github-heatmap
+[2024-04-28 03:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nncase-kpu
+[2024-04-28 03:45:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: druida
+[2024-04-28 03:45:45] INFO root fetch - processPackages [deltabot-cli]: New version: [6.1.0] Old Version: [6.0.1]
+[2024-04-28 03:45:45] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 03:45:45] INFO root fetch - processPackages [nncase-kpu]: New version: [2.8.2] Old Version: [2.8.1]
+[2024-04-28 03:45:45] INFO root fetch - processPackages [github-heatmap]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-28 03:45:45] INFO root fetch - processPackages [deltabot-cli]: Downloading https://files.pythonhosted.org/packages/2c/a9/97b90bdaebb8caa9546b6b206c331621e2e311bcc19b1c0e1809a15217b5/deltabot-cli-6.0.1.tar.gz
+[2024-04-28 03:45:45] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 03:45:45] INFO root fetch - processPackages [nncase-kpu]: Downloading https://files.pythonhosted.org/packages/71/28/7ba4a666a424ad2543224e1c9fdb79a28a1adea0add3930d895fd67329bb/nncase_kpu-2.8.1-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-28 03:45:45] INFO root fetch - processPackages [deltabot-cli]: Downloading https://files.pythonhosted.org/packages/1b/b5/5e325ba878e32860aa0d95e5372139a0fda590b0fba0a5118801fd48fe89/deltabot_cli-6.1.0.tar.gz
+[2024-04-28 03:45:45] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 03:45:45] INFO root fetch - processPackages [github-heatmap]: Downloading https://files.pythonhosted.org/packages/45/22/c5b351bd51f7df455709e6a1b8b1dd2a740f017ee8347677544243753ea2/github_heatmap-1.1.4.tar.gz
+[2024-04-28 03:45:45] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 03:45:45] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 03:45:45] INFO root fetch - processPackages [deltabot-cli]: executing diffoscope
+[2024-04-28 03:45:45] INFO root fetch - processPackages [deltabot-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltabot-cli-6.0.1.tar.gz tmp/deltabot_cli-6.1.0.tar.gz --markdown 20240428/d/deltabot-cli/6.0.1-6.1.0/README.md --exclude *.pyd
+[2024-04-28 03:45:45] INFO root fetch - processPackages [github-heatmap]: Downloading https://files.pythonhosted.org/packages/e8/21/802dd875f4601aa399e3387effd01f7f47fdfab8774c4415beb6757a1459/github_heatmap-1.1.5.tar.gz
+[2024-04-28 03:45:46] INFO root fetch - processPackages [github-heatmap]: executing diffoscope
+[2024-04-28 03:45:46] INFO root fetch - processPackages [github-heatmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_heatmap-1.1.4.tar.gz tmp/github_heatmap-1.1.5.tar.gz --markdown 20240428/g/github-heatmap/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-28 03:45:46] INFO root fetch - processPackages [nncase-kpu]: Downloading https://files.pythonhosted.org/packages/b5/62/e3782b9f631c7764ba41467754e3eb611e2fcbce99c438c019720a8c509c/nncase_kpu-2.8.2-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-28 03:45:46] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 03:45:46] INFO root fetch - processPackages [deltabot-cli]: Remove: archive file [/home/abi/fetcher/tmp/deltabot-cli-6.0.1.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - processPackages [deltabot-cli]: Remove: archive file [/home/abi/fetcher/tmp/deltabot_cli-6.1.0.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - main [MainThread]: End processing [deltabot-cli]: success
+[2024-04-28 03:45:46] INFO root fetch - processPackages [nncase-kpu]: executing diffoscope
+[2024-04-28 03:45:46] INFO root fetch - processPackages [nncase-kpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nncase_kpu-2.8.1-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nncase_kpu-2.8.2-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240428/n/nncase-kpu/2.8.1-2.8.2/README.md --exclude *.pyd
+[2024-04-28 03:45:46] INFO root fetch - processPackages [github-heatmap]: Remove: archive file [/home/abi/fetcher/tmp/github_heatmap-1.1.4.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - processPackages [github-heatmap]: Remove: archive file [/home/abi/fetcher/tmp/github_heatmap-1.1.5.tar.gz]
+[2024-04-28 03:45:46] INFO root fetch - main [MainThread]: End processing [github-heatmap]: success
+[2024-04-28 03:45:47] INFO root fetch - processPackages [nncase-kpu]: Remove: archive file [/home/abi/fetcher/tmp/nncase_kpu-2.8.1-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-28 03:45:47] INFO root fetch - processPackages [nncase-kpu]: Remove: archive file [/home/abi/fetcher/tmp/nncase_kpu-2.8.2-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-28 03:45:47] INFO root fetch - main [MainThread]: End processing [nncase-kpu]: success
+[2024-04-28 03:45:47] INFO root fetch - main [MainThread]: Store serial: [22963282]
