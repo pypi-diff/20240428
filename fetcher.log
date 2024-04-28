@@ -3092,3 +3092,33 @@
 [2024-04-28 04:34:24] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.1.3.tar.gz]
 [2024-04-28 04:34:24] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
 [2024-04-28 04:34:24] INFO root fetch - main [MainThread]: Store serial: [22963491]
+[2024-04-28 04:36:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963491]
+[2024-04-28 04:36:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zcbot-io-sdk
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ubo-app
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nue
+[2024-04-28 04:36:33] INFO root fetch - processPackages [zcbot-io-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 04:36:33] INFO root fetch - processPackages [nue]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ubo-app]: New version: [0.9.9] Old Version: [0.9.8a4]
+[2024-04-28 04:36:33] INFO root fetch - processPackages [zcbot-io-sdk]: Downloading https://files.pythonhosted.org/packages/44/84/e078d2085328099e3100a92ebc503aac936fd0fa5d5025f61e5abe0149db/zcbot-io-sdk-0.0.2.tar.gz
+[2024-04-28 04:36:33] INFO root fetch - processPackages [nue]: Downloading https://files.pythonhosted.org/packages/75/aa/d1756b173cad670bc3580cc311b3d3175d387a7be8cd5013c9f69a1c7917/nue-0.0.6.tar.gz
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/95/e9/c4e16198ab3bdf6b007857bc40357fe1bb068e7391f5fe793ca7f6e9819d/ubo_app-0.9.8a4.tar.gz
+[2024-04-28 04:36:33] INFO root fetch - processPackages [nue]: Downloading https://files.pythonhosted.org/packages/77/ef/e855880b8e16f97de9f46b9fb6158473e5c7f1bcb4c72e81128ba13da952/nue-0.0.7.tar.gz
+[2024-04-28 04:36:33] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/13/b7/3d42c344f38a9c5bf598c3ea5d71758fc78c30b3d3bf5b039ef153cf16b2/ubo_app-0.9.9.tar.gz
+[2024-04-28 04:36:34] INFO root fetch - processPackages [zcbot-io-sdk]: Downloading https://files.pythonhosted.org/packages/81/9f/2401e5a8a932ac325bb6bcb4c49154f5699ced901a9708b8ebb60bf74f92/zcbot-io-sdk-0.0.3.tar.gz
+[2024-04-28 04:36:34] INFO root fetch - processPackages [nue]: executing diffoscope
+[2024-04-28 04:36:34] INFO root fetch - processPackages [nue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nue-0.0.6.tar.gz tmp/nue-0.0.7.tar.gz --markdown 20240428/n/nue/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 04:36:34] INFO root fetch - processPackages [zcbot-io-sdk]: executing diffoscope
+[2024-04-28 04:36:34] INFO root fetch - processPackages [zcbot-io-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zcbot-io-sdk-0.0.2.tar.gz tmp/zcbot-io-sdk-0.0.3.tar.gz --markdown 20240428/z/zcbot-io-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 04:36:34] INFO root fetch - processPackages [ubo-app]: executing diffoscope
+[2024-04-28 04:36:34] INFO root fetch - processPackages [ubo-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_app-0.9.8a4.tar.gz tmp/ubo_app-0.9.9.tar.gz --markdown 20240428/u/ubo-app/0.9.8a4-0.9.9/README.md --exclude *.pyd
+[2024-04-28 04:36:34] INFO root fetch - processPackages [nue]: Remove: archive file [/home/abi/fetcher/tmp/nue-0.0.6.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - processPackages [nue]: Remove: archive file [/home/abi/fetcher/tmp/nue-0.0.7.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - main [MainThread]: End processing [nue]: success
+[2024-04-28 04:36:34] INFO root fetch - processPackages [zcbot-io-sdk]: Remove: archive file [/home/abi/fetcher/tmp/zcbot-io-sdk-0.0.2.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - processPackages [zcbot-io-sdk]: Remove: archive file [/home/abi/fetcher/tmp/zcbot-io-sdk-0.0.3.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - main [MainThread]: End processing [zcbot-io-sdk]: success
+[2024-04-28 04:36:34] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.8a4.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
+[2024-04-28 04:36:34] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
+[2024-04-28 04:36:34] INFO root fetch - main [MainThread]: Store serial: [22963499]
