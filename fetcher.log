@@ -4172,3 +4172,51 @@
 [2024-04-28 06:22:19] INFO root fetch - processPackages [adafruit-circuitpython-connectionmanager]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_connectionmanager-1.2.0.tar.gz]
 [2024-04-28 06:22:19] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-connectionmanager]: success
 [2024-04-28 06:22:19] INFO root fetch - main [MainThread]: Store serial: [22963945]
+[2024-04-28 06:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963945]
+[2024-04-28 06:24:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 06:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsonffi
+[2024-04-28 06:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: serde2
+[2024-04-28 06:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitnet
+[2024-04-28 06:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-core
+[2024-04-28 06:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oscb
+[2024-04-28 06:24:28] INFO root fetch - processPackages [pypomes-core]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-28 06:24:28] INFO root fetch - processPackages [oscb]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-28 06:24:28] INFO root fetch - processPackages [serde2]: New version: [1.8.3] Old Version: [1.7.3]
+[2024-04-28 06:24:28] INFO root fetch - processPackages [bitnet]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-28 06:24:28] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/de/95/48ab93ff0fbc7af93134137cc68f7f65e20b5690d28117fc803df7e7950f/pypomes_core-0.9.1.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [jsonffi]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-28 06:24:28] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/50/72/27bceac7b44d2f4d530a1f4c817cc3c6a4d06a0160455ee9ea2ace2ff49f/oscb-1.0.7.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [serde2]: Downloading https://files.pythonhosted.org/packages/40/3a/b7c19dbe8fc5303951f4c0c677bc00b7b0cedf719523a03fb45ca89736ee/serde2-1.7.3.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [bitnet]: Downloading https://files.pythonhosted.org/packages/91/e5/c0d81dea4c06f415594df84464986586f3f6ba759a2016e49be774014295/bitnet-0.2.4.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [jsonffi]: Downloading https://files.pythonhosted.org/packages/71/ef/ee38774f64b33bf550768b96ab7508129c59953f20eab0d90eb539b45268/jsonffi-1.0.5-py3-none-any.whl
+[2024-04-28 06:24:28] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/d9/01/d22e7403a7c42a6ab074b9ee1c6b3106fc7586dbca44ef8859ba6ffb792c/oscb-1.0.8.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/01/36/e5b3ceeefdab9ce6a9fb793392bc9597ec51fe8ae641f292569e91598512/pypomes_core-0.9.2.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [serde2]: Downloading https://files.pythonhosted.org/packages/fb/ad/9c2bea90abfbee3b0b07219c58c53ffce2ad110ddb17ffca1fcdd6567826/serde2-1.8.3.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 06:24:28] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.7.tar.gz tmp/oscb-1.0.8.tar.gz --markdown 20240428/o/oscb/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-28 06:24:28] INFO root fetch - processPackages [jsonffi]: Downloading https://files.pythonhosted.org/packages/f2/a3/c65943ce7ac619fd325a82b430df3980fa4f31bf25bd496d318c5357ea87/jsonffi-1.0.6-py3-none-any.whl
+[2024-04-28 06:24:28] INFO root fetch - processPackages [bitnet]: Downloading https://files.pythonhosted.org/packages/2a/d3/fbceb69bbad24dc80eceb334a884188cad1263b657feb9dad317ef642371/bitnet-0.2.5.tar.gz
+[2024-04-28 06:24:28] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-28 06:24:28] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.9.1.tar.gz tmp/pypomes_core-0.9.2.tar.gz --markdown 20240428/p/pypomes-core/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-28 06:24:28] INFO root fetch - processPackages [serde2]: executing diffoscope
+[2024-04-28 06:24:28] INFO root fetch - processPackages [serde2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serde2-1.7.3.tar.gz tmp/serde2-1.8.3.tar.gz --markdown 20240428/s/serde2/1.7.3-1.8.3/README.md --exclude *.pyd
+[2024-04-28 06:24:28] INFO root fetch - processPackages [jsonffi]: executing diffoscope
+[2024-04-28 06:24:28] INFO root fetch - processPackages [jsonffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonffi-1.0.5-py3-none-any.whl.zip tmp/jsonffi-1.0.6-py3-none-any.whl.zip --markdown 20240428/j/jsonffi/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-28 06:24:28] INFO root fetch - processPackages [bitnet]: executing diffoscope
+[2024-04-28 06:24:28] INFO root fetch - processPackages [bitnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitnet-0.2.4.tar.gz tmp/bitnet-0.2.5.tar.gz --markdown 20240428/b/bitnet/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-28 06:24:29] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.7.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.8.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 06:24:29] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.1.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.9.2.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-28 06:24:29] INFO root fetch - processPackages [jsonffi]: Remove: archive file [/home/abi/fetcher/tmp/jsonffi-1.0.5-py3-none-any.whl.zip]
+[2024-04-28 06:24:29] INFO root fetch - processPackages [jsonffi]: Remove: archive file [/home/abi/fetcher/tmp/jsonffi-1.0.6-py3-none-any.whl.zip]
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: End processing [jsonffi]: success
+[2024-04-28 06:24:29] INFO root fetch - processPackages [bitnet]: Remove: archive file [/home/abi/fetcher/tmp/bitnet-0.2.4.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - processPackages [bitnet]: Remove: archive file [/home/abi/fetcher/tmp/bitnet-0.2.5.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: End processing [bitnet]: success
+[2024-04-28 06:24:29] INFO root fetch - processPackages [serde2]: Remove: archive file [/home/abi/fetcher/tmp/serde2-1.7.3.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - processPackages [serde2]: Remove: archive file [/home/abi/fetcher/tmp/serde2-1.8.3.tar.gz]
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: End processing [serde2]: success
+[2024-04-28 06:24:29] INFO root fetch - main [MainThread]: Store serial: [22963960]
