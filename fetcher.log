@@ -8959,3 +8959,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:19:19] INFO root fetch - processPackages [phc-ingestion]: Remove: archive file [/home/abi/fetcher/tmp/phc-ingestion-0.8.7.tar.gz]
 [2024-04-28 12:19:19] INFO root fetch - main [MainThread]: End processing [phc-ingestion]: success
 [2024-04-28 12:19:19] INFO root fetch - main [MainThread]: Store serial: [22965959]
+[2024-04-28 12:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965959]
+[2024-04-28 12:21:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 12:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: istr-python
+[2024-04-28 12:21:28] INFO root fetch - processPackages [istr-python]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 12:21:28] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/ec/40/d1468499da37d4cd52d8ebd4c199a4c63cdc623d1fe16582c2a9f8ccbfe7/istr_python-0.1.5.tar.gz
+[2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/75/e0/7a335503dd3f6c13d1ba4d629e51a50175126da071fb639b4ac9493a5a37/istr_python-0.1.6.tar.gz
+[2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.5.tar.gz tmp/istr_python-0.1.6.tar.gz --markdown 20240428/i/istr-python/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.5.tar.gz]
+[2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.6.tar.gz]
+[2024-04-28 12:21:29] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-28 12:21:29] INFO root fetch - main [MainThread]: Store serial: [22965962]
