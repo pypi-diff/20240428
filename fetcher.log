@@ -16067,3 +16067,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:46:33] INFO root fetch - processPackages [astrophot]: Remove: archive file [/home/abi/fetcher/tmp/astrophot-0.16.4.tar.gz]
 [2024-04-28 20:46:33] INFO root fetch - main [MainThread]: End processing [astrophot]: success
 [2024-04-28 20:46:33] INFO root fetch - main [MainThread]: Store serial: [22968918]
+[2024-04-28 20:48:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968918]
+[2024-04-28 20:48:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 20:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quasarpy
+[2024-04-28 20:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastqToFastaConverter
+[2024-04-28 20:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binary-refinery
+[2024-04-28 20:48:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cabinet
+[2024-04-28 20:48:42] INFO root fetch - processPackages [quasarpy]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 20:48:42] INFO root fetch - processPackages [binary-refinery]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-28 20:48:42] INFO root fetch - processPackages [cabinet]: New version: [2024.4.28.2] Old Version: [2024.4.28.1]
+[2024-04-28 20:48:42] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/fc/16/3649348b229153d9f6db9e99a4d5c07cefe2e0c600f93f9daf2432f657f9/quasarpy-0.1.1.tar.gz
+[2024-04-28 20:48:42] WARNING root fetch - processPackages [FastqToFastaConverter]: Skipping, unable to determine old version
+[2024-04-28 20:48:42] INFO root fetch - main [MainThread]: End processing [FastqToFastaConverter] error
+[2024-04-28 20:48:42] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/78/e7/f24f5f15d7ebee0b386c6c723bfad23fe1c68536032f72a004c714a54ccf/binary-refinery-0.6.8.tar.gz
+[2024-04-28 20:48:42] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/5e/65/1e217c1b4ffa6e9da90b149da765e074f7f2f1f2d5f083f91f52b9640c72/cabinet-2024.4.28.1.tar.gz
+[2024-04-28 20:48:42] INFO root fetch - processPackages [binary-refinery]: Downloading https://files.pythonhosted.org/packages/00/6d/f287f684167e762f94c880a85639f229f8be47af59175e8062209b17059e/binary-refinery-0.6.9.tar.gz
+[2024-04-28 20:48:42] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/0a/f8/f5104625a0c2c7194a02fe2f34d0fdd4360d18c212382ae576d4d74d176c/quasarpy-0.1.2.tar.gz
+[2024-04-28 20:48:42] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/17/09/e639c0ae8705ffece078bb7877d4e42841d93040ab653ea7f7199ec06e5e/cabinet-2024.4.28.2.tar.gz
+[2024-04-28 20:48:42] INFO root fetch - processPackages [binary-refinery]: executing diffoscope
+[2024-04-28 20:48:42] INFO root fetch - processPackages [binary-refinery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binary-refinery-0.6.8.tar.gz tmp/binary-refinery-0.6.9.tar.gz --markdown 20240428/b/binary-refinery/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-28 20:48:42] INFO root fetch - processPackages [quasarpy]: executing diffoscope
+[2024-04-28 20:48:42] INFO root fetch - processPackages [quasarpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quasarpy-0.1.1.tar.gz tmp/quasarpy-0.1.2.tar.gz --markdown 20240428/q/quasarpy/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 20:48:42] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2024-04-28 20:48:42] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2024.4.28.1.tar.gz tmp/cabinet-2024.4.28.2.tar.gz --markdown 20240428/c/cabinet/2024.4.28.1-2024.4.28.2/README.md --exclude *.pyd
+[2024-04-28 20:48:43] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.1.tar.gz]
+[2024-04-28 20:48:43] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.2.tar.gz]
+[2024-04-28 20:48:43] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
+[2024-04-28 20:48:43] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.28.1.tar.gz]
+[2024-04-28 20:48:43] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.28.2.tar.gz]
+[2024-04-28 20:48:43] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2024-04-28 20:48:44] INFO root fetch - processPackages [binary-refinery]: Remove: archive file [/home/abi/fetcher/tmp/binary-refinery-0.6.8.tar.gz]
+[2024-04-28 20:48:44] INFO root fetch - processPackages [binary-refinery]: Remove: archive file [/home/abi/fetcher/tmp/binary-refinery-0.6.9.tar.gz]
+[2024-04-28 20:48:44] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
+[2024-04-28 20:48:44] INFO root fetch - main [MainThread]: Store serial: [22968933]
