@@ -2741,3 +2741,24 @@
 [2024-04-28 03:58:50] INFO root fetch - processPackages [llama-index-core]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_core-0.9.56.tar.gz]
 [2024-04-28 03:58:50] INFO root fetch - main [MainThread]: End processing [llama-index-core]: success
 [2024-04-28 03:58:50] INFO root fetch - main [MainThread]: Store serial: [22963357]
+[2024-04-28 04:00:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963357]
+[2024-04-28 04:00:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 04:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agit
+[2024-04-28 04:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-snippets
+[2024-04-28 04:00:59] INFO root fetch - processPackages [python-snippets]: New version: [0.0.6] Old Version: [0.0.47]
+[2024-04-28 04:00:59] INFO root fetch - processPackages [agit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 04:00:59] INFO root fetch - processPackages [agit]: Downloading https://files.pythonhosted.org/packages/8e/35/84e9bd83f61584d50d2835f5305579d1de65e01385e73fb4b7ce38c3eaea/agit-0.1.8.tar.gz
+[2024-04-28 04:00:59] INFO root fetch - processPackages [python-snippets]: Downloading https://files.pythonhosted.org/packages/26/45/7ca5838dad64ebdf8eaaa321037b6f0010166f375a4bad3625acbc58b271/python-snippets-0.0.47.tar.gz
+[2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: Downloading https://files.pythonhosted.org/packages/60/33/b2bf26349fba7328d66c4a5b6fd237c552d1830b8eff1e2aa7cf9aab1d1f/agit-0.1.9.tar.gz
+[2024-04-28 04:01:00] INFO root fetch - processPackages [python-snippets]: Downloading https://files.pythonhosted.org/packages/f6/c3/913b89642369dc97ecc362717e8cc63904613fbd509b670ce64e809ffc7a/python-snippets-0.0.6.tar.gz
+[2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: executing diffoscope
+[2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agit-0.1.8.tar.gz tmp/agit-0.1.9.tar.gz --markdown 20240428/a/agit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 04:01:00] INFO root fetch - processPackages [python-snippets]: executing diffoscope
+[2024-04-28 04:01:00] INFO root fetch - processPackages [python-snippets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-snippets-0.0.47.tar.gz tmp/python-snippets-0.0.6.tar.gz --markdown 20240428/p/python-snippets/0.0.47-0.0.6/README.md --exclude *.pyd
+[2024-04-28 04:01:00] INFO root fetch - processPackages [python-snippets]: Remove: archive file [/home/abi/fetcher/tmp/python-snippets-0.0.47.tar.gz]
+[2024-04-28 04:01:00] INFO root fetch - processPackages [python-snippets]: Remove: archive file [/home/abi/fetcher/tmp/python-snippets-0.0.6.tar.gz]
+[2024-04-28 04:01:00] INFO root fetch - main [MainThread]: End processing [python-snippets]: success
+[2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: Remove: archive file [/home/abi/fetcher/tmp/agit-0.1.8.tar.gz]
+[2024-04-28 04:01:00] INFO root fetch - processPackages [agit]: Remove: archive file [/home/abi/fetcher/tmp/agit-0.1.9.tar.gz]
+[2024-04-28 04:01:00] INFO root fetch - main [MainThread]: End processing [agit]: success
+[2024-04-28 04:01:00] INFO root fetch - main [MainThread]: Store serial: [22963364]
