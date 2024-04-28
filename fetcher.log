@@ -3997,3 +3997,15 @@
 [2024-04-28 06:11:29] INFO root fetch - processPackages [odoo-addon-fieldservice]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice-17.0.1.2.0-py3-none-any.whl.zip]
 [2024-04-28 06:11:29] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice]: success
 [2024-04-28 06:11:29] INFO root fetch - main [MainThread]: Store serial: [22963884]
+[2024-04-28 06:13:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963884]
+[2024-04-28 06:13:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 06:13:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phylokrr
+[2024-04-28 06:13:37] INFO root fetch - processPackages [phylokrr]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-28 06:13:37] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/d8/fd/8a3ee2d96f8bcf8632407552b088a980a46696d5f5243461f622042d7ca9/phylokrr-0.4.5.tar.gz
+[2024-04-28 06:13:37] INFO root fetch - processPackages [phylokrr]: Downloading https://files.pythonhosted.org/packages/6a/7b/d98694eb12272ae47684df61862f9dcfc1140549d8b303aca18eb95b637d/phylokrr-0.4.6.tar.gz
+[2024-04-28 06:13:37] INFO root fetch - processPackages [phylokrr]: executing diffoscope
+[2024-04-28 06:13:37] INFO root fetch - processPackages [phylokrr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phylokrr-0.4.5.tar.gz tmp/phylokrr-0.4.6.tar.gz --markdown 20240428/p/phylokrr/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-04-28 06:13:38] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.5.tar.gz]
+[2024-04-28 06:13:38] INFO root fetch - processPackages [phylokrr]: Remove: archive file [/home/abi/fetcher/tmp/phylokrr-0.4.6.tar.gz]
+[2024-04-28 06:13:38] INFO root fetch - main [MainThread]: End processing [phylokrr]: success
+[2024-04-28 06:13:38] INFO root fetch - main [MainThread]: Store serial: [22963887]
