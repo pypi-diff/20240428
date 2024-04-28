@@ -8470,3 +8470,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:44:03] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
 [2024-04-28 11:44:03] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
 [2024-04-28 11:44:03] INFO root fetch - main [MainThread]: Store serial: [22965782]
+[2024-04-28 11:46:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965782]
+[2024-04-28 11:46:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PFlowC
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zz-pix
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PortableTab
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: visits
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cicd-tbd
+[2024-04-28 11:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stressor
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PortableTab]: New version: [0.3.5.dev1] Old Version: [0.3.4]
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PFlowC]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-28 11:46:13] WARNING root fetch - processPackages [visits]: Skipping, unable to determine old version
+[2024-04-28 11:46:13] INFO root fetch - main [MainThread]: End processing [visits] error
+[2024-04-28 11:46:13] WARNING root fetch - processPackages [cicd-tbd]: Skipping, unable to determine old version
+[2024-04-28 11:46:13] INFO root fetch - main [MainThread]: End processing [cicd-tbd] error
+[2024-04-28 11:46:13] INFO root fetch - processPackages [zz-pix]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/65/ae/0916a84de2412b79819e39337b9644e10de0a77a4389643dd82e60288b3b/PFlowC-1.4.0.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PortableTab]: Downloading https://files.pythonhosted.org/packages/e7/65/4eff54aabfa63875354657e8e1939417613016e48cc0afc5b7e65bc246f3/portabletab-0.3.4.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [stressor]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-28 11:46:13] INFO root fetch - processPackages [zz-pix]: Downloading https://files.pythonhosted.org/packages/f6/2d/828b73ad647fd3e5964baab7386b433e81bab20cc8e0114c54672f4a2c52/zz-pix-0.0.7.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [stressor]: Downloading https://files.pythonhosted.org/packages/6b/8d/8d903a8590ec687c2dbe438f5344765159a26def3a241b76fbbb5f2049e1/stressor-0.5.2.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PortableTab]: Downloading https://files.pythonhosted.org/packages/e8/c9/faf65b415269a5a774f4efa07f70193e385f568c513793996a580e975630/portabletab-0.3.5.dev1.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PFlowC]: Downloading https://files.pythonhosted.org/packages/56/a5/3487a205d1c2c91469325b0df1a229c60a24787777076d8ddfcd209154e2/PFlowC-1.4.1.tar.gz
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PortableTab]: executing diffoscope
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PortableTab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portabletab-0.3.4.tar.gz tmp/portabletab-0.3.5.dev1.tar.gz --markdown 20240428/P/PortableTab/0.3.4-0.3.5.dev1/README.md --exclude *.pyd
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PFlowC]: executing diffoscope
+[2024-04-28 11:46:13] INFO root fetch - processPackages [PFlowC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PFlowC-1.4.0.tar.gz tmp/PFlowC-1.4.1.tar.gz --markdown 20240428/P/PFlowC/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-28 11:46:14] INFO root fetch - processPackages [zz-pix]: Downloading https://files.pythonhosted.org/packages/be/18/905d3a4eacdbf44f1224fa8f9e001ee80178657ae55560db16370d903282/zz-pix-0.0.8.tar.gz
+[2024-04-28 11:46:14] INFO root fetch - processPackages [stressor]: Downloading https://files.pythonhosted.org/packages/30/f7/73a527c09ee5f6a870340e66640eaf48ee321e610cdb553ef33dbde99091/stressor-0.6.0.tar.gz
+[2024-04-28 11:46:14] INFO root fetch - processPackages [zz-pix]: executing diffoscope
+[2024-04-28 11:46:14] INFO root fetch - processPackages [zz-pix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zz-pix-0.0.7.tar.gz tmp/zz-pix-0.0.8.tar.gz --markdown 20240428/z/zz-pix/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-28 11:46:14] INFO root fetch - processPackages [stressor]: executing diffoscope
+[2024-04-28 11:46:14] INFO root fetch - processPackages [stressor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stressor-0.5.2.tar.gz tmp/stressor-0.6.0.tar.gz --markdown 20240428/s/stressor/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-04-28 11:46:14] INFO root fetch - processPackages [PortableTab]: Remove: archive file [/home/abi/fetcher/tmp/portabletab-0.3.4.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - processPackages [PortableTab]: Remove: archive file [/home/abi/fetcher/tmp/portabletab-0.3.5.dev1.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - main [MainThread]: End processing [PortableTab]: success
+[2024-04-28 11:46:14] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.0.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - processPackages [PFlowC]: Remove: archive file [/home/abi/fetcher/tmp/PFlowC-1.4.1.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - main [MainThread]: End processing [PFlowC]: success
+[2024-04-28 11:46:14] INFO root fetch - processPackages [zz-pix]: Remove: archive file [/home/abi/fetcher/tmp/zz-pix-0.0.7.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - processPackages [zz-pix]: Remove: archive file [/home/abi/fetcher/tmp/zz-pix-0.0.8.tar.gz]
+[2024-04-28 11:46:14] INFO root fetch - main [MainThread]: End processing [zz-pix]: success
+[2024-04-28 11:46:15] INFO root fetch - processPackages [stressor]: Remove: archive file [/home/abi/fetcher/tmp/stressor-0.5.2.tar.gz]
+[2024-04-28 11:46:15] INFO root fetch - processPackages [stressor]: Remove: archive file [/home/abi/fetcher/tmp/stressor-0.6.0.tar.gz]
+[2024-04-28 11:46:15] INFO root fetch - main [MainThread]: End processing [stressor]: success
+[2024-04-28 11:46:15] INFO root fetch - main [MainThread]: Store serial: [22965801]
