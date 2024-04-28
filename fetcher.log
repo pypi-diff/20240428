@@ -5890,3 +5890,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:40:05] INFO root fetch - processPackages [simplenote-local]: Remove: archive file [/home/abi/fetcher/tmp/simplenote_local-1.0.3.tar.gz]
 [2024-04-28 08:40:05] INFO root fetch - main [MainThread]: End processing [simplenote-local]: success
 [2024-04-28 08:40:05] INFO root fetch - main [MainThread]: Store serial: [22964679]
+[2024-04-28 08:42:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964679]
+[2024-04-28 08:42:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 08:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964679]
+[2024-04-28 08:44:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edurpa-document
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ynab-transaction-adjuster
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thepipe-api
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PureCloudPlatformClientV2
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: secretscraper
+[2024-04-28 08:44:19] INFO root fetch - processPackages [secretscraper]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 08:44:19] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/d1/e0/1d01875be514fda88786c47a4cb835fc35522469694b7fd1376059bf7640/secretscraper-1.3.2.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ynab-transaction-adjuster]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-28 08:44:19] WARNING root fetch - processPackages [edurpa-document]: Skipping, unable to determine old version
+[2024-04-28 08:44:19] INFO root fetch - main [MainThread]: End processing [edurpa-document] error
+[2024-04-28 08:44:19] INFO root fetch - processPackages [PureCloudPlatformClientV2]: New version: [99.0.0] Old Version: [98.0.0]
+[2024-04-28 08:44:19] INFO root fetch - processPackages [thepipe-api]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ynab-transaction-adjuster]: Downloading https://files.pythonhosted.org/packages/03/28/a6053619279f8d9b4643efcb1e46739d6e27cdf670a2daf4aa384c0e1bfd/ynab_transaction_adjuster-1.1.0.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/7c/2c/d09cb5c4b058b086f8617ccc8b4c69d6d08feb9b0a86da5c6530b45659f4/thepipe_api-0.3.2.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/2c/c0/91800d23710423ae3701d533f2eb887685821d04a61d8ce88b3ef04e973d/PureCloudPlatformClientV2-98.0.0.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [secretscraper]: Downloading https://files.pythonhosted.org/packages/19/1a/c8657d0d24a2ba3aa92004753a1bf911e5072d50ec4aba7bcf332e95754c/secretscraper-1.3.3.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [secretscraper]: executing diffoscope
+[2024-04-28 08:44:19] INFO root fetch - processPackages [secretscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretscraper-1.3.2.tar.gz tmp/secretscraper-1.3.3.tar.gz --markdown 20240428/s/secretscraper/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 08:44:19] INFO root fetch - processPackages [ynab-transaction-adjuster]: Downloading https://files.pythonhosted.org/packages/4b/aa/3581d81ca2c88f5249bf9a75cd7c5a5419e209160a03ccec34b8faa5b53d/ynab_transaction_adjuster-1.2.0.tar.gz
+[2024-04-28 08:44:19] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/0c/97/fe2ce41dfd3a0fb05de96d6a5336e20e3a97465b8cac7b8376932e10c6e5/thepipe_api-0.3.3.tar.gz
+[2024-04-28 08:44:20] INFO root fetch - processPackages [ynab-transaction-adjuster]: executing diffoscope
+[2024-04-28 08:44:20] INFO root fetch - processPackages [ynab-transaction-adjuster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynab_transaction_adjuster-1.1.0.tar.gz tmp/ynab_transaction_adjuster-1.2.0.tar.gz --markdown 20240428/y/ynab-transaction-adjuster/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-28 08:44:20] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/27/4a/c79d7db4d3031ed827ca4794d7791097c946dd8a6a0ae49a7fb27c9473d8/PureCloudPlatformClientV2-99.0.0.tar.gz
+[2024-04-28 08:44:20] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-28 08:44:20] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.3.2.tar.gz tmp/thepipe_api-0.3.3.tar.gz --markdown 20240428/t/thepipe-api/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-28 08:44:20] INFO root fetch - processPackages [PureCloudPlatformClientV2]: executing diffoscope
+[2024-04-28 08:44:20] INFO root fetch - processPackages [PureCloudPlatformClientV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PureCloudPlatformClientV2-98.0.0.tar.gz tmp/PureCloudPlatformClientV2-99.0.0.tar.gz --markdown 20240428/P/PureCloudPlatformClientV2/98.0.0-99.0.0/README.md --exclude *.pyd
+[2024-04-28 08:44:20] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.2.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - processPackages [secretscraper]: Remove: archive file [/home/abi/fetcher/tmp/secretscraper-1.3.3.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - main [MainThread]: End processing [secretscraper]: success
+[2024-04-28 08:44:20] INFO root fetch - processPackages [ynab-transaction-adjuster]: Remove: archive file [/home/abi/fetcher/tmp/ynab_transaction_adjuster-1.1.0.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - processPackages [ynab-transaction-adjuster]: Remove: archive file [/home/abi/fetcher/tmp/ynab_transaction_adjuster-1.2.0.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - main [MainThread]: End processing [ynab-transaction-adjuster]: success
+[2024-04-28 08:44:20] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.3.2.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.3.3.tar.gz]
+[2024-04-28 08:44:20] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-28 08:44:31] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-98.0.0.tar.gz]
+[2024-04-28 08:44:31] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-99.0.0.tar.gz]
+[2024-04-28 08:44:31] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
+[2024-04-28 08:44:31] INFO root fetch - main [MainThread]: Store serial: [22964694]
