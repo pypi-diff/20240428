@@ -9477,3 +9477,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:54:30] INFO root fetch - processPackages [i2cylib]: Remove: archive file [/home/abi/fetcher/tmp/i2cylib-1.9.5.tar.gz]
 [2024-04-28 12:54:30] INFO root fetch - main [MainThread]: End processing [i2cylib]: success
 [2024-04-28 12:54:30] INFO root fetch - main [MainThread]: Store serial: [22966236]
+[2024-04-28 12:56:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966236]
+[2024-04-28 12:56:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqt6-without-qt
+[2024-04-28 12:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyPulseHeatPipe
+[2024-04-28 12:56:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zhmccli
+[2024-04-28 12:56:40] INFO root fetch - processPackages [PyPulseHeatPipe]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-04-28 12:56:40] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/5a/f7/fb70c37f4e8bd21e76140568263e3b36a864a801da2f8c883e4d70bf7b60/PyPulseHeatPipe-1.0.4.tar.gz
+[2024-04-28 12:56:40] INFO root fetch - processPackages [zhmccli]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-04-28 12:56:40] INFO root fetch - processPackages [pyqt6-without-qt]: New version: [6.7.0.post0] Old Version: [6.7.0]
+[2024-04-28 12:56:41] INFO root fetch - processPackages [pyqt6-without-qt]: Downloading https://files.pythonhosted.org/packages/cc/ca/95693b5e2623e096cacc07f8b009b7cb6e452059293840519a8952ba2169/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl
+[2024-04-28 12:56:41] INFO root fetch - processPackages [zhmccli]: Downloading https://files.pythonhosted.org/packages/4f/10/372966c1c49e38aff6cf39f5899e8ce5e8221ba4808d51ab760204994305/zhmccli-1.9.2.tar.gz
+[2024-04-28 12:56:41] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/b1/3a/b0aa33457fd49a1742c5c66976052bf95ded46657e122e82faa7b29c7fe6/PyPulseHeatPipe-1.0.6.tar.gz
+[2024-04-28 12:56:41] INFO root fetch - processPackages [PyPulseHeatPipe]: executing diffoscope
+[2024-04-28 12:56:41] INFO root fetch - processPackages [PyPulseHeatPipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPulseHeatPipe-1.0.4.tar.gz tmp/PyPulseHeatPipe-1.0.6.tar.gz --markdown 20240428/P/PyPulseHeatPipe/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-04-28 12:56:41] INFO root fetch - processPackages [zhmccli]: Downloading https://files.pythonhosted.org/packages/c6/47/f5ed6eb17351b44db6ba99d695aac55d15b96304e93e2d6d097357183e78/zhmccli-1.9.3.tar.gz
+[2024-04-28 12:56:41] INFO root fetch - processPackages [zhmccli]: executing diffoscope
+[2024-04-28 12:56:41] INFO root fetch - processPackages [zhmccli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmccli-1.9.2.tar.gz tmp/zhmccli-1.9.3.tar.gz --markdown 20240428/z/zhmccli/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-04-28 12:56:41] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.4.tar.gz]
+[2024-04-28 12:56:41] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.6.tar.gz]
+[2024-04-28 12:56:41] INFO root fetch - main [MainThread]: End processing [PyPulseHeatPipe]: success
+[2024-04-28 12:56:42] INFO root fetch - processPackages [pyqt6-without-qt]: Downloading https://files.pythonhosted.org/packages/59/8f/b2f33874621e40e9b1dee67edd27f351ac722133cb73062d1bad177b8b7e/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl
+[2024-04-28 12:56:42] INFO root fetch - processPackages [zhmccli]: Remove: archive file [/home/abi/fetcher/tmp/zhmccli-1.9.2.tar.gz]
+[2024-04-28 12:56:42] INFO root fetch - processPackages [zhmccli]: Remove: archive file [/home/abi/fetcher/tmp/zhmccli-1.9.3.tar.gz]
+[2024-04-28 12:56:42] INFO root fetch - main [MainThread]: End processing [zhmccli]: success
+[2024-04-28 12:56:43] INFO root fetch - processPackages [pyqt6-without-qt]: executing diffoscope
+[2024-04-28 12:56:43] INFO root fetch - processPackages [pyqt6-without-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl.zip tmp/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl.zip --markdown 20240428/p/pyqt6-without-qt/6.7.0-6.7.0.post0/README.md --exclude *.pyd
+[2024-04-28 12:56:51] INFO root fetch - processPackages [pyqt6-without-qt]: Remove: archive file [/home/abi/fetcher/tmp/pyqt6_without_qt-6.7.0-cp38-abi3-win_amd64.whl.zip]
+[2024-04-28 12:56:51] INFO root fetch - processPackages [pyqt6-without-qt]: Remove: archive file [/home/abi/fetcher/tmp/pyqt6_without_qt-6.7.0.post0-cp38-abi3-manylinux_2_28_x86_64.whl.zip]
+[2024-04-28 12:56:51] INFO root fetch - main [MainThread]: End processing [pyqt6-without-qt]: success
+[2024-04-28 12:56:51] INFO root fetch - main [MainThread]: Store serial: [22966245]
