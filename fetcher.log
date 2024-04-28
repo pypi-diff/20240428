@@ -15243,3 +15243,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:45:25] INFO root fetch - processPackages [binary-refinery]: Remove: archive file [/home/abi/fetcher/tmp/binary-refinery-0.6.9.tar.gz]
 [2024-04-28 19:45:25] INFO root fetch - main [MainThread]: End processing [binary-refinery]: success
 [2024-04-28 19:45:25] INFO root fetch - main [MainThread]: Store serial: [22968542]
+[2024-04-28 19:47:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968542]
+[2024-04-28 19:47:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: japanese-address-parser-py
+[2024-04-28 19:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore
+[2024-04-28 19:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tubeulator
+[2024-04-28 19:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jetline
+[2024-04-28 19:47:33] INFO root fetch - processPackages [tubeulator]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-28 19:47:33] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:47:33] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 19:47:33] INFO root fetch - processPackages [japanese-address-parser-py]: New version: [0.1.0b17] Old Version: [0.1.0b15]
+[2024-04-28 19:47:33] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/a8/0c/cfad76c65d6d9d05a31afb99b190e5519548c8f46cdd2cf0fa79b55143e9/tubeulator-0.0.7.tar.gz
+[2024-04-28 19:47:33] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-28 19:47:33] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:47:33] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/3d/18/28526cef1b0c5db7f240b837d0848677abbc6cd2e117521600eb25b6ec67/japanese_address_parser_py-0.1.0b15.tar.gz
+[2024-04-28 19:47:34] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:47:34] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-28 19:47:34] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:47:34] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:47:34] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-28 19:47:34] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240428/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 19:47:34] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/96/a8/b66e7df5179c3d219b7566e6c3ee33c95b6d83ede03c3cb2e10842e2122c/tubeulator-0.0.8.tar.gz
+[2024-04-28 19:47:34] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/3e/2b/df18ce67803c0ce9f5102d5a16ec88bcca68818aceaf3b068afc2235303f/japanese_address_parser_py-0.1.0b17.tar.gz
+[2024-04-28 19:47:34] INFO root fetch - processPackages [tubeulator]: executing diffoscope
+[2024-04-28 19:47:34] INFO root fetch - processPackages [tubeulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tubeulator-0.0.7.tar.gz tmp/tubeulator-0.0.8.tar.gz --markdown 20240428/t/tubeulator/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-28 19:47:34] INFO root fetch - processPackages [japanese-address-parser-py]: executing diffoscope
+[2024-04-28 19:47:34] INFO root fetch - processPackages [japanese-address-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanese_address_parser_py-0.1.0b15.tar.gz tmp/japanese_address_parser_py-0.1.0b17.tar.gz --markdown 20240428/j/japanese-address-parser-py/0.1.0b15-0.1.0b17/README.md --exclude *.pyd
+[2024-04-28 19:47:34] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:47:34] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:47:34] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:47:34] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-28 19:47:34] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-28 19:47:34] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-28 19:47:35] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b15.tar.gz]
+[2024-04-28 19:47:35] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b17.tar.gz]
+[2024-04-28 19:47:35] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
+[2024-04-28 19:47:35] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.7.tar.gz]
+[2024-04-28 19:47:35] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.8.tar.gz]
+[2024-04-28 19:47:35] INFO root fetch - main [MainThread]: End processing [tubeulator]: success
+[2024-04-28 19:47:35] INFO root fetch - main [MainThread]: Store serial: [22968567]
