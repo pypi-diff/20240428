@@ -14209,3 +14209,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:34:44] INFO root fetch - processPackages [Fortuna]: Remove: archive file [/home/abi/fetcher/tmp/fortuna-5.5.1.tar.gz]
 [2024-04-28 18:34:44] INFO root fetch - main [MainThread]: End processing [Fortuna]: success
 [2024-04-28 18:34:44] INFO root fetch - main [MainThread]: Store serial: [22968127]
+[2024-04-28 18:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968127]
+[2024-04-28 18:36:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jz3
+[2024-04-28 18:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymatris
+[2024-04-28 18:36:53] INFO root fetch - processPackages [jz3]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-28 18:36:53] INFO root fetch - processPackages [pymatris]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-04-28 18:36:53] INFO root fetch - processPackages [jz3]: Downloading https://files.pythonhosted.org/packages/ac/40/03e47a0eaf842291053073ea1f668001f10eb2bbb0229e77d9f2f0bb0038/jz3-0.1.4.tar.gz
+[2024-04-28 18:36:53] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/51/96/59d8b54929644b2fd68d2ab65dcb36a65532610207dcf92c37b707b849ae/pymatris-0.0.6.tar.gz
+[2024-04-28 18:36:53] INFO root fetch - processPackages [jz3]: Downloading https://files.pythonhosted.org/packages/1a/26/dd93501816bc2add3957ea5592b6b66f63b582e3b47663ff04099c2d0c8a/jz3-0.1.6.tar.gz
+[2024-04-28 18:36:53] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/f9/c6/e4115cbb8f8fb97349f5eaecb0124a549ebc5838f7a7ad188ebf7038eeca/pymatris-0.0.8.tar.gz
+[2024-04-28 18:36:53] INFO root fetch - processPackages [pymatris]: executing diffoscope
+[2024-04-28 18:36:53] INFO root fetch - processPackages [pymatris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatris-0.0.6.tar.gz tmp/pymatris-0.0.8.tar.gz --markdown 20240428/p/pymatris/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-04-28 18:36:54] INFO root fetch - processPackages [jz3]: executing diffoscope
+[2024-04-28 18:36:54] INFO root fetch - processPackages [jz3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jz3-0.1.4.tar.gz tmp/jz3-0.1.6.tar.gz --markdown 20240428/j/jz3/0.1.4-0.1.6/README.md --exclude *.pyd
+[2024-04-28 18:36:54] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.6.tar.gz]
+[2024-04-28 18:36:54] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.8.tar.gz]
+[2024-04-28 18:36:54] INFO root fetch - main [MainThread]: End processing [pymatris]: success
+[2024-04-28 18:36:55] INFO root fetch - processPackages [jz3]: Remove: archive file [/home/abi/fetcher/tmp/jz3-0.1.4.tar.gz]
+[2024-04-28 18:36:55] INFO root fetch - processPackages [jz3]: Remove: archive file [/home/abi/fetcher/tmp/jz3-0.1.6.tar.gz]
+[2024-04-28 18:36:55] INFO root fetch - main [MainThread]: End processing [jz3]: success
+[2024-04-28 18:36:55] INFO root fetch - main [MainThread]: Store serial: [22968134]
