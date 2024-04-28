@@ -10291,3 +10291,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:51:43] INFO root fetch - processPackages [frenetix]: Remove: archive file [/home/abi/fetcher/tmp/frenetix-0.3.0.tar.gz]
 [2024-04-28 13:51:43] INFO root fetch - main [MainThread]: End processing [frenetix]: success
 [2024-04-28 13:51:43] INFO root fetch - main [MainThread]: Store serial: [22966528]
+[2024-04-28 13:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966528]
+[2024-04-28 13:53:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 13:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amqtt_db
+[2024-04-28 13:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tailucas-pylib
+[2024-04-28 13:53:59] INFO root fetch - processPackages [amqtt_db]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 13:53:59] INFO root fetch - processPackages [tailucas-pylib]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-28 13:53:59] INFO root fetch - processPackages [amqtt_db]: Downloading https://files.pythonhosted.org/packages/83/8f/ded91af3832600b4a663462788082f2c77db3956c89853bd346ddf59a993/amqtt_db-0.1.3.tar.gz
+[2024-04-28 13:53:59] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/a5/64/edc03e8606efffa73289a948453d51f05778628e012397b6af19c993cf2b/tailucas_pylib-0.3.0.tar.gz
+[2024-04-28 13:53:59] INFO root fetch - processPackages [amqtt_db]: Downloading https://files.pythonhosted.org/packages/93/89/8418d85634e9c3d8da02d693f2a338ab96846a0c658e052b8a52d0ffacfb/amqtt_db-0.1.4.tar.gz
+[2024-04-28 13:53:59] INFO root fetch - processPackages [tailucas-pylib]: Downloading https://files.pythonhosted.org/packages/b6/b8/9eecdf5f5ab00ddd2168851f2ab09d41a9221695f968efc87e47a2a5cdf5/tailucas_pylib-0.3.1.tar.gz
+[2024-04-28 13:53:59] INFO root fetch - processPackages [amqtt_db]: executing diffoscope
+[2024-04-28 13:53:59] INFO root fetch - processPackages [amqtt_db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amqtt_db-0.1.3.tar.gz tmp/amqtt_db-0.1.4.tar.gz --markdown 20240428/a/amqtt_db/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 13:54:00] INFO root fetch - processPackages [tailucas-pylib]: executing diffoscope
+[2024-04-28 13:54:00] INFO root fetch - processPackages [tailucas-pylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailucas_pylib-0.3.0.tar.gz tmp/tailucas_pylib-0.3.1.tar.gz --markdown 20240428/t/tailucas-pylib/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-28 13:54:00] INFO root fetch - processPackages [amqtt_db]: Remove: archive file [/home/abi/fetcher/tmp/amqtt_db-0.1.3.tar.gz]
+[2024-04-28 13:54:00] INFO root fetch - processPackages [amqtt_db]: Remove: archive file [/home/abi/fetcher/tmp/amqtt_db-0.1.4.tar.gz]
+[2024-04-28 13:54:00] INFO root fetch - main [MainThread]: End processing [amqtt_db]: success
+[2024-04-28 13:54:00] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.3.0.tar.gz]
+[2024-04-28 13:54:00] INFO root fetch - processPackages [tailucas-pylib]: Remove: archive file [/home/abi/fetcher/tmp/tailucas_pylib-0.3.1.tar.gz]
+[2024-04-28 13:54:00] INFO root fetch - main [MainThread]: End processing [tailucas-pylib]: success
+[2024-04-28 13:54:00] INFO root fetch - main [MainThread]: Store serial: [22966535]
