@@ -5109,3 +5109,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:42:32] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.3-cp312-none-win_amd64.whl.zip]
 [2024-04-28 07:42:32] INFO root fetch - main [MainThread]: End processing [anyon]: success
 [2024-04-28 07:42:32] INFO root fetch - main [MainThread]: Store serial: [22964293]
+[2024-04-28 07:44:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964293]
+[2024-04-28 07:44:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 07:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: infinity-sdk
+[2024-04-28 07:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vtjson
+[2024-04-28 07:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-clients
+[2024-04-28 07:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dot-proxy
+[2024-04-28 07:44:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whatshow-toolbox
+[2024-04-28 07:44:41] INFO root fetch - processPackages [whatshow-toolbox]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-28 07:44:41] WARNING root fetch - processPackages [dot-proxy]: Skipping, unable to determine old version
+[2024-04-28 07:44:41] INFO root fetch - main [MainThread]: End processing [dot-proxy] error
+[2024-04-28 07:44:41] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/71/a8/0fb7fb2166fd5a978dec18ca9a0b2652dfe20960675e21055b9bf475d6ff/whatshow_toolbox-1.0.4.tar.gz
+[2024-04-28 07:44:41] WARNING root fetch - processPackages [abstract-clients]: Skipping, unable to determine old version
+[2024-04-28 07:44:41] INFO root fetch - main [MainThread]: End processing [abstract-clients] error
+[2024-04-28 07:44:41] INFO root fetch - processPackages [infinity-sdk]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-04-28 07:44:41] INFO root fetch - processPackages [vtjson]: New version: [1.7.8] Old Version: [1.7.7]
+[2024-04-28 07:44:41] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/10/6f/998e45a82e123f8aa87e36c5064d7b28ee0af112c1ae873c7f8968a0374c/infinity_sdk-0.1.0.dev8-py3-none-any.whl
+[2024-04-28 07:44:41] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/39/77/84ccad8b1aa17a0ca2783db154f4cf9360627b88069f605aace6d529615f/vtjson-1.7.7.tar.gz
+[2024-04-28 07:44:41] INFO root fetch - processPackages [whatshow-toolbox]: Downloading https://files.pythonhosted.org/packages/8a/25/c9a77802c89341d0400100eadc3a456842447bee171f312165262164029e/whatshow_toolbox-1.0.5.tar.gz
+[2024-04-28 07:44:41] INFO root fetch - processPackages [whatshow-toolbox]: executing diffoscope
+[2024-04-28 07:44:41] INFO root fetch - processPackages [whatshow-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whatshow_toolbox-1.0.4.tar.gz tmp/whatshow_toolbox-1.0.5.tar.gz --markdown 20240428/w/whatshow-toolbox/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-28 07:44:41] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/5f/23/609dbf3b9cce37544c49a6f700daf67907a9ddd4838b098e8417fd57597d/infinity_sdk-0.1.0.dev9-py3-none-any.whl
+[2024-04-28 07:44:41] INFO root fetch - processPackages [vtjson]: Downloading https://files.pythonhosted.org/packages/9b/60/4a30e88759b52ede7d0b938fcd79de164b6d748fe779c416bf95be608169/vtjson-1.7.8.tar.gz
+[2024-04-28 07:44:42] INFO root fetch - processPackages [vtjson]: executing diffoscope
+[2024-04-28 07:44:42] INFO root fetch - processPackages [vtjson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vtjson-1.7.7.tar.gz tmp/vtjson-1.7.8.tar.gz --markdown 20240428/v/vtjson/1.7.7-1.7.8/README.md --exclude *.pyd
+[2024-04-28 07:44:42] INFO root fetch - processPackages [infinity-sdk]: executing diffoscope
+[2024-04-28 07:44:42] INFO root fetch - processPackages [infinity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip --markdown 20240428/i/infinity-sdk/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-04-28 07:44:42] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.4.tar.gz]
+[2024-04-28 07:44:42] INFO root fetch - processPackages [whatshow-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/whatshow_toolbox-1.0.5.tar.gz]
+[2024-04-28 07:44:42] INFO root fetch - main [MainThread]: End processing [whatshow-toolbox]: success
+[2024-04-28 07:44:42] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.7.tar.gz]
+[2024-04-28 07:44:42] INFO root fetch - processPackages [vtjson]: Remove: archive file [/home/abi/fetcher/tmp/vtjson-1.7.8.tar.gz]
+[2024-04-28 07:44:42] INFO root fetch - main [MainThread]: End processing [vtjson]: success
+[2024-04-28 07:44:42] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip]
+[2024-04-28 07:44:42] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip]
+[2024-04-28 07:44:42] INFO root fetch - main [MainThread]: End processing [infinity-sdk]: success
+[2024-04-28 07:44:42] INFO root fetch - main [MainThread]: Store serial: [22964309]
