@@ -6729,3 +6729,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:51:43] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.1.tar.gz]
 [2024-04-28 09:51:43] INFO root fetch - main [MainThread]: End processing [quickpub]: success
 [2024-04-28 09:51:43] INFO root fetch - main [MainThread]: Store serial: [22964991]
+[2024-04-28 09:53:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964991]
+[2024-04-28 09:53:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 09:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickpub
+[2024-04-28 09:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxevil
+[2024-04-28 09:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Xdcheckin
+[2024-04-28 09:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnxslim
+[2024-04-28 09:53:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nc-py-api
+[2024-04-28 09:53:51] INFO root fetch - processPackages [quickpub]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-28 09:53:51] WARNING root fetch - processPackages [pyxevil]: Skipping, unable to determine old version
+[2024-04-28 09:53:51] INFO root fetch - main [MainThread]: End processing [pyxevil] error
+[2024-04-28 09:53:51] INFO root fetch - processPackages [Xdcheckin]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 09:53:51] INFO root fetch - processPackages [onnxslim]: New version: [0.1.9.1] Old Version: [0.1.9]
+[2024-04-28 09:53:51] INFO root fetch - processPackages [nc-py-api]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 09:53:51] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/e9/31/aaa9fbdae70fd69f0d831d29e9e5079298abb34ef7c566b7d523b220a0cf/xdcheckin-2.0.8.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/ad/bf/ecf551893d2b9d5b843f13f6a78bdfd0b85566a6ceecd19068c51a484646/quickpub-0.8.0.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [onnxslim]: Downloading https://files.pythonhosted.org/packages/93/d1/3dcbf04b6a0333842d61262e77f177a6300427bbc036d138d908e9640148/onnxslim-0.1.9.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [nc-py-api]: Downloading https://files.pythonhosted.org/packages/aa/8e/07143b585a6d6ebdad20d9545cc87db56036d0846e1b578a2542b8148994/nc_py_api-0.8.0.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [Xdcheckin]: Downloading https://files.pythonhosted.org/packages/a8/51/cec0a65d3db0c8e1e658bd143b3cf7aaf3124aeccbeb161947b9642c3237/xdcheckin-2.0.9.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [quickpub]: Downloading https://files.pythonhosted.org/packages/8e/77/c4e24d725355a0432a34b1fde68ad70c1593bb6e379ab781b47a115b2b22/quickpub-0.8.1.tar.gz
+[2024-04-28 09:53:51] INFO root fetch - processPackages [Xdcheckin]: executing diffoscope
+[2024-04-28 09:53:51] INFO root fetch - processPackages [Xdcheckin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdcheckin-2.0.8.tar.gz tmp/xdcheckin-2.0.9.tar.gz --markdown 20240428/X/Xdcheckin/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 09:53:52] INFO root fetch - processPackages [quickpub]: executing diffoscope
+[2024-04-28 09:53:52] INFO root fetch - processPackages [quickpub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickpub-0.8.0.tar.gz tmp/quickpub-0.8.1.tar.gz --markdown 20240428/q/quickpub/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-28 09:53:52] INFO root fetch - processPackages [nc-py-api]: Downloading https://files.pythonhosted.org/packages/9e/7e/8d987199d0f9ff7ad6f7bad4c9db47d047948661ce3837087c9715b35dc8/nc_py_api-0.9.0.tar.gz
+[2024-04-28 09:53:52] INFO root fetch - processPackages [nc-py-api]: executing diffoscope
+[2024-04-28 09:53:52] INFO root fetch - processPackages [nc-py-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nc_py_api-0.8.0.tar.gz tmp/nc_py_api-0.9.0.tar.gz --markdown 20240428/n/nc-py-api/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 09:53:52] INFO root fetch - processPackages [onnxslim]: Downloading https://files.pythonhosted.org/packages/73/0d/b646c4f2c67d560f67ae268b672173ef7de6d1e39d4abc10f533775add1c/onnxslim-0.1.9.1.tar.gz
+[2024-04-28 09:53:52] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.8.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - processPackages [Xdcheckin]: Remove: archive file [/home/abi/fetcher/tmp/xdcheckin-2.0.9.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - main [MainThread]: End processing [Xdcheckin]: success
+[2024-04-28 09:53:52] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.0.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - processPackages [quickpub]: Remove: archive file [/home/abi/fetcher/tmp/quickpub-0.8.1.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - main [MainThread]: End processing [quickpub]: success
+[2024-04-28 09:53:52] INFO root fetch - processPackages [onnxslim]: executing diffoscope
+[2024-04-28 09:53:52] INFO root fetch - processPackages [onnxslim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxslim-0.1.9.tar.gz tmp/onnxslim-0.1.9.1.tar.gz --markdown 20240428/o/onnxslim/0.1.9-0.1.9.1/README.md --exclude *.pyd
+[2024-04-28 09:53:52] INFO root fetch - processPackages [nc-py-api]: Remove: archive file [/home/abi/fetcher/tmp/nc_py_api-0.8.0.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - processPackages [nc-py-api]: Remove: archive file [/home/abi/fetcher/tmp/nc_py_api-0.9.0.tar.gz]
+[2024-04-28 09:53:52] INFO root fetch - main [MainThread]: End processing [nc-py-api]: success
+[2024-04-28 09:53:53] INFO root fetch - processPackages [onnxslim]: Remove: archive file [/home/abi/fetcher/tmp/onnxslim-0.1.9.tar.gz]
+[2024-04-28 09:53:53] INFO root fetch - processPackages [onnxslim]: Remove: archive file [/home/abi/fetcher/tmp/onnxslim-0.1.9.1.tar.gz]
+[2024-04-28 09:53:53] INFO root fetch - main [MainThread]: End processing [onnxslim]: success
+[2024-04-28 09:53:53] INFO root fetch - main [MainThread]: Store serial: [22965003]
