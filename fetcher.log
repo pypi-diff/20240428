@@ -12326,3 +12326,62 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:26:44] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.70.tar.gz]
 [2024-04-28 16:26:44] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
 [2024-04-28 16:26:44] INFO root fetch - main [MainThread]: Store serial: [22967357]
+[2024-04-28 16:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967357]
+[2024-04-28 16:29:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cli-lite
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starplot
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: EvoDict
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-poller-ball
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ubo-app
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: peter-explains
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aurora-cli
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: medium-to-markdown-py
+[2024-04-28 16:29:04] INFO root fetch - processPackages [aurora-cli]: New version: [2.5.0.0] Old Version: [2.4.8.0]
+[2024-04-28 16:29:04] INFO root fetch - processPackages [medium-to-markdown-py]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ubo-app]: New version: [0.9.9] Old Version: [0.9.8a4]
+[2024-04-28 16:29:04] WARNING root fetch - processPackages [EvoDict]: Skipping, unable to determine old version
+[2024-04-28 16:29:04] INFO root fetch - main [MainThread]: End processing [EvoDict] error
+[2024-04-28 16:29:04] INFO root fetch - processPackages [aurora-cli]: Downloading https://files.pythonhosted.org/packages/09/4e/22bb741e76d3703304a4589a0816dca3baab0084fb3343867f7ffd941551/aurora-cli-2.4.8.0.tar.gz
+[2024-04-28 16:29:04] WARNING root fetch - processPackages [python-poller-ball]: Skipping, unable to determine old version
+[2024-04-28 16:29:04] INFO root fetch - main [MainThread]: End processing [python-poller-ball] error
+[2024-04-28 16:29:04] INFO root fetch - processPackages [peter-explains]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-28 16:29:04] INFO root fetch - processPackages [cli-lite]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-28 16:29:04] INFO root fetch - processPackages [starplot]: New version: [0.9.1] Old Version: [0.9.0b1]
+[2024-04-28 16:29:04] INFO root fetch - processPackages [medium-to-markdown-py]: Downloading https://files.pythonhosted.org/packages/0d/74/f1468e156fd295f01dc0450cff43f13d39792a10813fa9672cd9fd24e362/medium_to_markdown_py-1.0.0.tar.gz
+[2024-04-28 16:29:04] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/95/e9/c4e16198ab3bdf6b007857bc40357fe1bb068e7391f5fe793ca7f6e9819d/ubo_app-0.9.8a4.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [peter-explains]: Downloading https://files.pythonhosted.org/packages/9b/6d/dc0f4f9604df214c3e385afb082a68977b235187dfcac8e0a811ef082d63/peter-explains-0.0.9.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [cli-lite]: Downloading https://files.pythonhosted.org/packages/66/db/5022441891484c8dec33d39340e4f69c4735a1158bf0ceed54824ee03ea8/cli-lite-0.8.3.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [starplot]: Downloading https://files.pythonhosted.org/packages/a7/59/c1170ac69eeebc7473581ce393d6fb7e3df637c07c5690b9b4a4d43d1c94/starplot-0.9.0b1.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [aurora-cli]: Downloading https://files.pythonhosted.org/packages/e3/7c/4d61f4b79a7ff0f632f7ac62222550e0a0889112da6bd98a03fcb1c7a326/aurora_cli-2.5.0.0.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [medium-to-markdown-py]: Downloading https://files.pythonhosted.org/packages/1c/c0/1c0db808244d67839a853dd1257dd8c319fe3c456ae47db99ca63e94568f/medium_to_markdown_py-1.0.1.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [ubo-app]: Downloading https://files.pythonhosted.org/packages/13/b7/3d42c344f38a9c5bf598c3ea5d71758fc78c30b3d3bf5b039ef153cf16b2/ubo_app-0.9.9.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [aurora-cli]: executing diffoscope
+[2024-04-28 16:29:05] INFO root fetch - processPackages [aurora-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aurora-cli-2.4.8.0.tar.gz tmp/aurora_cli-2.5.0.0.tar.gz --markdown 20240428/a/aurora-cli/2.4.8.0-2.5.0.0/README.md --exclude *.pyd
+[2024-04-28 16:29:05] WARNING root fetch - processPackages [starplot]: Skipping package: exceeds size limit 34504270>=10485760
+[2024-04-28 16:29:05] INFO root fetch - main [MainThread]: End processing [starplot] error
+[2024-04-28 16:29:05] INFO root fetch - processPackages [medium-to-markdown-py]: executing diffoscope
+[2024-04-28 16:29:05] INFO root fetch - processPackages [medium-to-markdown-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medium_to_markdown_py-1.0.0.tar.gz tmp/medium_to_markdown_py-1.0.1.tar.gz --markdown 20240428/m/medium-to-markdown-py/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 16:29:05] INFO root fetch - processPackages [ubo-app]: executing diffoscope
+[2024-04-28 16:29:05] INFO root fetch - processPackages [ubo-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ubo_app-0.9.8a4.tar.gz tmp/ubo_app-0.9.9.tar.gz --markdown 20240428/u/ubo-app/0.9.8a4-0.9.9/README.md --exclude *.pyd
+[2024-04-28 16:29:05] INFO root fetch - processPackages [peter-explains]: Downloading https://files.pythonhosted.org/packages/af/f2/ee10803f2567510c39ce2750f0f3def853cb35b09ad04b010ec47bcf375e/peter_explains-0.1.0.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [cli-lite]: Downloading https://files.pythonhosted.org/packages/33/bb/0ae0b6dd9c608c8f88061da853473a2e4c4938df8fcefbfcdac1688fe80f/cli_lite-0.9.0.tar.gz
+[2024-04-28 16:29:05] INFO root fetch - processPackages [peter-explains]: executing diffoscope
+[2024-04-28 16:29:05] INFO root fetch - processPackages [peter-explains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peter-explains-0.0.9.tar.gz tmp/peter_explains-0.1.0.tar.gz --markdown 20240428/p/peter-explains/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-28 16:29:05] INFO root fetch - processPackages [medium-to-markdown-py]: Remove: archive file [/home/abi/fetcher/tmp/medium_to_markdown_py-1.0.0.tar.gz]
+[2024-04-28 16:29:05] INFO root fetch - processPackages [medium-to-markdown-py]: Remove: archive file [/home/abi/fetcher/tmp/medium_to_markdown_py-1.0.1.tar.gz]
+[2024-04-28 16:29:05] INFO root fetch - main [MainThread]: End processing [medium-to-markdown-py]: success
+[2024-04-28 16:29:05] INFO root fetch - processPackages [aurora-cli]: Remove: archive file [/home/abi/fetcher/tmp/aurora-cli-2.4.8.0.tar.gz]
+[2024-04-28 16:29:05] INFO root fetch - processPackages [aurora-cli]: Remove: archive file [/home/abi/fetcher/tmp/aurora_cli-2.5.0.0.tar.gz]
+[2024-04-28 16:29:05] INFO root fetch - main [MainThread]: End processing [aurora-cli]: success
+[2024-04-28 16:29:06] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.8a4.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - processPackages [ubo-app]: Remove: archive file [/home/abi/fetcher/tmp/ubo_app-0.9.9.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - main [MainThread]: End processing [ubo-app]: success
+[2024-04-28 16:29:06] INFO root fetch - processPackages [peter-explains]: Remove: archive file [/home/abi/fetcher/tmp/peter-explains-0.0.9.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - processPackages [peter-explains]: Remove: archive file [/home/abi/fetcher/tmp/peter_explains-0.1.0.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - main [MainThread]: End processing [peter-explains]: success
+[2024-04-28 16:29:06] INFO root fetch - processPackages [cli-lite]: executing diffoscope
+[2024-04-28 16:29:06] INFO root fetch - processPackages [cli-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli-lite-0.8.3.tar.gz tmp/cli_lite-0.9.0.tar.gz --markdown 20240428/c/cli-lite/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-04-28 16:29:06] INFO root fetch - processPackages [cli-lite]: Remove: archive file [/home/abi/fetcher/tmp/cli-lite-0.8.3.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - processPackages [cli-lite]: Remove: archive file [/home/abi/fetcher/tmp/cli_lite-0.9.0.tar.gz]
+[2024-04-28 16:29:06] INFO root fetch - main [MainThread]: End processing [cli-lite]: success
+[2024-04-28 16:29:06] INFO root fetch - main [MainThread]: Store serial: [22967386]
