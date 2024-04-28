@@ -7791,3 +7791,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:00:14] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns_scheduler-1.0.3.6-py3-none-any.whl.zip]
 [2024-04-28 11:00:14] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
 [2024-04-28 11:00:14] INFO root fetch - main [MainThread]: Store serial: [22965498]
+[2024-04-28 11:02:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965498]
+[2024-04-28 11:02:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 11:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mns-scheduler
+[2024-04-28 11:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Matinmikko
+[2024-04-28 11:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gemini-webapi
+[2024-04-28 11:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ntchat2
+[2024-04-28 11:02:22] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.3.6] Old Version: [1.0.3.5]
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/b8/76/bd9c2f36e6d5c9dc9c1242e4c32814be0bfcdde46e77f1dd95bd9e6626d6/mns-scheduler-1.0.3.5.tar.gz
+[2024-04-28 11:02:23] WARNING root fetch - processPackages [ntchat2]: Skipping, unable to determine old version
+[2024-04-28 11:02:23] INFO root fetch - main [MainThread]: End processing [ntchat2] error
+[2024-04-28 11:02:23] WARNING root fetch - processPackages [Matinmikko]: Skipping, unable to determine old version
+[2024-04-28 11:02:23] INFO root fetch - main [MainThread]: End processing [Matinmikko] error
+[2024-04-28 11:02:23] INFO root fetch - processPackages [gemini-webapi]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/4f/0a/423db5c2e39ef8c66d465f74c930e7003952827ca831042842792cb368ef/mns_scheduler-1.0.3.6-py3-none-any.whl
+[2024-04-28 11:02:23] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/04/ef/22328d5d6d83cbadc36d675135f912c1b006af47b35a35747858013e2d30/gemini-webapi-1.1.1.tar.gz
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.3.5.tar.gz tmp/mns_scheduler-1.0.3.6-py3-none-any.whl.zip --markdown 20240428/m/mns-scheduler/1.0.3.5-1.0.3.6/README.md --exclude *.pyd
+[2024-04-28 11:02:23] INFO root fetch - processPackages [gemini-webapi]: Downloading https://files.pythonhosted.org/packages/22/e8/91bd61be475257fd325bf64884382f672f0958466e1d441596092599ebc6/gemini_webapi-1.2.0.tar.gz
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.5.tar.gz]
+[2024-04-28 11:02:23] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns_scheduler-1.0.3.6-py3-none-any.whl.zip]
+[2024-04-28 11:02:23] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-28 11:02:24] INFO root fetch - processPackages [gemini-webapi]: executing diffoscope
+[2024-04-28 11:02:24] INFO root fetch - processPackages [gemini-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini-webapi-1.1.1.tar.gz tmp/gemini_webapi-1.2.0.tar.gz --markdown 20240428/g/gemini-webapi/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-28 11:02:24] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini-webapi-1.1.1.tar.gz]
+[2024-04-28 11:02:24] INFO root fetch - processPackages [gemini-webapi]: Remove: archive file [/home/abi/fetcher/tmp/gemini_webapi-1.2.0.tar.gz]
+[2024-04-28 11:02:24] INFO root fetch - main [MainThread]: End processing [gemini-webapi]: success
+[2024-04-28 11:02:24] INFO root fetch - main [MainThread]: Store serial: [22965513]
