@@ -13585,3 +13585,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:50:50] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern_greek_inflexion-2.0.5.tar.gz]
 [2024-04-28 17:50:50] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
 [2024-04-28 17:50:50] INFO root fetch - main [MainThread]: Store serial: [22967856]
+[2024-04-28 17:52:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967856]
+[2024-04-28 17:52:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-transformation-yfhsi
+[2024-04-28 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-04-28 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pacwrap
+[2024-04-28 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scatcluster
+[2024-04-28 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mov-cli-anime
+[2024-04-28 17:52:59] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-28 17:52:59] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-28 17:52:59] INFO root fetch - processPackages [pacwrap]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-28 17:52:59] ERROR root fetch - processPackages [scatcluster]: Unable to get metadata: No such project 'scatcluster'
+[2024-04-28 17:52:59] INFO root fetch - main [MainThread]: End processing [scatcluster] error
+[2024-04-28 17:52:59] INFO root fetch - processPackages [mov-cli-anime]: New version: [1.1.2] Old Version: [1.1.0]
+[2024-04-28 17:52:59] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-28 17:52:59] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-04-28 17:52:59] INFO root fetch - processPackages [pacwrap]: Downloading https://files.pythonhosted.org/packages/57/d2/a6666ad941c67c2d9026bbacccc8c7a49c271c4376534be5f36fc3b82238/pacwrap-0.5.1.tar.gz
+[2024-04-28 17:52:59] INFO root fetch - processPackages [mov-cli-anime]: Downloading https://files.pythonhosted.org/packages/2f/e9/b7ae79fc256efc1ac3fc427eaf664775c2bd2bc67e1126fb3ab6387f5a82/mov-cli-anime-1.1.0.tar.gz
+[2024-04-28 17:52:59] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-28 17:52:59] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-04-28 17:53:00] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-28 17:53:00] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240428/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-28 17:53:00] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-28 17:53:00] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240428/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-28 17:53:00] INFO root fetch - processPackages [pacwrap]: Downloading https://files.pythonhosted.org/packages/ee/dd/b1915b7be957bedd4e91cca5734dd6406b1c84a0d9ca63c1d1869796fb5f/pacwrap-0.5.2.tar.gz
+[2024-04-28 17:53:00] INFO root fetch - processPackages [pacwrap]: executing diffoscope
+[2024-04-28 17:53:00] INFO root fetch - processPackages [pacwrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacwrap-0.5.1.tar.gz tmp/pacwrap-0.5.2.tar.gz --markdown 20240428/p/pacwrap/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-28 17:53:00] INFO root fetch - processPackages [mov-cli-anime]: Downloading https://files.pythonhosted.org/packages/53/7f/2fae4182e4f2e6c4d3acb150732683766e38bc7f791e0bf731f7378162b4/mov_cli_anime-1.1.2.tar.gz
+[2024-04-28 17:53:00] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-28 17:53:00] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-28 17:53:00] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-28 17:53:00] INFO root fetch - processPackages [mov-cli-anime]: executing diffoscope
+[2024-04-28 17:53:00] INFO root fetch - processPackages [mov-cli-anime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mov-cli-anime-1.1.0.tar.gz tmp/mov_cli_anime-1.1.2.tar.gz --markdown 20240428/m/mov-cli-anime/1.1.0-1.1.2/README.md --exclude *.pyd
+[2024-04-28 17:53:00] INFO root fetch - processPackages [pacwrap]: Remove: archive file [/home/abi/fetcher/tmp/pacwrap-0.5.1.tar.gz]
+[2024-04-28 17:53:00] INFO root fetch - processPackages [pacwrap]: Remove: archive file [/home/abi/fetcher/tmp/pacwrap-0.5.2.tar.gz]
+[2024-04-28 17:53:00] INFO root fetch - main [MainThread]: End processing [pacwrap]: success
+[2024-04-28 17:53:01] INFO root fetch - processPackages [mov-cli-anime]: Remove: archive file [/home/abi/fetcher/tmp/mov-cli-anime-1.1.0.tar.gz]
+[2024-04-28 17:53:01] INFO root fetch - processPackages [mov-cli-anime]: Remove: archive file [/home/abi/fetcher/tmp/mov_cli_anime-1.1.2.tar.gz]
+[2024-04-28 17:53:01] INFO root fetch - main [MainThread]: End processing [mov-cli-anime]: success
+[2024-04-28 17:53:01] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-04-28 17:53:01] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-04-28 17:53:01] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-28 17:53:01] INFO root fetch - main [MainThread]: Store serial: [22967877]
