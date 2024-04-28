@@ -14334,3 +14334,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:47:46] INFO root fetch - processPackages [fango]: Remove: archive file [/home/abi/fetcher/tmp/fango-0.0.21.tar.gz]
 [2024-04-28 18:47:46] INFO root fetch - main [MainThread]: End processing [fango]: success
 [2024-04-28 18:47:46] INFO root fetch - main [MainThread]: Store serial: [22968165]
+[2024-04-28 18:49:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968165]
+[2024-04-28 18:49:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 18:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sopel-modules.genius-answer
+[2024-04-28 18:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: attempt
+[2024-04-28 18:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MercadoBitcoinBalance
+[2024-04-28 18:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wbx-cpl
+[2024-04-28 18:49:58] INFO root fetch - processPackages [sopel-modules.genius-answer]: New version: [0.0.21] Old Version: [0.0.20]
+[2024-04-28 18:49:58] WARNING root fetch - processPackages [attempt]: Skipping, unable to determine old version
+[2024-04-28 18:49:58] INFO root fetch - main [MainThread]: End processing [attempt] error
+[2024-04-28 18:49:58] INFO root fetch - processPackages [wbx-cpl]: New version: [1.3.1] Old Version: [1.2.2]
+[2024-04-28 18:49:58] INFO root fetch - processPackages [MercadoBitcoinBalance]: New version: [1.4] Old Version: [1.3]
+[2024-04-28 18:49:58] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/8d/f7/013647e81e2c1ebb1e9c49bf0a643ad2af537a25b55650d4b694904b3205/sopel_modules_genius_answer-0.0.20.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [wbx-cpl]: Downloading https://files.pythonhosted.org/packages/a5/94/c157a4f9d6155132666b8e87cf80bb7c4c2ee622213c30fd84c5d9340e82/wbx_cpl-1.2.2.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [MercadoBitcoinBalance]: Downloading https://files.pythonhosted.org/packages/48/dc/660092538290e16c4f87fe7f25c3c9fa7455907121ee7bf0c873209f0dd5/mercadobitcoinbalance-1.3.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [sopel-modules.genius-answer]: Downloading https://files.pythonhosted.org/packages/c2/09/cc85f07828aa7e58bc1ef08cbc2ba64cba908b3ec4815ea90976caacc584/sopel_modules_genius_answer-0.0.21.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [wbx-cpl]: Downloading https://files.pythonhosted.org/packages/07/0f/34b3c78ff3b964b5967e32d92dce0cccd90e232d5c883fe35e2b9c527f55/wbx_cpl-1.3.1.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [MercadoBitcoinBalance]: Downloading https://files.pythonhosted.org/packages/47/61/cf1a3be0cf74b4b1fea74aa05ceae39aed013a412316f6488ad78b65256d/mercadobitcoinbalance-1.4.tar.gz
+[2024-04-28 18:49:58] INFO root fetch - processPackages [sopel-modules.genius-answer]: executing diffoscope
+[2024-04-28 18:49:58] INFO root fetch - processPackages [sopel-modules.genius-answer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_modules_genius_answer-0.0.20.tar.gz tmp/sopel_modules_genius_answer-0.0.21.tar.gz --markdown 20240428/s/sopel-modules.genius-answer/0.0.20-0.0.21/README.md --exclude *.pyd
+[2024-04-28 18:49:58] INFO root fetch - processPackages [wbx-cpl]: executing diffoscope
+[2024-04-28 18:49:58] INFO root fetch - processPackages [wbx-cpl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wbx_cpl-1.2.2.tar.gz tmp/wbx_cpl-1.3.1.tar.gz --markdown 20240428/w/wbx-cpl/1.2.2-1.3.1/README.md --exclude *.pyd
+[2024-04-28 18:49:58] INFO root fetch - processPackages [MercadoBitcoinBalance]: executing diffoscope
+[2024-04-28 18:49:58] INFO root fetch - processPackages [MercadoBitcoinBalance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercadobitcoinbalance-1.3.tar.gz tmp/mercadobitcoinbalance-1.4.tar.gz --markdown 20240428/M/MercadoBitcoinBalance/1.3-1.4/README.md --exclude *.pyd
+[2024-04-28 18:49:59] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.20.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - processPackages [sopel-modules.genius-answer]: Remove: archive file [/home/abi/fetcher/tmp/sopel_modules_genius_answer-0.0.21.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - main [MainThread]: End processing [sopel-modules.genius-answer]: success
+[2024-04-28 18:49:59] INFO root fetch - processPackages [MercadoBitcoinBalance]: Remove: archive file [/home/abi/fetcher/tmp/mercadobitcoinbalance-1.3.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - processPackages [MercadoBitcoinBalance]: Remove: archive file [/home/abi/fetcher/tmp/mercadobitcoinbalance-1.4.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - main [MainThread]: End processing [MercadoBitcoinBalance]: success
+[2024-04-28 18:49:59] INFO root fetch - processPackages [wbx-cpl]: Remove: archive file [/home/abi/fetcher/tmp/wbx_cpl-1.2.2.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - processPackages [wbx-cpl]: Remove: archive file [/home/abi/fetcher/tmp/wbx_cpl-1.3.1.tar.gz]
+[2024-04-28 18:49:59] INFO root fetch - main [MainThread]: End processing [wbx-cpl]: success
+[2024-04-28 18:49:59] INFO root fetch - main [MainThread]: Store serial: [22968179]
