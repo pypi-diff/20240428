@@ -1491,3 +1491,30 @@
 [2024-04-28 02:11:07] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-04-28 02:11:07] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-04-28 02:11:07] INFO root fetch - main [MainThread]: Store serial: [22962844]
+[2024-04-28 02:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962844]
+[2024-04-28 02:13:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 02:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vicregaddon
+[2024-04-28 02:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openbb-nightly
+[2024-04-28 02:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mct-quantizers-nightly
+[2024-04-28 02:13:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: extropic
+[2024-04-28 02:13:16] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.7.dev202404270009] Old Version: [4.1.7.dev202404260009]
+[2024-04-28 02:13:16] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240428.post1229] Old Version: [1.5.0.20240427.post1043]
+[2024-04-28 02:13:16] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/87/f8/d11076b36266dad1d1bf988e3cd0a5eac3dced4c0b0d733b5019a21ce53b/openbb_nightly-4.1.7.dev202404260009.tar.gz
+[2024-04-28 02:13:16] WARNING root fetch - processPackages [vicregaddon]: Skipping, unable to determine old version
+[2024-04-28 02:13:16] INFO root fetch - main [MainThread]: End processing [vicregaddon] error
+[2024-04-28 02:13:16] WARNING root fetch - processPackages [extropic]: Skipping, unable to determine old version
+[2024-04-28 02:13:16] INFO root fetch - main [MainThread]: End processing [extropic] error
+[2024-04-28 02:13:16] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/c5/bc/0b5971b4c9b6867e4ba46cd13309d9f0f0a43520021206c340ef330f179d/mct-quantizers-nightly-1.5.0.20240427.post1043.tar.gz
+[2024-04-28 02:13:16] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/09/b9/9b38a49ffc4e981cc7f777d4670835867567170cccc93281684982f4e1c3/mct-quantizers-nightly-1.5.0.20240428.post1229.tar.gz
+[2024-04-28 02:13:16] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/76/3c/1645e742924de7277f6410ac50d8729b4088bc6dbd4f1c0cb11f0504c990/openbb_nightly-4.1.7.dev202404270009.tar.gz
+[2024-04-28 02:13:16] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-28 02:13:16] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240427.post1043.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240428.post1229.tar.gz --markdown 20240428/m/mct-quantizers-nightly/1.5.0.20240427.post1043-1.5.0.20240428.post1229/README.md --exclude *.pyd
+[2024-04-28 02:13:16] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-28 02:13:16] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.7.dev202404260009.tar.gz tmp/openbb_nightly-4.1.7.dev202404270009.tar.gz --markdown 20240428/o/openbb-nightly/4.1.7.dev202404260009-4.1.7.dev202404270009/README.md --exclude *.pyd
+[2024-04-28 02:13:17] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240427.post1043.tar.gz]
+[2024-04-28 02:13:17] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240428.post1229.tar.gz]
+[2024-04-28 02:13:17] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-28 02:13:19] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404260009.tar.gz]
+[2024-04-28 02:13:19] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404270009.tar.gz]
+[2024-04-28 02:13:19] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-28 02:13:19] INFO root fetch - main [MainThread]: Store serial: [22962859]
