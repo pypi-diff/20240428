@@ -13690,3 +13690,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:59:32] INFO root fetch - processPackages [buildz]: Remove: archive file [/home/abi/fetcher/tmp/buildz-0.5.3.tar.gz]
 [2024-04-28 17:59:32] INFO root fetch - main [MainThread]: End processing [buildz]: success
 [2024-04-28 17:59:32] INFO root fetch - main [MainThread]: Store serial: [22967908]
+[2024-04-28 18:01:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967908]
+[2024-04-28 18:01:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 18:01:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mtran-helper
+[2024-04-28 18:01:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beetcamp
+[2024-04-28 18:01:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-115
+[2024-04-28 18:01:42] INFO root fetch - processPackages [python-115]: New version: [0.0.7] Old Version: [0.0.6.9]
+[2024-04-28 18:01:42] WARNING root fetch - processPackages [mtran-helper]: Skipping, unable to determine old version
+[2024-04-28 18:01:42] INFO root fetch - main [MainThread]: End processing [mtran-helper] error
+[2024-04-28 18:01:42] INFO root fetch - processPackages [beetcamp]: New version: [0.9.3] Old Version: [0.9.1]
+[2024-04-28 18:01:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/6d/47/bfe72207e79c7a6549a4b4536eb72aaf5ca1421c08a97018e0e3bbcd89dd/python_115-0.0.6.9.tar.gz
+[2024-04-28 18:01:42] INFO root fetch - processPackages [beetcamp]: Downloading https://files.pythonhosted.org/packages/8d/72/69a66df34b9fc327228941ed7c279c73c6ca846f58c9688451900aa5cb8b/beetcamp-0.9.1.tar.gz
+[2024-04-28 18:01:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/61/5c/0d87cdb57bb6d5b4870021c9d44a007edcd5e555f1285659ad63aa6e7c39/python_115-0.0.7.tar.gz
+[2024-04-28 18:01:43] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-28 18:01:43] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.9.tar.gz tmp/python_115-0.0.7.tar.gz --markdown 20240428/p/python-115/0.0.6.9-0.0.7/README.md --exclude *.pyd
+[2024-04-28 18:01:43] INFO root fetch - processPackages [beetcamp]: Downloading https://files.pythonhosted.org/packages/29/a1/5edf652073c11c6e3a53ea79dc85e1201b64f9522ef0e6a380b0aa41c27f/beetcamp-0.9.3.tar.gz
+[2024-04-28 18:01:43] INFO root fetch - processPackages [beetcamp]: executing diffoscope
+[2024-04-28 18:01:43] INFO root fetch - processPackages [beetcamp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beetcamp-0.9.1.tar.gz tmp/beetcamp-0.9.3.tar.gz --markdown 20240428/b/beetcamp/0.9.1-0.9.3/README.md --exclude *.pyd
+[2024-04-28 18:01:43] INFO root fetch - processPackages [beetcamp]: Remove: archive file [/home/abi/fetcher/tmp/beetcamp-0.9.1.tar.gz]
+[2024-04-28 18:01:43] INFO root fetch - processPackages [beetcamp]: Remove: archive file [/home/abi/fetcher/tmp/beetcamp-0.9.3.tar.gz]
+[2024-04-28 18:01:43] INFO root fetch - main [MainThread]: End processing [beetcamp]: success
+[2024-04-28 18:01:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.9.tar.gz]
+[2024-04-28 18:01:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.7.tar.gz]
+[2024-04-28 18:01:43] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-28 18:01:43] INFO root fetch - main [MainThread]: Store serial: [22967919]
