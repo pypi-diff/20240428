@@ -1972,3 +1972,29 @@
 [2024-04-28 02:36:21] INFO root fetch - processPackages [portage]: Remove: archive file [/home/abi/fetcher/tmp/portage-3.0.64.tar.gz]
 [2024-04-28 02:36:21] INFO root fetch - main [MainThread]: End processing [portage]: success
 [2024-04-28 02:36:21] INFO root fetch - main [MainThread]: Store serial: [22963032]
+[2024-04-28 02:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963032]
+[2024-04-28 02:38:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 02:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: state-machine-semaphore
+[2024-04-28 02:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compose-go
+[2024-04-28 02:38:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lotgi
+[2024-04-28 02:38:30] INFO root fetch - processPackages [lotgi]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 02:38:30] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 02:38:30] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/0a/21/d27b5a1b6bf901d91ee3a34da746ea27b8ab7c2ed7438759c580a8662c67/lotgi-0.0.2.tar.gz
+[2024-04-28 02:38:30] INFO root fetch - processPackages [compose-go]: New version: [2.27.0] Old Version: [2.26.1]
+[2024-04-28 02:38:30] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2024-04-28 02:38:30] INFO root fetch - processPackages [compose-go]: Downloading https://files.pythonhosted.org/packages/32/2d/7845df2878d093b5a79f98e0fc8c7b442bd0b591d41d56e0625447d2cb32/compose_go-2.26.1.tar.gz
+[2024-04-28 02:38:30] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2024-04-28 02:38:30] WARNING root fetch - processPackages [compose-go]: Skipping package: exceeds size limit 18207514>=10485760
+[2024-04-28 02:38:30] INFO root fetch - main [MainThread]: End processing [compose-go] error
+[2024-04-28 02:38:30] INFO root fetch - processPackages [lotgi]: Downloading https://files.pythonhosted.org/packages/82/0b/dff2abb2fd104fae092905849d3b887d554a7bc659feabb43ffebe8d3e2d/lotgi-0.0.3.tar.gz
+[2024-04-28 02:38:30] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2024-04-28 02:38:30] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20240428/s/state-machine-semaphore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 02:38:30] INFO root fetch - processPackages [lotgi]: executing diffoscope
+[2024-04-28 02:38:30] INFO root fetch - processPackages [lotgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lotgi-0.0.2.tar.gz tmp/lotgi-0.0.3.tar.gz --markdown 20240428/l/lotgi/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 02:38:31] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.2.tar.gz]
+[2024-04-28 02:38:31] INFO root fetch - processPackages [lotgi]: Remove: archive file [/home/abi/fetcher/tmp/lotgi-0.0.3.tar.gz]
+[2024-04-28 02:38:31] INFO root fetch - main [MainThread]: End processing [lotgi]: success
+[2024-04-28 02:38:31] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.98.tar.gz]
+[2024-04-28 02:38:31] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
+[2024-04-28 02:38:31] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2024-04-28 02:38:31] INFO root fetch - main [MainThread]: Store serial: [22963041]
