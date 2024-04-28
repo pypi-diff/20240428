@@ -21296,3 +21296,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:48:26] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.8.tar.gz]
 [2024-04-28 23:48:26] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
 [2024-04-28 23:48:26] INFO root fetch - main [MainThread]: Store serial: [22971062]
+[2024-04-28 23:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971062]
+[2024-04-28 23:50:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 23:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-28 23:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modern-greek-inflexion
+[2024-04-28 23:50:36] INFO root fetch - processPackages [modern-greek-inflexion]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-04-28 23:50:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1714340158] Old Version: [0.0.21a1714183310]
+[2024-04-28 23:50:36] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/cf/0d/c74671ed5c99d8d2baca70da27bd5793757a6cc317ea05763666d40f0a85/modern_greek_inflexion-2.0.4.tar.gz
+[2024-04-28 23:50:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/0c/80/7f93ac0f62bdb875216500bc125f5c6f03819a02e2393fa9d315960034a2/pulumi_kubernetes_the_hard_way-0.0.21a1714183310.tar.gz
+[2024-04-28 23:50:36] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/20/85/7b3ceccbd74099e564d9cf1315ad7cac1f174ff25c55513dd44e760b3dde/modern_greek_inflexion-2.0.5.tar.gz
+[2024-04-28 23:50:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/68/fd/486b4e0afc1e5cc5234363f018e2dccbf2d919e9275160e6e953a9b78695/pulumi_kubernetes_the_hard_way-0.0.21a1714340158.tar.gz
+[2024-04-28 23:50:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-28 23:50:36] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714183310.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714340158.tar.gz --markdown 20240428/p/pulumi-kubernetes-the-hard-way/0.0.21a1714183310-0.0.21a1714340158/README.md --exclude *.pyd
+[2024-04-28 23:50:36] INFO root fetch - processPackages [modern-greek-inflexion]: executing diffoscope
+[2024-04-28 23:50:36] INFO root fetch - processPackages [modern-greek-inflexion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modern_greek_inflexion-2.0.4.tar.gz tmp/modern_greek_inflexion-2.0.5.tar.gz --markdown 20240428/m/modern-greek-inflexion/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-04-28 23:50:37] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714183310.tar.gz]
+[2024-04-28 23:50:37] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1714340158.tar.gz]
+[2024-04-28 23:50:37] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-28 23:50:39] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern_greek_inflexion-2.0.4.tar.gz]
+[2024-04-28 23:50:39] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern_greek_inflexion-2.0.5.tar.gz]
+[2024-04-28 23:50:39] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
+[2024-04-28 23:50:39] INFO root fetch - main [MainThread]: Store serial: [22971068]
