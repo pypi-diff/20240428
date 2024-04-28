@@ -5355,3 +5355,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:00:00] INFO root fetch - processPackages [odoo14-addon-ssi-work-log-mixin]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_work_log_mixin-14.0.1.16.0-py3-none-any.whl.zip]
 [2024-04-28 08:00:00] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-work-log-mixin]: success
 [2024-04-28 08:00:00] INFO root fetch - main [MainThread]: Store serial: [22964417]
+[2024-04-28 08:02:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964417]
+[2024-04-28 08:02:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 08:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: untie
+[2024-04-28 08:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logger-local
+[2024-04-28 08:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: charlestest
+[2024-04-28 08:02:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dqc-toolkit
+[2024-04-28 08:02:09] WARNING root fetch - processPackages [untie]: Skipping, unable to determine old version
+[2024-04-28 08:02:09] INFO root fetch - main [MainThread]: End processing [untie] error
+[2024-04-28 08:02:09] INFO root fetch - processPackages [logger-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 08:02:09] WARNING root fetch - processPackages [charlestest]: Skipping, unable to determine old version
+[2024-04-28 08:02:09] INFO root fetch - main [MainThread]: End processing [charlestest] error
+[2024-04-28 08:02:09] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/95/83/cbbeaca04ecc0f2c8811769437b1979bde80cd488f848e324e92d8440499/logger-local-0.0.98.tar.gz
+[2024-04-28 08:02:09] INFO root fetch - processPackages [dqc-toolkit]: New version: [0.1.0rc1] Old Version: [0.1.0b5]
+[2024-04-28 08:02:09] INFO root fetch - processPackages [dqc-toolkit]: Downloading https://files.pythonhosted.org/packages/36/eb/b1936175568ff433f82c5df85e8b3de390aafd40dad81a1103e5b5bb3791/dqc_toolkit-0.1.0b5.tar.gz
+[2024-04-28 08:02:09] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/32/72/d6d6521aa3b74d3c30af8cdee32bb3e7a6008c5629d957853e9e7a3c01b4/logger-local-0.0.99.tar.gz
+[2024-04-28 08:02:09] INFO root fetch - processPackages [logger-local]: executing diffoscope
+[2024-04-28 08:02:09] INFO root fetch - processPackages [logger-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger-local-0.0.98.tar.gz tmp/logger-local-0.0.99.tar.gz --markdown 20240428/l/logger-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 08:02:09] INFO root fetch - processPackages [dqc-toolkit]: Downloading https://files.pythonhosted.org/packages/20/72/b3a91809bc0da0a309f4d948fa02dba1b3af384186b3d8b9ee449308084d/dqc_toolkit-0.1.0rc1.tar.gz
+[2024-04-28 08:02:09] INFO root fetch - processPackages [dqc-toolkit]: executing diffoscope
+[2024-04-28 08:02:09] INFO root fetch - processPackages [dqc-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dqc_toolkit-0.1.0b5.tar.gz tmp/dqc_toolkit-0.1.0rc1.tar.gz --markdown 20240428/d/dqc-toolkit/0.1.0b5-0.1.0rc1/README.md --exclude *.pyd
+[2024-04-28 08:02:10] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.98.tar.gz]
+[2024-04-28 08:02:10] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
+[2024-04-28 08:02:10] INFO root fetch - main [MainThread]: End processing [logger-local]: success
+[2024-04-28 08:02:10] INFO root fetch - processPackages [dqc-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/dqc_toolkit-0.1.0b5.tar.gz]
+[2024-04-28 08:02:10] INFO root fetch - processPackages [dqc-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/dqc_toolkit-0.1.0rc1.tar.gz]
+[2024-04-28 08:02:10] INFO root fetch - main [MainThread]: End processing [dqc-toolkit]: success
+[2024-04-28 08:02:10] INFO root fetch - main [MainThread]: Store serial: [22964431]
