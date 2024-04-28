@@ -10457,3 +10457,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:07:38] INFO root fetch - processPackages [dvtag]: Remove: archive file [/home/abi/fetcher/tmp/dvtag-0.7.0.tar.gz]
 [2024-04-28 14:07:38] INFO root fetch - main [MainThread]: End processing [dvtag]: success
 [2024-04-28 14:07:38] INFO root fetch - main [MainThread]: Store serial: [22966591]
+[2024-04-28 14:09:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966591]
+[2024-04-28 14:09:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 14:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torcheval-nightly
+[2024-04-28 14:09:53] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-28 14:09:53] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/a3/6d/794af2087c6d670c1d6bd148a897d3a59b68e8d4b82c381b57d3e20ab544/torcheval-nightly-2024.4.8.tar.gz
+[2024-04-28 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/01/5f/5d3ae8fee972a25478395600694aa6da7aecdf0fdc15b5bb79b52a372737/torcheval-nightly-2024.4.9.tar.gz
+[2024-04-28 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-04-28 14:09:54] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2024.4.8.tar.gz tmp/torcheval-nightly-2024.4.9.tar.gz --markdown 20240428/t/torcheval-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-28 14:09:55] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.8.tar.gz]
+[2024-04-28 14:09:55] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval-nightly-2024.4.9.tar.gz]
+[2024-04-28 14:09:55] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-04-28 14:09:55] INFO root fetch - main [MainThread]: Store serial: [22966595]
