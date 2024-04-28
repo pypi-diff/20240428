@@ -8758,3 +8758,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:08:09] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024042709.tar.gz]
 [2024-04-28 12:08:09] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-04-28 12:08:09] INFO root fetch - main [MainThread]: Store serial: [22965895]
+[2024-04-28 12:10:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965895]
+[2024-04-28 12:10:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: IPD-axelrod
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automower-ble
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amazon-ec2-best-instance
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scepter
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-admin-coreui
+[2024-04-28 12:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smartboiler
+[2024-04-28 12:10:18] INFO root fetch - processPackages [django-admin-coreui]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 12:10:19] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-04-28 12:10:19] WARNING root fetch - processPackages [IPD-axelrod]: Skipping, unable to determine old version
+[2024-04-28 12:10:19] INFO root fetch - main [MainThread]: End processing [IPD-axelrod] error
+[2024-04-28 12:10:19] INFO root fetch - processPackages [amazon-ec2-best-instance]: New version: [3.0.2] Old Version: [3.0.1]
+[2024-04-28 12:10:19] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/ed/34/111723de17c23326102de3e587a3b678792ed6c725e865e6d099c1f4b2a9/django-admin-coreui-0.0.5.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [scepter]: New version: [0.0.5.post1] Old Version: [0.0.5]
+[2024-04-28 12:10:19] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [amazon-ec2-best-instance]: Downloading https://files.pythonhosted.org/packages/83/a5/c161ff6ca5584c75f78ce5dfc99c9b387e8300f2fcdf1b5f73fcd530e3c5/amazon-ec2-best-instance-3.0.1.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [automower-ble]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 12:10:19] INFO root fetch - processPackages [scepter]: Downloading https://files.pythonhosted.org/packages/59/71/1f68dcc607b073086af4e8af9060609330eeb743978f4420af911784fd56/scepter-0.0.5-py3-none-any.whl
+[2024-04-28 12:10:19] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [automower-ble]: Downloading https://files.pythonhosted.org/packages/f8/f4/2dfba44b3b485e641cff929ac1d279e29727f7abb008c9613d777ea3ad5d/automower_ble-0.1.8.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/e8/f5/4429fbd5a80e0cf3fb2b2bcb9a260b0efb56e62c5ca56d8352be9f10a71c/django-admin-coreui-0.0.6.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [amazon-ec2-best-instance]: Downloading https://files.pythonhosted.org/packages/8f/b8/58fd7e902cc58d8a374d9e73a4c13ef8c1592c91061a47a1e8059281812a/amazon_ec2_best_instance-3.0.2.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-28 12:10:19] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240428/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-04-28 12:10:19] INFO root fetch - processPackages [scepter]: Downloading https://files.pythonhosted.org/packages/34/f4/d5d74860de8a8fdc937e8f117ef541a04eb4f0facf5151a015abccce8564/scepter-0.0.5.post1-py3-none-any.whl
+[2024-04-28 12:10:19] INFO root fetch - processPackages [amazon-ec2-best-instance]: executing diffoscope
+[2024-04-28 12:10:19] INFO root fetch - processPackages [amazon-ec2-best-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-ec2-best-instance-3.0.1.tar.gz tmp/amazon_ec2_best_instance-3.0.2.tar.gz --markdown 20240428/a/amazon-ec2-best-instance/3.0.1-3.0.2/README.md --exclude *.pyd
+[2024-04-28 12:10:19] INFO root fetch - processPackages [automower-ble]: Downloading https://files.pythonhosted.org/packages/89/64/b5b9e9d8aeab34c0f02e61cb56e594ac62ca2ae35f4e96f122f1ca36d3b7/automower_ble-0.1.9.tar.gz
+[2024-04-28 12:10:19] INFO root fetch - processPackages [scepter]: executing diffoscope
+[2024-04-28 12:10:19] INFO root fetch - processPackages [scepter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scepter-0.0.5-py3-none-any.whl.zip tmp/scepter-0.0.5.post1-py3-none-any.whl.zip --markdown 20240428/s/scepter/0.0.5-0.0.5.post1/README.md --exclude *.pyd
+[2024-04-28 12:10:19] INFO root fetch - processPackages [automower-ble]: executing diffoscope
+[2024-04-28 12:10:19] INFO root fetch - processPackages [automower-ble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automower_ble-0.1.8.tar.gz tmp/automower_ble-0.1.9.tar.gz --markdown 20240428/a/automower-ble/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 12:10:19] INFO root fetch - processPackages [django-admin-coreui]: executing diffoscope
+[2024-04-28 12:10:19] INFO root fetch - processPackages [django-admin-coreui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-coreui-0.0.5.tar.gz tmp/django-admin-coreui-0.0.6.tar.gz --markdown 20240428/d/django-admin-coreui/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 12:10:20] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-28 12:10:20] INFO root fetch - processPackages [amazon-ec2-best-instance]: Remove: archive file [/home/abi/fetcher/tmp/amazon-ec2-best-instance-3.0.1.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - processPackages [amazon-ec2-best-instance]: Remove: archive file [/home/abi/fetcher/tmp/amazon_ec2_best_instance-3.0.2.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - main [MainThread]: End processing [amazon-ec2-best-instance]: success
+[2024-04-28 12:10:20] INFO root fetch - processPackages [automower-ble]: Remove: archive file [/home/abi/fetcher/tmp/automower_ble-0.1.8.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - processPackages [automower-ble]: Remove: archive file [/home/abi/fetcher/tmp/automower_ble-0.1.9.tar.gz]
+[2024-04-28 12:10:20] INFO root fetch - main [MainThread]: End processing [automower-ble]: success
+[2024-04-28 12:10:21] INFO root fetch - processPackages [scepter]: Remove: archive file [/home/abi/fetcher/tmp/scepter-0.0.5-py3-none-any.whl.zip]
+[2024-04-28 12:10:21] INFO root fetch - processPackages [scepter]: Remove: archive file [/home/abi/fetcher/tmp/scepter-0.0.5.post1-py3-none-any.whl.zip]
+[2024-04-28 12:10:21] INFO root fetch - main [MainThread]: End processing [scepter]: success
+[2024-04-28 12:10:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.5.tar.gz]
+[2024-04-28 12:10:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.6.tar.gz]
+[2024-04-28 12:10:25] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
+[2024-04-28 12:10:25] INFO root fetch - main [MainThread]: Store serial: [22965913]
