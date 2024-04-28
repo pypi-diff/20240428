@@ -15423,3 +15423,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:56:23] INFO root fetch - processPackages [heavylight]: Remove: archive file [/home/abi/fetcher/tmp/heavylight-1.0.7.tar.gz]
 [2024-04-28 19:56:23] INFO root fetch - main [MainThread]: End processing [heavylight]: success
 [2024-04-28 19:56:23] INFO root fetch - main [MainThread]: Store serial: [22968621]
+[2024-04-28 19:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968621]
+[2024-04-28 19:58:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pdbstore
+[2024-04-28 19:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stack-overflow-watchman
+[2024-04-28 19:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkcyarray
+[2024-04-28 19:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: misspy
+[2024-04-28 19:58:33] WARNING root fetch - processPackages [mkcyarray]: Skipping, unable to determine old version
+[2024-04-28 19:58:33] INFO root fetch - main [MainThread]: End processing [mkcyarray] error
+[2024-04-28 19:58:33] INFO root fetch - processPackages [pdbstore]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 19:58:33] WARNING root fetch - processPackages [stack-overflow-watchman]: Skipping, unable to determine old version
+[2024-04-28 19:58:33] INFO root fetch - main [MainThread]: End processing [stack-overflow-watchman] error
+[2024-04-28 19:58:33] INFO root fetch - processPackages [misspy]: New version: [2024.4.0] Old Version: [2023.9.17rc1]
+[2024-04-28 19:58:33] INFO root fetch - processPackages [pdbstore]: Downloading https://files.pythonhosted.org/packages/e7/10/a2cb3b6760ce0d72f7ed5a97323f8bce5cd5be686c82c52d71daae4b5bf9/pdbstore-1.0.0.tar.gz
+[2024-04-28 19:58:33] INFO root fetch - processPackages [misspy]: Downloading https://files.pythonhosted.org/packages/14/3d/68ea314f54962cecde87a49916b4fcaf6ecddfd21f9ed4a909082f20af70/misspy-2023.9.17rc1.tar.gz
+[2024-04-28 19:58:33] INFO root fetch - processPackages [pdbstore]: Downloading https://files.pythonhosted.org/packages/d8/5e/f4d85571290ee25619bece637148d0eae015844e51dde51c7095f1a1a50b/pdbstore-1.1.0.tar.gz
+[2024-04-28 19:58:34] INFO root fetch - processPackages [pdbstore]: executing diffoscope
+[2024-04-28 19:58:34] INFO root fetch - processPackages [pdbstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdbstore-1.0.0.tar.gz tmp/pdbstore-1.1.0.tar.gz --markdown 20240428/p/pdbstore/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 19:58:34] INFO root fetch - processPackages [misspy]: Downloading https://files.pythonhosted.org/packages/3a/c2/d7dee71d32b812540951324550975bae88af7e91c33015d2116a48c27b78/misspy-2024.4.0.tar.gz
+[2024-04-28 19:58:34] INFO root fetch - processPackages [misspy]: executing diffoscope
+[2024-04-28 19:58:34] INFO root fetch - processPackages [misspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misspy-2023.9.17rc1.tar.gz tmp/misspy-2024.4.0.tar.gz --markdown 20240428/m/misspy/2023.9.17rc1-2024.4.0/README.md --exclude *.pyd
+[2024-04-28 19:58:35] INFO root fetch - processPackages [pdbstore]: Remove: archive file [/home/abi/fetcher/tmp/pdbstore-1.0.0.tar.gz]
+[2024-04-28 19:58:35] INFO root fetch - processPackages [pdbstore]: Remove: archive file [/home/abi/fetcher/tmp/pdbstore-1.1.0.tar.gz]
+[2024-04-28 19:58:35] INFO root fetch - main [MainThread]: End processing [pdbstore]: success
+[2024-04-28 19:58:35] INFO root fetch - processPackages [misspy]: Remove: archive file [/home/abi/fetcher/tmp/misspy-2023.9.17rc1.tar.gz]
+[2024-04-28 19:58:35] INFO root fetch - processPackages [misspy]: Remove: archive file [/home/abi/fetcher/tmp/misspy-2024.4.0.tar.gz]
+[2024-04-28 19:58:35] INFO root fetch - main [MainThread]: End processing [misspy]: success
+[2024-04-28 19:58:35] INFO root fetch - main [MainThread]: Store serial: [22968644]
