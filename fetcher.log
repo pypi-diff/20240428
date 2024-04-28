@@ -14961,3 +14961,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:27:08] WARNING root fetch - processPackages [yew]: Skipping, unable to determine old version
 [2024-04-28 19:27:08] INFO root fetch - main [MainThread]: End processing [yew] error
 [2024-04-28 19:27:08] INFO root fetch - main [MainThread]: Store serial: [22968421]
+[2024-04-28 19:29:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968421]
+[2024-04-28 19:29:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crazy-thursday
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neural-commons
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jetline
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rio-ui
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kubeflow-training
+[2024-04-28 19:29:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sgtpy
+[2024-04-28 19:29:17] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.4.28.1] Old Version: [2024.4.28.0]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [neural-commons]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [kubeflow-training]: New version: [1.8.0rc0] Old Version: [1.7.0rc0]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [rio-ui]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [sgtpy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/b8/f2/062cadf2c00fe29b5c45db7c28d793be097db6a4b7011263665d87763b2d/crazy_thursday-2024.4.28.0.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [neural-commons]: Downloading https://files.pythonhosted.org/packages/33/c7/de9842324bc2ecc433b41ecec85472d31e5316808917c4e015d9f4a036bd/neural-commons-0.0.8.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [kubeflow-training]: Downloading https://files.pythonhosted.org/packages/22/e4/8ab0846fd718393c0bab10d2560e49e595b4b4f96379252221a20a0be9a1/kubeflow-training-1.7.0rc0.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/75/f1/87e368bb302953b4dff092b69e711810186159d91777662315c2ad0e80a7/rio_ui-0.5.8.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [sgtpy]: Downloading https://files.pythonhosted.org/packages/68/e8/01c8784d265dcc65ee5306ae1ef7d491a95de5ea1bfa1685c2ed6c8cdef6/SGTPy-0.0.8.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:29:17] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:29:17] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/bd/81/ab2e5c2ae61ca7dedd7e0695f4fd1aa9b3330ac92e9e8db8bd4dc07a6448/crazy_thursday-2024.4.28.1.tar.gz
+[2024-04-28 19:29:17] INFO root fetch - processPackages [neural-commons]: Downloading https://files.pythonhosted.org/packages/91/3a/2723568374e55738e8124f3d3902cfdb4751941c65909eb36df8eeb23555/neural-commons-0.1.0.tar.gz
+[2024-04-28 19:29:18] INFO root fetch - processPackages [kubeflow-training]: Downloading https://files.pythonhosted.org/packages/2b/7f/1dd03b2be4cd18e45d077fd3fd87bdff2b51821cb508668af63c6385b786/kubeflow-training-1.8.0rc0.tar.gz
+[2024-04-28 19:29:18] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-04-28 19:29:18] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.4.28.0.tar.gz tmp/crazy_thursday-2024.4.28.1.tar.gz --markdown 20240428/c/crazy-thursday/2024.4.28.0-2024.4.28.1/README.md --exclude *.pyd
+[2024-04-28 19:29:18] INFO root fetch - processPackages [kubeflow-training]: executing diffoscope
+[2024-04-28 19:29:18] INFO root fetch - processPackages [kubeflow-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubeflow-training-1.7.0rc0.tar.gz tmp/kubeflow-training-1.8.0rc0.tar.gz --markdown 20240428/k/kubeflow-training/1.7.0rc0-1.8.0rc0/README.md --exclude *.pyd
+[2024-04-28 19:29:18] INFO root fetch - processPackages [sgtpy]: Downloading https://files.pythonhosted.org/packages/fe/f2/2b7f0b913291ce725478eaab4c3ad9e63537a0ef86defcaa09affe6294b2/SGTPy-0.0.9.tar.gz
+[2024-04-28 19:29:18] INFO root fetch - processPackages [neural-commons]: executing diffoscope
+[2024-04-28 19:29:18] INFO root fetch - processPackages [neural-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neural-commons-0.0.8.tar.gz tmp/neural-commons-0.1.0.tar.gz --markdown 20240428/n/neural-commons/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-04-28 19:29:18] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/5e/f5/620ac0e3c33509b0ed523cef270c62991290037eb1cfab9cbe7e51448452/rio_ui-0.5.9.tar.gz
+[2024-04-28 19:29:18] INFO root fetch - processPackages [sgtpy]: executing diffoscope
+[2024-04-28 19:29:18] INFO root fetch - processPackages [sgtpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SGTPy-0.0.8.tar.gz tmp/SGTPy-0.0.9.tar.gz --markdown 20240428/s/sgtpy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 19:29:18] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:29:18] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.28.0.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.4.28.1.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-04-28 19:29:18] INFO root fetch - processPackages [neural-commons]: Remove: archive file [/home/abi/fetcher/tmp/neural-commons-0.0.8.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - processPackages [neural-commons]: Remove: archive file [/home/abi/fetcher/tmp/neural-commons-0.1.0.tar.gz]
+[2024-04-28 19:29:18] INFO root fetch - main [MainThread]: End processing [neural-commons]: success
+[2024-04-28 19:29:19] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-04-28 19:29:19] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.5.8.tar.gz tmp/rio_ui-0.5.9.tar.gz --markdown 20240428/r/rio-ui/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-28 19:29:19] INFO root fetch - processPackages [sgtpy]: Remove: archive file [/home/abi/fetcher/tmp/SGTPy-0.0.8.tar.gz]
+[2024-04-28 19:29:19] INFO root fetch - processPackages [sgtpy]: Remove: archive file [/home/abi/fetcher/tmp/SGTPy-0.0.9.tar.gz]
+[2024-04-28 19:29:19] INFO root fetch - main [MainThread]: End processing [sgtpy]: success
+[2024-04-28 19:29:19] INFO root fetch - processPackages [kubeflow-training]: Remove: archive file [/home/abi/fetcher/tmp/kubeflow-training-1.7.0rc0.tar.gz]
+[2024-04-28 19:29:19] INFO root fetch - processPackages [kubeflow-training]: Remove: archive file [/home/abi/fetcher/tmp/kubeflow-training-1.8.0rc0.tar.gz]
+[2024-04-28 19:29:19] INFO root fetch - main [MainThread]: End processing [kubeflow-training]: success
+[2024-04-28 19:29:20] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.8.tar.gz]
+[2024-04-28 19:29:21] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.9.tar.gz]
+[2024-04-28 19:29:21] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-04-28 19:29:21] INFO root fetch - main [MainThread]: Store serial: [22968450]
