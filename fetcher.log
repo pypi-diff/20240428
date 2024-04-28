@@ -8809,3 +8809,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:10:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.6.tar.gz]
 [2024-04-28 12:10:25] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
 [2024-04-28 12:10:25] INFO root fetch - main [MainThread]: Store serial: [22965913]
+[2024-04-28 12:12:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965913]
+[2024-04-28 12:12:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plugget-qt
+[2024-04-28 12:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dot-proxy
+[2024-04-28 12:12:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easylogger4dev-alpha
+[2024-04-28 12:12:33] WARNING root fetch - processPackages [easylogger4dev-alpha]: Skipping, unable to determine old version
+[2024-04-28 12:12:33] INFO root fetch - processPackages [dot-proxy]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 12:12:33] INFO root fetch - main [MainThread]: End processing [easylogger4dev-alpha] error
+[2024-04-28 12:12:33] INFO root fetch - processPackages [plugget-qt]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 12:12:34] INFO root fetch - processPackages [dot-proxy]: Downloading https://files.pythonhosted.org/packages/88/86/667f6a76296039f83b174ab74d5efe04a88abebc7e87b3650b294e868e99/dot_proxy-0.2.1.tar.gz
+[2024-04-28 12:12:34] INFO root fetch - processPackages [plugget-qt]: Downloading https://files.pythonhosted.org/packages/03/4b/b4697416f81763d90684ef92585ee68e3bf33c28eaa05051834fc00c4d87/plugget-qt-0.0.5.tar.gz
+[2024-04-28 12:12:34] INFO root fetch - processPackages [dot-proxy]: Downloading https://files.pythonhosted.org/packages/cc/61/9b8d0e5f6f545caba5a15e24155bc7a7aba52cd3e5497945571da1639811/dot_proxy-0.2.2.tar.gz
+[2024-04-28 12:12:34] INFO root fetch - processPackages [plugget-qt]: Downloading https://files.pythonhosted.org/packages/a4/c3/6bbd45246faa29b950aa6751609b82712a210c5318561334d7516a2bb621/plugget_qt-0.0.6.tar.gz
+[2024-04-28 12:12:34] INFO root fetch - processPackages [dot-proxy]: executing diffoscope
+[2024-04-28 12:12:34] INFO root fetch - processPackages [dot-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dot_proxy-0.2.1.tar.gz tmp/dot_proxy-0.2.2.tar.gz --markdown 20240428/d/dot-proxy/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 12:12:34] INFO root fetch - processPackages [plugget-qt]: executing diffoscope
+[2024-04-28 12:12:34] INFO root fetch - processPackages [plugget-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugget-qt-0.0.5.tar.gz tmp/plugget_qt-0.0.6.tar.gz --markdown 20240428/p/plugget-qt/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 12:12:35] INFO root fetch - processPackages [plugget-qt]: Remove: archive file [/home/abi/fetcher/tmp/plugget-qt-0.0.5.tar.gz]
+[2024-04-28 12:12:35] INFO root fetch - processPackages [plugget-qt]: Remove: archive file [/home/abi/fetcher/tmp/plugget_qt-0.0.6.tar.gz]
+[2024-04-28 12:12:35] INFO root fetch - main [MainThread]: End processing [plugget-qt]: success
+[2024-04-28 12:12:35] INFO root fetch - processPackages [dot-proxy]: Remove: archive file [/home/abi/fetcher/tmp/dot_proxy-0.2.1.tar.gz]
+[2024-04-28 12:12:35] INFO root fetch - processPackages [dot-proxy]: Remove: archive file [/home/abi/fetcher/tmp/dot_proxy-0.2.2.tar.gz]
+[2024-04-28 12:12:35] INFO root fetch - main [MainThread]: End processing [dot-proxy]: success
+[2024-04-28 12:12:35] INFO root fetch - main [MainThread]: Store serial: [22965922]
