@@ -11182,3 +11182,35 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:02:28] INFO root fetch - processPackages [zalabim]: Remove: archive file [/home/abi/fetcher/tmp/zalabim-24.1.tar.gz]
 [2024-04-28 15:02:28] INFO root fetch - main [MainThread]: End processing [zalabim]: success
 [2024-04-28 15:02:28] INFO root fetch - main [MainThread]: Store serial: [22966861]
+[2024-04-28 15:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966861]
+[2024-04-28 15:04:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 15:06:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966861]
+[2024-04-28 15:06:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twikit
+[2024-04-28 15:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piraye
+[2024-04-28 15:06:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jh2
+[2024-04-28 15:06:51] INFO root fetch - processPackages [piraye]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-28 15:06:51] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/47/2a/12d6f6fc93dcf36276c36fa5589a90480612aa77d56f3982801cdee542e4/piraye-0.5.1.tar.gz
+[2024-04-28 15:06:51] INFO root fetch - processPackages [twikit]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-28 15:06:51] INFO root fetch - processPackages [jh2]: New version: [5.0.1] Old Version: [5.0.0]
+[2024-04-28 15:06:52] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/9c/cc/fa2648bd6665831038c782f618568f0c464c18751a9883e6c8d42a7426a9/twikit-1.5.8.tar.gz
+[2024-04-28 15:06:52] INFO root fetch - processPackages [piraye]: Downloading https://files.pythonhosted.org/packages/bc/8f/54b0344450311263d05e114a83006bad5a094c41b8a09c0329cb34adb92f/piraye-0.6.0.tar.gz
+[2024-04-28 15:06:52] INFO root fetch - processPackages [jh2]: Downloading https://files.pythonhosted.org/packages/fc/93/f5d55a60da0bf55ef75032de11d1ace7125359cb9658448e007b2bc80d4b/jh2-5.0.0.tar.gz
+[2024-04-28 15:06:52] INFO root fetch - processPackages [piraye]: executing diffoscope
+[2024-04-28 15:06:52] INFO root fetch - processPackages [piraye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piraye-0.5.1.tar.gz tmp/piraye-0.6.0.tar.gz --markdown 20240428/p/piraye/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-28 15:06:52] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/91/8f/4cbb6f8859c8b1bf5587ee57fa870e9ba808dd95602037d4719b70ed03ad/twikit-1.5.9.tar.gz
+[2024-04-28 15:06:52] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-04-28 15:06:52] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.5.8.tar.gz tmp/twikit-1.5.9.tar.gz --markdown 20240428/t/twikit/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-04-28 15:06:52] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.5.1.tar.gz]
+[2024-04-28 15:06:52] INFO root fetch - processPackages [piraye]: Remove: archive file [/home/abi/fetcher/tmp/piraye-0.6.0.tar.gz]
+[2024-04-28 15:06:52] INFO root fetch - processPackages [jh2]: Downloading https://files.pythonhosted.org/packages/dc/8d/71b74f1a67c2bea84c247b3b3e2ee7939fc8d6a6c2e769e9cdd588c66507/jh2-5.0.1-pp310-pypy310_pp73-musllinux_1_1_x86_64.whl
+[2024-04-28 15:06:52] INFO root fetch - main [MainThread]: End processing [piraye]: success
+[2024-04-28 15:06:53] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.8.tar.gz]
+[2024-04-28 15:06:53] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.9.tar.gz]
+[2024-04-28 15:06:53] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-04-28 15:06:54] INFO root fetch - processPackages [jh2]: executing diffoscope
+[2024-04-28 15:06:54] INFO root fetch - processPackages [jh2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jh2-5.0.0.tar.gz tmp/jh2-5.0.1-pp310-pypy310_pp73-musllinux_1_1_x86_64.whl.zip --markdown 20240428/j/jh2/5.0.0-5.0.1/README.md --exclude *.pyd
+[2024-04-28 15:06:56] INFO root fetch - processPackages [jh2]: Remove: archive file [/home/abi/fetcher/tmp/jh2-5.0.0.tar.gz]
+[2024-04-28 15:06:56] INFO root fetch - processPackages [jh2]: Remove: archive file [/home/abi/fetcher/tmp/jh2-5.0.1-pp310-pypy310_pp73-musllinux_1_1_x86_64.whl.zip]
+[2024-04-28 15:06:56] INFO root fetch - main [MainThread]: End processing [jh2]: success
+[2024-04-28 15:06:56] INFO root fetch - main [MainThread]: Store serial: [22966894]
