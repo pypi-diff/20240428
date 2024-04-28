@@ -17832,3 +17832,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:20:44] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.7.tar.gz]
 [2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
 [2024-04-28 22:20:44] INFO root fetch - main [MainThread]: Store serial: [22969887]
+[2024-04-28 22:22:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969887]
+[2024-04-28 22:22:54] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-contrib-pyodide
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-contrib-runtime
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flet-contribute
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plt-cli
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pkscreener
+[2024-04-28 22:22:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python
+[2024-04-28 22:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: modelpark
+[2024-04-28 22:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: myst-parser
+[2024-04-28 22:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Way2DSSAT
+[2024-04-28 22:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mo-logs
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.28.2020] Old Version: [2024.4.27.2315]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [plt-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [modelpark]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.28.2020] Old Version: [2024.4.27.2315]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contribute]: New version: [2024.4.27.2315] Old Version: [2024.4.27.2303]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [tencentcloud-sdk-python]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:22:55] WARNING root fetch - processPackages [Way2DSSAT]: Skipping, unable to determine old version
+[2024-04-28 22:22:55] INFO root fetch - main [MainThread]: End processing [Way2DSSAT] error
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contribute]: Downloading https://files.pythonhosted.org/packages/99/82/ceecfe84e9ef83dfaab6ac068f04c3a348d9bb5f0615934cf62a637216b9/flet_contribute-2024.4.27.2303.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/07/c2/1198bcd5363dbb66bfb4d2e0c58845165eb055b8ac8ab2fb01649fb37ecf/flet_contrib_runtime-2024.4.27.2315.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [plt-cli]: Downloading https://files.pythonhosted.org/packages/5d/a8/e4198d9a9fde7387444ffdf6eef2699b4159599f08c5fc6b6f1ec25c0258/plt-cli-0.1.7.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/47/d2/d4c0818da86eb20e145578c2bb9d59dfd4bf97d3203bb1fe04d75d986427/modelpark-0.1.4.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240428.303] Old Version: [0.44.20240425.293]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/58/11/1082c666d683f5237bd55f916888040becaee82b968d109a54500f186af7/flet_contrib_pyodide-2024.4.27.2315.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [myst-parser]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [mo-logs]: New version: [8.608.24119] Old Version: [8.606.24115]
+[2024-04-28 22:22:55] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/b4/d4/b9c1ce0a24bc13f5cc1b81d4bc5130cb76c4eb18ac6da004b37e1ed819ea/pkscreener-0.44.20240425.293.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [plt-cli]: Downloading https://files.pythonhosted.org/packages/cc/9c/aea8ef52756e14c4895f1bd1d303a0b57effcb8eb271da6b2e6199a14344/plt_cli-0.1.8-py3-none-any.whl
+[2024-04-28 22:22:55] INFO root fetch - processPackages [tencentcloud-sdk-python]: Downloading https://files.pythonhosted.org/packages/0e/49/d3deea1dbe9eed3d486f850eab70b665bc903e06042c7b39c19585e01b6a/tencentcloud-sdk-python-3.0.998.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [myst-parser]: Downloading https://files.pythonhosted.org/packages/24/e4/1fcabee98c532c1440d1df9843dae99c3eec975e126723224415f8782c00/myst_parser-3.0.0.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/fa/c8/c5bef6cf5c15f8e8e0ec2a63d2c7c185ee3298c459c4fe47605830adddce/mo_logs-8.606.24115.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/be/d3/1d3895c617e8b367d0f503eb9c14766e2a9ba71832f582f8b9f2ef4e2a2a/flet_contrib_runtime-2024.4.28.2020.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contribute]: Downloading https://files.pythonhosted.org/packages/25/b3/2df9cbcbaaa89bdb4f07ba05753f3d567ea3f04c375aaf57e6cdfdde4212/flet_contribute-2024.4.27.2315.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [modelpark]: Downloading https://files.pythonhosted.org/packages/8b/b1/f6a8ab017da0740bf35b9280806ed9e4504efbb5481e6197413c8739bcd8/modelpark-0.1.5.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/c5/55/cac6123c3535ecc0dbd93e52dff2a12aaa78213e33fddbad7b0d4548c913/flet_contrib_pyodide-2024.4.28.2020.tar.gz
+[2024-04-28 22:22:55] INFO root fetch - processPackages [plt-cli]: executing diffoscope
+[2024-04-28 22:22:55] INFO root fetch - processPackages [plt-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plt-cli-0.1.7.tar.gz tmp/plt_cli-0.1.8-py3-none-any.whl.zip --markdown 20240428/p/plt-cli/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.2315.tar.gz tmp/flet_contrib_runtime-2024.4.28.2020.tar.gz --markdown 20240428/f/flet-contrib-runtime/2024.4.27.2315-2024.4.28.2020/README.md --exclude *.pyd
+[2024-04-28 22:22:55] INFO root fetch - processPackages [modelpark]: executing diffoscope
+[2024-04-28 22:22:55] INFO root fetch - processPackages [modelpark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelpark-0.1.4.tar.gz tmp/modelpark-0.1.5.tar.gz --markdown 20240428/m/modelpark/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contribute]: executing diffoscope
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contribute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contribute-2024.4.27.2303.tar.gz tmp/flet_contribute-2024.4.27.2315.tar.gz --markdown 20240428/f/flet-contribute/2024.4.27.2303-2024.4.27.2315/README.md --exclude *.pyd
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-28 22:22:55] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.2315.tar.gz tmp/flet_contrib_pyodide-2024.4.28.2020.tar.gz --markdown 20240428/f/flet-contrib-pyodide/2024.4.27.2315-2024.4.28.2020/README.md --exclude *.pyd
+[2024-04-28 22:22:56] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/41/83/285d62a23867acf9047b3686ca22ef1650eaa23d726850df63b5ae33d457/pkscreener-0.44.20240428.303.tar.gz
+[2024-04-28 22:22:56] INFO root fetch - processPackages [myst-parser]: Downloading https://files.pythonhosted.org/packages/49/64/e2f13dac02f599980798c01156393b781aec983b52a6e4057ee58f07c43a/myst_parser-3.0.1.tar.gz
+[2024-04-28 22:22:56] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/14/b6/92412b034c6f9927c873c366218339ceee49421b6cf59fb97315f80f8d55/mo_logs-8.608.24119.tar.gz
+[2024-04-28 22:22:56] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-28 22:22:56] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240425.293.tar.gz tmp/pkscreener-0.44.20240428.303.tar.gz --markdown 20240428/p/pkscreener/0.44.20240425.293-0.44.20240428.303/README.md --exclude *.pyd
+[2024-04-28 22:22:56] INFO root fetch - processPackages [myst-parser]: executing diffoscope
+[2024-04-28 22:22:56] INFO root fetch - processPackages [myst-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myst_parser-3.0.0.tar.gz tmp/myst_parser-3.0.1.tar.gz --markdown 20240428/m/myst-parser/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-28 22:22:56] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-04-28 22:22:56] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.606.24115.tar.gz tmp/mo_logs-8.608.24119.tar.gz --markdown 20240428/m/mo-logs/8.606.24115-8.608.24119/README.md --exclude *.pyd
+[2024-04-28 22:22:56] INFO root fetch - processPackages [plt-cli]: Remove: archive file [/home/abi/fetcher/tmp/plt-cli-0.1.7.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - processPackages [plt-cli]: Remove: archive file [/home/abi/fetcher/tmp/plt_cli-0.1.8-py3-none-any.whl.zip]
+[2024-04-28 22:22:56] INFO root fetch - main [MainThread]: End processing [plt-cli]: success
+[2024-04-28 22:22:56] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.4.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - processPackages [modelpark]: Remove: archive file [/home/abi/fetcher/tmp/modelpark-0.1.5.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - main [MainThread]: End processing [modelpark]: success
+[2024-04-28 22:22:56] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2315.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.28.2020.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-28 22:22:56] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2315.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.28.2020.tar.gz]
+[2024-04-28 22:22:56] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-28 22:22:56] INFO root fetch - processPackages [tencentcloud-sdk-python]: Downloading https://files.pythonhosted.org/packages/72/eb/b7f20f227c30beeb1298a5013dbd98cf616d9c321398cf216c1b15940a8b/tencentcloud-sdk-python-3.0.999.tar.gz
+[2024-04-28 22:22:57] INFO root fetch - processPackages [flet-contribute]: Remove: archive file [/home/abi/fetcher/tmp/flet_contribute-2024.4.27.2303.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - processPackages [flet-contribute]: Remove: archive file [/home/abi/fetcher/tmp/flet_contribute-2024.4.27.2315.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - main [MainThread]: End processing [flet-contribute]: success
+[2024-04-28 22:22:57] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240425.293.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240428.303.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-28 22:22:57] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.606.24115.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.608.24119.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-04-28 22:22:57] INFO root fetch - processPackages [myst-parser]: Remove: archive file [/home/abi/fetcher/tmp/myst_parser-3.0.0.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - processPackages [myst-parser]: Remove: archive file [/home/abi/fetcher/tmp/myst_parser-3.0.1.tar.gz]
+[2024-04-28 22:22:57] INFO root fetch - main [MainThread]: End processing [myst-parser]: success
+[2024-04-28 22:22:58] INFO root fetch - processPackages [tencentcloud-sdk-python]: executing diffoscope
+[2024-04-28 22:22:58] INFO root fetch - processPackages [tencentcloud-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-3.0.998.tar.gz tmp/tencentcloud-sdk-python-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:23:09] INFO root fetch - processPackages [tencentcloud-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-3.0.998.tar.gz]
+[2024-04-28 22:23:09] INFO root fetch - processPackages [tencentcloud-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-3.0.999.tar.gz]
+[2024-04-28 22:23:09] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python]: success
+[2024-04-28 22:23:09] INFO root fetch - main [MainThread]: Store serial: [22969920]
