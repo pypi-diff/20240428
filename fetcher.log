@@ -17471,3 +17471,102 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:07:30] INFO root fetch - processPackages [cramjam-cli]: Remove: archive file [/home/abi/fetcher/tmp/cramjam_cli-0.2.0rc1-cp312-cp312-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl.zip]
 [2024-04-28 22:07:30] INFO root fetch - main [MainThread]: End processing [cramjam-cli]: success
 [2024-04-28 22:07:30] INFO root fetch - main [MainThread]: Store serial: [22969650]
+[2024-04-28 22:09:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969650]
+[2024-04-28 22:09:39] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PDBViewer
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satip
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Simba-UW-tf-dev
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plt-cli
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: authexchange
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sim_rl
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xiuxian-buff
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dash-drag-grid
+[2024-04-28 22:09:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: robyn
+[2024-04-28 22:09:39] INFO root fetch - processPackages [satip]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [sim_rl]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [plt-cli]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 22:09:39] WARNING root fetch - processPackages [dash-drag-grid]: Skipping, unable to determine old version
+[2024-04-28 22:09:39] INFO root fetch - processPackages [dash-drag-grid]: Start processing: sphinxcontrib-cldomain
+[2024-04-28 22:09:39] INFO root fetch - main [MainThread]: End processing [dash-drag-grid] error
+[2024-04-28 22:09:39] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/c3/e8/b3c5caf4db2b47fab258763e006a81315f49cf587e12e65aa7025968b03f/satip-2.9.8.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [xiuxian-buff]: New version: [0.30] Old Version: [0.12]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [authexchange]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-28 22:09:39] WARNING root fetch - processPackages [PDBViewer]: Skipping, unable to determine old version
+[2024-04-28 22:09:39] INFO root fetch - processPackages [PDBViewer]: Start processing: xiuxian-info
+[2024-04-28 22:09:39] INFO root fetch - main [MainThread]: End processing [PDBViewer] error
+[2024-04-28 22:09:39] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/ec/98/159adfc8fed6bb8324fdfa6f7b8d58bd2c831254b4f614aed7a9a06abc3e/sim_rl-0.1.4.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.91.4] Old Version: [1.91.3]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [sphinxcontrib-cldomain]: New version: [0.9] Old Version: [0.8-]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [plt-cli]: Downloading https://files.pythonhosted.org/packages/5d/a8/e4198d9a9fde7387444ffdf6eef2699b4159599f08c5fc6b6f1ec25c0258/plt-cli-0.1.7.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [xiuxian-info]: New version: [0.30] Old Version: [0.13]
+[2024-04-28 22:09:39] INFO root fetch - processPackages [authexchange]: Downloading https://files.pythonhosted.org/packages/7e/e2/96400c2277d9dc736383fb3ae9c0d25bafe7848191cf09a37a540a7f9e01/authexchange-0.7.3.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [xiuxian-buff]: Downloading https://files.pythonhosted.org/packages/27/af/94b099d42f6a209e36f737b3d2264fa3abc4decbdb8fc70d02ae58755b8a/xiuxian_buff-0.12.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/d9/05/2fb24eb6eadfbaa36c1d30f0048f65b649a160c889eb11d0aef9ad126b69/Simba-UW-tf-dev-1.91.3.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [satip]: Downloading https://files.pythonhosted.org/packages/06/5b/8bd6eec7428e98b330d6546e21261944d9361dcedd4e96b25bee4a5ee145/satip-2.9.9.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/bc/1c/b13419a9135c4ad54863ce1e7ddd617109f92f5fda908e1ecf095fd1ed5a/sphinxcontrib-cldomain-0.8-.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [xiuxian-info]: Downloading https://files.pythonhosted.org/packages/1b/0f/881c2c276c0e910e4f0575f2ef7ac4fb7788d2e799d0a966ee6b69d78cff/xiuxian_info-0.13.tar.gz
+[2024-04-28 22:09:39] INFO root fetch - processPackages [satip]: executing diffoscope
+[2024-04-28 22:09:39] INFO root fetch - processPackages [satip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satip-2.9.8.tar.gz tmp/satip-2.9.9.tar.gz --markdown 20240428/s/satip/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/54/22/5fe0b87c6e4034146db8509b58c2ef2927af1ccd7bee258b39ced6e36631/sim_rl-0.1.5.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [plt-cli]: Downloading https://files.pythonhosted.org/packages/cc/9c/aea8ef52756e14c4895f1bd1d303a0b57effcb8eb271da6b2e6199a14344/plt_cli-0.1.8-py3-none-any.whl
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-buff]: Downloading https://files.pythonhosted.org/packages/61/b1/27f4926f4a6d6c1e04088fd7bbf714c80f3a87deb894aad5847849108ca0/xiuxian_buff-0.30.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [authexchange]: Downloading https://files.pythonhosted.org/packages/2a/43/13b362bcfbd9d626f124c37cb1acc88fe2f59ea03b56dae22ab2a9f4c4c6/authexchange-0.7.4.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [robyn]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-info]: Downloading https://files.pythonhosted.org/packages/86/66/dc22a8b837cef98062b97293deff2a8307664df10575581b2f50811b8c26/xiuxian_info-0.30.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [authexchange]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [plt-cli]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [plt-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plt-cli-0.1.7.tar.gz tmp/plt_cli-0.1.8-py3-none-any.whl.zip --markdown 20240428/p/plt-cli/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [authexchange]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authexchange-0.7.3.tar.gz tmp/authexchange-0.7.4.tar.gz --markdown 20240428/a/authexchange/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-buff]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-buff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiuxian_buff-0.12.tar.gz tmp/xiuxian_buff-0.30.tar.gz --markdown 20240428/x/xiuxian-buff/0.12-0.30/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/ca/de/99c4cda4d7c8582463524e14662eaf63ac9f85d974c88723f5aaa4a57df1/Simba-UW-tf-dev-1.91.4.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Downloading https://files.pythonhosted.org/packages/5b/09/4edef5ac539db71a20dfd991a2dc126a2e680c0e024e584c79e9296e9b78/sphinxcontrib-cldomain-0.9.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.4.tar.gz tmp/sim_rl-0.1.5.tar.gz --markdown 20240428/s/sim_rl/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/db/e8/d0c20074330916a3895c96c270b171a9247666e837b1deb1ff2efb953da5/robyn-0.8.1.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240428/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sphinxcontrib-cldomain]: executing diffoscope
+[2024-04-28 22:09:40] INFO root fetch - processPackages [sphinxcontrib-cldomain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-cldomain-0.8-.tar.gz tmp/sphinxcontrib-cldomain-0.9.tar.gz --markdown 20240428/s/sphinxcontrib-cldomain/0.8--0.9/README.md --exclude *.pyd
+[2024-04-28 22:09:40] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.8.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - processPackages [satip]: Remove: archive file [/home/abi/fetcher/tmp/satip-2.9.9.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - main [MainThread]: End processing [satip]: success
+[2024-04-28 22:09:40] INFO root fetch - processPackages [robyn]: Downloading https://files.pythonhosted.org/packages/9e/05/799d2992e229948de022111c077e3db76a1ebca39c6bf7f3ab9043b7a8e3/robyn-0.9.0.tar.gz
+[2024-04-28 22:09:40] INFO root fetch - processPackages [authexchange]: Remove: archive file [/home/abi/fetcher/tmp/authexchange-0.7.3.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - processPackages [authexchange]: Remove: archive file [/home/abi/fetcher/tmp/authexchange-0.7.4.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - main [MainThread]: End processing [authexchange]: success
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-buff]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_buff-0.12.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - processPackages [xiuxian-buff]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_buff-0.30.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - main [MainThread]: End processing [xiuxian-buff]: success
+[2024-04-28 22:09:40] INFO root fetch - processPackages [plt-cli]: Remove: archive file [/home/abi/fetcher/tmp/plt-cli-0.1.7.tar.gz]
+[2024-04-28 22:09:40] INFO root fetch - processPackages [plt-cli]: Remove: archive file [/home/abi/fetcher/tmp/plt_cli-0.1.8-py3-none-any.whl.zip]
+[2024-04-28 22:09:40] INFO root fetch - main [MainThread]: End processing [plt-cli]: success
+[2024-04-28 22:09:41] INFO root fetch - processPackages [robyn]: executing diffoscope
+[2024-04-28 22:09:41] INFO root fetch - processPackages [robyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robyn-0.8.1.tar.gz tmp/robyn-0.9.0.tar.gz --markdown 20240428/r/robyn/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-28 22:09:41] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib-cldomain-0.8-.tar.gz]
+[2024-04-28 22:09:41] INFO root fetch - processPackages [sphinxcontrib-cldomain]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib-cldomain-0.9.tar.gz]
+[2024-04-28 22:09:41] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-cldomain]: success
+[2024-04-28 22:09:41] INFO root fetch - processPackages [robyn]: Remove: archive file [/home/abi/fetcher/tmp/robyn-0.8.1.tar.gz]
+[2024-04-28 22:09:41] INFO root fetch - processPackages [robyn]: Remove: archive file [/home/abi/fetcher/tmp/robyn-0.9.0.tar.gz]
+[2024-04-28 22:09:41] INFO root fetch - main [MainThread]: End processing [robyn]: success
+[2024-04-28 22:09:42] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.4.tar.gz]
+[2024-04-28 22:09:42] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.5.tar.gz]
+[2024-04-28 22:09:42] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-28 22:09:43] INFO root fetch - processPackages [xiuxian-info]: executing diffoscope
+[2024-04-28 22:09:43] INFO root fetch - processPackages [xiuxian-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiuxian_info-0.13.tar.gz tmp/xiuxian_info-0.30.tar.gz --markdown 20240428/x/xiuxian-info/0.13-0.30/README.md --exclude *.pyd
+[2024-04-28 22:09:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-04-28 22:09:43] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.91.3.tar.gz tmp/Simba-UW-tf-dev-1.91.4.tar.gz --markdown 20240428/S/Simba-UW-tf-dev/1.91.3-1.91.4/README.md --exclude *.pyd
+[2024-04-28 22:09:43] INFO root fetch - processPackages [xiuxian-info]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_info-0.13.tar.gz]
+[2024-04-28 22:09:43] INFO root fetch - processPackages [xiuxian-info]: Remove: archive file [/home/abi/fetcher/tmp/xiuxian_info-0.30.tar.gz]
+[2024-04-28 22:09:43] INFO root fetch - main [MainThread]: End processing [xiuxian-info]: success
+[2024-04-28 22:09:45] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-28 22:09:45] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-28 22:09:45] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-28 22:09:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.3.tar.gz]
+[2024-04-28 22:09:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.4.tar.gz]
+[2024-04-28 22:09:46] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-04-28 22:09:46] INFO root fetch - main [MainThread]: Store serial: [22969754]
