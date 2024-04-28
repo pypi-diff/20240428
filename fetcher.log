@@ -7557,3 +7557,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:49:14] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-04-28 10:49:14] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-04-28 10:49:14] INFO root fetch - main [MainThread]: Store serial: [22965425]
+[2024-04-28 10:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965425]
+[2024-04-28 10:51:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 10:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rlanutils
+[2024-04-28 10:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mini-toolbox
+[2024-04-28 10:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huojiweiguoba
+[2024-04-28 10:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysparkify
+[2024-04-28 10:51:24] INFO root fetch - processPackages [pysparkify]: New version: [0.26.1] Old Version: [0.26.0]
+[2024-04-28 10:51:24] INFO root fetch - processPackages [rlanutils]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 10:51:24] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/21/b0/62cb5d8880711b583cf07cad63defb07a99ca5bebdfe6916493469fe10b7/pysparkify-0.26.0.tar.gz
+[2024-04-28 10:51:24] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 10:51:24] INFO root fetch - processPackages [mini-toolbox]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-28 10:51:24] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 10:51:24] INFO root fetch - processPackages [rlanutils]: Downloading https://files.pythonhosted.org/packages/d5/a5/fdc80c52c6748b9881b2d8731ccb341b3b6d73f48039fbc94967e4dd5a44/rlanutils-0.1.1.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [mini-toolbox]: Downloading https://files.pythonhosted.org/packages/ea/ce/a0d87916991bf7021a520fa65b094847ac7859df53c2b23fb99f9d025537/mini_toolbox-1.0.2.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [pysparkify]: Downloading https://files.pythonhosted.org/packages/a8/23/e27dddb7b79a980870186e89f96de555eca5c0dc9d1e39a042d5017ebae4/pysparkify-0.26.1.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [rlanutils]: Downloading https://files.pythonhosted.org/packages/8a/cb/9b2b8f4078b57b235162a2e6838d84ec7bf8b29c0f382407c0c42c53df1d/rlanutils-0.1.2.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 10:51:25] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 10:51:25] INFO root fetch - processPackages [pysparkify]: executing diffoscope
+[2024-04-28 10:51:25] INFO root fetch - processPackages [pysparkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkify-0.26.0.tar.gz tmp/pysparkify-0.26.1.tar.gz --markdown 20240428/p/pysparkify/0.26.0-0.26.1/README.md --exclude *.pyd
+[2024-04-28 10:51:25] INFO root fetch - processPackages [rlanutils]: executing diffoscope
+[2024-04-28 10:51:25] INFO root fetch - processPackages [rlanutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlanutils-0.1.1.tar.gz tmp/rlanutils-0.1.2.tar.gz --markdown 20240428/r/rlanutils/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 10:51:25] INFO root fetch - processPackages [mini-toolbox]: Downloading https://files.pythonhosted.org/packages/bf/cf/fd0ffdced35ed3cf385825dcdc17f9bf3033abbc2aebcbb0843a0adaecae/mini_toolbox-1.0.3.tar.gz
+[2024-04-28 10:51:25] INFO root fetch - processPackages [mini-toolbox]: executing diffoscope
+[2024-04-28 10:51:25] INFO root fetch - processPackages [mini-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mini_toolbox-1.0.2.tar.gz tmp/mini_toolbox-1.0.3.tar.gz --markdown 20240428/m/mini-toolbox/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-28 10:51:25] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 10:51:25] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.0.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - processPackages [pysparkify]: Remove: archive file [/home/abi/fetcher/tmp/pysparkify-0.26.1.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - main [MainThread]: End processing [pysparkify]: success
+[2024-04-28 10:51:25] INFO root fetch - processPackages [rlanutils]: Remove: archive file [/home/abi/fetcher/tmp/rlanutils-0.1.1.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - processPackages [rlanutils]: Remove: archive file [/home/abi/fetcher/tmp/rlanutils-0.1.2.tar.gz]
+[2024-04-28 10:51:25] INFO root fetch - main [MainThread]: End processing [rlanutils]: success
+[2024-04-28 10:51:26] INFO root fetch - processPackages [mini-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/mini_toolbox-1.0.2.tar.gz]
+[2024-04-28 10:51:26] INFO root fetch - processPackages [mini-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/mini_toolbox-1.0.3.tar.gz]
+[2024-04-28 10:51:26] INFO root fetch - main [MainThread]: End processing [mini-toolbox]: success
+[2024-04-28 10:51:26] INFO root fetch - main [MainThread]: Store serial: [22965437]
