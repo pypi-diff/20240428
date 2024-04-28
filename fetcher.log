@@ -14068,3 +14068,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:21:25] INFO root fetch - processPackages [odoo14-addon-sale-order-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_tag-14.0.1.0.3.dev1-py3-none-any.whl.zip]
 [2024-04-28 18:21:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-tag]: success
 [2024-04-28 18:21:25] INFO root fetch - main [MainThread]: Store serial: [22968058]
+[2024-04-28 18:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968058]
+[2024-04-28 18:23:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 18:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utubes
+[2024-04-28 18:23:35] INFO root fetch - processPackages [utubes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 18:23:35] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/d2/e5/91bc5e73a5bce4b80f48a5e9e9b1bd239404484593fa343462a49eb01099/utubes-0.0.8.tar.gz
+[2024-04-28 18:23:35] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/aa/9e/f4f060addff3038b06e174480b907bd2e35e83a1950b27a245be95c891d8/utubes-0.0.9.tar.gz
+[2024-04-28 18:23:35] INFO root fetch - processPackages [utubes]: executing diffoscope
+[2024-04-28 18:23:35] INFO root fetch - processPackages [utubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utubes-0.0.8.tar.gz tmp/utubes-0.0.9.tar.gz --markdown 20240428/u/utubes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 18:23:36] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.8.tar.gz]
+[2024-04-28 18:23:36] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
+[2024-04-28 18:23:36] INFO root fetch - main [MainThread]: End processing [utubes]: success
+[2024-04-28 18:23:36] INFO root fetch - main [MainThread]: Store serial: [22968061]
