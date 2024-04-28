@@ -6212,3 +6212,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:08:19] INFO root fetch - processPackages [rapydo]: Remove: archive file [/home/abi/fetcher/tmp/rapydo-3.0.tar.gz]
 [2024-04-28 09:08:19] INFO root fetch - main [MainThread]: End processing [rapydo]: success
 [2024-04-28 09:08:19] INFO root fetch - main [MainThread]: Store serial: [22964786]
+[2024-04-28 09:10:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964786]
+[2024-04-28 09:10:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colorful-logging
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dds-cloudapi-sdk
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eg.wakeonlan
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rapydo-http
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glytrait
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vnerrant
+[2024-04-28 09:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pylacc
+[2024-04-28 09:10:27] INFO root fetch - processPackages [dds-cloudapi-sdk]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 09:10:27] INFO root fetch - processPackages [pylacc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 09:10:27] INFO root fetch - processPackages [glytrait]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 09:10:27] INFO root fetch - processPackages [dds-cloudapi-sdk]: Downloading https://files.pythonhosted.org/packages/1c/03/0458ad8ecced800f918524224147e0e2aab7212554e2e26b2c816e43d3fe/dds-cloudapi-sdk-0.1.1.tar.gz
+[2024-04-28 09:10:27] WARNING root fetch - processPackages [eg.wakeonlan]: Skipping, unable to determine old version
+[2024-04-28 09:10:27] INFO root fetch - main [MainThread]: End processing [eg.wakeonlan] error
+[2024-04-28 09:10:27] INFO root fetch - processPackages [vnerrant]: New version: [1.0.1rc1] Old Version: [1.0.0]
+[2024-04-28 09:10:27] INFO root fetch - processPackages [colorful-logging]: New version: [0.3] Old Version: [0.2]
+[2024-04-28 09:10:27] INFO root fetch - processPackages [rapydo-http]: New version: [3.0] Old Version: [2.4]
+[2024-04-28 09:10:28] INFO root fetch - processPackages [glytrait]: Downloading https://files.pythonhosted.org/packages/33/1f/9be9691e8222ce7ea654afeb8275932f60f008992c18daa2fa16f20f4033/glytrait-0.1.3.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/fe/6f/01b800e431a940a218165d803abaefdbfd27225838c54be1f3b4cc295cd8/colorful_logging-0.2.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [rapydo-http]: Downloading https://files.pythonhosted.org/packages/0c/2a/8134656f70ac4805de170e5241efffdf2a65ef00563366aaa5e1a351d2cf/rapydo_http-2.4.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [pylacc]: Downloading https://files.pythonhosted.org/packages/0e/f3/3f6f094869016aa9dc2023c932787d3a22e8bbc4c63f3d9c2031cb7250d9/pylacc-0.0.1.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [dds-cloudapi-sdk]: Downloading https://files.pythonhosted.org/packages/68/5e/e665ced79cdadd999b9097bc4b3d3e47eb66f48a097aaece9bab88e274e6/dds-cloudapi-sdk-0.2.0.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/5d/85/2860cdd9c706864e1cc5db466853da79e26437761e4c9d8d76d3eb1691d8/vnerrant-1.0.0.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [dds-cloudapi-sdk]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [dds-cloudapi-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dds-cloudapi-sdk-0.1.1.tar.gz tmp/dds-cloudapi-sdk-0.2.0.tar.gz --markdown 20240428/d/dds-cloudapi-sdk/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 09:10:28] INFO root fetch - processPackages [glytrait]: Downloading https://files.pythonhosted.org/packages/39/d5/69589f926618bddd998dc5573482194d7e732ca03fcec34624ca4f2a3698/glytrait-0.1.4.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/a7/fc/309614ee06df85c1d1c7c0a52e64530f94661b0937cb29089bee8f390e37/colorful_logging-0.3.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [pylacc]: Downloading https://files.pythonhosted.org/packages/77/e6/9aa975637c6fb13bd66a7a146e49f8d7a1742487a880c9cc53dec0549161/pylacc-0.0.2.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [rapydo-http]: Downloading https://files.pythonhosted.org/packages/b0/cf/5ef1617098d4e71d3a0f457c6da468a08bf98018c012a75fcfe84da0178f/rapydo_http-3.0.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [vnerrant]: Downloading https://files.pythonhosted.org/packages/54/5b/ee3478607c8373db5852a8fcf0e1b5972d750c7b5e70203f39026621510b/vnerrant-1.0.1rc1.tar.gz
+[2024-04-28 09:10:28] INFO root fetch - processPackages [glytrait]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [glytrait]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glytrait-0.1.3.tar.gz tmp/glytrait-0.1.4.tar.gz --markdown 20240428/g/glytrait/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 09:10:28] INFO root fetch - processPackages [colorful-logging]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [colorful-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorful_logging-0.2.tar.gz tmp/colorful_logging-0.3.tar.gz --markdown 20240428/c/colorful-logging/0.2-0.3/README.md --exclude *.pyd
+[2024-04-28 09:10:28] INFO root fetch - processPackages [rapydo-http]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [rapydo-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapydo_http-2.4.tar.gz tmp/rapydo_http-3.0.tar.gz --markdown 20240428/r/rapydo-http/2.4-3.0/README.md --exclude *.pyd
+[2024-04-28 09:10:28] INFO root fetch - processPackages [pylacc]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [pylacc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylacc-0.0.1.tar.gz tmp/pylacc-0.0.2.tar.gz --markdown 20240428/p/pylacc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 09:10:28] INFO root fetch - processPackages [vnerrant]: executing diffoscope
+[2024-04-28 09:10:28] INFO root fetch - processPackages [vnerrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnerrant-1.0.0.tar.gz tmp/vnerrant-1.0.1rc1.tar.gz --markdown 20240428/v/vnerrant/1.0.0-1.0.1rc1/README.md --exclude *.pyd
+[2024-04-28 09:10:29] INFO root fetch - processPackages [dds-cloudapi-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dds-cloudapi-sdk-0.1.1.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - processPackages [dds-cloudapi-sdk]: Remove: archive file [/home/abi/fetcher/tmp/dds-cloudapi-sdk-0.2.0.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - main [MainThread]: End processing [dds-cloudapi-sdk]: success
+[2024-04-28 09:10:29] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.2.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.3.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - main [MainThread]: End processing [colorful-logging]: success
+[2024-04-28 09:10:29] INFO root fetch - processPackages [glytrait]: Remove: archive file [/home/abi/fetcher/tmp/glytrait-0.1.3.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - processPackages [glytrait]: Remove: archive file [/home/abi/fetcher/tmp/glytrait-0.1.4.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - main [MainThread]: End processing [glytrait]: success
+[2024-04-28 09:10:29] INFO root fetch - processPackages [pylacc]: Remove: archive file [/home/abi/fetcher/tmp/pylacc-0.0.1.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - processPackages [pylacc]: Remove: archive file [/home/abi/fetcher/tmp/pylacc-0.0.2.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - main [MainThread]: End processing [pylacc]: success
+[2024-04-28 09:10:29] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.0.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - processPackages [vnerrant]: Remove: archive file [/home/abi/fetcher/tmp/vnerrant-1.0.1rc1.tar.gz]
+[2024-04-28 09:10:29] INFO root fetch - main [MainThread]: End processing [vnerrant]: success
+[2024-04-28 09:10:30] INFO root fetch - processPackages [rapydo-http]: Remove: archive file [/home/abi/fetcher/tmp/rapydo_http-2.4.tar.gz]
+[2024-04-28 09:10:30] INFO root fetch - processPackages [rapydo-http]: Remove: archive file [/home/abi/fetcher/tmp/rapydo_http-3.0.tar.gz]
+[2024-04-28 09:10:30] INFO root fetch - main [MainThread]: End processing [rapydo-http]: success
+[2024-04-28 09:10:30] INFO root fetch - main [MainThread]: Store serial: [22964809]
