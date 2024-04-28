@@ -14585,3 +14585,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:03:10] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.0.post5.tar.gz]
 [2024-04-28 19:03:10] INFO root fetch - main [MainThread]: End processing [txm-sandbox]: success
 [2024-04-28 19:03:10] INFO root fetch - main [MainThread]: Store serial: [22968257]
+[2024-04-28 19:05:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968257]
+[2024-04-28 19:05:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sim_rl
+[2024-04-28 19:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-cognito-auth
+[2024-04-28 19:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jetline
+[2024-04-28 19:05:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pooledMySQL
+[2024-04-28 19:05:20] INFO root fetch - processPackages [sim_rl]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 19:05:20] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:05:20] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/a0/cb/830c6f5e6d3ccb058b865490f1f7922c434a974132b77e4a4ed88a240973/sim_rl-0.1.3.tar.gz
+[2024-04-28 19:05:20] INFO root fetch - processPackages [streamlit-cognito-auth]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-28 19:05:20] INFO root fetch - processPackages [pooledMySQL]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-04-28 19:05:20] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:05:20] INFO root fetch - processPackages [pooledMySQL]: Downloading https://files.pythonhosted.org/packages/5a/91/2ed2dbcf1a91e65aabe174b867575fc3fe4ada534f968d52016aae2efc25/pooledmysql-3.0.0.tar.gz
+[2024-04-28 19:05:20] INFO root fetch - processPackages [streamlit-cognito-auth]: Downloading https://files.pythonhosted.org/packages/ef/a6/dd02f89c4eced8c9f0b7460556a0607dcc5a4437a0d2156e59478c24c77f/streamlit-cognito-auth-1.3.0.tar.gz
+[2024-04-28 19:05:21] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:05:21] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:05:21] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:05:21] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/ec/98/159adfc8fed6bb8324fdfa6f7b8d58bd2c831254b4f614aed7a9a06abc3e/sim_rl-0.1.4.tar.gz
+[2024-04-28 19:05:21] INFO root fetch - processPackages [pooledMySQL]: Downloading https://files.pythonhosted.org/packages/07/f5/a6b0562a707e20a823a537433b72295b049149819823f85fdefcfaa444df/pooledmysql-3.0.1.tar.gz
+[2024-04-28 19:05:21] INFO root fetch - processPackages [streamlit-cognito-auth]: Downloading https://files.pythonhosted.org/packages/14/b1/4a50ded2aeb19b78e13bd3d0a03ad9bf39ed742338f57f21ae9ca5555515/streamlit_cognito_auth-1.3.1.tar.gz
+[2024-04-28 19:05:21] WARNING root fetch - processPackages [streamlit-cognito-auth]: Skipping package: exceeds size limit 20723875>=10485760
+[2024-04-28 19:05:21] INFO root fetch - main [MainThread]: End processing [streamlit-cognito-auth] error
+[2024-04-28 19:05:21] INFO root fetch - processPackages [pooledMySQL]: executing diffoscope
+[2024-04-28 19:05:21] INFO root fetch - processPackages [pooledMySQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pooledmysql-3.0.0.tar.gz tmp/pooledmysql-3.0.1.tar.gz --markdown 20240428/p/pooledMySQL/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-04-28 19:05:21] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-28 19:05:21] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.3.tar.gz tmp/sim_rl-0.1.4.tar.gz --markdown 20240428/s/sim_rl/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 19:05:21] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:05:21] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:05:21] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:05:22] INFO root fetch - processPackages [pooledMySQL]: Remove: archive file [/home/abi/fetcher/tmp/pooledmysql-3.0.0.tar.gz]
+[2024-04-28 19:05:22] INFO root fetch - processPackages [pooledMySQL]: Remove: archive file [/home/abi/fetcher/tmp/pooledmysql-3.0.1.tar.gz]
+[2024-04-28 19:05:22] INFO root fetch - main [MainThread]: End processing [pooledMySQL]: success
+[2024-04-28 19:05:22] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.3.tar.gz]
+[2024-04-28 19:05:22] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.4.tar.gz]
+[2024-04-28 19:05:22] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-28 19:05:22] INFO root fetch - main [MainThread]: Store serial: [22968269]
