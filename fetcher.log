@@ -13930,3 +13930,76 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:12:41] INFO root fetch - processPackages [frost-rs]: Remove: archive file [/home/abi/fetcher/tmp/frost_rs-0.1.2-cp310-none-win_amd64.whl.zip]
 [2024-04-28 18:12:41] INFO root fetch - main [MainThread]: End processing [frost-rs]: success
 [2024-04-28 18:12:41] INFO root fetch - main [MainThread]: Store serial: [22968002]
+[2024-04-28 18:14:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968002]
+[2024-04-28 18:14:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: better-ffmpeg-progress
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MobileInventoryCLI
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jetline
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bert4keras3
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tubeulator
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scatcluster
+[2024-04-28 18:14:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: StringDataDeque
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [jetline]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [bert4keras3]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [tubeulator]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [StringDataDeque]: New version: [1.2.0] Old Version: [1.1.3]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.71] Old Version: [0.4.70]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/a0/0b/0e2e5c0e0d293236f22ff643aa6f572e49f8f3b51c39529b5047e286cd82/scatcluster-0.0.3.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [better-ffmpeg-progress]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-04-28 18:14:51] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/d8/36/8b8a5fbad16439ced56b2f30e124f242dcdf00e6b2d25e7434b1f68d570a/jetline-0.1.5.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/a0/0b/0e2e5c0e0d293236f22ff643aa6f572e49f8f3b51c39529b5047e286cd82/scatcluster-0.0.3.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [bert4keras3]: Downloading https://files.pythonhosted.org/packages/dd/bb/eb7f5b434a860d9ce18f1c96f925907ee670d70cacf159bbdec946f44131/bert4keras3-1.3.2-py3-none-any.whl
+[2024-04-28 18:14:51] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/c5/9f/f2a5455d5750fa824fde3c5e8d1561c3f7c3788369d0a42dbfebf9149f3b/MobileInventoryCLI-0.4.70.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/f0/88/c81050b65f45c0084a6e2d27d67132c2bd88129fad536497c52aa9628bb7/tubeulator-0.0.6.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/ca/bf/6ddd15055c757dfd87de8c46bc6560d93470351440440fd1888d66724e67/stringdatadeque-1.1.3.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [better-ffmpeg-progress]: Downloading https://files.pythonhosted.org/packages/0b/3a/954db120737f3d7a071b939b933d2fea5bfefa4348f4fff53a39c266649e/better-ffmpeg-progress-2.1.3.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [bert4keras3]: Downloading https://files.pythonhosted.org/packages/ff/88/c7a5778dbaaa5bcb3734b863f71350ccff9d30e7bbeee1919e245174c949/bert4keras3-1.3.3-py3-none-any.whl
+[2024-04-28 18:14:51] INFO root fetch - processPackages [tubeulator]: Downloading https://files.pythonhosted.org/packages/a8/0c/cfad76c65d6d9d05a31afb99b190e5519548c8f46cdd2cf0fa79b55143e9/tubeulator-0.0.7.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/d2/aa/be5c6d5d20328be61679a6c915bf2468f108920bdacaff454acecf1891f8/jetline-0.1.6.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/56/f1/d1cbc4addbb608b8a51e04b031365fb5f02a99194c8f6679e64d7b5ef9d7/scatcluster-0.0.4.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/58/30/a96b4152153b9da7b1ce7cc100c87af9eb994e769eea41e8643359cd913f/MobileInventoryCLI-0.4.71.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/56/f1/d1cbc4addbb608b8a51e04b031365fb5f02a99194c8f6679e64d7b5ef9d7/scatcluster-0.0.4.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/46/71/22894746ca55a7ad597881b77fcf21200cf5959c420376cc613363281e27/stringdatadeque-1.2.0.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [better-ffmpeg-progress]: Downloading https://files.pythonhosted.org/packages/bc/98/22bba50ff86d23037a6ff185e35a5482382cbaf3b9094f18d97acd1f8a81/better-ffmpeg-progress-2.1.4.tar.gz
+[2024-04-28 18:14:51] INFO root fetch - processPackages [bert4keras3]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [bert4keras3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bert4keras3-1.3.2-py3-none-any.whl.zip tmp/bert4keras3-1.3.3-py3-none-any.whl.zip --markdown 20240428/b/bert4keras3/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.3.tar.gz tmp/scatcluster-0.0.4.tar.gz --markdown 20240428/s/scatcluster/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.3.tar.gz tmp/scatcluster-0.0.4.tar.gz --markdown 20240428/s/scatcluster/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.5.tar.gz tmp/jetline-0.1.6.tar.gz --markdown 20240428/j/jetline/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [StringDataDeque]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [StringDataDeque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stringdatadeque-1.1.3.tar.gz tmp/stringdatadeque-1.2.0.tar.gz --markdown 20240428/S/StringDataDeque/1.1.3-1.2.0/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [tubeulator]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [tubeulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tubeulator-0.0.6.tar.gz tmp/tubeulator-0.0.7.tar.gz --markdown 20240428/t/tubeulator/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [better-ffmpeg-progress]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [better-ffmpeg-progress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better-ffmpeg-progress-2.1.3.tar.gz tmp/better-ffmpeg-progress-2.1.4.tar.gz --markdown 20240428/b/better-ffmpeg-progress/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-04-28 18:14:51] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-04-28 18:14:51] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.70.tar.gz tmp/MobileInventoryCLI-0.4.71.tar.gz --markdown 20240428/M/MobileInventoryCLI/0.4.70-0.4.71/README.md --exclude *.pyd
+[2024-04-28 18:14:52] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.3.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.4.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 18:14:52] INFO root fetch - processPackages [bert4keras3]: Remove: archive file [/home/abi/fetcher/tmp/bert4keras3-1.3.2-py3-none-any.whl.zip]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [bert4keras3]: Remove: archive file [/home/abi/fetcher/tmp/bert4keras3-1.3.3-py3-none-any.whl.zip]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [bert4keras3]: success
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 18:14:52] INFO root fetch - processPackages [better-ffmpeg-progress]: Remove: archive file [/home/abi/fetcher/tmp/better-ffmpeg-progress-2.1.3.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [better-ffmpeg-progress]: Remove: archive file [/home/abi/fetcher/tmp/better-ffmpeg-progress-2.1.4.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [better-ffmpeg-progress]: success
+[2024-04-28 18:14:52] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.1.3.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.2.0.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
+[2024-04-28 18:14:52] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.5.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.6.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:14:52] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.70.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.71.tar.gz]
+[2024-04-28 18:14:52] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-04-28 18:14:53] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.6.tar.gz]
+[2024-04-28 18:14:53] INFO root fetch - processPackages [tubeulator]: Remove: archive file [/home/abi/fetcher/tmp/tubeulator-0.0.7.tar.gz]
+[2024-04-28 18:14:53] INFO root fetch - main [MainThread]: End processing [tubeulator]: success
+[2024-04-28 18:14:53] INFO root fetch - main [MainThread]: Store serial: [22968026]
