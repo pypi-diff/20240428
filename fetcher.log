@@ -14080,3 +14080,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:23:36] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
 [2024-04-28 18:23:36] INFO root fetch - main [MainThread]: End processing [utubes]: success
 [2024-04-28 18:23:36] INFO root fetch - main [MainThread]: Store serial: [22968061]
+[2024-04-28 18:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968061]
+[2024-04-28 18:25:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 18:25:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telebot-components
+[2024-04-28 18:25:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polars
+[2024-04-28 18:25:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polars-lts-cpu
+[2024-04-28 18:25:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polars-u64-idx
+[2024-04-28 18:25:45] INFO root fetch - processPackages [telebot-components]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-04-28 18:25:45] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3a/da/e1a7548f1c8197cc3f9e3f2536ffb60ff45538ac1b8299ad48cbc0442a41/telebot_components-0.8.9.tar.gz
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars-lts-cpu]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars-u64-idx]: New version: [0.20.9] Old Version: [0.20.8]
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/e7/87/d9b28ede138dfbfa298446f324fd99a8c9f1229deeabc69024c8613d68f8/polars-0.9.8.tar.gz
+[2024-04-28 18:25:45] INFO root fetch - processPackages [telebot-components]: Downloading https://files.pythonhosted.org/packages/3d/a4/65f9b53df957f27dcf95b9842b09357aea3c698526cb565a12fb29da6d39/telebot_components-0.9.0.tar.gz
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/22/c0/7c8fcfe8d4d7376848e02a8a3975268cbd0ec0f863fbf3338068ff73c90f/polars_lts_cpu-0.20.8.tar.gz
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/5c/9e/da38f2488beaaddc2cb54403b8c016e3e1ba7a4c8fc870e9010ec1197aef/polars_u64_idx-0.20.8.tar.gz
+[2024-04-28 18:25:45] INFO root fetch - processPackages [telebot-components]: executing diffoscope
+[2024-04-28 18:25:45] INFO root fetch - processPackages [telebot-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telebot_components-0.8.9.tar.gz tmp/telebot_components-0.9.0.tar.gz --markdown 20240428/t/telebot-components/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-04-28 18:25:45] INFO root fetch - processPackages [polars]: Downloading https://files.pythonhosted.org/packages/96/26/63076bebabb9ecbc73cd58cf48f924a3f05b871166f576b56d9935158194/polars-0.9.9.tar.gz
+[2024-04-28 18:25:46] INFO root fetch - processPackages [polars]: executing diffoscope
+[2024-04-28 18:25:46] INFO root fetch - processPackages [polars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars-0.9.8.tar.gz tmp/polars-0.9.9.tar.gz --markdown 20240428/p/polars/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-28 18:25:46] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.8.9.tar.gz]
+[2024-04-28 18:25:46] INFO root fetch - processPackages [telebot-components]: Remove: archive file [/home/abi/fetcher/tmp/telebot_components-0.9.0.tar.gz]
+[2024-04-28 18:25:46] INFO root fetch - main [MainThread]: End processing [telebot-components]: success
+[2024-04-28 18:25:46] INFO root fetch - processPackages [polars-u64-idx]: Downloading https://files.pythonhosted.org/packages/bf/d5/35ea31387b107a09be335c63708294033b3cc0d21fa1fe68eae967ae3855/polars_u64_idx-0.20.9.tar.gz
+[2024-04-28 18:25:47] INFO root fetch - processPackages [polars-lts-cpu]: Downloading https://files.pythonhosted.org/packages/33/5e/df508475e1d147ef4c8bc6849d8274906574714b6f551b1e6674c7b94c3a/polars_lts_cpu-0.20.9.tar.gz
+[2024-04-28 18:25:47] INFO root fetch - processPackages [polars-u64-idx]: executing diffoscope
+[2024-04-28 18:25:47] INFO root fetch - processPackages [polars-u64-idx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_u64_idx-0.20.8.tar.gz tmp/polars_u64_idx-0.20.9.tar.gz --markdown 20240428/p/polars-u64-idx/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-04-28 18:25:47] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.8.tar.gz]
+[2024-04-28 18:25:47] INFO root fetch - processPackages [polars]: Remove: archive file [/home/abi/fetcher/tmp/polars-0.9.9.tar.gz]
+[2024-04-28 18:25:47] INFO root fetch - main [MainThread]: End processing [polars]: success
+[2024-04-28 18:25:48] INFO root fetch - processPackages [polars-lts-cpu]: executing diffoscope
+[2024-04-28 18:25:48] INFO root fetch - processPackages [polars-lts-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polars_lts_cpu-0.20.8.tar.gz tmp/polars_lts_cpu-0.20.9.tar.gz --markdown 20240428/p/polars-lts-cpu/0.20.8-0.20.9/README.md --exclude *.pyd
+[2024-04-28 18:26:01] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.8.tar.gz]
+[2024-04-28 18:26:01] INFO root fetch - processPackages [polars-u64-idx]: Remove: archive file [/home/abi/fetcher/tmp/polars_u64_idx-0.20.9.tar.gz]
+[2024-04-28 18:26:01] INFO root fetch - main [MainThread]: End processing [polars-u64-idx]: success
+[2024-04-28 18:26:01] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.8.tar.gz]
+[2024-04-28 18:26:01] INFO root fetch - processPackages [polars-lts-cpu]: Remove: archive file [/home/abi/fetcher/tmp/polars_lts_cpu-0.20.9.tar.gz]
+[2024-04-28 18:26:01] INFO root fetch - main [MainThread]: End processing [polars-lts-cpu]: success
+[2024-04-28 18:26:01] INFO root fetch - main [MainThread]: Store serial: [22968078]
