@@ -7713,3 +7713,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:55:49] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
 [2024-04-28 10:55:49] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
 [2024-04-28 10:55:49] INFO root fetch - main [MainThread]: Store serial: [22965472]
+[2024-04-28 10:57:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965472]
+[2024-04-28 10:57:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 10:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu118
+[2024-04-28 10:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: luma-ml
+[2024-04-28 10:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pelage
+[2024-04-28 10:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llama-index
+[2024-04-28 10:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zato-apitest
+[2024-04-28 10:57:59] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240428] Old Version: [0.2.3.dev20240427]
+[2024-04-28 10:57:59] INFO root fetch - processPackages [zato-apitest]: New version: [24.1.9] Old Version: [24.1.15]
+[2024-04-28 10:57:59] INFO root fetch - processPackages [pelage]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 10:57:59] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/03/6d/b5ea9755e17d9393832b92ed8f5eb03b9ea2a218e5e32e532d3de4e3effa/nvfuser_cu118-0.2.3.dev20240427.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [llama-index]: New version: [0.9.9] Old Version: [0.9.8.post1]
+[2024-04-28 10:57:59] INFO root fetch - processPackages [luma-ml]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-28 10:57:59] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/46/6a/67bfa15c4559022bf1f2fb5e52850a0a7bae2b70715ca101a540bc71447c/zato_apitest-24.1.15.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [pelage]: Downloading https://files.pythonhosted.org/packages/f2/27/cfeed6049056fe8a773ce321d2c6e214c242e49e2252b40e217d4e7a0e28/pelage-0.1.8.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/98/56/d17020a87e8ca4ca6a9db1b89c219caafe26f0149bc4cf5e2b32bc39a6ad/luma-ml-0.7.1.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [llama-index]: Downloading https://files.pythonhosted.org/packages/ff/05/5239ef88ab93061d5535beb6c21d17f0b463aa0c48c1c9baa8d0a5941098/llama_index-0.9.8.post1.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/9a/ff/1a87571f00891221274ef4d347a604ea771d193d616f4fcf469676ef6410/nvfuser_cu118-0.2.3.dev20240428.tar.gz
+[2024-04-28 10:57:59] INFO root fetch - processPackages [zato-apitest]: Downloading https://files.pythonhosted.org/packages/84/b8/7b3d980ceafadb22236bf2537c793cd5475ba3d961aa2d78e2365bf43180/zato-apitest-24.1.9.tar.gz
+[2024-04-28 10:58:00] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-28 10:58:00] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240427.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240428.tar.gz --markdown 20240428/n/nvfuser-cu118/0.2.3.dev20240427-0.2.3.dev20240428/README.md --exclude *.pyd
+[2024-04-28 10:58:00] INFO root fetch - processPackages [zato-apitest]: executing diffoscope
+[2024-04-28 10:58:00] INFO root fetch - processPackages [zato-apitest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zato_apitest-24.1.15.tar.gz tmp/zato-apitest-24.1.9.tar.gz --markdown 20240428/z/zato-apitest/24.1.15-24.1.9/README.md --exclude *.pyd
+[2024-04-28 10:58:00] INFO root fetch - processPackages [pelage]: Downloading https://files.pythonhosted.org/packages/6c/9f/d33c7fb321675d5eab921ab5499a5289de7228871df29b30813372786d04/pelage-0.1.9.tar.gz
+[2024-04-28 10:58:00] INFO root fetch - processPackages [luma-ml]: Downloading https://files.pythonhosted.org/packages/57/07/30ab78d5bbdda32c57eec3237b69c92c788035dcce081a77321605aa82f5/luma-ml-0.7.2.tar.gz
+[2024-04-28 10:58:00] INFO root fetch - processPackages [pelage]: executing diffoscope
+[2024-04-28 10:58:00] INFO root fetch - processPackages [pelage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelage-0.1.8.tar.gz tmp/pelage-0.1.9.tar.gz --markdown 20240428/p/pelage/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 10:58:00] INFO root fetch - processPackages [llama-index]: Downloading https://files.pythonhosted.org/packages/09/9b/6a7d14763cd2bdfe4705633fd1b850857e7c64d269c6cebd5d7bbc646187/llama_index-0.9.9.tar.gz
+[2024-04-28 10:58:00] INFO root fetch - processPackages [luma-ml]: executing diffoscope
+[2024-04-28 10:58:00] INFO root fetch - processPackages [luma-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luma-ml-0.7.1.tar.gz tmp/luma-ml-0.7.2.tar.gz --markdown 20240428/l/luma-ml/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-28 10:58:00] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2024-04-28 10:58:00] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.9.8.post1.tar.gz tmp/llama_index-0.9.9.tar.gz --markdown 20240428/l/llama-index/0.9.8.post1-0.9.9/README.md --exclude *.pyd
+[2024-04-28 10:58:00] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240427.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240428.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-28 10:58:00] INFO root fetch - processPackages [pelage]: Remove: archive file [/home/abi/fetcher/tmp/pelage-0.1.8.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - processPackages [pelage]: Remove: archive file [/home/abi/fetcher/tmp/pelage-0.1.9.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - main [MainThread]: End processing [pelage]: success
+[2024-04-28 10:58:00] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato_apitest-24.1.15.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - processPackages [zato-apitest]: Remove: archive file [/home/abi/fetcher/tmp/zato-apitest-24.1.9.tar.gz]
+[2024-04-28 10:58:00] INFO root fetch - main [MainThread]: End processing [zato-apitest]: success
+[2024-04-28 10:58:01] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.7.1.tar.gz]
+[2024-04-28 10:58:01] INFO root fetch - processPackages [luma-ml]: Remove: archive file [/home/abi/fetcher/tmp/luma-ml-0.7.2.tar.gz]
+[2024-04-28 10:58:01] INFO root fetch - main [MainThread]: End processing [luma-ml]: success
+[2024-04-28 10:58:02] INFO root fetch - processPackages [llama-index]: Remove: archive file [/home/abi/fetcher/tmp/llama_index-0.9.8.post1.tar.gz]
+[2024-04-28 10:58:02] INFO root fetch - processPackages [llama-index]: Remove: archive file [/home/abi/fetcher/tmp/llama_index-0.9.9.tar.gz]
+[2024-04-28 10:58:02] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2024-04-28 10:58:02] INFO root fetch - main [MainThread]: Store serial: [22965490]
