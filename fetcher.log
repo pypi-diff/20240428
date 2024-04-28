@@ -15730,3 +15730,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:16:03] INFO root fetch - processPackages [cdk-pipelines-github]: Remove: archive file [/home/abi/fetcher/tmp/cdk-pipelines-github-0.4.99.tar.gz]
 [2024-04-28 20:16:03] INFO root fetch - main [MainThread]: End processing [cdk-pipelines-github]: success
 [2024-04-28 20:16:03] INFO root fetch - main [MainThread]: Store serial: [22968770]
+[2024-04-28 20:18:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968770]
+[2024-04-28 20:18:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 20:18:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yew
+[2024-04-28 20:18:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lfg-llama
+[2024-04-28 20:18:12] INFO root fetch - processPackages [yew]: New version: [0.1.1.dev2] Old Version: [0.1.1.dev1]
+[2024-04-28 20:18:12] INFO root fetch - processPackages [yew]: Downloading https://files.pythonhosted.org/packages/6a/0e/6a390b04d2e5cc10809b36db2eb0f3b48895d39f66f35507ebd96b4f4cbc/yew-0.1.1.dev1.tar.gz
+[2024-04-28 20:18:12] WARNING root fetch - processPackages [lfg-llama]: Skipping, unable to determine old version
+[2024-04-28 20:18:12] INFO root fetch - main [MainThread]: End processing [lfg-llama] error
+[2024-04-28 20:18:13] INFO root fetch - processPackages [yew]: Downloading https://files.pythonhosted.org/packages/12/9e/14bab853e0b6cfc056ca1938fa51df0ade23a6a7d57fd2cfdb91bed17706/yew-0.1.1.dev2.tar.gz
+[2024-04-28 20:18:13] INFO root fetch - processPackages [yew]: executing diffoscope
+[2024-04-28 20:18:13] INFO root fetch - processPackages [yew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yew-0.1.1.dev1.tar.gz tmp/yew-0.1.1.dev2.tar.gz --markdown 20240428/y/yew/0.1.1.dev1-0.1.1.dev2/README.md --exclude *.pyd
+[2024-04-28 20:18:13] INFO root fetch - processPackages [yew]: Remove: archive file [/home/abi/fetcher/tmp/yew-0.1.1.dev1.tar.gz]
+[2024-04-28 20:18:13] INFO root fetch - processPackages [yew]: Remove: archive file [/home/abi/fetcher/tmp/yew-0.1.1.dev2.tar.gz]
+[2024-04-28 20:18:13] INFO root fetch - main [MainThread]: End processing [yew]: success
+[2024-04-28 20:18:13] INFO root fetch - main [MainThread]: Store serial: [22968780]
