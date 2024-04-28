@@ -14555,3 +14555,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:01:00] INFO root fetch - main [MainThread]: End processing [totolo]: success
 [2024-04-28 19:01:00] INFO root fetch - main [MainThread]: End processing [totolo]: success
 [2024-04-28 19:01:00] INFO root fetch - main [MainThread]: Store serial: [22968248]
+[2024-04-28 19:03:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968248]
+[2024-04-28 19:03:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 19:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: txm-sandbox
+[2024-04-28 19:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schwab-py
+[2024-04-28 19:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ns-asphalt9
+[2024-04-28 19:03:08] INFO root fetch - processPackages [txm-sandbox]: New version: [0.3.0.post5] Old Version: [0.3.0.post4]
+[2024-04-28 19:03:08] INFO root fetch - processPackages [schwab-py]: New version: [0.0.0a9] Old Version: [0.0.0a8]
+[2024-04-28 19:03:08] INFO root fetch - processPackages [ns-asphalt9]: New version: [3.4.0] Old Version: [3.3.0]
+[2024-04-28 19:03:09] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/4a/97/d78b9c894adc5546c1464a6150bd183cffc758049f5f599b96df24c97f56/schwab-py-0.0.0a8.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/b4/5f/8442f0708ff4c8cb33c52d2c306860eefd3c20b39192a9639b3d9b9a07a8/txm_sandbox-0.3.0.post4.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [ns-asphalt9]: Downloading https://files.pythonhosted.org/packages/9a/47/4af6fd30de0827edfc798b1a2a86cb95ecf02da3ff6e2700272c20a758ef/ns_asphalt9-3.3.0.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [schwab-py]: Downloading https://files.pythonhosted.org/packages/f3/f1/efd2cf1baeff4d7f78477ad6df2d7f97c864c877ffd1d2e6a1425706ef14/schwab-py-0.0.0a9.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [schwab-py]: executing diffoscope
+[2024-04-28 19:03:09] INFO root fetch - processPackages [schwab-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schwab-py-0.0.0a8.tar.gz tmp/schwab-py-0.0.0a9.tar.gz --markdown 20240428/s/schwab-py/0.0.0a8-0.0.0a9/README.md --exclude *.pyd
+[2024-04-28 19:03:09] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/48/5f/667ce157f39dba9b702f23ca9e7a1bd9bec945c10f26a2e71039b41b5d86/txm_sandbox-0.3.0.post5.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [ns-asphalt9]: Downloading https://files.pythonhosted.org/packages/de/95/2853338f6a97e1e18e4f5ba8f0bebc2783f7e7cdd4c1616a8c1d80cb951d/ns_asphalt9-3.4.0.tar.gz
+[2024-04-28 19:03:09] INFO root fetch - processPackages [txm-sandbox]: executing diffoscope
+[2024-04-28 19:03:09] INFO root fetch - processPackages [txm-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txm_sandbox-0.3.0.post4.tar.gz tmp/txm_sandbox-0.3.0.post5.tar.gz --markdown 20240428/t/txm-sandbox/0.3.0.post4-0.3.0.post5/README.md --exclude *.pyd
+[2024-04-28 19:03:09] INFO root fetch - processPackages [ns-asphalt9]: executing diffoscope
+[2024-04-28 19:03:09] INFO root fetch - processPackages [ns-asphalt9]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ns_asphalt9-3.3.0.tar.gz tmp/ns_asphalt9-3.4.0.tar.gz --markdown 20240428/n/ns-asphalt9/3.3.0-3.4.0/README.md --exclude *.pyd
+[2024-04-28 19:03:10] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a8.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - processPackages [schwab-py]: Remove: archive file [/home/abi/fetcher/tmp/schwab-py-0.0.0a9.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - main [MainThread]: End processing [schwab-py]: success
+[2024-04-28 19:03:10] INFO root fetch - processPackages [ns-asphalt9]: Remove: archive file [/home/abi/fetcher/tmp/ns_asphalt9-3.3.0.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - processPackages [ns-asphalt9]: Remove: archive file [/home/abi/fetcher/tmp/ns_asphalt9-3.4.0.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - main [MainThread]: End processing [ns-asphalt9]: success
+[2024-04-28 19:03:10] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.0.post4.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.0.post5.tar.gz]
+[2024-04-28 19:03:10] INFO root fetch - main [MainThread]: End processing [txm-sandbox]: success
+[2024-04-28 19:03:10] INFO root fetch - main [MainThread]: Store serial: [22968257]
