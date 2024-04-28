@@ -13221,3 +13221,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:24:38] INFO root fetch - processPackages [wwpdb.utils.config]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.config-0.7.tar.gz]
 [2024-04-28 17:24:38] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.config]: success
 [2024-04-28 17:24:38] INFO root fetch - main [MainThread]: Store serial: [22967731]
+[2024-04-28 17:26:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967731]
+[2024-04-28 17:26:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 17:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langroid
+[2024-04-28 17:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-import-export
+[2024-04-28 17:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ManipulaPy
+[2024-04-28 17:26:48] INFO root fetch - processPackages [django-import-export]: New version: [4.0.0rc3] Old Version: [4.0.0rc2]
+[2024-04-28 17:26:48] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/7f/bc/ef5cd32a122a85be44f83949819f88a22cf51623b7842c6a65127606b97f/django-import-export-4.0.0rc2.tar.gz
+[2024-04-28 17:26:48] INFO root fetch - processPackages [ManipulaPy]: New version: [1.0.0.1] Old Version: [1.0.0]
+[2024-04-28 17:26:48] INFO root fetch - processPackages [langroid]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 17:26:48] INFO root fetch - processPackages [ManipulaPy]: Downloading https://files.pythonhosted.org/packages/fc/fa/34f331ddefa09f7859adc0156df6fdf2199ec29ea7bf49c088a27a19939c/ManipulaPy-1.0.0.tar.gz
+[2024-04-28 17:26:48] INFO root fetch - processPackages [langroid]: Downloading https://files.pythonhosted.org/packages/ab/bb/220d2ce35d659c9c3f621a8e92246d4d25420d75def80d96d19a8abf2b62/langroid-0.1.98.tar.gz
+[2024-04-28 17:26:48] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/b2/b3/303edc33f78f60788bc60f87e0825f75e00c732c6a0fe811935923d42e53/django_import_export-4.0.0rc3.tar.gz
+[2024-04-28 17:26:48] INFO root fetch - processPackages [django-import-export]: executing diffoscope
+[2024-04-28 17:26:48] INFO root fetch - processPackages [django-import-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-import-export-4.0.0rc2.tar.gz tmp/django_import_export-4.0.0rc3.tar.gz --markdown 20240428/d/django-import-export/4.0.0rc2-4.0.0rc3/README.md --exclude *.pyd
+[2024-04-28 17:26:48] INFO root fetch - processPackages [ManipulaPy]: Downloading https://files.pythonhosted.org/packages/a9/3e/c5a25cfafc650f6187a3e5e77f134e9c8ae00a9012c4fc31056558d47e02/ManipulaPy-1.0.0.1-py3-none-any.whl
+[2024-04-28 17:26:48] INFO root fetch - processPackages [langroid]: Downloading https://files.pythonhosted.org/packages/e0/31/f66ec6ea338a8eb66884a575a589c46c9cda101c179d652dccf9a12f918f/langroid-0.1.99.tar.gz
+[2024-04-28 17:26:48] INFO root fetch - processPackages [ManipulaPy]: executing diffoscope
+[2024-04-28 17:26:48] INFO root fetch - processPackages [ManipulaPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManipulaPy-1.0.0.tar.gz tmp/ManipulaPy-1.0.0.1-py3-none-any.whl.zip --markdown 20240428/M/ManipulaPy/1.0.0-1.0.0.1/README.md --exclude *.pyd
+[2024-04-28 17:26:48] INFO root fetch - processPackages [langroid]: executing diffoscope
+[2024-04-28 17:26:48] INFO root fetch - processPackages [langroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langroid-0.1.98.tar.gz tmp/langroid-0.1.99.tar.gz --markdown 20240428/l/langroid/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 17:26:49] INFO root fetch - processPackages [ManipulaPy]: Remove: archive file [/home/abi/fetcher/tmp/ManipulaPy-1.0.0.tar.gz]
+[2024-04-28 17:26:49] INFO root fetch - processPackages [ManipulaPy]: Remove: archive file [/home/abi/fetcher/tmp/ManipulaPy-1.0.0.1-py3-none-any.whl.zip]
+[2024-04-28 17:26:49] INFO root fetch - main [MainThread]: End processing [ManipulaPy]: success
+[2024-04-28 17:26:49] INFO root fetch - processPackages [langroid]: Remove: archive file [/home/abi/fetcher/tmp/langroid-0.1.98.tar.gz]
+[2024-04-28 17:26:49] INFO root fetch - processPackages [langroid]: Remove: archive file [/home/abi/fetcher/tmp/langroid-0.1.99.tar.gz]
+[2024-04-28 17:26:49] INFO root fetch - main [MainThread]: End processing [langroid]: success
+[2024-04-28 17:26:49] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django-import-export-4.0.0rc2.tar.gz]
+[2024-04-28 17:26:49] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django_import_export-4.0.0rc3.tar.gz]
+[2024-04-28 17:26:49] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
+[2024-04-28 17:26:49] INFO root fetch - main [MainThread]: Store serial: [22967739]
