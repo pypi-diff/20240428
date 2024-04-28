@@ -11131,3 +11131,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:57:52] INFO root fetch - processPackages [jacksung]: Remove: archive file [/home/abi/fetcher/tmp/jacksung-0.0.2.99.tar.gz]
 [2024-04-28 14:57:52] INFO root fetch - main [MainThread]: End processing [jacksung]: success
 [2024-04-28 14:57:52] INFO root fetch - main [MainThread]: Store serial: [22966847]
+[2024-04-28 15:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966847]
+[2024-04-28 15:00:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 15:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: find-work
+[2024-04-28 15:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: messari
+[2024-04-28 15:00:09] INFO root fetch - processPackages [find-work]: New version: [0.7.0] Old Version: [0.6.1]
+[2024-04-28 15:00:09] INFO root fetch - processPackages [messari]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-28 15:00:09] INFO root fetch - processPackages [messari]: Downloading https://files.pythonhosted.org/packages/c9/b6/fe0b7b7d9354a1a1c7ff650b08cf0456a8e8db3b0c761098324ba92393f6/messari-2.0.0.tar.gz
+[2024-04-28 15:00:09] INFO root fetch - processPackages [find-work]: Downloading https://files.pythonhosted.org/packages/a8/61/49eed517d273442bec4e937f02b6d710c3d207ee94bcb363eca6c53a3534/find_work-0.6.1.tar.gz
+[2024-04-28 15:00:09] INFO root fetch - processPackages [find-work]: Downloading https://files.pythonhosted.org/packages/ef/8b/766f147487ccaf24221e47348f2cbe7b3c45cc5c28ff70a9156ce4a5da5a/find_work-0.7.0.tar.gz
+[2024-04-28 15:00:10] INFO root fetch - processPackages [messari]: Downloading https://files.pythonhosted.org/packages/d3/a7/502069f49c9cac6e1705598982decef63f98f16d0fd6933637c5cec59fbb/messari-2.1.0.tar.gz
+[2024-04-28 15:00:10] INFO root fetch - processPackages [find-work]: executing diffoscope
+[2024-04-28 15:00:10] INFO root fetch - processPackages [find-work]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/find_work-0.6.1.tar.gz tmp/find_work-0.7.0.tar.gz --markdown 20240428/f/find-work/0.6.1-0.7.0/README.md --exclude *.pyd
+[2024-04-28 15:00:10] INFO root fetch - processPackages [messari]: executing diffoscope
+[2024-04-28 15:00:10] INFO root fetch - processPackages [messari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/messari-2.0.0.tar.gz tmp/messari-2.1.0.tar.gz --markdown 20240428/m/messari/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-04-28 15:00:10] INFO root fetch - processPackages [messari]: Remove: archive file [/home/abi/fetcher/tmp/messari-2.0.0.tar.gz]
+[2024-04-28 15:00:10] INFO root fetch - processPackages [messari]: Remove: archive file [/home/abi/fetcher/tmp/messari-2.1.0.tar.gz]
+[2024-04-28 15:00:10] INFO root fetch - main [MainThread]: End processing [messari]: success
+[2024-04-28 15:00:10] INFO root fetch - processPackages [find-work]: Remove: archive file [/home/abi/fetcher/tmp/find_work-0.6.1.tar.gz]
+[2024-04-28 15:00:10] INFO root fetch - processPackages [find-work]: Remove: archive file [/home/abi/fetcher/tmp/find_work-0.7.0.tar.gz]
+[2024-04-28 15:00:10] INFO root fetch - main [MainThread]: End processing [find-work]: success
+[2024-04-28 15:00:10] INFO root fetch - main [MainThread]: Store serial: [22966853]
