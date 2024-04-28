@@ -21272,3 +21272,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:46:15] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-11.1.1.tar.gz]
 [2024-04-28 23:46:15] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-28 23:46:15] INFO root fetch - main [MainThread]: Store serial: [22971051]
+[2024-04-28 23:48:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971051]
+[2024-04-28 23:48:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 23:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sim_rl
+[2024-04-28 23:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hatch-cython
+[2024-04-28 23:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk-std-libraries
+[2024-04-28 23:48:25] INFO root fetch - processPackages [sim_rl]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 23:48:25] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/79/63/fe6abc8a2c63394884a8c65ff61e0d0f64c305c22ac72fa90f11637f5681/sim_rl-0.1.7.tar.gz
+[2024-04-28 23:48:25] WARNING root fetch - processPackages [uk-std-libraries]: Skipping, unable to determine old version
+[2024-04-28 23:48:25] INFO root fetch - main [MainThread]: End processing [uk-std-libraries] error
+[2024-04-28 23:48:25] INFO root fetch - processPackages [hatch-cython]: New version: [0.6.0rc0] Old Version: [0.5.1]
+[2024-04-28 23:48:25] INFO root fetch - processPackages [hatch-cython]: Downloading https://files.pythonhosted.org/packages/ad/18/fed6f4171cdf3bb7a2d92b5712345a4272a0ff7f5ad1e7d154bdb2cdb0bf/hatch_cython-0.5.1.tar.gz
+[2024-04-28 23:48:25] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/69/34/72506e086e1d97eabbc1270a59b5de0664d2502c6172a54f327b34b55991/sim_rl-0.1.8.tar.gz
+[2024-04-28 23:48:25] INFO root fetch - processPackages [hatch-cython]: Downloading https://files.pythonhosted.org/packages/a3/15/ca3d7b0ac7934dbbf41379afdd46c07546adb68bf1dd199f8202114e9987/hatch_cython-0.6.0rc0.tar.gz
+[2024-04-28 23:48:25] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-28 23:48:25] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.7.tar.gz tmp/sim_rl-0.1.8.tar.gz --markdown 20240428/s/sim_rl/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 23:48:25] INFO root fetch - processPackages [hatch-cython]: executing diffoscope
+[2024-04-28 23:48:25] INFO root fetch - processPackages [hatch-cython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_cython-0.5.1.tar.gz tmp/hatch_cython-0.6.0rc0.tar.gz --markdown 20240428/h/hatch-cython/0.5.1-0.6.0rc0/README.md --exclude *.pyd
+[2024-04-28 23:48:26] INFO root fetch - processPackages [hatch-cython]: Remove: archive file [/home/abi/fetcher/tmp/hatch_cython-0.5.1.tar.gz]
+[2024-04-28 23:48:26] INFO root fetch - processPackages [hatch-cython]: Remove: archive file [/home/abi/fetcher/tmp/hatch_cython-0.6.0rc0.tar.gz]
+[2024-04-28 23:48:26] INFO root fetch - main [MainThread]: End processing [hatch-cython]: success
+[2024-04-28 23:48:26] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.7.tar.gz]
+[2024-04-28 23:48:26] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.8.tar.gz]
+[2024-04-28 23:48:26] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-28 23:48:26] INFO root fetch - main [MainThread]: Store serial: [22971062]
