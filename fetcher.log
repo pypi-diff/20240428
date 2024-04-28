@@ -4937,3 +4937,15 @@
 [2024-04-28 07:31:45] INFO root fetch - processPackages [aivoifu]: Remove: archive file [/home/abi/fetcher/tmp/aivoifu-0.2.8.tar.gz]
 [2024-04-28 07:31:45] INFO root fetch - main [MainThread]: End processing [aivoifu]: success
 [2024-04-28 07:31:45] INFO root fetch - main [MainThread]: Store serial: [22964264]
+[2024-04-28 07:33:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964264]
+[2024-04-28 07:33:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 07:33:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-contacts
+[2024-04-28 07:33:53] INFO root fetch - processPackages [abstract-contacts]: New version: [0.0.0.34] Old Version: [0.0.0.3]
+[2024-04-28 07:33:54] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/75/92/23f3883a634a37d8f47ad2891c6bcca0d682407675a41be9ff80c8d8e638/abstract_contacts-0.0.0.3.tar.gz
+[2024-04-28 07:33:54] INFO root fetch - processPackages [abstract-contacts]: Downloading https://files.pythonhosted.org/packages/f5/22/431725fe2e4dfe868e3469531eab933104d0a134d3b16597fd167b16e565/abstract_contacts-0.0.0.34.tar.gz
+[2024-04-28 07:33:54] INFO root fetch - processPackages [abstract-contacts]: executing diffoscope
+[2024-04-28 07:33:54] INFO root fetch - processPackages [abstract-contacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_contacts-0.0.0.3.tar.gz tmp/abstract_contacts-0.0.0.34.tar.gz --markdown 20240428/a/abstract-contacts/0.0.0.3-0.0.0.34/README.md --exclude *.pyd
+[2024-04-28 07:33:55] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.3.tar.gz]
+[2024-04-28 07:33:55] INFO root fetch - processPackages [abstract-contacts]: Remove: archive file [/home/abi/fetcher/tmp/abstract_contacts-0.0.0.34.tar.gz]
+[2024-04-28 07:33:55] INFO root fetch - main [MainThread]: End processing [abstract-contacts]: success
+[2024-04-28 07:33:55] INFO root fetch - main [MainThread]: Store serial: [22964267]
