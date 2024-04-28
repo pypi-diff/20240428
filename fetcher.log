@@ -13275,3 +13275,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:29:01] INFO root fetch - processPackages [compose-pydantic]: Remove: archive file [/home/abi/fetcher/tmp/compose_pydantic-0.2.1.tar.gz]
 [2024-04-28 17:29:01] INFO root fetch - main [MainThread]: End processing [compose-pydantic]: success
 [2024-04-28 17:29:01] INFO root fetch - main [MainThread]: Store serial: [22967748]
+[2024-04-28 17:31:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967748]
+[2024-04-28 17:31:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 17:31:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diambra-engine
+[2024-04-28 17:31:09] INFO root fetch - processPackages [diambra-engine]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-28 17:31:10] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/a5/4e/54c3ba5e8dbad5825180a2d1cfe6dc4850c5f682da9a4c3cf75f72214445/diambra-engine-2.2.2.tar.gz
+[2024-04-28 17:31:10] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/6e/25/6b8b3e19477f2fa65273015a3662a4c455c8b4c7369f83abf0bfa06e2b00/diambra-engine-2.2.3.tar.gz
+[2024-04-28 17:31:10] INFO root fetch - processPackages [diambra-engine]: executing diffoscope
+[2024-04-28 17:31:10] INFO root fetch - processPackages [diambra-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-engine-2.2.2.tar.gz tmp/diambra-engine-2.2.3.tar.gz --markdown 20240428/d/diambra-engine/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-04-28 17:31:11] INFO root fetch - processPackages [diambra-engine]: Remove: archive file [/home/abi/fetcher/tmp/diambra-engine-2.2.2.tar.gz]
+[2024-04-28 17:31:11] INFO root fetch - processPackages [diambra-engine]: Remove: archive file [/home/abi/fetcher/tmp/diambra-engine-2.2.3.tar.gz]
+[2024-04-28 17:31:11] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
+[2024-04-28 17:31:11] INFO root fetch - main [MainThread]: Store serial: [22967752]
