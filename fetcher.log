@@ -7527,3 +7527,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:46:59] INFO root fetch - processPackages [seven-cloudapp-frame]: Remove: archive file [/home/abi/fetcher/tmp/seven_cloudapp_frame-1.1.9.tar.gz]
 [2024-04-28 10:46:59] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
 [2024-04-28 10:46:59] INFO root fetch - main [MainThread]: Store serial: [22965407]
+[2024-04-28 10:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965407]
+[2024-04-28 10:49:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 10:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: konciliation-GDV-target-task
+[2024-04-28 10:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rlanutils
+[2024-04-28 10:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: danielutils
+[2024-04-28 10:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tfp-nightly
+[2024-04-28 10:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mysql-study-datamaker-CN
+[2024-04-28 10:49:09] WARNING root fetch - processPackages [rlanutils]: Skipping, unable to determine old version
+[2024-04-28 10:49:09] INFO root fetch - main [MainThread]: End processing [rlanutils] error
+[2024-04-28 10:49:09] INFO root fetch - processPackages [danielutils]: New version: [0.9.78] Old Version: [0.9.77]
+[2024-04-28 10:49:09] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-28 10:49:09] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/12/8b/cdbfeea73a53646e2bda7f38c6336a64640431fea017533e097d3c264cf4/danielutils-0.9.77.tar.gz
+[2024-04-28 10:49:09] WARNING root fetch - processPackages [mysql-study-datamaker-CN]: Skipping, unable to determine old version
+[2024-04-28 10:49:09] INFO root fetch - main [MainThread]: End processing [mysql-study-datamaker-CN] error
+[2024-04-28 10:49:09] WARNING root fetch - processPackages [konciliation-GDV-target-task]: Skipping, unable to determine old version
+[2024-04-28 10:49:09] INFO root fetch - main [MainThread]: End processing [konciliation-GDV-target-task] error
+[2024-04-28 10:49:09] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-28 10:49:09] INFO root fetch - processPackages [danielutils]: Downloading https://files.pythonhosted.org/packages/8e/19/75b4685c62bdb821c7038222e3e51cb67af1d3c7e9f7bacc59138e563ce9/danielutils-0.9.78.tar.gz
+[2024-04-28 10:49:10] INFO root fetch - processPackages [danielutils]: executing diffoscope
+[2024-04-28 10:49:10] INFO root fetch - processPackages [danielutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/danielutils-0.9.77.tar.gz tmp/danielutils-0.9.78.tar.gz --markdown 20240428/d/danielutils/0.9.77-0.9.78/README.md --exclude *.pyd
+[2024-04-28 10:49:10] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-28 10:49:10] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.77.tar.gz]
+[2024-04-28 10:49:10] INFO root fetch - processPackages [danielutils]: Remove: archive file [/home/abi/fetcher/tmp/danielutils-0.9.78.tar.gz]
+[2024-04-28 10:49:10] INFO root fetch - main [MainThread]: End processing [danielutils]: success
+[2024-04-28 10:49:11] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-28 10:49:11] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240428/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-28 10:49:14] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-28 10:49:14] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-28 10:49:14] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-28 10:49:14] INFO root fetch - main [MainThread]: Store serial: [22965425]
