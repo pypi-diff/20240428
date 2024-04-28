@@ -7680,3 +7680,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:53:38] INFO root fetch - processPackages [xmlschema]: Remove: archive file [/home/abi/fetcher/tmp/xmlschema-3.3.1.tar.gz]
 [2024-04-28 10:53:38] INFO root fetch - main [MainThread]: End processing [xmlschema]: success
 [2024-04-28 10:53:38] INFO root fetch - main [MainThread]: Store serial: [22965462]
+[2024-04-28 10:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965462]
+[2024-04-28 10:55:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 10:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Crackerjack
+[2024-04-28 10:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu121
+[2024-04-28 10:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyroferk
+[2024-04-28 10:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu118
+[2024-04-28 10:55:48] WARNING root fetch - processPackages [pyroferk]: Skipping, unable to determine old version
+[2024-04-28 10:55:48] INFO root fetch - main [MainThread]: End processing [pyroferk] error
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240427] Old Version: [0.2.3.dev20240426]
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.3.dev20240427] Old Version: [0.2.3.dev20240426]
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/2d/27/aef54c48b5b3b2d07964557c8151b284fb4c5a0d66216df7d3ee82df057d/nvfuser_cu118-0.2.3.dev20240426.tar.gz
+[2024-04-28 10:55:48] INFO root fetch - processPackages [Crackerjack]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/ae/74/927c13908af231b52fe16877e52dc622d3b2f29be0592e16ff6b1181f293/nvfuser_cu121-0.2.3.dev20240426.tar.gz
+[2024-04-28 10:55:48] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/a7/40/682dbf1a6b1f3d3ad06a2cdda255b0e2c3c5397a8830e62ede4c0dd7a9ae/crackerjack-0.7.8.tar.gz
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/03/6d/b5ea9755e17d9393832b92ed8f5eb03b9ea2a218e5e32e532d3de4e3effa/nvfuser_cu118-0.2.3.dev20240427.tar.gz
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/e4/f8/f82519fdedba25c13f4c0c294dc032950f49cf11c9af2e2fc6f2da1ca2e6/nvfuser_cu121-0.2.3.dev20240427.tar.gz
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240426.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240427.tar.gz --markdown 20240428/n/nvfuser-cu118/0.2.3.dev20240426-0.2.3.dev20240427/README.md --exclude *.pyd
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-28 10:55:48] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.3.dev20240426.tar.gz tmp/nvfuser_cu121-0.2.3.dev20240427.tar.gz --markdown 20240428/n/nvfuser-cu121/0.2.3.dev20240426-0.2.3.dev20240427/README.md --exclude *.pyd
+[2024-04-28 10:55:48] INFO root fetch - processPackages [Crackerjack]: Downloading https://files.pythonhosted.org/packages/c5/75/3568b19058277b8cd82499102cf3be7570336f14e93bacedeb931e7e18cd/crackerjack-0.7.9.tar.gz
+[2024-04-28 10:55:49] INFO root fetch - processPackages [Crackerjack]: executing diffoscope
+[2024-04-28 10:55:49] INFO root fetch - processPackages [Crackerjack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crackerjack-0.7.8.tar.gz tmp/crackerjack-0.7.9.tar.gz --markdown 20240428/C/Crackerjack/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-28 10:55:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240426.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240427.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-28 10:55:49] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240426.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240427.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-28 10:55:49] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.8.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - processPackages [Crackerjack]: Remove: archive file [/home/abi/fetcher/tmp/crackerjack-0.7.9.tar.gz]
+[2024-04-28 10:55:49] INFO root fetch - main [MainThread]: End processing [Crackerjack]: success
+[2024-04-28 10:55:49] INFO root fetch - main [MainThread]: Store serial: [22965472]
