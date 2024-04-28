@@ -16853,3 +16853,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:43:25] INFO root fetch - processPackages [pyviewer]: Remove: archive file [/home/abi/fetcher/tmp/pyviewer-1.4.1.tar.gz]
 [2024-04-28 21:43:25] INFO root fetch - main [MainThread]: End processing [pyviewer]: success
 [2024-04-28 21:43:25] INFO root fetch - main [MainThread]: Store serial: [22969320]
+[2024-04-28 21:45:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969320]
+[2024-04-28 21:45:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quasarpy
+[2024-04-28 21:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-04-28 21:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipdeptree
+[2024-04-28 21:45:33] INFO root fetch - processPackages [quasarpy]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 21:45:33] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 21:45:34] INFO root fetch - processPackages [pipdeptree]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-28 21:45:34] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/f3/ac/bd2ddbf150b19e74ce62b02f62d7560204e90f63b6d416ef268434aaed0e/quasarpy-0.1.3.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [pipdeptree]: Downloading https://files.pythonhosted.org/packages/89/86/cd4899dd11f30802f3ec5631ffc735ad120739c1e93ce51e4392ebc640b7/pipdeptree-2.9.5.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 21:45:34] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 21:45:34] INFO root fetch - processPackages [pipdeptree]: Downloading https://files.pythonhosted.org/packages/0a/b2/2508e11f44e0e7b136555175f21c121f20642d43ab2a09797b178e968834/pipdeptree-2.9.6.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/dd/e9/6645ddebb2bd976739bf7fda43996766a67244875a7282a4adcd4664f5dc/quasarpy-0.1.4.tar.gz
+[2024-04-28 21:45:34] INFO root fetch - processPackages [pipdeptree]: executing diffoscope
+[2024-04-28 21:45:34] INFO root fetch - processPackages [pipdeptree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipdeptree-2.9.5.tar.gz tmp/pipdeptree-2.9.6.tar.gz --markdown 20240428/p/pipdeptree/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-04-28 21:45:34] INFO root fetch - processPackages [quasarpy]: executing diffoscope
+[2024-04-28 21:45:34] INFO root fetch - processPackages [quasarpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quasarpy-0.1.3.tar.gz tmp/quasarpy-0.1.4.tar.gz --markdown 20240428/q/quasarpy/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 21:45:35] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 21:45:35] INFO root fetch - processPackages [pipdeptree]: Remove: archive file [/home/abi/fetcher/tmp/pipdeptree-2.9.5.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - processPackages [pipdeptree]: Remove: archive file [/home/abi/fetcher/tmp/pipdeptree-2.9.6.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - main [MainThread]: End processing [pipdeptree]: success
+[2024-04-28 21:45:35] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.3.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.4.tar.gz]
+[2024-04-28 21:45:35] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
+[2024-04-28 21:45:35] INFO root fetch - main [MainThread]: Store serial: [22969329]
