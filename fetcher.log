@@ -13440,3 +13440,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:42:03] INFO root fetch - processPackages [dazbo-commons]: Remove: archive file [/home/abi/fetcher/tmp/dazbo_commons-0.1.2.tar.gz]
 [2024-04-28 17:42:03] INFO root fetch - main [MainThread]: End processing [dazbo-commons]: success
 [2024-04-28 17:42:03] INFO root fetch - main [MainThread]: Store serial: [22967799]
+[2024-04-28 17:44:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967799]
+[2024-04-28 17:44:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 17:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhasura
+[2024-04-28 17:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sparse-dot-mkl
+[2024-04-28 17:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyhasura
+[2024-04-28 17:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zato-apitest
+[2024-04-28 17:44:12] WARNING root fetch - processPackages [zato-apitest]: Skipping, unable to determine old version
+[2024-04-28 17:44:12] INFO root fetch - main [MainThread]: End processing [zato-apitest] error
+[2024-04-28 17:44:12] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 17:44:12] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 17:44:12] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-04-28 17:44:12] INFO root fetch - processPackages [sparse-dot-mkl]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-28 17:44:12] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-04-28 17:44:13] INFO root fetch - processPackages [sparse-dot-mkl]: Downloading https://files.pythonhosted.org/packages/53/f3/d6506c1d312b4ce68b2499a46327865e072bd7f4038eb2bb3599e80bda51/sparse_dot_mkl-0.9.1.tar.gz
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240428/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240428/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 17:44:13] INFO root fetch - processPackages [sparse-dot-mkl]: Downloading https://files.pythonhosted.org/packages/ef/6b/f5db638844d4728c4d6bdb46913e1e70703e54625e7e28afe4d491bfaac0/sparse_dot_mkl-0.9.2.tar.gz
+[2024-04-28 17:44:13] INFO root fetch - processPackages [sparse-dot-mkl]: executing diffoscope
+[2024-04-28 17:44:13] INFO root fetch - processPackages [sparse-dot-mkl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparse_dot_mkl-0.9.1.tar.gz tmp/sparse_dot_mkl-0.9.2.tar.gz --markdown 20240428/s/sparse-dot-mkl/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-04-28 17:44:13] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-04-28 17:44:13] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-04-28 17:44:13] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-04-28 17:44:14] INFO root fetch - processPackages [sparse-dot-mkl]: Remove: archive file [/home/abi/fetcher/tmp/sparse_dot_mkl-0.9.1.tar.gz]
+[2024-04-28 17:44:14] INFO root fetch - processPackages [sparse-dot-mkl]: Remove: archive file [/home/abi/fetcher/tmp/sparse_dot_mkl-0.9.2.tar.gz]
+[2024-04-28 17:44:14] INFO root fetch - main [MainThread]: End processing [sparse-dot-mkl]: success
+[2024-04-28 17:44:14] INFO root fetch - main [MainThread]: Store serial: [22967811]
