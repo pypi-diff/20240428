@@ -15053,3 +15053,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:34:31] ERROR root fetch - processPackages [pctheory]: Timeout during execution of pkgdiff
 [2024-04-28 19:34:31] INFO root fetch - main [MainThread]: End processing [pctheory] error
 [2024-04-28 19:34:31] INFO root fetch - main [MainThread]: Store serial: [22968473]
+[2024-04-28 19:36:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968473]
+[2024-04-28 19:36:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jetline
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: two-comp
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sling-mac-amd64
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sling-mac-arm64
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bot4
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sling-windows-amd64
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sling
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ConnectedPapersExtractor
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: data-transformation-yfhsi
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: jetline
+[2024-04-28 19:36:39] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ConnectedPapersExtractor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [sling-mac-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [sling-windows-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [sling-mac-arm64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:36:39] WARNING root fetch - processPackages [two-comp]: Skipping, unable to determine old version
+[2024-04-28 19:36:39] INFO root fetch - processPackages [two-comp]: Start processing: gerstlix_python
+[2024-04-28 19:36:39] INFO root fetch - main [MainThread]: End processing [two-comp] error
+[2024-04-28 19:36:39] INFO root fetch - processPackages [ConnectedPapersExtractor]: Downloading https://files.pythonhosted.org/packages/dd/d3/3c57639cbf223e78ecba85b50d38ded7f4039da9a46de509624b5c4fd1d8/connectedpapersextractor-0.1.0.tar.gz
+[2024-04-28 19:36:39] INFO root fetch - processPackages [bot4]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [sling]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-04-28 19:36:39] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-28 19:36:39] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling-mac-amd64]: Downloading https://files.pythonhosted.org/packages/ec/9f/a6ab1c28dbbba19f9a140d669fe7b8fc20d4d2702f78be573dbe62b22581/sling-mac-amd64-1.2.6.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [gerstlix_python]: New version: [1.0] Old Version: [0.3]
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling-windows-amd64]: Downloading https://files.pythonhosted.org/packages/9c/55/40f9660993d4146fff133ac1738ff86e19eb06267e36233286f83a759a7a/sling-windows-amd64-1.2.6.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling-mac-arm64]: Downloading https://files.pythonhosted.org/packages/f5/c2/3061b3d5dc75620197a6105ca121fb7160bbfdaf2cb04aa6fcbea4b5650c/sling-mac-arm64-1.2.6.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [bot4]: Downloading https://files.pythonhosted.org/packages/12/94/6accc9e2afd5dadac254f03072b7811e799b068329bfb86a2cb36b24c2ec/bot4-0.0.6.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/ae/50/85e00fc5b753bff7bb982dbf47bf77fc4acefa6ae0d7d4482d3e21ad893c/sling-1.2.6.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [ConnectedPapersExtractor]: Downloading https://files.pythonhosted.org/packages/11/2d/a9f709f8ce712d9a1df4dae5cc44053672d96951c978c1f445ec58552d65/connectedpapersextractor-0.1.1.tar.gz
+[2024-04-28 19:36:40] WARNING root fetch - processPackages [sling-mac-amd64]: Skipping package: exceeds size limit 54789710>=10485760
+[2024-04-28 19:36:40] INFO root fetch - main [MainThread]: End processing [sling-mac-amd64] error
+[2024-04-28 19:36:40] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [gerstlix_python]: Downloading https://files.pythonhosted.org/packages/fc/e0/3a3843e6bd27d72306d122af34460792ba4c7a1e9959f7bb6b0a3203f9f0/gerstlix_python-0.3.tar.gz
+[2024-04-28 19:36:40] WARNING root fetch - processPackages [sling-mac-arm64]: Skipping package: exceeds size limit 50518905>=10485760
+[2024-04-28 19:36:40] INFO root fetch - main [MainThread]: End processing [sling-mac-arm64] error
+[2024-04-28 19:36:40] WARNING root fetch - processPackages [sling-windows-amd64]: Skipping package: exceeds size limit 50033934>=10485760
+[2024-04-28 19:36:40] INFO root fetch - main [MainThread]: End processing [sling-windows-amd64] error
+[2024-04-28 19:36:40] INFO root fetch - processPackages [ConnectedPapersExtractor]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [ConnectedPapersExtractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectedpapersextractor-0.1.0.tar.gz tmp/connectedpapersextractor-0.1.1.tar.gz --markdown 20240428/C/ConnectedPapersExtractor/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240428/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [bot4]: Downloading https://files.pythonhosted.org/packages/d4/3e/f3710b1987a7feac491a41180fce95db558cb2c524f1126167f987ddbd0a/bot4-0.0.7.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/73/a8/e0eb5d8747714c8c5cb1d13d439a99d719bdfd480abd17fceff8e7d2adef/sling-1.2.9.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [gerstlix_python]: Downloading https://files.pythonhosted.org/packages/c7/8b/297ac479818b62b3c2cde00447b9e64e53cb7be3c7db88ee0b8b5bae77ed/gerstlix_python-1.0.tar.gz
+[2024-04-28 19:36:40] INFO root fetch - processPackages [bot4]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [bot4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bot4-0.0.6.tar.gz tmp/bot4-0.0.7.tar.gz --markdown 20240428/b/bot4/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [sling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sling-1.2.6.tar.gz tmp/sling-1.2.9.tar.gz --markdown 20240428/s/sling/1.2.6-1.2.9/README.md --exclude *.pyd
+[2024-04-28 19:36:40] INFO root fetch - processPackages [gerstlix_python]: executing diffoscope
+[2024-04-28 19:36:40] INFO root fetch - processPackages [gerstlix_python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gerstlix_python-0.3.tar.gz tmp/gerstlix_python-1.0.tar.gz --markdown 20240428/g/gerstlix_python/0.3-1.0/README.md --exclude *.pyd
+[2024-04-28 19:36:41] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:36:41] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-28 19:36:41] INFO root fetch - processPackages [ConnectedPapersExtractor]: Remove: archive file [/home/abi/fetcher/tmp/connectedpapersextractor-0.1.0.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [ConnectedPapersExtractor]: Remove: archive file [/home/abi/fetcher/tmp/connectedpapersextractor-0.1.1.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [ConnectedPapersExtractor]: success
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:36:41] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.6.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.9.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [sling]: success
+[2024-04-28 19:36:41] INFO root fetch - processPackages [bot4]: Remove: archive file [/home/abi/fetcher/tmp/bot4-0.0.6.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [bot4]: Remove: archive file [/home/abi/fetcher/tmp/bot4-0.0.7.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [bot4]: success
+[2024-04-28 19:36:41] INFO root fetch - processPackages [gerstlix_python]: Remove: archive file [/home/abi/fetcher/tmp/gerstlix_python-0.3.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - processPackages [gerstlix_python]: Remove: archive file [/home/abi/fetcher/tmp/gerstlix_python-1.0.tar.gz]
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: End processing [gerstlix_python]: success
+[2024-04-28 19:36:41] INFO root fetch - main [MainThread]: Store serial: [22968504]
