@@ -12760,3 +12760,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:55:16] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django_import_export-4.0.0rc3.tar.gz]
 [2024-04-28 16:55:16] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
 [2024-04-28 16:55:16] INFO root fetch - main [MainThread]: Store serial: [22967563]
+[2024-04-28 16:57:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967563]
+[2024-04-28 16:57:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 16:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uk-bin-collection
+[2024-04-28 16:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dazbo-commons
+[2024-04-28 16:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyDecision
+[2024-04-28 16:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blurry-cli
+[2024-04-28 16:57:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymatris
+[2024-04-28 16:57:38] INFO root fetch - processPackages [uk-bin-collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-28 16:57:38] INFO root fetch - processPackages [blurry-cli]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-04-28 16:57:38] WARNING root fetch - processPackages [dazbo-commons]: Skipping, unable to determine old version
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pyDecision]: New version: [4.5.2] Old Version: [4.5.1]
+[2024-04-28 16:57:38] INFO root fetch - main [MainThread]: End processing [dazbo-commons] error
+[2024-04-28 16:57:38] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/0c/34/2533783673105231716614624f27590e7ece86986752b9a2d9b081e80a15/blurry_cli-0.7.2.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pymatris]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/52/a5/a5f5bd6aa9d244b27914c01fab96f74629a9d32f0f277902870bf17bebda/pyDecision-4.5.1.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/5c/3e/d8489b27433ffa96dc31b7386a43d88739bc46424f7904d3079c927969d2/pymatris-0.0.4.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [uk-bin-collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pyDecision]: Downloading https://files.pythonhosted.org/packages/a5/2c/d5a3348bd8e13e3d929445936de59c525bcb39b19ebd4746ec3958adf967/pyDecision-4.5.2.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [blurry-cli]: Downloading https://files.pythonhosted.org/packages/34/31/afe1f214fe3aacd7767132a43831e54dc8015f252a933ce6c33d4f6df61b/blurry_cli-0.8.0.tar.gz
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pyDecision]: executing diffoscope
+[2024-04-28 16:57:38] INFO root fetch - processPackages [pyDecision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyDecision-4.5.1.tar.gz tmp/pyDecision-4.5.2.tar.gz --markdown 20240428/p/pyDecision/4.5.1-4.5.2/README.md --exclude *.pyd
+[2024-04-28 16:57:38] INFO root fetch - processPackages [uk-bin-collection]: executing diffoscope
+[2024-04-28 16:57:38] INFO root fetch - processPackages [uk-bin-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240428/u/uk-bin-collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-28 16:57:38] INFO root fetch - processPackages [blurry-cli]: executing diffoscope
+[2024-04-28 16:57:38] INFO root fetch - processPackages [blurry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blurry_cli-0.7.2.tar.gz tmp/blurry_cli-0.8.0.tar.gz --markdown 20240428/b/blurry-cli/0.7.2-0.8.0/README.md --exclude *.pyd
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pymatris]: Downloading https://files.pythonhosted.org/packages/51/96/59d8b54929644b2fd68d2ab65dcb36a65532610207dcf92c37b707b849ae/pymatris-0.0.6.tar.gz
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pymatris]: executing diffoscope
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pymatris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatris-0.0.4.tar.gz tmp/pymatris-0.0.6.tar.gz --markdown 20240428/p/pymatris/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-04-28 16:57:39] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.7.2.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - processPackages [blurry-cli]: Remove: archive file [/home/abi/fetcher/tmp/blurry_cli-0.8.0.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - main [MainThread]: End processing [blurry-cli]: success
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.5.1.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pyDecision]: Remove: archive file [/home/abi/fetcher/tmp/pyDecision-4.5.2.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - main [MainThread]: End processing [pyDecision]: success
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.4.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - processPackages [pymatris]: Remove: archive file [/home/abi/fetcher/tmp/pymatris-0.0.6.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - main [MainThread]: End processing [pymatris]: success
+[2024-04-28 16:57:39] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-04-28 16:57:39] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
+[2024-04-28 16:57:39] INFO root fetch - main [MainThread]: Store serial: [22967578]
