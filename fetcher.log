@@ -5622,3 +5622,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:17:34] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240427.tar.gz]
 [2024-04-28 08:17:34] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
 [2024-04-28 08:17:34] INFO root fetch - main [MainThread]: Store serial: [22964525]
+[2024-04-28 08:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964525]
+[2024-04-28 08:19:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uiautomator2
+[2024-04-28 08:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abstract-clients
+[2024-04-28 08:19:52] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.8] Old Version: [0.0.0.7]
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/6e/7e/e539e6d39c7e0f06d6f90d874f704872e3dec5ea32bef70296cf6f4f69f2/abstract_clients-0.0.0.7.tar.gz
+[2024-04-28 08:19:53] INFO root fetch - processPackages [uiautomator2]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/4a/7e/21c23c2128ae754f267e915c765105aed72fe31703f1496c9f7fbc360c2d/abstract_clients-0.0.0.8.tar.gz
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.7.tar.gz tmp/abstract_clients-0.0.0.8.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.7-0.0.0.8/README.md --exclude *.pyd
+[2024-04-28 08:19:53] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/42/54/adb8c6f4d5981c3a567cc1019010a45e1432f363bd027a2be23dad7c32eb/uiautomator2-3.0.8.tar.gz
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.7.tar.gz]
+[2024-04-28 08:19:53] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.8.tar.gz]
+[2024-04-28 08:19:53] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 08:19:53] INFO root fetch - processPackages [uiautomator2]: Downloading https://files.pythonhosted.org/packages/45/e9/352ceaa7f871f2ff3b9c8cf661414f73c6857dffc42977c57b9a621b837c/uiautomator2-3.0.9.tar.gz
+[2024-04-28 08:19:54] INFO root fetch - processPackages [uiautomator2]: executing diffoscope
+[2024-04-28 08:19:54] INFO root fetch - processPackages [uiautomator2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uiautomator2-3.0.8.tar.gz tmp/uiautomator2-3.0.9.tar.gz --markdown 20240428/u/uiautomator2/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-04-28 08:19:55] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.8.tar.gz]
+[2024-04-28 08:19:55] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
+[2024-04-28 08:19:55] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
+[2024-04-28 08:19:55] INFO root fetch - main [MainThread]: Store serial: [22964531]
