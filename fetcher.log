@@ -3445,3 +3445,33 @@
 [2024-04-28 05:15:14] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
 [2024-04-28 05:15:14] INFO root fetch - main [MainThread]: End processing [druida]: success
 [2024-04-28 05:15:14] INFO root fetch - main [MainThread]: Store serial: [22963695]
+[2024-04-28 05:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963695]
+[2024-04-28 05:17:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 05:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blastpipe
+[2024-04-28 05:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starrail_damage_cal
+[2024-04-28 05:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: YoutubeUser
+[2024-04-28 05:17:22] INFO root fetch - processPackages [YoutubeUser]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 05:17:22] INFO root fetch - processPackages [starrail_damage_cal]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-28 05:17:22] INFO root fetch - processPackages [blastpipe]: New version: [2024.2.5] Old Version: [2024.2.4]
+[2024-04-28 05:17:23] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/a3/37/f576c63123ebf6065dcea4558b00d414e4c8d19018ee38ac5abcd9263a66/starrail_damage_cal-1.5.3.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/10/72/8b63d98e6ffded617ac9f1ab7a6e44b723758458906d7f993a3fd4bd82e6/blastpipe-2024.2.4.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/e8/ef/d73793b1413f4b6dc4d8f2b6d9c5e127aced0a2f19575887e4de00093532/YoutubeUser-0.0.1.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [starrail_damage_cal]: Downloading https://files.pythonhosted.org/packages/7e/de/f19f18cc19df9531d3b175d4163a482b4c32b76feeec7f4db21415bba438/starrail_damage_cal-1.5.4.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/92/59/10d146fcc644054a6e06d1850eddd6484272c9e90debe2c8af7f40ff11bb/blastpipe-2024.2.5.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/80/39/290f04b1f5a01f4dc9cc477d3ffefd4260fed1f7473c86b2ba627bb838ac/youtubeuser-0.0.2.tar.gz
+[2024-04-28 05:17:23] INFO root fetch - processPackages [starrail_damage_cal]: executing diffoscope
+[2024-04-28 05:17:23] INFO root fetch - processPackages [starrail_damage_cal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrail_damage_cal-1.5.3.tar.gz tmp/starrail_damage_cal-1.5.4.tar.gz --markdown 20240428/s/starrail_damage_cal/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: executing diffoscope
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YoutubeUser-0.0.1.tar.gz tmp/youtubeuser-0.0.2.tar.gz --markdown 20240428/Y/YoutubeUser/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 05:17:23] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-28 05:17:23] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.2.4.tar.gz tmp/blastpipe-2024.2.5.tar.gz --markdown 20240428/b/blastpipe/2024.2.4-2024.2.5/README.md --exclude *.pyd
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/YoutubeUser-0.0.1.tar.gz]
+[2024-04-28 05:17:23] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.2.tar.gz]
+[2024-04-28 05:17:23] INFO root fetch - main [MainThread]: End processing [YoutubeUser]: success
+[2024-04-28 05:17:24] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.3.tar.gz]
+[2024-04-28 05:17:24] INFO root fetch - processPackages [starrail_damage_cal]: Remove: archive file [/home/abi/fetcher/tmp/starrail_damage_cal-1.5.4.tar.gz]
+[2024-04-28 05:17:24] INFO root fetch - main [MainThread]: End processing [starrail_damage_cal]: success
+[2024-04-28 05:17:24] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.4.tar.gz]
+[2024-04-28 05:17:24] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.2.5.tar.gz]
+[2024-04-28 05:17:24] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-28 05:17:24] INFO root fetch - main [MainThread]: Store serial: [22963706]
