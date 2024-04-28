@@ -8040,3 +8040,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:11:23] INFO root fetch - processPackages [MulensModel]: Remove: archive file [/home/abi/fetcher/tmp/MulensModel-2.8.1.tar.gz]
 [2024-04-28 11:11:23] INFO root fetch - main [MainThread]: End processing [MulensModel]: success
 [2024-04-28 11:11:23] INFO root fetch - main [MainThread]: Store serial: [22965611]
+[2024-04-28 11:13:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965611]
+[2024-04-28 11:13:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 11:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: istr-python
+[2024-04-28 11:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-soft-delete
+[2024-04-28 11:13:32] INFO root fetch - processPackages [istr-python]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 11:13:32] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/2f/16/a3bdd98f1339d11273a38258a5d1d0556f67c43c8493bef85e61034152db/istr_python-0.1.1.tar.gz
+[2024-04-28 11:13:32] INFO root fetch - processPackages [django-soft-delete]: New version: [1.0.9] Old Version: [1.0.13]
+[2024-04-28 11:13:32] INFO root fetch - processPackages [django-soft-delete]: Downloading https://files.pythonhosted.org/packages/07/0a/97c65a429cc07a1a9a5459b7e53b96c1f47b41985ff6475b905511acea9e/django-soft-delete-1.0.13.tar.gz
+[2024-04-28 11:13:32] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/0a/e9/b9fed61eb8f627f663263be97cf5344ac5c45fd7def183b6ec782bb45051/istr_python-0.1.2.tar.gz
+[2024-04-28 11:13:32] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-28 11:13:32] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.1.tar.gz tmp/istr_python-0.1.2.tar.gz --markdown 20240428/i/istr-python/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 11:13:32] INFO root fetch - processPackages [django-soft-delete]: Downloading https://files.pythonhosted.org/packages/32/e9/80b2509d9d00a789a4ec26314ea8ba82aaeaed4c1b89ffaa8fa71377ceaa/django-soft-delete-1.0.9.tar.gz
+[2024-04-28 11:13:33] INFO root fetch - processPackages [django-soft-delete]: executing diffoscope
+[2024-04-28 11:13:33] INFO root fetch - processPackages [django-soft-delete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-soft-delete-1.0.13.tar.gz tmp/django-soft-delete-1.0.9.tar.gz --markdown 20240428/d/django-soft-delete/1.0.13-1.0.9/README.md --exclude *.pyd
+[2024-04-28 11:13:33] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.1.tar.gz]
+[2024-04-28 11:13:33] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.2.tar.gz]
+[2024-04-28 11:13:33] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-28 11:13:33] INFO root fetch - processPackages [django-soft-delete]: Remove: archive file [/home/abi/fetcher/tmp/django-soft-delete-1.0.13.tar.gz]
+[2024-04-28 11:13:33] INFO root fetch - processPackages [django-soft-delete]: Remove: archive file [/home/abi/fetcher/tmp/django-soft-delete-1.0.9.tar.gz]
+[2024-04-28 11:13:33] INFO root fetch - main [MainThread]: End processing [django-soft-delete]: success
+[2024-04-28 11:13:33] INFO root fetch - main [MainThread]: Store serial: [22965618]
