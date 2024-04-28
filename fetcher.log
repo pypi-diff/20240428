@@ -12802,3 +12802,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:57:39] INFO root fetch - processPackages [uk-bin-collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
 [2024-04-28 16:57:39] INFO root fetch - main [MainThread]: End processing [uk-bin-collection]: success
 [2024-04-28 16:57:39] INFO root fetch - main [MainThread]: Store serial: [22967578]
+[2024-04-28 16:59:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967578]
+[2024-04-28 17:00:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 17:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-security
+[2024-04-28 17:00:02] INFO root fetch - processPackages [pyams-security]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-04-28 17:00:02] INFO root fetch - processPackages [pyams-security]: Downloading https://files.pythonhosted.org/packages/ad/36/8500676df5c430b521178ca1bb7bc2187548ca97382b74df672968fb033e/pyams_security-2.3.0.tar.gz
+[2024-04-28 17:00:02] INFO root fetch - processPackages [pyams-security]: Downloading https://files.pythonhosted.org/packages/16/34/dac5ebea73593aca78f9a200b33e1e5b2c195f868b180cfe43acc91cddbb/pyams_security-2.3.1.tar.gz
+[2024-04-28 17:00:02] INFO root fetch - processPackages [pyams-security]: executing diffoscope
+[2024-04-28 17:00:02] INFO root fetch - processPackages [pyams-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_security-2.3.0.tar.gz tmp/pyams_security-2.3.1.tar.gz --markdown 20240428/p/pyams-security/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-04-28 17:00:03] INFO root fetch - processPackages [pyams-security]: Remove: archive file [/home/abi/fetcher/tmp/pyams_security-2.3.0.tar.gz]
+[2024-04-28 17:00:03] INFO root fetch - processPackages [pyams-security]: Remove: archive file [/home/abi/fetcher/tmp/pyams_security-2.3.1.tar.gz]
+[2024-04-28 17:00:03] INFO root fetch - main [MainThread]: End processing [pyams-security]: success
+[2024-04-28 17:00:03] INFO root fetch - main [MainThread]: Store serial: [22967581]
