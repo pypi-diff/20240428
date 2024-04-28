@@ -18667,3 +18667,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:36:28] INFO root fetch - processPackages [tencentcloud-sdk-python-cis]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cis-3.0.999.tar.gz]
 [2024-04-28 22:36:28] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cis]: success
 [2024-04-28 22:36:28] INFO root fetch - main [MainThread]: Store serial: [22970164]
+[2024-04-28 22:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22970164]
+[2024-04-28 22:38:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tencentcloud-sdk-python-clb
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tencentcloud-sdk-python-cloudaudit
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tencentcloud-sdk-python-cloudhsm
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thonny-tunisiaschools
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phidata
+[2024-04-28 22:38:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-cloudstudio
+[2024-04-28 22:38:37] INFO root fetch - processPackages [thonny-tunisiaschools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [phidata]: New version: [2.3.9] Old Version: [2.3.84]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [thonny-tunisiaschools]: Downloading https://files.pythonhosted.org/packages/4d/4e/0f24e61910ef3f43e9d44a0712a9eb19d6ec7efce55efb3f892821b01749/thonny_tunisiaschools-0.0.8.tar.gz
+[2024-04-28 22:38:37] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:38:37] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/38/26/a26c7c64235ceceaaa09b72612486433570f5297882bc05c8acdad9d6fbd/phidata-2.3.84.tar.gz
+[2024-04-28 22:38:37] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: Downloading https://files.pythonhosted.org/packages/33/0e/e0d66b9d52df32de5af3fac47782338544c8c594120e699b0f263feea64c/tencentcloud-sdk-python-cloudhsm-3.0.998.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: Downloading https://files.pythonhosted.org/packages/2e/33/0199794f6a095568a7f65242a0f81b06a38435a8d8ce417f8778ebd0f8c8/tencentcloud-sdk-python-cloudaudit-3.0.998.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: Downloading https://files.pythonhosted.org/packages/28/c1/4c296457864a2bbf34593032a54ed497f3593fe2f7b9929b2c6cc6b10daa/tencentcloud-sdk-python-clb-3.0.998.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: Downloading https://files.pythonhosted.org/packages/cb/89/bd78d078e047ea86d809bb43a67d6d7e9db641285704b7fc0de1b1407363/tencentcloud-sdk-python-cloudstudio-3.0.998.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [thonny-tunisiaschools]: Downloading https://files.pythonhosted.org/packages/a4/7b/6a4e5ba34c9d2f2fe1648940970c12677debe230f539123518bf27aaf4f3/thonny_tunisiaschools-0.0.9.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [thonny-tunisiaschools]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [thonny-tunisiaschools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thonny_tunisiaschools-0.0.8.tar.gz tmp/thonny_tunisiaschools-0.0.9.tar.gz --markdown 20240428/t/thonny-tunisiaschools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 22:38:38] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/51/63/c5ed33bf592cd65cdcb90c64ded88ab6bc7786db2184c64f6484d61e92d0/phidata-2.3.9.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: Downloading https://files.pythonhosted.org/packages/0e/a3/d79bd05f21c74ee3d7e38e50703acef151bce371025aaac725388541ecd2/tencentcloud-sdk-python-cloudaudit-3.0.999.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: Downloading https://files.pythonhosted.org/packages/d0/bf/d801109a102e7a2a50d2a18cbb0fe865261b8ab38637bf813d5cac9e6dbd/tencentcloud-sdk-python-cloudhsm-3.0.999.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: Downloading https://files.pythonhosted.org/packages/95/46/3850ce6ac7e5f7ee55b2baf27c3f6afe65568dfc979889096072257991e7/tencentcloud-sdk-python-clb-3.0.999.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: Downloading https://files.pythonhosted.org/packages/5c/5d/997c93db648576d63f0ea79aa62a46dfb485a72454af7decea14809e28d8/tencentcloud-sdk-python-cloudstudio-3.0.999.tar.gz
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cloudaudit-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cloudaudit-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-cloudaudit/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:38:38] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.3.84.tar.gz tmp/phidata-2.3.9.tar.gz --markdown 20240428/p/phidata/2.3.84-2.3.9/README.md --exclude *.pyd
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-clb-3.0.998.tar.gz tmp/tencentcloud-sdk-python-clb-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-clb/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cloudstudio-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cloudstudio-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-cloudstudio/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: executing diffoscope
+[2024-04-28 22:38:38] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-cloudhsm-3.0.998.tar.gz tmp/tencentcloud-sdk-python-cloudhsm-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-cloudhsm/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:38:39] INFO root fetch - processPackages [thonny-tunisiaschools]: Remove: archive file [/home/abi/fetcher/tmp/thonny_tunisiaschools-0.0.8.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - processPackages [thonny-tunisiaschools]: Remove: archive file [/home/abi/fetcher/tmp/thonny_tunisiaschools-0.0.9.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - main [MainThread]: End processing [thonny-tunisiaschools]: success
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudaudit-3.0.998.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudaudit]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudaudit-3.0.999.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cloudaudit]: success
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-clb-3.0.998.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-clb]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-clb-3.0.999.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-clb]: success
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudhsm-3.0.998.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudhsm]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudhsm-3.0.999.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cloudhsm]: success
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudstudio-3.0.998.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - processPackages [tencentcloud-sdk-python-cloudstudio]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-cloudstudio-3.0.999.tar.gz]
+[2024-04-28 22:38:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-cloudstudio]: success
+[2024-04-28 22:38:40] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.84.tar.gz]
+[2024-04-28 22:38:40] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
+[2024-04-28 22:38:40] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-04-28 22:38:40] INFO root fetch - main [MainThread]: Store serial: [22970179]
