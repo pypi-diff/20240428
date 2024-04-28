@@ -6449,3 +6449,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:27:56] INFO root fetch - processPackages [cs-models]: Remove: archive file [/home/abi/fetcher/tmp/cs-models-0.0.99.dev4.tar.gz]
 [2024-04-28 09:27:56] INFO root fetch - main [MainThread]: End processing [cs-models]: success
 [2024-04-28 09:27:56] INFO root fetch - main [MainThread]: Store serial: [22964874]
+[2024-04-28 09:30:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964874]
+[2024-04-28 09:30:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glide_sdk_python
+[2024-04-28 09:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mailslurp-client
+[2024-04-28 09:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uaiDiffusers
+[2024-04-28 09:30:05] INFO root fetch - processPackages [uaiDiffusers]: New version: [1.1.5.2] Old Version: [1.1.5.1]
+[2024-04-28 09:30:05] INFO root fetch - processPackages [mailslurp-client]: New version: [9.0.0] Old Version: [8.7.1]
+[2024-04-28 09:30:05] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/56/b2/b09192be3e3a18a9d301255c060c646b819a3b243dd2ba9a4328bc7f7e45/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl
+[2024-04-28 09:30:05] WARNING root fetch - processPackages [glide_sdk_python]: Skipping, unable to determine old version
+[2024-04-28 09:30:05] INFO root fetch - main [MainThread]: End processing [glide_sdk_python] error
+[2024-04-28 09:30:05] INFO root fetch - processPackages [mailslurp-client]: Downloading https://files.pythonhosted.org/packages/3e/2a/b8cce2427a43d1e16d56cf7c0cb6846aa65ef693d53c602b86cc1b3e2dda/mailslurp-client-8.7.1.tar.gz
+[2024-04-28 09:30:05] INFO root fetch - processPackages [mailslurp-client]: Downloading https://files.pythonhosted.org/packages/01/d9/2509603c731df895dbecf80066b199f2b72cb740d3900594486b1869bda3/mailslurp-client-9.0.0.tar.gz
+[2024-04-28 09:30:05] INFO root fetch - processPackages [uaiDiffusers]: Downloading https://files.pythonhosted.org/packages/2b/e5/13efbefa0fb1689b637c0e44eb74c4fc012d6360a5a0361baa6e17673248/uaiDiffusers-1.1.5.2-py2.py3-none-any.whl
+[2024-04-28 09:30:05] INFO root fetch - processPackages [mailslurp-client]: executing diffoscope
+[2024-04-28 09:30:05] INFO root fetch - processPackages [mailslurp-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailslurp-client-8.7.1.tar.gz tmp/mailslurp-client-9.0.0.tar.gz --markdown 20240428/m/mailslurp-client/8.7.1-9.0.0/README.md --exclude *.pyd
+[2024-04-28 09:30:06] INFO root fetch - processPackages [uaiDiffusers]: executing diffoscope
+[2024-04-28 09:30:06] INFO root fetch - processPackages [uaiDiffusers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl.zip tmp/uaiDiffusers-1.1.5.2-py2.py3-none-any.whl.zip --markdown 20240428/u/uaiDiffusers/1.1.5.1-1.1.5.2/README.md --exclude *.pyd
+[2024-04-28 09:30:06] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl.zip]
+[2024-04-28 09:30:06] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.2-py2.py3-none-any.whl.zip]
+[2024-04-28 09:30:06] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
+[2024-04-28 09:30:07] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-8.7.1.tar.gz]
+[2024-04-28 09:30:07] INFO root fetch - processPackages [mailslurp-client]: Remove: archive file [/home/abi/fetcher/tmp/mailslurp-client-9.0.0.tar.gz]
+[2024-04-28 09:30:07] INFO root fetch - main [MainThread]: End processing [mailslurp-client]: success
+[2024-04-28 09:30:07] INFO root fetch - main [MainThread]: Store serial: [22964884]
