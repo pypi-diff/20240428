@@ -10229,3 +10229,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:47:10] INFO root fetch - processPackages [nonebot-plugin-ai-timetable]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ai_timetable-0.3.8.tar.gz]
 [2024-04-28 13:47:10] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-ai-timetable]: success
 [2024-04-28 13:47:10] INFO root fetch - main [MainThread]: Store serial: [22966487]
+[2024-04-28 13:49:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966487]
+[2024-04-28 13:49:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 13:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymobiledevice3
+[2024-04-28 13:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-28 13:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rooms-shared-services
+[2024-04-28 13:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wasm-runtime
+[2024-04-28 13:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: knowledgeai-client
+[2024-04-28 13:49:25] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-28 13:49:25] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-28 13:49:25] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/4d/d8/359dd55b876d7150cb7d12f621743c14c82f6f540b46494f71c1f5be7f9a/nonebot-plugin-hx-yinying-1.1.1.tar.gz
+[2024-04-28 13:49:25] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-28 13:49:25] INFO root fetch - processPackages [knowledgeai-client]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-28 13:49:25] WARNING root fetch - processPackages [wasm-runtime]: Skipping, unable to determine old version
+[2024-04-28 13:49:25] INFO root fetch - main [MainThread]: End processing [wasm-runtime] error
+[2024-04-28 13:49:25] INFO root fetch - processPackages [pymobiledevice3]: New version: [4.4.1] Old Version: [4.4.0]
+[2024-04-28 13:49:26] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-28 13:49:26] INFO root fetch - processPackages [knowledgeai-client]: Downloading https://files.pythonhosted.org/packages/1b/6a/87ef1ea216252d8a0af036be14696dadd084dbc9b31600bcd041b81b3ab4/knowledgeai_client-0.5.0.tar.gz
+[2024-04-28 13:49:26] INFO root fetch - processPackages [pymobiledevice3]: Downloading https://files.pythonhosted.org/packages/b7/8b/efe3547d142b9dbdda9f1dae44096ab632ceb4d4e7e00f2d20419dd3f9bd/pymobiledevice3-4.4.0.tar.gz
+[2024-04-28 13:49:26] WARNING root fetch - processPackages [pymobiledevice3]: Skipping package: exceeds size limit 31544644>=10485760
+[2024-04-28 13:49:26] INFO root fetch - main [MainThread]: End processing [pymobiledevice3] error
+[2024-04-28 13:49:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/96/c9/05ea3bb5e23d4a8fb0e96032b91f7b0bae031c333285c2c7e1e51e30e23c/nonebot-plugin-hx-yinying-1.1.2.tar.gz
+[2024-04-28 13:49:26] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-28 13:49:26] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240428/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-28 13:49:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-28 13:49:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-1.1.1.tar.gz tmp/nonebot-plugin-hx-yinying-1.1.2.tar.gz --markdown 20240428/n/nonebot-plugin-hx-yinying/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-28 13:49:26] INFO root fetch - processPackages [knowledgeai-client]: Downloading https://files.pythonhosted.org/packages/8f/b7/c053f673a07ca57ce7afb292d9bd58461d06a2fc72a14e83817b1eca5670/knowledgeai_client-0.5.1.tar.gz
+[2024-04-28 13:49:26] INFO root fetch - processPackages [knowledgeai-client]: executing diffoscope
+[2024-04-28 13:49:26] INFO root fetch - processPackages [knowledgeai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgeai_client-0.5.0.tar.gz tmp/knowledgeai_client-0.5.1.tar.gz --markdown 20240428/k/knowledgeai-client/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-28 13:49:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.1.tar.gz]
+[2024-04-28 13:49:26] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-1.1.2.tar.gz]
+[2024-04-28 13:49:26] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-28 13:49:26] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-28 13:49:26] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-28 13:49:26] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-28 13:49:27] INFO root fetch - processPackages [knowledgeai-client]: Remove: archive file [/home/abi/fetcher/tmp/knowledgeai_client-0.5.0.tar.gz]
+[2024-04-28 13:49:27] INFO root fetch - processPackages [knowledgeai-client]: Remove: archive file [/home/abi/fetcher/tmp/knowledgeai_client-0.5.1.tar.gz]
+[2024-04-28 13:49:27] INFO root fetch - main [MainThread]: End processing [knowledgeai-client]: success
+[2024-04-28 13:49:27] INFO root fetch - main [MainThread]: Store serial: [22966503]
