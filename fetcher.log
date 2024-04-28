@@ -6128,3 +6128,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:01:48] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-04-28 09:01:48] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-04-28 09:01:48] INFO root fetch - main [MainThread]: Store serial: [22964754]
+[2024-04-28 09:03:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964754]
+[2024-04-28 09:03:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edurpa-document
+[2024-04-28 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cabinet
+[2024-04-28 09:03:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: seqio-nightly
+[2024-04-28 09:03:57] INFO root fetch - processPackages [edurpa-document]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 09:03:57] INFO root fetch - processPackages [cabinet]: New version: [2024.4.27.1] Old Version: [2024.4.25.1]
+[2024-04-28 09:03:57] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/95/50/5ff9bc2ac4faf0a99a47e088f909b4f898315c1fa217c7e41811ffa92c02/cabinet-2024.4.25.1.tar.gz
+[2024-04-28 09:03:57] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2024-04-28 09:03:57] INFO root fetch - processPackages [edurpa-document]: Downloading https://files.pythonhosted.org/packages/19/fb/dc98f3f147dc68a932897677b64eb3d59f718f7395da282df1748b0dc2bd/edurpa_document-0.0.1-py3-none-any.whl
+[2024-04-28 09:03:57] INFO root fetch - processPackages [cabinet]: Downloading https://files.pythonhosted.org/packages/9d/02/63eb734faaec5c70264e68f72b47ef00674fb6fe0dc6d78d2619fb1c92ca/cabinet-2024.4.27.1.tar.gz
+[2024-04-28 09:03:57] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2024-04-28 09:03:57] INFO root fetch - processPackages [cabinet]: executing diffoscope
+[2024-04-28 09:03:57] INFO root fetch - processPackages [cabinet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cabinet-2024.4.25.1.tar.gz tmp/cabinet-2024.4.27.1.tar.gz --markdown 20240428/c/cabinet/2024.4.25.1-2024.4.27.1/README.md --exclude *.pyd
+[2024-04-28 09:03:57] INFO root fetch - processPackages [edurpa-document]: Downloading https://files.pythonhosted.org/packages/9b/ac/0826c1c2c6cf0306f6ead7fd5206c2bc35352ae733c31f150a4b9784077f/edurpa_document-0.0.2-py3-none-any.whl
+[2024-04-28 09:03:57] INFO root fetch - processPackages [edurpa-document]: executing diffoscope
+[2024-04-28 09:03:57] INFO root fetch - processPackages [edurpa-document]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edurpa_document-0.0.1-py3-none-any.whl.zip tmp/edurpa_document-0.0.2-py3-none-any.whl.zip --markdown 20240428/e/edurpa-document/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 09:03:57] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2024-04-28 09:03:57] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2024-04-28 09:03:57] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20240428/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/README.md --exclude *.pyd
+[2024-04-28 09:03:58] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.25.1.tar.gz]
+[2024-04-28 09:03:58] INFO root fetch - processPackages [cabinet]: Remove: archive file [/home/abi/fetcher/tmp/cabinet-2024.4.27.1.tar.gz]
+[2024-04-28 09:03:58] INFO root fetch - main [MainThread]: End processing [cabinet]: success
+[2024-04-28 09:03:58] INFO root fetch - processPackages [edurpa-document]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_document-0.0.1-py3-none-any.whl.zip]
+[2024-04-28 09:03:58] INFO root fetch - processPackages [edurpa-document]: Remove: archive file [/home/abi/fetcher/tmp/edurpa_document-0.0.2-py3-none-any.whl.zip]
+[2024-04-28 09:03:58] INFO root fetch - main [MainThread]: End processing [edurpa-document]: success
+[2024-04-28 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220906.tar.gz]
+[2024-04-28 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
+[2024-04-28 09:03:58] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2024-04-28 09:03:58] INFO root fetch - main [MainThread]: Store serial: [22964767]
