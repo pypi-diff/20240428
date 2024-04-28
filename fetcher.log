@@ -6335,3 +6335,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:14:52] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.99.tar.gz]
 [2024-04-28 09:14:52] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2024-04-28 09:14:52] INFO root fetch - main [MainThread]: Store serial: [22964835]
+[2024-04-28 09:16:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964835]
+[2024-04-28 09:17:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dsb-spider
+[2024-04-28 09:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-analysis-bilibili
+[2024-04-28 09:17:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ares-ai
+[2024-04-28 09:17:01] INFO root fetch - processPackages [dsb-spider]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-28 09:17:01] INFO root fetch - processPackages [ares-ai]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-28 09:17:01] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: New version: [2.7.0] Old Version: [2.6.9]
+[2024-04-28 09:17:01] INFO root fetch - processPackages [dsb-spider]: Downloading https://files.pythonhosted.org/packages/a4/ca/373cb05cc9522d5631ac407429774afd3f76369191906dfb44e70373d443/dsb_spider-0.2.8.tar.gz
+[2024-04-28 09:17:01] INFO root fetch - processPackages [ares-ai]: Downloading https://files.pythonhosted.org/packages/f1/f4/ee17d361332bf74d64d339dd0444b82bb51d3e0c5c5c016306c12029f387/ares_ai-0.5.5.tar.gz
+[2024-04-28 09:17:01] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: Downloading https://files.pythonhosted.org/packages/8f/b4/6dcb2e7eba35c7f559eac816b1cef17dbc0805d6b58bcb219e451d2baac9/nonebot_plugin_analysis_bilibili-2.6.9.tar.gz
+[2024-04-28 09:17:01] INFO root fetch - processPackages [dsb-spider]: Downloading https://files.pythonhosted.org/packages/0b/aa/9204319da846df870ff7da923fbe58423b0498832eaaba033c15ba0cdfdd/dsb_spider-0.2.9.tar.gz
+[2024-04-28 09:17:01] INFO root fetch - processPackages [dsb-spider]: executing diffoscope
+[2024-04-28 09:17:01] INFO root fetch - processPackages [dsb-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsb_spider-0.2.8.tar.gz tmp/dsb_spider-0.2.9.tar.gz --markdown 20240428/d/dsb-spider/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-28 09:17:02] INFO root fetch - processPackages [ares-ai]: Downloading https://files.pythonhosted.org/packages/b2/39/ee73c4bb90f7143d8f96cdf7eb8465ab5592839bba3b19101f1675188f2b/ares_ai-0.5.6.tar.gz
+[2024-04-28 09:17:02] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: Downloading https://files.pythonhosted.org/packages/3c/ac/4bca7c061437e386bb34aa2b244943ca201eb8105a268173d35fd9c1de81/nonebot_plugin_analysis_bilibili-2.7.0.tar.gz
+[2024-04-28 09:17:02] INFO root fetch - processPackages [ares-ai]: executing diffoscope
+[2024-04-28 09:17:02] INFO root fetch - processPackages [ares-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ares_ai-0.5.5.tar.gz tmp/ares_ai-0.5.6.tar.gz --markdown 20240428/a/ares-ai/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-28 09:17:02] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: executing diffoscope
+[2024-04-28 09:17:02] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_analysis_bilibili-2.6.9.tar.gz tmp/nonebot_plugin_analysis_bilibili-2.7.0.tar.gz --markdown 20240428/n/nonebot-plugin-analysis-bilibili/2.6.9-2.7.0/README.md --exclude *.pyd
+[2024-04-28 09:17:02] INFO root fetch - processPackages [dsb-spider]: Remove: archive file [/home/abi/fetcher/tmp/dsb_spider-0.2.8.tar.gz]
+[2024-04-28 09:17:02] INFO root fetch - processPackages [dsb-spider]: Remove: archive file [/home/abi/fetcher/tmp/dsb_spider-0.2.9.tar.gz]
+[2024-04-28 09:17:02] INFO root fetch - main [MainThread]: End processing [dsb-spider]: success
+[2024-04-28 09:17:02] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_analysis_bilibili-2.6.9.tar.gz]
+[2024-04-28 09:17:02] INFO root fetch - processPackages [nonebot-plugin-analysis-bilibili]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_analysis_bilibili-2.7.0.tar.gz]
+[2024-04-28 09:17:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-analysis-bilibili]: success
+[2024-04-28 09:17:03] INFO root fetch - processPackages [ares-ai]: Remove: archive file [/home/abi/fetcher/tmp/ares_ai-0.5.5.tar.gz]
+[2024-04-28 09:17:03] INFO root fetch - processPackages [ares-ai]: Remove: archive file [/home/abi/fetcher/tmp/ares_ai-0.5.6.tar.gz]
+[2024-04-28 09:17:03] INFO root fetch - main [MainThread]: End processing [ares-ai]: success
+[2024-04-28 09:17:03] INFO root fetch - main [MainThread]: Store serial: [22964843]
