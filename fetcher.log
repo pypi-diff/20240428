@@ -6158,3 +6158,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:03:58] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
 [2024-04-28 09:03:58] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2024-04-28 09:03:58] INFO root fetch - main [MainThread]: Store serial: [22964767]
+[2024-04-28 09:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964767]
+[2024-04-28 09:06:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edurpa-cloud
+[2024-04-28 09:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lit-data-layers
+[2024-04-28 09:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NStudyPy
+[2024-04-28 09:06:07] INFO root fetch - processPackages [lit-data-layers]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 09:06:07] INFO root fetch - processPackages [NStudyPy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 09:06:07] WARNING root fetch - processPackages [edurpa-cloud]: Skipping, unable to determine old version
+[2024-04-28 09:06:07] INFO root fetch - main [MainThread]: End processing [edurpa-cloud] error
+[2024-04-28 09:06:07] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/50/be/c3b20bb695ce53168f6ac59a98257db24ea6b1e185750a8771d80c35ff16/lit_data_layers-0.1.0.tar.gz
+[2024-04-28 09:06:07] INFO root fetch - processPackages [NStudyPy]: Downloading https://files.pythonhosted.org/packages/fe/4b/6fc8183bc638736834b1df30ec592bfa60acc053b2f1d4cced9567963c64/nstudypy-0.0.5.tar.gz
+[2024-04-28 09:06:07] INFO root fetch - processPackages [lit-data-layers]: Downloading https://files.pythonhosted.org/packages/3e/8f/9b166eb66cc461f0d0015bca81964bb3dda87c167d93baa5ba6d2a486ed4/lit_data_layers-0.1.1.tar.gz
+[2024-04-28 09:06:07] INFO root fetch - processPackages [NStudyPy]: Downloading https://files.pythonhosted.org/packages/a2/7b/0ceb27911698cc2149c4d2f871a189b970ef54722a03e4ff2ddedf729708/nstudypy-0.0.6.tar.gz
+[2024-04-28 09:06:08] INFO root fetch - processPackages [lit-data-layers]: executing diffoscope
+[2024-04-28 09:06:08] INFO root fetch - processPackages [lit-data-layers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lit_data_layers-0.1.0.tar.gz tmp/lit_data_layers-0.1.1.tar.gz --markdown 20240428/l/lit-data-layers/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 09:06:08] INFO root fetch - processPackages [NStudyPy]: executing diffoscope
+[2024-04-28 09:06:08] INFO root fetch - processPackages [NStudyPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nstudypy-0.0.5.tar.gz tmp/nstudypy-0.0.6.tar.gz --markdown 20240428/N/NStudyPy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 09:06:08] INFO root fetch - processPackages [NStudyPy]: Remove: archive file [/home/abi/fetcher/tmp/nstudypy-0.0.5.tar.gz]
+[2024-04-28 09:06:08] INFO root fetch - processPackages [NStudyPy]: Remove: archive file [/home/abi/fetcher/tmp/nstudypy-0.0.6.tar.gz]
+[2024-04-28 09:06:08] INFO root fetch - main [MainThread]: End processing [NStudyPy]: success
+[2024-04-28 09:06:08] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.0.tar.gz]
+[2024-04-28 09:06:08] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.1.tar.gz]
+[2024-04-28 09:06:08] INFO root fetch - main [MainThread]: End processing [lit-data-layers]: success
+[2024-04-28 09:06:08] INFO root fetch - main [MainThread]: Store serial: [22964778]
