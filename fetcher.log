@@ -14483,3 +14483,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 18:56:37] INFO root fetch - processPackages [flask-file-share]: Remove: archive file [/home/abi/fetcher/tmp/flask_file_share-0.1.2.tar.gz]
 [2024-04-28 18:56:37] INFO root fetch - main [MainThread]: End processing [flask-file-share]: success
 [2024-04-28 18:56:37] INFO root fetch - main [MainThread]: Store serial: [22968220]
+[2024-04-28 18:58:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968220]
+[2024-04-28 18:58:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 18:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bert4keras3
+[2024-04-28 18:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lnurl_nostr1
+[2024-04-28 18:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pg8000
+[2024-04-28 18:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autotrain-advanced
+[2024-04-28 18:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jetline
+[2024-04-28 18:58:47] INFO root fetch - processPackages [bert4keras3]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-28 18:58:47] INFO root fetch - processPackages [lnurl_nostr1]: New version: [0.5.0rc2] Old Version: [0.5.0rc1]
+[2024-04-28 18:58:47] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 18:58:47] INFO root fetch - processPackages [bert4keras3]: Downloading https://files.pythonhosted.org/packages/ea/a2/00cf4d38f1fd5209c809696e76c3d0e8269228bd26502fd7d4a521cdca9f/bert4keras3-1.3.4-py3-none-any.whl
+[2024-04-28 18:58:47] INFO root fetch - processPackages [autotrain-advanced]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-28 18:58:47] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 18:58:47] INFO root fetch - processPackages [pg8000]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-28 18:58:48] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/f5/e6/acc4280c11d5f38e9841bd4da7c5adb109153e0a615226c51bc275741c23/lnurl_nostr1-0.5.0rc1.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [pg8000]: Downloading https://files.pythonhosted.org/packages/65/e9/ec11aa94842e65712402367dde63c925ef6ed5bfa3491de9e4cda23530bc/pg8000-1.9.8.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [autotrain-advanced]: Downloading https://files.pythonhosted.org/packages/f7/32/d4134f2d2283aafd5d82db1b47031a6025f7f458bf7dc07ef8389a35fab9/autotrain-advanced-0.7.8.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 18:58:48] ERROR root fetch - processPackages [bert4keras3]: Unable to fetch info: No such project/version 'bert4keras3' 1.3.5
+[2024-04-28 18:58:48] INFO root fetch - main [MainThread]: End processing [bert4keras3] error
+[2024-04-28 18:58:48] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 18:58:48] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 18:58:48] INFO root fetch - processPackages [lnurl_nostr1]: Downloading https://files.pythonhosted.org/packages/28/20/9e94e0099997189ac20429e05b51d91424bc1b0bd04dbdb121372ed823e4/lnurl_nostr1-0.5.0rc2.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [lnurl_nostr1]: executing diffoscope
+[2024-04-28 18:58:48] INFO root fetch - processPackages [lnurl_nostr1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lnurl_nostr1-0.5.0rc1.tar.gz tmp/lnurl_nostr1-0.5.0rc2.tar.gz --markdown 20240428/l/lnurl_nostr1/0.5.0rc1-0.5.0rc2/README.md --exclude *.pyd
+[2024-04-28 18:58:48] INFO root fetch - processPackages [pg8000]: Downloading https://files.pythonhosted.org/packages/76/38/3c2b3384c447bdac7cd3f1155894dd6522935f7c923492baed5cc3d9b2bf/pg8000-1.9.9.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [autotrain-advanced]: Downloading https://files.pythonhosted.org/packages/95/9e/ee31433cc0bd82c907dd180918e1072f54bcd0139421e0ab4df0c9f3f919/autotrain-advanced-0.7.9.tar.gz
+[2024-04-28 18:58:48] INFO root fetch - processPackages [autotrain-advanced]: executing diffoscope
+[2024-04-28 18:58:48] INFO root fetch - processPackages [autotrain-advanced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotrain-advanced-0.7.8.tar.gz tmp/autotrain-advanced-0.7.9.tar.gz --markdown 20240428/a/autotrain-advanced/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-28 18:58:48] INFO root fetch - processPackages [pg8000]: executing diffoscope
+[2024-04-28 18:58:48] INFO root fetch - processPackages [pg8000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg8000-1.9.8.tar.gz tmp/pg8000-1.9.9.tar.gz --markdown 20240428/p/pg8000/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-28 18:58:48] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 18:58:48] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 18:58:48] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 18:58:49] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc1.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - processPackages [lnurl_nostr1]: Remove: archive file [/home/abi/fetcher/tmp/lnurl_nostr1-0.5.0rc2.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - main [MainThread]: End processing [lnurl_nostr1]: success
+[2024-04-28 18:58:49] INFO root fetch - processPackages [pg8000]: Remove: archive file [/home/abi/fetcher/tmp/pg8000-1.9.8.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - processPackages [pg8000]: Remove: archive file [/home/abi/fetcher/tmp/pg8000-1.9.9.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - main [MainThread]: End processing [pg8000]: success
+[2024-04-28 18:58:49] INFO root fetch - processPackages [autotrain-advanced]: Remove: archive file [/home/abi/fetcher/tmp/autotrain-advanced-0.7.8.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - processPackages [autotrain-advanced]: Remove: archive file [/home/abi/fetcher/tmp/autotrain-advanced-0.7.9.tar.gz]
+[2024-04-28 18:58:49] INFO root fetch - main [MainThread]: End processing [autotrain-advanced]: success
+[2024-04-28 18:58:49] INFO root fetch - main [MainThread]: Store serial: [22968238]
