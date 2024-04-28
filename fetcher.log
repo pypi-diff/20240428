@@ -7032,3 +7032,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:06:58] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240428.tar.gz]
 [2024-04-28 10:06:58] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-04-28 10:06:58] INFO root fetch - main [MainThread]: Store serial: [22965071]
+[2024-04-28 10:09:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965071]
+[2024-04-28 10:09:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 10:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynormalizenumexp
+[2024-04-28 10:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PFlowC
+[2024-04-28 10:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: http-sf
+[2024-04-28 10:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thread
+[2024-04-28 10:09:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: typedmongo
+[2024-04-28 10:09:09] INFO root fetch - processPackages [typedmongo]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-28 10:09:09] INFO root fetch - processPackages [pynormalizenumexp]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-28 10:09:09] INFO root fetch - processPackages [typedmongo]: Downloading https://files.pythonhosted.org/packages/59/5f/6670f4f6573752e1c81b8b3c04af86b1140074fa3641de240015b3491dd4/typedmongo-1.0.4.tar.gz
+[2024-04-28 10:09:09] WARNING root fetch - processPackages [PFlowC]: Skipping, unable to determine old version
+[2024-04-28 10:09:09] INFO root fetch - main [MainThread]: End processing [PFlowC] error
+[2024-04-28 10:09:09] INFO root fetch - processPackages [http-sf]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 10:09:09] INFO root fetch - processPackages [thread]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-28 10:09:09] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/7c/7c/2a117685a65fbe5f17d78f6cb6195814385a4cfabcaabef34a1d1734f53a/pynormalizenumexp-0.2.1.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [http-sf]: Downloading https://files.pythonhosted.org/packages/c4/b7/565b4cd18b7f676a868ca9497d5ce1da138013027a60c58d5581086c0e20/http-sf-1.0.1.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [thread]: Downloading https://files.pythonhosted.org/packages/0b/89/1a6052ffc74c87a4154fcd8296953803d8dabdad925ebe63400b438b1946/thread-2.0.0.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [typedmongo]: Downloading https://files.pythonhosted.org/packages/6f/82/f4b9eb709b59a60fc3c040b2f7d1d50aa403d00ff0c5b177253f1bf7959b/typedmongo-1.0.5.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [typedmongo]: executing diffoscope
+[2024-04-28 10:09:09] INFO root fetch - processPackages [typedmongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedmongo-1.0.4.tar.gz tmp/typedmongo-1.0.5.tar.gz --markdown 20240428/t/typedmongo/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-28 10:09:09] INFO root fetch - processPackages [pynormalizenumexp]: Downloading https://files.pythonhosted.org/packages/c9/83/5f317cd6543a3c343e7e772c0cf251b1d9a7aece71adf3ed4eb0975ccacf/pynormalizenumexp-0.3.0.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [http-sf]: Downloading https://files.pythonhosted.org/packages/6b/2a/e53dfcd94e9513f00870ac359612cc84f716f1c92a04355bf2528ce41d23/http_sf-1.0.2.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [thread]: Downloading https://files.pythonhosted.org/packages/e9/d5/c2d3fe94c3921ac1d7c0096155afceacd6675c3eb5be94075a8eada6c2ec/thread-2.0.1.tar.gz
+[2024-04-28 10:09:09] INFO root fetch - processPackages [http-sf]: executing diffoscope
+[2024-04-28 10:09:09] INFO root fetch - processPackages [http-sf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/http-sf-1.0.1.tar.gz tmp/http_sf-1.0.2.tar.gz --markdown 20240428/h/http-sf/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 10:09:09] INFO root fetch - processPackages [pynormalizenumexp]: executing diffoscope
+[2024-04-28 10:09:09] INFO root fetch - processPackages [pynormalizenumexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynormalizenumexp-0.2.1.tar.gz tmp/pynormalizenumexp-0.3.0.tar.gz --markdown 20240428/p/pynormalizenumexp/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-28 10:09:09] INFO root fetch - processPackages [thread]: executing diffoscope
+[2024-04-28 10:09:09] INFO root fetch - processPackages [thread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thread-2.0.0.tar.gz tmp/thread-2.0.1.tar.gz --markdown 20240428/t/thread/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-28 10:09:10] INFO root fetch - processPackages [typedmongo]: Remove: archive file [/home/abi/fetcher/tmp/typedmongo-1.0.4.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - processPackages [typedmongo]: Remove: archive file [/home/abi/fetcher/tmp/typedmongo-1.0.5.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - main [MainThread]: End processing [typedmongo]: success
+[2024-04-28 10:09:10] INFO root fetch - processPackages [http-sf]: Remove: archive file [/home/abi/fetcher/tmp/http-sf-1.0.1.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - processPackages [http-sf]: Remove: archive file [/home/abi/fetcher/tmp/http_sf-1.0.2.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - main [MainThread]: End processing [http-sf]: success
+[2024-04-28 10:09:10] INFO root fetch - processPackages [thread]: Remove: archive file [/home/abi/fetcher/tmp/thread-2.0.0.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - processPackages [thread]: Remove: archive file [/home/abi/fetcher/tmp/thread-2.0.1.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - main [MainThread]: End processing [thread]: success
+[2024-04-28 10:09:10] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.2.1.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - processPackages [pynormalizenumexp]: Remove: archive file [/home/abi/fetcher/tmp/pynormalizenumexp-0.3.0.tar.gz]
+[2024-04-28 10:09:10] INFO root fetch - main [MainThread]: End processing [pynormalizenumexp]: success
+[2024-04-28 10:09:10] INFO root fetch - main [MainThread]: Store serial: [22965090]
