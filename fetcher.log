@@ -6623,3 +6623,41 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:40:57] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-04-28 09:40:57] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-04-28 09:40:57] INFO root fetch - main [MainThread]: Store serial: [22964949]
+[2024-04-28 09:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964949]
+[2024-04-28 09:43:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-28 09:45:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964955]
+[2024-04-28 09:45:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 09:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymesomb
+[2024-04-28 09:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rlanutils
+[2024-04-28 09:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colorful-logging
+[2024-04-28 09:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrogeram
+[2024-04-28 09:45:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: algo-fun-dijkstra
+[2024-04-28 09:45:11] WARNING root fetch - processPackages [rlanutils]: Skipping, unable to determine old version
+[2024-04-28 09:45:11] INFO root fetch - main [MainThread]: End processing [rlanutils] error
+[2024-04-28 09:45:11] INFO root fetch - processPackages [pyrogeram]: New version: [2.0.107] Old Version: [2.0.106]
+[2024-04-28 09:45:11] INFO root fetch - processPackages [colorful-logging]: New version: [0.7] Old Version: [0.6]
+[2024-04-28 09:45:11] INFO root fetch - processPackages [pymesomb]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pyrogeram]: Downloading https://files.pythonhosted.org/packages/ee/8a/ea50e34576b5b85e9032b5a925c4b750af455efc584733323ffca163509c/pyrogeram-2.0.106.tar.gz
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/35/12/6e1e73d237dbcf62f1d88169a4fe19c05eb8b8c5663ae0b15ac7bc7eaaf1/colorful_logging-0.6.tar.gz
+[2024-04-28 09:45:12] WARNING root fetch - processPackages [algo-fun-dijkstra]: Skipping, unable to determine old version
+[2024-04-28 09:45:12] INFO root fetch - main [MainThread]: End processing [algo-fun-dijkstra] error
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pymesomb]: Downloading https://files.pythonhosted.org/packages/a5/87/5aa85ca8732db72408b5203963297964695de62a41f8c2700f69c1673d7e/pymesomb-1.0.3.tar.gz
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pyrogeram]: Downloading https://files.pythonhosted.org/packages/0c/1e/7a0f174833aba670154ea590f99db7b15fcc3963b7bc18a601c0722e590d/pyrogeram-2.0.107.tar.gz
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: Downloading https://files.pythonhosted.org/packages/af/e5/bba4da4eb7a84ee0232765a87e7412785af43063f5a8ab9d9cfa4ccc0a13/colorful_logging-0.7.tar.gz
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: executing diffoscope
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colorful_logging-0.6.tar.gz tmp/colorful_logging-0.7.tar.gz --markdown 20240428/c/colorful-logging/0.6-0.7/README.md --exclude *.pyd
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pymesomb]: Downloading https://files.pythonhosted.org/packages/5e/d8/211445a368ea85d338ef030f5b30e96889d49af4a471a0e93345ad10fee6/pymesomb-1.0.4.tar.gz
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pyrogeram]: executing diffoscope
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pyrogeram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrogeram-2.0.106.tar.gz tmp/pyrogeram-2.0.107.tar.gz --markdown 20240428/p/pyrogeram/2.0.106-2.0.107/README.md --exclude *.pyd
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pymesomb]: executing diffoscope
+[2024-04-28 09:45:12] INFO root fetch - processPackages [pymesomb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymesomb-1.0.3.tar.gz tmp/pymesomb-1.0.4.tar.gz --markdown 20240428/p/pymesomb/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.6.tar.gz]
+[2024-04-28 09:45:12] INFO root fetch - processPackages [colorful-logging]: Remove: archive file [/home/abi/fetcher/tmp/colorful_logging-0.7.tar.gz]
+[2024-04-28 09:45:12] INFO root fetch - main [MainThread]: End processing [colorful-logging]: success
+[2024-04-28 09:45:13] INFO root fetch - processPackages [pymesomb]: Remove: archive file [/home/abi/fetcher/tmp/pymesomb-1.0.3.tar.gz]
+[2024-04-28 09:45:13] INFO root fetch - processPackages [pymesomb]: Remove: archive file [/home/abi/fetcher/tmp/pymesomb-1.0.4.tar.gz]
+[2024-04-28 09:45:13] INFO root fetch - main [MainThread]: End processing [pymesomb]: success
+[2024-04-28 09:45:17] INFO root fetch - processPackages [pyrogeram]: Remove: archive file [/home/abi/fetcher/tmp/pyrogeram-2.0.106.tar.gz]
+[2024-04-28 09:45:17] INFO root fetch - processPackages [pyrogeram]: Remove: archive file [/home/abi/fetcher/tmp/pyrogeram-2.0.107.tar.gz]
+[2024-04-28 09:45:17] INFO root fetch - main [MainThread]: End processing [pyrogeram]: success
+[2024-04-28 09:45:17] INFO root fetch - main [MainThread]: Store serial: [22964972]
