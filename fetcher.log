@@ -2199,3 +2199,24 @@
 [2024-04-28 03:00:32] INFO root fetch - processPackages [openaichatlib]: Remove: archive file [/home/abi/fetcher/tmp/openaichatlib-1.0.6.tar.gz]
 [2024-04-28 03:00:32] INFO root fetch - main [MainThread]: End processing [openaichatlib]: success
 [2024-04-28 03:00:32] INFO root fetch - main [MainThread]: Store serial: [22963109]
+[2024-04-28 03:02:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963109]
+[2024-04-28 03:02:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 03:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-push-notifications
+[2024-04-28 03:02:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kbinxml
+[2024-04-28 03:02:40] INFO root fetch - processPackages [django-push-notifications]: New version: [3.0.3] Old Version: [3.0.2]
+[2024-04-28 03:02:40] INFO root fetch - processPackages [django-push-notifications]: Downloading https://files.pythonhosted.org/packages/98/7d/5f5ac30dfc3ad20a949e6e6258c35c4670eac53df34506bdd47f35501c3a/django-push-notifications-3.0.2.tar.gz
+[2024-04-28 03:02:40] INFO root fetch - processPackages [kbinxml]: New version: [2.1] Old Version: [2.0]
+[2024-04-28 03:02:41] INFO root fetch - processPackages [kbinxml]: Downloading https://files.pythonhosted.org/packages/33/f5/ace184637da74427ac7623c9509fc9bb7a6f11344d9b4e82d87708fb1d3e/kbinxml-2.0.tar.gz
+[2024-04-28 03:02:41] INFO root fetch - processPackages [django-push-notifications]: Downloading https://files.pythonhosted.org/packages/ce/c0/a141bd6b48182fdb188c96d5d0d0a08f5435f9915e40b33393bd88e725dc/django-push-notifications-3.0.3.tar.gz
+[2024-04-28 03:02:41] INFO root fetch - processPackages [django-push-notifications]: executing diffoscope
+[2024-04-28 03:02:41] INFO root fetch - processPackages [django-push-notifications]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-push-notifications-3.0.2.tar.gz tmp/django-push-notifications-3.0.3.tar.gz --markdown 20240428/d/django-push-notifications/3.0.2-3.0.3/README.md --exclude *.pyd
+[2024-04-28 03:02:41] INFO root fetch - processPackages [kbinxml]: Downloading https://files.pythonhosted.org/packages/40/1b/d13df23c922746c39414965ac0b04be9de7bff6431eadd779ac0fa1b1ff3/kbinxml-2.1.tar.gz
+[2024-04-28 03:02:41] INFO root fetch - processPackages [kbinxml]: executing diffoscope
+[2024-04-28 03:02:41] INFO root fetch - processPackages [kbinxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kbinxml-2.0.tar.gz tmp/kbinxml-2.1.tar.gz --markdown 20240428/k/kbinxml/2.0-2.1/README.md --exclude *.pyd
+[2024-04-28 03:02:41] INFO root fetch - processPackages [django-push-notifications]: Remove: archive file [/home/abi/fetcher/tmp/django-push-notifications-3.0.2.tar.gz]
+[2024-04-28 03:02:41] INFO root fetch - processPackages [django-push-notifications]: Remove: archive file [/home/abi/fetcher/tmp/django-push-notifications-3.0.3.tar.gz]
+[2024-04-28 03:02:41] INFO root fetch - main [MainThread]: End processing [django-push-notifications]: success
+[2024-04-28 03:02:42] INFO root fetch - processPackages [kbinxml]: Remove: archive file [/home/abi/fetcher/tmp/kbinxml-2.0.tar.gz]
+[2024-04-28 03:02:42] INFO root fetch - processPackages [kbinxml]: Remove: archive file [/home/abi/fetcher/tmp/kbinxml-2.1.tar.gz]
+[2024-04-28 03:02:42] INFO root fetch - main [MainThread]: End processing [kbinxml]: success
+[2024-04-28 03:02:42] INFO root fetch - main [MainThread]: Store serial: [22963113]
