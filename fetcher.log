@@ -9219,3 +9219,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:41:10] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
 [2024-04-28 12:41:10] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-04-28 12:41:10] INFO root fetch - main [MainThread]: Store serial: [22966080]
+[2024-04-28 12:43:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966080]
+[2024-04-28 12:43:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyPulseHeatPipe
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqt5-qt5-designer
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-copyist
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wttch-train-helper
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: loggingpython
+[2024-04-28 12:43:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: jh2
+[2024-04-28 12:43:18] INFO root fetch - processPackages [pyqt5-qt5-designer]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [PyPulseHeatPipe]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [loggingpython]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/bd/15/081faf5665fdc86be499ccd138ee3fea5ed36a2f5b62b2a84af576321628/pyqt5_qt5_designer-0.0.6.tar.gz
+[2024-04-28 12:43:18] INFO root fetch - processPackages [django-copyist]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [wttch-train-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 12:43:18] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/01/dc/757cfcfef2cd1ac52558aa0cbb82f69dd37c34dc783354e224420121b4ef/PyPulseHeatPipe-1.0.3.tar.gz
+[2024-04-28 12:43:18] WARNING root fetch - processPackages [jh2]: Skipping, unable to determine old version
+[2024-04-28 12:43:18] INFO root fetch - main [MainThread]: End processing [jh2] error
+[2024-04-28 12:43:18] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/10/b3/e54821e1b03030b58397113d0da262c489722cd490ce0b2331243ac4c877/loggingpython-1.4.8.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [django-copyist]: Downloading https://files.pythonhosted.org/packages/bc/1b/16f53e1179204802034635d705370d4a6680dd343acce34306ee9bd05314/django_copyist-0.1.1.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/3b/39/20b37adf77ac5d3a1c29fac307c5b35603437a19b4e9ccfdf3da730c7734/wttch-train-helper-0.0.8.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [PyPulseHeatPipe]: Downloading https://files.pythonhosted.org/packages/5a/f7/fb70c37f4e8bd21e76140568263e3b36a864a801da2f8c883e4d70bf7b60/PyPulseHeatPipe-1.0.4.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [loggingpython]: Downloading https://files.pythonhosted.org/packages/2f/ac/3674366d368315eb59c525fca3daf8d7382cd969b41779ad6807302e60bd/loggingpython-1.4.9.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [pyqt5-qt5-designer]: Downloading https://files.pythonhosted.org/packages/b0/f4/25e8095bfe7c35ebb12d2f4dd139c68337acf5c0f77d7c664dfe19d9a253/pyqt5_qt5_designer-0.0.7.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [PyPulseHeatPipe]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [PyPulseHeatPipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPulseHeatPipe-1.0.3.tar.gz tmp/PyPulseHeatPipe-1.0.4.tar.gz --markdown 20240428/P/PyPulseHeatPipe/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-28 12:43:19] INFO root fetch - processPackages [loggingpython]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [loggingpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loggingpython-1.4.8.tar.gz tmp/loggingpython-1.4.9.tar.gz --markdown 20240428/l/loggingpython/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-28 12:43:19] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/06/f1/4c3862ff8dfa72e0261e6a5f5e8fb8722a335c9adec2134db760cf92c16a/wttch-train-helper-0.0.9.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [django-copyist]: Downloading https://files.pythonhosted.org/packages/eb/0b/15afaed93ff30b1b8fb491bbe6e6444c22bbc0ba4e0aee9493203d1b86fe/django_copyist-0.1.2.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [pyqt5-qt5-designer]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [pyqt5-qt5-designer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_qt5_designer-0.0.6.tar.gz tmp/pyqt5_qt5_designer-0.0.7.tar.gz --markdown 20240428/p/pyqt5-qt5-designer/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 12:43:19] INFO root fetch - processPackages [wttch-train-helper]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [wttch-train-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wttch-train-helper-0.0.8.tar.gz tmp/wttch-train-helper-0.0.9.tar.gz --markdown 20240428/w/wttch-train-helper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 12:43:19] INFO root fetch - processPackages [django-copyist]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [django-copyist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_copyist-0.1.1.tar.gz tmp/django_copyist-0.1.2.tar.gz --markdown 20240428/d/django-copyist/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-28 12:43:19] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-28 12:43:19] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-28 12:43:19] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240428/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-28 12:43:20] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.8.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - processPackages [loggingpython]: Remove: archive file [/home/abi/fetcher/tmp/loggingpython-1.4.9.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - main [MainThread]: End processing [loggingpython]: success
+[2024-04-28 12:43:20] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.3.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - processPackages [PyPulseHeatPipe]: Remove: archive file [/home/abi/fetcher/tmp/PyPulseHeatPipe-1.0.4.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - main [MainThread]: End processing [PyPulseHeatPipe]: success
+[2024-04-28 12:43:20] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.8.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.9.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - main [MainThread]: End processing [wttch-train-helper]: success
+[2024-04-28 12:43:20] INFO root fetch - processPackages [django-copyist]: Remove: archive file [/home/abi/fetcher/tmp/django_copyist-0.1.1.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - processPackages [django-copyist]: Remove: archive file [/home/abi/fetcher/tmp/django_copyist-0.1.2.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - main [MainThread]: End processing [django-copyist]: success
+[2024-04-28 12:43:20] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.6.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - processPackages [pyqt5-qt5-designer]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_qt5_designer-0.0.7.tar.gz]
+[2024-04-28 12:43:20] INFO root fetch - main [MainThread]: End processing [pyqt5-qt5-designer]: success
+[2024-04-28 12:43:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-28 12:43:30] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-28 12:43:30] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-28 12:43:30] INFO root fetch - main [MainThread]: Store serial: [22966104]
