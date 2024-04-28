@@ -13522,3 +13522,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:46:26] INFO root fetch - processPackages [pyams-app-msc]: Remove: archive file [/home/abi/fetcher/tmp/pyams_app_msc-1.99.2.tar.gz]
 [2024-04-28 17:46:26] INFO root fetch - main [MainThread]: End processing [pyams-app-msc]: success
 [2024-04-28 17:46:26] INFO root fetch - main [MainThread]: Store serial: [22967830]
+[2024-04-28 17:48:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967830]
+[2024-04-28 17:48:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 17:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-transformation-yfhsi
+[2024-04-28 17:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsugu
+[2024-04-28 17:48:36] INFO root fetch - processPackages [data-transformation-yfhsi]: New version: [0.9.1a0] Old Version: [0.8.1a0]
+[2024-04-28 17:48:36] INFO root fetch - processPackages [tsugu]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-04-28 17:48:37] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/6c/ba/28212dc17848f4491d81bef68d4c6bbf3f576e918e20f497967a893b172a/data_transformation_yfhsi-0.8.1a0.tar.gz
+[2024-04-28 17:48:37] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/fd/bf/b1818c0c3cb8d876d7c416c6181849439e82da68eff041c9cc9222236d64/tsugu-0.5.6.tar.gz
+[2024-04-28 17:48:37] INFO root fetch - processPackages [data-transformation-yfhsi]: Downloading https://files.pythonhosted.org/packages/12/dd/094122b4efa2162e4e18ac7e3ca5a91169f04eb59642e64f8fac1f495a3e/data_transformation_yfhsi-0.9.1a0.tar.gz
+[2024-04-28 17:48:37] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/6c/2d/9f63c7bbdbd7b38e26d51f78f41a9fbb5a0a64cb0cf5d3889272b573ceba/tsugu-0.5.7.tar.gz
+[2024-04-28 17:48:37] INFO root fetch - processPackages [data-transformation-yfhsi]: executing diffoscope
+[2024-04-28 17:48:37] INFO root fetch - processPackages [data-transformation-yfhsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_yfhsi-0.8.1a0.tar.gz tmp/data_transformation_yfhsi-0.9.1a0.tar.gz --markdown 20240428/d/data-transformation-yfhsi/0.8.1a0-0.9.1a0/README.md --exclude *.pyd
+[2024-04-28 17:48:37] INFO root fetch - processPackages [tsugu]: executing diffoscope
+[2024-04-28 17:48:37] INFO root fetch - processPackages [tsugu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-0.5.6.tar.gz tmp/tsugu-0.5.7.tar.gz --markdown 20240428/t/tsugu/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-04-28 17:48:38] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.5.6.tar.gz]
+[2024-04-28 17:48:38] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.5.7.tar.gz]
+[2024-04-28 17:48:38] INFO root fetch - main [MainThread]: End processing [tsugu]: success
+[2024-04-28 17:48:38] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.8.1a0.tar.gz]
+[2024-04-28 17:48:38] INFO root fetch - processPackages [data-transformation-yfhsi]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_yfhsi-0.9.1a0.tar.gz]
+[2024-04-28 17:48:38] INFO root fetch - main [MainThread]: End processing [data-transformation-yfhsi]: success
+[2024-04-28 17:48:38] INFO root fetch - main [MainThread]: Store serial: [22967836]
