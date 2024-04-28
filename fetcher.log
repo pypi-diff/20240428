@@ -21192,3 +21192,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 23:39:41] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.1.8.tar.gz]
 [2024-04-28 23:39:41] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-28 23:39:41] INFO root fetch - main [MainThread]: Store serial: [22971028]
+[2024-04-28 23:41:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22971028]
+[2024-04-28 23:41:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 23:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assetuniverse
+[2024-04-28 23:41:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wood-nano
+[2024-04-28 23:41:50] INFO root fetch - processPackages [assetuniverse]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 23:41:50] INFO root fetch - processPackages [wood-nano]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-28 23:41:50] INFO root fetch - processPackages [assetuniverse]: Downloading https://files.pythonhosted.org/packages/ab/7c/23a8e1beb4f4f8aa971759770c2ded4c073525adcd06c62c294621813450/assetuniverse-0.1.0.tar.gz
+[2024-04-28 23:41:50] INFO root fetch - processPackages [wood-nano]: Downloading https://files.pythonhosted.org/packages/70/92/eb6f39a797a516d7c6888f0cb7e4e66e991f210b85213f44b013643068d0/wood_nano-0.0.7-cp39-cp39-win_amd64.whl
+[2024-04-28 23:41:51] INFO root fetch - processPackages [assetuniverse]: Downloading https://files.pythonhosted.org/packages/2f/30/2cffe224c6343e3421f0cf2dcad6b59450c362d08f5f1fcefbdfea72c894/assetuniverse-0.1.1.tar.gz
+[2024-04-28 23:41:51] INFO root fetch - processPackages [assetuniverse]: executing diffoscope
+[2024-04-28 23:41:51] INFO root fetch - processPackages [assetuniverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assetuniverse-0.1.0.tar.gz tmp/assetuniverse-0.1.1.tar.gz --markdown 20240428/a/assetuniverse/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 23:41:51] INFO root fetch - processPackages [wood-nano]: Downloading https://files.pythonhosted.org/packages/c7/ae/f89281e91778f4d3767b32c67714445ae85a9cb78d02afad45892e8b40a7/wood_nano-0.0.8-cp39-cp39-win_amd64.whl
+[2024-04-28 23:41:51] INFO root fetch - processPackages [assetuniverse]: Remove: archive file [/home/abi/fetcher/tmp/assetuniverse-0.1.0.tar.gz]
+[2024-04-28 23:41:51] INFO root fetch - processPackages [assetuniverse]: Remove: archive file [/home/abi/fetcher/tmp/assetuniverse-0.1.1.tar.gz]
+[2024-04-28 23:41:51] INFO root fetch - main [MainThread]: End processing [assetuniverse]: success
+[2024-04-28 23:41:52] INFO root fetch - processPackages [wood-nano]: executing diffoscope
+[2024-04-28 23:41:52] INFO root fetch - processPackages [wood-nano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wood_nano-0.0.7-cp39-cp39-win_amd64.whl.zip tmp/wood_nano-0.0.8-cp39-cp39-win_amd64.whl.zip --markdown 20240428/w/wood-nano/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-28 23:41:52] INFO root fetch - processPackages [wood-nano]: Remove: archive file [/home/abi/fetcher/tmp/wood_nano-0.0.7-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 23:41:52] INFO root fetch - processPackages [wood-nano]: Remove: archive file [/home/abi/fetcher/tmp/wood_nano-0.0.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-28 23:41:52] INFO root fetch - main [MainThread]: End processing [wood-nano]: success
+[2024-04-28 23:41:52] INFO root fetch - main [MainThread]: Store serial: [22971031]
