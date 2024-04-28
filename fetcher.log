@@ -15980,3 +15980,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:37:53] INFO root fetch - processPackages [stack-overflow-watchman]: Remove: archive file [/home/abi/fetcher/tmp/stack_overflow_watchman-1.0.0.tar.gz]
 [2024-04-28 20:37:53] INFO root fetch - main [MainThread]: End processing [stack-overflow-watchman]: success
 [2024-04-28 20:37:53] INFO root fetch - main [MainThread]: Store serial: [22968875]
+[2024-04-28 20:39:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968875]
+[2024-04-28 20:40:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 20:40:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: database-automation-test
+[2024-04-28 20:40:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvisjs
+[2024-04-28 20:40:02] WARNING root fetch - processPackages [database-automation-test]: Skipping, unable to determine old version
+[2024-04-28 20:40:02] INFO root fetch - main [MainThread]: End processing [database-automation-test] error
+[2024-04-28 20:40:02] INFO root fetch - processPackages [pyvisjs]: New version: [0.0.0.dev6] Old Version: [0.0.0.dev5]
+[2024-04-28 20:40:02] INFO root fetch - processPackages [pyvisjs]: Downloading https://files.pythonhosted.org/packages/a8/8f/2c60a2bee9f075afe4ba7fd17e4445f41c150f43a332dae913dbd8ad77b2/pyvisjs-0.0.0.dev5.tar.gz
+[2024-04-28 20:40:02] INFO root fetch - processPackages [pyvisjs]: Downloading https://files.pythonhosted.org/packages/0b/fa/3da5d99b7acb90a247f0a5acf399ad1db15873c3e8b4bce2f072377648f1/pyvisjs-0.0.0.dev6.tar.gz
+[2024-04-28 20:40:02] INFO root fetch - processPackages [pyvisjs]: executing diffoscope
+[2024-04-28 20:40:02] INFO root fetch - processPackages [pyvisjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvisjs-0.0.0.dev5.tar.gz tmp/pyvisjs-0.0.0.dev6.tar.gz --markdown 20240428/p/pyvisjs/0.0.0.dev5-0.0.0.dev6/README.md --exclude *.pyd
+[2024-04-28 20:40:03] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev5.tar.gz]
+[2024-04-28 20:40:03] INFO root fetch - processPackages [pyvisjs]: Remove: archive file [/home/abi/fetcher/tmp/pyvisjs-0.0.0.dev6.tar.gz]
+[2024-04-28 20:40:03] INFO root fetch - main [MainThread]: End processing [pyvisjs]: success
+[2024-04-28 20:40:03] INFO root fetch - main [MainThread]: Store serial: [22968885]
