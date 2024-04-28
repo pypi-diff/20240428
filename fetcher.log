@@ -12093,3 +12093,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:03:17] INFO root fetch - processPackages [python-gemini-api]: Remove: archive file [/home/abi/fetcher/tmp/python_gemini_api-2.4.8.tar.gz]
 [2024-04-28 16:03:17] INFO root fetch - main [MainThread]: End processing [python-gemini-api]: success
 [2024-04-28 16:03:17] INFO root fetch - main [MainThread]: Store serial: [22967287]
+[2024-04-28 16:05:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967287]
+[2024-04-28 16:05:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 16:05:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fontfinder
+[2024-04-28 16:05:38] INFO root fetch - processPackages [fontfinder]: New version: [0.11.0] Old Version: [0.10.0]
+[2024-04-28 16:05:38] INFO root fetch - processPackages [fontfinder]: Downloading https://files.pythonhosted.org/packages/b6/94/69ce3e33d7c4e04d11f16631f9ea2ae0f035f9cd8e170e559560cb8fdb79/fontfinder-0.10.0.tar.gz
+[2024-04-28 16:05:38] INFO root fetch - processPackages [fontfinder]: Downloading https://files.pythonhosted.org/packages/db/b4/8f355769c7ee289e398d25ea2bf901eefe795d4d37d1c2320ad9e9911200/fontfinder-0.11.0.tar.gz
+[2024-04-28 16:05:38] INFO root fetch - processPackages [fontfinder]: executing diffoscope
+[2024-04-28 16:05:38] INFO root fetch - processPackages [fontfinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fontfinder-0.10.0.tar.gz tmp/fontfinder-0.11.0.tar.gz --markdown 20240428/f/fontfinder/0.10.0-0.11.0/README.md --exclude *.pyd
+[2024-04-28 16:05:39] INFO root fetch - processPackages [fontfinder]: Remove: archive file [/home/abi/fetcher/tmp/fontfinder-0.10.0.tar.gz]
+[2024-04-28 16:05:39] INFO root fetch - processPackages [fontfinder]: Remove: archive file [/home/abi/fetcher/tmp/fontfinder-0.11.0.tar.gz]
+[2024-04-28 16:05:39] INFO root fetch - main [MainThread]: End processing [fontfinder]: success
+[2024-04-28 16:05:39] INFO root fetch - main [MainThread]: Store serial: [22967290]
