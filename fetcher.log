@@ -7761,3 +7761,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 10:58:02] INFO root fetch - processPackages [llama-index]: Remove: archive file [/home/abi/fetcher/tmp/llama_index-0.9.9.tar.gz]
 [2024-04-28 10:58:02] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2024-04-28 10:58:02] INFO root fetch - main [MainThread]: Store serial: [22965490]
+[2024-04-28 11:00:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965490]
+[2024-04-28 11:00:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 11:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tui-dsmt
+[2024-04-28 11:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: huojiweiguoba
+[2024-04-28 11:00:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-scheduler
+[2024-04-28 11:00:12] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 11:00:12] INFO root fetch - processPackages [tui-dsmt]: New version: [202404280836] Old Version: [202404241230]
+[2024-04-28 11:00:12] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/29/d7/2562acd6436bd3daaae39ecb847463a40380b390735f9683b13734ac717f/tui_dsmt-202404241230.tar.gz
+[2024-04-28 11:00:12] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 11:00:12] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.3.6] Old Version: [1.0.3.5]
+[2024-04-28 11:00:13] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 11:00:13] INFO root fetch - processPackages [tui-dsmt]: Downloading https://files.pythonhosted.org/packages/4c/ef/ffcedb84a35879d09252dcfee650ee1de29187962e8b73d8cb510aabbfc4/tui_dsmt-202404280836.tar.gz
+[2024-04-28 11:00:13] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/b8/76/bd9c2f36e6d5c9dc9c1242e4c32814be0bfcdde46e77f1dd95bd9e6626d6/mns-scheduler-1.0.3.5.tar.gz
+[2024-04-28 11:00:13] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 11:00:13] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 11:00:13] INFO root fetch - processPackages [tui-dsmt]: executing diffoscope
+[2024-04-28 11:00:13] INFO root fetch - processPackages [tui-dsmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsmt-202404241230.tar.gz tmp/tui_dsmt-202404280836.tar.gz --markdown 20240428/t/tui-dsmt/202404241230-202404280836/README.md --exclude *.pyd
+[2024-04-28 11:00:13] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/4f/0a/423db5c2e39ef8c66d465f74c930e7003952827ca831042842792cb368ef/mns_scheduler-1.0.3.6-py3-none-any.whl
+[2024-04-28 11:00:13] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-28 11:00:13] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.3.5.tar.gz tmp/mns_scheduler-1.0.3.6-py3-none-any.whl.zip --markdown 20240428/m/mns-scheduler/1.0.3.5-1.0.3.6/README.md --exclude *.pyd
+[2024-04-28 11:00:13] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 11:00:13] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 11:00:13] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 11:00:13] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404241230.tar.gz]
+[2024-04-28 11:00:13] INFO root fetch - processPackages [tui-dsmt]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsmt-202404280836.tar.gz]
+[2024-04-28 11:00:13] INFO root fetch - main [MainThread]: End processing [tui-dsmt]: success
+[2024-04-28 11:00:14] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.5.tar.gz]
+[2024-04-28 11:00:14] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns_scheduler-1.0.3.6-py3-none-any.whl.zip]
+[2024-04-28 11:00:14] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-28 11:00:14] INFO root fetch - main [MainThread]: Store serial: [22965498]
