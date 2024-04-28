@@ -17754,3 +17754,81 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:18:31] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.6.tar.gz]
 [2024-04-28 22:18:31] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
 [2024-04-28 22:18:31] INFO root fetch - main [MainThread]: Store serial: [22969860]
+[2024-04-28 22:20:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969860]
+[2024-04-28 22:20:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blinker
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epimodel-sensitivity-test
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sim_rl
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: accmt-cli
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-dans-api-toolkit
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-contrib-core
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flet-contrib-embed
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flet-contrib-pyodide
+[2024-04-28 22:20:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flet-contrib-runtime
+[2024-04-28 22:20:42] INFO root fetch - processPackages [epimodel-sensitivity-test]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [django-dans-api-toolkit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-core]: New version: [2024.4.27.2315] Old Version: [2024.4.27.2303]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [sim_rl]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-runtime]: New version: [2024.4.27.2315] Old Version: [2024.4.27.2303]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-embed]: New version: [2024.4.27.2315] Old Version: [2024.4.27.2303]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-pyodide]: New version: [2024.4.27.2315] Old Version: [2024.4.27.2303]
+[2024-04-28 22:20:42] WARNING root fetch - processPackages [accmt-cli]: Skipping, unable to determine old version
+[2024-04-28 22:20:42] INFO root fetch - main [MainThread]: End processing [accmt-cli] error
+[2024-04-28 22:20:42] INFO root fetch - processPackages [blinker]: New version: [1.8.1] Old Version: [1.8.0]
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/6a/ae/4063bb0d4f01ab07536f7b9e360963e5e0e7a0413317e158e2b439f1c698/flet_contrib_core-2024.4.27.2303.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/39/05/cafcebb036229fd0ae6eafa1f0ba99347a41e39716d415910daff771e9c9/sim_rl-0.1.6.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [epimodel-sensitivity-test]: Downloading https://files.pythonhosted.org/packages/97/b5/612459830975178bae417c2c62e6100b2ebc512c902f49543b8fd6eddb6c/epimodel_sensitivity_test-0.1.2.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/fe/e4/4f91833fe816bf8e550cbafe2affecaaa7fd8a3874ebc50f01588c1a2d24/flet_contrib_embed-2024.4.27.2303.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/1c/33/620864ef9f1d48af04737c68f6addbfee6afddd875ffbd94020d8649995d/django-dans-api-toolkit-0.1.8.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/8d/96/ebebbcd9454f4848fd5e7e1d9e311b86f2410480569521815ea97d87dbe4/flet_contrib_pyodide-2024.4.27.2303.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/47/36/18e7db35f7c767f4ff8b9800061cf9a74fb73ad45dabd6b0aea57ca05429/flet_contrib_runtime-2024.4.27.2303.tar.gz
+[2024-04-28 22:20:42] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/4e/de/df5112127fdb2d0ebfd64e506bee284581bbde969d1639cbb0288735af54/blinker-1.8.0.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [epimodel-sensitivity-test]: Downloading https://files.pythonhosted.org/packages/ed/04/f71f478d9acdd38e03fe4e4b74c31c91d88238dfed8d240d7a7f03285b56/epimodel_sensitivity_test-0.1.3.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-embed]: Downloading https://files.pythonhosted.org/packages/27/a6/af280bd650db1b07663fc752b4e46b6cba65e68a18ecbf317af91cdd3d77/flet_contrib_embed-2024.4.27.2315.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [epimodel-sensitivity-test]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [epimodel-sensitivity-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epimodel_sensitivity_test-0.1.2.tar.gz tmp/epimodel_sensitivity_test-0.1.3.tar.gz --markdown 20240428/e/epimodel-sensitivity-test/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-core]: Downloading https://files.pythonhosted.org/packages/5d/07/7e9fd82d5de3310a783ef866e1603d86146c503d361013092e249e4abf85/flet_contrib_core-2024.4.27.2315.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-pyodide]: Downloading https://files.pythonhosted.org/packages/58/11/1082c666d683f5237bd55f916888040becaee82b968d109a54500f186af7/flet_contrib_pyodide-2024.4.27.2315.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [django-dans-api-toolkit]: Downloading https://files.pythonhosted.org/packages/a7/0c/2adbc7375f56e19cfcbfe2fe3bf548e019ddf82f6b41242329420172762f/django-dans-api-toolkit-0.1.9.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-runtime]: Downloading https://files.pythonhosted.org/packages/07/c2/1198bcd5363dbb66bfb4d2e0c58845165eb055b8ac8ab2fb01649fb37ecf/flet_contrib_runtime-2024.4.27.2315.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [blinker]: Downloading https://files.pythonhosted.org/packages/06/7a/876838c7a478e3a487fb890c821ded320a321a56471bb2c751b566b84767/blinker-1.8.1.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [sim_rl]: Downloading https://files.pythonhosted.org/packages/79/63/fe6abc8a2c63394884a8c65ff61e0d0f64c305c22ac72fa90f11637f5681/sim_rl-0.1.7.tar.gz
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-embed]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_embed-2024.4.27.2303.tar.gz tmp/flet_contrib_embed-2024.4.27.2315.tar.gz --markdown 20240428/f/flet-contrib-embed/2024.4.27.2303-2024.4.27.2315/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [django-dans-api-toolkit]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [django-dans-api-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dans-api-toolkit-0.1.8.tar.gz tmp/django-dans-api-toolkit-0.1.9.tar.gz --markdown 20240428/d/django-dans-api-toolkit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-pyodide]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-pyodide]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_pyodide-2024.4.27.2303.tar.gz tmp/flet_contrib_pyodide-2024.4.27.2315.tar.gz --markdown 20240428/f/flet-contrib-pyodide/2024.4.27.2303-2024.4.27.2315/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-runtime]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_runtime-2024.4.27.2303.tar.gz tmp/flet_contrib_runtime-2024.4.27.2315.tar.gz --markdown 20240428/f/flet-contrib-runtime/2024.4.27.2303-2024.4.27.2315/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [blinker]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [blinker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blinker-1.8.0.tar.gz tmp/blinker-1.8.1.tar.gz --markdown 20240428/b/blinker/1.8.0-1.8.1/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-core]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [flet-contrib-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_contrib_core-2024.4.27.2303.tar.gz tmp/flet_contrib_core-2024.4.27.2315.tar.gz --markdown 20240428/f/flet-contrib-core/2024.4.27.2303-2024.4.27.2315/README.md --exclude *.pyd
+[2024-04-28 22:20:43] INFO root fetch - processPackages [sim_rl]: executing diffoscope
+[2024-04-28 22:20:43] INFO root fetch - processPackages [sim_rl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sim_rl-0.1.6.tar.gz tmp/sim_rl-0.1.7.tar.gz --markdown 20240428/s/sim_rl/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.2303.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-embed]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_embed-2024.4.27.2315.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [flet-contrib-embed]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.8.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [django-dans-api-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/django-dans-api-toolkit-0.1.9.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [django-dans-api-toolkit]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [epimodel-sensitivity-test]: Remove: archive file [/home/abi/fetcher/tmp/epimodel_sensitivity_test-0.1.2.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [epimodel-sensitivity-test]: Remove: archive file [/home/abi/fetcher/tmp/epimodel_sensitivity_test-0.1.3.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [epimodel-sensitivity-test]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2303.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-pyodide]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_pyodide-2024.4.27.2315.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [flet-contrib-pyodide]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [blinker]: Remove: archive file [/home/abi/fetcher/tmp/blinker-1.8.0.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [blinker]: Remove: archive file [/home/abi/fetcher/tmp/blinker-1.8.1.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [blinker]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2303.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-runtime]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_runtime-2024.4.27.2315.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [flet-contrib-runtime]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2303.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [flet-contrib-core]: Remove: archive file [/home/abi/fetcher/tmp/flet_contrib_core-2024.4.27.2315.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [flet-contrib-core]: success
+[2024-04-28 22:20:44] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.6.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - processPackages [sim_rl]: Remove: archive file [/home/abi/fetcher/tmp/sim_rl-0.1.7.tar.gz]
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: End processing [sim_rl]: success
+[2024-04-28 22:20:44] INFO root fetch - main [MainThread]: Store serial: [22969887]
