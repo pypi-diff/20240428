@@ -8332,3 +8332,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:31:03] INFO root fetch - processPackages [sferriol-python]: Remove: archive file [/home/abi/fetcher/tmp/sferriol_python-0.5.0.tar.gz]
 [2024-04-28 11:31:03] INFO root fetch - main [MainThread]: End processing [sferriol-python]: success
 [2024-04-28 11:31:03] INFO root fetch - main [MainThread]: Store serial: [22965727]
+[2024-04-28 11:33:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965727]
+[2024-04-28 11:33:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 11:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avtdl
+[2024-04-28 11:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-model-manager
+[2024-04-28 11:33:12] INFO root fetch - processPackages [avtdl]: New version: [0.9.9] Old Version: [0.9.16]
+[2024-04-28 11:33:12] INFO root fetch - processPackages [torch-model-manager]: New version: [0.0.7] Old Version: [0.0.6.dev9]
+[2024-04-28 11:33:12] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/fb/38/ebbf0a3f271716285cbf5f1a51652860a34f4fc9db1dc0918c5c735c1f6b/avtdl-0.9.16.tar.gz
+[2024-04-28 11:33:12] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/2c/8e/04077c3ee6e8e2b9dd750c54f8bbf16c43024ebecc2e6ad18b233d172815/torch_model_manager-0.0.6.dev9.tar.gz
+[2024-04-28 11:33:12] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/2c/ab/0cf52ff7a2370b04b213058147809db8df547a0a801414bd834998039e8f/torch_model_manager-0.0.7.tar.gz
+[2024-04-28 11:33:12] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/57/f2/1b50ba48422edde9ac3e722c752a043bd064d5f016c1630c297bb7c31684/avtdl-0.9.9.tar.gz
+[2024-04-28 11:33:12] INFO root fetch - processPackages [avtdl]: executing diffoscope
+[2024-04-28 11:33:12] INFO root fetch - processPackages [avtdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avtdl-0.9.16.tar.gz tmp/avtdl-0.9.9.tar.gz --markdown 20240428/a/avtdl/0.9.16-0.9.9/README.md --exclude *.pyd
+[2024-04-28 11:33:12] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-04-28 11:33:12] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.0.6.dev9.tar.gz tmp/torch_model_manager-0.0.7.tar.gz --markdown 20240428/t/torch-model-manager/0.0.6.dev9-0.0.7/README.md --exclude *.pyd
+[2024-04-28 11:33:13] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.6.dev9.tar.gz]
+[2024-04-28 11:33:13] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.0.7.tar.gz]
+[2024-04-28 11:33:13] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-04-28 11:33:13] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.16.tar.gz]
+[2024-04-28 11:33:13] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
+[2024-04-28 11:33:13] INFO root fetch - main [MainThread]: End processing [avtdl]: success
+[2024-04-28 11:33:13] INFO root fetch - main [MainThread]: Store serial: [22965733]
