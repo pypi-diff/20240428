@@ -9962,3 +9962,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:24:13] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.4.3-cp39-cp39-win_amd64.whl.zip]
 [2024-04-28 13:24:13] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-04-28 13:24:13] INFO root fetch - main [MainThread]: Store serial: [22966381]
+[2024-04-28 13:26:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966381]
+[2024-04-28 13:26:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 13:26:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchx-nightly
+[2024-04-28 13:26:28] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.4.28] Old Version: [2024.4.27]
+[2024-04-28 13:26:28] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/31/80/0ebe641b178f76b51865447b390f4cd87650df1cd843739d0308b1d532ab/torchx_nightly-2024.4.27-py3-none-any.whl
+[2024-04-28 13:26:29] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/da/57/8a4c56d6cd54fe0d6c7147a76596c526f05045fd0a6fb086457cebce3f30/torchx_nightly-2024.4.28-py3-none-any.whl
+[2024-04-28 13:26:29] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-04-28 13:26:29] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.4.27-py3-none-any.whl.zip tmp/torchx_nightly-2024.4.28-py3-none-any.whl.zip --markdown 20240428/t/torchx-nightly/2024.4.27-2024.4.28/README.md --exclude *.pyd
+[2024-04-28 13:26:30] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.27-py3-none-any.whl.zip]
+[2024-04-28 13:26:30] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.28-py3-none-any.whl.zip]
+[2024-04-28 13:26:30] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-04-28 13:26:30] INFO root fetch - main [MainThread]: Store serial: [22966386]
