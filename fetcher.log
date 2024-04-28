@@ -13326,3 +13326,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 17:33:22] INFO root fetch - processPackages [pyams-content]: Remove: archive file [/home/abi/fetcher/tmp/pyams_content-1.99.2.tar.gz]
 [2024-04-28 17:33:22] INFO root fetch - main [MainThread]: End processing [pyams-content]: success
 [2024-04-28 17:33:22] INFO root fetch - main [MainThread]: Store serial: [22967765]
+[2024-04-28 17:35:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967765]
+[2024-04-28 17:35:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-gadzooks
+[2024-04-28 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhasura
+[2024-04-28 17:35:32] INFO root fetch - processPackages [py-gadzooks]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-28 17:35:32] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 17:35:32] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-04-28 17:35:32] INFO root fetch - processPackages [py-gadzooks]: Downloading https://files.pythonhosted.org/packages/0c/22/d100350871d55228a66a5189fb88793203d328c27515caae89c6116aa022/py_gadzooks-0.2.1.tar.gz
+[2024-04-28 17:35:33] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-04-28 17:35:33] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-04-28 17:35:33] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240428/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 17:35:33] INFO root fetch - processPackages [py-gadzooks]: Downloading https://files.pythonhosted.org/packages/67/fb/284e67c7d831b81143d8c3bab4b069be25279ebfeb3f34242191b002b2d9/py_gadzooks-0.2.2.tar.gz
+[2024-04-28 17:35:33] INFO root fetch - processPackages [py-gadzooks]: executing diffoscope
+[2024-04-28 17:35:33] INFO root fetch - processPackages [py-gadzooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_gadzooks-0.2.1.tar.gz tmp/py_gadzooks-0.2.2.tar.gz --markdown 20240428/p/py-gadzooks/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-28 17:35:33] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-04-28 17:35:33] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-04-28 17:35:33] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-04-28 17:35:33] INFO root fetch - processPackages [py-gadzooks]: Remove: archive file [/home/abi/fetcher/tmp/py_gadzooks-0.2.1.tar.gz]
+[2024-04-28 17:35:33] INFO root fetch - processPackages [py-gadzooks]: Remove: archive file [/home/abi/fetcher/tmp/py_gadzooks-0.2.2.tar.gz]
+[2024-04-28 17:35:33] INFO root fetch - main [MainThread]: End processing [py-gadzooks]: success
+[2024-04-28 17:35:33] INFO root fetch - main [MainThread]: Store serial: [22967771]
