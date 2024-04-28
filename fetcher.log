@@ -19221,3 +19221,78 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:47:28] INFO root fetch - processPackages [tencentcloud-sdk-python-emr]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-emr-3.0.999.tar.gz]
 [2024-04-28 22:47:28] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-emr]: success
 [2024-04-28 22:47:28] INFO root fetch - main [MainThread]: Store serial: [22970353]
+[2024-04-28 22:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22970353]
+[2024-04-28 22:49:37] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scatcluster
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lektor-chameleon
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiida-mlip
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyGEL3D
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cocoon-data
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tencentcloud-sdk-python-ess
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tencentcloud-sdk-python-essbasic
+[2024-04-28 22:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tencentcloud-sdk-python-facefusion
+[2024-04-28 22:49:37] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [lektor-chameleon]: New version: [0.9] Old Version: [0.8]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [aiida-mlip]: New version: [0.1.0b0] Old Version: [0.1.0a1]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [PyGEL3D]: New version: [0.5.2] Old Version: [0.4.5]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 22:49:37] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:49:37] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [lektor-chameleon]: Downloading https://files.pythonhosted.org/packages/d6/82/8a4e111725989e2fa36f7c20fd712ee128c6f78c130fb3ebc1f1eb1336a7/lektor_chameleon-0.8.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [aiida-mlip]: Downloading https://files.pythonhosted.org/packages/b5/c9/8706e29786a6e41c968bd959749f1e4d6d160f8b4f956959f1cbf92aeeb6/aiida_mlip-0.1.0a1.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: New version: [3.0.999] Old Version: [3.0.998]
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: Downloading https://files.pythonhosted.org/packages/39/78/833bd063a50a5d14f87c4c81faa9cce750a898d0679062fd52efb2ccaa5f/tencentcloud-sdk-python-essbasic-3.0.998.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: Downloading https://files.pythonhosted.org/packages/bf/f5/add32b3e80dc7dc9a3231e6f4b700ea05e62b2ee607c852314e27ed25256/tencentcloud-sdk-python-ess-3.0.998.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [PyGEL3D]: Downloading https://files.pythonhosted.org/packages/b1/50/6a0e9af7c8ff9bb3b6d4730b5307cff3b00eb56701c5644f0a9fb7bf9928/PyGEL3D-0.4.5-py3-none-any.whl
+[2024-04-28 22:49:38] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: Downloading https://files.pythonhosted.org/packages/3a/ac/ceefd2d4095b5ccfb82ac04d30f89ff4e1c44804d09b08595c6ace4e3b0a/tencentcloud-sdk-python-facefusion-3.0.998.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240428/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [lektor-chameleon]: Downloading https://files.pythonhosted.org/packages/2e/46/a7389c5eec80be133307e37a1903ac1a87fc0368dd531bf483d6e5f16908/lektor_chameleon-0.9.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [aiida-mlip]: Downloading https://files.pythonhosted.org/packages/6c/94/ecf92bdcd6c2381f95807f579bcc78dfcd76829c488d1d2eb1e8d639d1d5/aiida_mlip-0.1.0b0.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: Downloading https://files.pythonhosted.org/packages/a4/41/54f869016ef207d3049a1090a7e4726157aace5ae633618e05b3d6f17a99/tencentcloud-sdk-python-ess-3.0.999.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: Downloading https://files.pythonhosted.org/packages/86/59/2fe92dc83bfc84eb92e2926dc01e53bb79148f4c8ba9c3601d478f91fe4d/tencentcloud-sdk-python-essbasic-3.0.999.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [lektor-chameleon]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [lektor-chameleon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lektor_chameleon-0.8.tar.gz tmp/lektor_chameleon-0.9.tar.gz --markdown 20240428/l/lektor-chameleon/0.8-0.9/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [aiida-mlip]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [aiida-mlip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiida_mlip-0.1.0a1.tar.gz tmp/aiida_mlip-0.1.0b0.tar.gz --markdown 20240428/a/aiida-mlip/0.1.0a1-0.1.0b0/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: Downloading https://files.pythonhosted.org/packages/49/0f/2e1f2e03e6d1489e44aba85c8ef60c839fca4f8539c0061149b83e63661d/tencentcloud-sdk-python-facefusion-3.0.999.tar.gz
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-ess-3.0.998.tar.gz tmp/tencentcloud-sdk-python-ess-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-ess/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-essbasic-3.0.998.tar.gz tmp/tencentcloud-sdk-python-essbasic-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-essbasic/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: executing diffoscope
+[2024-04-28 22:49:38] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-facefusion-3.0.998.tar.gz tmp/tencentcloud-sdk-python-facefusion-3.0.999.tar.gz --markdown 20240428/t/tencentcloud-sdk-python-facefusion/3.0.998-3.0.999/README.md --exclude *.pyd
+[2024-04-28 22:49:39] INFO root fetch - processPackages [PyGEL3D]: Downloading https://files.pythonhosted.org/packages/f6/3d/e98a0cd95bcc6f64d635b95c63fb40c09a2edea5b5749ca344fad9b57010/PyGEL3D-0.5.2-py3-none-any.whl
+[2024-04-28 22:49:39] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [lektor-chameleon]: Remove: archive file [/home/abi/fetcher/tmp/lektor_chameleon-0.8.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [lektor-chameleon]: Remove: archive file [/home/abi/fetcher/tmp/lektor_chameleon-0.9.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [lektor-chameleon]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [aiida-mlip]: Remove: archive file [/home/abi/fetcher/tmp/aiida_mlip-0.1.0a1.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [aiida-mlip]: Remove: archive file [/home/abi/fetcher/tmp/aiida_mlip-0.1.0b0.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [aiida-mlip]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-facefusion-3.0.998.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-facefusion]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-facefusion-3.0.999.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-facefusion]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ess-3.0.998.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-ess]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-ess-3.0.999.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-ess]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-essbasic-3.0.998.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - processPackages [tencentcloud-sdk-python-essbasic]: Remove: archive file [/home/abi/fetcher/tmp/tencentcloud-sdk-python-essbasic-3.0.999.tar.gz]
+[2024-04-28 22:49:39] INFO root fetch - main [MainThread]: End processing [tencentcloud-sdk-python-essbasic]: success
+[2024-04-28 22:49:39] INFO root fetch - processPackages [PyGEL3D]: executing diffoscope
+[2024-04-28 22:49:39] INFO root fetch - processPackages [PyGEL3D]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGEL3D-0.4.5-py3-none-any.whl.zip tmp/PyGEL3D-0.5.2-py3-none-any.whl.zip --markdown 20240428/P/PyGEL3D/0.4.5-0.5.2/README.md --exclude *.pyd
+[2024-04-28 22:50:11] INFO root fetch - processPackages [PyGEL3D]: Remove: archive file [/home/abi/fetcher/tmp/PyGEL3D-0.4.5-py3-none-any.whl.zip]
+[2024-04-28 22:50:11] INFO root fetch - processPackages [PyGEL3D]: Remove: archive file [/home/abi/fetcher/tmp/PyGEL3D-0.5.2-py3-none-any.whl.zip]
+[2024-04-28 22:50:11] INFO root fetch - main [MainThread]: End processing [PyGEL3D]: success
+[2024-04-28 22:50:11] INFO root fetch - main [MainThread]: Store serial: [22970376]
