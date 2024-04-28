@@ -3163,3 +3163,24 @@
 [2024-04-28 04:45:07] INFO root fetch - processPackages [nonebot-plugin-steam-game-status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-steam-game-status-0.1.8.tar.gz]
 [2024-04-28 04:45:07] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-steam-game-status]: success
 [2024-04-28 04:45:07] INFO root fetch - main [MainThread]: Store serial: [22963515]
+[2024-04-28 04:47:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963515]
+[2024-04-28 04:47:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 04:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PortableTab
+[2024-04-28 04:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: message-local
+[2024-04-28 04:47:16] INFO root fetch - processPackages [message-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 04:47:16] INFO root fetch - processPackages [PortableTab]: New version: [0.3.5.dev1] Old Version: [0.3.4]
+[2024-04-28 04:47:16] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/58/98/6002a91d9f0eb23b635ecf892333a787e13c1e810b92090bc53584aa2f18/message-local-0.0.98.tar.gz
+[2024-04-28 04:47:16] INFO root fetch - processPackages [PortableTab]: Downloading https://files.pythonhosted.org/packages/e7/65/4eff54aabfa63875354657e8e1939417613016e48cc0afc5b7e65bc246f3/portabletab-0.3.4.tar.gz
+[2024-04-28 04:47:16] INFO root fetch - processPackages [message-local]: Downloading https://files.pythonhosted.org/packages/78/17/d149670c7821186afe25a7b74020f68bd8db48497b170965d75952fbe2d8/message-local-0.0.99.tar.gz
+[2024-04-28 04:47:16] INFO root fetch - processPackages [message-local]: executing diffoscope
+[2024-04-28 04:47:16] INFO root fetch - processPackages [message-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-local-0.0.98.tar.gz tmp/message-local-0.0.99.tar.gz --markdown 20240428/m/message-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 04:47:16] INFO root fetch - processPackages [PortableTab]: Downloading https://files.pythonhosted.org/packages/e8/c9/faf65b415269a5a774f4efa07f70193e385f568c513793996a580e975630/portabletab-0.3.5.dev1.tar.gz
+[2024-04-28 04:47:17] INFO root fetch - processPackages [PortableTab]: executing diffoscope
+[2024-04-28 04:47:17] INFO root fetch - processPackages [PortableTab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portabletab-0.3.4.tar.gz tmp/portabletab-0.3.5.dev1.tar.gz --markdown 20240428/P/PortableTab/0.3.4-0.3.5.dev1/README.md --exclude *.pyd
+[2024-04-28 04:47:17] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.98.tar.gz]
+[2024-04-28 04:47:17] INFO root fetch - processPackages [message-local]: Remove: archive file [/home/abi/fetcher/tmp/message-local-0.0.99.tar.gz]
+[2024-04-28 04:47:17] INFO root fetch - main [MainThread]: End processing [message-local]: success
+[2024-04-28 04:47:17] INFO root fetch - processPackages [PortableTab]: Remove: archive file [/home/abi/fetcher/tmp/portabletab-0.3.4.tar.gz]
+[2024-04-28 04:47:17] INFO root fetch - processPackages [PortableTab]: Remove: archive file [/home/abi/fetcher/tmp/portabletab-0.3.5.dev1.tar.gz]
+[2024-04-28 04:47:17] INFO root fetch - main [MainThread]: End processing [PortableTab]: success
+[2024-04-28 04:47:17] INFO root fetch - main [MainThread]: Store serial: [22963530]
