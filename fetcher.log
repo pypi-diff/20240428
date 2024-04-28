@@ -6503,3 +6503,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:32:17] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.3.0.tar.gz]
 [2024-04-28 09:32:17] INFO root fetch - main [MainThread]: End processing [easytl]: success
 [2024-04-28 09:32:17] INFO root fetch - main [MainThread]: Store serial: [22964894]
+[2024-04-28 09:34:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964894]
+[2024-04-28 09:34:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 09:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonq
+[2024-04-28 09:34:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rlanutils
+[2024-04-28 09:34:26] INFO root fetch - processPackages [sonq]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 09:34:26] WARNING root fetch - processPackages [rlanutils]: Skipping, unable to determine old version
+[2024-04-28 09:34:26] INFO root fetch - main [MainThread]: End processing [rlanutils] error
+[2024-04-28 09:34:26] INFO root fetch - processPackages [sonq]: Downloading https://files.pythonhosted.org/packages/b1/7f/e7780671598b6bdcf147c14ddfda7a5a3b5aa4f2a4709702571214e3168e/sonq-0.1.2.tar.gz
+[2024-04-28 09:34:26] INFO root fetch - processPackages [sonq]: Downloading https://files.pythonhosted.org/packages/98/77/cd2225242692980796f0be3ac2f5fc149342ce651dfbb8e574864a15f242/sonq-0.1.3.tar.gz
+[2024-04-28 09:34:26] INFO root fetch - processPackages [sonq]: executing diffoscope
+[2024-04-28 09:34:26] INFO root fetch - processPackages [sonq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonq-0.1.2.tar.gz tmp/sonq-0.1.3.tar.gz --markdown 20240428/s/sonq/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 09:34:27] INFO root fetch - processPackages [sonq]: Remove: archive file [/home/abi/fetcher/tmp/sonq-0.1.2.tar.gz]
+[2024-04-28 09:34:27] INFO root fetch - processPackages [sonq]: Remove: archive file [/home/abi/fetcher/tmp/sonq-0.1.3.tar.gz]
+[2024-04-28 09:34:27] INFO root fetch - main [MainThread]: End processing [sonq]: success
+[2024-04-28 09:34:27] INFO root fetch - main [MainThread]: Store serial: [22964902]
