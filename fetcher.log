@@ -6392,3 +6392,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:21:22] INFO root fetch - processPackages [uaiDiffusers]: Remove: archive file [/home/abi/fetcher/tmp/uaiDiffusers-1.1.5.1-py2.py3-none-any.whl.zip]
 [2024-04-28 09:21:22] INFO root fetch - main [MainThread]: End processing [uaiDiffusers]: success
 [2024-04-28 09:21:22] INFO root fetch - main [MainThread]: Store serial: [22964853]
+[2024-04-28 09:23:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964853]
+[2024-04-28 09:23:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 09:23:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: limoon
+[2024-04-28 09:23:31] INFO root fetch - processPackages [limoon]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-28 09:23:31] INFO root fetch - processPackages [limoon]: Downloading https://files.pythonhosted.org/packages/7f/0e/f501c2beaeee0fe13655ef4b0a5bc90f5702d64d507ab889c0706f1dfe98/limoon-0.0.7.tar.gz
+[2024-04-28 09:23:31] INFO root fetch - processPackages [limoon]: Downloading https://files.pythonhosted.org/packages/c9/9d/917a65e8902854373ad751597cfcee02fb31f77c96ccae80b634857a3d72/limoon-0.0.8.tar.gz
+[2024-04-28 09:23:31] INFO root fetch - processPackages [limoon]: executing diffoscope
+[2024-04-28 09:23:31] INFO root fetch - processPackages [limoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limoon-0.0.7.tar.gz tmp/limoon-0.0.8.tar.gz --markdown 20240428/l/limoon/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-28 09:23:32] INFO root fetch - processPackages [limoon]: Remove: archive file [/home/abi/fetcher/tmp/limoon-0.0.7.tar.gz]
+[2024-04-28 09:23:32] INFO root fetch - processPackages [limoon]: Remove: archive file [/home/abi/fetcher/tmp/limoon-0.0.8.tar.gz]
+[2024-04-28 09:23:32] INFO root fetch - main [MainThread]: End processing [limoon]: success
+[2024-04-28 09:23:32] INFO root fetch - main [MainThread]: Store serial: [22964856]
