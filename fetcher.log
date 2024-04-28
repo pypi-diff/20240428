@@ -8061,3 +8061,52 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:13:33] INFO root fetch - processPackages [django-soft-delete]: Remove: archive file [/home/abi/fetcher/tmp/django-soft-delete-1.0.9.tar.gz]
 [2024-04-28 11:13:33] INFO root fetch - main [MainThread]: End processing [django-soft-delete]: success
 [2024-04-28 11:13:33] INFO root fetch - main [MainThread]: Store serial: [22965618]
+[2024-04-28 11:15:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965618]
+[2024-04-28 11:15:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: istr-python
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyroferk
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygwalker
+[2024-04-28 11:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: markdown2textile
+[2024-04-28 11:15:41] INFO root fetch - processPackages [istr-python]: New version: [0.1.2a0] Old Version: [0.1.2]
+[2024-04-28 11:15:41] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/0a/e9/b9fed61eb8f627f663263be97cf5344ac5c45fd7def183b6ec782bb45051/istr_python-0.1.2.tar.gz
+[2024-04-28 11:15:41] INFO root fetch - processPackages [pyroferk]: New version: [2.0] Old Version: [1.0]
+[2024-04-28 11:15:41] WARNING root fetch - processPackages [markdown2textile]: Skipping, unable to determine old version
+[2024-04-28 11:15:41] INFO root fetch - main [MainThread]: End processing [markdown2textile] error
+[2024-04-28 11:15:41] INFO root fetch - processPackages [pygwalker]: New version: [0.4.9a2] Old Version: [0.4.9a1]
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pyroferk]: Downloading https://files.pythonhosted.org/packages/4a/6c/4ab8cf7f7872c564c0b48ab9f395539ca93e0d2f6d26711e3344e97ae8d3/pyroferk-1.0.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/0f/0d/509e9df55b92cb562a884a850f4a8031e6f440da90fa45d45a59a9db8fae/pygwalker-0.4.9a1.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [istr-python]: Downloading https://files.pythonhosted.org/packages/3c/53/bf823b22d935bc109042ee8ed164f7512b9aa100605e98d086abf8da5dd9/istr_python-0.1.2a0.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [istr-python]: executing diffoscope
+[2024-04-28 11:15:42] INFO root fetch - processPackages [istr-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istr_python-0.1.2.tar.gz tmp/istr_python-0.1.2a0.tar.gz --markdown 20240428/i/istr-python/0.1.2-0.1.2a0/README.md --exclude *.pyd
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pyroferk]: Downloading https://files.pythonhosted.org/packages/ec/75/18d87d17907d4f34d616c32c78d220595b689273180da0cfde6da2f0a54c/pyroferk-2.0.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pyroferk]: executing diffoscope
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pyroferk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroferk-1.0.tar.gz tmp/pyroferk-2.0.tar.gz --markdown 20240428/p/pyroferk/1.0-2.0/README.md --exclude *.pyd
+[2024-04-28 11:15:42] INFO root fetch - processPackages [pygwalker]: Downloading https://files.pythonhosted.org/packages/82/e5/9c0d43db55f894717c52d914ccee9febfccf54befce7a4e566ee756f9c8e/pygwalker-0.4.9a2.tar.gz
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240428/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-28 11:15:42] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240428/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-28 11:15:42] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.2.tar.gz]
+[2024-04-28 11:15:42] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.2a0.tar.gz]
+[2024-04-28 11:15:42] INFO root fetch - main [MainThread]: End processing [istr-python]: success
+[2024-04-28 11:15:43] INFO root fetch - processPackages [pygwalker]: executing diffoscope
+[2024-04-28 11:15:43] INFO root fetch - processPackages [pygwalker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygwalker-0.4.9a1.tar.gz tmp/pygwalker-0.4.9a2.tar.gz --markdown 20240428/p/pygwalker/0.4.9a1-0.4.9a2/README.md --exclude *.pyd
+[2024-04-28 11:15:43] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-28 11:15:43] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-28 11:15:43] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-28 11:15:43] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-28 11:15:44] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a1.tar.gz]
+[2024-04-28 11:15:44] INFO root fetch - processPackages [pygwalker]: Remove: archive file [/home/abi/fetcher/tmp/pygwalker-0.4.9a2.tar.gz]
+[2024-04-28 11:15:44] INFO root fetch - main [MainThread]: End processing [pygwalker]: success
+[2024-04-28 11:15:46] INFO root fetch - processPackages [pyroferk]: Remove: archive file [/home/abi/fetcher/tmp/pyroferk-1.0.tar.gz]
+[2024-04-28 11:15:46] INFO root fetch - processPackages [pyroferk]: Remove: archive file [/home/abi/fetcher/tmp/pyroferk-2.0.tar.gz]
+[2024-04-28 11:15:46] INFO root fetch - main [MainThread]: End processing [pyroferk]: success
+[2024-04-28 11:15:46] INFO root fetch - main [MainThread]: Store serial: [22965638]
