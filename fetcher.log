@@ -2792,3 +2792,15 @@
 [2024-04-28 04:05:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.8.tar.gz]
 [2024-04-28 04:05:21] INFO root fetch - main [MainThread]: End processing [querent]: success
 [2024-04-28 04:05:21] INFO root fetch - main [MainThread]: Store serial: [22963378]
+[2024-04-28 04:07:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963378]
+[2024-04-28 04:07:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 04:07:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cardex
+[2024-04-28 04:07:30] INFO root fetch - processPackages [cardex]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-04-28 04:07:30] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/96/6e/6c4d87215e2446a0ac9bc903860b173f9fc347eb73dc8e4a21a298670a00/cardex-0.2.0.dev8.tar.gz
+[2024-04-28 04:07:30] INFO root fetch - processPackages [cardex]: Downloading https://files.pythonhosted.org/packages/a5/f1/936319cd5a1e0862bc33edbce29c37659ee57c4782e76613d4ce0b406196/cardex-0.2.0.dev9.tar.gz
+[2024-04-28 04:07:30] INFO root fetch - processPackages [cardex]: executing diffoscope
+[2024-04-28 04:07:30] INFO root fetch - processPackages [cardex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cardex-0.2.0.dev8.tar.gz tmp/cardex-0.2.0.dev9.tar.gz --markdown 20240428/c/cardex/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-04-28 04:07:31] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev8.tar.gz]
+[2024-04-28 04:07:31] INFO root fetch - processPackages [cardex]: Remove: archive file [/home/abi/fetcher/tmp/cardex-0.2.0.dev9.tar.gz]
+[2024-04-28 04:07:31] INFO root fetch - main [MainThread]: End processing [cardex]: success
+[2024-04-28 04:07:31] INFO root fetch - main [MainThread]: Store serial: [22963381]
