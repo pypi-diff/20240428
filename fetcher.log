@@ -8971,3 +8971,23 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:21:29] INFO root fetch - processPackages [istr-python]: Remove: archive file [/home/abi/fetcher/tmp/istr_python-0.1.6.tar.gz]
 [2024-04-28 12:21:29] INFO root fetch - main [MainThread]: End processing [istr-python]: success
 [2024-04-28 12:21:29] INFO root fetch - main [MainThread]: Store serial: [22965962]
+[2024-04-28 12:23:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965962]
+[2024-04-28 12:23:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 12:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-check
+[2024-04-28 12:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sema-toolchain
+[2024-04-28 12:23:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libdeeplake
+[2024-04-28 12:23:38] WARNING root fetch - processPackages [llm-check]: Skipping, unable to determine old version
+[2024-04-28 12:23:38] INFO root fetch - main [MainThread]: End processing [llm-check] error
+[2024-04-28 12:23:38] INFO root fetch - processPackages [sema-toolchain]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 12:23:38] INFO root fetch - processPackages [sema-toolchain]: Downloading https://files.pythonhosted.org/packages/30/60/bde412b115c8313c5ff8b49b4b647bf7ef6631e612e5992161044caea771/sema_toolchain-0.0.3.tar.gz
+[2024-04-28 12:23:38] INFO root fetch - processPackages [libdeeplake]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 12:23:38] INFO root fetch - processPackages [libdeeplake]: Downloading https://files.pythonhosted.org/packages/72/1b/98a4f343688cf918ba1e3f51f408a91cff754434b6e95d4e8090657449a3/libdeeplake-0.0.98-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-28 12:23:38] WARNING root fetch - processPackages [libdeeplake]: Skipping package: exceeds size limit 16175016>=10485760
+[2024-04-28 12:23:38] INFO root fetch - main [MainThread]: End processing [libdeeplake] error
+[2024-04-28 12:23:38] INFO root fetch - processPackages [sema-toolchain]: Downloading https://files.pythonhosted.org/packages/c6/0d/40ab392c4baa695d3c7a63465661270cfd727fa8342c1de02f23c90daa15/sema_toolchain-0.0.4.tar.gz
+[2024-04-28 12:23:39] INFO root fetch - processPackages [sema-toolchain]: executing diffoscope
+[2024-04-28 12:23:39] INFO root fetch - processPackages [sema-toolchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sema_toolchain-0.0.3.tar.gz tmp/sema_toolchain-0.0.4.tar.gz --markdown 20240428/s/sema-toolchain/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 12:23:39] INFO root fetch - processPackages [sema-toolchain]: Remove: archive file [/home/abi/fetcher/tmp/sema_toolchain-0.0.3.tar.gz]
+[2024-04-28 12:23:39] INFO root fetch - processPackages [sema-toolchain]: Remove: archive file [/home/abi/fetcher/tmp/sema_toolchain-0.0.4.tar.gz]
+[2024-04-28 12:23:39] INFO root fetch - main [MainThread]: End processing [sema-toolchain]: success
+[2024-04-28 12:23:39] INFO root fetch - main [MainThread]: Store serial: [22965972]
