@@ -1335,3 +1335,42 @@
 [2024-04-28 02:00:12] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
 [2024-04-28 02:00:12] INFO root fetch - main [MainThread]: End processing [local-lang]: success
 [2024-04-28 02:00:12] INFO root fetch - main [MainThread]: Store serial: [22962785]
+[2024-04-28 02:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962785]
+[2024-04-28 02:02:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 02:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: local-lang
+[2024-04-28 02:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rossmassey.fetch-leetcode-problem
+[2024-04-28 02:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lollms-client
+[2024-04-28 02:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: querent
+[2024-04-28 02:02:20] INFO root fetch - processPackages [querent]: New version: [3.0.5] Old Version: [3.0.4]
+[2024-04-28 02:02:20] INFO root fetch - processPackages [lollms-client]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-28 02:02:20] INFO root fetch - processPackages [local-lang]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 02:02:20] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/ef/c8/f9a06ed9286a43e1b5fe81a52a16f7fb3984f1294c489144ad588ef118fa/lollms_client-0.3.1.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/60/d9/3ac1d552c0873d9eef8b7df1b0ce3b89a1a0a13af3adda8ac8b4ceb8a282/querent-3.0.4.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/0b/bd/a2a0d22a32607a459737b10d42acf78669c09e980c467b0b3525b8bc21e4/local_lang-0.0.8.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-28 02:02:20] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Downloading https://files.pythonhosted.org/packages/f8/44/37c65d3693d9b35a192816cfaaf45866c9a05b0be11e15fec7732dbcb9d3/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/a8/f1/52464b94629958d4c4374b4706ff66d45f4d6f56702ef8726784a25b372a/querent-3.0.5.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [lollms-client]: Downloading https://files.pythonhosted.org/packages/b4/fd/63cc6f5bcbab0933845b7e6e70061e8b518fc84ddb73a28ef1e6c4242385/lollms_client-0.4.0.tar.gz
+[2024-04-28 02:02:20] INFO root fetch - processPackages [lollms-client]: executing diffoscope
+[2024-04-28 02:02:20] INFO root fetch - processPackages [lollms-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lollms_client-0.3.1.tar.gz tmp/lollms_client-0.4.0.tar.gz --markdown 20240428/l/lollms-client/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-28 02:02:20] INFO root fetch - processPackages [querent]: executing diffoscope
+[2024-04-28 02:02:20] INFO root fetch - processPackages [querent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querent-3.0.4.tar.gz tmp/querent-3.0.5.tar.gz --markdown 20240428/q/querent/3.0.4-3.0.5/README.md --exclude *.pyd
+[2024-04-28 02:02:21] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Downloading https://files.pythonhosted.org/packages/78/26/7d0cfadf4dd2d0fb9771717bbc90bee485e12e5dcfeda0840493b1237ccb/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz
+[2024-04-28 02:02:21] INFO root fetch - processPackages [local-lang]: Downloading https://files.pythonhosted.org/packages/d4/0b/fff42c164c415db503bf3e1e6843c683bae157010851ba904d87332136ba/local_lang-0.0.9.tar.gz
+[2024-04-28 02:02:21] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: executing diffoscope
+[2024-04-28 02:02:21] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz tmp/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz --markdown 20240428/r/rossmassey.fetch-leetcode-problem/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-28 02:02:21] INFO root fetch - processPackages [local-lang]: executing diffoscope
+[2024-04-28 02:02:21] INFO root fetch - processPackages [local-lang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_lang-0.0.8.tar.gz tmp/local_lang-0.0.9.tar.gz --markdown 20240428/l/local-lang/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 02:02:21] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.3.1.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - processPackages [lollms-client]: Remove: archive file [/home/abi/fetcher/tmp/lollms_client-0.4.0.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - main [MainThread]: End processing [lollms-client]: success
+[2024-04-28 02:02:21] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Remove: archive file [/home/abi/fetcher/tmp/rossmassey_fetch_leetcode_problem-0.1.4.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - processPackages [rossmassey.fetch-leetcode-problem]: Remove: archive file [/home/abi/fetcher/tmp/rossmassey_fetch_leetcode_problem-0.2.0.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - main [MainThread]: End processing [rossmassey.fetch-leetcode-problem]: success
+[2024-04-28 02:02:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.4.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.5.tar.gz]
+[2024-04-28 02:02:21] INFO root fetch - main [MainThread]: End processing [querent]: success
+[2024-04-28 02:02:22] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.8.tar.gz]
+[2024-04-28 02:02:22] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
+[2024-04-28 02:02:22] INFO root fetch - main [MainThread]: End processing [local-lang]: success
+[2024-04-28 02:02:22] INFO root fetch - main [MainThread]: Store serial: [22962794]
