@@ -5181,3 +5181,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:46:52] INFO root fetch - processPackages [chencrafts]: Remove: archive file [/home/abi/fetcher/tmp/chencrafts-1.3.tar.gz]
 [2024-04-28 07:46:52] INFO root fetch - main [MainThread]: End processing [chencrafts]: success
 [2024-04-28 07:46:52] INFO root fetch - main [MainThread]: Store serial: [22964324]
+[2024-04-28 07:48:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964324]
+[2024-04-28 07:49:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 07:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytdl-sub
+[2024-04-28 07:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lambkid
+[2024-04-28 07:49:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atomic-bomb-engine
+[2024-04-28 07:49:01] INFO root fetch - processPackages [lambkid]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 07:49:01] INFO root fetch - processPackages [ytdl-sub]: New version: [2024.4.3] Old Version: [2024.4.28]
+[2024-04-28 07:49:01] INFO root fetch - processPackages [atomic-bomb-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-28 07:49:01] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/38/43/05f919f4ef66e7299635c5584c757263f3c74d2092f4583deffe4474ca83/ytdl_sub-2024.4.28.tar.gz
+[2024-04-28 07:49:01] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/6a/38/f38847da57bd91482716f8004b4d19347ec9f4743ccba412cf7eef888c49/lambkid-0.1.8.tar.gz
+[2024-04-28 07:49:01] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/de/47/589c78a3caf02bccdff9d1da27ba01989773662faca9c96280fad2e297e6/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl
+[2024-04-28 07:49:01] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/2a/05/3ffb7974db064cbcc79af161bf87417bc66b99e257e16f9f35bc2dfaf41e/lambkid-0.1.9.tar.gz
+[2024-04-28 07:49:01] INFO root fetch - processPackages [lambkid]: executing diffoscope
+[2024-04-28 07:49:01] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/c7/a2/efe49bb16ad663f2e5b793c3c3952dc89417938444d33d6f8c86f1889c3a/ytdl-sub-2024.4.3.tar.gz
+[2024-04-28 07:49:01] INFO root fetch - processPackages [lambkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambkid-0.1.8.tar.gz tmp/lambkid-0.1.9.tar.gz --markdown 20240428/l/lambkid/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 07:49:02] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2024-04-28 07:49:02] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl_sub-2024.4.28.tar.gz tmp/ytdl-sub-2024.4.3.tar.gz --markdown 20240428/y/ytdl-sub/2024.4.28-2024.4.3/README.md --exclude *.pyd
+[2024-04-28 07:49:02] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/f2/d0/587dc5dedb6e3e81c2ce988350e6322864b47905247529e088c7b811f975/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl
+[2024-04-28 07:49:02] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.1.8.tar.gz]
+[2024-04-28 07:49:02] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.1.9.tar.gz]
+[2024-04-28 07:49:02] INFO root fetch - main [MainThread]: End processing [lambkid]: success
+[2024-04-28 07:49:02] INFO root fetch - processPackages [atomic-bomb-engine]: executing diffoscope
+[2024-04-28 07:49:02] INFO root fetch - processPackages [atomic-bomb-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip --markdown 20240428/a/atomic-bomb-engine/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-28 07:49:02] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.4.28.tar.gz]
+[2024-04-28 07:49:02] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl-sub-2024.4.3.tar.gz]
+[2024-04-28 07:49:02] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2024-04-28 07:49:03] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip]
+[2024-04-28 07:49:03] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
+[2024-04-28 07:49:03] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
+[2024-04-28 07:49:03] INFO root fetch - main [MainThread]: Store serial: [22964338]
