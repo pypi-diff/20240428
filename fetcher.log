@@ -3314,3 +3314,18 @@
 [2024-04-28 05:00:08] INFO root fetch - processPackages [llama-index-tools-google]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_tools_google-0.1.5.tar.gz]
 [2024-04-28 05:00:08] INFO root fetch - main [MainThread]: End processing [llama-index-tools-google]: success
 [2024-04-28 05:00:08] INFO root fetch - main [MainThread]: Store serial: [22963635]
+[2024-04-28 05:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963635]
+[2024-04-28 05:02:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 05:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RemixQQ_Python_SDK
+[2024-04-28 05:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: icloudpd
+[2024-04-28 05:02:17] WARNING root fetch - processPackages [RemixQQ_Python_SDK]: Skipping, unable to determine old version
+[2024-04-28 05:02:17] INFO root fetch - main [MainThread]: End processing [RemixQQ_Python_SDK] error
+[2024-04-28 05:02:17] INFO root fetch - processPackages [icloudpd]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-28 05:02:17] INFO root fetch - processPackages [icloudpd]: Downloading https://files.pythonhosted.org/packages/51/5d/1f1e447501b790f1082e506da57a315aeda5268be4c23f0027804937436a/icloudpd-1.8.1-py2.py3-none-any.whl
+[2024-04-28 05:02:18] INFO root fetch - processPackages [icloudpd]: Downloading https://files.pythonhosted.org/packages/62/71/4d2c70cdcacbafa12d0d59f0a600a1d90223aeb131739c382716470d6320/icloudpd-1.9.0-py2.py3-none-any.whl
+[2024-04-28 05:02:18] INFO root fetch - processPackages [icloudpd]: executing diffoscope
+[2024-04-28 05:02:18] INFO root fetch - processPackages [icloudpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icloudpd-1.8.1-py2.py3-none-any.whl.zip tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip --markdown 20240428/i/icloudpd/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-28 05:02:19] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.8.1-py2.py3-none-any.whl.zip]
+[2024-04-28 05:02:19] INFO root fetch - processPackages [icloudpd]: Remove: archive file [/home/abi/fetcher/tmp/icloudpd-1.9.0-py2.py3-none-any.whl.zip]
+[2024-04-28 05:02:19] INFO root fetch - main [MainThread]: End processing [icloudpd]: success
+[2024-04-28 05:02:19] INFO root fetch - main [MainThread]: Store serial: [22963650]
