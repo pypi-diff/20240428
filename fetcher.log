@@ -14797,3 +14797,65 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:18:24] INFO root fetch - processPackages [pytigon-lib]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-lib-0.240428.tar.gz]
 [2024-04-28 19:18:24] INFO root fetch - main [MainThread]: End processing [pytigon-lib]: success
 [2024-04-28 19:18:24] INFO root fetch - main [MainThread]: Store serial: [22968348]
+[2024-04-28 19:20:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968348]
+[2024-04-28 19:20:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: better-namespaces
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytigon
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-pandas
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pylacc
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: euc2mqtt
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytigon-batteries
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-sale-exception
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytigon-gui
+[2024-04-28 19:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jetline
+[2024-04-28 19:20:34] WARNING root fetch - processPackages [better-namespaces]: Skipping, unable to determine old version
+[2024-04-28 19:20:34] INFO root fetch - main [MainThread]: End processing [better-namespaces] error
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pylacc]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 19:20:34] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 19:20:34] WARNING root fetch - processPackages [abstract-pandas]: Skipping, unable to determine old version
+[2024-04-28 19:20:34] INFO root fetch - main [MainThread]: End processing [abstract-pandas] error
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pylacc]: Downloading https://files.pythonhosted.org/packages/0e/f3/3f6f094869016aa9dc2023c932787d3a22e8bbc4c63f3d9c2031cb7250d9/pylacc-0.0.1.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon]: New version: [0.240428] Old Version: [0.240303]
+[2024-04-28 19:20:34] INFO root fetch - processPackages [odoo-addon-sale-exception]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.3.0]
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon-batteries]: New version: [0.240428] Old Version: [0.240302]
+[2024-04-28 19:20:34] ERROR root fetch - processPackages [euc2mqtt]: Unable to get metadata: No such project 'euc2mqtt'
+[2024-04-28 19:20:34] INFO root fetch - main [MainThread]: End processing [euc2mqtt] error
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon-gui]: New version: [0.240428] Old Version: [0.240302]
+[2024-04-28 19:20:34] INFO root fetch - processPackages [odoo-addon-sale-exception]: Downloading https://files.pythonhosted.org/packages/52/da/fe1777175b3ad3c9985315fe91410bdf8fbd55fdefb7096c95de58505beb/odoo_addon_sale_exception-16.0.1.3.0-py3-none-any.whl
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pylacc]: Downloading https://files.pythonhosted.org/packages/77/e6/9aa975637c6fb13bd66a7a146e49f8d7a1742487a880c9cc53dec0549161/pylacc-0.0.2.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon]: Downloading https://files.pythonhosted.org/packages/02/3c/062343e014ab6527afc532fa468143f375001a6bd981c3bcabfcb20d9044/pytigon-0.240303.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon-gui]: Downloading https://files.pythonhosted.org/packages/cb/87/ccb8c48c30290e8d44f1005f0af5862b77e3b9b30d02d8cae7819ec0b6db/pytigon-gui-0.240302.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pytigon-batteries]: Downloading https://files.pythonhosted.org/packages/1c/cd/ec6d62eeea2d5a3583c0246a411ff3d0c05ef0b56817c40866f32c9f036f/pytigon-batteries-0.240302.tar.gz
+[2024-04-28 19:20:34] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 19:20:34] WARNING root fetch - processPackages [pytigon]: Skipping package: exceeds size limit 32126723>=10485760
+[2024-04-28 19:20:34] INFO root fetch - main [MainThread]: End processing [pytigon] error
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pylacc]: executing diffoscope
+[2024-04-28 19:20:34] INFO root fetch - processPackages [pylacc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylacc-0.0.1.tar.gz tmp/pylacc-0.0.2.tar.gz --markdown 20240428/p/pylacc/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 19:20:34] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 19:20:34] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 19:20:35] INFO root fetch - processPackages [odoo-addon-sale-exception]: Downloading https://files.pythonhosted.org/packages/2e/a1/72ed22f54d45832c618b5d032ae0ca965477dc052f600360ef876bfbb56e/odoo_addon_sale_exception-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pytigon-batteries]: Downloading https://files.pythonhosted.org/packages/16/17/60bb33f0aa6c8fce030ce7ced392ca35130c63d1acb44ecf740384cd1edd/pytigon-batteries-0.240428.tar.gz
+[2024-04-28 19:20:35] INFO root fetch - processPackages [odoo-addon-sale-exception]: executing diffoscope
+[2024-04-28 19:20:35] INFO root fetch - processPackages [odoo-addon-sale-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_exception-16.0.1.3.0-py3-none-any.whl.zip tmp/odoo_addon_sale_exception-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240428/o/odoo-addon-sale-exception/16.0.1.3.0-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pytigon-batteries]: executing diffoscope
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pytigon-batteries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytigon-batteries-0.240302.tar.gz tmp/pytigon-batteries-0.240428.tar.gz --markdown 20240428/p/pytigon-batteries/0.240302-0.240428/README.md --exclude *.pyd
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pylacc]: Remove: archive file [/home/abi/fetcher/tmp/pylacc-0.0.1.tar.gz]
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pylacc]: Remove: archive file [/home/abi/fetcher/tmp/pylacc-0.0.2.tar.gz]
+[2024-04-28 19:20:35] INFO root fetch - main [MainThread]: End processing [pylacc]: success
+[2024-04-28 19:20:35] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 19:20:35] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 19:20:35] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 19:20:35] INFO root fetch - processPackages [pytigon-gui]: Downloading https://files.pythonhosted.org/packages/c8/72/2f72e02c994fdf5db3290795358f7c3ef31c6eccf6f6988d3ed46bfe2b32/pytigon-gui-0.240428.tar.gz
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-batteries]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-batteries-0.240302.tar.gz]
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-batteries]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-batteries-0.240428.tar.gz]
+[2024-04-28 19:20:36] INFO root fetch - main [MainThread]: End processing [pytigon-batteries]: success
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-gui]: executing diffoscope
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytigon-gui-0.240302.tar.gz tmp/pytigon-gui-0.240428.tar.gz --markdown 20240428/p/pytigon-gui/0.240302-0.240428/README.md --exclude *.pyd
+[2024-04-28 19:20:36] INFO root fetch - processPackages [odoo-addon-sale-exception]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_exception-16.0.1.3.0-py3-none-any.whl.zip]
+[2024-04-28 19:20:36] INFO root fetch - processPackages [odoo-addon-sale-exception]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_exception-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-28 19:20:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-exception]: success
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-gui]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-gui-0.240302.tar.gz]
+[2024-04-28 19:20:36] INFO root fetch - processPackages [pytigon-gui]: Remove: archive file [/home/abi/fetcher/tmp/pytigon-gui-0.240428.tar.gz]
+[2024-04-28 19:20:36] INFO root fetch - main [MainThread]: End processing [pytigon-gui]: success
+[2024-04-28 19:20:36] INFO root fetch - main [MainThread]: Store serial: [22968381]
