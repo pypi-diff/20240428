@@ -6008,3 +6008,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:55:15] WARNING root fetch - processPackages [edurpa-document]: Skipping, unable to determine old version
 [2024-04-28 08:55:15] INFO root fetch - main [MainThread]: End processing [edurpa-document] error
 [2024-04-28 08:55:15] INFO root fetch - main [MainThread]: Store serial: [22964719]
+[2024-04-28 08:57:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964719]
+[2024-04-28 08:57:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 08:57:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-ddosdiversion20230701-py2
+[2024-04-28 08:57:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-admin-coreui
+[2024-04-28 08:57:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-ddosdiversion20230701
+[2024-04-28 08:57:23] INFO root fetch - processPackages [django-admin-coreui]: New version: [0.0.5] Old Version: [0.0.2]
+[2024-04-28 08:57:23] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/9b/f4/ba0bf414dd78ae101688730701ef15d99163b5710fbd9a4278a9014abf97/django-admin-coreui-0.0.2.tar.gz
+[2024-04-28 08:57:23] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 08:57:23] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 08:57:23] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: Downloading https://files.pythonhosted.org/packages/5f/08/4799839a8ae137d3a1b349ec2f550abefbf7e5ac0d32984b4034b5f8f8aa/alibabacloud_ddosdiversion20230701_py2-1.0.0.tar.gz
+[2024-04-28 08:57:23] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: Downloading https://files.pythonhosted.org/packages/5c/20/e27a5a590fb11b3a047fc071f60072a22fd5ab25b2d1883290c1ba3d4efa/alibabacloud_ddosdiversion20230701-1.0.0.tar.gz
+[2024-04-28 08:57:23] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/ed/34/111723de17c23326102de3e587a3b678792ed6c725e865e6d099c1f4b2a9/django-admin-coreui-0.0.5.tar.gz
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: Downloading https://files.pythonhosted.org/packages/aa/4a/3ecf52012f29b82e15956ad23ecefafd8a9bbf257bffcf022b6362e2937a/alibabacloud_ddosdiversion20230701_py2-1.0.1.tar.gz
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: Downloading https://files.pythonhosted.org/packages/c6/2d/00e50a1d200811be0cce5318c5427584a1ef1f74386de18c7808a089763c/alibabacloud_ddosdiversion20230701-1.0.1.tar.gz
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: executing diffoscope
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_ddosdiversion20230701_py2-1.0.0.tar.gz tmp/alibabacloud_ddosdiversion20230701_py2-1.0.1.tar.gz --markdown 20240428/a/alibabacloud-ddosdiversion20230701-py2/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 08:57:24] INFO root fetch - processPackages [django-admin-coreui]: executing diffoscope
+[2024-04-28 08:57:24] INFO root fetch - processPackages [django-admin-coreui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-coreui-0.0.2.tar.gz tmp/django-admin-coreui-0.0.5.tar.gz --markdown 20240428/d/django-admin-coreui/0.0.2-0.0.5/README.md --exclude *.pyd
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: executing diffoscope
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_ddosdiversion20230701-1.0.0.tar.gz tmp/alibabacloud_ddosdiversion20230701-1.0.1.tar.gz --markdown 20240428/a/alibabacloud-ddosdiversion20230701/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ddosdiversion20230701_py2-1.0.0.tar.gz]
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ddosdiversion20230701_py2-1.0.1.tar.gz]
+[2024-04-28 08:57:24] INFO root fetch - main [MainThread]: End processing [alibabacloud-ddosdiversion20230701-py2]: success
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ddosdiversion20230701-1.0.0.tar.gz]
+[2024-04-28 08:57:24] INFO root fetch - processPackages [alibabacloud-ddosdiversion20230701]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ddosdiversion20230701-1.0.1.tar.gz]
+[2024-04-28 08:57:24] INFO root fetch - main [MainThread]: End processing [alibabacloud-ddosdiversion20230701]: success
+[2024-04-28 08:57:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.2.tar.gz]
+[2024-04-28 08:57:25] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-0.0.5.tar.gz]
+[2024-04-28 08:57:25] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
+[2024-04-28 08:57:25] INFO root fetch - main [MainThread]: Store serial: [22964728]
