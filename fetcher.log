@@ -9021,3 +9021,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 12:25:50] INFO root fetch - processPackages [datum]: Remove: archive file [/home/abi/fetcher/tmp/datum-1.9.0.tar.gz]
 [2024-04-28 12:25:50] INFO root fetch - main [MainThread]: End processing [datum]: success
 [2024-04-28 12:25:50] INFO root fetch - main [MainThread]: Store serial: [22965997]
+[2024-04-28 12:27:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965997]
+[2024-04-28 12:27:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 12:27:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-admin-coreui
+[2024-04-28 12:27:59] INFO root fetch - processPackages [django-admin-coreui]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 12:27:59] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/e4/62/7752ed9b57275be02653bbe9f4c910c4a7518b1f25404c19eaa006501436/django-admin-coreui-1.0.0.tar.gz
+[2024-04-28 12:28:00] INFO root fetch - processPackages [django-admin-coreui]: Downloading https://files.pythonhosted.org/packages/44/75/14fe8c0df3e46ca86bb2a0e87a47e6eb0abd222e5a62495017e8b8cb0e7f/django-admin-coreui-1.0.1.tar.gz
+[2024-04-28 12:28:01] INFO root fetch - processPackages [django-admin-coreui]: executing diffoscope
+[2024-04-28 12:28:01] INFO root fetch - processPackages [django-admin-coreui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-admin-coreui-1.0.0.tar.gz tmp/django-admin-coreui-1.0.1.tar.gz --markdown 20240428/d/django-admin-coreui/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 12:28:06] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-1.0.0.tar.gz]
+[2024-04-28 12:28:06] INFO root fetch - processPackages [django-admin-coreui]: Remove: archive file [/home/abi/fetcher/tmp/django-admin-coreui-1.0.1.tar.gz]
+[2024-04-28 12:28:06] INFO root fetch - main [MainThread]: End processing [django-admin-coreui]: success
+[2024-04-28 12:28:06] INFO root fetch - main [MainThread]: Store serial: [22966000]
