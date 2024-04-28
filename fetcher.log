@@ -16145,3 +16145,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:53:04] INFO root fetch - processPackages [ogl]: Remove: archive file [/home/abi/fetcher/tmp/ogl-2.1.5.tar.gz]
 [2024-04-28 20:53:04] INFO root fetch - main [MainThread]: End processing [ogl]: success
 [2024-04-28 20:53:04] INFO root fetch - main [MainThread]: Store serial: [22968950]
+[2024-04-28 20:55:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968950]
+[2024-04-28 20:55:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-hierarchical-models
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pratac
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quasarpy
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eventeditor-GPT
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: connectome-interpreter
+[2024-04-28 20:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scatcluster
+[2024-04-28 20:55:14] WARNING root fetch - processPackages [eventeditor-GPT]: Skipping, unable to determine old version
+[2024-04-28 20:55:14] INFO root fetch - main [MainThread]: End processing [eventeditor-GPT] error
+[2024-04-28 20:55:14] INFO root fetch - processPackages [quasarpy]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 20:55:14] WARNING root fetch - processPackages [pratac]: Skipping, unable to determine old version
+[2024-04-28 20:55:14] INFO root fetch - main [MainThread]: End processing [pratac] error
+[2024-04-28 20:55:14] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 20:55:14] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-28 20:55:14] INFO root fetch - processPackages [django-hierarchical-models]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-04-28 20:55:14] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/0a/f8/f5104625a0c2c7194a02fe2f34d0fdd4360d18c212382ae576d4d74d176c/quasarpy-0.1.2.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/06/d2/0f4223f6aa311945368ce2e0758ffaab5edaf4cf279eb0c324ccb0d27d32/connectome_interpreter-1.5.0.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [django-hierarchical-models]: Downloading https://files.pythonhosted.org/packages/e4/d9/3de76cfaaf313e595055bc0c9795432fef318c15675c053420ec0a13e564/django_hierarchical_models-1.2.0.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/7a/2f/ff33d9cd68efa4b55e23ce021501d23fea943c0b656562532a3a7b5ef380/connectome_interpreter-1.6.0.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [quasarpy]: Downloading https://files.pythonhosted.org/packages/f3/ac/bd2ddbf150b19e74ce62b02f62d7560204e90f63b6d416ef268434aaed0e/quasarpy-0.1.3.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 20:55:14] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 20:55:14] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-28 20:55:14] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.5.0.tar.gz tmp/connectome_interpreter-1.6.0.tar.gz --markdown 20240428/c/connectome-interpreter/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-28 20:55:14] INFO root fetch - processPackages [django-hierarchical-models]: Downloading https://files.pythonhosted.org/packages/ee/e9/753954da22c4e2785ffb4201ee97a6b5a9ab8ff14571e8c8964a1dc25d48/django_hierarchical_models-2.0.0.tar.gz
+[2024-04-28 20:55:14] INFO root fetch - processPackages [quasarpy]: executing diffoscope
+[2024-04-28 20:55:14] INFO root fetch - processPackages [quasarpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quasarpy-0.1.2.tar.gz tmp/quasarpy-0.1.3.tar.gz --markdown 20240428/q/quasarpy/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 20:55:14] INFO root fetch - processPackages [django-hierarchical-models]: executing diffoscope
+[2024-04-28 20:55:14] INFO root fetch - processPackages [django-hierarchical-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_hierarchical_models-1.2.0.tar.gz tmp/django_hierarchical_models-2.0.0.tar.gz --markdown 20240428/d/django-hierarchical-models/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-04-28 20:55:15] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 20:55:15] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.5.0.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.6.0.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-28 20:55:15] INFO root fetch - processPackages [django-hierarchical-models]: Remove: archive file [/home/abi/fetcher/tmp/django_hierarchical_models-1.2.0.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - processPackages [django-hierarchical-models]: Remove: archive file [/home/abi/fetcher/tmp/django_hierarchical_models-2.0.0.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - main [MainThread]: End processing [django-hierarchical-models]: success
+[2024-04-28 20:55:15] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.2.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.3.tar.gz]
+[2024-04-28 20:55:15] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
+[2024-04-28 20:55:15] INFO root fetch - main [MainThread]: Store serial: [22968968]
