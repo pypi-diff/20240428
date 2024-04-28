@@ -8527,3 +8527,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:50:33] WARNING root fetch - processPackages [SellPandas]: Skipping, unable to determine old version
 [2024-04-28 11:50:33] INFO root fetch - main [MainThread]: End processing [SellPandas] error
 [2024-04-28 11:50:33] INFO root fetch - main [MainThread]: Store serial: [22965811]
+[2024-04-28 11:52:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965811]
+[2024-04-28 11:52:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 11:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SpatialDM
+[2024-04-28 11:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqt6-without-qt
+[2024-04-28 11:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: th-influx-sdk
+[2024-04-28 11:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wcommon
+[2024-04-28 11:52:44] INFO root fetch - processPackages [SpatialDM]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-28 11:52:44] WARNING root fetch - processPackages [pyqt6-without-qt]: Skipping, unable to determine old version
+[2024-04-28 11:52:44] INFO root fetch - processPackages [th-influx-sdk]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-28 11:52:44] INFO root fetch - processPackages [wcommon]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-28 11:52:44] INFO root fetch - main [MainThread]: End processing [pyqt6-without-qt] error
+[2024-04-28 11:52:44] INFO root fetch - processPackages [SpatialDM]: Downloading https://files.pythonhosted.org/packages/79/91/f2260f995d97eb027c0043dd6bbe3a654d43d2e723657f68557347ef2fe1/SpatialDM-0.1.0-py3-none-any.whl
+[2024-04-28 11:52:44] INFO root fetch - processPackages [th-influx-sdk]: Downloading https://files.pythonhosted.org/packages/1d/4b/0d7e77417b541732192091b9b3ca86cff0ef49c535f135653057096b9612/th-influx-sdk-1.0.5.tar.gz
+[2024-04-28 11:52:44] INFO root fetch - processPackages [wcommon]: Downloading https://files.pythonhosted.org/packages/26/55/49f662c54d7d5bddc112e16ab9d3e9a285de2ec6fb1492c4c5b34401f931/wcommon-1.6.0.tar.gz
+[2024-04-28 11:52:45] INFO root fetch - processPackages [th-influx-sdk]: Downloading https://files.pythonhosted.org/packages/07/04/736bbbd53f2ac4d43a827f19029f40e801046244abcae11133e55f1d7ad9/th-influx-sdk-1.0.6.tar.gz
+[2024-04-28 11:52:45] INFO root fetch - processPackages [SpatialDM]: Downloading https://files.pythonhosted.org/packages/ae/82/c14993592d15a444ca78a92cefeec42efba0f541cc837cb761266b1e43d7/SpatialDM-0.2.0.tar.gz
+[2024-04-28 11:52:45] INFO root fetch - processPackages [wcommon]: Downloading https://files.pythonhosted.org/packages/81/5b/4e53196ed436707ffad1060676b8319f960593671e9f81fb0d57ba625646/wcommon-1.6.1.tar.gz
+[2024-04-28 11:52:45] INFO root fetch - processPackages [SpatialDM]: executing diffoscope
+[2024-04-28 11:52:45] INFO root fetch - processPackages [SpatialDM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpatialDM-0.1.0-py3-none-any.whl.zip tmp/SpatialDM-0.2.0.tar.gz --markdown 20240428/S/SpatialDM/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-28 11:52:45] INFO root fetch - processPackages [wcommon]: executing diffoscope
+[2024-04-28 11:52:45] INFO root fetch - processPackages [wcommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcommon-1.6.0.tar.gz tmp/wcommon-1.6.1.tar.gz --markdown 20240428/w/wcommon/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-28 11:52:45] INFO root fetch - processPackages [th-influx-sdk]: executing diffoscope
+[2024-04-28 11:52:45] INFO root fetch - processPackages [th-influx-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th-influx-sdk-1.0.5.tar.gz tmp/th-influx-sdk-1.0.6.tar.gz --markdown 20240428/t/th-influx-sdk/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-28 11:52:45] INFO root fetch - processPackages [wcommon]: Remove: archive file [/home/abi/fetcher/tmp/wcommon-1.6.0.tar.gz]
+[2024-04-28 11:52:45] INFO root fetch - processPackages [wcommon]: Remove: archive file [/home/abi/fetcher/tmp/wcommon-1.6.1.tar.gz]
+[2024-04-28 11:52:45] INFO root fetch - main [MainThread]: End processing [wcommon]: success
+[2024-04-28 11:52:45] INFO root fetch - processPackages [SpatialDM]: Remove: archive file [/home/abi/fetcher/tmp/SpatialDM-0.1.0-py3-none-any.whl.zip]
+[2024-04-28 11:52:45] INFO root fetch - processPackages [SpatialDM]: Remove: archive file [/home/abi/fetcher/tmp/SpatialDM-0.2.0.tar.gz]
+[2024-04-28 11:52:45] INFO root fetch - main [MainThread]: End processing [SpatialDM]: success
+[2024-04-28 11:52:46] INFO root fetch - processPackages [th-influx-sdk]: Remove: archive file [/home/abi/fetcher/tmp/th-influx-sdk-1.0.5.tar.gz]
+[2024-04-28 11:52:46] INFO root fetch - processPackages [th-influx-sdk]: Remove: archive file [/home/abi/fetcher/tmp/th-influx-sdk-1.0.6.tar.gz]
+[2024-04-28 11:52:46] INFO root fetch - main [MainThread]: End processing [th-influx-sdk]: success
+[2024-04-28 11:52:46] INFO root fetch - main [MainThread]: Store serial: [22965823]
