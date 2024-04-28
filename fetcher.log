@@ -12739,3 +12739,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:52:51] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.7.0.tar.gz]
 [2024-04-28 16:52:51] INFO root fetch - main [MainThread]: End processing [cefi]: success
 [2024-04-28 16:52:51] INFO root fetch - main [MainThread]: Store serial: [22967557]
+[2024-04-28 16:55:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967557]
+[2024-04-28 16:55:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 16:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-import-export
+[2024-04-28 16:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zodchy-fastapi
+[2024-04-28 16:55:13] INFO root fetch - processPackages [zodchy-fastapi]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 16:55:14] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/11/ec/802577d09dba86b9801af278ded2b474f0c17a61e579cbb74ff4fe2ca41b/zodchy_fastapi-0.1.1.tar.gz
+[2024-04-28 16:55:14] INFO root fetch - processPackages [django-import-export]: New version: [4.0.0rc3] Old Version: [4.0.0rc2]
+[2024-04-28 16:55:14] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/7f/bc/ef5cd32a122a85be44f83949819f88a22cf51623b7842c6a65127606b97f/django-import-export-4.0.0rc2.tar.gz
+[2024-04-28 16:55:14] INFO root fetch - processPackages [zodchy-fastapi]: Downloading https://files.pythonhosted.org/packages/62/47/e6ce80463b1e4d90d3d9aeaed4905f4317ed8e9b2c0c456f33236d7d0706/zodchy_fastapi-0.2.0.tar.gz
+[2024-04-28 16:55:14] INFO root fetch - processPackages [zodchy-fastapi]: executing diffoscope
+[2024-04-28 16:55:14] INFO root fetch - processPackages [zodchy-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zodchy_fastapi-0.1.1.tar.gz tmp/zodchy_fastapi-0.2.0.tar.gz --markdown 20240428/z/zodchy-fastapi/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 16:55:14] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/b2/b3/303edc33f78f60788bc60f87e0825f75e00c732c6a0fe811935923d42e53/django_import_export-4.0.0rc3.tar.gz
+[2024-04-28 16:55:14] INFO root fetch - processPackages [django-import-export]: executing diffoscope
+[2024-04-28 16:55:14] INFO root fetch - processPackages [django-import-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-import-export-4.0.0rc2.tar.gz tmp/django_import_export-4.0.0rc3.tar.gz --markdown 20240428/d/django-import-export/4.0.0rc2-4.0.0rc3/README.md --exclude *.pyd
+[2024-04-28 16:55:15] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.1.1.tar.gz]
+[2024-04-28 16:55:15] INFO root fetch - processPackages [zodchy-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/zodchy_fastapi-0.2.0.tar.gz]
+[2024-04-28 16:55:15] INFO root fetch - main [MainThread]: End processing [zodchy-fastapi]: success
+[2024-04-28 16:55:16] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django-import-export-4.0.0rc2.tar.gz]
+[2024-04-28 16:55:16] INFO root fetch - processPackages [django-import-export]: Remove: archive file [/home/abi/fetcher/tmp/django_import_export-4.0.0rc3.tar.gz]
+[2024-04-28 16:55:16] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
+[2024-04-28 16:55:16] INFO root fetch - main [MainThread]: Store serial: [22967563]
