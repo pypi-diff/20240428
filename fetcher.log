@@ -16320,3 +16320,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:06:14] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
 [2024-04-28 21:06:14] INFO root fetch - main [MainThread]: End processing [launchflow]: success
 [2024-04-28 21:06:14] INFO root fetch - main [MainThread]: Store serial: [22969025]
+[2024-04-28 21:08:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969025]
+[2024-04-28 21:08:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 21:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: web3morebundlers
+[2024-04-28 21:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panadas
+[2024-04-28 21:08:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-common
+[2024-04-28 21:08:23] WARNING root fetch - processPackages [web3morebundlers]: Skipping, unable to determine old version
+[2024-04-28 21:08:23] INFO root fetch - main [MainThread]: End processing [web3morebundlers] error
+[2024-04-28 21:08:23] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 21:08:23] WARNING root fetch - processPackages [panadas]: Skipping, unable to determine old version
+[2024-04-28 21:08:23] INFO root fetch - main [MainThread]: End processing [panadas] error
+[2024-04-28 21:08:23] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-28 21:08:24] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-28 21:08:24] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-28 21:08:24] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240428/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 21:08:24] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-28 21:08:24] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-28 21:08:24] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-28 21:08:24] INFO root fetch - main [MainThread]: Store serial: [22969034]
