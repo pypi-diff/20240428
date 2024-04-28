@@ -11985,3 +11985,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:56:12] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
 [2024-04-28 15:56:12] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-04-28 15:56:12] INFO root fetch - main [MainThread]: Store serial: [22967241]
+[2024-04-28 15:58:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967241]
+[2024-04-28 15:58:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 15:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: or-pcd
+[2024-04-28 15:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheengsDecoder
+[2024-04-28 15:58:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xerparser
+[2024-04-28 15:58:32] INFO root fetch - processPackages [TheengsDecoder]: New version: [1.7.7] Old Version: [1.7.5]
+[2024-04-28 15:58:32] INFO root fetch - processPackages [TheengsDecoder]: Downloading https://files.pythonhosted.org/packages/db/e2/b49cc65fbd88ee2696b8bc9b763f1e705ab5cf64906aae50a0421ffb3275/TheengsDecoder-1.7.5.tar.gz
+[2024-04-28 15:58:32] WARNING root fetch - processPackages [or-pcd]: Skipping, unable to determine old version
+[2024-04-28 15:58:32] INFO root fetch - main [MainThread]: End processing [or-pcd] error
+[2024-04-28 15:58:32] INFO root fetch - processPackages [xerparser]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-28 15:58:32] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/d9/b8/18f3046e2056eba25c985ca6032f27b0e998fc148dcae61ba8c1137c2fda/xerparser-0.9.8.tar.gz
+[2024-04-28 15:58:32] INFO root fetch - processPackages [TheengsDecoder]: Downloading https://files.pythonhosted.org/packages/b7/a9/58d17bf90cdf2428c9b9e3567182f3f510316a87bb958fd23a085febb14e/TheengsDecoder-1.7.7.tar.gz
+[2024-04-28 15:58:32] INFO root fetch - processPackages [TheengsDecoder]: executing diffoscope
+[2024-04-28 15:58:32] INFO root fetch - processPackages [TheengsDecoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheengsDecoder-1.7.5.tar.gz tmp/TheengsDecoder-1.7.7.tar.gz --markdown 20240428/T/TheengsDecoder/1.7.5-1.7.7/README.md --exclude *.pyd
+[2024-04-28 15:58:33] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/22/42/f0e78f46e0368cb92bc480f0764ca6ef9fc9b783412c97ad2208002fd0ee/xerparser-0.9.9.tar.gz
+[2024-04-28 15:58:33] INFO root fetch - processPackages [xerparser]: executing diffoscope
+[2024-04-28 15:58:33] INFO root fetch - processPackages [xerparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xerparser-0.9.8.tar.gz tmp/xerparser-0.9.9.tar.gz --markdown 20240428/x/xerparser/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-28 15:58:34] INFO root fetch - processPackages [xerparser]: Remove: archive file [/home/abi/fetcher/tmp/xerparser-0.9.8.tar.gz]
+[2024-04-28 15:58:34] INFO root fetch - processPackages [xerparser]: Remove: archive file [/home/abi/fetcher/tmp/xerparser-0.9.9.tar.gz]
+[2024-04-28 15:58:34] INFO root fetch - main [MainThread]: End processing [xerparser]: success
+[2024-04-28 15:58:34] INFO root fetch - processPackages [TheengsDecoder]: Remove: archive file [/home/abi/fetcher/tmp/TheengsDecoder-1.7.5.tar.gz]
+[2024-04-28 15:58:34] INFO root fetch - processPackages [TheengsDecoder]: Remove: archive file [/home/abi/fetcher/tmp/TheengsDecoder-1.7.7.tar.gz]
+[2024-04-28 15:58:34] INFO root fetch - main [MainThread]: End processing [TheengsDecoder]: success
+[2024-04-28 15:58:34] INFO root fetch - main [MainThread]: Store serial: [22967256]
