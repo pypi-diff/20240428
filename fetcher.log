@@ -4361,3 +4361,72 @@
 [2024-04-28 06:37:36] INFO root fetch - processPackages [oresat-configs]: Remove: archive file [/home/abi/fetcher/tmp/oresat_configs-0.5.0.tar.gz]
 [2024-04-28 06:37:36] INFO root fetch - main [MainThread]: End processing [oresat-configs]: success
 [2024-04-28 06:37:36] INFO root fetch - main [MainThread]: Store serial: [22964015]
+[2024-04-28 06:39:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964015]
+[2024-04-28 06:39:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudacious-iac
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: concopilot
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xju
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: concopilot-examples
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bluprint
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rahulnikamlibrary
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: smartlink-local
+[2024-04-28 06:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: refparse
+[2024-04-28 06:39:45] INFO root fetch - processPackages [cloudacious-iac]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot-examples]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [cloudacious-iac]: Downloading https://files.pythonhosted.org/packages/cc/9d/a0376157e3993472b3e9a971d163dc147240f9e7b465c52bed8427f1333d/cloudacious_iac-0.0.2.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [refparse]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-28 06:39:45] WARNING root fetch - processPackages [rahulnikamlibrary]: Skipping, unable to determine old version
+[2024-04-28 06:39:45] INFO root fetch - main [MainThread]: End processing [rahulnikamlibrary] error
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [smartlink-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [xju]: New version: [3.1.0] Old Version: [3.0.1]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [bluprint]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot-examples]: Downloading https://files.pythonhosted.org/packages/6c/29/e542c9b633c10f43888e419891b3255d02ed9fe8965654c40aa15b18f2c7/concopilot_examples-0.0.4.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot]: Downloading https://files.pythonhosted.org/packages/9b/8a/b19bbffe77fe1e7894560e5627581c396924c0837f645024ac2317ac4982/concopilot-0.0.4.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/37/53/8fc9691f041b78d4b26770e0338bf34ab62f996a11c7366b70f394f38db6/xju-3.0.1.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [bluprint]: Downloading https://files.pythonhosted.org/packages/8c/b1/90cc41a0fc41f39d8a1aa89ed43ac02a14d372cf3d00a0e344c22819cce9/bluprint-0.1.3.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [refparse]: Downloading https://files.pythonhosted.org/packages/fe/9f/18b529e6c63394214b581550a35c0e825268dad6079da73f317eba364dc4/refparse-0.3.0.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [smartlink-local]: Downloading https://files.pythonhosted.org/packages/33/0f/ea9406a1f10f69f535bf20c7279bd77b0c5e4be50c06b370e07773712231/smartlink-local-0.0.8.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [cloudacious-iac]: Downloading https://files.pythonhosted.org/packages/70/a0/6fd7d0bbe6a78ee42c1bed8aad614466ebe86802294455f1abbbed4d6b3c/cloudacious_iac-0.0.3.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [cloudacious-iac]: executing diffoscope
+[2024-04-28 06:39:45] INFO root fetch - processPackages [cloudacious-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudacious_iac-0.0.2.tar.gz tmp/cloudacious_iac-0.0.3.tar.gz --markdown 20240428/c/cloudacious-iac/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot-examples]: Downloading https://files.pythonhosted.org/packages/68/aa/4d877fd78005b339453557373c86f5af945017a96e34fba845c178b88fbc/concopilot_examples-0.0.5.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [bluprint]: Downloading https://files.pythonhosted.org/packages/50/61/4bed8ec4ad26bc7e876c8dc556ef2aca931d24e6a3b324cd6d8f8e0b79b7/bluprint-0.1.4.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [xju]: Downloading https://files.pythonhosted.org/packages/8e/92/427461a2f769c846ea62e37ae8b99e44d0affee0809979a85394921b65ae/xju-3.1.0.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot]: Downloading https://files.pythonhosted.org/packages/12/36/ffa2e24696ac8ab2f29aae140feaa75a8a0ff2629e40f7182ce6a8367700/concopilot-0.0.5.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [refparse]: Downloading https://files.pythonhosted.org/packages/f5/be/572563325fb689ac384a60ab96fa3593b9ca72a5855815940aafbf231fc4/refparse-0.4.0.tar.gz
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot-examples]: executing diffoscope
+[2024-04-28 06:39:45] INFO root fetch - processPackages [concopilot-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/concopilot_examples-0.0.4.tar.gz tmp/concopilot_examples-0.0.5.tar.gz --markdown 20240428/c/concopilot-examples/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 06:39:45] INFO root fetch - processPackages [bluprint]: executing diffoscope
+[2024-04-28 06:39:45] INFO root fetch - processPackages [bluprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluprint-0.1.3.tar.gz tmp/bluprint-0.1.4.tar.gz --markdown 20240428/b/bluprint/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 06:39:46] INFO root fetch - processPackages [xju]: executing diffoscope
+[2024-04-28 06:39:46] INFO root fetch - processPackages [xju]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xju-3.0.1.tar.gz tmp/xju-3.1.0.tar.gz --markdown 20240428/x/xju/3.0.1-3.1.0/README.md --exclude *.pyd
+[2024-04-28 06:39:46] INFO root fetch - processPackages [smartlink-local]: Downloading https://files.pythonhosted.org/packages/c8/e8/2941eb5c3e5dac4ad8d31d1a52137f323e161b66acc1f4d50ca9d1c0102b/smartlink-local-0.0.9.tar.gz
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot]: executing diffoscope
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/concopilot-0.0.4.tar.gz tmp/concopilot-0.0.5.tar.gz --markdown 20240428/c/concopilot/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 06:39:46] INFO root fetch - processPackages [refparse]: executing diffoscope
+[2024-04-28 06:39:46] INFO root fetch - processPackages [refparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refparse-0.3.0.tar.gz tmp/refparse-0.4.0.tar.gz --markdown 20240428/r/refparse/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-28 06:39:46] INFO root fetch - processPackages [smartlink-local]: executing diffoscope
+[2024-04-28 06:39:46] INFO root fetch - processPackages [smartlink-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartlink-local-0.0.8.tar.gz tmp/smartlink-local-0.0.9.tar.gz --markdown 20240428/s/smartlink-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 06:39:46] INFO root fetch - processPackages [cloudacious-iac]: Remove: archive file [/home/abi/fetcher/tmp/cloudacious_iac-0.0.2.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [cloudacious-iac]: Remove: archive file [/home/abi/fetcher/tmp/cloudacious_iac-0.0.3.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [cloudacious-iac]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [bluprint]: Remove: archive file [/home/abi/fetcher/tmp/bluprint-0.1.3.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [bluprint]: Remove: archive file [/home/abi/fetcher/tmp/bluprint-0.1.4.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [bluprint]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot-examples]: Remove: archive file [/home/abi/fetcher/tmp/concopilot_examples-0.0.4.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot-examples]: Remove: archive file [/home/abi/fetcher/tmp/concopilot_examples-0.0.5.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [concopilot-examples]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [refparse]: Remove: archive file [/home/abi/fetcher/tmp/refparse-0.3.0.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [refparse]: Remove: archive file [/home/abi/fetcher/tmp/refparse-0.4.0.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [refparse]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [smartlink-local]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-local-0.0.8.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [smartlink-local]: Remove: archive file [/home/abi/fetcher/tmp/smartlink-local-0.0.9.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [smartlink-local]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot]: Remove: archive file [/home/abi/fetcher/tmp/concopilot-0.0.4.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [concopilot]: Remove: archive file [/home/abi/fetcher/tmp/concopilot-0.0.5.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [concopilot]: success
+[2024-04-28 06:39:46] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.0.1.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - processPackages [xju]: Remove: archive file [/home/abi/fetcher/tmp/xju-3.1.0.tar.gz]
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: End processing [xju]: success
+[2024-04-28 06:39:46] INFO root fetch - main [MainThread]: Store serial: [22964040]
