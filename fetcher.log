@@ -17570,3 +17570,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 22:09:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.91.4.tar.gz]
 [2024-04-28 22:09:46] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-04-28 22:09:46] INFO root fetch - main [MainThread]: Store serial: [22969754]
+[2024-04-28 22:11:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969754]
+[2024-04-28 22:11:57] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: historicaldates
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scatcluster
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-urbackup
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cover_letter_automation
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymstodo
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certificate-watcher
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ocf-datapipes
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mau
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: py4web
+[2024-04-28 22:11:57] INFO root fetch - processPackages [scatcluster]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-28 22:11:57] INFO root fetch - processPackages [py4web]: New version: [1.20240428.1] Old Version: [1.20240427.2]
+[2024-04-28 22:11:57] WARNING root fetch - processPackages [historicaldates]: Skipping, unable to determine old version
+[2024-04-28 22:11:57] INFO root fetch - main [MainThread]: End processing [historicaldates] error
+[2024-04-28 22:11:57] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/fe/97/9e404d69d95cb21715a754c0b79a1aae9701f0de14f70e5b7701089bc9ad/scatcluster-0.0.5.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [certificate-watcher]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-28 22:11:57] WARNING root fetch - processPackages [python-urbackup]: Skipping, unable to determine old version
+[2024-04-28 22:11:57] INFO root fetch - main [MainThread]: End processing [python-urbackup] error
+[2024-04-28 22:11:57] INFO root fetch - processPackages [pymstodo]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-28 22:11:57] INFO root fetch - processPackages [mau]: New version: [4.0.0] Old Version: [3.1.0]
+[2024-04-28 22:11:57] WARNING root fetch - processPackages [cover_letter_automation]: Skipping, unable to determine old version
+[2024-04-28 22:11:57] INFO root fetch - main [MainThread]: End processing [cover_letter_automation] error
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ocf-datapipes]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-28 22:11:57] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/62/b4/45e4e33646c244467819a5de96347143144d7771ab53d818249f65cee153/py4web-1.20240427.2.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [certificate-watcher]: Downloading https://files.pythonhosted.org/packages/07/12/2d2b4faee1d58b2a94726462f931b659a27c73dbe0553f2cc30176877629/certificate_watcher-0.1.1.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [pymstodo]: Downloading https://files.pythonhosted.org/packages/f6/8d/96bb782332727ded70990a59c78a2beb81a2f09de4799046bd92678126ad/pymstodo-0.1.7.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [scatcluster]: Downloading https://files.pythonhosted.org/packages/89/d2/8181212d3d1c9dfe1c607d2588fac3f65cba29dad6f22e098165bbf2ed48/scatcluster-0.0.6.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [mau]: Downloading https://files.pythonhosted.org/packages/76/5a/08e09c03fe7a570d9e1bdb447c553991a52e65c2087d922c66502c8d1427/mau-3.1.0.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [ocf-datapipes]: Downloading https://files.pythonhosted.org/packages/15/c1/a7b606f36344fabf944e15a0797bc3247212355d28ff2a63eef5077883b8/ocf_datapipes-3.3.8.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [scatcluster]: executing diffoscope
+[2024-04-28 22:11:57] INFO root fetch - processPackages [scatcluster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scatcluster-0.0.5.tar.gz tmp/scatcluster-0.0.6.tar.gz --markdown 20240428/s/scatcluster/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-28 22:11:57] INFO root fetch - processPackages [certificate-watcher]: Downloading https://files.pythonhosted.org/packages/0a/bc/ede995a9d409b8004c40909ee535991edebc1b420f063c0435030218eaf6/certificate_watcher-0.2.0.tar.gz
+[2024-04-28 22:11:57] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/a4/b6/abcd2bd53e2cd71db8df78e305cea86f67747d3a977ecc906c14625586de/py4web-1.20240428.1.tar.gz
+[2024-04-28 22:11:58] INFO root fetch - processPackages [pymstodo]: Downloading https://files.pythonhosted.org/packages/38/18/0e9dbad01e81ed3a7b4c54dc99f55feab007ee6c3cc32a1d2985f07e74fe/pymstodo-0.1.8.tar.gz
+[2024-04-28 22:11:58] INFO root fetch - processPackages [mau]: Downloading https://files.pythonhosted.org/packages/7c/95/e3866333ace76ce0bc74da9f5e93ef001a9290dc46a07f87ffeb53087782/mau-4.0.0.tar.gz
+[2024-04-28 22:11:58] INFO root fetch - processPackages [ocf-datapipes]: Downloading https://files.pythonhosted.org/packages/55/0a/5970538e840540313fb117c6e1f7bad44ee3f3749d076d0440485cc60a89/ocf_datapipes-3.3.9.tar.gz
+[2024-04-28 22:11:58] INFO root fetch - processPackages [certificate-watcher]: executing diffoscope
+[2024-04-28 22:11:58] INFO root fetch - processPackages [certificate-watcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certificate_watcher-0.1.1.tar.gz tmp/certificate_watcher-0.2.0.tar.gz --markdown 20240428/c/certificate-watcher/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-28 22:11:58] INFO root fetch - processPackages [pymstodo]: executing diffoscope
+[2024-04-28 22:11:58] INFO root fetch - processPackages [pymstodo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymstodo-0.1.7.tar.gz tmp/pymstodo-0.1.8.tar.gz --markdown 20240428/p/pymstodo/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-28 22:11:58] INFO root fetch - processPackages [mau]: executing diffoscope
+[2024-04-28 22:11:58] INFO root fetch - processPackages [mau]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mau-3.1.0.tar.gz tmp/mau-4.0.0.tar.gz --markdown 20240428/m/mau/3.1.0-4.0.0/README.md --exclude *.pyd
+[2024-04-28 22:11:58] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.5.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
+[2024-04-28 22:11:58] INFO root fetch - processPackages [ocf-datapipes]: executing diffoscope
+[2024-04-28 22:11:58] INFO root fetch - processPackages [ocf-datapipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocf_datapipes-3.3.8.tar.gz tmp/ocf_datapipes-3.3.9.tar.gz --markdown 20240428/o/ocf-datapipes/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-28 22:11:58] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-04-28 22:11:58] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240427.2.tar.gz tmp/py4web-1.20240428.1.tar.gz --markdown 20240428/p/py4web/1.20240427.2-1.20240428.1/README.md --exclude *.pyd
+[2024-04-28 22:11:58] INFO root fetch - processPackages [pymstodo]: Remove: archive file [/home/abi/fetcher/tmp/pymstodo-0.1.7.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - processPackages [pymstodo]: Remove: archive file [/home/abi/fetcher/tmp/pymstodo-0.1.8.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - main [MainThread]: End processing [pymstodo]: success
+[2024-04-28 22:11:58] INFO root fetch - processPackages [certificate-watcher]: Remove: archive file [/home/abi/fetcher/tmp/certificate_watcher-0.1.1.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - processPackages [certificate-watcher]: Remove: archive file [/home/abi/fetcher/tmp/certificate_watcher-0.2.0.tar.gz]
+[2024-04-28 22:11:58] INFO root fetch - main [MainThread]: End processing [certificate-watcher]: success
+[2024-04-28 22:11:59] INFO root fetch - processPackages [ocf-datapipes]: Remove: archive file [/home/abi/fetcher/tmp/ocf_datapipes-3.3.8.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - processPackages [ocf-datapipes]: Remove: archive file [/home/abi/fetcher/tmp/ocf_datapipes-3.3.9.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - main [MainThread]: End processing [ocf-datapipes]: success
+[2024-04-28 22:11:59] INFO root fetch - processPackages [mau]: Remove: archive file [/home/abi/fetcher/tmp/mau-3.1.0.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - processPackages [mau]: Remove: archive file [/home/abi/fetcher/tmp/mau-4.0.0.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - main [MainThread]: End processing [mau]: success
+[2024-04-28 22:11:59] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240427.2.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240428.1.tar.gz]
+[2024-04-28 22:11:59] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-04-28 22:11:59] INFO root fetch - main [MainThread]: Store serial: [22969816]
