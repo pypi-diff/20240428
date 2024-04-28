@@ -3872,3 +3872,95 @@
 [2024-04-28 06:07:07] INFO root fetch - processPackages [hashcat]: Remove: archive file [/home/abi/fetcher/tmp/hashcat-5.1.0.post3.tar.gz]
 [2024-04-28 06:07:07] INFO root fetch - main [MainThread]: End processing [hashcat]: success
 [2024-04-28 06:07:07] INFO root fetch - main [MainThread]: Store serial: [22963834]
+[2024-04-28 06:09:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963834]
+[2024-04-28 06:09:16] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-gadzooks
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OZI
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: curve-apps
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiovodafone
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: einops
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cmoonvision
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ibeam
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: deepdog
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fastbench
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: oscb
+[2024-04-28 06:09:16] WARNING root fetch - processPackages [py-gadzooks]: Skipping, unable to determine old version
+[2024-04-28 06:09:16] INFO root fetch - processPackages [py-gadzooks]: Start processing: python-geoacumen
+[2024-04-28 06:09:16] INFO root fetch - main [MainThread]: End processing [py-gadzooks] error
+[2024-04-28 06:09:16] INFO root fetch - processPackages [fastbench]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [cmoonvision]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [oscb]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ibeam]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/5c/4a/3aecb7be554ec6159f35418879a6bb9cc184f7a230aa8fcdffa798e7be15/fastbench-0.1.2.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [curve-apps]: New version: [0.1.0rc1] Old Version: [0.1.0a1]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/47/13/aa7173787979e139a49b99ac015ec8cdcec5dd440f3d31b9c88bb824016b/oscb-1.0.6.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [deepdog]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [einops]: New version: [0.8.0] Old Version: [0.7.0rc2]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [aiovodafone]: New version: [0.6.0] Old Version: [0.5.4]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [OZI]: New version: [1.2.0] Old Version: [1.1.6]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [python-geoacumen]: New version: [2024.4.7] Old Version: [2024.4.28]
+[2024-04-28 06:09:16] INFO root fetch - processPackages [cmoonvision]: Downloading https://files.pythonhosted.org/packages/a9/6f/f2b4af5666e343736ea63086e9a97c5fd950ad9f79a4300da27c53d5ac7a/cmoonvision-0.1.0.tar.gz
+[2024-04-28 06:09:16] WARNING root fetch - processPackages [cmoonvision]: Skipping package: exceeds size limit 36976929>=10485760
+[2024-04-28 06:09:16] INFO root fetch - main [MainThread]: End processing [cmoonvision] error
+[2024-04-28 06:09:16] INFO root fetch - processPackages [curve-apps]: Downloading https://files.pythonhosted.org/packages/6c/47/df0b5d3e512aa17a0b178a2b5e08ae12743d27e23559616b7f26449dd257/curve_apps-0.1.0a1.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [aiovodafone]: Downloading https://files.pythonhosted.org/packages/d9/ba/bd1333cb8594efe67d485082d89102ccd7b17e513611f7636595fb5d5abf/aiovodafone-0.5.4.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/39/d3/95ca0da497afb0c2330ad7956232cedde756db9fcf181c0191bb7b73004b/OZI-1.1.6.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/bb/84/894cc8f1a2f2793d7cd286d1c2650771364e791066f3d0a6d63cdc86afd1/ibeam-0.5.1.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/33/71/6ae4f0ccda09e545472bdac2ee8ed8932722cc14393e4ed1e42e184e49ab/python-geoacumen-2024.4.28.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [fastbench]: Downloading https://files.pythonhosted.org/packages/8c/90/c85a1ae5d0dcd55c990f623e5cff26e5682a7d3524d4c9d72c0c5654746f/fastbench-0.1.3.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [einops]: Downloading https://files.pythonhosted.org/packages/09/ac/e3c0fb3a2047d9e822956b4eafb7d30ca350ad493d3ceec70ef61bb772a4/einops-0.7.0rc2.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/97/fa/2cda9f43880505a5e17a62f1fbb01c295ddda15cf5cc68046ad7db1a7dda/deepdog-0.7.8.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [oscb]: Downloading https://files.pythonhosted.org/packages/50/72/27bceac7b44d2f4d530a1f4c817cc3c6a4d06a0160455ee9ea2ace2ff49f/oscb-1.0.7.tar.gz
+[2024-04-28 06:09:16] INFO root fetch - processPackages [fastbench]: executing diffoscope
+[2024-04-28 06:09:16] INFO root fetch - processPackages [fastbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastbench-0.1.2.tar.gz tmp/fastbench-0.1.3.tar.gz --markdown 20240428/f/fastbench/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 06:09:16] INFO root fetch - processPackages [oscb]: executing diffoscope
+[2024-04-28 06:09:16] INFO root fetch - processPackages [oscb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oscb-1.0.6.tar.gz tmp/oscb-1.0.7.tar.gz --markdown 20240428/o/oscb/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [aiovodafone]: Downloading https://files.pythonhosted.org/packages/38/f2/5217181e7e8c687d1c4eb9e16203ff4b8ea728668a1b20d76e8b75936e57/aiovodafone-0.6.0.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [ibeam]: Downloading https://files.pythonhosted.org/packages/e8/e1/f08051c313d486ebeb3d99bc7229887f286ec070058a7e43d8973b4560ea/ibeam-0.5.2.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [einops]: Downloading https://files.pythonhosted.org/packages/79/ca/9f5dcb8bead39959454c3912266bedc4c315839cee0e0ca9f4328f4588c1/einops-0.8.0.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/4a/38/4e83cb3e0254b72df495e21d123d8794b6ba45802e0f7ead1080973594a1/OZI-1.2.0.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/a1/6f/c323ee22413683e37e5e1b774b19dd261c12363c53bc4c21e6b065d26d0e/deepdog-0.7.9.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [ibeam]: executing diffoscope
+[2024-04-28 06:09:17] INFO root fetch - processPackages [ibeam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibeam-0.5.1.tar.gz tmp/ibeam-0.5.2.tar.gz --markdown 20240428/i/ibeam/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [aiovodafone]: executing diffoscope
+[2024-04-28 06:09:17] INFO root fetch - processPackages [aiovodafone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiovodafone-0.5.4.tar.gz tmp/aiovodafone-0.6.0.tar.gz --markdown 20240428/a/aiovodafone/0.5.4-0.6.0/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [einops]: executing diffoscope
+[2024-04-28 06:09:17] INFO root fetch - processPackages [einops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/einops-0.7.0rc2.tar.gz tmp/einops-0.8.0.tar.gz --markdown 20240428/e/einops/0.7.0rc2-0.8.0/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [deepdog]: executing diffoscope
+[2024-04-28 06:09:17] INFO root fetch - processPackages [deepdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdog-0.7.8.tar.gz tmp/deepdog-0.7.9.tar.gz --markdown 20240428/d/deepdog/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-04-28 06:09:17] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.1.6.tar.gz tmp/OZI-1.2.0.tar.gz --markdown 20240428/O/OZI/1.1.6-1.2.0/README.md --exclude *.pyd
+[2024-04-28 06:09:17] INFO root fetch - processPackages [curve-apps]: Downloading https://files.pythonhosted.org/packages/e6/c2/476ce7540cc89aa25dea9a9896f554d4880cd46f301b1b73d5fc74b6c558/curve_apps-0.1.0rc1.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.2.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - processPackages [fastbench]: Remove: archive file [/home/abi/fetcher/tmp/fastbench-0.1.3.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - main [MainThread]: End processing [fastbench]: success
+[2024-04-28 06:09:17] INFO root fetch - processPackages [python-geoacumen]: Downloading https://files.pythonhosted.org/packages/f6/4d/d2bd3da5d4357004c515ec3a07f006b6e719414f1ed9f74e0e7d072f9f59/python-geoacumen-2024.4.7.tar.gz
+[2024-04-28 06:09:17] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.6.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - processPackages [oscb]: Remove: archive file [/home/abi/fetcher/tmp/oscb-1.0.7.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - main [MainThread]: End processing [oscb]: success
+[2024-04-28 06:09:17] INFO root fetch - processPackages [aiovodafone]: Remove: archive file [/home/abi/fetcher/tmp/aiovodafone-0.5.4.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - processPackages [aiovodafone]: Remove: archive file [/home/abi/fetcher/tmp/aiovodafone-0.6.0.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - main [MainThread]: End processing [aiovodafone]: success
+[2024-04-28 06:09:17] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.1.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - processPackages [ibeam]: Remove: archive file [/home/abi/fetcher/tmp/ibeam-0.5.2.tar.gz]
+[2024-04-28 06:09:17] INFO root fetch - main [MainThread]: End processing [ibeam]: success
+[2024-04-28 06:09:18] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-0.7.8.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-0.7.9.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - main [MainThread]: End processing [deepdog]: success
+[2024-04-28 06:09:18] INFO root fetch - processPackages [python-geoacumen]: executing diffoscope
+[2024-04-28 06:09:18] INFO root fetch - processPackages [python-geoacumen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-geoacumen-2024.4.28.tar.gz tmp/python-geoacumen-2024.4.7.tar.gz --markdown 20240428/p/python-geoacumen/2024.4.28-2024.4.7/README.md --exclude *.pyd
+[2024-04-28 06:09:18] INFO root fetch - processPackages [curve-apps]: executing diffoscope
+[2024-04-28 06:09:18] INFO root fetch - processPackages [curve-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curve_apps-0.1.0a1.tar.gz tmp/curve_apps-0.1.0rc1.tar.gz --markdown 20240428/c/curve-apps/0.1.0a1-0.1.0rc1/README.md --exclude *.pyd
+[2024-04-28 06:09:18] INFO root fetch - processPackages [einops]: Remove: archive file [/home/abi/fetcher/tmp/einops-0.7.0rc2.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - processPackages [einops]: Remove: archive file [/home/abi/fetcher/tmp/einops-0.8.0.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - main [MainThread]: End processing [einops]: success
+[2024-04-28 06:09:18] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.1.6.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.2.0.tar.gz]
+[2024-04-28 06:09:18] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-04-28 06:09:19] INFO root fetch - processPackages [curve-apps]: Remove: archive file [/home/abi/fetcher/tmp/curve_apps-0.1.0a1.tar.gz]
+[2024-04-28 06:09:19] INFO root fetch - processPackages [curve-apps]: Remove: archive file [/home/abi/fetcher/tmp/curve_apps-0.1.0rc1.tar.gz]
+[2024-04-28 06:09:19] INFO root fetch - main [MainThread]: End processing [curve-apps]: success
+[2024-04-28 06:09:19] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.28.tar.gz]
+[2024-04-28 06:09:19] INFO root fetch - processPackages [python-geoacumen]: Remove: archive file [/home/abi/fetcher/tmp/python-geoacumen-2024.4.7.tar.gz]
+[2024-04-28 06:09:19] INFO root fetch - main [MainThread]: End processing [python-geoacumen]: success
+[2024-04-28 06:09:19] INFO root fetch - main [MainThread]: Store serial: [22963871]
