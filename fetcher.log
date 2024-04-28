@@ -11713,3 +11713,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:32:33] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-28 15:32:33] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-28 15:32:33] INFO root fetch - main [MainThread]: Store serial: [22967128]
+[2024-04-28 15:34:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967128]
+[2024-04-28 15:34:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-04-28 15:34:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: YaraForge
+[2024-04-28 15:34:52] INFO root fetch - processPackages [mimllearning]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-28 15:34:52] INFO root fetch - processPackages [YaraForge]: New version: [0.1.8b1] Old Version: [0.1.7b1]
+[2024-04-28 15:34:52] INFO root fetch - processPackages [YaraForge]: Downloading https://files.pythonhosted.org/packages/39/64/baebe361487464be0f06f659cd5f0b7bdf97f88afb8fb18838b43c511303/YaraForge-0.1.7b1.tar.gz
+[2024-04-28 15:34:52] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/d5/39/a2b69640130e8ae3f717f5d3836291da816f73fe6a226b44eb78d97ae379/mimllearning-0.2.3.tar.gz
+[2024-04-28 15:34:53] INFO root fetch - processPackages [YaraForge]: Downloading https://files.pythonhosted.org/packages/a3/b3/23b6a5d5405b678138d4a0f15f52e253a6c052d1dc5b167a89605aa68308/YaraForge-0.1.8b1.tar.gz
+[2024-04-28 15:34:53] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/b9/3b/c8716b08b5e8f87067cf0fff314cf333c765aca53bf777c66e60cf565e3b/mimllearning-0.2.4.tar.gz
+[2024-04-28 15:34:53] INFO root fetch - processPackages [YaraForge]: executing diffoscope
+[2024-04-28 15:34:53] INFO root fetch - processPackages [YaraForge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YaraForge-0.1.7b1.tar.gz tmp/YaraForge-0.1.8b1.tar.gz --markdown 20240428/Y/YaraForge/0.1.7b1-0.1.8b1/README.md --exclude *.pyd
+[2024-04-28 15:34:53] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-04-28 15:34:53] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.2.3.tar.gz tmp/mimllearning-0.2.4.tar.gz --markdown 20240428/m/mimllearning/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-28 15:34:54] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.3.tar.gz]
+[2024-04-28 15:34:54] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.2.4.tar.gz]
+[2024-04-28 15:34:54] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-04-28 15:34:54] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.7b1.tar.gz]
+[2024-04-28 15:34:54] INFO root fetch - processPackages [YaraForge]: Remove: archive file [/home/abi/fetcher/tmp/YaraForge-0.1.8b1.tar.gz]
+[2024-04-28 15:34:54] INFO root fetch - main [MainThread]: End processing [YaraForge]: success
+[2024-04-28 15:34:54] INFO root fetch - main [MainThread]: Store serial: [22967135]
