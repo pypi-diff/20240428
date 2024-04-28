@@ -5211,3 +5211,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 07:49:03] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
 [2024-04-28 07:49:03] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
 [2024-04-28 07:49:03] INFO root fetch - main [MainThread]: Store serial: [22964338]
+[2024-04-28 07:51:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964338]
+[2024-04-28 07:51:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-28 07:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abstract-clients
+[2024-04-28 07:51:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npc-stim
+[2024-04-28 07:51:12] INFO root fetch - processPackages [abstract-clients]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2024-04-28 07:51:12] INFO root fetch - processPackages [npc-stim]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-28 07:51:12] INFO root fetch - processPackages [npc-stim]: Downloading https://files.pythonhosted.org/packages/1d/e8/cca158c228399e0ae1b2ba5ab0f134f083917ee4b191a500b8eb90010634/npc-stim-0.1.6.tar.gz
+[2024-04-28 07:51:12] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/5c/94/60786af451de2511cb33a2263f142da5c39b8852fa38ece7aa5a9fb66df0/abstract_clients-0.0.0.2.tar.gz
+[2024-04-28 07:51:12] INFO root fetch - processPackages [npc-stim]: Downloading https://files.pythonhosted.org/packages/f5/1c/86c88004c9c76e21c15dbe83ce9a154fbc0ed442726b947659e4b3c8d79b/npc_stim-0.1.7.tar.gz
+[2024-04-28 07:51:12] INFO root fetch - processPackages [npc-stim]: executing diffoscope
+[2024-04-28 07:51:12] INFO root fetch - processPackages [npc-stim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-stim-0.1.6.tar.gz tmp/npc_stim-0.1.7.tar.gz --markdown 20240428/n/npc-stim/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-28 07:51:12] INFO root fetch - processPackages [abstract-clients]: Downloading https://files.pythonhosted.org/packages/ac/53/beaa6409311284c5ebb82eb61e058603be9930743b96afec5a4c1ff5b706/abstract_clients-0.0.0.3.tar.gz
+[2024-04-28 07:51:12] INFO root fetch - processPackages [abstract-clients]: executing diffoscope
+[2024-04-28 07:51:12] INFO root fetch - processPackages [abstract-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_clients-0.0.0.2.tar.gz tmp/abstract_clients-0.0.0.3.tar.gz --markdown 20240428/a/abstract-clients/0.0.0.2-0.0.0.3/README.md --exclude *.pyd
+[2024-04-28 07:51:13] INFO root fetch - processPackages [npc-stim]: Remove: archive file [/home/abi/fetcher/tmp/npc-stim-0.1.6.tar.gz]
+[2024-04-28 07:51:13] INFO root fetch - processPackages [npc-stim]: Remove: archive file [/home/abi/fetcher/tmp/npc_stim-0.1.7.tar.gz]
+[2024-04-28 07:51:13] INFO root fetch - main [MainThread]: End processing [npc-stim]: success
+[2024-04-28 07:51:13] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.2.tar.gz]
+[2024-04-28 07:51:13] INFO root fetch - processPackages [abstract-clients]: Remove: archive file [/home/abi/fetcher/tmp/abstract_clients-0.0.0.3.tar.gz]
+[2024-04-28 07:51:13] INFO root fetch - main [MainThread]: End processing [abstract-clients]: success
+[2024-04-28 07:51:13] INFO root fetch - main [MainThread]: Store serial: [22964351]
