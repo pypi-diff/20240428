@@ -8299,3 +8299,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xb5 in position 72: invalid
 [2024-04-28 11:28:53] INFO root fetch - processPackages [gray]: Remove: archive file [/home/abi/fetcher/tmp/gray-0.9.0.tar.gz]
 [2024-04-28 11:28:53] INFO root fetch - main [MainThread]: End processing [gray]: success
 [2024-04-28 11:28:53] INFO root fetch - main [MainThread]: Store serial: [22965713]
+[2024-04-28 11:30:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22965713]
+[2024-04-28 11:31:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 11:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vio
+[2024-04-28 11:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-openapi3-scalar
+[2024-04-28 11:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deepdog
+[2024-04-28 11:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sferriol-python
+[2024-04-28 11:31:02] INFO root fetch - processPackages [vio]: New version: [0.0.0.1] Old Version: [0.0.0]
+[2024-04-28 11:31:02] INFO root fetch - processPackages [deepdog]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-28 11:31:02] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/97/fa/2cda9f43880505a5e17a62f1fbb01c295ddda15cf5cc68046ad7db1a7dda/deepdog-0.7.8.tar.gz
+[2024-04-28 11:31:02] WARNING root fetch - processPackages [flask-openapi3-scalar]: Skipping, unable to determine old version
+[2024-04-28 11:31:02] INFO root fetch - processPackages [sferriol-python]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-28 11:31:02] INFO root fetch - main [MainThread]: End processing [flask-openapi3-scalar] error
+[2024-04-28 11:31:02] INFO root fetch - processPackages [vio]: Downloading https://files.pythonhosted.org/packages/dc/22/164105a5560762327c82a7ea3a516f3b20e45b34bdf44b4ddc4561346101/vio-0.0.0.tar.gz
+[2024-04-28 11:31:02] INFO root fetch - processPackages [deepdog]: Downloading https://files.pythonhosted.org/packages/a1/6f/c323ee22413683e37e5e1b774b19dd261c12363c53bc4c21e6b065d26d0e/deepdog-0.7.9.tar.gz
+[2024-04-28 11:31:02] INFO root fetch - processPackages [sferriol-python]: Downloading https://files.pythonhosted.org/packages/18/04/f0fae401e38afb99415b51b08ae8fafd22abd15833f4f7b5d27f83ae468d/sferriol-python-0.4.1.tar.gz
+[2024-04-28 11:31:02] INFO root fetch - processPackages [deepdog]: executing diffoscope
+[2024-04-28 11:31:02] INFO root fetch - processPackages [deepdog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdog-0.7.8.tar.gz tmp/deepdog-0.7.9.tar.gz --markdown 20240428/d/deepdog/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-28 11:31:02] INFO root fetch - processPackages [vio]: Downloading https://files.pythonhosted.org/packages/0f/f5/01028925adfd1c574d3e44a50cf58a5530e33e11e284f7152ed89ceb29ee/vio-0.0.0.1.tar.gz
+[2024-04-28 11:31:02] INFO root fetch - processPackages [sferriol-python]: Downloading https://files.pythonhosted.org/packages/db/e2/e05cef561d2e1863c6412046fba65512c3bb778a45888e29a32cddc942ee/sferriol_python-0.5.0.tar.gz
+[2024-04-28 11:31:02] INFO root fetch - processPackages [vio]: executing diffoscope
+[2024-04-28 11:31:02] INFO root fetch - processPackages [vio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vio-0.0.0.tar.gz tmp/vio-0.0.0.1.tar.gz --markdown 20240428/v/vio/0.0.0-0.0.0.1/README.md --exclude *.pyd
+[2024-04-28 11:31:02] INFO root fetch - processPackages [sferriol-python]: executing diffoscope
+[2024-04-28 11:31:02] INFO root fetch - processPackages [sferriol-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sferriol-python-0.4.1.tar.gz tmp/sferriol_python-0.5.0.tar.gz --markdown 20240428/s/sferriol-python/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-28 11:31:03] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-0.7.8.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - processPackages [deepdog]: Remove: archive file [/home/abi/fetcher/tmp/deepdog-0.7.9.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - main [MainThread]: End processing [deepdog]: success
+[2024-04-28 11:31:03] INFO root fetch - processPackages [vio]: Remove: archive file [/home/abi/fetcher/tmp/vio-0.0.0.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - processPackages [vio]: Remove: archive file [/home/abi/fetcher/tmp/vio-0.0.0.1.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - main [MainThread]: End processing [vio]: success
+[2024-04-28 11:31:03] INFO root fetch - processPackages [sferriol-python]: Remove: archive file [/home/abi/fetcher/tmp/sferriol-python-0.4.1.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - processPackages [sferriol-python]: Remove: archive file [/home/abi/fetcher/tmp/sferriol_python-0.5.0.tar.gz]
+[2024-04-28 11:31:03] INFO root fetch - main [MainThread]: End processing [sferriol-python]: success
+[2024-04-28 11:31:03] INFO root fetch - main [MainThread]: Store serial: [22965727]
