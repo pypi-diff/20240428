@@ -3742,3 +3742,15 @@
 [2024-04-28 05:47:43] INFO root fetch - processPackages [pybotters]: Remove: archive file [/home/abi/fetcher/tmp/pybotters-1.1.0.tar.gz]
 [2024-04-28 05:47:43] INFO root fetch - main [MainThread]: End processing [pybotters]: success
 [2024-04-28 05:47:43] INFO root fetch - main [MainThread]: Store serial: [22963799]
+[2024-04-28 05:49:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963799]
+[2024-04-28 05:49:52] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 05:49:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: YoutubeUser
+[2024-04-28 05:49:52] INFO root fetch - processPackages [YoutubeUser]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 05:49:52] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/44/33/480bba8161b6e0c402e43a1c87f0006be76f811d466c42218fdd48d1650c/youtubeuser-0.0.4.tar.gz
+[2024-04-28 05:49:52] INFO root fetch - processPackages [YoutubeUser]: Downloading https://files.pythonhosted.org/packages/5b/c4/4e258fd54a051789470c67cc3d9daea261f5c82e04987cc5c4b447278649/youtubeuser-0.0.5.tar.gz
+[2024-04-28 05:49:52] INFO root fetch - processPackages [YoutubeUser]: executing diffoscope
+[2024-04-28 05:49:52] INFO root fetch - processPackages [YoutubeUser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtubeuser-0.0.4.tar.gz tmp/youtubeuser-0.0.5.tar.gz --markdown 20240428/Y/YoutubeUser/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 05:49:53] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.4.tar.gz]
+[2024-04-28 05:49:53] INFO root fetch - processPackages [YoutubeUser]: Remove: archive file [/home/abi/fetcher/tmp/youtubeuser-0.0.5.tar.gz]
+[2024-04-28 05:49:53] INFO root fetch - main [MainThread]: End processing [YoutubeUser]: success
+[2024-04-28 05:49:53] INFO root fetch - main [MainThread]: Store serial: [22963801]
