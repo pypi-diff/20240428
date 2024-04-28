@@ -15465,3 +15465,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:00:46] INFO root fetch - processPackages [REaLTabFormer]: Remove: archive file [/home/abi/fetcher/tmp/REaLTabFormer-0.1.7.tar.gz]
 [2024-04-28 20:00:46] INFO root fetch - main [MainThread]: End processing [REaLTabFormer]: success
 [2024-04-28 20:00:46] INFO root fetch - main [MainThread]: Store serial: [22968655]
+[2024-04-28 20:02:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968655]
+[2024-04-28 20:02:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simplebox
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jetline
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: altscore
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: earnapi
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yew
+[2024-04-28 20:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: connectome-interpreter
+[2024-04-28 20:02:54] INFO root fetch - processPackages [yew]: New version: [0.1.1.dev1] Old Version: [0.1.1.dev0]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [jetline]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a202] Old Version: [0.0.1a201]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [altscore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/14/d7/4b17ee6567b17ad4eec9a6e6ceded1190275544e45e07f7b10971d03dc9f/jetline-0.1.8.tar.gz
+[2024-04-28 20:02:54] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/83/cc/a6d7d4c8b4a0b08bc270c692cc7bd7f1fa6ccf19a8466e908573f4af1e42/simplebox-0.0.1a201-py3-none-any.whl
+[2024-04-28 20:02:54] INFO root fetch - processPackages [earnapi]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-04-28 20:02:54] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/5f/a6/fb416592a06e3f048aaf0891b596bd989dcd5841cb33ab09db5bb52d0970/altscore-0.1.98.tar.gz
+[2024-04-28 20:02:54] INFO root fetch - processPackages [yew]: Downloading https://files.pythonhosted.org/packages/82/11/f54ebd6056abf0b4e16df7ad2a7dd4ce96649fe2854303aec277197fc46e/yew-0.1.1.dev0.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/06/d2/0f4223f6aa311945368ce2e0758ffaab5edaf4cf279eb0c324ccb0d27d32/connectome_interpreter-1.5.0.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/5f/38/13b9bd9629e9ea53557ec610c2c7b273396da5a53ae05c0db943e604233f/earnapi-1.0.5.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [altscore]: Downloading https://files.pythonhosted.org/packages/e3/b6/865ff08cbdee5b1522cc15ce8760f46380d0a77722135623bdfa5b3ab9f5/altscore-0.1.99.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [jetline]: Downloading https://files.pythonhosted.org/packages/e3/52/ee8efe5ee3940966b4c7e8b471dd88336c2950833a0dd4b4854cce8f181b/jetline-0.1.9.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/bd/81/fc0b837e08676f246e289fe3750d86addde7ee1519bab7545a0c00ac3392/simplebox-0.0.1a202-py3-none-any.whl
+[2024-04-28 20:02:55] INFO root fetch - processPackages [jetline]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [jetline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetline-0.1.8.tar.gz tmp/jetline-0.1.9.tar.gz --markdown 20240428/j/jetline/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-28 20:02:55] INFO root fetch - processPackages [yew]: Downloading https://files.pythonhosted.org/packages/6a/0e/6a390b04d2e5cc10809b36db2eb0f3b48895d39f66f35507ebd96b4f4cbc/yew-0.1.1.dev1.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [altscore]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [altscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-0.1.98.tar.gz tmp/altscore-0.1.99.tar.gz --markdown 20240428/a/altscore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-28 20:02:55] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a201-py3-none-any.whl.zip tmp/simplebox-0.0.1a202-py3-none-any.whl.zip --markdown 20240428/s/simplebox/0.0.1a201-0.0.1a202/README.md --exclude *.pyd
+[2024-04-28 20:02:55] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/7a/2f/ff33d9cd68efa4b55e23ce021501d23fea943c0b656562532a3a7b5ef380/connectome_interpreter-1.6.0.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [earnapi]: Downloading https://files.pythonhosted.org/packages/98/27/a552ff1532a324bf77acf04239d963346c1cf22d30d50d446c16b7c3350a/earnapi-1.1.0.tar.gz
+[2024-04-28 20:02:55] INFO root fetch - processPackages [earnapi]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [earnapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earnapi-1.0.5.tar.gz tmp/earnapi-1.1.0.tar.gz --markdown 20240428/e/earnapi/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-04-28 20:02:55] INFO root fetch - processPackages [yew]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [yew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yew-0.1.1.dev0.tar.gz tmp/yew-0.1.1.dev1.tar.gz --markdown 20240428/y/yew/0.1.1.dev0-0.1.1.dev1/README.md --exclude *.pyd
+[2024-04-28 20:02:55] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-28 20:02:55] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.5.0.tar.gz tmp/connectome_interpreter-1.6.0.tar.gz --markdown 20240428/c/connectome-interpreter/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-28 20:02:56] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.8.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [jetline]: Remove: archive file [/home/abi/fetcher/tmp/jetline-0.1.9.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [jetline]: success
+[2024-04-28 20:02:56] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.98.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [altscore]: Remove: archive file [/home/abi/fetcher/tmp/altscore-0.1.99.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [altscore]: success
+[2024-04-28 20:02:56] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-1.0.5.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [earnapi]: Remove: archive file [/home/abi/fetcher/tmp/earnapi-1.1.0.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [earnapi]: success
+[2024-04-28 20:02:56] INFO root fetch - processPackages [yew]: Remove: archive file [/home/abi/fetcher/tmp/yew-0.1.1.dev0.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [yew]: Remove: archive file [/home/abi/fetcher/tmp/yew-0.1.1.dev1.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [yew]: success
+[2024-04-28 20:02:56] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.5.0.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.6.0.tar.gz]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-28 20:02:56] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a201-py3-none-any.whl.zip]
+[2024-04-28 20:02:56] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a202-py3-none-any.whl.zip]
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-28 20:02:56] INFO root fetch - main [MainThread]: Store serial: [22968673]
