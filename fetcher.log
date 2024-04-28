@@ -16571,3 +16571,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 21:23:39] INFO root fetch - processPackages [scatcluster]: Remove: archive file [/home/abi/fetcher/tmp/scatcluster-0.0.6.tar.gz]
 [2024-04-28 21:23:39] INFO root fetch - main [MainThread]: End processing [scatcluster]: success
 [2024-04-28 21:23:39] INFO root fetch - main [MainThread]: Store serial: [22969130]
+[2024-04-28 21:25:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22969130]
+[2024-04-28 21:25:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parsett
+[2024-04-28 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numpy5
+[2024-04-28 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: developergpt
+[2024-04-28 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: laser-mind-client
+[2024-04-28 21:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: octomy-common
+[2024-04-28 21:25:48] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-28 21:25:48] WARNING root fetch - processPackages [numpy5]: Skipping, unable to determine old version
+[2024-04-28 21:25:48] INFO root fetch - main [MainThread]: End processing [numpy5] error
+[2024-04-28 21:25:48] WARNING root fetch - processPackages [parsett]: Skipping, unable to determine old version
+[2024-04-28 21:25:48] INFO root fetch - main [MainThread]: End processing [parsett] error
+[2024-04-28 21:25:48] WARNING root fetch - processPackages [laser-mind-client]: Skipping, unable to determine old version
+[2024-04-28 21:25:48] INFO root fetch - main [MainThread]: End processing [laser-mind-client] error
+[2024-04-28 21:25:48] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-28 21:25:48] INFO root fetch - processPackages [developergpt]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-28 21:25:48] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-28 21:25:48] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-28 21:25:48] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240428/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-28 21:25:49] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/0b/76/e71fb4cda93bdf5a469415907c28cedc85764a144a08385e25743485a530/developergpt-0.7.0.tar.gz
+[2024-04-28 21:25:49] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/f0/2e/01e69aaad6a41d6a637ac956488ff1e598318eb20105f8f55ca5f4047ad1/developergpt-0.7.1.tar.gz
+[2024-04-28 21:25:49] INFO root fetch - processPackages [developergpt]: executing diffoscope
+[2024-04-28 21:25:49] INFO root fetch - processPackages [developergpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developergpt-0.7.0.tar.gz tmp/developergpt-0.7.1.tar.gz --markdown 20240428/d/developergpt/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-28 21:25:49] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-28 21:25:49] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-28 21:25:49] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-28 21:25:50] INFO root fetch - processPackages [developergpt]: Remove: archive file [/home/abi/fetcher/tmp/developergpt-0.7.0.tar.gz]
+[2024-04-28 21:25:50] INFO root fetch - processPackages [developergpt]: Remove: archive file [/home/abi/fetcher/tmp/developergpt-0.7.1.tar.gz]
+[2024-04-28 21:25:50] INFO root fetch - main [MainThread]: End processing [developergpt]: success
+[2024-04-28 21:25:50] INFO root fetch - main [MainThread]: Store serial: [22969150]
