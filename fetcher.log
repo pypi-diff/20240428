@@ -5776,3 +5776,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 08:31:04] INFO root fetch - processPackages [p-template-generator]: Remove: archive file [/home/abi/fetcher/tmp/p-template-generator-0.1.99.tar.gz]
 [2024-04-28 08:31:04] INFO root fetch - main [MainThread]: End processing [p-template-generator]: success
 [2024-04-28 08:31:04] INFO root fetch - main [MainThread]: Store serial: [22964601]
+[2024-04-28 08:33:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964601]
+[2024-04-28 08:33:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 08:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dycw-utilities
+[2024-04-28 08:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glook
+[2024-04-28 08:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-axe
+[2024-04-28 08:33:13] INFO root fetch - processPackages [glook]: New version: [0.1.5b1] Old Version: [0.1.5]
+[2024-04-28 08:33:13] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/67/3c/0d10e895b895cb9b77f50e35d713d8f3444653789fe20fe1c176b2efa041/glook-0.1.5-py3-none-any.whl
+[2024-04-28 08:33:13] INFO root fetch - processPackages [llm-axe]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-28 08:33:13] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-04-28 08:33:13] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/87/38/5a77e120e3f92cb171e4aa3c82bf9fe44467301e41fd88efac5182b79720/glook-0.1.5b1-py3-none-any.whl
+[2024-04-28 08:33:13] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/f0/55/a20bca90f06fac8560e2d877ff865c504ae7d558027618f36f97bd6fc8f2/llm_axe-1.0.0.tar.gz
+[2024-04-28 08:33:13] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-04-28 08:33:13] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-04-28 08:33:13] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-0.1.5-py3-none-any.whl.zip tmp/glook-0.1.5b1-py3-none-any.whl.zip --markdown 20240428/g/glook/0.1.5-0.1.5b1/README.md --exclude *.pyd
+[2024-04-28 08:33:13] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/84/ea/e731f1da1617a24513cd5bd744817727ffccf1f0ebbe8cf9a75a1dc9c33e/llm_axe-1.0.1.tar.gz
+[2024-04-28 08:33:13] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-04-28 08:33:14] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-04-28 08:33:14] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240428/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-04-28 08:33:14] INFO root fetch - processPackages [llm-axe]: executing diffoscope
+[2024-04-28 08:33:14] INFO root fetch - processPackages [llm-axe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_axe-1.0.0.tar.gz tmp/llm_axe-1.0.1.tar.gz --markdown 20240428/l/llm-axe/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-28 08:33:14] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.1.5-py3-none-any.whl.zip]
+[2024-04-28 08:33:14] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-0.1.5b1-py3-none-any.whl.zip]
+[2024-04-28 08:33:14] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-04-28 08:33:14] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.0.tar.gz]
+[2024-04-28 08:33:14] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.1.tar.gz]
+[2024-04-28 08:33:14] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
+[2024-04-28 08:33:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-04-28 08:33:14] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-04-28 08:33:14] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-04-28 08:33:14] INFO root fetch - main [MainThread]: Store serial: [22964650]
