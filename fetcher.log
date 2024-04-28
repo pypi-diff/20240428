@@ -10628,3 +10628,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 14:21:21] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
 [2024-04-28 14:21:21] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-04-28 14:21:21] INFO root fetch - main [MainThread]: Store serial: [22966650]
+[2024-04-28 14:23:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966650]
+[2024-04-28 14:23:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 14:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-04-28 14:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pref-voting
+[2024-04-28 14:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: werag
+[2024-04-28 14:23:37] INFO root fetch - processPackages [mteb]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-04-28 14:23:37] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/b5/e7/1ffcd000a118bd6a4b183610de5d0891ab9c767ccabb6c7e3f63ba9edb45/mteb-1.7.8.tar.gz
+[2024-04-28 14:23:37] INFO root fetch - processPackages [werag]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-28 14:23:37] INFO root fetch - processPackages [pref-voting]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 14:23:37] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/24/63/cdda6b7f19eaaa41be963e81414ab7099b0b3f1732e37164511858e45c82/werag-0.0.3.tar.gz
+[2024-04-28 14:23:37] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/7b/2a/4f1cb8f32e4c499174af7278bbc3ee34bde03a7b65fd571b022a6a7c051d/pref_voting-1.0.0.tar.gz
+[2024-04-28 14:23:37] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/eb/d9/b925270f0a2467b3204b0f467cc702668d24bd9a8e876306ea7e3da17507/mteb-1.7.9.tar.gz
+[2024-04-28 14:23:37] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-28 14:23:37] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.7.8.tar.gz tmp/mteb-1.7.9.tar.gz --markdown 20240428/m/mteb/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-04-28 14:23:38] INFO root fetch - processPackages [werag]: Downloading https://files.pythonhosted.org/packages/dc/40/cf3f61f14b76020723687d9029aabf3b9051863eb3f3f38b0a002feb7744/werag-0.0.4.tar.gz
+[2024-04-28 14:23:38] INFO root fetch - processPackages [pref-voting]: Downloading https://files.pythonhosted.org/packages/ca/4b/d423797bb83b6621e45bfc6fe5f2cebf745e9a613ee018850a8c60d38adb/pref_voting-1.1.0.tar.gz
+[2024-04-28 14:23:38] INFO root fetch - processPackages [pref-voting]: executing diffoscope
+[2024-04-28 14:23:38] INFO root fetch - processPackages [pref-voting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pref_voting-1.0.0.tar.gz tmp/pref_voting-1.1.0.tar.gz --markdown 20240428/p/pref-voting/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 14:23:38] INFO root fetch - processPackages [werag]: executing diffoscope
+[2024-04-28 14:23:38] INFO root fetch - processPackages [werag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/werag-0.0.3.tar.gz tmp/werag-0.0.4.tar.gz --markdown 20240428/w/werag/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-28 14:23:38] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.3.tar.gz]
+[2024-04-28 14:23:38] INFO root fetch - processPackages [werag]: Remove: archive file [/home/abi/fetcher/tmp/werag-0.0.4.tar.gz]
+[2024-04-28 14:23:38] INFO root fetch - main [MainThread]: End processing [werag]: success
+[2024-04-28 14:23:39] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.0.0.tar.gz]
+[2024-04-28 14:23:39] INFO root fetch - processPackages [pref-voting]: Remove: archive file [/home/abi/fetcher/tmp/pref_voting-1.1.0.tar.gz]
+[2024-04-28 14:23:39] INFO root fetch - main [MainThread]: End processing [pref-voting]: success
+[2024-04-28 14:23:39] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.8.tar.gz]
+[2024-04-28 14:23:39] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.7.9.tar.gz]
+[2024-04-28 14:23:39] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-28 14:23:39] INFO root fetch - main [MainThread]: Store serial: [22966659]
