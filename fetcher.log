@@ -1374,3 +1374,36 @@
 [2024-04-28 02:02:22] INFO root fetch - processPackages [local-lang]: Remove: archive file [/home/abi/fetcher/tmp/local_lang-0.0.9.tar.gz]
 [2024-04-28 02:02:22] INFO root fetch - main [MainThread]: End processing [local-lang]: success
 [2024-04-28 02:02:22] INFO root fetch - main [MainThread]: Store serial: [22962794]
+[2024-04-28 02:04:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962794]
+[2024-04-28 02:04:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: querent
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnxscript
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hexdoc-hexdebug
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ibis-framework
+[2024-04-28 02:04:31] INFO root fetch - processPackages [querent]: New version: [3.0.6] Old Version: [3.0.5]
+[2024-04-28 02:04:31] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240427] Old Version: [0.1.0.dev20240426]
+[2024-04-28 02:04:31] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/a8/f1/52464b94629958d4c4374b4706ff66d45f4d6f56702ef8726784a25b372a/querent-3.0.5.tar.gz
+[2024-04-28 02:04:31] WARNING root fetch - processPackages [hexdoc-hexdebug]: Skipping, unable to determine old version
+[2024-04-28 02:04:31] INFO root fetch - main [MainThread]: End processing [hexdoc-hexdebug] error
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ibis-framework]: New version: [v0.6.0] Old Version: [9.0.0.dev686]
+[2024-04-28 02:04:31] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/ab/cc/fac6d7e9957ad36b803da701983c4bb8794f03ffa95d454f66dc2f3d05fc/onnxscript-0.1.0.dev20240426.tar.gz
+[2024-04-28 02:04:31] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/25/27/d42cad7d2f3e8dfcb90f08cf43c86239cd0e143735dd698a882ee93975cc/ibis_framework-9.0.0.dev686.tar.gz
+[2024-04-28 02:04:31] INFO root fetch - processPackages [querent]: Downloading https://files.pythonhosted.org/packages/66/a7/02888995d48a3700e34aefd626ad9834833b1b605b019496ff44fd1188a8/querent-3.0.6.tar.gz
+[2024-04-28 02:04:31] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/8f/36/19de72ee56b2a4078e4558d329e4978950848dc58c2464d3ec8bb9caf1ee/onnxscript-0.1.0.dev20240427.tar.gz
+[2024-04-28 02:04:32] INFO root fetch - processPackages [querent]: executing diffoscope
+[2024-04-28 02:04:32] INFO root fetch - processPackages [querent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/querent-3.0.5.tar.gz tmp/querent-3.0.6.tar.gz --markdown 20240428/q/querent/3.0.5-3.0.6/README.md --exclude *.pyd
+[2024-04-28 02:04:32] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-28 02:04:32] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240426.tar.gz tmp/onnxscript-0.1.0.dev20240427.tar.gz --markdown 20240428/o/onnxscript/0.1.0.dev20240426-0.1.0.dev20240427/README.md --exclude *.pyd
+[2024-04-28 02:04:32] INFO root fetch - processPackages [ibis-framework]: Downloading https://files.pythonhosted.org/packages/0b/3d/fbf4278e9e436717a6fe476a81d1abec511869bba1cf642b601472bf6408/ibis-framework-v0.6.0.tar.gz
+[2024-04-28 02:04:32] INFO root fetch - processPackages [ibis-framework]: executing diffoscope
+[2024-04-28 02:04:32] INFO root fetch - processPackages [ibis-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibis_framework-9.0.0.dev686.tar.gz tmp/ibis-framework-v0.6.0.tar.gz --markdown 20240428/i/ibis-framework/9.0.0.dev686-v0.6.0/README.md --exclude *.pyd
+[2024-04-28 02:04:32] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.5.tar.gz]
+[2024-04-28 02:04:32] INFO root fetch - processPackages [querent]: Remove: archive file [/home/abi/fetcher/tmp/querent-3.0.6.tar.gz]
+[2024-04-28 02:04:32] INFO root fetch - main [MainThread]: End processing [querent]: success
+[2024-04-28 02:04:33] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240426.tar.gz]
+[2024-04-28 02:04:33] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240427.tar.gz]
+[2024-04-28 02:04:33] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-28 02:04:33] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis_framework-9.0.0.dev686.tar.gz]
+[2024-04-28 02:04:33] INFO root fetch - processPackages [ibis-framework]: Remove: archive file [/home/abi/fetcher/tmp/ibis-framework-v0.6.0.tar.gz]
+[2024-04-28 02:04:33] INFO root fetch - main [MainThread]: End processing [ibis-framework]: success
+[2024-04-28 02:04:33] INFO root fetch - main [MainThread]: Store serial: [22962808]
