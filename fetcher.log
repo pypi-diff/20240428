@@ -12578,3 +12578,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 16:40:57] INFO root fetch - processPackages [elegantt]: Remove: archive file [/home/abi/fetcher/tmp/elegantt-0.0.3.tar.gz]
 [2024-04-28 16:40:57] INFO root fetch - main [MainThread]: End processing [elegantt]: success
 [2024-04-28 16:40:57] INFO root fetch - main [MainThread]: Store serial: [22967494]
+[2024-04-28 16:43:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967494]
+[2024-04-28 16:43:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 16:43:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: passwork
+[2024-04-28 16:43:17] INFO root fetch - processPackages [passwork]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-28 16:43:18] INFO root fetch - processPackages [passwork]: Downloading https://files.pythonhosted.org/packages/0c/b4/d5db43047a0d2f195b93553e3b05530e14609dc77791ca6782d46474f179/passwork-0.1.3.tar.gz
+[2024-04-28 16:43:18] INFO root fetch - processPackages [passwork]: Downloading https://files.pythonhosted.org/packages/a8/bc/4d28e16dcec78cde9bd4b2f64c4fc7d3442a646111af77bd82d508760061/passwork-0.1.4.tar.gz
+[2024-04-28 16:43:18] INFO root fetch - processPackages [passwork]: executing diffoscope
+[2024-04-28 16:43:18] INFO root fetch - processPackages [passwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/passwork-0.1.3.tar.gz tmp/passwork-0.1.4.tar.gz --markdown 20240428/p/passwork/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-28 16:43:19] INFO root fetch - processPackages [passwork]: Remove: archive file [/home/abi/fetcher/tmp/passwork-0.1.3.tar.gz]
+[2024-04-28 16:43:19] INFO root fetch - processPackages [passwork]: Remove: archive file [/home/abi/fetcher/tmp/passwork-0.1.4.tar.gz]
+[2024-04-28 16:43:19] INFO root fetch - main [MainThread]: End processing [passwork]: success
+[2024-04-28 16:43:19] INFO root fetch - main [MainThread]: Store serial: [22967497]
