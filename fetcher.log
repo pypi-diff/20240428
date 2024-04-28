@@ -16236,3 +16236,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:59:41] INFO root fetch - main [MainThread]: End processing [DuckReporter]: success
 [2024-04-28 20:59:41] INFO root fetch - main [MainThread]: End processing [DuckReporter]: success
 [2024-04-28 20:59:41] INFO root fetch - main [MainThread]: Store serial: [22968991]
+[2024-04-28 21:01:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968991]
+[2024-04-28 21:01:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 21:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minijinja
+[2024-04-28 21:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aa-forum
+[2024-04-28 21:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kayoc
+[2024-04-28 21:01:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eventeditor-GPT
+[2024-04-28 21:01:50] INFO root fetch - processPackages [eventeditor-GPT]: New version: [1.3.8] Old Version: [1.0.0]
+[2024-04-28 21:01:50] INFO root fetch - processPackages [kayoc]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-28 21:01:50] INFO root fetch - processPackages [aa-forum]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-28 21:01:50] INFO root fetch - processPackages [minijinja]: New version: [2.0.1] Old Version: [1.0.8]
+[2024-04-28 21:01:50] INFO root fetch - processPackages [eventeditor-GPT]: Downloading https://files.pythonhosted.org/packages/e8/8a/3dfb7214f4296a6ddd43d70a09ed0f33420e1088c2c416b1c99986562ee7/eventeditor_GPT-1.0.0-py3-none-any.whl
+[2024-04-28 21:01:50] INFO root fetch - processPackages [kayoc]: Downloading https://files.pythonhosted.org/packages/ec/dc/d18cc24d31ff8da1a5b720a53b29f926cdee2f6383dba872bf02893d5614/kayoc-0.0.6.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [aa-forum]: Downloading https://files.pythonhosted.org/packages/ee/48/8ba8dd0f74a0b1f63f928f743707d7f18c111f78b18f9d05ab7ced027a6c/aa_forum-2.1.0.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [minijinja]: Downloading https://files.pythonhosted.org/packages/f1/3f/3c56b3492605cc788bfd246fea939f7af99c2735533045257245144ff0df/minijinja-1.0.8.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [eventeditor-GPT]: Downloading https://files.pythonhosted.org/packages/da/48/f5588b121857313b9b6b086dcd9cdc867db0d4d6684f630b3c8ea12682cb/eventeditor_GPT-1.3.8-py3-none-any.whl
+[2024-04-28 21:01:51] INFO root fetch - processPackages [kayoc]: Downloading https://files.pythonhosted.org/packages/24/a0/97910bc30b28ace7ada09cb1d74d9f6d4168221d06f6cbfe4c7b556fd5e1/kayoc-0.0.7.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [minijinja]: Downloading https://files.pythonhosted.org/packages/e8/31/400bb74af3eb0c9826d150ba2a929f81f3d923f023017e5dd43b4d357eda/minijinja-2.0.1.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [eventeditor-GPT]: executing diffoscope
+[2024-04-28 21:01:51] INFO root fetch - processPackages [eventeditor-GPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eventeditor_GPT-1.0.0-py3-none-any.whl.zip tmp/eventeditor_GPT-1.3.8-py3-none-any.whl.zip --markdown 20240428/e/eventeditor-GPT/1.0.0-1.3.8/README.md --exclude *.pyd
+[2024-04-28 21:01:51] INFO root fetch - processPackages [aa-forum]: Downloading https://files.pythonhosted.org/packages/b9/3e/f4b54fbc4a53b2fcc4afc9a6706ba62eab2b3b721a8c161db202566bb68c/aa_forum-2.1.1.tar.gz
+[2024-04-28 21:01:51] INFO root fetch - processPackages [kayoc]: executing diffoscope
+[2024-04-28 21:01:51] INFO root fetch - processPackages [kayoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayoc-0.0.6.tar.gz tmp/kayoc-0.0.7.tar.gz --markdown 20240428/k/kayoc/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-28 21:01:51] INFO root fetch - processPackages [minijinja]: executing diffoscope
+[2024-04-28 21:01:51] INFO root fetch - processPackages [minijinja]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minijinja-1.0.8.tar.gz tmp/minijinja-2.0.1.tar.gz --markdown 20240428/m/minijinja/1.0.8-2.0.1/README.md --exclude *.pyd
+[2024-04-28 21:01:51] INFO root fetch - processPackages [aa-forum]: executing diffoscope
+[2024-04-28 21:01:51] INFO root fetch - processPackages [aa-forum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa_forum-2.1.0.tar.gz tmp/aa_forum-2.1.1.tar.gz --markdown 20240428/a/aa-forum/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-28 21:01:52] INFO root fetch - processPackages [eventeditor-GPT]: Remove: archive file [/home/abi/fetcher/tmp/eventeditor_GPT-1.0.0-py3-none-any.whl.zip]
+[2024-04-28 21:01:52] INFO root fetch - processPackages [eventeditor-GPT]: Remove: archive file [/home/abi/fetcher/tmp/eventeditor_GPT-1.3.8-py3-none-any.whl.zip]
+[2024-04-28 21:01:52] INFO root fetch - main [MainThread]: End processing [eventeditor-GPT]: success
+[2024-04-28 21:01:52] INFO root fetch - processPackages [kayoc]: Remove: archive file [/home/abi/fetcher/tmp/kayoc-0.0.6.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - processPackages [kayoc]: Remove: archive file [/home/abi/fetcher/tmp/kayoc-0.0.7.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - main [MainThread]: End processing [kayoc]: success
+[2024-04-28 21:01:52] INFO root fetch - processPackages [aa-forum]: Remove: archive file [/home/abi/fetcher/tmp/aa_forum-2.1.0.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - processPackages [aa-forum]: Remove: archive file [/home/abi/fetcher/tmp/aa_forum-2.1.1.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - main [MainThread]: End processing [aa-forum]: success
+[2024-04-28 21:01:52] INFO root fetch - processPackages [minijinja]: Remove: archive file [/home/abi/fetcher/tmp/minijinja-1.0.8.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - processPackages [minijinja]: Remove: archive file [/home/abi/fetcher/tmp/minijinja-2.0.1.tar.gz]
+[2024-04-28 21:01:52] INFO root fetch - main [MainThread]: End processing [minijinja]: success
+[2024-04-28 21:01:52] INFO root fetch - main [MainThread]: Store serial: [22969008]
