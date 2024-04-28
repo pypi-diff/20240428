@@ -15332,3 +15332,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 19:52:00] INFO root fetch - processPackages [netron]: Remove: archive file [/home/abi/fetcher/tmp/netron-7.6.3-py3-none-any.whl.zip]
 [2024-04-28 19:52:00] INFO root fetch - main [MainThread]: End processing [netron]: success
 [2024-04-28 19:52:00] INFO root fetch - main [MainThread]: Store serial: [22968588]
+[2024-04-28 19:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968588]
+[2024-04-28 19:54:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 19:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NCBIGeneInfo
+[2024-04-28 19:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modgeosys-graph-algorithms
+[2024-04-28 19:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyzdoc
+[2024-04-28 19:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bumpify
+[2024-04-28 19:54:09] WARNING root fetch - processPackages [pyzdoc]: Skipping, unable to determine old version
+[2024-04-28 19:54:09] INFO root fetch - main [MainThread]: End processing [pyzdoc] error
+[2024-04-28 19:54:09] WARNING root fetch - processPackages [NCBIGeneInfo]: Skipping, unable to determine old version
+[2024-04-28 19:54:09] INFO root fetch - main [MainThread]: End processing [NCBIGeneInfo] error
+[2024-04-28 19:54:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: New version: [0.3.9] Old Version: [0.3.3]
+[2024-04-28 19:54:09] INFO root fetch - processPackages [bumpify]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-28 19:54:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/1b/78/a68dff8e06c441aecb63386fa821360f8ea41cdf101d8508d8e8e8fb870a/modgeosys_graph_algorithms-0.3.3.tar.gz
+[2024-04-28 19:54:09] INFO root fetch - processPackages [bumpify]: Downloading https://files.pythonhosted.org/packages/ab/50/ad576fd5adf5583cbbb6520eeeefc57e4b4e60386112ad04f4fc1a9c6ef4/bumpify-0.1.0.tar.gz
+[2024-04-28 19:54:10] INFO root fetch - processPackages [bumpify]: Downloading https://files.pythonhosted.org/packages/e4/54/781081c22a10b930f4c61e0f8aa82c1ead08505fb5ff403ecb1b6ea2aa3e/bumpify-0.2.0.tar.gz
+[2024-04-28 19:54:11] INFO root fetch - processPackages [bumpify]: executing diffoscope
+[2024-04-28 19:54:11] INFO root fetch - processPackages [bumpify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumpify-0.1.0.tar.gz tmp/bumpify-0.2.0.tar.gz --markdown 20240428/b/bumpify/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-28 19:54:11] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/52/9c/76db9fec8a0001b15db1b0fee2af37c5431d6307942df72613b0c4b50e4d/modgeosys_graph_algorithms-0.3.9.tar.gz
+[2024-04-28 19:54:11] INFO root fetch - processPackages [modgeosys-graph-algorithms]: executing diffoscope
+[2024-04-28 19:54:11] INFO root fetch - processPackages [modgeosys-graph-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modgeosys_graph_algorithms-0.3.3.tar.gz tmp/modgeosys_graph_algorithms-0.3.9.tar.gz --markdown 20240428/m/modgeosys-graph-algorithms/0.3.3-0.3.9/README.md --exclude *.pyd
+[2024-04-28 19:54:11] INFO root fetch - processPackages [bumpify]: Remove: archive file [/home/abi/fetcher/tmp/bumpify-0.1.0.tar.gz]
+[2024-04-28 19:54:11] INFO root fetch - processPackages [bumpify]: Remove: archive file [/home/abi/fetcher/tmp/bumpify-0.2.0.tar.gz]
+[2024-04-28 19:54:11] INFO root fetch - main [MainThread]: End processing [bumpify]: success
+[2024-04-28 19:54:12] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.3.3.tar.gz]
+[2024-04-28 19:54:12] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.3.9.tar.gz]
+[2024-04-28 19:54:12] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
+[2024-04-28 19:54:12] INFO root fetch - main [MainThread]: Store serial: [22968601]
