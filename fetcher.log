@@ -1785,3 +1785,118 @@
 [2024-04-28 02:27:26] INFO root fetch - processPackages [canvasxpress]: Remove: archive file [/home/abi/fetcher/tmp/canvasxpress-2024.4.7.2406.tar.gz]
 [2024-04-28 02:27:26] INFO root fetch - main [MainThread]: End processing [canvasxpress]: success
 [2024-04-28 02:27:26] INFO root fetch - main [MainThread]: Store serial: [22962967]
+[2024-04-28 02:29:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22962967]
+[2024-04-28 02:29:37] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-api-core
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sweetrpg-web-core
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyjamas-rfglab
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-library-objects
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cjunct
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpflib
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sweetrpg-catalog-objects
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-certbot-dns-route53
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rgtest
+[2024-04-28 02:29:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-ecs-service-extensions
+[2024-04-28 02:29:37] INFO root fetch - processPackages [cjunct]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-28 02:29:37] INFO root fetch - processPackages [pyjamas-rfglab]: New version: [2024.4.3] Old Version: [2024.4.2]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a99] Old Version: [2.0.1a98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/1e/aa/2b943c3e4189757ee0778f4147f3de423c1d393de09b8493da0fbdf25b08/cjunct-2.1.0.tar.gz
+[2024-04-28 02:29:38] WARNING root fetch - processPackages [rgtest]: Skipping, unable to determine old version
+[2024-04-28 02:29:38] INFO root fetch - processPackages [rgtest]: Start processing: cdk-serverless-clamscan
+[2024-04-28 02:29:38] INFO root fetch - main [MainThread]: End processing [rgtest] error
+[2024-04-28 02:29:38] INFO root fetch - processPackages [gpflib]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-catalog-objects]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/01/49/6adbd149c44b4850d8a4da33d98888ae1e7f2d0a977e1b9ef4a066470746/pyjamas-rfglab-2024.4.2.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/c9/ad/d7965da0f34d52de670def31464963b3971de03ac20cddf5eac577722b31/cdk-ecs-service-extensions-2.0.1a98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [gpflib]: Downloading https://files.pythonhosted.org/packages/4b/d5/38b1c9277b1ebea3f7c7e9094d59b043b805859223c9731c55db6135dce8/gpflib-1.1.7.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/3b/8f/5bc5b1bf1cbb2bd23cd2883844aade1e32b222ebf1f95ad4be614a5a5fab/sweetrpg-library-objects-0.0.85.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/5d/9d/2398efc534be1a806373637db31588bc65727faee8d3d4ad1e210310552e/sweetrpg-api-core-0.0.98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/10/78/7e4ec24c92190fa564c9ba8a1797ccda0c7472064d109da37e0d283f94d2/sweetrpg-web-core-0.0.98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/c7/08/22353b21dedaf21fa4ba31badec3ae264096dcca99184d3065611459ba0b/sweetrpg-catalog-objects-0.0.98.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cjunct]: Downloading https://files.pythonhosted.org/packages/00/22/b8414139d100aade5682ea02c30012694630d631004636e91796cbbe2750/cjunct-2.1.1.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/0b/93/d18980212d072f33eb57b9085fa46de523565a13375ff902184b3d1fe3a4/pyjamas-rfglab-2024.4.3.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/9c/f7/1a593c4ae0d3c80332cec251caad8f13a27842299475718ad186eea220ba/cdk-ecs-service-extensions-2.0.1a99.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cjunct]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cjunct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cjunct-2.1.0.tar.gz tmp/cjunct-2.1.1.tar.gz --markdown 20240428/c/cjunct/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240428/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [pyjamas-rfglab]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [pyjamas-rfglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjamas-rfglab-2024.4.2.tar.gz tmp/pyjamas-rfglab-2024.4.3.tar.gz --markdown 20240428/p/pyjamas-rfglab/2024.4.2-2024.4.3/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-api-core]: Downloading https://files.pythonhosted.org/packages/bf/6c/3cd8f95074a8f63967790523ccf02ffe9aef45c9c675b0a443c0371e8e04/sweetrpg-api-core-0.0.99.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz --markdown 20240428/c/cdk-ecs-service-extensions/2.0.1a98-2.0.1a99/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-library-objects]: Downloading https://files.pythonhosted.org/packages/5e/9f/6f76023a2ce599dcc8f9336e4ca97d11bf333da43274c8193887a32463aa/sweetrpg-library-objects-0.0.86.tar.gz
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240428/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-api-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2024-04-28 02:29:38] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20240428/s/sweetrpg-library-objects/0.0.85-0.0.86/README.md --exclude *.pyd
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Downloading https://files.pythonhosted.org/packages/5b/02/0f5a8851235d4c7dc21b809889ce391c0c4ff873689aa324ede8d6d29d7a/sweetrpg-catalog-objects-0.0.99.tar.gz
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-catalog-objects]: executing diffoscope
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-catalog-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-catalog-objects-0.0.98.tar.gz tmp/sweetrpg-catalog-objects-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-catalog-objects/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 02:29:39] WARNING root fetch - processPackages [gpflib]: Skipping package: exceeds size limit 25115236>=10485760
+[2024-04-28 02:29:39] INFO root fetch - processPackages [gpflib]: Start processing: gpflib
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [gpflib] error
+[2024-04-28 02:29:39] INFO root fetch - processPackages [gpflib]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [gpflib]: Downloading https://files.pythonhosted.org/packages/4b/d5/38b1c9277b1ebea3f7c7e9094d59b043b805859223c9731c55db6135dce8/gpflib-1.1.7.tar.gz
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.0.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cjunct]: Remove: archive file [/home/abi/fetcher/tmp/cjunct-2.1.1.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cjunct]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [cjunct]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Start processing: sweetrpg-web-core
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2024-04-28 02:29:39] WARNING root fetch - processPackages [gpflib]: Skipping package: exceeds size limit 25115236>=10485760
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [gpflib] error
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.98.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-api-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-api-core-0.0.99.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.98.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-web-core]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-web-core-0.0.99.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.85.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-library-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-library-objects-0.0.86.tar.gz]
+[2024-04-28 02:29:39] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2024-04-28 02:29:39] INFO root fetch - processPackages [sweetrpg-web-core]: Downloading https://files.pythonhosted.org/packages/bd/15/72a761101e501277066578a42896229ae4a254ecf7602e2e15f38b35310d/sweetrpg-web-core-0.0.99.tar.gz
+[2024-04-28 02:29:40] INFO root fetch - processPackages [pyjamas-rfglab]: Remove: archive file [/home/abi/fetcher/tmp/pyjamas-rfglab-2024.4.2.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - processPackages [pyjamas-rfglab]: Remove: archive file [/home/abi/fetcher/tmp/pyjamas-rfglab-2024.4.3.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - main [MainThread]: End processing [pyjamas-rfglab]: success
+[2024-04-28 02:29:40] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-04-28 02:29:40] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2024-04-28 02:29:40] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20240428/s/sweetrpg-web-core/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 02:29:40] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.98.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - processPackages [sweetrpg-catalog-objects]: Remove: archive file [/home/abi/fetcher/tmp/sweetrpg-catalog-objects-0.0.99.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - main [MainThread]: End processing [sweetrpg-catalog-objects]: success
+[2024-04-28 02:29:40] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-04-28 02:29:40] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240428/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-28 02:29:40] ERROR root fetch - processPackages [sweetrpg-web-core]: Diffoscope failed: time="2024-04-28T02:29:40+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+/srv/diffoscope/bin/diffoscope: tmp/sweetrpg-web-core-0.0.98.tar.gz: No such file or directory
+
+[2024-04-28 02:29:40] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core] error
+[2024-04-28 02:29:40] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-04-28 02:29:40] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-04-28 02:29:40] INFO root fetch - main [MainThread]: Store serial: [22963011]
