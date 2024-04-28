@@ -6182,3 +6182,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-28 09:06:08] INFO root fetch - processPackages [lit-data-layers]: Remove: archive file [/home/abi/fetcher/tmp/lit_data_layers-0.1.1.tar.gz]
 [2024-04-28 09:06:08] INFO root fetch - main [MainThread]: End processing [lit-data-layers]: success
 [2024-04-28 09:06:08] INFO root fetch - main [MainThread]: Store serial: [22964778]
+[2024-04-28 09:08:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964778]
+[2024-04-28 09:08:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 09:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapydo
+[2024-04-28 09:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydmt
+[2024-04-28 09:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-hub-nightly
+[2024-04-28 09:08:17] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-28 09:08:17] INFO root fetch - processPackages [rapydo]: New version: [3.0] Old Version: [2.4]
+[2024-04-28 09:08:17] INFO root fetch - processPackages [pydmt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-28 09:08:17] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-28 09:08:17] INFO root fetch - processPackages [rapydo]: Downloading https://files.pythonhosted.org/packages/87/6f/9ae393991ec6dae6176b9a2782e794d7421d6395ea45f88eb3b958cf7bb4/rapydo-2.4.tar.gz
+[2024-04-28 09:08:17] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/90/d0/4a9b7c76e70b0b2ed97f243e5439c1246e88995dbf72126376727a1b8f55/pydmt-0.3.8.tar.gz
+[2024-04-28 09:08:17] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-28 09:08:17] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-28 09:08:17] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240428/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-28 09:08:17] INFO root fetch - processPackages [rapydo]: Downloading https://files.pythonhosted.org/packages/f4/1a/513eb98e2b75512ce9701706238785cd1da2e51ea702030f3a6985779142/rapydo-3.0.tar.gz
+[2024-04-28 09:08:17] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/de/12/29caefaa8dd66e68e2a1419873d4e3b8ea2960a4b4ee1c70730da957ca00/pydmt-0.3.9.tar.gz
+[2024-04-28 09:08:18] INFO root fetch - processPackages [rapydo]: executing diffoscope
+[2024-04-28 09:08:18] INFO root fetch - processPackages [rapydo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapydo-2.4.tar.gz tmp/rapydo-3.0.tar.gz --markdown 20240428/r/rapydo/2.4-3.0/README.md --exclude *.pyd
+[2024-04-28 09:08:18] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-28 09:08:18] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.8.tar.gz tmp/pydmt-0.3.9.tar.gz --markdown 20240428/p/pydmt/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-28 09:08:18] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-28 09:08:18] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-28 09:08:18] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-28 09:08:18] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.8.tar.gz]
+[2024-04-28 09:08:18] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.9.tar.gz]
+[2024-04-28 09:08:18] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-28 09:08:19] INFO root fetch - processPackages [rapydo]: Remove: archive file [/home/abi/fetcher/tmp/rapydo-2.4.tar.gz]
+[2024-04-28 09:08:19] INFO root fetch - processPackages [rapydo]: Remove: archive file [/home/abi/fetcher/tmp/rapydo-3.0.tar.gz]
+[2024-04-28 09:08:19] INFO root fetch - main [MainThread]: End processing [rapydo]: success
+[2024-04-28 09:08:19] INFO root fetch - main [MainThread]: Store serial: [22964786]
