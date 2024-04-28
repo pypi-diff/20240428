@@ -3415,3 +3415,33 @@
 [2024-04-28 05:13:04] INFO root fetch - processPackages [IslandSheds]: Remove: archive file [/home/abi/fetcher/tmp/IslandSheds-0.0.14.tar.gz]
 [2024-04-28 05:13:04] INFO root fetch - main [MainThread]: End processing [IslandSheds]: success
 [2024-04-28 05:13:04] INFO root fetch - main [MainThread]: Store serial: [22963688]
+[2024-04-28 05:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963688]
+[2024-04-28 05:15:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: druida
+[2024-04-28 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-business-requirement-crm
+[2024-04-28 05:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-business-requirement
+[2024-04-28 05:15:12] INFO root fetch - processPackages [odoo-addon-business-requirement]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.9]
+[2024-04-28 05:15:12] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.5]
+[2024-04-28 05:15:12] INFO root fetch - processPackages [odoo-addon-business-requirement]: Downloading https://files.pythonhosted.org/packages/6e/a4/9e96d05a61a7d900a77cb7f43cce5c87cce81a4f48f7c6fa6232980ab8b6/odoo_addon_business_requirement-16.0.1.0.0.9-py3-none-any.whl
+[2024-04-28 05:15:12] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 05:15:12] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: Downloading https://files.pythonhosted.org/packages/ca/2a/9173b4d7e26b110b1505a3173a6288bd8063f1e7700e8029e303710209f1/odoo_addon_business_requirement_crm-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-28 05:15:12] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: Downloading https://files.pythonhosted.org/packages/5b/9a/0fd0e35660fde5c0000b4e8da83e578aad763c3f111e4a158bfdb5419e92/odoo_addon_business_requirement_crm-16.0.1.0.1-py3-none-any.whl
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement]: Downloading https://files.pythonhosted.org/packages/8a/9f/f4b9ec7b83d875b03ed53d3d3cfb7f998331482dd0c21240ba8c59b52365/odoo_addon_business_requirement-16.0.1.0.1-py3-none-any.whl
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: executing diffoscope
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_business_requirement_crm-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_business_requirement_crm-16.0.1.0.1-py3-none-any.whl.zip --markdown 20240428/o/odoo-addon-business-requirement-crm/16.0.1.0.0.5-16.0.1.0.1/README.md --exclude *.pyd
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement]: executing diffoscope
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_business_requirement-16.0.1.0.0.9-py3-none-any.whl.zip tmp/odoo_addon_business_requirement-16.0.1.0.1-py3-none-any.whl.zip --markdown 20240428/o/odoo-addon-business-requirement/16.0.1.0.0.9-16.0.1.0.1/README.md --exclude *.pyd
+[2024-04-28 05:15:13] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-28 05:15:13] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-28 05:15:13] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240428/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_business_requirement_crm-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-28 05:15:13] INFO root fetch - processPackages [odoo-addon-business-requirement-crm]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_business_requirement_crm-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-28 05:15:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-business-requirement-crm]: success
+[2024-04-28 05:15:14] INFO root fetch - processPackages [odoo-addon-business-requirement]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_business_requirement-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-04-28 05:15:14] INFO root fetch - processPackages [odoo-addon-business-requirement]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_business_requirement-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-28 05:15:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-business-requirement]: success
+[2024-04-28 05:15:14] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-28 05:15:14] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-28 05:15:14] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-28 05:15:14] INFO root fetch - main [MainThread]: Store serial: [22963695]
