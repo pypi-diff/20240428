@@ -4493,3 +4493,15 @@
 [2024-04-28 06:44:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip]
 [2024-04-28 06:44:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-pos]: success
 [2024-04-28 06:44:06] INFO root fetch - main [MainThread]: Store serial: [22964057]
+[2024-04-28 06:46:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964057]
+[2024-04-28 06:46:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-28 06:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypothesis
+[2024-04-28 06:46:15] INFO root fetch - processPackages [hypothesis]: New version: [6.99.9] Old Version: [6.99.8]
+[2024-04-28 06:46:15] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/d0/49/c41dfc6bca0eb0af93b2ecef16e99aa41f9a25e4bed45bfc37cb97018f93/hypothesis-6.99.8.tar.gz
+[2024-04-28 06:46:15] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/ac/92/326716e57f625acc4f38608fd73f88985561fd58ee6df19d44230d70bba0/hypothesis-6.99.9.tar.gz
+[2024-04-28 06:46:15] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2024-04-28 06:46:15] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.99.8.tar.gz tmp/hypothesis-6.99.9.tar.gz --markdown 20240428/h/hypothesis/6.99.8-6.99.9/README.md --exclude *.pyd
+[2024-04-28 06:46:16] INFO root fetch - processPackages [hypothesis]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis-6.99.8.tar.gz]
+[2024-04-28 06:46:16] INFO root fetch - processPackages [hypothesis]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis-6.99.9.tar.gz]
+[2024-04-28 06:46:16] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2024-04-28 06:46:16] INFO root fetch - main [MainThread]: Store serial: [22964060]
