@@ -15636,3 +15636,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:09:32] INFO root fetch - processPackages [esbonio]: Remove: archive file [/home/abi/fetcher/tmp/esbonio-1.0.0b3.tar.gz]
 [2024-04-28 20:09:32] INFO root fetch - main [MainThread]: End processing [esbonio]: success
 [2024-04-28 20:09:32] INFO root fetch - main [MainThread]: Store serial: [22968734]
+[2024-04-28 20:11:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968734]
+[2024-04-28 20:11:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 20:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: core-commands
+[2024-04-28 20:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upc-pymotion
+[2024-04-28 20:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: upc-pymotion
+[2024-04-28 20:11:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tweety-ns
+[2024-04-28 20:11:42] INFO root fetch - processPackages [core-commands]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-28 20:11:42] INFO root fetch - processPackages [upc-pymotion]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 20:11:42] INFO root fetch - processPackages [upc-pymotion]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-28 20:11:42] INFO root fetch - processPackages [tweety-ns]: New version: [1.1.5] Old Version: [1.1.4b0]
+[2024-04-28 20:11:42] INFO root fetch - processPackages [core-commands]: Downloading https://files.pythonhosted.org/packages/7e/8f/33acfc8656800142b15fb71017b2f88d08fc2aa804884a4aa7dac1b09ab4/core_commands-0.3.1.tar.gz
+[2024-04-28 20:11:42] INFO root fetch - processPackages [upc-pymotion]: Downloading https://files.pythonhosted.org/packages/06/c6/4e1f954b14028b5c89d6301beb1c341f514ae74f70a035798a97cc2c38c5/upc_pymotion-0.1.5.tar.gz
+[2024-04-28 20:11:42] INFO root fetch - processPackages [upc-pymotion]: Downloading https://files.pythonhosted.org/packages/06/c6/4e1f954b14028b5c89d6301beb1c341f514ae74f70a035798a97cc2c38c5/upc_pymotion-0.1.5.tar.gz
+[2024-04-28 20:11:42] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/c0/32/ec24f595ee7a79d7211084bc3e95c3e2e6bdf5362b953f3715011ff89e35/tweety_ns-1.1.4b0.tar.gz
+[2024-04-28 20:11:43] INFO root fetch - processPackages [core-commands]: Downloading https://files.pythonhosted.org/packages/43/d9/5376d1e4fdd36130e106fc43f60e6c3243d644fb79aea05a144194896736/core_commands-0.4.0.tar.gz
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: Downloading https://files.pythonhosted.org/packages/ce/ad/7ea19bee566f9e9e7c206f1efc7704167c1e5797b60aeda36de9fcd72d37/upc_pymotion-0.1.6.tar.gz
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: Downloading https://files.pythonhosted.org/packages/ce/ad/7ea19bee566f9e9e7c206f1efc7704167c1e5797b60aeda36de9fcd72d37/upc_pymotion-0.1.6.tar.gz
+[2024-04-28 20:11:43] INFO root fetch - processPackages [tweety-ns]: Downloading https://files.pythonhosted.org/packages/e8/5b/2409412a5b057e4da7ce2cda42f524fae1d789386ba55842b5c439b9b59e/tweety_ns-1.1.5.tar.gz
+[2024-04-28 20:11:43] INFO root fetch - processPackages [core-commands]: executing diffoscope
+[2024-04-28 20:11:43] INFO root fetch - processPackages [core-commands]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_commands-0.3.1.tar.gz tmp/core_commands-0.4.0.tar.gz --markdown 20240428/c/core-commands/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: executing diffoscope
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upc_pymotion-0.1.5.tar.gz tmp/upc_pymotion-0.1.6.tar.gz --markdown 20240428/u/upc-pymotion/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: executing diffoscope
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upc_pymotion-0.1.5.tar.gz tmp/upc_pymotion-0.1.6.tar.gz --markdown 20240428/u/upc-pymotion/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-28 20:11:43] INFO root fetch - processPackages [tweety-ns]: executing diffoscope
+[2024-04-28 20:11:43] INFO root fetch - processPackages [tweety-ns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweety_ns-1.1.4b0.tar.gz tmp/tweety_ns-1.1.5.tar.gz --markdown 20240428/t/tweety-ns/1.1.4b0-1.1.5/README.md --exclude *.pyd
+[2024-04-28 20:11:43] INFO root fetch - processPackages [core-commands]: Remove: archive file [/home/abi/fetcher/tmp/core_commands-0.3.1.tar.gz]
+[2024-04-28 20:11:43] INFO root fetch - processPackages [core-commands]: Remove: archive file [/home/abi/fetcher/tmp/core_commands-0.4.0.tar.gz]
+[2024-04-28 20:11:43] INFO root fetch - main [MainThread]: End processing [core-commands]: success
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: Remove: archive file [/home/abi/fetcher/tmp/upc_pymotion-0.1.5.tar.gz]
+[2024-04-28 20:11:43] INFO root fetch - processPackages [upc-pymotion]: Remove: archive file [/home/abi/fetcher/tmp/upc_pymotion-0.1.6.tar.gz]
+[2024-04-28 20:11:43] INFO root fetch - main [MainThread]: End processing [upc-pymotion]: success
+[2024-04-28 20:11:44] INFO root fetch - main [MainThread]: End processing [upc-pymotion]: success
+[2024-04-28 20:11:44] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.4b0.tar.gz]
+[2024-04-28 20:11:44] INFO root fetch - processPackages [tweety-ns]: Remove: archive file [/home/abi/fetcher/tmp/tweety_ns-1.1.5.tar.gz]
+[2024-04-28 20:11:44] INFO root fetch - main [MainThread]: End processing [tweety-ns]: success
+[2024-04-28 20:11:44] INFO root fetch - main [MainThread]: Store serial: [22968747]
