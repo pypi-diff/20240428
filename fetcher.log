@@ -12009,3 +12009,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:58:34] INFO root fetch - processPackages [TheengsDecoder]: Remove: archive file [/home/abi/fetcher/tmp/TheengsDecoder-1.7.7.tar.gz]
 [2024-04-28 15:58:34] INFO root fetch - main [MainThread]: End processing [TheengsDecoder]: success
 [2024-04-28 15:58:34] INFO root fetch - main [MainThread]: Store serial: [22967256]
+[2024-04-28 16:00:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22967256]
+[2024-04-28 16:00:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 16:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psgr
+[2024-04-28 16:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore-workflow-builder
+[2024-04-28 16:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: genmq
+[2024-04-28 16:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vios
+[2024-04-28 16:00:54] INFO root fetch - processPackages [genmq]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-28 16:00:54] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-28 16:00:54] WARNING root fetch - processPackages [psgr]: Skipping, unable to determine old version
+[2024-04-28 16:00:54] INFO root fetch - main [MainThread]: End processing [psgr] error
+[2024-04-28 16:00:54] INFO root fetch - processPackages [vios]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-04-28 16:00:55] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/90/59/b82e1292c9f8af5b594e838421f02edd495532544837432df76282357793/altscore-workflow-builder-0.0.2.tar.gz
+[2024-04-28 16:00:55] INFO root fetch - processPackages [genmq]: Downloading https://files.pythonhosted.org/packages/6b/a7/47bac3647f116384b10cf1010d2fa3c088de3bf3307ce39f0bbeb9a16e74/genmq-0.5.0.tar.gz
+[2024-04-28 16:00:55] INFO root fetch - processPackages [vios]: Downloading https://files.pythonhosted.org/packages/b0/6e/791baa9e895d2e9a2ce29c95f8446bff3da8caa06109d44cec96a7c95dc4/vios-2.3.4-py3-none-any.whl
+[2024-04-28 16:00:55] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/38/33/95aa77692a9710893d7e68ac93398b2bab3fbf36801c4965fefc560eea8e/altscore_workflow_builder-0.0.3.tar.gz
+[2024-04-28 16:00:55] INFO root fetch - processPackages [vios]: Downloading https://files.pythonhosted.org/packages/44/29/0a183b196ab3782721320906a48f7426d26731afb2ef39dbad1c2f527cc1/vios-2.3.5-py3-none-any.whl
+[2024-04-28 16:00:55] INFO root fetch - processPackages [genmq]: Downloading https://files.pythonhosted.org/packages/50/f3/e2f440a207a0e933b9c4760dd1d3fb8b47b32bc71c538d80003eaf5247d8/genmq-0.6.0.tar.gz
+[2024-04-28 16:00:55] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-04-28 16:00:55] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore-workflow-builder-0.0.2.tar.gz tmp/altscore_workflow_builder-0.0.3.tar.gz --markdown 20240428/a/altscore-workflow-builder/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-28 16:00:55] INFO root fetch - processPackages [genmq]: executing diffoscope
+[2024-04-28 16:00:55] INFO root fetch - processPackages [genmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genmq-0.5.0.tar.gz tmp/genmq-0.6.0.tar.gz --markdown 20240428/g/genmq/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-28 16:00:55] INFO root fetch - processPackages [vios]: executing diffoscope
+[2024-04-28 16:00:55] INFO root fetch - processPackages [vios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vios-2.3.4-py3-none-any.whl.zip tmp/vios-2.3.5-py3-none-any.whl.zip --markdown 20240428/v/vios/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-04-28 16:00:56] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore-workflow-builder-0.0.2.tar.gz]
+[2024-04-28 16:00:56] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.3.tar.gz]
+[2024-04-28 16:00:56] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-04-28 16:00:56] INFO root fetch - processPackages [genmq]: Remove: archive file [/home/abi/fetcher/tmp/genmq-0.5.0.tar.gz]
+[2024-04-28 16:00:56] INFO root fetch - processPackages [genmq]: Remove: archive file [/home/abi/fetcher/tmp/genmq-0.6.0.tar.gz]
+[2024-04-28 16:00:56] INFO root fetch - main [MainThread]: End processing [genmq]: success
+[2024-04-28 16:00:56] INFO root fetch - processPackages [vios]: Remove: archive file [/home/abi/fetcher/tmp/vios-2.3.4-py3-none-any.whl.zip]
+[2024-04-28 16:00:56] INFO root fetch - processPackages [vios]: Remove: archive file [/home/abi/fetcher/tmp/vios-2.3.5-py3-none-any.whl.zip]
+[2024-04-28 16:00:56] INFO root fetch - main [MainThread]: End processing [vios]: success
+[2024-04-28 16:00:56] INFO root fetch - main [MainThread]: Store serial: [22967269]
