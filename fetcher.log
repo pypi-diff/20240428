@@ -3031,3 +3031,41 @@
 [2024-04-28 04:27:28] INFO root fetch - processPackages [libro]: Remove: archive file [/home/abi/fetcher/tmp/libro-0.1.7-py3-none-any.whl.zip]
 [2024-04-28 04:27:28] INFO root fetch - main [MainThread]: End processing [libro]: success
 [2024-04-28 04:27:28] INFO root fetch - main [MainThread]: Store serial: [22963469]
+[2024-04-28 04:30:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22963469]
+[2024-04-28 04:30:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 04:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TheSilent
+[2024-04-28 04:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: taibun
+[2024-04-28 04:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xfastertransformer
+[2024-04-28 04:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: huojiweiguoba
+[2024-04-28 04:30:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: multihttps
+[2024-04-28 04:30:07] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-28 04:30:07] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 04:30:07] WARNING root fetch - processPackages [multihttps]: Skipping, unable to determine old version
+[2024-04-28 04:30:07] INFO root fetch - main [MainThread]: End processing [multihttps] error
+[2024-04-28 04:30:07] INFO root fetch - processPackages [taibun]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-28 04:30:07] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-28 04:30:07] INFO root fetch - processPackages [xfastertransformer]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-28 04:30:07] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-28 04:30:08] INFO root fetch - processPackages [taibun]: Downloading https://files.pythonhosted.org/packages/10/5f/85d572796d19c224163bd8f4104a6dcabab3ccae7b6c76e62cba4746824a/taibun-1.0.0.tar.gz
+[2024-04-28 04:30:08] INFO root fetch - processPackages [xfastertransformer]: Downloading https://files.pythonhosted.org/packages/16/cd/0bfd5706a96365534474a07cf40717fc29c06688bc8b1b933a7bc84cff62/xfastertransformer-1.5.0-py3-none-any.whl
+[2024-04-28 04:30:08] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-28 04:30:08] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-28 04:30:08] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-28 04:30:08] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240428/h/huojiweiguoba/8.0-9.0/README.md --exclude *.pyd
+[2024-04-28 04:30:08] WARNING root fetch - processPackages [xfastertransformer]: Skipping package: exceeds size limit 30176690>=10485760
+[2024-04-28 04:30:08] INFO root fetch - main [MainThread]: End processing [xfastertransformer] error
+[2024-04-28 04:30:08] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-28 04:30:08] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240428/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 04:30:08] INFO root fetch - processPackages [taibun]: Downloading https://files.pythonhosted.org/packages/f3/04/1cb6d9d7d68055ae0eaaf6bcde47abc12a938a71c061429c8c643d1be5ba/taibun-1.1.0.tar.gz
+[2024-04-28 04:30:08] INFO root fetch - processPackages [taibun]: executing diffoscope
+[2024-04-28 04:30:08] INFO root fetch - processPackages [taibun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taibun-1.0.0.tar.gz tmp/taibun-1.1.0.tar.gz --markdown 20240428/t/taibun/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-28 04:30:08] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-28 04:30:08] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-28 04:30:08] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-28 04:30:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-28 04:30:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-28 04:30:08] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-28 04:30:09] INFO root fetch - processPackages [taibun]: Remove: archive file [/home/abi/fetcher/tmp/taibun-1.0.0.tar.gz]
+[2024-04-28 04:30:09] INFO root fetch - processPackages [taibun]: Remove: archive file [/home/abi/fetcher/tmp/taibun-1.1.0.tar.gz]
+[2024-04-28 04:30:09] INFO root fetch - main [MainThread]: End processing [taibun]: success
+[2024-04-28 04:30:09] INFO root fetch - main [MainThread]: Store serial: [22963485]
