@@ -10118,3 +10118,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 13:39:59] INFO root fetch - processPackages [coll-filter]: Remove: archive file [/home/abi/fetcher/tmp/coll-filter-1.2.1.tar.gz]
 [2024-04-28 13:39:59] INFO root fetch - main [MainThread]: End processing [coll-filter]: success
 [2024-04-28 13:39:59] INFO root fetch - main [MainThread]: Store serial: [22966454]
+[2024-04-28 13:42:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966454]
+[2024-04-28 13:42:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 13:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pgpyui
+[2024-04-28 13:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omniunibot
+[2024-04-28 13:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2024-04-28 13:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: meross-iot
+[2024-04-28 13:42:14] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-28 13:42:14] INFO root fetch - processPackages [pgpyui]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-28 13:42:14] INFO root fetch - processPackages [omniunibot]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-28 13:42:14] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [meross-iot]: New version: [0.4.7.1] Old Version: [0.4.7.0b2]
+[2024-04-28 13:42:14] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/00/be/0affa7fb9308274d0a6f9be0662e1e56ba64ee891dcf3f5a4ed1930f883b/pgpyui-0.0.4.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/85/b5/7ece5ea56fcc4ad22d45cdd6cec443219f9d2ee1ac6e49c78dea0392d697/omniunibot-0.3.0.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-28 13:42:14] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240428/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-28 13:42:14] INFO root fetch - processPackages [meross-iot]: Downloading https://files.pythonhosted.org/packages/3a/4f/f23dd3ef7400a8f27da30454071f7d797b14f5fdabcd2ccd3984c614894e/meross_iot-0.4.7.0b2.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [pgpyui]: Downloading https://files.pythonhosted.org/packages/44/0a/4620a6485918f8e050159496921f6eb48a2ebcbe8b9ba0e057d788da566b/pgpyui-0.0.5.tar.gz
+[2024-04-28 13:42:14] INFO root fetch - processPackages [omniunibot]: Downloading https://files.pythonhosted.org/packages/09/e8/fcf6160fa7402168492cf5907e6347ee19233fd8fb81e6287d58b8c2e759/omniunibot-0.4.0.tar.gz
+[2024-04-28 13:42:15] INFO root fetch - processPackages [pgpyui]: executing diffoscope
+[2024-04-28 13:42:15] INFO root fetch - processPackages [pgpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgpyui-0.0.4.tar.gz tmp/pgpyui-0.0.5.tar.gz --markdown 20240428/p/pgpyui/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-28 13:42:15] INFO root fetch - processPackages [omniunibot]: executing diffoscope
+[2024-04-28 13:42:15] INFO root fetch - processPackages [omniunibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniunibot-0.3.0.tar.gz tmp/omniunibot-0.4.0.tar.gz --markdown 20240428/o/omniunibot/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-28 13:42:15] INFO root fetch - processPackages [meross-iot]: Downloading https://files.pythonhosted.org/packages/78/71/ecde38764225b5811ab477491426678945478372dad31979ff977364d619/meross_iot-0.4.7.1.tar.gz
+[2024-04-28 13:42:15] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-28 13:42:15] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.4.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - processPackages [pgpyui]: Remove: archive file [/home/abi/fetcher/tmp/pgpyui-0.0.5.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - main [MainThread]: End processing [pgpyui]: success
+[2024-04-28 13:42:15] INFO root fetch - processPackages [omniunibot]: Remove: archive file [/home/abi/fetcher/tmp/omniunibot-0.3.0.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - processPackages [omniunibot]: Remove: archive file [/home/abi/fetcher/tmp/omniunibot-0.4.0.tar.gz]
+[2024-04-28 13:42:15] INFO root fetch - main [MainThread]: End processing [omniunibot]: success
+[2024-04-28 13:42:15] INFO root fetch - processPackages [meross-iot]: executing diffoscope
+[2024-04-28 13:42:15] INFO root fetch - processPackages [meross-iot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meross_iot-0.4.7.0b2.tar.gz tmp/meross_iot-0.4.7.1.tar.gz --markdown 20240428/m/meross-iot/0.4.7.0b2-0.4.7.1/README.md --exclude *.pyd
+[2024-04-28 13:42:16] INFO root fetch - processPackages [meross-iot]: Remove: archive file [/home/abi/fetcher/tmp/meross_iot-0.4.7.0b2.tar.gz]
+[2024-04-28 13:42:16] INFO root fetch - processPackages [meross-iot]: Remove: archive file [/home/abi/fetcher/tmp/meross_iot-0.4.7.1.tar.gz]
+[2024-04-28 13:42:16] INFO root fetch - main [MainThread]: End processing [meross-iot]: success
+[2024-04-28 13:42:16] INFO root fetch - main [MainThread]: Store serial: [22966462]
