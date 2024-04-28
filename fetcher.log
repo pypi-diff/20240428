@@ -11331,3 +11331,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 15:13:51] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.28-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-04-28 15:13:51] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-28 15:13:51] INFO root fetch - main [MainThread]: Store serial: [22966978]
+[2024-04-28 15:16:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22966978]
+[2024-04-28 15:16:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-28 15:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: raspidevkit
+[2024-04-28 15:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyhasura
+[2024-04-28 15:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: packaging-extrapolation
+[2024-04-28 15:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: studcamp-yandex-hse
+[2024-04-28 15:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrnnoise
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyrnnoise]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/60/1e/81fca2f22030cf2d8ac7078402b13f62df279b1d58a160741fefd91bc556/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl
+[2024-04-28 15:16:08] INFO root fetch - processPackages [studcamp-yandex-hse]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-28 15:16:08] INFO root fetch - processPackages [raspidevkit]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-28 15:16:08] INFO root fetch - processPackages [packaging-extrapolation]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-28 15:16:08] INFO root fetch - processPackages [studcamp-yandex-hse]: Downloading https://files.pythonhosted.org/packages/62/46/300e372058b82ac5f54ce8986a19943eb8e846891e2bbadfea5c3f825fcc/studcamp_yandex_hse-0.1.0.tar.gz
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-04-28 15:16:08] INFO root fetch - processPackages [raspidevkit]: Downloading https://files.pythonhosted.org/packages/a7/87/a96a8ece0327cec5bb3d59d9f6d292c60934d4a860a5a26feca2d306f6c1/raspidevkit-0.0.1.tar.gz
+[2024-04-28 15:16:08] INFO root fetch - processPackages [packaging-extrapolation]: Downloading https://files.pythonhosted.org/packages/83/2b/daca2b24c178a04f6aa7aa81c945b82f6c96bb87eb947d3b77e854742c7d/packaging_extrapolation-1.0.1.tar.gz
+[2024-04-28 15:16:08] INFO root fetch - processPackages [pyrnnoise]: Downloading https://files.pythonhosted.org/packages/6d/cc/fc7639c1f8892beae91f6283c2d646d866cc01b61e46fcc209feb0c6bf70/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240428/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-28 15:16:09] INFO root fetch - processPackages [studcamp-yandex-hse]: Downloading https://files.pythonhosted.org/packages/e1/89/47459c38c3b0351664e05712886b4aac01fccd78224e0a7b0196dd4f2523/studcamp_yandex_hse-0.1.1.tar.gz
+[2024-04-28 15:16:09] INFO root fetch - processPackages [raspidevkit]: Downloading https://files.pythonhosted.org/packages/34/a9/3bdba5a74577dca5f94eb5d1fb402a2772120f41d1a27fb7ebb887fd935d/raspidevkit-0.0.2.tar.gz
+[2024-04-28 15:16:09] INFO root fetch - processPackages [packaging-extrapolation]: Downloading https://files.pythonhosted.org/packages/cc/7d/87f6d6264dfbc5c9e962d28be70d9269390cbb3a66ed630f5a5d1513f320/packaging-extrapolation-1.0.2.tar.gz
+[2024-04-28 15:16:09] INFO root fetch - processPackages [raspidevkit]: executing diffoscope
+[2024-04-28 15:16:09] INFO root fetch - processPackages [raspidevkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raspidevkit-0.0.1.tar.gz tmp/raspidevkit-0.0.2.tar.gz --markdown 20240428/r/raspidevkit/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-28 15:16:09] INFO root fetch - processPackages [studcamp-yandex-hse]: executing diffoscope
+[2024-04-28 15:16:09] INFO root fetch - processPackages [studcamp-yandex-hse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/studcamp_yandex_hse-0.1.0.tar.gz tmp/studcamp_yandex_hse-0.1.1.tar.gz --markdown 20240428/s/studcamp-yandex-hse/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyrnnoise]: executing diffoscope
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyrnnoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl.zip tmp/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl.zip --markdown 20240428/p/pyrnnoise/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-04-28 15:16:09] INFO root fetch - processPackages [packaging-extrapolation]: executing diffoscope
+[2024-04-28 15:16:09] INFO root fetch - processPackages [packaging-extrapolation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging_extrapolation-1.0.1.tar.gz tmp/packaging-extrapolation-1.0.2.tar.gz --markdown 20240428/p/packaging-extrapolation/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-28 15:16:09] INFO root fetch - processPackages [raspidevkit]: Remove: archive file [/home/abi/fetcher/tmp/raspidevkit-0.0.1.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - processPackages [raspidevkit]: Remove: archive file [/home/abi/fetcher/tmp/raspidevkit-0.0.2.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - main [MainThread]: End processing [raspidevkit]: success
+[2024-04-28 15:16:09] INFO root fetch - processPackages [studcamp-yandex-hse]: Remove: archive file [/home/abi/fetcher/tmp/studcamp_yandex_hse-0.1.0.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - processPackages [studcamp-yandex-hse]: Remove: archive file [/home/abi/fetcher/tmp/studcamp_yandex_hse-0.1.1.tar.gz]
+[2024-04-28 15:16:09] INFO root fetch - main [MainThread]: End processing [studcamp-yandex-hse]: success
+[2024-04-28 15:16:10] INFO root fetch - processPackages [packaging-extrapolation]: Remove: archive file [/home/abi/fetcher/tmp/packaging_extrapolation-1.0.1.tar.gz]
+[2024-04-28 15:16:10] INFO root fetch - processPackages [packaging-extrapolation]: Remove: archive file [/home/abi/fetcher/tmp/packaging-extrapolation-1.0.2.tar.gz]
+[2024-04-28 15:16:10] INFO root fetch - main [MainThread]: End processing [packaging-extrapolation]: success
+[2024-04-28 15:16:10] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.2-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 15:16:10] INFO root fetch - processPackages [pyrnnoise]: Remove: archive file [/home/abi/fetcher/tmp/pyrnnoise-0.1.3-py3-none-manylinux1_x86_64.whl.zip]
+[2024-04-28 15:16:10] INFO root fetch - main [MainThread]: End processing [pyrnnoise]: success
+[2024-04-28 15:16:10] INFO root fetch - main [MainThread]: Store serial: [22966994]
