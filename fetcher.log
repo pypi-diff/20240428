@@ -4460,3 +4460,36 @@
 [2024-04-28 06:41:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip]
 [2024-04-28 06:41:57] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-pos]: success
 [2024-04-28 06:41:57] INFO root fetch - main [MainThread]: Store serial: [22964045]
+[2024-04-28 06:44:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22964045]
+[2024-04-28 06:44:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-28 06:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-pos
+[2024-04-28 06:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: api-management-local
+[2024-04-28 06:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: variable-local
+[2024-04-28 06:44:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assertbr
+[2024-04-28 06:44:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: New version: [14.0.1.5.3.dev9] Old Version: [14.0.1.5.3.dev8]
+[2024-04-28 06:44:05] INFO root fetch - processPackages [api-management-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-28 06:44:05] INFO root fetch - processPackages [variable-local]: New version: [0.0.94] Old Version: [0.0.93]
+[2024-04-28 06:44:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Downloading https://files.pythonhosted.org/packages/f1/56/2f6037b4aa9e1bf3ced072b311ab048e3e7a04fd72a138a731f70260aeda/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl
+[2024-04-28 06:44:05] WARNING root fetch - processPackages [assertbr]: Skipping, unable to determine old version
+[2024-04-28 06:44:05] INFO root fetch - main [MainThread]: End processing [assertbr] error
+[2024-04-28 06:44:05] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/32/8d/91ba0097e4ccea06453a14838b92b8ee48bc1880e8710d022d215299ae02/api-management-local-0.0.8.tar.gz
+[2024-04-28 06:44:05] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/fe/21/a9528a3f348d982e06b7d730a552d039f0be80eb661d55326ef78bfa1e50/variable_local-0.0.93.tar.gz
+[2024-04-28 06:44:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Downloading https://files.pythonhosted.org/packages/c4/5a/00631840ff1a58fa5c3a89868c29231e557f255e18efdcc354f00572ed2a/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl
+[2024-04-28 06:44:05] INFO root fetch - processPackages [api-management-local]: Downloading https://files.pythonhosted.org/packages/cb/96/c6e4476ef16ac62a0dbb73d152f9e62d4bdc20962b3c26c38313ac1ba76b/api-management-local-0.0.9.tar.gz
+[2024-04-28 06:44:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: executing diffoscope
+[2024-04-28 06:44:05] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip --markdown 20240428/o/odoo14-addon-l10n-br-pos/14.0.1.5.3.dev8-14.0.1.5.3.dev9/README.md --exclude *.pyd
+[2024-04-28 06:44:05] INFO root fetch - processPackages [api-management-local]: executing diffoscope
+[2024-04-28 06:44:05] INFO root fetch - processPackages [api-management-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api-management-local-0.0.8.tar.gz tmp/api-management-local-0.0.9.tar.gz --markdown 20240428/a/api-management-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-28 06:44:05] INFO root fetch - processPackages [variable-local]: Downloading https://files.pythonhosted.org/packages/4a/40/ab88d11e3b961e62785b035544232c18529a166846bbe4982908bd94c94d/variable_local-0.0.94.tar.gz
+[2024-04-28 06:44:05] INFO root fetch - processPackages [variable-local]: executing diffoscope
+[2024-04-28 06:44:05] INFO root fetch - processPackages [variable-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/variable_local-0.0.93.tar.gz tmp/variable_local-0.0.94.tar.gz --markdown 20240428/v/variable-local/0.0.93-0.0.94/README.md --exclude *.pyd
+[2024-04-28 06:44:06] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.8.tar.gz]
+[2024-04-28 06:44:06] INFO root fetch - processPackages [api-management-local]: Remove: archive file [/home/abi/fetcher/tmp/api-management-local-0.0.9.tar.gz]
+[2024-04-28 06:44:06] INFO root fetch - main [MainThread]: End processing [api-management-local]: success
+[2024-04-28 06:44:06] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.93.tar.gz]
+[2024-04-28 06:44:06] INFO root fetch - processPackages [variable-local]: Remove: archive file [/home/abi/fetcher/tmp/variable_local-0.0.94.tar.gz]
+[2024-04-28 06:44:06] INFO root fetch - main [MainThread]: End processing [variable-local]: success
+[2024-04-28 06:44:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev8-py3-none-any.whl.zip]
+[2024-04-28 06:44:06] INFO root fetch - processPackages [odoo14-addon-l10n-br-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_pos-14.0.1.5.3.dev9-py3-none-any.whl.zip]
+[2024-04-28 06:44:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-pos]: success
+[2024-04-28 06:44:06] INFO root fetch - main [MainThread]: Store serial: [22964057]
