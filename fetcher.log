@@ -16190,3 +16190,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-28 20:55:15] INFO root fetch - processPackages [quasarpy]: Remove: archive file [/home/abi/fetcher/tmp/quasarpy-0.1.3.tar.gz]
 [2024-04-28 20:55:15] INFO root fetch - main [MainThread]: End processing [quasarpy]: success
 [2024-04-28 20:55:15] INFO root fetch - main [MainThread]: Store serial: [22968968]
+[2024-04-28 20:57:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22968968]
+[2024-04-28 20:57:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-28 20:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modpack-changelogger
+[2024-04-28 20:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scapy
+[2024-04-28 20:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wg-utilities
+[2024-04-28 20:57:24] WARNING root fetch - processPackages [modpack-changelogger]: Skipping, unable to determine old version
+[2024-04-28 20:57:24] INFO root fetch - main [MainThread]: End processing [modpack-changelogger] error
+[2024-04-28 20:57:24] INFO root fetch - processPackages [wg-utilities]: New version: [5.9.0] Old Version: [5.8.4]
+[2024-04-28 20:57:24] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/a2/7f/84a6f7a987704a196fb4a41e13f84850ea59dd73e5749d1f956e99a42c6f/wg_utilities-5.8.4.tar.gz
+[2024-04-28 20:57:24] INFO root fetch - processPackages [scapy]: New version: [2.6.0rc1] Old Version: [2.5.0rc3]
+[2024-04-28 20:57:24] INFO root fetch - processPackages [scapy]: Downloading https://files.pythonhosted.org/packages/44/f1/e6a0ebc88b7eca211ba264ee6a3260e60c6cf43f48320a9752c19154959d/scapy-2.5.0rc3.tar.gz
+[2024-04-28 20:57:24] INFO root fetch - processPackages [wg-utilities]: Downloading https://files.pythonhosted.org/packages/23/bc/396a6e7516320d7c839831333bc832b8f2e2fa8cefd2e0dfe566c8a17a44/wg_utilities-5.9.0.tar.gz
+[2024-04-28 20:57:24] INFO root fetch - processPackages [wg-utilities]: executing diffoscope
+[2024-04-28 20:57:24] INFO root fetch - processPackages [wg-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wg_utilities-5.8.4.tar.gz tmp/wg_utilities-5.9.0.tar.gz --markdown 20240428/w/wg-utilities/5.8.4-5.9.0/README.md --exclude *.pyd
+[2024-04-28 20:57:24] INFO root fetch - processPackages [scapy]: Downloading https://files.pythonhosted.org/packages/f8/fe/6d7d101c2cd1d8b0ddca396258cc3b2ae980810edcd094810c915932b839/scapy-2.6.0rc1.tar.gz
+[2024-04-28 20:57:25] INFO root fetch - processPackages [scapy]: executing diffoscope
+[2024-04-28 20:57:25] INFO root fetch - processPackages [scapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240428:/home/abi/fetcher/20240428:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scapy-2.5.0rc3.tar.gz tmp/scapy-2.6.0rc1.tar.gz --markdown 20240428/s/scapy/2.5.0rc3-2.6.0rc1/README.md --exclude *.pyd
+[2024-04-28 20:57:25] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.8.4.tar.gz]
+[2024-04-28 20:57:25] INFO root fetch - processPackages [wg-utilities]: Remove: archive file [/home/abi/fetcher/tmp/wg_utilities-5.9.0.tar.gz]
+[2024-04-28 20:57:25] INFO root fetch - main [MainThread]: End processing [wg-utilities]: success
+[2024-04-28 20:57:29] INFO root fetch - processPackages [scapy]: Remove: archive file [/home/abi/fetcher/tmp/scapy-2.5.0rc3.tar.gz]
+[2024-04-28 20:57:29] INFO root fetch - processPackages [scapy]: Remove: archive file [/home/abi/fetcher/tmp/scapy-2.6.0rc1.tar.gz]
+[2024-04-28 20:57:29] INFO root fetch - main [MainThread]: End processing [scapy]: success
+[2024-04-28 20:57:29] INFO root fetch - main [MainThread]: Store serial: [22968978]
